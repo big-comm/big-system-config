@@ -8,7 +8,7 @@ export TEXTDOMAIN=biglinux-settings
 if [ "$1" == "check" ]; then
   # Check if it's a VM; if so, disable it. Smart only works on a physical machine.
   if [[ "$(systemd-detect-virt)" != "none" ]];then
-    echo ""
+    echo "unsupported"
   elif systemctl is-active smartd --quiet;then
     echo "false"
   else

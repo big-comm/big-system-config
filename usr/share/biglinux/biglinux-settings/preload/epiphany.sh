@@ -12,7 +12,7 @@ if [ "$1" == "check" ]; then
       echo "false"
     fi
   else
-    echo ""
+    echo "unsupported"
   fi
 
 # change the state

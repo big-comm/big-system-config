@@ -28,6 +28,8 @@ elif [ "$1" == "toggle" ]; then
       balooctl6 enable &>/dev/null
       exitCode=$?
     fi
+  else
+    exitCode=1
   fi
   exit $exitCode
 fi

@@ -18,10 +18,10 @@ elif [ "${1:-}" == "toggle" ]; then
   state="${2:-}"
   [[ "$state" == "true" || "$state" == "false" ]] || exit 2
   if [ "$state" == "true" ]; then
-    pkexec /usr/share/biglinux/biglinux-settings/ai/ollamaShareRun.sh "install" "$USER" "$DISPLAY" "$XAUTHORITY" "$DBUS_SESSION_BUS_ADDRESS" "$LANG" "$LANGUAGE"
+    pkexec /usr/share/biglinux/biglinux-settings/ai/ollamaShareRun.sh "install" "$USER" "${DISPLAY:-}" "${XAUTHORITY:-}" "${DBUS_SESSION_BUS_ADDRESS:-}" "${LANG:-}" "${LANGUAGE:-}"
     exitCode=$?
   else
-    pkexec /usr/share/biglinux/biglinux-settings/ai/ollamaShareRun.sh "uninstall" "$USER" "$DISPLAY" "$XAUTHORITY" "$DBUS_SESSION_BUS_ADDRESS" "$LANG" "$LANGUAGE"
+    pkexec /usr/share/biglinux/biglinux-settings/ai/ollamaShareRun.sh "uninstall" "$USER" "${DISPLAY:-}" "${XAUTHORITY:-}" "${DBUS_SESSION_BUS_ADDRESS:-}" "${LANG:-}" "${LANGUAGE:-}"
     exitCode=$?
   fi
   exit "$exitCode"

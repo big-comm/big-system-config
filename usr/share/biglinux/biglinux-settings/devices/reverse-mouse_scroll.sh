@@ -22,23 +22,23 @@ elif [ "$1" == "toggle" ]; then
   if [[ "$XDG_CURRENT_DESKTOP" == *"KDE"* ]] || [[ "$XDG_CURRENT_DESKTOP" == *"Plasma"* ]];then
     if [ "$state" == "true" ]; then
       kwriteconfig6 --file "$kcminputrcFile" --group "Mouse" --key "NaturalScroll" "true"
+      exitCode=$?
 
       devices=$(qdbus6 org.kde.KWin | grep "/org/kde/KWin/InputDevice/event")
       for device in $devices; do
         qdbus6 org.kde.KWin "$device" org.kde.KWin.InputDevice.naturalScroll true &> /dev/null
       done
-
-      exitCode=$?
     else
       kwriteconfig6 --file "$kcminputrcFile" --group "Mouse" --key "NaturalScroll" "false"
+      exitCode=$?
 
       devices=$(qdbus6 org.kde.KWin | grep "/org/kde/KWin/InputDevice/event")
       for device in $devices; do
         qdbus6 org.kde.KWin "$device" org.kde.KWin.InputDevice.naturalScroll false &> /dev/null
       done
-
-      exitCode=$?
     fi
+  else
+    exitCode=1
   fi
   exit $exitCode
 fi

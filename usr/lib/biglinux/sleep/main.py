@@ -41,15 +41,29 @@ _HANDLER_MAP = {
 
 
 def _load_config() -> dict[str, bool]:
-    """Read handler enabled states from config file."""
-    config = configparser.ConfigParser()
+    """Read handler enabled states from config file.
 
-    if CONFIG_FILE.exists():
-        config.read(str(CONFIG_FILE))
+    A damaged config must never abort the hook: any key that cannot be read
+    falls back to disabled, and the rest of the file is still honoured.
+    """
+    config = configparser.ConfigParser(strict=False, inline_comment_prefixes=("#", ";"))
+
+    try:
+        if CONFIG_FILE.exists():
+            config.read(str(CONFIG_FILE))
+    except (configparser.Error, OSError, UnicodeDecodeError) as e:
+        log.error("Ignoring unreadable config %s: %s", CONFIG_FILE, e)
+        config = configparser.ConfigParser()
 
     result = {}
     for key in _HANDLER_MAP:
-        result[key] = config.getboolean("handlers", key, fallback=False)
+        try:
+            result[key] = config.getboolean("handlers", key, fallback=False)
+        except ValueError:
+            log.error(
+                "Invalid value for '%s' in %s, treating as false", key, CONFIG_FILE
+            )
+            result[key] = False
     return result
 
 
@@ -94,7 +108,7 @@ def run(phase: str, sleep_type: str) -> int:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
+    if len(sys.argv) < 3 or sys.argv[1] not in ("pre", "post"):
         log.error("Usage: biglinux-sleep <pre|post> <sleep-type>")
         sys.exit(2)
     sys.exit(run(sys.argv[1], sys.argv[2]))

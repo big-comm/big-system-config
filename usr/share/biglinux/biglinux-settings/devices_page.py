@@ -7,7 +7,7 @@ gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 from gi.repository import Adw, GLib, Gtk  # noqa: E402
 
-from base_page import BaseSettingsPage, _  # noqa: E402
+from base_page import BaseSettingsPage, _, _plain_markup  # noqa: E402
 from network_manager import NetworkError, NetworkManager  # noqa: E402
 
 logger = logging.getLogger("biglinux-settings")
@@ -98,7 +98,10 @@ class DevicesPage(BaseSettingsPage):
             icon_name = _IFACE_ICONS.get(type_, "network-wired-symbolic")
             subtitle = _("{} — {}").format(type_, iface["state"])
 
-            row = Adw.ActionRow(title=connection, subtitle=subtitle)
+            # Connection names (e.g. SSIDs) are user data: escape for Pango
+            row = Adw.ActionRow(
+                title=_plain_markup(connection), subtitle=_plain_markup(subtitle)
+            )
 
             # Icon prefix
             img = Gtk.Image.new_from_icon_name(icon_name)

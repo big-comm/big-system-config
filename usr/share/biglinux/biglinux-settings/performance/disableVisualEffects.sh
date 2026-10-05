@@ -22,23 +22,31 @@ elif [ "$1" == "toggle" ]; then
   exitCode=0
   if ([[ "$XDG_CURRENT_DESKTOP" == *"KDE"* ]] || [[ "$XDG_CURRENT_DESKTOP" == *"Plasma"* ]]) && command -v qdbus6 >/dev/null 2>&1;then
     if [ "$state" == "true" ]; then
-      read -ra effects <<< "$(qdbus6 org.kde.KWin /Effects org.kde.kwin.Effects.loadedEffects)"
-      rm -f "$HOME/.config/biglinux-settings/effectsEnable"
-      for effect in "${effects[@]}"; do
+      # qdbus6 prints one effect per line
+      mapfile -t effects < <(qdbus6 org.kde.KWin /Effects org.kde.kwin.Effects.loadedEffects)
+      # Nothing loaded: keep the list saved by the previous disable
+      if [[ ${#effects[@]} -gt 0 ]]; then
         mkdir -p "$HOME/.config/biglinux-settings"
-        echo "$effect" >> "$HOME/.config/biglinux-settings/effectsEnable"
-        kwriteconfig6 --file kwinrc --group Plugins --key "${effect}Enabled" false
-        qdbus6 org.kde.KWin /Effects org.kde.kwin.Effects.unloadEffect "$effect"
-      done
-      exitCode=$?
-    else
-      mapfile -t effects < "$HOME/.config/biglinux-settings/effectsEnable"
+        printf '%s\n' "${effects[@]}" > "$HOME/.config/biglinux-settings/effectsEnable"
+      fi
       for effect in "${effects[@]}"; do
-        kwriteconfig6 --file kwinrc --group Plugins --key "${effect}Enabled" true
-        qdbus6 org.kde.KWin /Effects org.kde.kwin.Effects.loadEffect "$effect"
+        [[ -n "$effect" ]] || continue
+        kwriteconfig6 --file kwinrc --group Plugins --key "${effect}Enabled" false || exitCode=1
+        qdbus6 org.kde.KWin /Effects org.kde.kwin.Effects.unloadEffect "$effect" >/dev/null || exitCode=1
       done
-      exitCode=$?
+    else
+      effects=()
+      if [[ -r "$HOME/.config/biglinux-settings/effectsEnable" ]]; then
+        mapfile -t effects < "$HOME/.config/biglinux-settings/effectsEnable"
+      fi
+      for effect in "${effects[@]}"; do
+        [[ -n "$effect" ]] || continue
+        kwriteconfig6 --file kwinrc --group Plugins --key "${effect}Enabled" true || exitCode=1
+        qdbus6 org.kde.KWin /Effects org.kde.kwin.Effects.loadEffect "$effect" >/dev/null || exitCode=1
+      done
     fi
+  else
+    exitCode=1
   fi
   exit $exitCode
 fi

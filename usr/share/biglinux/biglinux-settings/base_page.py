@@ -41,6 +41,8 @@ class BaseSettingsPage(Adw.Bin):
         # Centralized widget metadata — avoids monkey-patching GObject instances
         self._widget_data: dict = {}
         self._sync_generation = 0
+        # Switches whose toggle script is still running
+        self._busy_switches: set = set()
 
     def _set_wd(self, widget: Gtk.Widget, key: str, value: Any) -> None:
         """Set a metadata attribute on a widget via centralized dict."""
@@ -498,7 +500,12 @@ class BaseSettingsPage(Adw.Bin):
 
         try:
             result = subprocess.run(
-                [script_path, "check"], capture_output=True, text=True, timeout=10
+                [script_path, "check"],
+                capture_output=True,
+                text=True,
+                errors="replace",
+                stdin=subprocess.DEVNULL,
+                timeout=10,
             )
             if result.returncode == 0:
                 output = result.stdout.strip().lower()
@@ -551,6 +558,8 @@ class BaseSettingsPage(Adw.Bin):
                 [script_path, "toggle", state_str],
                 capture_output=True,
                 text=True,
+                errors="replace",
+                stdin=subprocess.DEVNULL,
                 timeout=timeout if timeout is not None else 90,
             )
 
@@ -635,6 +644,12 @@ class BaseSettingsPage(Adw.Bin):
         script_paths = list({path for _, path in switches + indicators})
 
         def _check_all():
+            try:
+                _check_all_unsafe()
+            except Exception:
+                logger.exception("Failed to synchronize switches")
+
+        def _check_all_unsafe():
             worker_count = min(8, max(1, len(script_paths)))
             with ThreadPoolExecutor(max_workers=worker_count) as executor:
                 states = dict(
@@ -663,6 +678,10 @@ class BaseSettingsPage(Adw.Bin):
         if generation != self._sync_generation:
             return False
         for switch, (status, message) in switch_results:
+            # A toggle is still running on this switch: its own completion
+            # handler owns the row (spinner, sensitivity, final state).
+            if switch in self._busy_switches:
+                continue
             row = self._get_wd(switch, "row")
 
             handler = self._get_switch_handler(switch)
@@ -807,11 +826,18 @@ class BaseSettingsPage(Adw.Bin):
         original_subtitle = row.get_subtitle()
         row.set_subtitle(_("Applying…"))
 
+        self._busy_switches.add(switch)
+
         def _toggle_in_thread():
-            success = self.toggle_script_state(script_path, state, timeout=timeout)
+            try:
+                success = self.toggle_script_state(script_path, state, timeout=timeout)
+            except Exception:
+                logger.exception("Unexpected error toggling %s", script_path)
+                success = False
             GLib.idle_add(_on_toggle_done, success)
 
         def _on_toggle_done(success):
+            self._busy_switches.discard(switch)
             # Remove spinner and restore switch visibility
             row.remove(spinner)
             switch.set_visible(True)
@@ -829,6 +855,9 @@ class BaseSettingsPage(Adw.Bin):
                 self.main_window.show_toast(
                     _("Failed to change setting: {}").format(script_name)
                 )
+                # The script may have applied part of the change, or a first
+                # sync may have been discarded meanwhile: read the real state.
+                self.sync_all_switches_async()
             else:
                 # Confirm the backend state (active was already set by user click)
                 self._set_switch_active_without_handler(switch, state)
@@ -873,7 +902,14 @@ class BaseSettingsPage(Adw.Bin):
 
                 row = listbox.get_first_child()
                 while row:
-                    if isinstance(row, (Adw.PreferencesRow, Gtk.ListBoxRow)):
+                    if isinstance(row, Adw.ExpanderRow):
+                        matching.extend(
+                            (sub_row, child)
+                            for sub_row in self._matching_expander_rows(
+                                row, search_text
+                            )
+                        )
+                    elif isinstance(row, (Adw.PreferencesRow, Gtk.ListBoxRow)):
                         # Skip rows hidden due to lack of support
                         if self._get_wd(row, "hidden_no_support", False):
                             row = row.get_next_sibling()
@@ -885,6 +921,40 @@ class BaseSettingsPage(Adw.Bin):
                     row = row.get_next_sibling()
 
         return matching
+
+    def _expander_child_rows(self, expander: Adw.ExpanderRow) -> list[Gtk.Widget]:
+        """Rows added to an ExpanderRow (they live in its Revealer's ListBox)."""
+        rows = []
+        stack = [expander]
+        while stack:
+            widget = stack.pop()
+            if isinstance(widget, Gtk.Revealer):
+                listbox = self._find_listbox_in_widget(widget)
+                if listbox:
+                    rows.extend(self._get_all_children(listbox))
+                continue
+            stack.extend(self._get_all_children(widget))
+        return [
+            row
+            for row in rows
+            if isinstance(row, Adw.ActionRow)
+            and not self._get_wd(row, "hidden_no_support", False)
+        ]
+
+    def _matching_expander_rows(
+        self, expander: Adw.ExpanderRow, search_text: str
+    ) -> list[Gtk.Widget]:
+        """Child rows matching the search; all of them if only the header matches."""
+        children = self._expander_child_rows(expander)
+        matches = [
+            row for row in children if search_text in self._get_row_text(row).lower()
+        ]
+        if matches:
+            return matches
+        header = f"{expander.get_title() or ''} {expander.get_subtitle() or ''}"
+        if search_text in html.unescape(header).lower():
+            return children
+        return []
 
     def _get_sub_row_visibility(self, row: Adw.ActionRow) -> bool:
         """Determine if a sub-row should be visible based on its parent switch state."""

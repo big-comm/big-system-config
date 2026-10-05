@@ -20,6 +20,9 @@ kactivitymanagerdDir="$HOME/.local/share/kactivitymanagerd/resources"
 # Executes tasks.
 updateTask() {
   if [[ "$function" == "enable" ]]; then
+    # Respect the "Disable Baloo indexer" switch: only bring Baloo back if it was on
+    balooWasEnabled=false
+    $balooCMD status > /dev/null 2>&1 && balooWasEnabled=true
     $balooCMD suspend > /dev/null 2>&1
     $balooCMD disable > /dev/null 2>&1
     killall baloo_file dolphin kactivitymanagerd kioworker kiod6 > /dev/null 2>&1
@@ -54,7 +57,7 @@ updateTask() {
   </xbel>' > "$xbelFile"
 
     # unHide Recents
-   sed -i 's/<GroupState-RecentlySaved-IsHidden>true<\/GroupState-RecentlySaved-IsHidden>/<GroupState-RecentlySaved-IsHidden>false<\/GroupState-RecentlySaved-IsHidden>/' $xbelUserFile
+   sed -i 's/<GroupState-RecentlySaved-IsHidden>true<\/GroupState-RecentlySaved-IsHidden>/<GroupState-RecentlySaved-IsHidden>false<\/GroupState-RecentlySaved-IsHidden>/' "$xbelUserFile"
 
     chmod 644 "$xbelFile"
 
@@ -62,8 +65,10 @@ updateTask() {
     systemctl --user start plasma-kactivitymanagerd.service > /dev/null 2>&1
     sleep 2
 
-    $balooCMD enable > /dev/null 2>&1
-    $balooCMD resume > /dev/null 2>&1
+    if [[ "$balooWasEnabled" == "true" ]]; then
+      $balooCMD enable > /dev/null 2>&1
+      $balooCMD resume > /dev/null 2>&1
+    fi
 
     systemctl --user restart plasma-kactivitymanagerd.service > /dev/null 2>&1
     killall kiod6 > /dev/null 2>&1
@@ -96,7 +101,7 @@ updateTask() {
   </xbel>' > "$xbelFile"
 
     # Hide recents
-    sed -i 's/<GroupState-RecentlySaved-IsHidden>false<\/GroupState-RecentlySaved-IsHidden>/<GroupState-RecentlySaved-IsHidden>true<\/GroupState-RecentlySaved-IsHidden>/' $xbelUserFile
+    sed -i 's/<GroupState-RecentlySaved-IsHidden>false<\/GroupState-RecentlySaved-IsHidden>/<GroupState-RecentlySaved-IsHidden>true<\/GroupState-RecentlySaved-IsHidden>/' "$xbelUserFile"
 
     chmod 644 "$xbelFile"
 

@@ -38,7 +38,14 @@ from .base import SleepHandler
 
 log = logging.getLogger(__name__)
 
-STATE_FILE = Path(os.environ.get("XDG_RUNTIME_DIR", "/run/biglinux")) / "biglinux-gnome-ext-state.json"
+# Persistent (not tmpfs): pre_suspend writes the disable to gsettings, so if the
+# machine loses power while suspended the pending re-enable must survive the
+# reboot. The monitor replays it at startup.
+STATE_FILE = (
+    Path(os.environ.get("XDG_STATE_HOME") or Path.home() / ".local/state")
+    / "biglinux-settings"
+    / "gnome-ext-state.json"
+)
 
 # Extensions that must be disabled before suspend and re-enabled after resume.
 # user-theme calls Main.loadTheme() immediately in enable(), before other
@@ -119,6 +126,10 @@ def _enable_extension(uid: str, uuid: str) -> bool:
 
 
 def _find_gnome_uid() -> str | None:
+    # The user-level monitor must act on its own session only; with several
+    # logged-in users the first graphical session may belong to someone else.
+    if os.getuid() != 0:
+        return str(os.getuid())
     try:
         out = subprocess.check_output(
             ["loginctl", "list-sessions", "--no-legend"],

@@ -34,14 +34,24 @@ def _is_source_run(main_file=__file__):
 
 
 def _highlight_text(text, search_text):
-    """Wrap matching substring with bold Pango markup, escaping existing markup."""
-    escaped = html.escape(text)
-    lower = escaped.lower()
-    idx = lower.find(search_text)
+    """Wrap matching substring with bold Pango markup, escaping existing markup.
+
+    Row titles are stored already escaped (see base_page._plain_markup), so the
+    text is unescaped first: matching runs on what the user sees and each piece
+    is escaped exactly once.
+    """
+    plain = html.unescape(text)
+    idx = plain.lower().find(search_text) if search_text else -1
     if idx == -1:
-        return escaped
+        return html.escape(plain, quote=False)
     end = idx + len(search_text)
-    return escaped[:idx] + "<b>" + escaped[idx:end] + "</b>" + escaped[end:]
+    return (
+        html.escape(plain[:idx], quote=False)
+        + "<b>"
+        + html.escape(plain[idx:end], quote=False)
+        + "</b>"
+        + html.escape(plain[end:], quote=False)
+    )
 
 
 class BiglinuxSettingsApp(Adw.Application):
