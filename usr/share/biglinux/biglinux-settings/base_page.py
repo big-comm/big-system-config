@@ -26,6 +26,11 @@ def _plain_markup(text: str) -> str:
     return html.escape(html.unescape(text or ""), quote=False)
 
 
+def _script_not_found_msg(script_path: str) -> str:
+    """Translated "script not found" message for the given path."""
+    return _("Script not found: {}").format(script_path)
+
+
 class BaseSettingsPage(Adw.Bin):
     def __init__(self, main_window: Adw.ApplicationWindow, **kwargs) -> None:
         super().__init__(**kwargs)
@@ -266,9 +271,9 @@ class BaseSettingsPage(Adw.Bin):
     ) -> None:
         """Execute a one-shot action script in a background thread."""
         if not os.path.exists(script_path):
-            logger.warning(_("Script not found: {}").format(script_path))
+            logger.warning(_script_not_found_msg(script_path))
             self.main_window.show_toast(
-                _("Script not found: {}").format(os.path.basename(script_path))
+                _script_not_found_msg(os.path.basename(script_path))
             )
             return
 
@@ -496,7 +501,7 @@ class BaseSettingsPage(Adw.Bin):
         Returns True if the script's stdout is 'true', False otherwise."""
         if not os.path.exists(script_path):
             msg = _("Unavailable: script not found.")
-            logger.warning(_("Script not found: {}").format(script_path))
+            logger.warning(_script_not_found_msg(script_path))
             return (None, msg)
 
         try:
@@ -547,10 +552,7 @@ class BaseSettingsPage(Adw.Bin):
         """Executes a script with the 'toggle' argument to change the system state.
         Returns True on success, False on failure."""
         if not os.path.exists(script_path):
-            # Use provided timeout or default to the script's configured timeout
-            timeout = timeout if timeout is not None else 90
-            error_msg = _("Script not found: {}").format(script_path)
-            logger.error(error_msg)
+            logger.error(_script_not_found_msg(script_path))
             return False
 
         try:
@@ -563,35 +565,6 @@ class BaseSettingsPage(Adw.Bin):
                 stdin=subprocess.DEVNULL,
                 timeout=timeout if timeout is not None else 90,
             )
-
-            if result.returncode == 0:
-                if result.stdout.strip():
-                    logger.debug(_("Script output: {}").format(result.stdout.strip()))
-                for _attempt in range(5):
-                    verified_state, _message = self.check_script_state(script_path)
-                    if verified_state is new_state:
-                        logger.info(_("State changed successfully"))
-                        return True
-                    time.sleep(0.2)
-                logger.error(
-                    "Script completed but state verification failed: %s", script_path
-                )
-                return False
-            else:
-                # Exit code != 0 indicates failure
-                error_msg = _("Script failed with exit code: {}").format(
-                    result.returncode
-                )
-                logger.error(error_msg)
-
-                if result.stderr.strip():
-                    logger.error("Script stderr: %s", result.stderr.strip())
-
-                if result.stdout.strip():
-                    logger.error("Script stdout: %s", result.stdout.strip())
-
-                return False
-
         except subprocess.TimeoutExpired:
             error_msg = _("Script timeout: {}").format(script_path)
             logger.error(error_msg)
@@ -600,6 +573,34 @@ class BaseSettingsPage(Adw.Bin):
             error_msg = _("Error running script {}: {}").format(script_path, e)
             logger.error(error_msg)
             return False
+
+        if result.returncode != 0:
+            self._log_toggle_failure(result)
+            return False
+        if result.stdout.strip():
+            logger.debug(_("Script output: {}").format(result.stdout.strip()))
+        return self._verify_toggled_state(script_path, new_state)
+
+    def _verify_toggled_state(self, script_path: str, new_state: bool) -> bool:
+        """Poll the script's check until it reports new_state (5 tries)."""
+        for _attempt in range(5):
+            verified_state, _message = self.check_script_state(script_path)
+            if verified_state is new_state:
+                logger.info(_("State changed successfully"))
+                return True
+            time.sleep(0.2)
+        logger.error("Script completed but state verification failed: %s", script_path)
+        return False
+
+    @staticmethod
+    def _log_toggle_failure(result: subprocess.CompletedProcess) -> None:
+        """Log a toggle script that exited with a non-zero code."""
+        error_msg = _("Script failed with exit code: {}").format(result.returncode)
+        logger.error(error_msg)
+        if result.stderr.strip():
+            logger.error("Script stderr: %s", result.stderr.strip())
+        if result.stdout.strip():
+            logger.error("Script stdout: %s", result.stdout.strip())
 
     def _toggle_info_icon_visibility(self, switch: Gtk.Switch, state: bool) -> None:
         """Handles the visibility of the info icon based on the switch state.
@@ -699,55 +700,59 @@ class BaseSettingsPage(Adw.Bin):
     def _apply_current_sync_results(
         self, switch_results: list, indicator_results: list
     ) -> None:
-        for switch, (status, message) in switch_results:
+        for switch, (status, _message) in switch_results:
             # A toggle is still running on this switch: its own completion
             # handler owns the row (spinner, sensitivity, final state).
-            if switch in self._busy_switches:
-                continue
-            row = self._get_wd(switch, "row")
+            if switch not in self._busy_switches:
+                self._apply_switch_result(switch, status)
 
-            handler = self._get_switch_handler(switch)
-            switch.handler_block_by_func(handler)
+        for indicator, (status, _message) in indicator_results:
+            self._apply_indicator_result(indicator, status)
 
-            if status == "true_disabled" or status is None:
-                row.set_visible(False)
-                self._set_wd(row, "hidden_no_support", True)
-                self._toggle_info_icon_visibility(switch, False)
-            else:
-                row.set_sensitive(True)
-                if not self._get_wd(row, "is_sub_row", False):
-                    row.set_visible(True)
-                row.set_tooltip_text(None)
-                self._set_wd(row, "hidden_no_support", False)
-                self._set_switch_active_without_handler(switch, status)
-                self._toggle_info_icon_visibility(switch, status)
-
-            switch.handler_unblock_by_func(handler)
-
-        for indicator, (status, message) in indicator_results:
-            row = self._get_wd(indicator, "row")
-            indicator.remove_css_class("status-on")
-            indicator.remove_css_class("status-off")
-            indicator.remove_css_class("status-unavailable")
-
-            if status is None:
-                row.set_visible(False)
-                self._set_wd(row, "hidden_no_support", True)
-            else:
-                row.set_sensitive(True)
-                row.set_visible(True)
-                row.set_tooltip_text(None)
-                self._set_wd(row, "hidden_no_support", False)
-                if status:
-                    indicator.add_css_class("status-on")
-                else:
-                    indicator.add_css_class("status-off")
-
-        for parent_switch, child_rows in self.sub_switches.items():
+        for parent_switch in self.sub_switches:
             parent_state = parent_switch.get_active()
             self._update_sub_switches_visibility(parent_switch, parent_state)
 
         self._refresh_group_visibility()
+
+    def _apply_switch_result(self, switch: Gtk.Switch, status: Any) -> None:
+        """Reflect one synced script state on its switch row."""
+        row = self._get_wd(switch, "row")
+
+        handler = self._get_switch_handler(switch)
+        switch.handler_block_by_func(handler)
+
+        if status == "true_disabled" or status is None:
+            row.set_visible(False)
+            self._set_wd(row, "hidden_no_support", True)
+            self._toggle_info_icon_visibility(switch, False)
+        else:
+            row.set_sensitive(True)
+            if not self._get_wd(row, "is_sub_row", False):
+                row.set_visible(True)
+            row.set_tooltip_text(None)
+            self._set_wd(row, "hidden_no_support", False)
+            self._set_switch_active_without_handler(switch, status)
+            self._toggle_info_icon_visibility(switch, status)
+
+        switch.handler_unblock_by_func(handler)
+
+    def _apply_indicator_result(self, indicator: Gtk.Widget, status: Any) -> None:
+        """Reflect one synced script state on its status indicator row."""
+        row = self._get_wd(indicator, "row")
+        indicator.remove_css_class("status-on")
+        indicator.remove_css_class("status-off")
+        indicator.remove_css_class("status-unavailable")
+
+        if status is None:
+            row.set_visible(False)
+            self._set_wd(row, "hidden_no_support", True)
+            return
+        row.set_sensitive(True)
+        row.set_visible(True)
+        row.set_tooltip_text(None)
+        self._set_wd(row, "hidden_no_support", False)
+        indicator.add_css_class("status-on" if status else "status-off")
 
     def _group_rows(self, group: Adw.PreferencesGroup) -> list[Gtk.Widget]:
         listbox = self._find_listbox_in_widget(group)
@@ -967,31 +972,39 @@ class BaseSettingsPage(Adw.Bin):
         matching = []
         for child in self._get_all_children(self.content_box):
             if isinstance(child, Adw.PreferencesGroup):
-                listbox = self._find_listbox_in_widget(child)
-                if not listbox:
-                    continue
-
-                row = listbox.get_first_child()
-                while row:
-                    if isinstance(row, Adw.ExpanderRow):
-                        matching.extend(
-                            (sub_row, child)
-                            for sub_row in self._matching_expander_rows(
-                                row, search_text
-                            )
-                        )
-                    elif isinstance(row, (Adw.PreferencesRow, Gtk.ListBoxRow)):
-                        # Skip rows hidden due to lack of support
-                        if self._get_wd(row, "hidden_no_support", False):
-                            row = row.get_next_sibling()
-                            continue
-
-                        text = self._get_row_text(row).lower()
-                        if search_text in text:
-                            matching.append((row, child))
-                    row = row.get_next_sibling()
+                matching.extend(
+                    (row, child)
+                    for row in self._matching_group_rows(child, search_text)
+                )
 
         return matching
+
+    def _matching_group_rows(
+        self, group: Adw.PreferencesGroup, search_text: str
+    ) -> list[Gtk.Widget]:
+        """Rows of one group (expander children included) matching search_text."""
+        listbox = self._find_listbox_in_widget(group)
+        if not listbox:
+            return []
+
+        matching = []
+        row = listbox.get_first_child()
+        while row:
+            if isinstance(row, Adw.ExpanderRow):
+                matching.extend(self._matching_expander_rows(row, search_text))
+            elif isinstance(
+                row, (Adw.PreferencesRow, Gtk.ListBoxRow)
+            ) and self._row_matches(row, search_text):
+                matching.append(row)
+            row = row.get_next_sibling()
+        return matching
+
+    def _row_matches(self, row: Gtk.Widget, search_text: str) -> bool:
+        """True for a supported row whose text contains search_text."""
+        # Skip rows hidden due to lack of support
+        if self._get_wd(row, "hidden_no_support", False):
+            return False
+        return search_text in self._get_row_text(row).lower()
 
     def _expander_child_rows(self, expander: Adw.ExpanderRow) -> list[Gtk.Widget]:
         """Rows added to an ExpanderRow (they live in its Revealer's ListBox)."""

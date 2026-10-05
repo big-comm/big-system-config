@@ -144,30 +144,42 @@ class DevicesPage(BaseSettingsPage):
                     NetworkManager.connect_device(device)
                 else:
                     NetworkManager.disconnect_device(device)
-                GLib.idle_add(_on_done, True)
+                success = True
             except NetworkError:
-                GLib.idle_add(_on_done, False)
-
-        def _on_done(success):
-            row.set_sensitive(True)
-            if success:
-                switch.handler_block_by_func(self._on_net_switch_changed)
-                switch.set_active(state)
-                switch.set_state(state)
-                switch.handler_unblock_by_func(self._on_net_switch_changed)
-                iface_state = _("connected") if state else _("disconnected")
-                type_ = self._get_wd(switch, "type") or ""
-                row.set_subtitle(_("{} — {}").format(type_, iface_state) if type_ else iface_state)
-            else:
-                row.set_subtitle(original_subtitle or "")
-                switch.handler_block_by_func(self._on_net_switch_changed)
-                switch.set_active(not state)
-                switch.set_state(not state)
-                switch.handler_unblock_by_func(self._on_net_switch_changed)
-                self.main_window.show_toast(
-                    _("Failed to change network device: {}").format(device)
-                )
-            return False
+                success = False
+            GLib.idle_add(
+                self._on_net_toggle_done,
+                switch,
+                row,
+                device,
+                state,
+                success,
+                original_subtitle,
+            )
 
         threading.Thread(target=_toggle, daemon=True).start()
         return True
+
+    def _set_net_switch_without_handler(self, switch, state):
+        switch.handler_block_by_func(self._on_net_switch_changed)
+        switch.set_active(state)
+        switch.set_state(state)
+        switch.handler_unblock_by_func(self._on_net_switch_changed)
+
+    def _on_net_toggle_done(
+        self, switch, row, device, state, success, original_subtitle
+    ):
+        """Main-thread completion of a network device connect/disconnect."""
+        row.set_sensitive(True)
+        if success:
+            self._set_net_switch_without_handler(switch, state)
+            iface_state = _("connected") if state else _("disconnected")
+            type_ = self._get_wd(switch, "type") or ""
+            row.set_subtitle(_("{} — {}").format(type_, iface_state) if type_ else iface_state)
+        else:
+            row.set_subtitle(original_subtitle or "")
+            self._set_net_switch_without_handler(switch, not state)
+            self.main_window.show_toast(
+                _("Failed to change network device: {}").format(device)
+            )
+        return False

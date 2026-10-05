@@ -1,5 +1,7 @@
 from base_page import BaseSettingsPage, _
 
+OLLAMA_ICON = "ollama-symbolic"
+
 
 class AIPage(BaseSettingsPage):
     def __init__(self, main_window, **kwargs):
@@ -32,7 +34,7 @@ class AIPage(BaseSettingsPage):
             _("Update Ollama"),
             _("Update the installed Ollama packages to the latest version."),
             "ollamaUpdate",
-            "ollama-symbolic",
+            OLLAMA_ICON,
             action_label=_("Update now"),
             timeout=1800,
         )
@@ -42,7 +44,7 @@ class AIPage(BaseSettingsPage):
             ollamaServer,
             _("Ollama Variants"),
             _("Select the variant that matches your GPU hardware."),
-            "ollama-symbolic",
+            OLLAMA_ICON,
         )
 
         # ChatAI
@@ -59,7 +61,7 @@ class AIPage(BaseSettingsPage):
             _("Ollama LAB"),
             _("Graphical interface for managing Ollama models and chat."),
             "ollamaLab",
-            "ollama-symbolic",
+            OLLAMA_ICON,
         )
         # ChatBox
         self.create_row(
@@ -122,83 +124,55 @@ class AIPage(BaseSettingsPage):
                 "ComfyUI server is running.\nAddress: http://localhost:8188\nand\nAddress: http://{}:8188"
             ).format(local_ip),
         )
-        # Ollama CPU
+        # Ollama variants (CPU, Vulkan, Nvidia CUDA, AMD ROCm), each with a
+        # "Share Ollama" sub-row exposing the server on the local network.
+        ollama_variants = (
+            (
+                _("OllamaCPU"),
+                _("Local AI server. For CPUs only."),
+                "ollamaCpu",
+            ),
+            (
+                _("Ollama Vulkan"),
+                _("Local AI server. For CPUs, AMD/Nvidia and integrated GPUs."),
+                "ollamaVulkan",
+            ),
+            (
+                _("Ollama Nvidia CUDA"),
+                _(
+                    "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
+                ),
+                "ollamaNvidia",
+            ),
+            (
+                _("Ollama AMD ROCm"),
+                _(
+                    "Local AI server. For newer AMD GPUs, starting from the 6000 series.\nConsider using Vulkan, in many tests, Vulkan performed better than ROCm."
+                ),
+                "ollamaAmd",
+            ),
+        )
+        for title, subtitle, script_key in ollama_variants:
+            self._add_ollama_variant(
+                ollama_expander, title, subtitle, script_key, local_ip
+            )
+
+    def _add_ollama_variant(self, expander, title, subtitle, script_key, local_ip):
+        """Add an Ollama server row plus its "Share Ollama" sub-row."""
         ollama = self.create_row(
-            ollama_expander,
-            _("OllamaCPU"),
-            _("Local AI server. For CPUs only."),
-            "ollamaCpu",
-            "ollama-symbolic",
+            expander,
+            title,
+            subtitle,
+            script_key,
+            OLLAMA_ICON,
             info_text=_("Ollama server is running.\nAddress: http://localhost:11434"),
         )
         self.create_sub_row(
-            ollama_expander,
+            expander,
             _("Share Ollama"),
             _("Share ollama on the local network."),
             "ollamaShare",
-            "ollama-symbolic",
-            ollama,
-            info_text=_("Ollama server is running.\nAddress: http://{}:11434").format(
-                local_ip
-            ),
-        )
-        # Ollama Vulkan
-        ollama = self.create_row(
-            ollama_expander,
-            _("Ollama Vulkan"),
-            _("Local AI server. For CPUs, AMD/Nvidia and integrated GPUs."),
-            "ollamaVulkan",
-            "ollama-symbolic",
-            info_text=_("Ollama server is running.\nAddress: http://localhost:11434"),
-        )
-        self.create_sub_row(
-            ollama_expander,
-            _("Share Ollama"),
-            _("Share ollama on the local network."),
-            "ollamaShare",
-            "ollama-symbolic",
-            ollama,
-            info_text=_("Ollama server is running.\nAddress: http://{}:11434").format(
-                local_ip
-            ),
-        )
-        # Ollama Nvidia CUDA
-        ollama = self.create_row(
-            ollama_expander,
-            _("Ollama Nvidia CUDA"),
-            _("Local AI server. For newer Nvidia GPUs, starting from the 2000 series."),
-            "ollamaNvidia",
-            "ollama-symbolic",
-            info_text=_("Ollama server is running.\nAddress: http://localhost:11434"),
-        )
-        self.create_sub_row(
-            ollama_expander,
-            _("Share Ollama"),
-            _("Share ollama on the local network."),
-            "ollamaShare",
-            "ollama-symbolic",
-            ollama,
-            info_text=_("Ollama server is running.\nAddress: http://{}:11434").format(
-                local_ip
-            ),
-        )
-        # Ollama AMD ROCm
-        ollama = self.create_row(
-            ollama_expander,
-            _("Ollama AMD ROCm"),
-            _(
-                "Local AI server. For newer AMD GPUs, starting from the 6000 series.\nConsider using Vulkan, in many tests, Vulkan performed better than ROCm."
-            ),
-            "ollamaAmd",
-            "ollama-symbolic",
-            info_text=_("Ollama server is running.\nAddress: http://localhost:11434"),
-        )
-        self.create_sub_row(
-            ollama_expander,
-            _("Share Ollama"),
-            _("Share ollama on the local network."),
-            "ollamaShare",
-            "ollama-symbolic",
+            OLLAMA_ICON,
             ollama,
             info_text=_("Ollama server is running.\nAddress: http://{}:11434").format(
                 local_ip

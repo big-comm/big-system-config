@@ -47,6 +47,9 @@ STATE_FILE = (
     / "gnome-ext-state.json"
 )
 
+# D-Bus interface of the GNOME Shell extension manager.
+SHELL_EXTENSIONS_IFACE = "org.gnome.Shell.Extensions"
+
 # Extensions that must be disabled before suspend and re-enabled after resume.
 # user-theme calls Main.loadTheme() immediately in enable(), before other
 # extensions can register their resources. It must be the LAST to enable.
@@ -102,7 +105,7 @@ def _dbus_call(uid: str, interface: str, method: str, *args) -> str | None:
 
 
 def _ext_state(uid: str, uuid: str) -> dict | None:
-    result = _dbus_call(uid, "org.gnome.Shell.Extensions",
+    result = _dbus_call(uid, SHELL_EXTENSIONS_IFACE,
                         "GetExtensionInfo", "s", uuid)
     if result:
         return {
@@ -114,13 +117,13 @@ def _ext_state(uid: str, uuid: str) -> dict | None:
 
 
 def _disable_extension(uid: str, uuid: str) -> bool:
-    result = _dbus_call(uid, "org.gnome.Shell.Extensions",
+    result = _dbus_call(uid, SHELL_EXTENSIONS_IFACE,
                         "DisableExtension", "s", uuid)
     return result == "b true"
 
 
 def _enable_extension(uid: str, uuid: str) -> bool:
-    result = _dbus_call(uid, "org.gnome.Shell.Extensions",
+    result = _dbus_call(uid, SHELL_EXTENSIONS_IFACE,
                         "EnableExtension", "s", uuid)
     return result == "b true"
 
@@ -277,7 +280,7 @@ class GnomeHandler(SleepHandler):
     def _wait_shell_ready(self, uid: str, timeout: float = 20.0) -> bool:
         deadline = time.monotonic() + timeout
         while time.monotonic() < deadline:
-            if _dbus_call(uid, "org.gnome.Shell.Extensions",
+            if _dbus_call(uid, SHELL_EXTENSIONS_IFACE,
                           "GetExtensionInfo", "s", DEFERRED_EXTENSIONS[0]):
                 return True
             time.sleep(0.3)

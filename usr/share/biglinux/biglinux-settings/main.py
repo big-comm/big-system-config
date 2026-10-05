@@ -21,11 +21,18 @@ from system_page import SystemPage
 from usability_page import UsabilityPage
 
 logging.basicConfig(level=logging.INFO, format="%(name)s %(levelname)s: %(message)s")
-logger = logging.getLogger("biglinux-settings")
+# Icon name, CSS class and logger name shared across the app.
+APP_SLUG = "biglinux-settings"
+logger = logging.getLogger(APP_SLUG)
 TOAST_TIMEOUT_MS = 3500
 WINDOW_WIDTH = 1000
 WINDOW_HEIGHT = 700
 INSTALLED_MAIN = "/usr/share/biglinux/biglinux-settings/main.py"
+
+
+def _app_name():
+    """Translated application name."""
+    return _("BigLinux Settings")
 
 
 def _is_source_run(main_file=__file__):
@@ -75,8 +82,8 @@ class BiglinuxSettingsApp(Adw.Application):
 
     def _on_about(self, _action, _param):
         about = Adw.AboutDialog(
-            application_name=_("BigLinux Settings"),
-            application_icon="biglinux-settings",
+            application_name=_app_name(),
+            application_icon=APP_SLUG,
             version=APP_VERSION,
             developer_name="BigLinux Community",
             website="https://www.biglinux.com.br",
@@ -90,8 +97,8 @@ class BiglinuxSettingsApp(Adw.Application):
 class BiglinuxSettingsWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.add_css_class("biglinux-settings")
-        self.set_title(_("BigLinux Settings"))
+        self.add_css_class(APP_SLUG)
+        self.set_title(_app_name())
         # Fixed geometry: the default size is both minimum and maximum.
         self.set_default_size(WINDOW_WIDTH, WINDOW_HEIGHT)
         self.set_resizable(False)
@@ -151,7 +158,7 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         sidebar_header.set_show_end_title_buttons(False)
 
         # Centered title
-        title_label = Gtk.Label(label=_("BigLinux Settings"))
+        title_label = Gtk.Label(label=_app_name())
         title_label.add_css_class("heading")
         sidebar_header.set_title_widget(title_label)
 
@@ -389,7 +396,11 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         self.page_stack.set_visible(True)
         self.page_stack.set_visible_child_name(page_id)
 
-        # Reset filter on visible page
+        self._reset_page_filters(page_id)
+        self._sync_page_once(page_id)
+
+    def _reset_page_filters(self, page_id):
+        """Leave search mode on every page and clear the visible page filter."""
         for page_cfg in self.pages_config:
             instance = page_cfg.get("instance")
             if instance and hasattr(instance, "set_search_mode"):
@@ -401,15 +412,17 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
             ):
                 instance.filter_rows("")
 
-        # Lazy sync: only sync a page on first visit
-        if page_id not in self._synced_pages:
-            for page_cfg in self.pages_config:
-                if page_cfg["id"] == page_id:
-                    instance = page_cfg["instance"]
-                    if hasattr(instance, "sync_all_switches_async"):
-                        instance.sync_all_switches_async()
-                    self._synced_pages.add(page_id)
-                    break
+    def _sync_page_once(self, page_id):
+        """Lazy sync: only sync a page on first visit."""
+        if page_id in self._synced_pages:
+            return
+        for page_cfg in self.pages_config:
+            if page_cfg["id"] == page_id:
+                instance = page_cfg["instance"]
+                if hasattr(instance, "sync_all_switches_async"):
+                    instance.sync_all_switches_async()
+                self._synced_pages.add(page_id)
+                break
 
     def _show_search_results(self, search_text):
         """Show search results in a single compact container."""
