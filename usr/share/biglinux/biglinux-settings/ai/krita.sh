@@ -26,7 +26,7 @@ elif [ "${1:-}" == "toggle" ]; then
     metadataFile="$(mktemp)"
     archiveFile="$(mktemp --suffix=.zip)"
     trap 'rm -f "$metadataFile" "$archiveFile"' EXIT
-    curl --fail --silent --show-error --location \
+    curl --proto '=https' --proto-redir '=https' --fail --silent --show-error --location \
       https://api.github.com/repos/Acly/krita-ai-diffusion/releases/latest \
       --output "$metadataFile"
     mapfile -t assetData < <(python3 - "$metadataFile" <<'PY'
@@ -49,7 +49,7 @@ PY
       echo "Release asset or SHA-256 digest is unavailable" >&2
       exit 1
     fi
-    curl --fail --show-error --location "$diffusionUrl" --output "$archiveFile"
+    curl --proto '=https' --proto-redir '=https' --fail --show-error --location "$diffusionUrl" --output "$archiveFile"
     printf '%s  %s\n' "${diffusionDigest#sha256:}" "$archiveFile" | sha256sum --check --status
 
     pluginDir="$HOME/.local/share/krita/pykrita"

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-22 00:37-0300\n"
-"PO-Revision-Date: 2026-07-22 00:37-0300\n"
+"POT-Creation-Date: 2026-10-05 00:17-0300\n"
+"PO-Revision-Date: 2026-10-05 00:17-0300\n"
 "Last-Translator: Translation Automator <auto@translator.ai>\n"
 "Language-Team: Portuguese (Brazil) <pt-BR@li.org>\n"
 "Language: pt_BR\n"
@@ -92,8 +92,8 @@ msgid ""
 "LM Studio - A desktop app for exploring and running large language models "
 "locally."
 msgstr ""
-"LM Studio - Um aplicativo de desktop para explorar e executar grandes "
-"modelos de linguagem localmente."
+"LM Studio - Um aplicativo de desktop para explorar e executar grandes modelos"
+" de linguagem localmente."
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:85
 #: usr/share/biglinux/biglinux-settings/docker_page.py:194
@@ -105,8 +105,8 @@ msgid ""
 "Open-source, privacy-focused alternative to Google's NotebookLM. Requires "
 "Docker enabled."
 msgstr ""
-"Alternativa de código aberto e focada em privacidade ao NotebookLM do "
-"Google. Requer Docker ativado."
+"Alternativa de código aberto e focada em privacidade ao NotebookLM do Google."
+" Requer Docker ativado."
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:94
 #: usr/share/biglinux/biglinux-settings/docker_page.py:201
@@ -233,105 +233,104 @@ msgid ""
 "Consider using Vulkan, in many tests, Vulkan performed better than ROCm."
 msgstr ""
 "Servidor de IA local. Para GPUs AMD mais recentes, a partir da série 6000.\n"
-"Considere usar Vulkan, em muitos testes, o Vulkan teve melhor desempenho que "
-"o ROCm."
+"Considere usar Vulkan, em muitos testes, o Vulkan teve melhor desempenho que o ROCm."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:64
+#: usr/share/biglinux/biglinux-settings/base_page.py:66
 msgid "Close"
 msgstr "Fechar"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:82
+#: usr/share/biglinux/biglinux-settings/base_page.py:84
 #, python-brace-format
 msgid "Warning: {}"
 msgstr "Aviso: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:85
+#: usr/share/biglinux/biglinux-settings/base_page.py:87
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:86
+#: usr/share/biglinux/biglinux-settings/base_page.py:88
 msgid "Continue"
 msgstr "Continuar"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:232
+#: usr/share/biglinux/biglinux-settings/base_page.py:235
 msgid "Run"
 msgstr "Executar"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:238
+#: usr/share/biglinux/biglinux-settings/base_page.py:241
 #, python-brace-format
 msgid "{}: run action"
 msgstr "{}: executar ação"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:266
-#: usr/share/biglinux/biglinux-settings/base_page.py:268
-#: usr/share/biglinux/biglinux-settings/base_page.py:496
-#: usr/share/biglinux/biglinux-settings/base_page.py:544
+#: usr/share/biglinux/biglinux-settings/base_page.py:269
+#: usr/share/biglinux/biglinux-settings/base_page.py:271
+#: usr/share/biglinux/biglinux-settings/base_page.py:499
+#: usr/share/biglinux/biglinux-settings/base_page.py:552
 #, python-brace-format
 msgid "Script not found: {}"
 msgstr "Script não encontrado: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:277
-#: usr/share/biglinux/biglinux-settings/base_page.py:808
-#: usr/share/biglinux/biglinux-settings/devices_page.py:136
+#: usr/share/biglinux/biglinux-settings/base_page.py:280
+#: usr/share/biglinux/biglinux-settings/base_page.py:896
+#: usr/share/biglinux/biglinux-settings/devices_page.py:139
 msgid "Applying…"
 msgstr "Aplicando…"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:291
+#: usr/share/biglinux/biglinux-settings/base_page.py:294
 #, python-brace-format
 msgid "Action script {} failed: {}"
 msgstr "Script de ação {} falhou: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:296
+#: usr/share/biglinux/biglinux-settings/base_page.py:299
 #, python-brace-format
 msgid "Action script timeout: {}"
 msgstr "Tempo limite do script de ação: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:299
+#: usr/share/biglinux/biglinux-settings/base_page.py:302
 #, python-brace-format
 msgid "Error running action script {}: {}"
 msgstr "Erro ao executar o script de ação {}: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:309
+#: usr/share/biglinux/biglinux-settings/base_page.py:312
 msgid "Action completed successfully"
 msgstr "Ação concluída com sucesso"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:312
+#: usr/share/biglinux/biglinux-settings/base_page.py:315
 #, python-brace-format
 msgid "Action failed: {}"
 msgstr "Ação falhou: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:345
+#: usr/share/biglinux/biglinux-settings/base_page.py:348
 msgid "Recommended"
 msgstr "Recomendado"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:368
-#: usr/share/biglinux/biglinux-settings/base_page.py:456
+#: usr/share/biglinux/biglinux-settings/base_page.py:371
+#: usr/share/biglinux/biglinux-settings/base_page.py:459
 #, python-brace-format
 msgid "{}: additional information"
 msgstr "{}: informações adicionais"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:381
+#: usr/share/biglinux/biglinux-settings/base_page.py:384
 msgid "Learn more"
 msgstr "Saiba mais"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:387
+#: usr/share/biglinux/biglinux-settings/base_page.py:390
 #, python-brace-format
 msgid "{}: learn more"
 msgstr "{}: saiba mais"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:495
+#: usr/share/biglinux/biglinux-settings/base_page.py:498
 msgid "Unavailable: script not found."
 msgstr "Indisponível: script não encontrado."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:506
+#: usr/share/biglinux/biglinux-settings/base_page.py:514
 msgid "Enabled"
 msgstr "Ativado"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:508
+#: usr/share/biglinux/biglinux-settings/base_page.py:516
 msgid "Disabled"
 msgstr "Desativado"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:514
+#: usr/share/biglinux/biglinux-settings/base_page.py:522
 msgid ""
 "Enabled by system configuration (e.g., Real-Time Kernel) and cannot be "
 "changed here."
@@ -339,96 +338,96 @@ msgstr ""
 "Ativado pela configuração do sistema (ex.: Kernel em Tempo Real) e não pode "
 "ser alterado aqui."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:518
+#: usr/share/biglinux/biglinux-settings/base_page.py:526
 msgid "Unavailable in this desktop environment."
 msgstr "Indisponível neste ambiente de trabalho."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:520
+#: usr/share/biglinux/biglinux-settings/base_page.py:528
 msgid "Unavailable: script returned invalid output."
 msgstr "Indisponível: o script retornou uma saída inválida."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:522
+#: usr/share/biglinux/biglinux-settings/base_page.py:530
 #, python-brace-format
 msgid "output from script {}: {}"
 msgstr "saída do script {}: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:528
+#: usr/share/biglinux/biglinux-settings/base_page.py:536
 msgid "Unavailable: script returned an error."
 msgstr "Indisponível: o script retornou um erro."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:529
+#: usr/share/biglinux/biglinux-settings/base_page.py:537
 #, python-brace-format
 msgid "Error checking state: {}"
 msgstr "Erro ao verificar estado: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:532
+#: usr/share/biglinux/biglinux-settings/base_page.py:540
 msgid "Unavailable: failed to run script."
 msgstr "Indisponível: falha ao executar o script."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:533
-#: usr/share/biglinux/biglinux-settings/base_page.py:590
+#: usr/share/biglinux/biglinux-settings/base_page.py:541
+#: usr/share/biglinux/biglinux-settings/base_page.py:600
 #, python-brace-format
 msgid "Error running script {}: {}"
 msgstr "Erro ao executar o script {}: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:559
+#: usr/share/biglinux/biglinux-settings/base_page.py:569
 #, python-brace-format
 msgid "Script output: {}"
 msgstr "Saída do script: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:563
+#: usr/share/biglinux/biglinux-settings/base_page.py:573
 msgid "State changed successfully"
 msgstr "Estado alterado com sucesso"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:572
+#: usr/share/biglinux/biglinux-settings/base_page.py:582
 #, python-brace-format
 msgid "Script failed with exit code: {}"
 msgstr "Script falhou com código de saída: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:586
+#: usr/share/biglinux/biglinux-settings/base_page.py:596
 #, python-brace-format
 msgid "Script timeout: {}"
 msgstr "Tempo limite do script: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:620
+#: usr/share/biglinux/biglinux-settings/base_page.py:630
 #, python-brace-format
 msgid "{} sub-option available"
 msgid_plural "{} sub-options available"
 msgstr[0] "{} subopção disponível"
 msgstr[1] "{} subopções disponíveis"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:731
+#: usr/share/biglinux/biglinux-settings/base_page.py:817
 msgid "off"
 msgstr "desligado"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:731
+#: usr/share/biglinux/biglinux-settings/base_page.py:817
 msgid "on"
 msgstr "ligado"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:735
+#: usr/share/biglinux/biglinux-settings/base_page.py:822
 #, python-brace-format
 msgid "Changing {} to {}…"
 msgstr "Alterando {} para {}…"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:737
+#: usr/share/biglinux/biglinux-settings/base_page.py:825
 msgid "Undo"
 msgstr "Desfazer"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:768
+#: usr/share/biglinux/biglinux-settings/base_page.py:856
 msgid "Undo: reverted toggle"
 msgstr "Desfazer: alternância revertida"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:798
+#: usr/share/biglinux/biglinux-settings/base_page.py:886
 #, python-brace-format
 msgid "Changing {} to {}"
 msgstr "Alterando {} para {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:825
+#: usr/share/biglinux/biglinux-settings/base_page.py:920
 #, python-brace-format
 msgid "ERROR: Failed to change {} to {}"
 msgstr "ERRO: Falha ao alterar {} para {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:830
+#: usr/share/biglinux/biglinux-settings/base_page.py:925
 #, python-brace-format
 msgid "Failed to change setting: {}"
 msgstr "Falha ao alterar configuração: {}"
@@ -456,7 +455,7 @@ msgstr ""
 "dependências."
 
 #: usr/share/biglinux/biglinux-settings/devices_page.py:34
-#: usr/share/biglinux/biglinux-settings/main.py:276
+#: usr/share/biglinux/biglinux-settings/main.py:289
 msgid "Devices"
 msgstr "Dispositivos"
 
@@ -506,32 +505,32 @@ msgid "Connect or disconnect network devices."
 msgstr "Conectar ou desconectar dispositivos de rede."
 
 #: usr/share/biglinux/biglinux-settings/devices_page.py:99
-#: usr/share/biglinux/biglinux-settings/devices_page.py:157
+#: usr/share/biglinux/biglinux-settings/devices_page.py:160
 #, python-brace-format
 msgid "{} — {}"
 msgstr "{} — {}"
 
-#: usr/share/biglinux/biglinux-settings/devices_page.py:113
+#: usr/share/biglinux/biglinux-settings/devices_page.py:116
 #, python-brace-format
 msgid "{}: toggle connection"
 msgstr "{}: alternar conexão"
 
-#: usr/share/biglinux/biglinux-settings/devices_page.py:155
+#: usr/share/biglinux/biglinux-settings/devices_page.py:158
 msgid "connected"
 msgstr "conectado"
 
-#: usr/share/biglinux/biglinux-settings/devices_page.py:155
+#: usr/share/biglinux/biglinux-settings/devices_page.py:158
 msgid "disconnected"
 msgstr "desconectado"
 
-#: usr/share/biglinux/biglinux-settings/devices_page.py:165
+#: usr/share/biglinux/biglinux-settings/devices_page.py:168
 #, python-brace-format
 msgid "Failed to change network device: {}"
 msgstr "Falha ao alterar dispositivo de rede: {}"
 
 #: usr/share/biglinux/biglinux-settings/docker_page.py:15
 #: usr/share/biglinux/biglinux-settings/docker_page.py:51
-#: usr/share/biglinux/biglinux-settings/main.py:288
+#: usr/share/biglinux/biglinux-settings/main.py:301
 msgid "Docker"
 msgstr "Docker"
 
@@ -761,84 +760,84 @@ msgstr ""
 msgid "Install the open-source alternative to Google's NotebookLM."
 msgstr "Instale a alternativa de código aberto ao Google NotebookLM."
 
-#: usr/share/biglinux/biglinux-settings/main.py:68
-#: usr/share/biglinux/biglinux-settings/main.py:83
-#: usr/share/biglinux/biglinux-settings/main.py:141
+#: usr/share/biglinux/biglinux-settings/main.py:78
+#: usr/share/biglinux/biglinux-settings/main.py:94
+#: usr/share/biglinux/biglinux-settings/main.py:154
 msgid "BigLinux Settings"
 msgstr "Biglinux Settings"
 
-#: usr/share/biglinux/biglinux-settings/main.py:75
+#: usr/share/biglinux/biglinux-settings/main.py:85
 msgid "BigLinux Community"
 msgstr "Biglinux Community"
 
-#: usr/share/biglinux/biglinux-settings/main.py:178
+#: usr/share/biglinux/biglinux-settings/main.py:191
 msgid "Search..."
 msgstr "Pesquisar..."
 
-#: usr/share/biglinux/biglinux-settings/main.py:184
+#: usr/share/biglinux/biglinux-settings/main.py:197
 msgid "Search settings"
 msgstr "Pesquisar configurações"
 
-#: usr/share/biglinux/biglinux-settings/main.py:191
-#: usr/share/biglinux/biglinux-settings/main.py:194
+#: usr/share/biglinux/biglinux-settings/main.py:204
+#: usr/share/biglinux/biglinux-settings/main.py:207
 msgid "Toggle navigation sidebar"
 msgstr "Alternar barra de navegação lateral"
 
-#: usr/share/biglinux/biglinux-settings/main.py:201
+#: usr/share/biglinux/biglinux-settings/main.py:214
 msgid "About"
 msgstr "Sobre"
 
-#: usr/share/biglinux/biglinux-settings/main.py:205
-#: usr/share/biglinux/biglinux-settings/main.py:208
+#: usr/share/biglinux/biglinux-settings/main.py:218
+#: usr/share/biglinux/biglinux-settings/main.py:221
 msgid "Main Menu"
 msgstr "Menu Principal"
 
-#: usr/share/biglinux/biglinux-settings/main.py:258
+#: usr/share/biglinux/biglinux-settings/main.py:271
 #: usr/share/biglinux/biglinux-settings/system_page.py:13
 msgid "System"
 msgstr "Sistema"
 
-#: usr/share/biglinux/biglinux-settings/main.py:264
+#: usr/share/biglinux/biglinux-settings/main.py:277
 #: usr/share/biglinux/biglinux-settings/usability_page.py:12
 msgid "Usability"
 msgstr "Usabilidade"
 
-#: usr/share/biglinux/biglinux-settings/main.py:270
+#: usr/share/biglinux/biglinux-settings/main.py:283
 msgid "PreLoad"
 msgstr "PreLoad"
 
-#: usr/share/biglinux/biglinux-settings/main.py:282
+#: usr/share/biglinux/biglinux-settings/main.py:295
 msgid "A.I."
 msgstr "I.A."
 
-#: usr/share/biglinux/biglinux-settings/main.py:294
+#: usr/share/biglinux/biglinux-settings/main.py:307
 msgid "Developer"
 msgstr "Desenvolvedor"
 
-#: usr/share/biglinux/biglinux-settings/main.py:300
+#: usr/share/biglinux/biglinux-settings/main.py:313
 #: usr/share/biglinux/biglinux-settings/performance_page.py:15
 msgid "Performance"
 msgstr "Desempenho"
 
-#: usr/share/biglinux/biglinux-settings/main.py:306
+#: usr/share/biglinux/biglinux-settings/main.py:319
 msgid "Suspend"
 msgstr "Suspender"
 
-#: usr/share/biglinux/biglinux-settings/main.py:441
+#: usr/share/biglinux/biglinux-settings/main.py:467
 msgid "Open setting"
 msgstr "Abrir configuração"
 
-#: usr/share/biglinux/biglinux-settings/main.py:446
+#: usr/share/biglinux/biglinux-settings/main.py:472
 #, python-brace-format
 msgid "Open {} setting"
 msgstr "Abrir configuração de {}"
 
-#: usr/share/biglinux/biglinux-settings/main.py:515
+#: usr/share/biglinux/biglinux-settings/main.py:543
 msgid "Dismiss"
 msgstr "Dispensar"
 
-#: usr/share/biglinux/biglinux-settings/performance/meltdownMitigationsRun.sh:33
-#: usr/share/biglinux/biglinux-settings/performance/noWatchdogRun.sh:33
+#: usr/share/biglinux/biglinux-settings/performance/meltdownMitigationsRun.sh:129
+#: usr/share/biglinux/biglinux-settings/performance/noWatchdogRun.sh:129
 msgid "Already enabled. No changes made."
 msgstr "Já ativado. Nenhuma alteração feita."
 
@@ -864,8 +863,8 @@ msgstr "Desempenho Máximo da CPU"
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:34
 msgid ""
-"Forces maximum processor performance mode. Ensures the processor uses "
-"maximum frequency."
+"Forces maximum processor performance mode. Ensures the processor uses maximum"
+" frequency."
 msgstr ""
 "Força o modo de desempenho máximo do processador. Garante que o processador "
 "use a frequência máxima."
@@ -886,8 +885,8 @@ msgstr "Descarregar Monitor S.M.A.R.T"
 #: usr/share/biglinux/biglinux-settings/performance_page.py:52
 msgid "Disables S.M.A.R.T disk monitoring. Reduces disk I/O and CPU usage."
 msgstr ""
-"Desativa o monitoramento de disco S.M.A.R.T. Reduz o uso de E/S do disco e "
-"da CPU."
+"Desativa o monitoramento de disco S.M.A.R.T. Reduz o uso de E/S do disco e da"
+" CPU."
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:60
 msgid "Meltdown Mitigations off"
@@ -916,15 +915,15 @@ msgid ""
 "Disables the hardware watchdog and TSC clocksource systems, maintaining high "
 "performance but removing automatic protections against system crashes."
 msgstr ""
-"Desativa os sistemas de watchdog de hardware e clocksource TSC, mantendo "
-"alto desempenho, mas removendo proteções automáticas contra travamentos do "
+"Desativa os sistemas de watchdog de hardware e clocksource TSC, mantendo alto"
+" desempenho, mas removendo proteções automáticas contra travamentos do "
 "sistema."
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:81
 msgid ""
 "This will disable the hardware watchdog. Your system will no longer "
-"automatically recover from certain types of crashes. Are you sure you want "
-"to continue?"
+"automatically recover from certain types of crashes. Are you sure you want to"
+" continue?"
 msgstr ""
 "Isso desabilitará o watchdog de hardware. Seu sistema não será mais capaz de "
 "se recuperar automaticamente de certos tipos de travamentos. Tem certeza de "
@@ -1090,8 +1089,8 @@ msgstr "Salvar/restaurar brilho ao suspender"
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:171
 msgid ""
-"Saves screen brightness and keyboard LEDs before suspending and restores "
-"them on resume."
+"Saves screen brightness and keyboard LEDs before suspending and restores them"
+" on resume."
 msgstr ""
 "Salva o brilho da tela e LEDs do teclado antes de suspender e os restaura ao "
 "retomar."
@@ -1113,8 +1112,8 @@ msgid ""
 "Detects GNOME Shell extensions in error state after resume and automatically "
 "restarts them."
 msgstr ""
-"Detecta extensões do GNOME Shell em estado de erro após retomar e as "
-"reinicia automaticamente."
+"Detecta extensões do GNOME Shell em estado de erro após retomar e as reinicia"
+" automaticamente."
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:200
 msgid "Lid Switch"
@@ -1133,8 +1132,8 @@ msgstr ""
 msgid ""
 "Keeps the session and network active when the lid is closed on AC power."
 msgstr ""
-"Mantém a sessão e a rede ativas quando a tampa está fechada e o notebook "
-"está conectado à tomada."
+"Mantém a sessão e a rede ativas quando a tampa está fechada e o notebook está"
+" conectado à tomada."
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:216
 msgid ""
@@ -1143,9 +1142,9 @@ msgid ""
 "closed."
 msgstr ""
 "Isso impede que o fechamento da tampa acione a suspensão e o bloqueio. O "
-"bloqueio automático por inatividade continua sendo uma configuração "
-"separada. Mantenha o notebook bem ventilado enquanto ele estiver funcionando "
-"com a tampa fechada."
+"bloqueio automático por inatividade continua sendo uma configuração separada."
+" Mantenha o notebook bem ventilado enquanto ele estiver funcionando com a "
+"tampa fechada."
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:224
 msgid "Keep running with the lid closed on battery"
@@ -1155,8 +1154,8 @@ msgstr "Continuar funcionando com a tampa fechada ao usar a bateria"
 msgid ""
 "Keeps the session and network active when the lid is closed on battery power."
 msgstr ""
-"Mantém a sessão e a rede ativas quando a tampa está fechada e o notebook "
-"está usando a bateria."
+"Mantém a sessão e a rede ativas quando a tampa está fechada e o notebook está"
+" usando a bateria."
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:232
 msgid ""
@@ -1164,8 +1163,8 @@ msgid ""
 "remains separate, and the 20% critical battery policy still applies."
 msgstr ""
 "Isso impede que o fechamento da tampa acione a suspensão e o bloqueio. O "
-"bloqueio automático por inatividade continua sendo uma configuração "
-"separada, e a política de bateria crítica em 20% continua sendo aplicada."
+"bloqueio automático por inatividade continua sendo uma configuração separada,"
+" e a política de bateria crítica em 20% continua sendo aplicada."
 
 #: usr/share/biglinux/biglinux-settings/system_page.py:13
 msgid "General system settings."
@@ -1230,32 +1229,44 @@ msgstr ""
 "Estado inicial do NumLock. Ignorado se o login automático estiver ativado."
 
 #: usr/share/biglinux/biglinux-settings/usability_page.py:28
+msgid "Keyboard Light"
+msgstr "Luz do teclado"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:30
+msgid ""
+"Keep the keyboard backlight on. For keyboards whose light is controlled by "
+"the Scroll Lock LED."
+msgstr ""
+"Mantém a iluminação do teclado acesa. Para teclados cuja luz é controlada "
+"pelo LED do Scroll Lock."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:39
 msgid "Window Button On Left Side"
 msgstr "Botões da janela no lado esquerdo"
 
-#: usr/share/biglinux/biglinux-settings/usability_page.py:29
+#: usr/share/biglinux/biglinux-settings/usability_page.py:40
 msgid "Maximize, minimize, and close buttons on the left side of the window."
 msgstr "Botões de maximizar, minimizar e fechar no lado esquerdo da janela."
 
-#: usr/share/biglinux/biglinux-settings/usability_page.py:37
+#: usr/share/biglinux/biglinux-settings/usability_page.py:48
 msgid "KZones"
 msgstr "KZones"
 
-#: usr/share/biglinux/biglinux-settings/usability_page.py:39
+#: usr/share/biglinux/biglinux-settings/usability_page.py:50
 msgid "Enable window tiling zones for the KDE Plasma desktop."
 msgstr "Ativar zonas de mosaico de janelas para a área de trabalho KDE Plasma."
 
-#: usr/share/biglinux/biglinux-settings/usability_page.py:48
+#: usr/share/biglinux/biglinux-settings/usability_page.py:59
 msgid "Recent Files & Locations"
 msgstr "Arquivos e Locais Recentes"
 
-#: usr/share/biglinux/biglinux-settings/usability_page.py:50
+#: usr/share/biglinux/biglinux-settings/usability_page.py:61
 msgid ""
-"Restores the 'Recent Files' and 'Recent Locations' functionality that "
-"appears empty in Dolphin and the Application Menu."
+"Restores the 'Recent Files' and 'Recent Locations' functionality that appears"
+" empty in Dolphin and the Application Menu."
 msgstr ""
-"Restaura a funcionalidade 'Arquivos Recentes' e 'Locais Recentes' que "
-"aparece vazia no Dolphin e no Menu de Aplicativos."
+"Restaura a funcionalidade 'Arquivos Recentes' e 'Locais Recentes' que aparece"
+" vazia no Dolphin e no Menu de Aplicativos."
 
 #~ msgid "Never suspend while plugged in"
 #~ msgstr "Nunca suspender enquanto estiver na tomada"
@@ -1267,11 +1278,11 @@ msgstr ""
 #~ msgstr "Suspender ao fechar a tampa (energia CA)"
 
 #~ msgid ""
-#~ "Some systems do not suspend when on AC power. This forces suspend when "
-#~ "the lid is closed."
+#~ "Some systems do not suspend when on AC power. This forces suspend when the "
+#~ "lid is closed."
 #~ msgstr ""
-#~ "Alguns sistemas não suspendem quando conectados à energia CA. Isso força "
-#~ "a suspensão ao fechar a tampa."
+#~ "Alguns sistemas não suspendem quando conectados à energia CA. Isso força a "
+#~ "suspensão ao fechar a tampa."
 
 #, python-brace-format
 #~ msgid "{} sub-options available"
@@ -1338,12 +1349,10 @@ msgstr ""
 #~ "IA Generativa para o Krita foi instalada com sucesso.\n"
 #~ "\n"
 #~ "Abra o Krita, abra um desenho existente ou crie um novo.\n"
-#~ "No painel superior, vá em Configurações > Painéis > marque a caixa AI "
-#~ "Image Generation.\n"
+#~ "No painel superior, vá em Configurações > Painéis > marque a caixa AI Image Generation.\n"
 #~ "\n"
 #~ "Na janela que abrir no canto inferior direito.\n"
-#~ "Clique em Configurar > Servidor Gerenciado Local, escolha sua GPU ou CPU, "
-#~ "escolha o modelo em Workloads e clique em Instalar."
+#~ "Clique em Configurar > Servidor Gerenciado Local, escolha sua GPU ou CPU, escolha o modelo em Workloads e clique em Instalar."
 
 #~ msgid "Krita Install"
 #~ msgstr "Instalação do Krita"
@@ -1382,8 +1391,7 @@ msgstr ""
 #~ msgstr "Falha ao instalar o LM Studio!"
 
 #~ msgid "Ollama server is running.\\nAddress: http://localhost:11434"
-#~ msgstr ""
-#~ "O servidor Ollama está em execução.\\nEndereço: http://localhost:11434"
+#~ msgstr "O servidor Ollama está em execução.\\nEndereço: http://localhost:11434"
 
 #~ msgid "Ollama ROCm Install"
 #~ msgstr "Instalação do Ollama ROCm"
@@ -1545,11 +1553,11 @@ msgstr ""
 
 #, sh-format
 #~ msgid ""
-#~ "$title installed successfully!\\n\\nConfigured on port $port, to access "
-#~ "use $url"
+#~ "$title installed successfully!\\n\\nConfigured on port $port, to access use "
+#~ "$url"
 #~ msgstr ""
-#~ "$title instalado com sucesso!\\n\\nConfigurado na porta $port, para "
-#~ "acessar use $url"
+#~ "$title instalado com sucesso!\\n\\nConfigurado na porta $port, para acessar "
+#~ "use $url"
 
 #, sh-format
 #~ msgid "$package removed successfully!"
@@ -1580,11 +1588,10 @@ msgstr ""
 #~ msgid "Applying, please wait..."
 #~ msgstr "Aplicando, aguarde..."
 
-#~ msgid ""
-#~ "GRUB updated successfully!\\nRestart your computer for it to take effect."
+#~ msgid "GRUB updated successfully!\\nRestart your computer for it to take effect."
 #~ msgstr ""
-#~ "GRUP atualizado com sucesso!\\nReinicie o computador para que as "
-#~ "alterações tenham efeito."
+#~ "GRUP atualizado com sucesso!\\nReinicie o computador para que as alterações "
+#~ "tenham efeito."
 
 #~ msgid "An error occurred while updating GRUB."
 #~ msgstr "Ocorreu um erro ao atualizar o GRUB."
@@ -1620,18 +1627,18 @@ msgstr ""
 #~ msgstr "Desativando Arquivos Recentes, aguarde..."
 
 #~ msgid ""
-#~ "Recent Files successfully enabled!\\nYou need to close and reopen Dolphin "
-#~ "for it to take effect."
+#~ "Recent Files successfully enabled!\\nYou need to close and reopen Dolphin for"
+#~ " it to take effect."
 #~ msgstr ""
 #~ "Arquivos Recentes ativados com sucesso!\\nVocê precisa fechar e reabrir o "
 #~ "Dolphin para que a alteração tenha efeito."
 
 #~ msgid ""
-#~ "Recent Files successfully disable!\\nYou need to close and reopen Dolphin "
-#~ "for it to take effect."
+#~ "Recent Files successfully disable!\\nYou need to close and reopen Dolphin for"
+#~ " it to take effect."
 #~ msgstr ""
-#~ "Arquivos Recentes desativados com sucesso!\\nVocê precisa fechar e "
-#~ "reabrir o Dolphin para que a alteração tenha efeito."
+#~ "Arquivos Recentes desativados com sucesso!\\nVocê precisa fechar e reabrir o "
+#~ "Dolphin para que a alteração tenha efeito."
 
 #~ msgid "Failed to activate Recent Files!"
 #~ msgstr "Falha ao ativar Arquivos Recentes!"
@@ -1639,8 +1646,7 @@ msgstr ""
 #~ msgid "OpenClaude Install"
 #~ msgstr "Instalar OpenClaude"
 
-#~ msgid ""
-#~ "Installing OpenClaude (nodejs, npm, ripgrep required), please wait..."
+#~ msgid "Installing OpenClaude (nodejs, npm, ripgrep required), please wait..."
 #~ msgstr "Instalando OpenClaude (requer nodejs, npm, ripgrep), aguarde..."
 
 #~ msgid "OpenClaude Uninstall"
@@ -1653,8 +1659,8 @@ msgstr ""
 #~ "OpenClaude installed successfully!\\n\\nRun 'openclaude' in a terminal to "
 #~ "start."
 #~ msgstr ""
-#~ "OpenClaude instalado com sucesso!\\n\\nExecute 'openclaude' em um "
-#~ "terminal para iniciar."
+#~ "OpenClaude instalado com sucesso!\\n\\nExecute 'openclaude' em um terminal "
+#~ "para iniciar."
 
 #~ msgid "OpenClaude removed successfully!"
 #~ msgstr "OpenClaude removido com sucesso!"

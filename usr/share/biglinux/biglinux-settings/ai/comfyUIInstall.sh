@@ -30,7 +30,7 @@ case "$function" in
     }
     trap cleanup EXIT
     metadataFile="$tempDir/release.json"
-    curl --fail --silent --show-error --location \
+    curl --proto '=https' --proto-redir '=https' --fail --silent --show-error --location \
       https://api.github.com/repos/Comfy-Org/ComfyUI/releases/latest \
       --output "$metadataFile"
     releaseTag="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1], encoding="utf-8"))["tag_name"])' "$metadataFile")"

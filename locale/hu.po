@@ -7,461 +7,119 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-01 19:09+0000\n"
-"PO-Revision-Date: 2026-07-22 00:37-0300\n"
+"POT-Creation-Date: 2026-10-05 00:17-0300\n"
+"PO-Revision-Date: 2026-10-05 00:17-0300\n"
 "Last-Translator: BigLinux Community <community@biglinux.com.br>\n"
 "Language-Team: BigLinux Community (hu)\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: attranslate\n"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 49
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 120
-msgid "BigLinux Settings"
-msgstr "BigLinux Beállítások"
+#: usr/share/biglinux/biglinux-settings/ai/comfyUI.sh:23
+msgid "AMD/Nvidia GPU not found!"
+msgstr "AMD/Nvidia GPU nem található!"
 
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 49
-msgid "BigLinux Community"
-msgstr "BigLinux Közösség"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 144
-msgid "Search..."
-msgstr "Keresés..."
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 185
-msgid "Search settings"
-msgstr "Keresési beállítások"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 192
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 195
-msgid "Toggle navigation sidebar"
-msgstr "Navigációs sáv váltása"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 202
-msgid "About"
-msgstr "A programról"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 206
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 209
-msgid "Main Menu"
-msgstr "Főmenü"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 108
-msgid "System"
-msgstr "Rendszer"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 107
-msgid "Usability"
-msgstr "Használhatóság"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 158
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 167
-msgid "PreLoad"
-msgstr "Előbetöltés"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/dispositivos_page.py, line: 25
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 116
-msgid "Devices"
-msgstr "Eszközök"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 161
-msgid "A.I."
-msgstr "Mesterséges intelligencia."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 204
-msgid "Docker"
-msgstr "Docker"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 315
-msgid "Developer"
-msgstr "Fejlesztő"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/usability/gamemode_dialog.py, line: 204
-msgid "Performance"
-msgstr "Teljesítmény"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 302
-msgid "Suspend"
-msgstr "Felfüggesztés"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 441
-msgid "Open setting"
-msgstr "Beállítás megnyitása"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 446
-#, python-brace-format
-msgid "Open {} setting"
-msgstr "{} beállítás megnyitása"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 469
-msgid "Dismiss"
-msgstr "Elutasít"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 72
-msgid "Automatic Suspend"
-msgstr "Automatikus felfüggesztés"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 73
-msgid "Choose when inactivity and low battery may suspend the system."
+#: usr/share/biglinux/biglinux-settings/ai/ollamaUpdateRun.sh:18
+msgid "No Ollama packages are installed. Enable an Ollama variant first."
 msgstr ""
-"Válassza ki, mikor függesztheti fel a rendszert a tétlenség és az alacsony "
-"akkumulátorszint."
-
-msgid "Disable idle suspend while plugged in"
-msgstr ""
-"Az inaktivitás miatti felfüggesztés letiltása hálózati tápellátás esetén"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 81
-msgid "Disables automatic suspend caused by inactivity on AC power."
-msgstr ""
-"Letiltja a tétlenség miatti automatikus felfüggesztést hálózati áramról "
-"működve."
-
-msgid "Disable idle suspend on battery"
-msgstr ""
-"Az inaktivitás miatti felfüggesztés letiltása akkumulátoros működés esetén"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 89
-msgid "Keeps the system awake on battery until a critical level is reached."
-msgstr ""
-"Ébren tartja a rendszert akkumulátorról, amíg el nem éri a kritikus szintet."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 96
-msgid "Suspend only when battery reaches 20%"
-msgstr "Csak akkor függessze fel, ha az akkumulátor eléri a 20%-ot"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 98
-msgid ""
-"Disables idle suspend on battery and suspends automatically when the charge "
-"reaches 20%."
-msgstr ""
-"Letiltja a tétlenség miatti felfüggesztést akkumulátorról, és automatikusan "
-"felfüggeszt, amikor a töltöttség eléri a 20%-ot."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 104
-msgid ""
-"This uses UPower's critical battery policy. Low and critical warnings occur "
-"before the suspend action at 20%."
-msgstr ""
-"Ez az UPower kritikus akkumulátor-kezelési szabályzatát használja. Az "
-"alacsony és kritikus figyelmeztetések a 20%-os felfüggesztési művelet előtt "
-"következnek be."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 75
-msgid "Sleep Mode"
-msgstr "Alvó üzemmód"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 76
-msgid "Configure how the system suspends."
-msgstr "Állítsa be, hogyan felfüggeszti a rendszert."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 83
-msgid "Use s2idle (light sleep)"
-msgstr "Használja a s2idle-t (könnyű alvás)"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 85
-msgid ""
-"Uses a lighter sleep mode that preserves Fn keys and device state. "
-"Recommended for ASUS notebooks."
-msgstr ""
-"Könnyebb alvó üzemmódot használ, amely megőrzi az Fn billentyűket és az "
-"eszköz állapotát. Ajánlott ASUS noteszgépekhez."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 91
-msgid ""
-"S3 deep sleep can cause the Embedded Controller to stop generating hotkey "
-"interrupts. s2idle keeps the EC powered, avoiding this issue at a small cost "
-"in battery consumption."
-msgstr ""
-"Az S3 mély alvás megakadályozhatja, hogy a Beágyazott Vezérlő forróbillentyű "
-"megszakításokat generáljon. Az s2idle fenntartja az EC áramellátását, "
-"elkerülve ezt a problémát, kis költséggel az akkumulátor-fogyasztásban."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 100
-msgid "WiFi"
-msgstr "WiFi"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 101
-msgid "Prevent WiFi issues after suspend."
-msgstr "Megakadályozza a WiFi problémákat a felfüggesztés után."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 108
-msgid "Protect WiFi on suspend"
-msgstr "Védd a WiFi-t szüneteltetéskor"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 110
-msgid ""
-"Prevents the Realtek WiFi chip from fully powering off (d3cold), avoiding "
-"connection loss after resume."
-msgstr ""
-"Megakadályozza a Realtek WiFi chip teljes kikapcsolását (d3cold), elkerülve "
-"a kapcsolat megszakadását a folytatás után."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 116
-msgid ""
-"Some Realtek RTL8852BE/CE chips fail to reinitialize after d3cold power "
-"gating. This keeps the chip in d3hot (PCIe link alive) during suspend."
-msgstr ""
-"Néhány Realtek RTL8852BE/CE chip nem tud újra inicializálódni a d3cold "
-"áramellátás lekapcsolása után. Ez a chipet d3hot állapotban (PCIe kapcsolat "
-"aktív) tartja a felfüggesztés alatt."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 124
-msgid "Display and Keyboard"
-msgstr "Kijelző és Billentyűzet"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 125
-msgid "Preserve brightness and LED state across suspend."
-msgstr "Tartsa meg a fényerőt és az LED állapotát a felfüggesztés alatt."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 132
-msgid "Save/restore brightness on suspend"
-msgstr "Fényerő mentése/visszaállítása felfüggesztéskor"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 134
-msgid ""
-"Saves screen brightness and keyboard LEDs before suspending and restores "
-"them on resume."
-msgstr ""
-"Mentés a képernyő fényerejét és a billentyűzet LED-jeit felfüggesztés előtt, "
-"és visszaállítja azokat a folytatáskor."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 144
-msgid "GNOME Shell Extensions"
-msgstr "GNOME Shell kiterjesztések"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 145
-msgid "Automatic health check after resume."
-msgstr "Automatikus egészségellenőrzés ébresztés után."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 152
-msgid "Extension health monitor"
-msgstr "Bővítmény állapotfigyelő"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 154
-msgid ""
-"Detects GNOME Shell extensions in error state after resume and automatically "
-"restarts them."
-msgstr ""
-"Észleli a GNOME Shell kiterjesztéseket hibás állapotban a folytatás után, és "
-"automatikusan újraindítja őket."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 163
-msgid "Lid Switch"
-msgstr "Fedélkapcsoló"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 164
-msgid "Laptop lid close behavior."
-msgstr "Laptop fedél zárási viselkedése."
-
-msgid "Keep running with the lid closed while plugged in"
-msgstr "Működés folytatása lehajtott fedéllel hálózati tápellátás esetén"
-
-msgid ""
-"Keeps the session and network active when the lid is closed on AC power."
-msgstr ""
-"Aktívan tartja a munkamenetet és a hálózati kapcsolatot, amikor a számítógép "
-"hálózati tápellátásról működik, és a fedele le van hajtva."
-
-msgid ""
-"This prevents lid-triggered suspend and locking. Automatic idle locking "
-"remains separate. Keep the notebook ventilated while it runs with the lid "
-"closed."
-msgstr ""
-"Ez megakadályozza, hogy a számítógép a fedél lehajtásakor felfüggesztett "
-"állapotba kerüljön vagy zárolódjon. Az inaktivitás miatti automatikus "
-"zárolás továbbra is külön beállítás. Gondoskodjon a laptop megfelelő "
-"szellőzéséről, amíg lehajtott fedéllel működik."
-
-msgid "Keep running with the lid closed on battery"
-msgstr "Működés folytatása lehajtott fedéllel akkumulátoros működés esetén"
-
-msgid ""
-"Keeps the session and network active when the lid is closed on battery power."
-msgstr ""
-"Aktívan tartja a munkamenetet és a hálózati kapcsolatot, amikor a számítógép "
-"akkumulátorról működik, és a fedele le van hajtva."
-
-msgid ""
-"This prevents lid-triggered suspend and locking. Automatic idle locking "
-"remains separate, and the 20% critical battery policy still applies."
-msgstr ""
-"Ez megakadályozza, hogy a számítógép a fedél lehajtásakor felfüggesztett "
-"állapotba kerüljön vagy zárolódjon. Az inaktivitás miatti automatikus "
-"zárolás továbbra is külön beállítás, és a 20%-os kritikus akkumulátorszintre "
-"vonatkozó szabály továbbra is érvényes."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 26
-msgid "General system settings."
-msgstr "Általános rendszerbeállítások."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 21
-msgid "SSH"
-msgstr "SSH"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 22
-msgid "Enable remote access via ssh."
-msgstr "Engedélyezze a távoli hozzáférést ssh-n keresztül."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 27
-#, python-brace-format
-msgid "SSH Address: {}"
-msgstr "SSH cím: {}"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 147
-msgid "SSH always on"
-msgstr "SSH mindig be van kapcsolva"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 149
-msgid "Turn on ssh remote access at boot."
-msgstr "Kapcsolja be az SSH távoli hozzáférést indításkor."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 162
-msgid "Fast Grub"
-msgstr "Gyors Grub"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 163
-msgid "Decreases grub display time."
-msgstr "Csökkenti a grub megjelenítési időt."
-
-# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 47
-msgid "Boot messages"
-msgstr "Rendszerindítási üzenetek"
-
-# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 48
-msgid "Show system messages below the boot animation."
-msgstr "Rendszerüzenetek megjelenítése a rendszerindító animáció alatt."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 170
-msgid "Auto-mount Partitions"
-msgstr "Automatikus csatolás partíciók"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 171
-msgid "Auto mount partitions in internal disks on boot."
-msgstr "Automatikus partíciók csatolása a belső lemezeken indításkor."
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 11
-msgid "AI Coding Assistants"
-msgstr "AI kódolási segédeszközök"
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 12
-msgid "Open-source coding agents powered by language models."
-msgstr "Nyílt forráskódú kódolási ügynökök, nyelvi modellek által működtetve."
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 21
-msgid "OpenClaude"
-msgstr "OpenClaude"
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 23
-msgid ""
-"Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
-"models. Installs nodejs, npm and ripgrep as dependencies."
-msgstr ""
-"Nyílt forráskódú kódolási ügynök CLI OpenAI, Gemini, DeepSeek, Ollama és "
-"200+ modellhez. Telepíti a nodejs, npm és ripgrep függőségeket."
+"Nincsenek telepítve Ollama-csomagok. Először engedélyezzen egy Ollama-"
+"változatot."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 30
+#: usr/share/biglinux/biglinux-settings/ai_page.py:15
 msgid "AI Interfaces"
 msgstr "AI Felületek"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 16
+#: usr/share/biglinux/biglinux-settings/ai_page.py:16
 msgid "Graphical interface for artificial intelligence."
 msgstr "Grafikus felhasználói felület mesterséges intelligencia számára."
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 23
+#: usr/share/biglinux/biglinux-settings/ai_page.py:23
 msgid "Ollama Server"
 msgstr "Ollama Szerver"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 23
+#: usr/share/biglinux/biglinux-settings/ai_page.py:24
 msgid "Choose which Ollama server is best for your hardware."
 msgstr "Válaszd ki, melyik Ollama szerver a legjobb a hardveredhez."
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
+#: usr/share/biglinux/biglinux-settings/ai_page.py:32
 msgid "Update Ollama"
 msgstr "Ollama frissítése"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
+#: usr/share/biglinux/biglinux-settings/ai_page.py:33
 msgid "Update the installed Ollama packages to the latest version."
 msgstr "A telepített Ollama-csomagok frissítése a legújabb verzióra."
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 36
+#: usr/share/biglinux/biglinux-settings/ai_page.py:36
 msgid "Update now"
 msgstr "Frissítés most"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
+#: usr/share/biglinux/biglinux-settings/ai_page.py:43
 msgid "Ollama Variants"
 msgstr "Ollama Változatok"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
+#: usr/share/biglinux/biglinux-settings/ai_page.py:44
 msgid "Select the variant that matches your GPU hardware."
 msgstr "Válaszd ki a változatot, amely megfelel a GPU hardverednek."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 46
+#: usr/share/biglinux/biglinux-settings/ai_page.py:51
 msgid "ChatAI"
 msgstr "ChatAI"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 47
+#: usr/share/biglinux/biglinux-settings/ai_page.py:52
 msgid "A variety of chats like Plasmoid for your KDE Plasma desktop."
 msgstr ""
 "Különböző csevegések, mint a Plasmoid, a KDE Plasma asztali környezetedhez."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 127
+#: usr/share/biglinux/biglinux-settings/ai_page.py:59
 msgid "Ollama LAB"
 msgstr "Ollama LAB"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 128
+#: usr/share/biglinux/biglinux-settings/ai_page.py:60
 msgid "Graphical interface for managing Ollama models and chat."
 msgstr "Grafikus felület az Ollama modellek és csevegés kezelésére."
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 56
+#: usr/share/biglinux/biglinux-settings/ai_page.py:67
 msgid "ChatBox"
 msgstr "Csevegőablak"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 136
+#: usr/share/biglinux/biglinux-settings/ai_page.py:68
 msgid "User-friendly Desktop Client App for AI Models/LLMs."
 msgstr "Felhasználóbarát Asztali Kliensek Alkalmazás AI Modellekhez/LLM-ekhez."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 143
+#: usr/share/biglinux/biglinux-settings/ai_page.py:75
 msgid "LM Studio"
 msgstr "LM Stúdió"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 144
+#: usr/share/biglinux/biglinux-settings/ai_page.py:77
 msgid ""
 "LM Studio - A desktop app for exploring and running large language models "
 "locally."
@@ -470,14 +128,17 @@ msgstr ""
 "futtatására."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 194
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 203
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 74
+#: usr/share/biglinux/biglinux-settings/ai_page.py:85
+#: usr/share/biglinux/biglinux-settings/docker_page.py:194
 msgid "Open Notebook"
 msgstr "Nyitott Jegyzetfüzet"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 87
+#: usr/share/biglinux/biglinux-settings/ai_page.py:87
 msgid ""
 "Open-source, privacy-focused alternative to Google's NotebookLM. Requires "
 "Docker enabled."
@@ -486,21 +147,27 @@ msgstr ""
 "NotebookLM-hez. Docker engedélyezése szükséges."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 201
+#: usr/share/biglinux/biglinux-settings/ai_page.py:94
+#: usr/share/biglinux/biglinux-settings/docker_page.py:201
 msgid "Open Notebook Server"
 msgstr "Open Notebook szerver megnyitása"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 95
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 202
+#: usr/share/biglinux/biglinux-settings/ai_page.py:95
+#: usr/share/biglinux/biglinux-settings/docker_page.py:202
 msgid "Start the Open Notebook server."
 msgstr "Az Open Notebook szerver elindítása."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 190
+#: usr/share/biglinux/biglinux-settings/ai_page.py:100
+#: usr/share/biglinux/biglinux-settings/docker_page.py:207
 #, python-brace-format
 msgid ""
 "Open Notebook is running.\n"
@@ -515,25 +182,30 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 87
+#: usr/share/biglinux/biglinux-settings/ai_page.py:107
 msgid "ComfyUI (GPU ONLY)"
 msgstr "ComfyUI (CSAK GPU)"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 88
+#: usr/share/biglinux/biglinux-settings/ai_page.py:108
 msgid "The most powerful and modular visual AI engine and application."
 msgstr "A legmodernebb és moduláris vizuális MI motor és alkalmazás."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 94
+#: usr/share/biglinux/biglinux-settings/ai_page.py:116
 msgid "ComfyUI Server"
 msgstr "ComfyUI Szerver"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
+#: usr/share/biglinux/biglinux-settings/ai_page.py:117
 msgid "Start the ComfyUI server."
 msgstr "Indítsa el a ComfyUI szervert."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 100
+#: usr/share/biglinux/biglinux-settings/ai_page.py:122
 #, python-brace-format
 msgid ""
 "ComfyUI server is running.\n"
@@ -548,11 +220,13 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 55
+#: usr/share/biglinux/biglinux-settings/ai_page.py:128
 msgid "OllamaCPU"
 msgstr "OllamaCPU"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 56
+#: usr/share/biglinux/biglinux-settings/ai_page.py:129
 msgid "Local AI server. For CPUs only."
 msgstr "Helyi AI szerver. Csak CPU-k számára."
 
@@ -564,6 +238,10 @@ msgstr "Helyi AI szerver. Csak CPU-k számára."
 # line: 95
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 113
+#: usr/share/biglinux/biglinux-settings/ai_page.py:132
+#: usr/share/biglinux/biglinux-settings/ai_page.py:152
+#: usr/share/biglinux/biglinux-settings/ai_page.py:172
+#: usr/share/biglinux/biglinux-settings/ai_page.py:194
 msgid ""
 "Ollama server is running.\n"
 "Address: http://localhost:11434"
@@ -579,6 +257,10 @@ msgstr ""
 # line: 99
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 117
+#: usr/share/biglinux/biglinux-settings/ai_page.py:136
+#: usr/share/biglinux/biglinux-settings/ai_page.py:156
+#: usr/share/biglinux/biglinux-settings/ai_page.py:176
+#: usr/share/biglinux/biglinux-settings/ai_page.py:198
 msgid "Share Ollama"
 msgstr "Ollama megosztása"
 
@@ -590,6 +272,10 @@ msgstr "Ollama megosztása"
 # line: 100
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 118
+#: usr/share/biglinux/biglinux-settings/ai_page.py:137
+#: usr/share/biglinux/biglinux-settings/ai_page.py:157
+#: usr/share/biglinux/biglinux-settings/ai_page.py:177
+#: usr/share/biglinux/biglinux-settings/ai_page.py:199
 msgid "Share ollama on the local network."
 msgstr "Ollama megosztása a helyi hálózaton."
 
@@ -601,6 +287,10 @@ msgstr "Ollama megosztása a helyi hálózaton."
 # line: 104
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 122
+#: usr/share/biglinux/biglinux-settings/ai_page.py:141
+#: usr/share/biglinux/biglinux-settings/ai_page.py:161
+#: usr/share/biglinux/biglinux-settings/ai_page.py:181
+#: usr/share/biglinux/biglinux-settings/ai_page.py:203
 #, python-brace-format
 msgid ""
 "Ollama server is running.\n"
@@ -611,32 +301,38 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 73
+#: usr/share/biglinux/biglinux-settings/ai_page.py:148
 msgid "Ollama Vulkan"
 msgstr "Ollama Vulkan"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 75
+#: usr/share/biglinux/biglinux-settings/ai_page.py:149
 msgid "Local AI server. For CPUs, AMD/Nvidia and integrated GPUs."
 msgstr "Helyi AI szerver. CPU-khoz, AMD/Nvidia és integrált GPU-khoz."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 109
+#: usr/share/biglinux/biglinux-settings/ai_page.py:168
 msgid "Ollama Nvidia CUDA"
 msgstr "Ollama Nvidia CUDA"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 110
+#: usr/share/biglinux/biglinux-settings/ai_page.py:169
 msgid "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
 msgstr ""
 "Helyi AI szerver. Újabb Nvidia GPU-khoz, a 2000-as sorozattól kezdődően."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 91
+#: usr/share/biglinux/biglinux-settings/ai_page.py:188
 msgid "Ollama AMD ROCm"
 msgstr "Ollama AMD ROCm"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 111
+#: usr/share/biglinux/biglinux-settings/ai_page.py:190
 msgid ""
 "Local AI server. For newer AMD GPUs, starting from the 6000 series.\n"
 "Consider using Vulkan, in many tests, Vulkan performed better than ROCm."
@@ -645,119 +341,516 @@ msgstr ""
 "meg a Vulkan használatát, sok tesztben a Vulkan jobban teljesített, mint a "
 "ROCm."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 14
-msgid "User and Visual system settings."
-msgstr "Felhasználói és vizuális rendszerbeállítások."
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 48
+#: usr/share/biglinux/biglinux-settings/base_page.py:66
+msgid "Close"
+msgstr "Bezárás"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 63
+#: usr/share/biglinux/biglinux-settings/base_page.py:84
+#, python-brace-format
+msgid "Warning: {}"
+msgstr "Figyelmeztetés: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 66
+#: usr/share/biglinux/biglinux-settings/base_page.py:87
+msgid "Cancel"
+msgstr "Mégse"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 67
+#: usr/share/biglinux/biglinux-settings/base_page.py:88
+msgid "Continue"
+msgstr "Folytatás"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 230
+#: usr/share/biglinux/biglinux-settings/base_page.py:235
+msgid "Run"
+msgstr "Futtatás"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 236
+#: usr/share/biglinux/biglinux-settings/base_page.py:241
+#, python-brace-format
+msgid "{}: run action"
+msgstr "{}: művelet futtatása"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 114
-msgid "NumLock"
-msgstr "NumLock"
-
+# 173
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 115
-msgid "Initial NumLock state. Ignored if autologin is enabled."
-msgstr ""
-"Kezdő NumLock állapot. Figyelmen kívül hagyva, ha az automatikus "
-"bejelentkezés engedélyezve van."
+# 199
+#: usr/share/biglinux/biglinux-settings/base_page.py:269
+#: usr/share/biglinux/biglinux-settings/base_page.py:271
+#: usr/share/biglinux/biglinux-settings/base_page.py:499
+#: usr/share/biglinux/biglinux-settings/base_page.py:552
+#, python-brace-format
+msgid "Script not found: {}"
+msgstr "A szkript nem található: {}"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 131
-msgid "Window Button On Left Side"
-msgstr "Ablak gomb bal oldalon"
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 626
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 136
+#: usr/share/biglinux/biglinux-settings/base_page.py:280
+#: usr/share/biglinux/biglinux-settings/base_page.py:896
+#: usr/share/biglinux/biglinux-settings/devices_page.py:139
+msgid "Applying…"
+msgstr "Alkalmazás…"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 132
-msgid "Maximize, minimize, and close buttons on the left side of the window."
-msgstr ""
-"Ablak bal oldalán található maximalizálás, minimalizálás és bezárás gombok."
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 289
+#: usr/share/biglinux/biglinux-settings/base_page.py:294
+#, python-brace-format
+msgid "Action script {} failed: {}"
+msgstr "A {} műveleti szkript sikertelen: {}"
 
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 294
+#: usr/share/biglinux/biglinux-settings/base_page.py:299
+#, python-brace-format
+msgid "Action script timeout: {}"
+msgstr "Action script timeout: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 297
+#: usr/share/biglinux/biglinux-settings/base_page.py:302
+#, python-brace-format
+msgid "Error running action script {}: {}"
+msgstr "Hiba a {} műveleti szkript futtatásakor: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 307
+#: usr/share/biglinux/biglinux-settings/base_page.py:312
+msgid "Action completed successfully"
+msgstr "Művelet sikeresen befejeződött"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 310
+#: usr/share/biglinux/biglinux-settings/base_page.py:315
+#, python-brace-format
+msgid "Action failed: {}"
+msgstr "Művelet sikertelen: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 215
+#: usr/share/biglinux/biglinux-settings/base_page.py:348
+msgid "Recommended"
+msgstr "Ajánlott"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 238
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 326
+#: usr/share/biglinux/biglinux-settings/base_page.py:371
+#: usr/share/biglinux/biglinux-settings/base_page.py:459
+#, python-brace-format
+msgid "{}: additional information"
+msgstr "{}: kiegészítő információ"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 251
+#: usr/share/biglinux/biglinux-settings/base_page.py:384
+msgid "Learn more"
+msgstr "Tudj meg többet"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 257
+#: usr/share/biglinux/biglinux-settings/base_page.py:390
+#, python-brace-format
+msgid "{}: learn more"
+msgstr "{}: további információk"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 72
-msgid "KZones"
-msgstr "KZones"
-
-# File: usr/share/biglinux/biglinux-settings/usability_page.py, line: 39
-msgid "Enable window tiling zones for the KDE Plasma desktop."
-msgstr "Engedélyezze az ablakcsempézés zónáit a KDE Plasma asztalhoz."
-
+# settings/system_usability_page.py, line: 206
 # File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 169
-msgid "Recent Files & Locations"
-msgstr "Legutóbbi fájlok és helyek"
+# settings/preload_page.py, line: 165
+#: usr/share/biglinux/biglinux-settings/base_page.py:498
+msgid "Unavailable: script not found."
+msgstr "Nem elérhető: a szkript nem található."
 
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 170
+# settings/system_usability_page.py, line: 218
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 177
+#: usr/share/biglinux/biglinux-settings/base_page.py:514
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 220
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 179
+#: usr/share/biglinux/biglinux-settings/base_page.py:516
+msgid "Disabled"
+msgstr "Letiltva"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 223
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 182
+#: usr/share/biglinux/biglinux-settings/base_page.py:522
 msgid ""
-"Restores the 'Recent Files' and 'Recent Locations' functionality that "
-"appears empty in Dolphin and the Application Menu."
+"Enabled by system configuration (e.g., Real-Time Kernel) and cannot be "
+"changed here."
 msgstr ""
-"Visszaállítja a 'Legutóbbi fájlok' és 'Legutóbbi helyek' funkciót, amely "
-"üresen jelenik meg a Dolphinban és az Alkalmazásmenüben."
+"A rendszerkonfiguráció engedélyezte (pl. Valós idejű kernel), és itt nem "
+"módosítható."
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 516
+#: usr/share/biglinux/biglinux-settings/base_page.py:526
+msgid "Unavailable in this desktop environment."
+msgstr "Nem elérhető ebben az asztali környezetben."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 225
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 184
+#: usr/share/biglinux/biglinux-settings/base_page.py:528
+msgid "Unavailable: script returned invalid output."
+msgstr "Nem elérhető: a szkript érvénytelen kimenetet adott vissza."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/base_page.py,
+# line: 261
+#: usr/share/biglinux/biglinux-settings/base_page.py:530
+#, python-brace-format
+msgid "output from script {}: {}"
+msgstr "A szkript kimenete {}: {}"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 229
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 188
+#: usr/share/biglinux/biglinux-settings/base_page.py:536
+msgid "Unavailable: script returned an error."
+msgstr "Nem elérhető: a szkript hibaüzenetet adott vissza."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 184
+#: usr/share/biglinux/biglinux-settings/base_page.py:537
+#, python-brace-format
+msgid "Error checking state: {}"
+msgstr "Hibaellenőrzési állapot: {}"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 233
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 192
+#: usr/share/biglinux/biglinux-settings/base_page.py:540
+msgid "Unavailable: failed to run script."
+msgstr "Nem elérhető: a szkript futtatása nem sikerült."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 193
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 220
+#: usr/share/biglinux/biglinux-settings/base_page.py:541
+#: usr/share/biglinux/biglinux-settings/base_page.py:600
+#, python-brace-format
+msgid "Error running script {}: {}"
+msgstr "Hiba a szkript futtatása közben {}: {}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 211
+#: usr/share/biglinux/biglinux-settings/base_page.py:569
+#, python-brace-format
+msgid "Script output: {}"
+msgstr "{}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 209
+#: usr/share/biglinux/biglinux-settings/base_page.py:573
+msgid "State changed successfully"
+msgstr "Állapot sikeresen megváltozott"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 215
+#: usr/share/biglinux/biglinux-settings/base_page.py:582
+#, python-brace-format
+msgid "Script failed with exit code: {}"
+msgstr "A szkript hibával leállt a következő kóddal: {}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 190
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 217
+#: usr/share/biglinux/biglinux-settings/base_page.py:596
+#, python-brace-format
+msgid "Script timeout: {}"
+msgstr "Script időtúllépés: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 620
+#: usr/share/biglinux/biglinux-settings/base_page.py:630
+#, python-brace-format
+msgid "{} sub-option available"
+msgid_plural "{} sub-options available"
+msgstr[0] "{} albeállítás érhető el"
+msgstr[1] "{} albeállítás érhető el"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
+#: usr/share/biglinux/biglinux-settings/base_page.py:817
+msgid "off"
+msgstr "ki."
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
+#: usr/share/biglinux/biglinux-settings/base_page.py:817
+msgid "on"
+msgstr "beállítva"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 574
+#: usr/share/biglinux/biglinux-settings/base_page.py:822
+#, python-brace-format
+msgid "Changing {} to {}…"
+msgstr "{}-t {}-ra változtatás…"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 576
+#: usr/share/biglinux/biglinux-settings/base_page.py:825
+msgid "Undo"
+msgstr "Visszavonás"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 600
+#: usr/share/biglinux/biglinux-settings/base_page.py:856
+msgid "Undo: reverted toggle"
+msgstr "Visszavonás: visszaállított kapcsoló"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 244
+#: usr/share/biglinux/biglinux-settings/base_page.py:886
+#, python-brace-format
+msgid "Changing {} to {}"
+msgstr "A {} átkonvertálása {}-ra"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 271
+#: usr/share/biglinux/biglinux-settings/base_page.py:920
+#, python-brace-format
+msgid "ERROR: Failed to change {} to {}"
+msgstr "HIBA: A {}-t {}-ra nem sikerült megváltoztatni."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 274
+#: usr/share/biglinux/biglinux-settings/base_page.py:925
+#, python-brace-format
+msgid "Failed to change setting: {}"
+msgstr "A beállítás módosítása nem sikerült: {}"
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 11
+#: usr/share/biglinux/biglinux-settings/developer_page.py:11
+msgid "AI Coding Assistants"
+msgstr "AI kódolási segédeszközök"
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 12
+#: usr/share/biglinux/biglinux-settings/developer_page.py:12
+msgid "Open-source coding agents powered by language models."
+msgstr "Nyílt forráskódú kódolási ügynökök, nyelvi modellek által működtetve."
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 21
+#: usr/share/biglinux/biglinux-settings/developer_page.py:21
+msgid "OpenClaude"
+msgstr "OpenClaude"
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 23
+#: usr/share/biglinux/biglinux-settings/developer_page.py:23
+msgid ""
+"Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
+"models. Installs nodejs, npm and ripgrep as dependencies."
+msgstr ""
+"Nyílt forráskódú kódolási ügynök CLI OpenAI, Gemini, DeepSeek, Ollama és 200+"
+" modellhez. Telepíti a nodejs, npm és ripgrep függőségeket."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/dispositivos_page.py, line: 25
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 116
+#: usr/share/biglinux/biglinux-settings/devices_page.py:34
+#: usr/share/biglinux/biglinux-settings/main.py:289
+msgid "Devices"
+msgstr "Eszközök"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 15
+#: usr/share/biglinux/biglinux-settings/devices_page.py:34
+msgid "Manage physical devices."
+msgstr "Fizikai eszközök kezelése."
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 39
+#: usr/share/biglinux/biglinux-settings/devices_page.py:39
+msgid "Enable the Wi-Fi adapter."
+msgstr "Engedélyezze a Wi-Fi adaptert."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 190
+#: usr/share/biglinux/biglinux-settings/devices_page.py:39
+msgid "Wifi"
+msgstr "Wifi"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 197
+#: usr/share/biglinux/biglinux-settings/devices_page.py:43
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 43
+#: usr/share/biglinux/biglinux-settings/devices_page.py:43
+msgid "Enable the Bluetooth adapter."
+msgstr "Engedélyezze a Bluetooth adaptert."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/dispositivos_page.py, line: 77
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices/jamesdsp_dialog.py, line: 155
+#: usr/share/biglinux/biglinux-settings/devices_page.py:49
+msgid "JamesDSP"
+msgstr "JamesDSP"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/dispositivos_page.py, line: 84
+#: usr/share/biglinux/biglinux-settings/devices_page.py:50
+msgid "Advanced audio effects processor that improves sound quality."
+msgstr "Fejlett audioeffektus-processzor, amely javítja a hangminőséget."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 71
+#: usr/share/biglinux/biglinux-settings/devices_page.py:58
+msgid "Reverse mouse scrolling"
+msgstr "Fordított egér görgetés"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 72
+#: usr/share/biglinux/biglinux-settings/devices_page.py:59
+msgid "Reverse mouse scrolling without restarting the session."
+msgstr "Az egér görgetésének megfordítása a munkamenet újraindítása nélkül."
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 66
+#: usr/share/biglinux/biglinux-settings/devices_page.py:66
+msgid "Network Interfaces"
+msgstr "Hálózati interfészek"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 67
+#: usr/share/biglinux/biglinux-settings/devices_page.py:67
+msgid "Connect or disconnect network devices."
+msgstr "Hálózati eszközök csatlakoztatása vagy leválasztása."
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 99
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 154
+#: usr/share/biglinux/biglinux-settings/devices_page.py:99
+#: usr/share/biglinux/biglinux-settings/devices_page.py:160
+#, python-brace-format
+msgid "{} — {}"
+msgstr "{} — {}"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 113
+#: usr/share/biglinux/biglinux-settings/devices_page.py:116
+#, python-brace-format
+msgid "{}: toggle connection"
+msgstr "{}: kapcsolat váltása"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
+#: usr/share/biglinux/biglinux-settings/devices_page.py:158
+msgid "connected"
+msgstr "csatlakoztatva"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
+#: usr/share/biglinux/biglinux-settings/devices_page.py:158
+msgid "disconnected"
+msgstr "kapcsolat megszakítva"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 161
+#: usr/share/biglinux/biglinux-settings/devices_page.py:168
+#, python-brace-format
+msgid "Failed to change network device: {}"
+msgstr "Hálózati eszköz módosítása nem sikerült: {}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 204
+#: usr/share/biglinux/biglinux-settings/docker_page.py:15
+#: usr/share/biglinux/biglinux-settings/docker_page.py:51
+#: usr/share/biglinux/biglinux-settings/main.py:301
+msgid "Docker"
+msgstr "Docker"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 16
+#: usr/share/biglinux/biglinux-settings/docker_page.py:16
 msgid "Container service — enable to use containers below."
 msgstr "Konténer szolgáltatás — engedélyezze a konténerek használatát alább."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 137
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 18
+#: usr/share/biglinux/biglinux-settings/docker_page.py:23
 msgid "Containers"
 msgstr "Tartályok"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 23
+#: usr/share/biglinux/biglinux-settings/docker_page.py:23
 msgid "Manage container technologies."
 msgstr "Kezelje a konténertechnológiákat."
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 30
+#: usr/share/biglinux/biglinux-settings/docker_page.py:30
 msgid "Media &amp; Cloud"
 msgstr "Média és Felhő"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 31
+#: usr/share/biglinux/biglinux-settings/docker_page.py:31
 msgid "Media servers and cloud storage containers."
 msgstr "Média szerverek és felhőalapú tároló konténerek."
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 36
+#: usr/share/biglinux/biglinux-settings/docker_page.py:36
 msgid "Network &amp; Security"
 msgstr "Hálózat és Biztonság"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 37
+#: usr/share/biglinux/biglinux-settings/docker_page.py:37
 msgid "Network tools and security containers."
 msgstr "Hálózati eszközök és biztonsági tárolók."
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 42
+#: usr/share/biglinux/biglinux-settings/docker_page.py:42
 msgid "Development &amp; Tools"
 msgstr "Fejlesztés és Eszközök"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 43
+#: usr/share/biglinux/biglinux-settings/docker_page.py:43
 msgid "Development stacks and utility containers."
 msgstr "Fejlesztési verem és segédprogram tárolók."
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 52
+#: usr/share/biglinux/biglinux-settings/docker_page.py:52
 msgid "Enable Docker container engine."
 msgstr "Docker konténermotor engedélyezése."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 35
+#: usr/share/biglinux/biglinux-settings/docker_page.py:61
+#: usr/share/biglinux/biglinux-settings/docker_page.py:68
 msgid "Nextcloud Plus"
 msgstr "Nextcloud Plus"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 62
+#: usr/share/biglinux/biglinux-settings/docker_page.py:62
 msgid "Install Nextcloud Plus cloud storage container."
 msgstr "Telepítse a Nextcloud Plus felhő tároló konténert."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 52
+#: usr/share/biglinux/biglinux-settings/docker_page.py:69
 msgid "Run Nextcloud Plus."
 msgstr "Futtassa a Nextcloud Plus-t."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 48
+#: usr/share/biglinux/biglinux-settings/docker_page.py:74
 #, python-brace-format
 msgid ""
 "Nextcloud Plus is running.\n"
@@ -772,20 +865,25 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 44
+#: usr/share/biglinux/biglinux-settings/docker_page.py:80
+#: usr/share/biglinux/biglinux-settings/docker_page.py:87
 msgid "AdGuard"
 msgstr "AdGuard"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 81
+#: usr/share/biglinux/biglinux-settings/docker_page.py:81
 msgid "Install AdGuard Home DNS ad-blocker container."
 msgstr "Telepítse az AdGuard Home DNS hirdetésblokkoló konténert."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 71
+#: usr/share/biglinux/biglinux-settings/docker_page.py:88
 msgid "Run AdGuard."
 msgstr "Futtasd az AdGuardot."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 57
+#: usr/share/biglinux/biglinux-settings/docker_page.py:93
 #, python-brace-format
 msgid ""
 "AdGuard is running.\n"
@@ -800,20 +898,25 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 71
+#: usr/share/biglinux/biglinux-settings/docker_page.py:99
+#: usr/share/biglinux/biglinux-settings/docker_page.py:106
 msgid "Jellyfin"
 msgstr "Jellyfin"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 100
+#: usr/share/biglinux/biglinux-settings/docker_page.py:100
 msgid "Install Jellyfin media server container."
 msgstr "Jellyfin média szerver konténer telepítése."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 90
+#: usr/share/biglinux/biglinux-settings/docker_page.py:107
 msgid "Run Jellyfin."
 msgstr "Futtasd a Jellyfint."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 75
+#: usr/share/biglinux/biglinux-settings/docker_page.py:112
 #, python-brace-format
 msgid ""
 "Jellyfin is running.\n"
@@ -828,20 +931,25 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 80
+#: usr/share/biglinux/biglinux-settings/docker_page.py:118
+#: usr/share/biglinux/biglinux-settings/docker_page.py:125
 msgid "LAMP"
 msgstr "LAMP"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 119
+#: usr/share/biglinux/biglinux-settings/docker_page.py:119
 msgid "Install LAMP stack container (Linux, Apache, MySQL, PHP)."
 msgstr "LAMP stack konténer telepítése (Linux, Apache, MySQL, PHP)."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 109
+#: usr/share/biglinux/biglinux-settings/docker_page.py:126
 msgid "Run LAMP."
 msgstr "Futtassa a LAMP-ot."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 84
+#: usr/share/biglinux/biglinux-settings/docker_page.py:131
 #, python-brace-format
 msgid ""
 "LAMP is running.\n"
@@ -856,20 +964,25 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 89
+#: usr/share/biglinux/biglinux-settings/docker_page.py:137
+#: usr/share/biglinux/biglinux-settings/docker_page.py:144
 msgid "Portainer Client"
 msgstr "Portainer kliens"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 138
+#: usr/share/biglinux/biglinux-settings/docker_page.py:138
 msgid "Install Portainer Agent container for cluster management."
 msgstr "Telepítse a Portainer Agent konténert a klaszter kezeléséhez."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 128
+#: usr/share/biglinux/biglinux-settings/docker_page.py:145
 msgid "Run Portainer Client."
 msgstr "Futtassa a Portainer Klienst."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 93
+#: usr/share/biglinux/biglinux-settings/docker_page.py:150
 #, python-brace-format
 msgid ""
 "Portainer Client is running.\n"
@@ -884,20 +997,25 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 98
+#: usr/share/biglinux/biglinux-settings/docker_page.py:156
+#: usr/share/biglinux/biglinux-settings/docker_page.py:163
 msgid "SWS"
 msgstr "SWS"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 157
+#: usr/share/biglinux/biglinux-settings/docker_page.py:157
 msgid "Install SWS static web server container."
 msgstr "Telepítse az SWS statikus webkiszolgáló konténert."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 147
+#: usr/share/biglinux/biglinux-settings/docker_page.py:164
 msgid "Run SWS."
 msgstr "Futtassa az SWS-t."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 102
+#: usr/share/biglinux/biglinux-settings/docker_page.py:169
 #, python-brace-format
 msgid ""
 "SWS is running.\n"
@@ -912,20 +1030,25 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 107
+#: usr/share/biglinux/biglinux-settings/docker_page.py:175
+#: usr/share/biglinux/biglinux-settings/docker_page.py:182
 msgid "V2RayA"
 msgstr "V2RayA"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 176
+#: usr/share/biglinux/biglinux-settings/docker_page.py:176
 msgid "Install V2RayA network proxy container."
 msgstr "Telepítse a V2RayA hálózati proxy tartályt."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 166
+#: usr/share/biglinux/biglinux-settings/docker_page.py:183
 msgid "Run V2RayA."
 msgstr "Futtassa a V2RayA-t."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 111
+#: usr/share/biglinux/biglinux-settings/docker_page.py:188
 #, python-brace-format
 msgid ""
 "V2RayA is running.\n"
@@ -939,267 +1062,136 @@ msgstr ""
 "Cím: http://{}:2017"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 195
+#: usr/share/biglinux/biglinux-settings/docker_page.py:195
 msgid "Install the open-source alternative to Google's NotebookLM."
 msgstr "Telepítse a Google NotebookLM nyílt forráskódú alternatíváját."
 
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 48
-msgid "Close"
-msgstr "Bezárás"
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 49
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 120
+#: usr/share/biglinux/biglinux-settings/main.py:78
+#: usr/share/biglinux/biglinux-settings/main.py:94
+#: usr/share/biglinux/biglinux-settings/main.py:154
+msgid "BigLinux Settings"
+msgstr "BigLinux Beállítások"
 
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 63
-#, python-brace-format
-msgid "Warning: {}"
-msgstr "Figyelmeztetés: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 66
-msgid "Cancel"
-msgstr "Mégse"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 67
-msgid "Continue"
-msgstr "Folytatás"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 230
-msgid "Run"
-msgstr "Futtatás"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 236
-#, python-brace-format
-msgid "{}: run action"
-msgstr "{}: művelet futtatása"
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 49
+#: usr/share/biglinux/biglinux-settings/main.py:85
+msgid "BigLinux Community"
+msgstr "BigLinux Közösség"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 173
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 199
-#, python-brace-format
-msgid "Script not found: {}"
-msgstr "A szkript nem található: {}"
+# 144
+#: usr/share/biglinux/biglinux-settings/main.py:191
+msgid "Search..."
+msgstr "Keresés..."
 
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 626
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 136
-msgid "Applying…"
-msgstr "Alkalmazás…"
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 185
+#: usr/share/biglinux/biglinux-settings/main.py:197
+msgid "Search settings"
+msgstr "Keresési beállítások"
 
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 289
-#, python-brace-format
-msgid "Action script {} failed: {}"
-msgstr "A {} műveleti szkript sikertelen: {}"
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 192
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 195
+#: usr/share/biglinux/biglinux-settings/main.py:204
+#: usr/share/biglinux/biglinux-settings/main.py:207
+msgid "Toggle navigation sidebar"
+msgstr "Navigációs sáv váltása"
 
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 294
-#, python-brace-format
-msgid "Action script timeout: {}"
-msgstr "Action script timeout: {}"
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 202
+#: usr/share/biglinux/biglinux-settings/main.py:214
+msgid "About"
+msgstr "A programról"
 
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 297
-#, python-brace-format
-msgid "Error running action script {}: {}"
-msgstr "Hiba a {} műveleti szkript futtatásakor: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 307
-msgid "Action completed successfully"
-msgstr "Művelet sikeresen befejeződött"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 310
-#, python-brace-format
-msgid "Action failed: {}"
-msgstr "Művelet sikertelen: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 215
-msgid "Recommended"
-msgstr "Ajánlott"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 238
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 326
-#, python-brace-format
-msgid "{}: additional information"
-msgstr "{}: kiegészítő információ"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 251
-msgid "Learn more"
-msgstr "Tudj meg többet"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 257
-#, python-brace-format
-msgid "{}: learn more"
-msgstr "{}: további információk"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 206
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 165
-msgid "Unavailable: script not found."
-msgstr "Nem elérhető: a szkript nem található."
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 218
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 177
-msgid "Enabled"
-msgstr "Engedélyezve"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 220
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 179
-msgid "Disabled"
-msgstr "Letiltva"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 223
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 182
-msgid ""
-"Enabled by system configuration (e.g., Real-Time Kernel) and cannot be "
-"changed here."
-msgstr ""
-"A rendszerkonfiguráció engedélyezte (pl. Valós idejű kernel), és itt nem "
-"módosítható."
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 516
-msgid "Unavailable in this desktop environment."
-msgstr "Nem elérhető ebben az asztali környezetben."
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 225
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 184
-msgid "Unavailable: script returned invalid output."
-msgstr "Nem elérhető: a szkript érvénytelen kimenetet adott vissza."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/base_page.py,
-# line: 261
-#, python-brace-format
-msgid "output from script {}: {}"
-msgstr "A szkript kimenete {}: {}"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 229
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 188
-msgid "Unavailable: script returned an error."
-msgstr "Nem elérhető: a szkript hibaüzenetet adott vissza."
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 206
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 209
+#: usr/share/biglinux/biglinux-settings/main.py:218
+#: usr/share/biglinux/biglinux-settings/main.py:221
+msgid "Main Menu"
+msgstr "Főmenü"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 184
-#, python-brace-format
-msgid "Error checking state: {}"
-msgstr "Hibaellenőrzési állapot: {}"
+# 108
+#: usr/share/biglinux/biglinux-settings/main.py:271
+#: usr/share/biglinux/biglinux-settings/system_page.py:13
+msgid "System"
+msgstr "Rendszer"
 
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 107
+#: usr/share/biglinux/biglinux-settings/main.py:277
+#: usr/share/biglinux/biglinux-settings/usability_page.py:12
+msgid "Usability"
+msgstr "Használhatóság"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 158
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 167
+#: usr/share/biglinux/biglinux-settings/main.py:283
+msgid "PreLoad"
+msgstr "Előbetöltés"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 161
+#: usr/share/biglinux/biglinux-settings/main.py:295
+msgid "A.I."
+msgstr "Mesterséges intelligencia."
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 315
+#: usr/share/biglinux/biglinux-settings/main.py:307
+msgid "Developer"
+msgstr "Fejlesztő"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 233
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 192
-msgid "Unavailable: failed to run script."
-msgstr "Nem elérhető: a szkript futtatása nem sikerült."
+# settings/usability/gamemode_dialog.py, line: 204
+#: usr/share/biglinux/biglinux-settings/main.py:313
+#: usr/share/biglinux/biglinux-settings/performance_page.py:15
+msgid "Performance"
+msgstr "Teljesítmény"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 193
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 220
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 302
+#: usr/share/biglinux/biglinux-settings/main.py:319
+msgid "Suspend"
+msgstr "Felfüggesztés"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 441
+#: usr/share/biglinux/biglinux-settings/main.py:467
+msgid "Open setting"
+msgstr "Beállítás megnyitása"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 446
+#: usr/share/biglinux/biglinux-settings/main.py:472
 #, python-brace-format
-msgid "Error running script {}: {}"
-msgstr "Hiba a szkript futtatása közben {}: {}"
+msgid "Open {} setting"
+msgstr "{} beállítás megnyitása"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 211
-#, python-brace-format
-msgid "Script output: {}"
-msgstr "{}"
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 469
+#: usr/share/biglinux/biglinux-settings/main.py:543
+msgid "Dismiss"
+msgstr "Elutasít"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 209
-msgid "State changed successfully"
-msgstr "Állapot sikeresen megváltozott"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 215
-#, python-brace-format
-msgid "Script failed with exit code: {}"
-msgstr "A szkript hibával leállt a következő kóddal: {}"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 190
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 217
-#, python-brace-format
-msgid "Script timeout: {}"
-msgstr "Script időtúllépés: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 620
-#, python-brace-format
-msgid "{} sub-option available"
-msgid_plural "{} sub-options available"
-msgstr[0] "{} albeállítás érhető el"
-msgstr[1] "{} albeállítás érhető el"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
-msgid "on"
-msgstr "beállítva"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
-msgid "off"
-msgstr "ki."
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 574
-#, python-brace-format
-msgid "Changing {} to {}…"
-msgstr "{}-t {}-ra változtatás…"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 576
-msgid "Undo"
-msgstr "Visszavonás"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 600
-msgid "Undo: reverted toggle"
-msgstr "Visszavonás: visszaállított kapcsoló"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 244
-#, python-brace-format
-msgid "Changing {} to {}"
-msgstr "A {} átkonvertálása {}-ra"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 271
-#, python-brace-format
-msgid "ERROR: Failed to change {} to {}"
-msgstr "HIBA: A {}-t {}-ra nem sikerült megváltoztatni."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 274
-#, python-brace-format
-msgid "Failed to change setting: {}"
-msgstr "A beállítás módosítása nem sikerült: {}"
+#: usr/share/biglinux/biglinux-settings/performance/meltdownMitigationsRun.sh:129
+#: usr/share/biglinux/biglinux-settings/performance/noWatchdogRun.sh:129
+msgid "Already enabled. No changes made."
+msgstr "Már engedélyezve van. Nincsenek változtatások."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 16
+#: usr/share/biglinux/biglinux-settings/performance_page.py:15
 msgid "BigLinux performance tweaks."
 msgstr "BigLinux teljesítményjavítások."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/usability/gamemode_config_dialog.py, line: 91
+#: usr/share/biglinux/biglinux-settings/performance_page.py:22
 msgid "Disable Visual Effects"
 msgstr "Visualis hatások letiltása"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 35
+#: usr/share/biglinux/biglinux-settings/performance_page.py:24
 msgid ""
 "Disables KWin visual effects (blur, shadows, animations). Reduces GPU load "
 "and frees memory."
@@ -1209,35 +1201,41 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 63
+#: usr/share/biglinux/biglinux-settings/performance_page.py:32
 msgid "CPU Maximum Performance"
 msgstr "CPU Maximális Teljesítmény"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 51
+#: usr/share/biglinux/biglinux-settings/performance_page.py:34
 msgid ""
-"Forces maximum processor performance mode. Ensures the processor uses "
-"maximum frequency."
+"Forces maximum processor performance mode. Ensures the processor uses maximum"
+" frequency."
 msgstr ""
 "Maximális processzor teljesítmény módra kényszerít. Biztosítja, hogy a "
 "processzor a maximális frekvenciát használja."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 79
+#: usr/share/biglinux/biglinux-settings/performance_page.py:42
 msgid "Disable Baloo Indexer"
 msgstr "Baloo indexert letiltása"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 67
+#: usr/share/biglinux/biglinux-settings/performance_page.py:43
 msgid "Disables the Baloo file indexer. Avoids disk I/O overhead."
 msgstr "Letiltja a Baloo fájlindexelőt. Elkerüli a lemez I/O terhelést."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/usability/gamemode_config_dialog.py, line: 136
+#: usr/share/biglinux/biglinux-settings/performance_page.py:51
 msgid "Unload S.M.A.R.T Monitor"
 msgstr "S.M.A.R.T Monitor kiürítése"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 83
+#: usr/share/biglinux/biglinux-settings/performance_page.py:52
 msgid "Disables S.M.A.R.T disk monitoring. Reduces disk I/O and CPU usage."
 msgstr ""
 "Letiltja a S.M.A.R.T lemezfigyelést. Csökkenti a lemez I/O és a CPU "
@@ -1245,15 +1243,18 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 169
+#: usr/share/biglinux/biglinux-settings/performance_page.py:60
 msgid "Meltdown Mitigations off"
 msgstr "Meltdown mérséklések kikapcsolva"
 
 # File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 62
+#: usr/share/biglinux/biglinux-settings/performance_page.py:62
 msgid "Using mitigations=off will make your machine faster and less secure!"
 msgstr ""
 "A mitigációk kikapcsolása gyorsabbá és kevésbé biztonsossá teszi a gépét!"
 
 # File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 67
+#: usr/share/biglinux/biglinux-settings/performance_page.py:67
 msgid ""
 "This will disable CPU security mitigations (Meltdown/Spectre). Your system "
 "will be faster but vulnerable to hardware-level attacks. Are you sure you "
@@ -1265,11 +1266,13 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 176
+#: usr/share/biglinux/biglinux-settings/performance_page.py:74
 msgid "noWatchdog"
 msgstr "nincsFelügyelő"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 177
+#: usr/share/biglinux/biglinux-settings/performance_page.py:76
 msgid ""
 "Disables the hardware watchdog and TSC clocksource systems, maintaining high "
 "performance but removing automatic protections against system crashes."
@@ -1279,21 +1282,24 @@ msgstr ""
 "rendszerösszeomlások ellen."
 
 # File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 81
+#: usr/share/biglinux/biglinux-settings/performance_page.py:81
 msgid ""
 "This will disable the hardware watchdog. Your system will no longer "
-"automatically recover from certain types of crashes. Are you sure you want "
-"to continue?"
+"automatically recover from certain types of crashes. Are you sure you want to"
+" continue?"
 msgstr ""
 "Ez letiltja a hardveres figyelőt. A rendszered már nem fog automatikusan "
 "helyreállni bizonyos típusú összeomlásokból. Biztosan folytatni szeretnéd?"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 103
+#: usr/share/biglinux/biglinux-settings/preload_page.py:10
 msgid "Preload"
 msgstr "Előbetöltés"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 105
+#: usr/share/biglinux/biglinux-settings/preload_page.py:11
 msgid "Preload applications into memory to open them faster."
 msgstr ""
 "Előregisztrálja az alkalmazásokat a memóriába, hogy gyorsabban nyithassa meg "
@@ -1301,133 +1307,423 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 120
+#: usr/share/biglinux/biglinux-settings/preload_page.py:18
 msgid "Firefox"
 msgstr "Firefox"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 126
+#: usr/share/biglinux/biglinux-settings/preload_page.py:19
 msgid "Brave"
 msgstr "Brave"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 132
+#: usr/share/biglinux/biglinux-settings/preload_page.py:20
 msgid "Chrome"
 msgstr "Chrome"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 138
+#: usr/share/biglinux/biglinux-settings/preload_page.py:21
 msgid "Chromium"
 msgstr "Króm"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 126
+#: usr/share/biglinux/biglinux-settings/preload_page.py:22
 msgid "Librewolf"
 msgstr "Librewolf"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 144
+#: usr/share/biglinux/biglinux-settings/preload_page.py:23
 msgid "Palemoon"
 msgstr "Palemoon"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 150
+#: usr/share/biglinux/biglinux-settings/preload_page.py:24
 msgid "Opera"
 msgstr "Opera"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 156
+#: usr/share/biglinux/biglinux-settings/preload_page.py:25
 msgid "Libreoffice"
 msgstr "LibreOffice"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 15
-msgid "Manage physical devices."
-msgstr "Fizikai eszközök kezelése."
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 72
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:72
+msgid "Automatic Suspend"
+msgstr "Automatikus felfüggesztés"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 190
-msgid "Wifi"
-msgstr "Wifi"
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 73
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:73
+msgid "Choose when inactivity and low battery may suspend the system."
+msgstr ""
+"Válassza ki, mikor függesztheti fel a rendszert a tétlenség és az alacsony "
+"akkumulátorszint."
 
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 39
-msgid "Enable the Wi-Fi adapter."
-msgstr "Engedélyezze a Wi-Fi adaptert."
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:80
+msgid "Disable idle suspend while plugged in"
+msgstr ""
+"Az inaktivitás miatti felfüggesztés letiltása hálózati tápellátás esetén"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 197
-msgid "Bluetooth"
-msgstr "Bluetooth"
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 81
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:81
+msgid "Disables automatic suspend caused by inactivity on AC power."
+msgstr ""
+"Letiltja a tétlenség miatti automatikus felfüggesztést hálózati áramról "
+"működve."
 
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 43
-msgid "Enable the Bluetooth adapter."
-msgstr "Engedélyezze a Bluetooth adaptert."
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:88
+msgid "Disable idle suspend on battery"
+msgstr ""
+"Az inaktivitás miatti felfüggesztés letiltása akkumulátoros működés esetén"
 
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/dispositivos_page.py, line: 77
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices/jamesdsp_dialog.py, line: 155
-msgid "JamesDSP"
-msgstr "JamesDSP"
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 89
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:89
+msgid "Keeps the system awake on battery until a critical level is reached."
+msgstr ""
+"Ébren tartja a rendszert akkumulátorról, amíg el nem éri a kritikus szintet."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/dispositivos_page.py, line: 84
-msgid "Advanced audio effects processor that improves sound quality."
-msgstr "Fejlett audioeffektus-processzor, amely javítja a hangminőséget."
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 96
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:96
+msgid "Suspend only when battery reaches 20%"
+msgstr "Csak akkor függessze fel, ha az akkumulátor eléri a 20%-ot"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 71
-msgid "Reverse mouse scrolling"
-msgstr "Fordított egér görgetés"
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 98
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:98
+msgid ""
+"Disables idle suspend on battery and suspends automatically when the charge "
+"reaches 20%."
+msgstr ""
+"Letiltja a tétlenség miatti felfüggesztést akkumulátorról, és automatikusan "
+"felfüggeszt, amikor a töltöttség eléri a 20%-ot."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 72
-msgid "Reverse mouse scrolling without restarting the session."
-msgstr "Az egér görgetésének megfordítása a munkamenet újraindítása nélkül."
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 104
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:104
+msgid ""
+"This uses UPower's critical battery policy. Low and critical warnings occur "
+"before the suspend action at 20%."
+msgstr ""
+"Ez az UPower kritikus akkumulátor-kezelési szabályzatát használja. Az "
+"alacsony és kritikus figyelmeztetések a 20%-os felfüggesztési művelet előtt "
+"következnek be."
 
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 66
-msgid "Network Interfaces"
-msgstr "Hálózati interfészek"
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 75
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:112
+msgid "Sleep Mode"
+msgstr "Alvó üzemmód"
 
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 67
-msgid "Connect or disconnect network devices."
-msgstr "Hálózati eszközök csatlakoztatása vagy leválasztása."
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 76
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:113
+msgid "Configure how the system suspends."
+msgstr "Állítsa be, hogyan felfüggeszti a rendszert."
 
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 99
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 154
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 83
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:120
+msgid "Use s2idle (light sleep)"
+msgstr "Használja a s2idle-t (könnyű alvás)"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 85
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:122
+msgid ""
+"Uses a lighter sleep mode that preserves Fn keys and device state. "
+"Recommended for ASUS notebooks."
+msgstr ""
+"Könnyebb alvó üzemmódot használ, amely megőrzi az Fn billentyűket és az "
+"eszköz állapotát. Ajánlott ASUS noteszgépekhez."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 91
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:128
+msgid ""
+"S3 deep sleep can cause the Embedded Controller to stop generating hotkey "
+"interrupts. s2idle keeps the EC powered, avoiding this issue at a small cost "
+"in battery consumption."
+msgstr ""
+"Az S3 mély alvás megakadályozhatja, hogy a Beágyazott Vezérlő forróbillentyű "
+"megszakításokat generáljon. Az s2idle fenntartja az EC áramellátását, "
+"elkerülve ezt a problémát, kis költséggel az akkumulátor-fogyasztásban."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 100
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:137
+msgid "WiFi"
+msgstr "WiFi"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 101
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:138
+msgid "Prevent WiFi issues after suspend."
+msgstr "Megakadályozza a WiFi problémákat a felfüggesztés után."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 108
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:145
+msgid "Protect WiFi on suspend"
+msgstr "Védd a WiFi-t szüneteltetéskor"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 110
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:147
+msgid ""
+"Prevents the Realtek WiFi chip from fully powering off (d3cold), avoiding "
+"connection loss after resume."
+msgstr ""
+"Megakadályozza a Realtek WiFi chip teljes kikapcsolását (d3cold), elkerülve a"
+" kapcsolat megszakadását a folytatás után."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 116
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:153
+msgid ""
+"Some Realtek RTL8852BE/CE chips fail to reinitialize after d3cold power "
+"gating. This keeps the chip in d3hot (PCIe link alive) during suspend."
+msgstr ""
+"Néhány Realtek RTL8852BE/CE chip nem tud újra inicializálódni a d3cold "
+"áramellátás lekapcsolása után. Ez a chipet d3hot állapotban (PCIe kapcsolat "
+"aktív) tartja a felfüggesztés alatt."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 124
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:161
+msgid "Display and Keyboard"
+msgstr "Kijelző és Billentyűzet"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 125
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:162
+msgid "Preserve brightness and LED state across suspend."
+msgstr "Tartsa meg a fényerőt és az LED állapotát a felfüggesztés alatt."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 132
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:169
+msgid "Save/restore brightness on suspend"
+msgstr "Fényerő mentése/visszaállítása felfüggesztéskor"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 134
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:171
+msgid ""
+"Saves screen brightness and keyboard LEDs before suspending and restores them"
+" on resume."
+msgstr ""
+"Mentés a képernyő fényerejét és a billentyűzet LED-jeit felfüggesztés előtt, "
+"és visszaállítja azokat a folytatáskor."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 144
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:181
+msgid "GNOME Shell Extensions"
+msgstr "GNOME Shell kiterjesztések"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 145
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:182
+msgid "Automatic health check after resume."
+msgstr "Automatikus egészségellenőrzés ébresztés után."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 152
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:189
+msgid "Extension health monitor"
+msgstr "Bővítmény állapotfigyelő"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 154
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:191
+msgid ""
+"Detects GNOME Shell extensions in error state after resume and automatically "
+"restarts them."
+msgstr ""
+"Észleli a GNOME Shell kiterjesztéseket hibás állapotban a folytatás után, és "
+"automatikusan újraindítja őket."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 163
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:200
+msgid "Lid Switch"
+msgstr "Fedélkapcsoló"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 164
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:201
+msgid "Laptop lid close behavior."
+msgstr "Laptop fedél zárási viselkedése."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:208
+msgid "Keep running with the lid closed while plugged in"
+msgstr "Működés folytatása lehajtott fedéllel hálózati tápellátás esetén"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:210
+msgid ""
+"Keeps the session and network active when the lid is closed on AC power."
+msgstr ""
+"Aktívan tartja a munkamenetet és a hálózati kapcsolatot, amikor a számítógép "
+"hálózati tápellátásról működik, és a fedele le van hajtva."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:216
+msgid ""
+"This prevents lid-triggered suspend and locking. Automatic idle locking "
+"remains separate. Keep the notebook ventilated while it runs with the lid "
+"closed."
+msgstr ""
+"Ez megakadályozza, hogy a számítógép a fedél lehajtásakor felfüggesztett "
+"állapotba kerüljön vagy zárolódjon. Az inaktivitás miatti automatikus zárolás"
+" továbbra is külön beállítás. Gondoskodjon a laptop megfelelő szellőzéséről, "
+"amíg lehajtott fedéllel működik."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:224
+msgid "Keep running with the lid closed on battery"
+msgstr "Működés folytatása lehajtott fedéllel akkumulátoros működés esetén"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+msgid ""
+"Keeps the session and network active when the lid is closed on battery power."
+msgstr ""
+"Aktívan tartja a munkamenetet és a hálózati kapcsolatot, amikor a számítógép "
+"akkumulátorról működik, és a fedele le van hajtva."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:232
+msgid ""
+"This prevents lid-triggered suspend and locking. Automatic idle locking "
+"remains separate, and the 20% critical battery policy still applies."
+msgstr ""
+"Ez megakadályozza, hogy a számítógép a fedél lehajtásakor felfüggesztett "
+"állapotba kerüljön vagy zárolódjon. Az inaktivitás miatti automatikus zárolás"
+" továbbra is külön beállítás, és a 20%-os kritikus akkumulátorszintre "
+"vonatkozó szabály továbbra is érvényes."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 26
+#: usr/share/biglinux/biglinux-settings/system_page.py:13
+msgid "General system settings."
+msgstr "Általános rendszerbeállítások."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 21
+#: usr/share/biglinux/biglinux-settings/system_page.py:19
+msgid "SSH"
+msgstr "SSH"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 22
+#: usr/share/biglinux/biglinux-settings/system_page.py:20
+msgid "Enable remote access via ssh."
+msgstr "Engedélyezze a távoli hozzáférést ssh-n keresztül."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 27
+#: usr/share/biglinux/biglinux-settings/system_page.py:23
 #, python-brace-format
-msgid "{} — {}"
-msgstr "{} — {}"
+msgid "SSH Address: {}"
+msgstr "SSH cím: {}"
 
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 113
-#, python-brace-format
-msgid "{}: toggle connection"
-msgstr "{}: kapcsolat váltása"
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 147
+#: usr/share/biglinux/biglinux-settings/system_page.py:27
+msgid "SSH always on"
+msgstr "SSH mindig be van kapcsolva"
 
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
-msgid "connected"
-msgstr "csatlakoztatva"
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 149
+#: usr/share/biglinux/biglinux-settings/system_page.py:28
+msgid "Turn on ssh remote access at boot."
+msgstr "Kapcsolja be az SSH távoli hozzáférést indításkor."
 
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
-msgid "disconnected"
-msgstr "kapcsolat megszakítva"
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 162
+#: usr/share/biglinux/biglinux-settings/system_page.py:37
+msgid "Fast Grub"
+msgstr "Gyors Grub"
 
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 161
-#, python-brace-format
-msgid "Failed to change network device: {}"
-msgstr "Hálózati eszköz módosítása nem sikerült: {}"
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 163
+#: usr/share/biglinux/biglinux-settings/system_page.py:38
+msgid "Decreases grub display time."
+msgstr "Csökkenti a grub megjelenítési időt."
 
-#~ msgid "AMD/Nvidia GPU not found!"
-#~ msgstr "AMD/Nvidia GPU nem található!"
+# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 47
+#: usr/share/biglinux/biglinux-settings/system_page.py:47
+msgid "Boot messages"
+msgstr "Rendszerindítási üzenetek"
 
-#~ msgid "No Ollama packages are installed. Enable an Ollama variant first."
-#~ msgstr ""
-#~ "Nincsenek telepítve Ollama-csomagok. Először engedélyezzen egy Ollama-"
-#~ "változatot."
+# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 48
+#: usr/share/biglinux/biglinux-settings/system_page.py:48
+msgid "Show system messages below the boot animation."
+msgstr "Rendszerüzenetek megjelenítése a rendszerindító animáció alatt."
 
-#~ msgid "Already enabled. No changes made."
-#~ msgstr "Már engedélyezve van. Nincsenek változtatások."
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 170
+#: usr/share/biglinux/biglinux-settings/system_page.py:57
+msgid "Auto-mount Partitions"
+msgstr "Automatikus csatolás partíciók"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 171
+#: usr/share/biglinux/biglinux-settings/system_page.py:58
+msgid "Auto mount partitions in internal disks on boot."
+msgstr "Automatikus partíciók csatolása a belső lemezeken indításkor."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 14
+#: usr/share/biglinux/biglinux-settings/usability_page.py:12
+msgid "User and Visual system settings."
+msgstr "Felhasználói és vizuális rendszerbeállítások."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 114
+#: usr/share/biglinux/biglinux-settings/usability_page.py:19
+msgid "NumLock"
+msgstr "NumLock"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 115
+#: usr/share/biglinux/biglinux-settings/usability_page.py:20
+msgid "Initial NumLock state. Ignored if autologin is enabled."
+msgstr ""
+"Kezdő NumLock állapot. Figyelmen kívül hagyva, ha az automatikus "
+"bejelentkezés engedélyezve van."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:28
+msgid "Keyboard Light"
+msgstr "Billentyűzet-világítás"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:30
+msgid ""
+"Keep the keyboard backlight on. For keyboards whose light is controlled by "
+"the Scroll Lock LED."
+msgstr ""
+"Bekapcsolva tartja a billentyűzet háttérvilágítását. Olyan billentyűzetekhez,"
+" amelyek világítását a Scroll Lock LED vezérli."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 131
+#: usr/share/biglinux/biglinux-settings/usability_page.py:39
+msgid "Window Button On Left Side"
+msgstr "Ablak gomb bal oldalon"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 132
+#: usr/share/biglinux/biglinux-settings/usability_page.py:40
+msgid "Maximize, minimize, and close buttons on the left side of the window."
+msgstr ""
+"Ablak bal oldalán található maximalizálás, minimalizálás és bezárás gombok."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 72
+#: usr/share/biglinux/biglinux-settings/usability_page.py:48
+msgid "KZones"
+msgstr "KZones"
+
+# File: usr/share/biglinux/biglinux-settings/usability_page.py, line: 39
+#: usr/share/biglinux/biglinux-settings/usability_page.py:50
+msgid "Enable window tiling zones for the KDE Plasma desktop."
+msgstr "Engedélyezze az ablakcsempézés zónáit a KDE Plasma asztalhoz."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 169
+#: usr/share/biglinux/biglinux-settings/usability_page.py:59
+msgid "Recent Files & Locations"
+msgstr "Legutóbbi fájlok és helyek"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 170
+#: usr/share/biglinux/biglinux-settings/usability_page.py:61
+msgid ""
+"Restores the 'Recent Files' and 'Recent Locations' functionality that appears"
+" empty in Dolphin and the Application Menu."
+msgstr ""
+"Visszaállítja a 'Legutóbbi fájlok' és 'Legutóbbi helyek' funkciót, amely "
+"üresen jelenik meg a Dolphinban és az Alkalmazásmenüben."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 80
 #~ msgid "Never suspend while plugged in"
@@ -1443,8 +1739,8 @@ msgstr "Hálózati eszköz módosítása nem sikerült: {}"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 173
 #~ msgid ""
-#~ "Some systems do not suspend when on AC power. This forces suspend when "
-#~ "the lid is closed."
+#~ "Some systems do not suspend when on AC power. This forces suspend when the "
+#~ "lid is closed."
 #~ msgstr ""
 #~ "Néhány rendszer nem áll le, amikor hálózati áramon van. Ez kényszeríti a "
 #~ "leállítást, amikor a fedelet bezárják."
