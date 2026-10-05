@@ -22,6 +22,17 @@ class UsabilityPage(BaseSettingsPage):
             "numlock-symbolic",
         )
 
+        # keyboardLed
+        self.create_row(
+            group,
+            _("Keyboard Light"),
+            _(
+                "Keep the keyboard backlight on. For keyboards whose light is controlled by the Scroll Lock LED."
+            ),
+            "keyboardLed",
+            "keyboard-led-symbolic",
+        )
+
         # windowButtonOnLeftSide
         self.create_row(
             group,
