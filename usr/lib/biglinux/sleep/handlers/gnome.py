@@ -259,17 +259,20 @@ class GnomeHandler(SleepHandler):
         """
         for uuid in DEFERRED_EXTENSIONS:
             info = _ext_state(uid, uuid)
-            if info and (info.get("error") or info.get("state") == 3):
-                log.info("Extension %s is in ERROR state, applying disable+enable fix", uuid)
-                if _disable_extension(uid, uuid):
-                    log.info("Disabled %s, waiting for theme to stabilize...", uuid)
-                    time.sleep(3.0)
-                    if _enable_extension(uid, uuid):
-                        log.info("Re-enabled %s — fix applied", uuid)
-                    else:
-                        log.warning("Could not re-enable %s", uuid)
+            # Only a real ERROR (state 3) of an extension the user enabled;
+            # never resurrect one the user turned off.
+            if not info or not info.get("enabled") or info.get("state") != 3:
+                continue
+            log.info("Extension %s is in ERROR state, applying disable+enable fix", uuid)
+            if _disable_extension(uid, uuid):
+                log.info("Disabled %s, waiting for theme to stabilize...", uuid)
+                time.sleep(3.0)
+                if _enable_extension(uid, uuid):
+                    log.info("Re-enabled %s — fix applied", uuid)
                 else:
-                    log.warning("Could not disable %s for error fix", uuid)
+                    log.warning("Could not re-enable %s", uuid)
+            else:
+                log.warning("Could not disable %s for error fix", uuid)
 
     def _wait_shell_ready(self, uid: str, timeout: float = 20.0) -> bool:
         deadline = time.monotonic() + timeout

@@ -134,6 +134,16 @@ class PreferencesGroup(Widget):
         super().__init__()
         self.listbox = ListBox()
         self.append(self.listbox)
+        self.description = ""
+
+    def get_description(self):
+        return self.description
+
+    def set_description(self, description):
+        self.description = description
+
+    def get_header_suffix(self):
+        return None
 
     def add(self, row):
         self.listbox.append(row)
@@ -159,6 +169,9 @@ class Switch(Widget):
 
     def get_active(self):
         return self.active
+
+    def get_state(self):
+        return self.state
 
 
 class Spinner(Widget):
@@ -304,7 +317,7 @@ def make_switch_row(page, script="x.sh"):
 
 
 def test_toggle_exception_restores_row_and_resyncs(page, base_page, monkeypatch):
-    monkeypatch.setattr(base_page.threading, "Thread", SyncThread)
+    monkeypatch.setattr(base_page, "threading", types.SimpleNamespace(Thread=SyncThread))
     switch, row = make_switch_row(page)
     page.sync_all_switches_async = MagicMock()
 
@@ -325,7 +338,7 @@ def test_toggle_exception_restores_row_and_resyncs(page, base_page, monkeypatch)
 
 
 def test_toggle_success_keeps_state_and_resyncs(page, base_page, monkeypatch):
-    monkeypatch.setattr(base_page.threading, "Thread", SyncThread)
+    monkeypatch.setattr(base_page, "threading", types.SimpleNamespace(Thread=SyncThread))
     switch, row = make_switch_row(page)
     page.sync_all_switches_async = MagicMock()
     page.toggle_script_state = lambda *_args, **_kwargs: True
@@ -387,14 +400,17 @@ def test_stale_sync_generation_is_ignored(page):
 
 
 def test_sync_thread_error_is_contained(page, base_page, monkeypatch):
-    monkeypatch.setattr(base_page.threading, "Thread", SyncThread)
+    monkeypatch.setattr(base_page, "threading", types.SimpleNamespace(Thread=SyncThread))
     switch, _row = make_switch_row(page)
 
     def boom(_path):
         raise ValueError("bad output")
 
     page.check_script_state = boom
-    page.sync_all_switches_async()  # must not raise
+    done = MagicMock()
+    page.sync_all_switches_async(on_done=done)  # must not raise
+    # Callers (search) still learn the sync is over
+    done.assert_called_once()
 
 
 # --- search -----------------------------------------------------------------
@@ -439,3 +455,95 @@ def test_search_top_level_rows_still_work(page):
     build_search_page(page)
     rows = [row.get_title() for row, _group in page.get_matching_rows("blue")]
     assert rows == ["Bluetooth"]
+
+
+# --- sync completion, groups, undo ---------------------------------------------
+
+
+def test_sync_calls_on_done_even_when_stale(page):
+    done = MagicMock()
+    stale = page._sync_generation
+    page._sync_generation += 1
+    page._apply_sync_results(stale, [], [], done)
+    done.assert_called_once()
+
+
+def test_sync_async_reports_completion(page, base_page, monkeypatch):
+    monkeypatch.setattr(base_page, "threading", types.SimpleNamespace(Thread=SyncThread))
+    switch, _row = make_switch_row(page)
+    page.check_script_state = lambda _path: (True, "")
+    done = MagicMock()
+    page.sync_all_switches_async(on_done=done)
+    done.assert_called_once()
+    assert switch.active is True
+
+
+def make_group_page(page, statuses):
+    group = PreferencesGroup()
+    content = Widget()
+    content.append(group)
+    page.content_box = content
+    results = []
+    for status in statuses:
+        switch, row = make_switch_row(page)
+        group.add(row)
+        results.append((switch, (status, "")))
+    return group, results
+
+
+def test_group_with_only_unsupported_rows_is_hidden(page):
+    group, results = make_group_page(page, [None, None])
+    page._apply_sync_results(page._sync_generation, results, [])
+    assert group.visible is False
+    # Leaving search mode must not bring the empty header back
+    page.filter_rows("")
+    assert group.visible is False
+
+
+def test_group_with_a_supported_row_stays_visible(page):
+    group, results = make_group_page(page, [None, False])
+    page._apply_sync_results(page._sync_generation, results, [])
+    assert group.visible is True
+
+
+def test_reclick_inside_undo_window_does_not_queue_a_toggle(page, base_page):
+    switch, _row = make_switch_row(page)
+    # First click (off -> on) is pending: active moved, state did not.
+    switch.active = True
+    page.main_window._pending_undo = {"switch": switch, "state": True, "page": page}
+    base_page.GLib.timeout_add.reset_mock()
+
+    assert page.on_switch_changed(switch, False) is True
+
+    page.main_window._cancel_pending_undo.assert_called_once_with(revert=True)
+    base_page.GLib.timeout_add.assert_not_called()
+
+
+def test_banner_uses_translated_title(page, base_page):
+    switch, row = make_switch_row(page)
+    row.title = "Recent Files &amp; Locations"
+    page.main_window._pending_undo = None
+    page.on_switch_changed(switch, True)
+    title = page.main_window.banner.set_title.call_args[0][0]
+    assert "Recent Files &amp; Locations" in title
+    assert "x.sh" not in title and "&amp;amp;" not in title
+
+
+def test_offline_local_ip_is_not_cached(base_page, monkeypatch):
+    class OfflineSocket:
+        def __init__(self, *_args):
+            pass
+
+        def settimeout(self, _timeout):
+            pass
+
+        def connect(self, _address):
+            raise OSError("network unreachable")
+
+        def close(self):
+            pass
+
+    monkeypatch.setattr(base_page.socket, "socket", OfflineSocket)
+    base_page.BaseSettingsPage._cached_local_ip = None
+    assert base_page.BaseSettingsPage.get_local_ip() == "127.0.0.1"
+    assert base_page.BaseSettingsPage._cached_local_ip is None

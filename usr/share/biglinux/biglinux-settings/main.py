@@ -103,6 +103,8 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         self.is_searching = False
         self.current_page_id = None
         self._synced_pages = set()
+        # Pages whose first sync was started by a search and is still running
+        self._syncing_pages = set()
         self._banner_timeout_id = None
         self._pending_undo = None
         self.load_css()
@@ -416,21 +418,34 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         self.page_stack.set_visible(False)
         self.search_results_scroll.set_visible(True)
 
-        # Ensure all pages are synced for accurate search results
+        # Ensure all pages are synced for accurate search results. Pages still
+        # syncing are left out (their unsupported rows are not hidden yet) and
+        # the results are rebuilt when each sync lands.
         for page_cfg in self.pages_config:
             page_id = page_cfg["id"]
             if page_id not in self._synced_pages:
                 instance = page_cfg["instance"]
                 if hasattr(instance, "sync_all_switches_async"):
-                    instance.sync_all_switches_async()
+                    self._syncing_pages.add(page_id)
+                    instance.sync_all_switches_async(
+                        on_done=lambda pid=page_id: self._on_search_page_synced(pid)
+                    )
                 self._synced_pages.add(page_id)
 
         for page_cfg in self.pages_config:
+            if page_cfg["id"] in self._syncing_pages:
+                continue
             instance = page_cfg.get("instance")
             if instance and hasattr(instance, "get_matching_rows"):
                 matching_rows = instance.get_matching_rows(search_text)
                 for row, _original_parent in matching_rows:
                     self._add_search_result(row, page_cfg, search_text)
+
+    def _on_search_page_synced(self, page_id):
+        self._syncing_pages.discard(page_id)
+        search_text = self.search_entry.get_text().lower().strip()
+        if self.is_searching and len(search_text) >= 2:
+            self._show_search_results(search_text)
 
     @staticmethod
     def _highlight_text(text, search_text):
@@ -520,9 +535,11 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         return False
 
     def show_toast(self, message):
-        self._cancel_pending_undo(revert=True)
+        # Leave a pending click on another switch alone: it still gets applied
+        # when its undo window ends; only the undo button is replaced.
         self._cancel_banner_timeout()
-        self.banner.set_title(message)
+        # Adw.Banner parses markup; messages are plain text (may hold "&")
+        self.banner.set_title(html.escape(html.unescape(message), quote=False))
         self.banner.set_button_label(_("Dismiss"))
         self._banner_callback = None
         self.banner.set_revealed(True)

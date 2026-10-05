@@ -137,7 +137,8 @@ class BaseSettingsPage(Adw.Bin):
                 s.connect(("10.255.255.255", 1))
                 cls._cached_local_ip = s.getsockname()[0]
             except OSError:
-                cls._cached_local_ip = "127.0.0.1"
+                # Offline: answer the fallback but retry next time
+                return "127.0.0.1"
             finally:
                 s.close()
         return cls._cached_local_ip
@@ -635,8 +636,11 @@ class BaseSettingsPage(Adw.Bin):
         else:
             parent_switch.update_property([Gtk.AccessibleProperty.DESCRIPTION], [""])
 
-    def sync_all_switches_async(self) -> None:
-        """Synchronize all switches in a background thread to avoid blocking UI."""
+    def sync_all_switches_async(self, on_done=None) -> None:
+        """Synchronize all switches in a background thread to avoid blocking UI.
+
+        on_done, if given, runs on the main thread once the results are applied.
+        """
         self._sync_generation += 1
         generation = self._sync_generation
         switches = list(self.switch_scripts.items())
@@ -648,6 +652,12 @@ class BaseSettingsPage(Adw.Bin):
                 _check_all_unsafe()
             except Exception:
                 logger.exception("Failed to synchronize switches")
+                if on_done is not None:
+                    GLib.idle_add(_call_once, on_done)
+
+        def _call_once(callback):
+            callback()
+            return False
 
         def _check_all_unsafe():
             worker_count = min(8, max(1, len(script_paths)))
@@ -667,16 +677,28 @@ class BaseSettingsPage(Adw.Bin):
                 generation,
                 switch_results,
                 indicator_results,
+                on_done,
             )
 
         threading.Thread(target=_check_all, daemon=True).start()
 
     def _apply_sync_results(
-        self, generation: int, switch_results: list, indicator_results: list
+        self,
+        generation: int,
+        switch_results: list,
+        indicator_results: list,
+        on_done=None,
     ) -> bool:
         """Apply sync results on the main thread (called via GLib.idle_add)."""
-        if generation != self._sync_generation:
-            return False
+        if generation == self._sync_generation:
+            self._apply_current_sync_results(switch_results, indicator_results)
+        if on_done is not None:
+            on_done()
+        return False
+
+    def _apply_current_sync_results(
+        self, switch_results: list, indicator_results: list
+    ) -> None:
         for switch, (status, message) in switch_results:
             # A toggle is still running on this switch: its own completion
             # handler owns the row (spinner, sensitivity, final state).
@@ -725,17 +747,63 @@ class BaseSettingsPage(Adw.Bin):
             parent_state = parent_switch.get_active()
             self._update_sub_switches_visibility(parent_switch, parent_state)
 
-        return False
+        self._refresh_group_visibility()
+
+    def _group_rows(self, group: Adw.PreferencesGroup) -> list[Gtk.Widget]:
+        listbox = self._find_listbox_in_widget(group)
+        if not listbox:
+            return []
+        return [
+            row
+            for row in self._get_all_children(listbox)
+            if isinstance(row, (Adw.PreferencesRow, Gtk.ListBoxRow))
+        ]
+
+    def _group_all_unsupported(self, group: Adw.PreferencesGroup) -> bool:
+        """True when every row of the group was hidden as unsupported."""
+        rows = self._group_rows(group)
+        return bool(rows) and all(
+            self._get_wd(row, "hidden_no_support", False) for row in rows
+        )
+
+    def _refresh_group_visibility(self) -> None:
+        """Hide groups left with only unsupported rows (no empty headers)."""
+        if not hasattr(self, "content_box"):
+            return
+        for child in self._get_all_children(self.content_box):
+            if isinstance(child, Adw.PreferencesGroup):
+                child.set_visible(not self._group_all_unsupported(child))
 
     def sync_all_switches(self) -> None:
         """Alias for async version. Kept for backward compatibility."""
         self.sync_all_switches_async()
+
+    def _switch_label(self, switch: Gtk.Switch) -> str:
+        """Translated row title of a switch, falling back to its script name."""
+        row = self._get_wd(switch, "row")
+        title = row.get_title() if row is not None else ""
+        if title:
+            return html.unescape(title)
+        return os.path.basename(self.switch_scripts.get(switch, "")).replace(".sh", "")
 
     def on_switch_changed(self, switch: Gtk.Switch, state: bool) -> bool:
         """Callback executed when a user manually toggles a switch.
         For non-dangerous switches, provides a 3-second undo window before executing."""
         script_path = self.switch_scripts.get(switch)
         if not script_path:
+            return True
+
+        # Clicked again inside the undo window, back to the applied state:
+        # that is just an undo, no script needs to run.
+        pending = self.main_window._pending_undo
+        if (
+            pending
+            and pending.get("switch") is switch
+            and state == switch.get_state()
+        ):
+            self.main_window._cancel_pending_undo(revert=True)
+            self.main_window.banner.set_revealed(False)
+            self.main_window._banner_callback = None
             return True
 
         self.main_window._cancel_pending_undo(revert=True)
@@ -746,12 +814,13 @@ class BaseSettingsPage(Adw.Bin):
             self._execute_toggle(switch, state)
             return True
 
-        script_name = os.path.basename(script_path)
         action = _("on") if state else _("off")
 
         # Show undo banner
         self.main_window.banner.set_title(
-            _("Changing {} to {}…").format(script_name.replace(".sh", ""), action)
+            _plain_markup(
+                _("Changing {} to {}…").format(self._switch_label(switch), action)
+            )
         )
         self.main_window.banner.set_button_label(_("Undo"))
         self.main_window._banner_callback = lambda: self._undo_toggle(switch, state)
@@ -853,7 +922,9 @@ class BaseSettingsPage(Adw.Bin):
                     )
                 )
                 self.main_window.show_toast(
-                    _("Failed to change setting: {}").format(script_name)
+                    _("Failed to change setting: {}").format(
+                        self._switch_label(switch)
+                    )
                 )
                 # The script may have applied part of the change, or a first
                 # sync may have been discarded meanwhile: read the real state.
@@ -1016,7 +1087,10 @@ class BaseSettingsPage(Adw.Bin):
                     visible_count += self._apply_row_visibility(row, search_text)
             row = row.get_next_sibling()
 
-        group.set_visible(visible_count > 0 or not search_text)
+        group.set_visible(
+            (visible_count > 0 or not search_text)
+            and not self._group_all_unsupported(group)
+        )
         return visible_count
 
     def _find_listbox_in_widget(self, widget: Gtk.Widget) -> Optional[Gtk.ListBox]:

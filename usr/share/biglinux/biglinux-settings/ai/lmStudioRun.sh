@@ -10,7 +10,7 @@ function="$1"
 # Executes the root tasks.
 updateTask() {
   if [[ "$function" == "install" ]]; then
-    pacman -Syu --noconfirm lmstudio-bin
+    pacman -Syu --needed --noconfirm lmstudio-bin
   else
     pacman -Rcs --noconfirm lmstudio-bin
   fi

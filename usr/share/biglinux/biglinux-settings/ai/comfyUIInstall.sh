@@ -19,7 +19,16 @@ case "$function" in
     fi
 
     tempDir="$(mktemp -d "$HOME/.ComfyUI-install.XXXXXX")"
-    trap 'rm -rf -- "$tempDir"' EXIT
+    # Directory this run created at the final location; removed again if the
+    # install does not finish (it never has the management marker then).
+    stagedDir=""
+    cleanup() {
+      rm -rf -- "$tempDir"
+      if [[ -n "$stagedDir" && ! -f "$stagedDir/.biglinux-settings-managed" ]]; then
+        rm -rf -- "$stagedDir"
+      fi
+    }
+    trap cleanup EXIT
     metadataFile="$tempDir/release.json"
     curl --fail --silent --show-error --location \
       https://api.github.com/repos/Comfy-Org/ComfyUI/releases/latest \
@@ -32,6 +41,14 @@ case "$function" in
 
     repoDir="$tempDir/repo"
     git clone --depth 1 --branch "$releaseTag" https://github.com/Comfy-Org/ComfyUI.git "$repoDir"
+
+    # The venv must be created at its final path: venv and pip hard-code the
+    # absolute path in bin/activate and in the shebang of every bin/ script,
+    # so a venv built in the temp dir and moved afterwards is broken.
+    # `mv -T` refuses to move into a directory that appeared in the meantime.
+    mv -T -- "$repoDir" "$installDir"
+    stagedDir="$installDir"
+    repoDir="$installDir"
     python -m venv "$repoDir"
 
     vgaList="$(lspci | grep -iE 'VGA|3D|Display' || true)"
@@ -48,8 +65,8 @@ case "$function" in
     "$repoDir/bin/pip" install --requirement "$repoDir/requirements.txt"
 
     commit="$(git -C "$repoDir" rev-parse HEAD)"
+    # Writing the marker last is what marks the install as complete.
     printf 'release=%s\ncommit=%s\ngpu=%s\n' "$releaseTag" "$commit" "$gpu" > "$repoDir/.biglinux-settings-managed"
-    mv "$repoDir" "$installDir"
     ;;
   uninstall)
     if [[ ! -f "$markerFile" ]]; then

@@ -4,7 +4,7 @@ dockerComposeAddress="$HOME/Docker/SWS/docker-compose.yml"
 
 # check current status
 if [ "$1" == "check" ]; then
-  if [ -n "$(docker compose ls | grep $dockerComposeAddress | grep running)" ]; then
+  if docker compose ls 2>/dev/null | grep -F -- "$dockerComposeAddress" | grep -q running; then
       echo "true"
   else
       echo "false"

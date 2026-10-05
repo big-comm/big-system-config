@@ -2,10 +2,16 @@
 
 # check current status
 if [ "$1" == "check" ];then
-  if [[ "$(LANG=C LANGUAGE=C nmcli radio wifi)" == "enabled" ]];then
-    echo "true"
-  elif [[ "$(LANG=C LANGUAGE=C nmcli radio wifi)" == "disabled" ]];then
-    echo "false"
+  # Query nmcli once; anything other than enabled/disabled (nmcli missing,
+  # NetworkManager not running, no Wi-Fi radio) means unsupported.
+  if command -v nmcli &>/dev/null && radio="$(LANG=C LANGUAGE=C nmcli radio wifi 2>/dev/null)"; then
+    case "$radio" in
+      enabled) echo "true" ;;
+      disabled) echo "false" ;;
+      *) echo "unsupported" ;;
+    esac
+  else
+    echo "unsupported"
   fi
 
 # change the state

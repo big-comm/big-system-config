@@ -10,7 +10,7 @@ function="$1"
 # Executes the root tasks.
 updateTask() {
   if [[ "$function" == "install" ]]; then
-    pacman -Syu --noconfirm ollama-lab-bin
+    pacman -Syu --needed --noconfirm ollama-lab-bin
   else
     pacman -Rcs --noconfirm ollama-lab-bin
   fi
