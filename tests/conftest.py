@@ -29,3 +29,30 @@ SRC_DIR = os.path.join(
     "biglinux-settings",
 )
 sys.path.insert(0, SRC_DIR)
+
+
+# Test modules that execute the privileged helper scripts. Their test-only
+# path overrides (BIGLINUX_GRUB_FILE, BIGLINUX_LEDS_DIR, ...) are ignored when
+# running as root, by design, so as root these tests would edit the real
+# /etc/default/grub, udev rules or LEDs. Never run them with root privileges
+# (sudo, fakeroot).
+PRIVILEGED_SCRIPT_TESTS = {
+    "test_grub_scripts.py",
+    "test_keyboard_led.py",
+    "test_misc_scripts.py",
+    "test_shell_toggles.py",
+    "test_sleep_handlers.py",
+}
+
+
+def pytest_collection_modifyitems(config, items):
+    if os.geteuid() != 0:
+        return
+    import pytest
+
+    skip = pytest.mark.skip(
+        reason="runs privileged helper scripts; refusing to run as root"
+    )
+    for item in items:
+        if item.path.name in PRIVILEGED_SCRIPT_TESTS:
+            item.add_marker(skip)

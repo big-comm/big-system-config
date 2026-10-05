@@ -31,7 +31,9 @@ backup=('etc/biglinux/sleep.conf')
 
 check() {
     cd "${srcdir}/${pkgname}"
-    pytest -q
+    # The tests import modules from usr/: never leave bytecode or pytest
+    # caches in the tree that package() copies into the package.
+    PYTHONDONTWRITEBYTECODE=1 pytest -q -p no:cacheprovider
     ruff check usr tests locale/normalize-po-header.py
     find usr/share/biglinux/biglinux-settings locale -name '*.sh' -print0 | xargs -0 shellcheck --severity=warning
     find usr/share/biglinux/biglinux-settings locale -name '*.sh' -print0 | xargs -0 -n1 bash -n
@@ -50,6 +52,11 @@ package() {
             cp -a --no-preserve=ownership "${dir}" "${pkgdir}/"
         fi
     done
+    # Python bytecode is generated at runtime on the target system; shipping it
+    # conflicts with the .pyc files already created there by the sleep hook.
+    find "${pkgdir}" \( -name '__pycache__' -o -name '.pytest_cache' -o -name '.ruff_cache' -o -name '.mypy_cache' \) \
+        -prune -exec rm -rf -- {} +
+    find "${pkgdir}" -type f \( -name '*.pyc' -o -name '*.pyo' \) -delete
     printf '%s\n' "$pkgver" > "${pkgdir}/usr/share/biglinux/biglinux-settings/VERSION"
     chown -R root:root "${pkgdir}"
 
