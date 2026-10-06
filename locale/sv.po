@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-06 14:30-0300\n"
-"PO-Revision-Date: 2026-10-06 14:30-0300\n"
+"POT-Creation-Date: 2026-10-06 19:34-0300\n"
+"PO-Revision-Date: 2026-10-06 19:34-0300\n"
 "Last-Translator: BigLinux Community <community@biglinux.com.br>\n"
 "Language-Team: BigLinux Community (sv)\n"
 "Language: sv\n"
@@ -1496,7 +1496,7 @@ msgid "power profile"
 msgstr "energiprofil"
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:24
-#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
 msgid "speed"
 msgstr "hastighet"
 
@@ -1637,27 +1637,31 @@ msgstr ""
 msgid "Disk health monitoring"
 msgstr "Övervakning av diskarnas hälsa"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:101
-msgid "Keeps the S.M.A.R.T. service watching disks for signs of failure."
-msgstr "Låter S.M.A.R.T.-tjänsten övervaka diskarna efter tecken på fel."
+#: usr/share/biglinux/biglinux-settings/performance_page.py:102
+msgid ""
+"Keeps the S.M.A.R.T. service watching disks for signs of failure. Installs "
+"smartmontools if it is missing."
+msgstr ""
+"Låter S.M.A.R.T.-tjänsten övervaka diskarna efter tecken på fel. Installerar "
+"smartmontools om det saknas."
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+#: usr/share/biglinux/biglinux-settings/performance_page.py:106
 msgid "SMART"
 msgstr "SMART"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+#: usr/share/biglinux/biglinux-settings/performance_page.py:106
 msgid "disk"
 msgstr "disk"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+#: usr/share/biglinux/biglinux-settings/performance_page.py:106
 msgid "smartd"
 msgstr "smartd"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:111
+#: usr/share/biglinux/biglinux-settings/performance_page.py:113
 msgid "Turn off CPU vulnerability protections"
 msgstr "Stäng av skydd mot CPU-sårbarheter"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:113
+#: usr/share/biglinux/biglinux-settings/performance_page.py:115
 msgid ""
 "Adds mitigations=off to the kernel command line, disabling the protections "
 "against Spectre, Meltdown and similar processor flaws. Faster in some "
@@ -1667,7 +1671,7 @@ msgstr ""
 "skyddet mot Spectre, Meltdown och liknande processorfel. Snabbare vid vissa "
 "uppgifter, men mindre säkert. Börjar gälla efter omstart."
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:118
+#: usr/share/biglinux/biglinux-settings/performance_page.py:120
 msgid ""
 "The kernel will stop protecting against processor flaws such as Spectre and "
 "Meltdown. Some workloads get faster, but malicious programs or web pages may "
@@ -1678,27 +1682,27 @@ msgstr ""
 "uppgifter blir snabbare, men skadliga program eller webbsidor kan kanske läsa"
 " data från andra program. Ändringen börjar gälla efter nästa omstart."
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:120
+#: usr/share/biglinux/biglinux-settings/performance_page.py:122
 msgid "Turn off protections"
 msgstr "Stäng av skydd"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
 msgid "Meltdown"
 msgstr "Meltdown"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
 msgid "Spectre"
 msgstr "Spectre"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
 msgid "mitigations"
 msgstr "skyddsåtgärder"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:128
+#: usr/share/biglinux/biglinux-settings/performance_page.py:130
 msgid "Turn off lockup detectors"
 msgstr "Stäng av upptäckt av låsningar"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:130
+#: usr/share/biglinux/biglinux-settings/performance_page.py:132
 msgid ""
 "Adds nowatchdog and tsc=nowatchdog to the kernel command line, disabling the "
 "kernel soft and hard lockup detectors and the TSC clocksource watchdog. "
@@ -1708,7 +1712,7 @@ msgstr ""
 "inaktiverar därmed kärnans mjuka och hårda låsningsdetektorer och TSC-"
 "clocksource-watchdog. Börjar gälla efter omstart."
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:135
+#: usr/share/biglinux/biglinux-settings/performance_page.py:137
 msgid ""
 "The kernel will no longer detect and report processors that stop responding, "
 "and will no longer check the stability of the TSC clock. Freezes may go "
@@ -1720,15 +1724,15 @@ msgstr ""
 "rapporteras och blir svårare att felsöka. Ändringen börjar gälla efter nästa "
 "omstart."
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:137
+#: usr/share/biglinux/biglinux-settings/performance_page.py:139
 msgid "Turn off detectors"
 msgstr "Stäng av detektorer"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:138
+#: usr/share/biglinux/biglinux-settings/performance_page.py:140
 msgid "nowatchdog"
 msgstr "nowatchdog"
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:138
+#: usr/share/biglinux/biglinux-settings/performance_page.py:140
 msgid "watchdog"
 msgstr "watchdog"
 
@@ -2210,6 +2214,9 @@ msgstr "integritet"
 #: usr/share/biglinux/biglinux-settings/usability_page.py:79
 msgid "recent"
 msgstr "senaste"
+
+#~ msgid "Keeps the S.M.A.R.T. service watching disks for signs of failure."
+#~ msgstr "Låter S.M.A.R.T.-tjänsten övervaka diskarna efter tecken på fel."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 126

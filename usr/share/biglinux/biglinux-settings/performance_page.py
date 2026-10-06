@@ -98,7 +98,9 @@ class PerformancePage(BaseSettingsPage):
         self.create_row(
             protections,
             _("Disk health monitoring"),
-            _("Keeps the S.M.A.R.T. service watching disks for signs of failure."),
+            _(
+                "Keeps the S.M.A.R.T. service watching disks for signs of failure. Installs smartmontools if it is missing."
+            ),
             "unloadSmartMonitor",
             "unload-smart-monitor-symbolic",
             keywords=[_("SMART"), _("smartd"), _("disk")],

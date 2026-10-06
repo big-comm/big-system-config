@@ -42,6 +42,7 @@ PRIVILEGED_SCRIPT_TESTS = {
     "test_misc_scripts.py",
     "test_shell_toggles.py",
     "test_sleep_handlers.py",
+    "test_smart_monitor.py",
 }
 
 

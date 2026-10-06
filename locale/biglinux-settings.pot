@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-06 14:30-0300\n"
+"POT-Creation-Date: 2026-10-06 19:34-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1156,7 +1156,7 @@ msgid "power profile"
 msgstr ""
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:24
-#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
 msgid "speed"
 msgstr ""
 
@@ -1279,34 +1279,36 @@ msgstr ""
 msgid "Disk health monitoring"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:101
-msgid "Keeps the S.M.A.R.T. service watching disks for signs of failure."
+#: usr/share/biglinux/biglinux-settings/performance_page.py:102
+msgid ""
+"Keeps the S.M.A.R.T. service watching disks for signs of failure. Installs "
+"smartmontools if it is missing."
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+#: usr/share/biglinux/biglinux-settings/performance_page.py:106
 msgid "SMART"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+#: usr/share/biglinux/biglinux-settings/performance_page.py:106
 msgid "disk"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+#: usr/share/biglinux/biglinux-settings/performance_page.py:106
 msgid "smartd"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:111
+#: usr/share/biglinux/biglinux-settings/performance_page.py:113
 msgid "Turn off CPU vulnerability protections"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:113
+#: usr/share/biglinux/biglinux-settings/performance_page.py:115
 msgid ""
 "Adds mitigations=off to the kernel command line, disabling the protections "
 "against Spectre, Meltdown and similar processor flaws. Faster in some "
 "workloads, but less secure. Applies after restart."
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:118
+#: usr/share/biglinux/biglinux-settings/performance_page.py:120
 msgid ""
 "The kernel will stop protecting against processor flaws such as Spectre and "
 "Meltdown. Some workloads get faster, but malicious programs or web pages may "
@@ -1314,34 +1316,34 @@ msgid ""
 "restart."
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:120
+#: usr/share/biglinux/biglinux-settings/performance_page.py:122
 msgid "Turn off protections"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
 msgid "Meltdown"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
 msgid "Spectre"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
 msgid "mitigations"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:128
+#: usr/share/biglinux/biglinux-settings/performance_page.py:130
 msgid "Turn off lockup detectors"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:130
+#: usr/share/biglinux/biglinux-settings/performance_page.py:132
 msgid ""
 "Adds nowatchdog and tsc=nowatchdog to the kernel command line, disabling the "
 "kernel soft and hard lockup detectors and the TSC clocksource watchdog. "
 "Applies after restart."
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:135
+#: usr/share/biglinux/biglinux-settings/performance_page.py:137
 msgid ""
 "The kernel will no longer detect and report processors that stop responding, "
 "and will no longer check the stability of the TSC clock. Freezes may go "
@@ -1349,15 +1351,15 @@ msgid ""
 "restart."
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:137
+#: usr/share/biglinux/biglinux-settings/performance_page.py:139
 msgid "Turn off detectors"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:138
+#: usr/share/biglinux/biglinux-settings/performance_page.py:140
 msgid "nowatchdog"
 msgstr ""
 
-#: usr/share/biglinux/biglinux-settings/performance_page.py:138
+#: usr/share/biglinux/biglinux-settings/performance_page.py:140
 msgid "watchdog"
 msgstr ""
 

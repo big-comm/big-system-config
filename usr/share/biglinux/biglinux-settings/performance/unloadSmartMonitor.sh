@@ -18,12 +18,17 @@ if [ "$1" == "check" ]; then
 # change the state
 elif [ "$1" == "toggle" ]; then
   state="$2"
-  if [ "$state" == "true" ]; then
-    systemctl disable --now smartd
-    exitCode=$?
-  else
-    systemctl enable --now smartd
-    exitCode=$?
+  # "true" = unload the monitor (stop smartd); "false" = keep disks monitored.
+  # Monitoring installs smartmontools first when smartd.service is missing.
+  case "$state" in
+    true) action="unload" ;;
+    false) action="monitor" ;;
+    *) exit 2 ;;
+  esac
+  if [[ "$action" == "unload" ]] && ! systemctl list-unit-files smartd.service --no-legend 2>/dev/null | grep -q '^smartd\.service'; then
+    # smartd is not installed: it is already not running
+    exit 0
   fi
-  exit $exitCode
+  pkexec /usr/share/biglinux/biglinux-settings/performance/unloadSmartMonitorRun.sh "$action"
+  exit $?
 fi
