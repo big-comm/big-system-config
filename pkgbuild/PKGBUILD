@@ -1,7 +1,9 @@
 # Maintainer: Bruno Goncalves <bigbruno@gmail.com>
 # Maintainer: Tales A. Mendonça <talesam@gmail.com>
 
-pkgname=biglinux-settings
+pkgname=big-system-config
+# Git repository (and installed app directory) keep the previous name
+_reponame=biglinux-settings
 pkgdesc="Scripts and configuration files created in GTK4 that simplify switching BigLinux operation."
 depends=('gtk4' 'libadwaita' 'networkmanager' 'polkit' 'python' 'python-gobject' 'systemd' 'util-linux')
 makedepends=('gettext' 'git' 'python-pytest' 'python-ruff' 'shellcheck')
@@ -24,13 +26,15 @@ pkgver=$(date +%y.%m.%d)
 pkgrel=$(date +%H%M)
 arch=('any')
 license=('GPL-3.0-or-later')
-url="https://github.com/big-comm/${pkgname}"
-source=("${pkgname}::git+${url}.git")
+url="https://github.com/big-comm/${_reponame}"
+source=("${_reponame}::git+${url}.git")
 sha256sums=('SKIP')
+provides=('biglinux-settings')
+conflicts=('biglinux-settings')
 backup=('etc/biglinux/sleep.conf')
 
 check() {
-    cd "${srcdir}/${pkgname}"
+    cd "${srcdir}/${_reponame}"
     # The tests import modules from usr/: never leave bytecode or pytest
     # caches in the tree that package() copies into the package.
     PYTHONDONTWRITEBYTECODE=1 pytest -q -p no:cacheprovider
@@ -44,7 +48,7 @@ check() {
 }
 
 package() {
-    cd "${srcdir}/${pkgname}"
+    cd "${srcdir}/${_reponame}"
 
     local dirs=("usr" "etc" "opt")
     for dir in "${dirs[@]}"; do
