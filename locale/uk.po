@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-05 00:17-0300\n"
-"PO-Revision-Date: 2026-10-05 00:17-0300\n"
+"POT-Creation-Date: 2026-10-06 14:30-0300\n"
+"PO-Revision-Date: 2026-10-06 14:30-0300\n"
 "Last-Translator: BigLinux Community <community@biglinux.com.br>\n"
 "Language-Team: BigLinux Community (uk)\n"
 "Language: uk\n"
@@ -26,147 +26,157 @@ msgstr "AMD/Nvidia графічний процесор не знайдено!"
 msgid "No Ollama packages are installed. Enable an Ollama variant first."
 msgstr "Жодні пакети Ollama не встановлені. Спочатку увімкніть варіант Ollama."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 30
-#: usr/share/biglinux/biglinux-settings/ai_page.py:15
-msgid "AI Interfaces"
-msgstr "Інтерфейси ШІ"
+#: usr/share/biglinux/biglinux-settings/ai_page.py:13
+#: usr/share/biglinux/biglinux-settings/main.py:354
+msgid "Artificial Intelligence"
+msgstr "Штучний інтелект"
 
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 16
-#: usr/share/biglinux/biglinux-settings/ai_page.py:16
-msgid "Graphical interface for artificial intelligence."
-msgstr "Графічний інтерфейс для штучного інтелекту."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:14
+msgid "Chat, work with documents and create images with AI on this computer."
+msgstr ""
+"Спілкуйтеся, працюйте з документами та створюйте зображення за допомогою ШІ "
+"на цьому комп’ютері."
 
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 23
-#: usr/share/biglinux/biglinux-settings/ai_page.py:23
-msgid "Ollama Server"
-msgstr "Ollama Server"
+#: usr/share/biglinux/biglinux-settings/ai_page.py:17
+#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+msgid "LLM"
+msgstr "LLM"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 23
-#: usr/share/biglinux/biglinux-settings/ai_page.py:24
-msgid "Choose which Ollama server is best for your hardware."
-msgstr "Виберіть, який сервер Ollama найкраще підходить для вашого обладнання."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:17
+msgid "chat"
+msgstr "чат"
 
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
-#: usr/share/biglinux/biglinux-settings/ai_page.py:32
-msgid "Update Ollama"
-msgstr "Оновити Ollama"
+#: usr/share/biglinux/biglinux-settings/ai_page.py:17
+#: usr/share/biglinux/biglinux-settings/ai_page.py:105
+#: usr/share/biglinux/biglinux-settings/ai_page.py:138
+#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+msgid "local AI"
+msgstr "локальний ШІ"
 
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
-#: usr/share/biglinux/biglinux-settings/ai_page.py:33
-msgid "Update the installed Ollama packages to the latest version."
-msgstr "Оновити встановлені пакети Ollama до останньої версії."
-
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 36
-#: usr/share/biglinux/biglinux-settings/ai_page.py:36
-msgid "Update now"
-msgstr "Оновити зараз"
-
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
-#: usr/share/biglinux/biglinux-settings/ai_page.py:43
-msgid "Ollama Variants"
-msgstr "Ollama Варианти"
-
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
-#: usr/share/biglinux/biglinux-settings/ai_page.py:44
-msgid "Select the variant that matches your GPU hardware."
-msgstr "Select the variant that matches your GPU hardware."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:21
+msgid "AI applications"
+msgstr "Застосунки ШІ"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 46
-#: usr/share/biglinux/biglinux-settings/ai_page.py:51
+#: usr/share/biglinux/biglinux-settings/ai_page.py:30
 msgid "ChatAI"
 msgstr "ChatAI"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 47
-#: usr/share/biglinux/biglinux-settings/ai_page.py:52
-msgid "A variety of chats like Plasmoid for your KDE Plasma desktop."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:32
+msgid ""
+"Desktop widget with access to several AI chats for KDE Plasma. Installs the "
+"widget; turning it off removes it."
 msgstr ""
-"Різноманітність чатів, таких як Plasmoid, для вашого робочого столу KDE "
-"Plasma."
+"Віджет робочого столу з доступом до кількох ШІ-чатів для KDE Plasma. "
+"Встановлює віджет; після вимкнення він видаляється."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:36
+msgid "plasmoid"
+msgstr "плазмоїд"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:36
+msgid "widget"
+msgstr "віджет"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 128
-#: usr/share/biglinux/biglinux-settings/ai_page.py:59
+#: usr/share/biglinux/biglinux-settings/ai_page.py:41
 msgid "Ollama LAB"
-msgstr "Ollama ЛАБ"
+msgstr "Ollama LAB"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 129
-#: usr/share/biglinux/biglinux-settings/ai_page.py:60
-msgid "Graphical interface for managing Ollama models and chat."
-msgstr "Графічний інтерфейс для керування моделями Ollama та чатом."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:43
+msgid ""
+"Graphical app to manage Ollama models and chat with them. Installs Ollama "
+"LAB; turning it off removes it."
+msgstr ""
+"Графічний застосунок для керування моделями Ollama та спілкування з ними. "
+"Встановлює Ollama LAB; після вимкнення він видаляється."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:47
+#: usr/share/biglinux/biglinux-settings/ai_page.py:138
+#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+msgid "Ollama"
+msgstr "Ollama"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 56
-#: usr/share/biglinux/biglinux-settings/ai_page.py:67
+#: usr/share/biglinux/biglinux-settings/ai_page.py:52
 msgid "ChatBox"
-msgstr "ЧатБокс"
+msgstr "ChatBox"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 137
-#: usr/share/biglinux/biglinux-settings/ai_page.py:68
-msgid "User-friendly Desktop Client App for AI Models/LLMs."
-msgstr "Зручний настільний клієнтський додаток для моделей ШІ/ВМП."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:54
+msgid ""
+"Desktop app to chat with AI models, local or online. Installs ChatBox; "
+"turning it off removes it."
+msgstr ""
+"Застосунок для спілкування з моделями ШІ, локальними або онлайн. Встановлює "
+"ChatBox; після вимкнення він видаляється."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 144
-#: usr/share/biglinux/biglinux-settings/ai_page.py:75
+#: usr/share/biglinux/biglinux-settings/ai_page.py:63
 msgid "LM Studio"
-msgstr "LM Студія"
+msgstr "LM Studio"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 145
-#: usr/share/biglinux/biglinux-settings/ai_page.py:77
+#: usr/share/biglinux/biglinux-settings/ai_page.py:65
 msgid ""
-"LM Studio - A desktop app for exploring and running large language models "
-"locally."
+"Desktop app to download and run language models on this computer. Installs LM"
+" Studio; turning it off removes it."
 msgstr ""
-"LM Studio - Десктопний додаток для дослідження та запуску великих мовних "
-"моделей локально."
+"Застосунок для завантаження та запуску мовних моделей на цьому комп’ютері. "
+"Встановлює LM Studio; після вимкнення він видаляється."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
 # 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 194
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 203
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 74
-#: usr/share/biglinux/biglinux-settings/ai_page.py:85
-#: usr/share/biglinux/biglinux-settings/docker_page.py:194
+#: usr/share/biglinux/biglinux-settings/ai_page.py:74
+#: usr/share/biglinux/biglinux-settings/apps_page.py:155
 msgid "Open Notebook"
-msgstr "打开笔记本"
+msgstr "Open Notebook"
 
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 87
-#: usr/share/biglinux/biglinux-settings/ai_page.py:87
+#: usr/share/biglinux/biglinux-settings/ai_page.py:76
 msgid ""
-"Open-source, privacy-focused alternative to Google's NotebookLM. Requires "
-"Docker enabled."
+"Open-source, privacy-focused alternative to Google's NotebookLM for working "
+"with your documents. Installs it as a container and requires Docker; turning "
+"it off removes it."
 msgstr ""
-"Відкрита, орієнтована на конфіденційність альтернатива Google NotebookLM. "
-"Потрібен увімкнений Docker."
+"Відкрита альтернатива NotebookLM від Google з акцентом на приватність для "
+"роботи з вашими документами. Встановлюється як контейнер і потребує Docker; "
+"після вимкнення видаляється."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:80
+#: usr/share/biglinux/biglinux-settings/apps_page.py:165
+msgid "NotebookLM"
+msgstr "NotebookLM"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:80
+msgid "documents"
+msgstr "документи"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
 # 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 201
-#: usr/share/biglinux/biglinux-settings/ai_page.py:94
-#: usr/share/biglinux/biglinux-settings/docker_page.py:201
+#: usr/share/biglinux/biglinux-settings/ai_page.py:84
+#: usr/share/biglinux/biglinux-settings/apps_page.py:159
 msgid "Open Notebook Server"
-msgstr "Відкрити сервер Notebook"
+msgstr "Сервер Open Notebook"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
 # 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 95
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 202
-#: usr/share/biglinux/biglinux-settings/ai_page.py:95
-#: usr/share/biglinux/biglinux-settings/docker_page.py:202
+#: usr/share/biglinux/biglinux-settings/ai_page.py:85
+#: usr/share/biglinux/biglinux-settings/apps_page.py:160
 msgid "Start the Open Notebook server."
 msgstr "Запустити сервер Open Notebook."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 190
-#: usr/share/biglinux/biglinux-settings/ai_page.py:100
-#: usr/share/biglinux/biglinux-settings/docker_page.py:207
+#: usr/share/biglinux/biglinux-settings/ai_page.py:90
+#: usr/share/biglinux/biglinux-settings/apps_page.py:163
 #, python-brace-format
 msgid ""
 "Open Notebook is running.\n"
@@ -174,37 +184,47 @@ msgid ""
 "and\n"
 "Address: http://{}:8502"
 msgstr ""
-"Відкритий блокнот працює.\n"
+"Open Notebook працює.\n"
 "Адреса: http://localhost:8502\n"
 "та\n"
 "Адреса: http://{}:8502"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 87
-#: usr/share/biglinux/biglinux-settings/ai_page.py:107
-msgid "ComfyUI (GPU ONLY)"
-msgstr "ComfyUI (ТІЛЬКИ GPU)"
+#: usr/share/biglinux/biglinux-settings/ai_page.py:97
+msgid "ComfyUI image generation"
+msgstr "Генерація зображень ComfyUI"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 88
-#: usr/share/biglinux/biglinux-settings/ai_page.py:108
-msgid "The most powerful and modular visual AI engine and application."
-msgstr "Найпотужніший та модульний візуальний AI-двигун і застосунок."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:99
+msgid ""
+"Create images with AI using a visual node editor. Requires an AMD or Nvidia "
+"graphics card. Installs ComfyUI in your home folder; turning it off removes "
+"it."
+msgstr ""
+"Створюйте зображення за допомогою ШІ у візуальному редакторі вузлів. Потрібна"
+" відеокарта AMD або Nvidia. Встановлює ComfyUI у вашу домашню теку; після "
+"вимкнення він видаляється."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:105
+msgid "Stable Diffusion"
+msgstr "Stable Diffusion"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:105
+msgid "images"
+msgstr "зображення"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 94
-#: usr/share/biglinux/biglinux-settings/ai_page.py:116
+#: usr/share/biglinux/biglinux-settings/ai_page.py:109
 msgid "ComfyUI Server"
 msgstr "ComfyUI Сервер"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
-#: usr/share/biglinux/biglinux-settings/ai_page.py:117
+#: usr/share/biglinux/biglinux-settings/ai_page.py:110
 msgid "Start the ComfyUI server."
 msgstr "Запустіть сервер ComfyUI."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 100
-#: usr/share/biglinux/biglinux-settings/ai_page.py:122
+#: usr/share/biglinux/biglinux-settings/ai_page.py:115
 #, python-brace-format
 msgid ""
 "ComfyUI server is running.\n"
@@ -217,17 +237,99 @@ msgstr ""
 "та  \n"
 "Адреса: http://{}:8188"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 56
-#: usr/share/biglinux/biglinux-settings/ai_page.py:128
-msgid "OllamaCPU"
-msgstr "OllamaCPU"
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 23
+#: usr/share/biglinux/biglinux-settings/ai_page.py:121
+msgid "Ollama Server"
+msgstr "Ollama Server"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:123
+msgid ""
+"Ollama runs AI models on this computer. The variants below are alternative "
+"engines for different hardware: install only the one that matches your "
+"processor or graphics card."
+msgstr ""
+"Ollama запускає моделі ШІ на цьому комп’ютері. Варіанти нижче — це "
+"альтернативні рушії для різного обладнання: встановіть лише той, що "
+"відповідає вашому процесору або відеокарті."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
+#: usr/share/biglinux/biglinux-settings/ai_page.py:132
+msgid "Update Ollama"
+msgstr "Оновити Ollama"
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
+#: usr/share/biglinux/biglinux-settings/ai_page.py:133
+msgid "Update the installed Ollama packages to the latest version."
+msgstr "Оновити встановлені пакети Ollama до останньої версії."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 36
+#: usr/share/biglinux/biglinux-settings/ai_page.py:136
+msgid "Update now"
+msgstr "Оновити зараз"
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
+#: usr/share/biglinux/biglinux-settings/ai_page.py:143
+msgid "Ollama Variants"
+msgstr "Ollama Варианти"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:144
+msgid "Select the variant that matches your hardware."
+msgstr "Виберіть варіант, що відповідає вашому обладнанню."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:152
+msgid "Ollama for CPU"
+msgstr "Ollama для CPU"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:154
+msgid ""
+"Runs AI models on the processor only. Installs Ollama; turning it off removes"
+" it."
+msgstr ""
+"Запускає моделі ШІ лише на процесорі. Встановлює Ollama; після вимкнення він "
+"видаляється."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 57
-#: usr/share/biglinux/biglinux-settings/ai_page.py:129
-msgid "Local AI server. For CPUs only."
-msgstr "Локальний AI сервер. Тільки для ЦП."
+# line: 74
+#: usr/share/biglinux/biglinux-settings/ai_page.py:159
+msgid "Ollama Vulkan"
+msgstr "Ollama Vulkan"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:161
+msgid ""
+"For processors, AMD and Nvidia graphics cards and integrated graphics. "
+"Installs Ollama; turning it off removes it."
+msgstr ""
+"Для процесорів, відеокарт AMD і Nvidia та інтегрованої графіки. Встановлює "
+"Ollama; після вимкнення він видаляється."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 110
+#: usr/share/biglinux/biglinux-settings/ai_page.py:166
+msgid "Ollama Nvidia CUDA"
+msgstr "Оллама НВІДІА CUDA"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:168
+msgid ""
+"For newer Nvidia graphics cards, from the 2000 series on. Installs Ollama; "
+"turning it off removes it."
+msgstr ""
+"Для нових відеокарт Nvidia, починаючи із серії 2000. Встановлює Ollama; після"
+" вимкнення він видаляється."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 92
+#: usr/share/biglinux/biglinux-settings/ai_page.py:173
+msgid "Ollama AMD ROCm"
+msgstr "Ollama AMD ROCm"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:175
+msgid ""
+"For newer AMD graphics cards, from the 6000 series on. In many tests Vulkan "
+"performed better than ROCm. Installs Ollama; turning it off removes it."
+msgstr ""
+"Для нових відеокарт AMD, починаючи із серії 6000. У багатьох тестах Vulkan "
+"показав кращу продуктивність, ніж ROCm. Встановлює Ollama; після вимкнення "
+"він видаляється."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 60
@@ -237,10 +339,7 @@ msgstr "Локальний AI сервер. Тільки для ЦП."
 # line: 96
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 114
-#: usr/share/biglinux/biglinux-settings/ai_page.py:132
-#: usr/share/biglinux/biglinux-settings/ai_page.py:152
-#: usr/share/biglinux/biglinux-settings/ai_page.py:172
-#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+#: usr/share/biglinux/biglinux-settings/ai_page.py:193
 msgid ""
 "Ollama server is running.\n"
 "Address: http://localhost:11434"
@@ -256,27 +355,15 @@ msgstr ""
 # line: 100
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 118
-#: usr/share/biglinux/biglinux-settings/ai_page.py:136
-#: usr/share/biglinux/biglinux-settings/ai_page.py:156
-#: usr/share/biglinux/biglinux-settings/ai_page.py:176
 #: usr/share/biglinux/biglinux-settings/ai_page.py:198
 msgid "Share Ollama"
 msgstr "Поділитися Ollama"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 65
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 83
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 101
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 119
-#: usr/share/biglinux/biglinux-settings/ai_page.py:137
-#: usr/share/biglinux/biglinux-settings/ai_page.py:157
-#: usr/share/biglinux/biglinux-settings/ai_page.py:177
 #: usr/share/biglinux/biglinux-settings/ai_page.py:199
-msgid "Share ollama on the local network."
-msgstr "Поділіться ollama в локальній мережі."
+msgid "Lets other computers on the local network use this Ollama server."
+msgstr ""
+"Дозволяє іншим комп’ютерам локальної мережі використовувати цей сервер "
+"Ollama."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 69
@@ -286,9 +373,6 @@ msgstr "Поділіться ollama в локальній мережі."
 # line: 105
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 123
-#: usr/share/biglinux/biglinux-settings/ai_page.py:141
-#: usr/share/biglinux/biglinux-settings/ai_page.py:161
-#: usr/share/biglinux/biglinux-settings/ai_page.py:181
 #: usr/share/biglinux/biglinux-settings/ai_page.py:203
 #, python-brace-format
 msgid ""
@@ -298,560 +382,69 @@ msgstr ""
 "Сервер Ollama працює.  \n"
 "Адреса: http://{}:11434"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 74
-#: usr/share/biglinux/biglinux-settings/ai_page.py:148
-msgid "Ollama Vulkan"
-msgstr "Ollama Vulkan"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 75
-#: usr/share/biglinux/biglinux-settings/ai_page.py:149
-msgid "Local AI server. For CPUs, AMD/Nvidia and integrated GPUs."
-msgstr "Локальний AI сервер. Для ЦП, AMD/Nvidia та інтегрованих ГП."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 110
-#: usr/share/biglinux/biglinux-settings/ai_page.py:168
-msgid "Ollama Nvidia CUDA"
-msgstr "Оллама НВІДІА CUDA"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 111
-#: usr/share/biglinux/biglinux-settings/ai_page.py:169
-msgid "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
-msgstr ""
-"Локальний AI сервер. Для новіших графічних процесорів Nvidia, починаючи з "
-"серії 2000."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 92
-#: usr/share/biglinux/biglinux-settings/ai_page.py:188
-msgid "Ollama AMD ROCm"
-msgstr "Ollama AMD ROCm"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 111
-#: usr/share/biglinux/biglinux-settings/ai_page.py:190
-msgid ""
-"Local AI server. For newer AMD GPUs, starting from the 6000 series.\n"
-"Consider using Vulkan, in many tests, Vulkan performed better than ROCm."
-msgstr ""
-"Локальний AI сервер. Для новіших графічних процесорів AMD, починаючи з серії "
-"6000. Розгляньте можливість використання Vulkan, у багатьох тестах Vulkan "
-"показав кращі результати, ніж ROCm."
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 48
-#: usr/share/biglinux/biglinux-settings/base_page.py:66
-msgid "Close"
-msgstr "Закрити"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 63
-#: usr/share/biglinux/biglinux-settings/base_page.py:84
-#, python-brace-format
-msgid "Warning: {}"
-msgstr "Увага: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 66
-#: usr/share/biglinux/biglinux-settings/base_page.py:87
-msgid "Cancel"
-msgstr "Cancel"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 67
-#: usr/share/biglinux/biglinux-settings/base_page.py:88
-msgid "Continue"
-msgstr "Продолжити"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 230
-#: usr/share/biglinux/biglinux-settings/base_page.py:235
-msgid "Run"
-msgstr "Запустити"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 236
-#: usr/share/biglinux/biglinux-settings/base_page.py:241
-#, python-brace-format
-msgid "{}: run action"
-msgstr "{}: виконати дію"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 173
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 199
-#: usr/share/biglinux/biglinux-settings/base_page.py:269
-#: usr/share/biglinux/biglinux-settings/base_page.py:271
-#: usr/share/biglinux/biglinux-settings/base_page.py:499
-#: usr/share/biglinux/biglinux-settings/base_page.py:552
-#, python-brace-format
-msgid "Script not found: {}"
-msgstr "Скрипт не знайдено: {}"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 626
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 136
-#: usr/share/biglinux/biglinux-settings/base_page.py:280
-#: usr/share/biglinux/biglinux-settings/base_page.py:896
-#: usr/share/biglinux/biglinux-settings/devices_page.py:139
-msgid "Applying…"
-msgstr "Applying…"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 289
-#: usr/share/biglinux/biglinux-settings/base_page.py:294
-#, python-brace-format
-msgid "Action script {} failed: {}"
-msgstr "Сценарій дії {} не виконано: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 294
-#: usr/share/biglinux/biglinux-settings/base_page.py:299
-#, python-brace-format
-msgid "Action script timeout: {}"
-msgstr "Час виконання сценарію дії {} вичерпано"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 297
-#: usr/share/biglinux/biglinux-settings/base_page.py:302
-#, python-brace-format
-msgid "Error running action script {}: {}"
-msgstr "Помилка виконання сценарію дії {}: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 307
-#: usr/share/biglinux/biglinux-settings/base_page.py:312
-msgid "Action completed successfully"
-msgstr "Дію виконано успішно"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 310
-#: usr/share/biglinux/biglinux-settings/base_page.py:315
-#, python-brace-format
-msgid "Action failed: {}"
-msgstr "Дію не виконано: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 215
-#: usr/share/biglinux/biglinux-settings/base_page.py:348
-msgid "Recommended"
-msgstr "Рекомендовано"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 238
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 326
-#: usr/share/biglinux/biglinux-settings/base_page.py:371
-#: usr/share/biglinux/biglinux-settings/base_page.py:459
-#, python-brace-format
-msgid "{}: additional information"
-msgstr "{}: додаткова інформація"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 251
-#: usr/share/biglinux/biglinux-settings/base_page.py:384
-msgid "Learn more"
-msgstr "Дізнатися більше"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 257
-#: usr/share/biglinux/biglinux-settings/base_page.py:390
-#, python-brace-format
-msgid "{}: learn more"
-msgstr "{}: дізнатися більше"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 206
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 165
-#: usr/share/biglinux/biglinux-settings/base_page.py:498
-msgid "Unavailable: script not found."
-msgstr "Недоступно: скрипт не знайдено."
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 218
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 177
-#: usr/share/biglinux/biglinux-settings/base_page.py:514
-msgid "Enabled"
-msgstr "Увімкнено"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 220
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 179
-#: usr/share/biglinux/biglinux-settings/base_page.py:516
-msgid "Disabled"
-msgstr "Вимкнено"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 223
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 182
-#: usr/share/biglinux/biglinux-settings/base_page.py:522
-msgid ""
-"Enabled by system configuration (e.g., Real-Time Kernel) and cannot be "
-"changed here."
-msgstr ""
-"Увімкнено системною конфігурацією (наприклад, реального часу ядро) і не може "
-"бути змінено тут."
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 516
-#: usr/share/biglinux/biglinux-settings/base_page.py:526
-msgid "Unavailable in this desktop environment."
-msgstr "Недоступно в цьому робочому середовищі."
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 225
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 184
-#: usr/share/biglinux/biglinux-settings/base_page.py:528
-msgid "Unavailable: script returned invalid output."
-msgstr "Недоступно: скрипт повернув недійсний вихід."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/base_page.py,
-# line: 261
-#: usr/share/biglinux/biglinux-settings/base_page.py:530
-#, python-brace-format
-msgid "output from script {}: {}"
-msgstr "вихід зі скрипту {}: {}"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 229
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 188
-#: usr/share/biglinux/biglinux-settings/base_page.py:536
-msgid "Unavailable: script returned an error."
-msgstr "Недоступно: скрипт повернув помилку."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 184
-#: usr/share/biglinux/biglinux-settings/base_page.py:537
-#, python-brace-format
-msgid "Error checking state: {}"
-msgstr "Помилка перевірки стану: {}"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 233
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 192
-#: usr/share/biglinux/biglinux-settings/base_page.py:540
-msgid "Unavailable: failed to run script."
-msgstr "Недоступно: не вдалося виконати скрипт."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 193
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 220
-#: usr/share/biglinux/biglinux-settings/base_page.py:541
-#: usr/share/biglinux/biglinux-settings/base_page.py:600
-#, python-brace-format
-msgid "Error running script {}: {}"
-msgstr "Помилка виконання скрипту {}: {}"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 211
-#: usr/share/biglinux/biglinux-settings/base_page.py:569
-#, python-brace-format
-msgid "Script output: {}"
-msgstr "Скрипт виводу: {}"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 209
-#: usr/share/biglinux/biglinux-settings/base_page.py:573
-msgid "State changed successfully"
-msgstr "Стан успішно змінено"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 215
-#: usr/share/biglinux/biglinux-settings/base_page.py:582
-#, python-brace-format
-msgid "Script failed with exit code: {}"
-msgstr "Скрипт завершився з кодом виходу: {}"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 190
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 217
-#: usr/share/biglinux/biglinux-settings/base_page.py:596
-#, python-brace-format
-msgid "Script timeout: {}"
-msgstr "Тайм-аут скрипта: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 620
-#: usr/share/biglinux/biglinux-settings/base_page.py:630
-#, python-brace-format
-msgid "{} sub-option available"
-msgid_plural "{} sub-options available"
-msgstr[0] "{} підпараметр доступний"
-msgstr[1] "{} підпараметри доступні"
-msgstr[2] "{} підпараметрів доступно"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
-#: usr/share/biglinux/biglinux-settings/base_page.py:817
-msgid "off"
-msgstr "вимкнено"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
-#: usr/share/biglinux/biglinux-settings/base_page.py:817
-msgid "on"
-msgstr "включено"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 574
-#: usr/share/biglinux/biglinux-settings/base_page.py:822
-#, python-brace-format
-msgid "Changing {} to {}…"
-msgstr "Зміна {} на {}…"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 576
-#: usr/share/biglinux/biglinux-settings/base_page.py:825
-msgid "Undo"
-msgstr "Відмінити"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 600
-#: usr/share/biglinux/biglinux-settings/base_page.py:856
-msgid "Undo: reverted toggle"
-msgstr "Annulla: interruttore ripristinato"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 244
-#: usr/share/biglinux/biglinux-settings/base_page.py:886
-#, python-brace-format
-msgid "Changing {} to {}"
-msgstr "Зміна {} на {}"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 271
-#: usr/share/biglinux/biglinux-settings/base_page.py:920
-#, python-brace-format
-msgid "ERROR: Failed to change {} to {}"
-msgstr "ПОМИЛКА: Не вдалося змінити {} на {}"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 274
-#: usr/share/biglinux/biglinux-settings/base_page.py:925
-#, python-brace-format
-msgid "Failed to change setting: {}"
-msgstr "Не вдалося змінити налаштування: {}"
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 11
-#: usr/share/biglinux/biglinux-settings/developer_page.py:11
-msgid "AI Coding Assistants"
-msgstr "AI-асистенти програмування"
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 12
-#: usr/share/biglinux/biglinux-settings/developer_page.py:12
-msgid "Open-source coding agents powered by language models."
-msgstr "Відкриті агенти програмування на основі мовних моделей."
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 21
-#: usr/share/biglinux/biglinux-settings/developer_page.py:21
-msgid "OpenClaude"
-msgstr "OpenClaude"
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 23
-#: usr/share/biglinux/biglinux-settings/developer_page.py:23
-msgid ""
-"Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
-"models. Installs nodejs, npm and ripgrep as dependencies."
-msgstr ""
-"Відкритий CLI-агент для кодування для OpenAI, Gemini, DeepSeek, Ollama та "
-"200+ моделей. Встановлює nodejs, npm та ripgrep як залежності."
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/dispositivos_page.py, line: 25
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 116
-#: usr/share/biglinux/biglinux-settings/devices_page.py:34
-#: usr/share/biglinux/biglinux-settings/main.py:289
-msgid "Devices"
-msgstr "Пристрої"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 15
-#: usr/share/biglinux/biglinux-settings/devices_page.py:34
-msgid "Manage physical devices."
-msgstr "Керуйте фізичними пристроями."
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 39
-#: usr/share/biglinux/biglinux-settings/devices_page.py:39
-msgid "Enable the Wi-Fi adapter."
-msgstr "Увімкнути адаптер Wi-Fi."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 190
-#: usr/share/biglinux/biglinux-settings/devices_page.py:39
-msgid "Wifi"
-msgstr "Wi-Fi"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 197
-#: usr/share/biglinux/biglinux-settings/devices_page.py:43
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 43
-#: usr/share/biglinux/biglinux-settings/devices_page.py:43
-msgid "Enable the Bluetooth adapter."
-msgstr "Активувати адаптер Bluetooth."
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/dispositivos_page.py, line: 77
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices/jamesdsp_dialog.py, line: 155
-#: usr/share/biglinux/biglinux-settings/devices_page.py:49
-msgid "JamesDSP"
-msgstr "JamesDSP"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/dispositivos_page.py, line: 84
-#: usr/share/biglinux/biglinux-settings/devices_page.py:50
-msgid "Advanced audio effects processor that improves sound quality."
-msgstr "Розширений процесор аудіоефектів, що покращує якість звуку."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 71
-#: usr/share/biglinux/biglinux-settings/devices_page.py:58
-msgid "Reverse mouse scrolling"
-msgstr "Зворотне прокручування миші"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 72
-#: usr/share/biglinux/biglinux-settings/devices_page.py:59
-msgid "Reverse mouse scrolling without restarting the session."
-msgstr "Зворотне прокручування миші без перезапуску сеансу."
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 66
-#: usr/share/biglinux/biglinux-settings/devices_page.py:66
-msgid "Network Interfaces"
-msgstr "Мережеві інтерфейси"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 67
-#: usr/share/biglinux/biglinux-settings/devices_page.py:67
-msgid "Connect or disconnect network devices."
-msgstr "Підключити або відключити мережеві пристрої."
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 99
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 154
-#: usr/share/biglinux/biglinux-settings/devices_page.py:99
-#: usr/share/biglinux/biglinux-settings/devices_page.py:160
-#, python-brace-format
-msgid "{} — {}"
-msgstr "Understood. Please provide the string to translate. {} {}"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 113
-#: usr/share/biglinux/biglinux-settings/devices_page.py:116
-#, python-brace-format
-msgid "{}: toggle connection"
-msgstr "{}: перемикання з'єднання"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
-#: usr/share/biglinux/biglinux-settings/devices_page.py:158
-msgid "connected"
-msgstr "connected"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
-#: usr/share/biglinux/biglinux-settings/devices_page.py:158
-msgid "disconnected"
-msgstr "disconnected"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 161
-#: usr/share/biglinux/biglinux-settings/devices_page.py:168
-#, python-brace-format
-msgid "Failed to change network device: {}"
-msgstr "Не вдалося змінити мережевий пристрій: {}"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:11
+#: usr/share/biglinux/biglinux-settings/main.py:360
+msgid "Apps & Services"
+msgstr "Застосунки та служби"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:11
+msgid "Install and manage services and developer tools."
+msgstr "Встановлення й керування службами та інструментами розробника."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 204
-#: usr/share/biglinux/biglinux-settings/docker_page.py:15
-#: usr/share/biglinux/biglinux-settings/docker_page.py:51
-#: usr/share/biglinux/biglinux-settings/main.py:301
+#: usr/share/biglinux/biglinux-settings/apps_page.py:15
+#: usr/share/biglinux/biglinux-settings/apps_page.py:20
+#: usr/share/biglinux/biglinux-settings/apps_page.py:26
+#: usr/share/biglinux/biglinux-settings/home_page.py:134
 msgid "Docker"
-msgstr "Додаток Docker"
+msgstr "Docker"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 16
-#: usr/share/biglinux/biglinux-settings/docker_page.py:16
-msgid "Container service — enable to use containers below."
-msgstr "Контейнерна служба — увімкніть використання контейнерів нижче."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:22
+msgid ""
+"Container engine needed by all the services below. Installs Docker if it is "
+"missing; turning it off stops it."
+msgstr ""
+"Рушій контейнерів, потрібний для всіх служб нижче. Встановлює Docker, якщо "
+"його немає; після вимкнення він зупиняється."
 
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 137
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 18
-#: usr/share/biglinux/biglinux-settings/docker_page.py:23
-msgid "Containers"
-msgstr "Контейнери"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:26
+msgid "containers"
+msgstr "контейнери"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 23
-#: usr/share/biglinux/biglinux-settings/docker_page.py:23
-msgid "Manage container technologies."
-msgstr "Керуйте технологіями контейнерів."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:31
+msgid "Media & Cloud"
+msgstr "Медіа та хмара"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 30
-#: usr/share/biglinux/biglinux-settings/docker_page.py:30
-msgid "Media &amp; Cloud"
-msgstr "Медіа та Хмара"
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 31
-#: usr/share/biglinux/biglinux-settings/docker_page.py:31
-msgid "Media servers and cloud storage containers."
-msgstr "Медіа-сервери та контейнери хмарного зберігання."
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 36
-#: usr/share/biglinux/biglinux-settings/docker_page.py:36
-msgid "Network &amp; Security"
-msgstr "Мережа та безпека"
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 37
-#: usr/share/biglinux/biglinux-settings/docker_page.py:37
-msgid "Network tools and security containers."
-msgstr "Мережеві інструменти та контейнери безпеки."
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 42
-#: usr/share/biglinux/biglinux-settings/docker_page.py:42
-msgid "Development &amp; Tools"
-msgstr "Розробка та інструменти"
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 43
-#: usr/share/biglinux/biglinux-settings/docker_page.py:43
-msgid "Development stacks and utility containers."
-msgstr "Стеки розробки та утилітарні контейнери."
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 52
-#: usr/share/biglinux/biglinux-settings/docker_page.py:52
-msgid "Enable Docker container engine."
-msgstr "Увімкнути движок контейнерів Docker."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:32
+msgid "Media servers and cloud storage. Require Docker."
+msgstr "Медіасервери та хмарні сховища. Потребують Docker."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 35
-#: usr/share/biglinux/biglinux-settings/docker_page.py:61
-#: usr/share/biglinux/biglinux-settings/docker_page.py:68
+#: usr/share/biglinux/biglinux-settings/apps_page.py:39
 msgid "Nextcloud Plus"
-msgstr "Nextcloud Плюс"
+msgstr "Nextcloud Plus"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 62
-#: usr/share/biglinux/biglinux-settings/docker_page.py:62
-msgid "Install Nextcloud Plus cloud storage container."
-msgstr "Встановіть контейнер хмарного сховища Nextcloud Plus."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:41
+msgid ""
+"Cloud storage for your files, calendar and contacts. Installs it as a "
+"container; turning it off removes it."
+msgstr ""
+"Хмарне сховище для ваших файлів, календаря та контактів. Встановлюється як "
+"контейнер; після вимкнення видаляється."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 52
-#: usr/share/biglinux/biglinux-settings/docker_page.py:69
-msgid "Run Nextcloud Plus."
-msgstr "Запустіть Nextcloud Plus."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:43
+msgid "Start Nextcloud Plus"
+msgstr "Запустити Nextcloud Plus"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:44
+msgid "Runs the Nextcloud Plus container."
+msgstr "Запускає контейнер Nextcloud Plus."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 48
-#: usr/share/biglinux/biglinux-settings/docker_page.py:74
+#: usr/share/biglinux/biglinux-settings/apps_page.py:47
 #, python-brace-format
 msgid ""
 "Nextcloud Plus is running.\n"
@@ -864,60 +457,40 @@ msgstr ""
 "та  \n"
 "Адреса: http://{}:8286"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 44
-#: usr/share/biglinux/biglinux-settings/docker_page.py:80
-#: usr/share/biglinux/biglinux-settings/docker_page.py:87
-msgid "AdGuard"
-msgstr "AdGuard"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:49
+msgid "Nextcloud"
+msgstr "Nextcloud"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 81
-#: usr/share/biglinux/biglinux-settings/docker_page.py:81
-msgid "Install AdGuard Home DNS ad-blocker container."
-msgstr "Встановити контейнер блокувальника реклами AdGuard Home DNS."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 71
-#: usr/share/biglinux/biglinux-settings/docker_page.py:88
-msgid "Run AdGuard."
-msgstr "Запустіть AdGuard."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 57
-#: usr/share/biglinux/biglinux-settings/docker_page.py:93
-#, python-brace-format
-msgid ""
-"AdGuard is running.\n"
-"Address: http://localhost:3030\n"
-"and\n"
-"Address: http://{}:3030"
-msgstr ""
-"AdGuard працює.\n"
-"Адреса: http://localhost:3030\n"
-"та\n"
-"Адреса: http://{}:3030"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:49
+msgid "cloud"
+msgstr "хмара"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 71
-#: usr/share/biglinux/biglinux-settings/docker_page.py:99
-#: usr/share/biglinux/biglinux-settings/docker_page.py:106
+#: usr/share/biglinux/biglinux-settings/apps_page.py:53
+#: usr/share/biglinux/biglinux-settings/apps_page.py:63
 msgid "Jellyfin"
 msgstr "Jellyfin"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 100
-#: usr/share/biglinux/biglinux-settings/docker_page.py:100
-msgid "Install Jellyfin media server container."
-msgstr "Встановити контейнер медіасервера Jellyfin."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:55
+msgid ""
+"Media server for your movies, series and music. Installs it as a container; "
+"turning it off removes it."
+msgstr ""
+"Медіасервер для ваших фільмів, серіалів і музики. Встановлюється як "
+"контейнер; після вимкнення видаляється."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 90
-#: usr/share/biglinux/biglinux-settings/docker_page.py:107
-msgid "Run Jellyfin."
-msgstr "Запустіть Jellyfin."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:57
+msgid "Start Jellyfin"
+msgstr "Запустити Jellyfin"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:58
+msgid "Runs the Jellyfin container."
+msgstr "Запускає контейнер Jellyfin."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 75
-#: usr/share/biglinux/biglinux-settings/docker_page.py:112
+#: usr/share/biglinux/biglinux-settings/apps_page.py:61
 #, python-brace-format
 msgid ""
 "Jellyfin is running.\n"
@@ -930,126 +503,90 @@ msgstr ""
 "та\n"
 "Адреса: http://{}:8096"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 80
-#: usr/share/biglinux/biglinux-settings/docker_page.py:118
-#: usr/share/biglinux/biglinux-settings/docker_page.py:125
-msgid "LAMP"
-msgstr "LAMP"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:63
+msgid "media server"
+msgstr "медіасервер"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 119
-#: usr/share/biglinux/biglinux-settings/docker_page.py:119
-msgid "Install LAMP stack container (Linux, Apache, MySQL, PHP)."
-msgstr "Встановити контейнер LAMP стеку (Linux, Apache, MySQL, PHP)."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:68
+msgid "Network & Security"
+msgstr "Мережа та безпека"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 109
-#: usr/share/biglinux/biglinux-settings/docker_page.py:126
-msgid "Run LAMP."
-msgstr "Запустіть LAMP."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 84
-#: usr/share/biglinux/biglinux-settings/docker_page.py:131
-#, python-brace-format
-msgid ""
-"LAMP is running.\n"
-"Address: http://localhost:8080\n"
-"and\n"
-"Address: http://{}:8080"
-msgstr ""
-"LAMP працює.\n"
-"Адреса: http://localhost:8080\n"
-"та\n"
-"Адреса: http://{}:8080"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:69
+msgid "Network tools and security services. Require Docker."
+msgstr "Мережеві інструменти та служби безпеки. Потребують Docker."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 89
-#: usr/share/biglinux/biglinux-settings/docker_page.py:137
-#: usr/share/biglinux/biglinux-settings/docker_page.py:144
-msgid "Portainer Client"
-msgstr "Клієнт Portainer"
+# settings/containers_page.py, line: 44
+#: usr/share/biglinux/biglinux-settings/apps_page.py:76
+#: usr/share/biglinux/biglinux-settings/apps_page.py:86
+msgid "AdGuard"
+msgstr "AdGuard"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 138
-#: usr/share/biglinux/biglinux-settings/docker_page.py:138
-msgid "Install Portainer Agent container for cluster management."
-msgstr "Встановіть контейнер Portainer Agent для управління кластером."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:78
+msgid ""
+"AdGuard Home: blocks ads and trackers for the whole network through DNS. "
+"Installs it as a container; turning it off removes it."
+msgstr ""
+"AdGuard Home: блокує рекламу та трекери в усій мережі через DNS. "
+"Встановлюється як контейнер; після вимкнення видаляється."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:80
+msgid "Start AdGuard"
+msgstr "Запустити AdGuard"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:81
+msgid "Runs the AdGuard container."
+msgstr "Запускає контейнер AdGuard."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 128
-#: usr/share/biglinux/biglinux-settings/docker_page.py:145
-msgid "Run Portainer Client."
-msgstr "Запустіть Portainer Client."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 93
-#: usr/share/biglinux/biglinux-settings/docker_page.py:150
+# line: 57
+#: usr/share/biglinux/biglinux-settings/apps_page.py:84
 #, python-brace-format
 msgid ""
-"Portainer Client is running.\n"
-"Address: http://localhost:9000\n"
+"AdGuard is running.\n"
+"Address: http://localhost:3030\n"
 "and\n"
-"Address: http://{}:9000"
+"Address: http://{}:3030"
 msgstr ""
-"Клієнт Portainer працює.\n"
-"Адреса: http://localhost:9000\n"
+"AdGuard працює.\n"
+"Адреса: http://localhost:3030\n"
 "та\n"
-"Адреса: http://{}:9000"
+"Адреса: http://{}:3030"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 98
-#: usr/share/biglinux/biglinux-settings/docker_page.py:156
-#: usr/share/biglinux/biglinux-settings/docker_page.py:163
-msgid "SWS"
-msgstr "SWS"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:86
+msgid "DNS"
+msgstr "DNS"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 157
-#: usr/share/biglinux/biglinux-settings/docker_page.py:157
-msgid "Install SWS static web server container."
-msgstr "Встановити контейнер статичного веб-сервера SWS."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 147
-#: usr/share/biglinux/biglinux-settings/docker_page.py:164
-msgid "Run SWS."
-msgstr "Запустіть SWS."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 102
-#: usr/share/biglinux/biglinux-settings/docker_page.py:169
-#, python-brace-format
-msgid ""
-"SWS is running.\n"
-"Address: http://localhost:8182\n"
-"and\n"
-"Address: http://{}:8182"
-msgstr ""
-"SWS працює.\n"
-"Адреса: http://localhost:8182\n"
-"та\n"
-"Адреса: http://{}:8182"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:86
+msgid "ad blocker"
+msgstr "блокувальник реклами"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 107
-#: usr/share/biglinux/biglinux-settings/docker_page.py:175
-#: usr/share/biglinux/biglinux-settings/docker_page.py:182
+#: usr/share/biglinux/biglinux-settings/apps_page.py:90
+#: usr/share/biglinux/biglinux-settings/apps_page.py:100
 msgid "V2RayA"
 msgstr "V2RayA"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 176
-#: usr/share/biglinux/biglinux-settings/docker_page.py:176
-msgid "Install V2RayA network proxy container."
-msgstr "Встановити контейнер мережевого проксі V2RayA."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:92
+msgid ""
+"Network proxy client with a web interface. Installs it as a container; "
+"turning it off removes it."
+msgstr ""
+"Клієнт мережевого проксі з вебінтерфейсом. Встановлюється як контейнер; після"
+" вимкнення видаляється."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 166
-#: usr/share/biglinux/biglinux-settings/docker_page.py:183
-msgid "Run V2RayA."
-msgstr "Запустіть V2RayA."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:94
+msgid "Start V2RayA"
+msgstr "Запустити V2RayA"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:95
+msgid "Runs the V2RayA container."
+msgstr "Запускає контейнер V2RayA."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 111
-#: usr/share/biglinux/biglinux-settings/docker_page.py:188
+#: usr/share/biglinux/biglinux-settings/apps_page.py:98
 #, python-brace-format
 msgid ""
 "V2RayA is running.\n"
@@ -1062,62 +599,1913 @@ msgstr ""
 "та\n"
 "Адреса: http://{}:2017"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 195
-#: usr/share/biglinux/biglinux-settings/docker_page.py:195
-msgid "Install the open-source alternative to Google's NotebookLM."
-msgstr "Встановіть відкриту альтернативу Google NotebookLM."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:100
+msgid "proxy"
+msgstr "проксі"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:105
+msgid "Development & Tools"
+msgstr "Розробка та інструменти"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:106
+msgid "Development stacks and utility services. Require Docker."
+msgstr "Середовища розробки та допоміжні служби. Потребують Docker."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 80
+#: usr/share/biglinux/biglinux-settings/apps_page.py:113
+msgid "LAMP"
+msgstr "LAMP"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:115
+msgid ""
+"Web development stack with Linux, Apache, MySQL and PHP. Installs it as a "
+"container; turning it off removes it."
+msgstr ""
+"Стек веброзробки на базі Linux, Apache, MySQL і PHP. Встановлюється як "
+"контейнер; після вимкнення видаляється."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:117
+msgid "Start LAMP"
+msgstr "Запустити LAMP"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:118
+msgid "Runs the LAMP container."
+msgstr "Запускає контейнер LAMP."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 84
+#: usr/share/biglinux/biglinux-settings/apps_page.py:121
+#, python-brace-format
+msgid ""
+"LAMP is running.\n"
+"Address: http://localhost:8080\n"
+"and\n"
+"Address: http://{}:8080"
+msgstr ""
+"LAMP працює.\n"
+"Адреса: http://localhost:8080\n"
+"та\n"
+"Адреса: http://{}:8080"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:123
+msgid "MySQL"
+msgstr "MySQL"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:123
+msgid "PHP"
+msgstr "PHP"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:123
+#: usr/share/biglinux/biglinux-settings/apps_page.py:151
+msgid "web server"
+msgstr "вебсервер"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 89
+#: usr/share/biglinux/biglinux-settings/apps_page.py:127
+msgid "Portainer Client"
+msgstr "Portainer Client"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:129
+msgid ""
+"Portainer Agent, to manage this computer's containers from a Portainer "
+"server. Installs it as a container; turning it off removes it."
+msgstr ""
+"Portainer Agent для керування контейнерами цього комп’ютера із сервера "
+"Portainer. Встановлюється як контейнер; після вимкнення видаляється."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:131
+msgid "Start Portainer Client"
+msgstr "Запустити Portainer Client"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:132
+msgid "Runs the Portainer Client container."
+msgstr "Запускає контейнер Portainer Client."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 93
+#: usr/share/biglinux/biglinux-settings/apps_page.py:135
+#, python-brace-format
+msgid ""
+"Portainer Client is running.\n"
+"Address: http://localhost:9000\n"
+"and\n"
+"Address: http://{}:9000"
+msgstr ""
+"Клієнт Portainer працює.\n"
+"Адреса: http://localhost:9000\n"
+"та\n"
+"Адреса: http://{}:9000"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:137
+msgid "Portainer"
+msgstr "Portainer"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:137
+msgid "cluster"
+msgstr "кластер"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 98
+#: usr/share/biglinux/biglinux-settings/apps_page.py:141
+msgid "SWS"
+msgstr "SWS"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:143
+msgid ""
+"Static Web Server, to publish static websites. Installs it as a container; "
+"turning it off removes it."
+msgstr ""
+"Static Web Server для публікації статичних сайтів. Встановлюється як "
+"контейнер; після вимкнення видаляється."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:145
+msgid "Start SWS"
+msgstr "Запустити SWS"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:146
+msgid "Runs the SWS container."
+msgstr "Запускає контейнер SWS."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 102
+#: usr/share/biglinux/biglinux-settings/apps_page.py:149
+#, python-brace-format
+msgid ""
+"SWS is running.\n"
+"Address: http://localhost:8182\n"
+"and\n"
+"Address: http://{}:8182"
+msgstr ""
+"SWS працює.\n"
+"Адреса: http://localhost:8182\n"
+"та\n"
+"Адреса: http://{}:8182"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:151
+msgid "static"
+msgstr "статичний"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:157
+msgid ""
+"Open-source alternative to Google's NotebookLM. Installs it as a container; "
+"turning it off removes it."
+msgstr ""
+"Відкрита альтернатива NotebookLM від Google. Встановлюється як контейнер; "
+"після вимкнення видаляється."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:165
+#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+msgid "AI"
+msgstr "ШІ"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:171
+msgid "Developer tools"
+msgstr "Інструменти розробника"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:172
+msgid "Coding agents and command-line tools for developers."
+msgstr ""
+"Агенти для програмування та інструменти командного рядка для розробників."
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 21
+#: usr/share/biglinux/biglinux-settings/apps_page.py:181
+msgid "OpenClaude"
+msgstr "OpenClaude"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:183
+msgid ""
+"Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
+"models. Installs it with nodejs, npm and ripgrep as dependencies; turning it "
+"off removes it."
+msgstr ""
+"Відкритий ШІ-агент для програмування в командному рядку, що працює з OpenAI, "
+"Gemini, DeepSeek, Ollama та понад 200 моделями. Встановлюється разом із "
+"nodejs, npm і ripgrep як залежностями; після вимкнення видаляється."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+msgid "coding agent"
+msgstr "агент для програмування"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+msgid "programming"
+msgstr "програмування"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 173
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 199
+#: usr/share/biglinux/biglinux-settings/base_page.py:44
+#, python-brace-format
+msgid "Script not found: {}"
+msgstr "Скрипт не знайдено: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 48
+#: usr/share/biglinux/biglinux-settings/base_page.py:84
+msgid "Close"
+msgstr "Закрити"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 63
+#: usr/share/biglinux/biglinux-settings/base_page.py:107
+#, python-brace-format
+msgid "Warning: {}"
+msgstr "Увага: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 66
+#: usr/share/biglinux/biglinux-settings/base_page.py:110
+msgid "Cancel"
+msgstr "Cancel"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 67
+#: usr/share/biglinux/biglinux-settings/base_page.py:111
+msgid "Continue"
+msgstr "Продолжити"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 230
+#: usr/share/biglinux/biglinux-settings/base_page.py:308
+msgid "Run"
+msgstr "Запустити"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 236
+#: usr/share/biglinux/biglinux-settings/base_page.py:314
+#, python-brace-format
+msgid "{}: run action"
+msgstr "{}: виконати дію"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 626
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 136
+#: usr/share/biglinux/biglinux-settings/base_page.py:353
+#: usr/share/biglinux/biglinux-settings/base_page.py:1019
+#: usr/share/biglinux/biglinux-settings/devices_page.py:158
+msgid "Applying…"
+msgstr "Applying…"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 289
+#: usr/share/biglinux/biglinux-settings/base_page.py:367
+#, python-brace-format
+msgid "Action script {} failed: {}"
+msgstr "Сценарій дії {} не виконано: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 294
+#: usr/share/biglinux/biglinux-settings/base_page.py:372
+#, python-brace-format
+msgid "Action script timeout: {}"
+msgstr "Час виконання сценарію дії {} вичерпано"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 297
+#: usr/share/biglinux/biglinux-settings/base_page.py:375
+#, python-brace-format
+msgid "Error running action script {}: {}"
+msgstr "Помилка виконання сценарію дії {}: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 307
+#: usr/share/biglinux/biglinux-settings/base_page.py:385
+msgid "Action completed successfully"
+msgstr "Дію виконано успішно"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 310
+#: usr/share/biglinux/biglinux-settings/base_page.py:388
+#, python-brace-format
+msgid "Action failed: {}"
+msgstr "Дію не виконано: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 215
+#: usr/share/biglinux/biglinux-settings/base_page.py:423
+msgid "Recommended"
+msgstr "Рекомендовано"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 238
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 326
+#: usr/share/biglinux/biglinux-settings/base_page.py:446
+#: usr/share/biglinux/biglinux-settings/base_page.py:533
+#, python-brace-format
+msgid "{}: additional information"
+msgstr "{}: додаткова інформація"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 251
+#: usr/share/biglinux/biglinux-settings/base_page.py:459
+msgid "Learn more"
+msgstr "Дізнатися більше"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 257
+#: usr/share/biglinux/biglinux-settings/base_page.py:465
+#, python-brace-format
+msgid "{}: learn more"
+msgstr "{}: дізнатися більше"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 206
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 165
+#: usr/share/biglinux/biglinux-settings/base_page.py:572
+msgid "Unavailable: script not found."
+msgstr "Недоступно: скрипт не знайдено."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 218
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 177
+#: usr/share/biglinux/biglinux-settings/base_page.py:588
+msgid "Enabled"
+msgstr "Увімкнено"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 220
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 179
+#: usr/share/biglinux/biglinux-settings/base_page.py:590
+msgid "Disabled"
+msgstr "Вимкнено"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 223
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 182
+#: usr/share/biglinux/biglinux-settings/base_page.py:596
+msgid ""
+"Enabled by system configuration (e.g., Real-Time Kernel) and cannot be "
+"changed here."
+msgstr ""
+"Увімкнено системною конфігурацією (наприклад, реального часу ядро) і не може "
+"бути змінено тут."
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 516
+#: usr/share/biglinux/biglinux-settings/base_page.py:600
+msgid "Unavailable in this desktop environment."
+msgstr "Недоступно в цьому робочому середовищі."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 225
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 184
+#: usr/share/biglinux/biglinux-settings/base_page.py:602
+msgid "Unavailable: script returned invalid output."
+msgstr "Недоступно: скрипт повернув недійсний вихід."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/base_page.py,
+# line: 261
+#: usr/share/biglinux/biglinux-settings/base_page.py:604
+#, python-brace-format
+msgid "output from script {}: {}"
+msgstr "вихід зі скрипту {}: {}"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 229
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 188
+#: usr/share/biglinux/biglinux-settings/base_page.py:610
+msgid "Unavailable: script returned an error."
+msgstr "Недоступно: скрипт повернув помилку."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 184
+#: usr/share/biglinux/biglinux-settings/base_page.py:611
+#, python-brace-format
+msgid "Error checking state: {}"
+msgstr "Помилка перевірки стану: {}"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 233
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 192
+#: usr/share/biglinux/biglinux-settings/base_page.py:614
+msgid "Unavailable: failed to run script."
+msgstr "Недоступно: не вдалося виконати скрипт."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 193
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 220
+#: usr/share/biglinux/biglinux-settings/base_page.py:615
+#: usr/share/biglinux/biglinux-settings/base_page.py:642
+#, python-brace-format
+msgid "Error running script {}: {}"
+msgstr "Помилка виконання скрипту {}: {}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 190
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 217
+#: usr/share/biglinux/biglinux-settings/base_page.py:638
+#, python-brace-format
+msgid "Script timeout: {}"
+msgstr "Тайм-аут скрипта: {}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 211
+#: usr/share/biglinux/biglinux-settings/base_page.py:650
+#, python-brace-format
+msgid "Script output: {}"
+msgstr "Скрипт виводу: {}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 209
+#: usr/share/biglinux/biglinux-settings/base_page.py:658
+msgid "State changed successfully"
+msgstr "Стан успішно змінено"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 215
+#: usr/share/biglinux/biglinux-settings/base_page.py:667
+#, python-brace-format
+msgid "Script failed with exit code: {}"
+msgstr "Скрипт завершився з кодом виходу: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 620
+#: usr/share/biglinux/biglinux-settings/base_page.py:700
+#, python-brace-format
+msgid "{} sub-option available"
+msgid_plural "{} sub-options available"
+msgstr[0] "{} підпараметр доступний"
+msgstr[1] "{} підпараметри доступні"
+msgstr[2] "{} підпараметрів доступно"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:826
+msgid "Try again"
+msgstr "Спробувати знову"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:831
+#, python-brace-format
+msgid "{}: try again"
+msgstr "{}: спробувати знову"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:836
+msgid "Could not check this setting."
+msgstr "Не вдалося перевірити цей параметр."
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
+#: usr/share/biglinux/biglinux-settings/base_page.py:938
+msgid "off"
+msgstr "вимкнено"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
+#: usr/share/biglinux/biglinux-settings/base_page.py:938
+msgid "on"
+msgstr "включено"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 574
+#: usr/share/biglinux/biglinux-settings/base_page.py:943
+#, python-brace-format
+msgid "Changing {} to {}…"
+msgstr "Зміна {} на {}…"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 576
+#: usr/share/biglinux/biglinux-settings/base_page.py:946
+msgid "Undo"
+msgstr "Відмінити"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 600
+#: usr/share/biglinux/biglinux-settings/base_page.py:977
+msgid "Undo: reverted toggle"
+msgstr "Annulla: interruttore ripristinato"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 244
+#: usr/share/biglinux/biglinux-settings/base_page.py:1009
+#, python-brace-format
+msgid "Changing {} to {}"
+msgstr "Зміна {} на {}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 271
+#: usr/share/biglinux/biglinux-settings/base_page.py:1045
+#, python-brace-format
+msgid "ERROR: Failed to change {} to {}"
+msgstr "ПОМИЛКА: Не вдалося змінити {} на {}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 274
+#: usr/share/biglinux/biglinux-settings/base_page.py:1050
+#, python-brace-format
+msgid "Failed to change setting: {}"
+msgstr "Не вдалося змінити налаштування: {}"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:1066
+msgid "Saved. It will take effect after the next restart."
+msgstr "Збережено. Зміни набудуть чинності після наступного перезапуску."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/dispositivos_page.py, line: 25
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 116
+#: usr/share/biglinux/biglinux-settings/devices_page.py:30
+#: usr/share/biglinux/biglinux-settings/main.py:352
+msgid "Devices"
+msgstr "Пристрої"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:30
+msgid "Wireless, audio and input devices."
+msgstr "Бездротові пристрої, звук і пристрої введення."
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:34
+msgid "Wireless"
+msgstr "Бездротовий зв’язок"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:39
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:40
+msgid "Turns the Wi-Fi adapter on or off."
+msgstr "Вмикає або вимикає адаптер Wi-Fi."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 190
+#: usr/share/biglinux/biglinux-settings/devices_page.py:43
+msgid "Wifi"
+msgstr "Wi-Fi"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:43
+msgid "network"
+msgstr "мережа"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:43
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+msgid "wireless"
+msgstr "бездротовий"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 197
+#: usr/share/biglinux/biglinux-settings/devices_page.py:47
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:48
+msgid "Turns the Bluetooth adapter on or off."
+msgstr "Вмикає або вимикає адаптер Bluetooth."
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:54
+msgid "Audio"
+msgstr "Звук"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:59
+msgid "JamesDSP audio effects"
+msgstr "Аудіоефекти JamesDSP"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:61
+msgid ""
+"Audio effects software that enhances the sound of all applications. Installs "
+"JamesDSP if it is missing and starts it with the session."
+msgstr ""
+"Програма аудіоефектів, що покращує звук усіх застосунків. Встановлює "
+"JamesDSP, якщо його немає, і запускає його разом із сеансом."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/dispositivos_page.py, line: 77
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices/jamesdsp_dialog.py, line: 155
+#: usr/share/biglinux/biglinux-settings/devices_page.py:65
+msgid "JamesDSP"
+msgstr "JamesDSP"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:65
+msgid "equalizer"
+msgstr "еквалайзер"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:65
+msgid "sound"
+msgstr "звук"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:69
+msgid "Mouse"
+msgstr "Миша"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:74
+msgid "Natural scrolling"
+msgstr "Природне прокручування"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:76
+msgid ""
+"Reverses the scroll direction so the content follows the movement of the "
+"wheel or fingers, as on a touchscreen. Applies right away."
+msgstr ""
+"Змінює напрямок прокручування так, що вміст рухається за колесом або "
+"пальцями, як на сенсорному екрані. Застосовується одразу."
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:80
+msgid "mouse"
+msgstr "миша"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:80
+msgid "reverse scrolling"
+msgstr "зворотне прокручування"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:80
+msgid "scroll direction"
+msgstr "напрямок прокручування"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 66
+#: usr/share/biglinux/biglinux-settings/devices_page.py:85
+msgid "Network Interfaces"
+msgstr "Мережеві інтерфейси"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 67
+#: usr/share/biglinux/biglinux-settings/devices_page.py:86
+msgid "Connect or disconnect network devices."
+msgstr "Підключити або відключити мережеві пристрої."
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 99
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 154
+#: usr/share/biglinux/biglinux-settings/devices_page.py:118
+#: usr/share/biglinux/biglinux-settings/devices_page.py:197
+#, python-brace-format
+msgid "{} — {}"
+msgstr "Understood. Please provide the string to translate. {} {}"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 113
+#: usr/share/biglinux/biglinux-settings/devices_page.py:135
+#, python-brace-format
+msgid "{}: toggle connection"
+msgstr "{}: перемикання з'єднання"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
+#: usr/share/biglinux/biglinux-settings/devices_page.py:195
+msgid "connected"
+msgstr "connected"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
+#: usr/share/biglinux/biglinux-settings/devices_page.py:195
+msgid "disconnected"
+msgstr "disconnected"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 161
+#: usr/share/biglinux/biglinux-settings/devices_page.py:202
+#, python-brace-format
+msgid "Failed to change network device: {}"
+msgstr "Не вдалося змінити мережевий пристрій: {}"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:53
+msgid "On"
+msgstr "Увімк."
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:54
+#: usr/share/biglinux/biglinux-settings/home_page.py:88
+msgid "Off"
+msgstr "Вимк."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 181
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 195
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 181
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 195
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/usability/gamemode_dialog.py, line: 204
+#: usr/share/biglinux/biglinux-settings/home_page.py:62
+#: usr/share/biglinux/biglinux-settings/main.py:347
+#: usr/share/biglinux/biglinux-settings/performance_page.py:9
+msgid "Performance"
+msgstr "Виконання"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:63
+msgid "Standard"
+msgstr "Стандартний"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:78
+msgid "Ollama installed"
+msgstr "Ollama встановлено"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:79
+msgid "Not set up"
+msgstr "Не налаштовано"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:87
+msgid "Running"
+msgstr "Працює"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:99
+msgid "Reduced"
+msgstr "Знижені"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:100
+msgid "Default"
+msgstr "Типово"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:110
+msgid "Suspends at 20% battery"
+msgstr "Сплячий режим за 20% заряду"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:112
+msgid "Stays awake"
+msgstr "Не засинає"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:114
+msgid "Stays awake on battery"
+msgstr "Не засинає від батареї"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:116
+msgid "Stays awake when plugged in"
+msgstr "Не засинає при живленні від мережі"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:117
+msgid "System default"
+msgstr "Типово для системи"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:123
+#: usr/share/biglinux/biglinux-settings/system_page.py:15
+msgid "Remote access"
+msgstr "Віддалений доступ"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:125
+#: usr/share/biglinux/biglinux-settings/performance_page.py:18
+msgid "Performance profile"
+msgstr "Профіль продуктивності"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:128
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:80
+msgid "When idle"
+msgstr "У разі простою"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:132
+msgid "Local AI"
+msgstr "Локальний ШІ"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:136
+msgid "System protections"
+msgstr "Захист системи"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:148
+msgid "Welcome"
+msgstr "Ласкаво просимо"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:149
+msgid "Adjust BigLinux simply and safely. Here is how this computer is set up."
+msgstr ""
+"Налаштовуйте BigLinux просто й безпечно. Ось як налаштовано цей комп’ютер."
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:174
+msgid "Tip: search with everyday words, like “don't sleep” or “remote access”."
+msgstr ""
+"Підказка: шукайте звичайними словами, наприклад «не засинати» або «віддалений"
+" доступ»."
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:214
+#: usr/share/biglinux/biglinux-settings/home_page.py:225
+msgid "Checking…"
+msgstr "Перевірка…"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 49
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 120
-#: usr/share/biglinux/biglinux-settings/main.py:78
-#: usr/share/biglinux/biglinux-settings/main.py:94
-#: usr/share/biglinux/biglinux-settings/main.py:154
+#: usr/share/biglinux/biglinux-settings/main.py:43
 msgid "BigLinux Settings"
 msgstr "BigLinux Налаштування"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 49
-#: usr/share/biglinux/biglinux-settings/main.py:85
+#: usr/share/biglinux/biglinux-settings/main.py:116
 msgid "BigLinux Community"
 msgstr "BigLinux Спільнота"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 144
-#: usr/share/biglinux/biglinux-settings/main.py:191
-msgid "Search..."
-msgstr "Пошук..."
+#: usr/share/biglinux/biglinux-settings/main.py:231
+msgid "Search settings…"
+msgstr "Пошук параметрів…"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 185
-#: usr/share/biglinux/biglinux-settings/main.py:197
+#: usr/share/biglinux/biglinux-settings/main.py:237
 msgid "Search settings"
 msgstr "Параметри пошуку"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 192
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 195
-#: usr/share/biglinux/biglinux-settings/main.py:204
-#: usr/share/biglinux/biglinux-settings/main.py:207
+#: usr/share/biglinux/biglinux-settings/main.py:244
+#: usr/share/biglinux/biglinux-settings/main.py:247
 msgid "Toggle navigation sidebar"
 msgstr "Переключити навігаційну бічну панель"
 
+#: usr/share/biglinux/biglinux-settings/main.py:254
+#: usr/share/biglinux/biglinux-settings/main.py:256
+msgid "Back to search results"
+msgstr "Назад до результатів пошуку"
+
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 202
-#: usr/share/biglinux/biglinux-settings/main.py:214
+#: usr/share/biglinux/biglinux-settings/main.py:264
 msgid "About"
 msgstr "Про програму"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 206
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 209
-#: usr/share/biglinux/biglinux-settings/main.py:218
-#: usr/share/biglinux/biglinux-settings/main.py:221
+#: usr/share/biglinux/biglinux-settings/main.py:268
+#: usr/share/biglinux/biglinux-settings/main.py:271
 msgid "Main Menu"
 msgstr "Головне меню"
 
+#: usr/share/biglinux/biglinux-settings/main.py:302
+msgid "No results"
+msgstr "Нічого не знайдено"
+
+#: usr/share/biglinux/biglinux-settings/main.py:304
+msgid "Try other words, like “don't sleep”, “remote access” or “battery”."
+msgstr ""
+"Спробуйте інші слова, наприклад «не засинати», «віддалений доступ» або "
+"«батарея»."
+
+#: usr/share/biglinux/biglinux-settings/main.py:332
+msgid "Home"
+msgstr "Головна"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 108
-#: usr/share/biglinux/biglinux-settings/main.py:271
-#: usr/share/biglinux/biglinux-settings/system_page.py:13
+#: usr/share/biglinux/biglinux-settings/main.py:333
+#: usr/share/biglinux/biglinux-settings/system_page.py:11
 msgid "System"
 msgstr "Система"
+
+#: usr/share/biglinux/biglinux-settings/main.py:335
+#: usr/share/biglinux/biglinux-settings/usability_page.py:9
+msgid "Appearance & Usage"
+msgstr "Вигляд і використання"
+
+#: usr/share/biglinux/biglinux-settings/main.py:341
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:70
+msgid "Power & Suspend"
+msgstr "Живлення та сплячий режим"
+
+#: usr/share/biglinux/biglinux-settings/main.py:412
+msgid "More features"
+msgstr "Додаткові можливості"
+
+#: usr/share/biglinux/biglinux-settings/main.py:554
+#, python-brace-format
+msgid "{} result"
+msgid_plural "{} results"
+msgstr[0] "{} результат"
+msgstr[1] "{} результати"
+msgstr[2] "{} результатів"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 441
+#: usr/share/biglinux/biglinux-settings/main.py:581
+msgid "Open setting"
+msgstr "Відкрити налаштування"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 446
+#: usr/share/biglinux/biglinux-settings/main.py:586
+#, python-brace-format
+msgid "Open {} setting"
+msgstr "Відкрити налаштування {}"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 469
+#: usr/share/biglinux/biglinux-settings/main.py:681
+msgid "Dismiss"
+msgstr "Dismiss"
+
+#: usr/share/biglinux/biglinux-settings/performance/meltdownMitigationsRun.sh:129
+#: usr/share/biglinux/biglinux-settings/performance/noWatchdogRun.sh:129
+msgid "Already enabled. No changes made."
+msgstr "Вже увімкнено. Змін не внесено."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:9
+msgid "Balance speed, power use and stability."
+msgstr "Баланс швидкості, енергоспоживання та стабільності."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:13
+msgid "Power profile"
+msgstr "Профіль живлення"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:20
+msgid ""
+"Prioritizes performance. May increase power use, temperature and fan noise. "
+"Turning it off restores the previous profile."
+msgstr ""
+"Надає пріоритет продуктивності. Може збільшити енергоспоживання, температуру "
+"та шум вентиляторів. Після вимкнення відновлюється попередній профіль."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:24
+msgid "CPU"
+msgstr "CPU"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:24
+msgid "power profile"
+msgstr "профіль живлення"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:24
+#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+msgid "speed"
+msgstr "швидкість"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:28
+msgid "Desktop"
+msgstr "Робочий стіл"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:34
+msgid "Visual effects"
+msgstr "Візуальні ефекти"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:36
+msgid ""
+"Blur, shadows and animations of the desktop. Turning them off makes the "
+"interface plainer and can help on computers with slow graphics."
+msgstr ""
+"Розмиття, тіні та анімації робочого столу. Якщо їх вимкнути, інтерфейс стане "
+"простішим, що може допомогти на комп’ютерах із повільною графікою."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:40
+msgid "animations"
+msgstr "анімації"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:40
+msgid "blur"
+msgstr "розмиття"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:40
+msgid "effects"
+msgstr "ефекти"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:46
+msgid "File indexing"
+msgstr "Індексація файлів"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:48
+msgid ""
+"Lets Dolphin and the application menu find files quickly by name and content."
+" Turning it off saves disk and processor use, but that search no longer finds"
+" files quickly."
+msgstr ""
+"Дозволяє Dolphin і меню застосунків швидко знаходити файли за назвою та "
+"вмістом. Якщо вимкнути, заощаджуються ресурси диска та процесора, але такий "
+"пошук більше не знаходить файли швидко."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:52
+msgid "Baloo"
+msgstr "Baloo"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:52
+msgid "indexer"
+msgstr "індексатор"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:52
+msgid "search"
+msgstr "пошук"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:58
+msgid "Application launch"
+msgstr "Запуск застосунків"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:60
+msgid ""
+"Keeps selected applications ready in memory so they open faster. Uses more "
+"memory."
+msgstr ""
+"Тримає вибрані застосунки готовими в пам’яті, щоб вони відкривалися швидше. "
+"Використовує більше пам’яті."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 120
+#: usr/share/biglinux/biglinux-settings/performance_page.py:68
+msgid "Firefox"
+msgstr "Firefox"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 126
+#: usr/share/biglinux/biglinux-settings/performance_page.py:69
+msgid "Brave"
+msgstr "Brave"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 132
+#: usr/share/biglinux/biglinux-settings/performance_page.py:70
+msgid "Chrome"
+msgstr "Chrome"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 138
+#: usr/share/biglinux/biglinux-settings/performance_page.py:71
+msgid "Chromium"
+msgstr "Chromium"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:72
+msgid "LibreWolf"
+msgstr "LibreWolf"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:73
+msgid "Pale Moon"
+msgstr "Pale Moon"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 150
+#: usr/share/biglinux/biglinux-settings/performance_page.py:74
+msgid "Opera"
+msgstr "Opera"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:75
+msgid "Vivaldi"
+msgstr "Vivaldi"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:76
+msgid "GNOME Web"
+msgstr "GNOME Web"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:77
+msgid "LibreOffice"
+msgstr "LibreOffice"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:86
+msgid "open programs faster"
+msgstr "швидше відкривати програми"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:86
+msgid "preload"
+msgstr "попереднє завантаження"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:91
+msgid "Protections and diagnostics"
+msgstr "Захист і діагностика"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:92
+msgid "Advanced. These options reduce protections or monitoring of the system."
+msgstr ""
+"Для досвідчених користувачів. Ці параметри знижують захист або моніторинг "
+"системи."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:100
+msgid "Disk health monitoring"
+msgstr "Моніторинг стану дисків"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:101
+msgid "Keeps the S.M.A.R.T. service watching disks for signs of failure."
+msgstr "Дозволяє службі S.M.A.R.T. стежити за дисками й виявляти ознаки збою."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+msgid "SMART"
+msgstr "SMART"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+msgid "disk"
+msgstr "диск"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+msgid "smartd"
+msgstr "smartd"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:111
+msgid "Turn off CPU vulnerability protections"
+msgstr "Вимкнути захист від вразливостей CPU"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:113
+msgid ""
+"Adds mitigations=off to the kernel command line, disabling the protections "
+"against Spectre, Meltdown and similar processor flaws. Faster in some "
+"workloads, but less secure. Applies after restart."
+msgstr ""
+"Додає mitigations=off до командного рядка ядра, вимикаючи захист від Spectre,"
+" Meltdown та подібних вразливостей процесора. Швидше в деяких завданнях, але "
+"менш безпечно. Застосовується після перезавантаження."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:118
+msgid ""
+"The kernel will stop protecting against processor flaws such as Spectre and "
+"Meltdown. Some workloads get faster, but malicious programs or web pages may "
+"be able to read data from other programs. The change applies after the next "
+"restart."
+msgstr ""
+"Ядро перестане захищати від вразливостей процесора, таких як Spectre і "
+"Meltdown. Деякі завдання пришвидшаться, але шкідливі програми чи вебсторінки "
+"зможуть читати дані інших програм. Зміна набуде чинності після наступного "
+"перезавантаження."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:120
+msgid "Turn off protections"
+msgstr "Вимкнути захист"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+msgid "Meltdown"
+msgstr "Meltdown"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+msgid "Spectre"
+msgstr "Spectre"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+msgid "mitigations"
+msgstr "mitigations"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:128
+msgid "Turn off lockup detectors"
+msgstr "Вимкнути детектори зависань"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:130
+msgid ""
+"Adds nowatchdog and tsc=nowatchdog to the kernel command line, disabling the "
+"kernel soft and hard lockup detectors and the TSC clocksource watchdog. "
+"Applies after restart."
+msgstr ""
+"Додає nowatchdog і tsc=nowatchdog до командного рядка ядра, вимикаючи "
+"детектори програмних і апаратних зависань ядра та сторожовий таймер джерела "
+"часу TSC. Застосовується після перезавантаження."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:135
+msgid ""
+"The kernel will no longer detect and report processors that stop responding, "
+"and will no longer check the stability of the TSC clock. Freezes may go "
+"unreported and become harder to diagnose. The change applies after the next "
+"restart."
+msgstr ""
+"Ядро перестане виявляти процесори, що перестали відповідати, і повідомляти "
+"про них, а також перевіряти стабільність годинника TSC. Про зависання може не"
+" бути повідомлень, і їх буде важче діагностувати. Зміна набуде чинності після"
+" наступного перезавантаження."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:137
+msgid "Turn off detectors"
+msgstr "Вимкнути детектори"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:138
+msgid "nowatchdog"
+msgstr "nowatchdog"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:138
+msgid "watchdog"
+msgstr "watchdog"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:72
+msgid ""
+"What happens when the computer is idle, on battery or with the lid closed."
+msgstr ""
+"Що відбувається, коли комп’ютер простоює, працює від батареї або закрито "
+"кришку."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "don't sleep"
+msgstr "не засинати"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+msgid "sleep"
+msgstr "сон"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "stay awake"
+msgstr "не переходити в сон"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+msgid "suspend"
+msgstr "режим очікування"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:81
+msgid "Choose whether the computer suspends after a period without use."
+msgstr ""
+"Виберіть, чи має комп’ютер переходити в сплячий режим після періоду "
+"бездіяльності."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:88
+msgid "Stay awake while plugged in"
+msgstr "Не засинати при живленні від мережі"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:89
+msgid "Does not suspend when idle while connected to power."
+msgstr ""
+"Не переходить у сплячий режим під час простою, поки підключено живлення."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:97
+msgid "Stay awake on battery"
+msgstr "Не засинати від батареї"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:99
+msgid ""
+"Does not suspend when idle on battery. The critical-battery action still "
+"applies."
+msgstr ""
+"Не переходить у сплячий режим під час простою від батареї. Дія при критичному"
+" заряді батареї все одно застосовується."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:104
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:120
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:164
+msgid "battery"
+msgstr "батарея"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:109
+msgid "Stay awake and suspend at 20% battery"
+msgstr "Не засинати та засинати за 20% заряду"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:111
+msgid ""
+"Does not suspend when idle on battery and suspends automatically when the "
+"charge reaches 20%."
+msgstr ""
+"Не переходить у сплячий режим під час простою від батареї й автоматично "
+"засинає, коли заряд досягає 20%."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 104
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:117
+msgid ""
+"This uses UPower's critical battery policy. Low and critical warnings occur "
+"before the suspend action at 20%."
+msgstr ""
+"Використовує політику критичного заряду батареї UPower. Попередження про "
+"низький та критичний рівень відбуваються перед призупиненням на позначці 20%."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:120
+msgid "low battery"
+msgstr "низький заряд"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:125
+msgid "When the lid is closed"
+msgstr "Під час закриття кришки"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:126
+msgid ""
+"Keep the computer working with the lid closed, for example with an external "
+"monitor."
+msgstr ""
+"Дозволяє комп’ютеру продовжувати роботу із закритою кришкою, наприклад із "
+"зовнішнім монітором."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "laptop"
+msgstr "ноутбук"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "lid"
+msgstr "кришка"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:135
+msgid "Keep running with the lid closed while plugged in"
+msgstr "Продовжувати роботу із закритою кришкою за живлення від мережі"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:137
+msgid ""
+"Closing the lid will not lock or suspend the computer while it is connected "
+"to power. The session and network stay active."
+msgstr ""
+"Закриття кришки не блокуватиме комп’ютер і не переводитиме його в сплячий "
+"режим, поки він підключений до живлення. Сеанс і мережа залишаються "
+"активними."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:143
+msgid ""
+"This prevents lid-triggered suspend and locking. Automatic idle locking "
+"remains separate. Keep the notebook ventilated while it runs with the lid "
+"closed."
+msgstr ""
+"Це запобігає переходу в режим сну та блокуванню після закриття кришки. "
+"Автоматичне блокування через бездіяльність налаштовується окремо. Забезпечте "
+"належну вентиляцію ноутбука, поки він працює із закритою кришкою."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:152
+msgid "Keep running with the lid closed on battery"
+msgstr "Продовжувати роботу із закритою кришкою за живлення від акумулятора"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:154
+msgid ""
+"Closing the lid will not lock or suspend the computer on battery. The session"
+" and network stay active, using more battery."
+msgstr ""
+"Закриття кришки не блокуватиме комп’ютер і не переводитиме його в сплячий "
+"режим під час роботи від батареї. Сеанс і мережа залишаються активними, що "
+"збільшує витрату заряду."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:160
+msgid ""
+"This prevents lid-triggered suspend and locking. Automatic idle locking "
+"remains separate, and the 20% critical battery policy still applies."
+msgstr ""
+"Це запобігає переходу в режим сну та блокуванню після закриття кришки. "
+"Автоматичне блокування через бездіяльність налаштовується окремо, а правило "
+"для критичного рівня заряду 20 % продовжує діяти."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:169
+msgid "Fix problems after resume"
+msgstr "Виправлення проблем після пробудження"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:170
+msgid ""
+"Compatibility fixes for problems some computers have when waking from "
+"suspend."
+msgstr ""
+"Виправлення сумісності для проблем, що виникають у деяких комп’ютерів під час"
+" виходу зі сплячого режиму."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:179
+msgid "Light sleep (s2idle)"
+msgstr "Легкий сон (s2idle)"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:181
+msgid ""
+"Uses a lighter sleep mode that keeps the Fn keys working after resume on some"
+" ASUS notebooks. Uses slightly more battery while suspended."
+msgstr ""
+"Використовує легший режим сну, який зберігає роботу клавіш Fn після "
+"пробудження на деяких ноутбуках ASUS. Трохи більше витрачає заряд батареї у "
+"сплячому режимі."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 91
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:188
+msgid ""
+"S3 deep sleep can cause the Embedded Controller to stop generating hotkey "
+"interrupts. s2idle keeps the EC powered, avoiding this issue at a small cost "
+"in battery consumption."
+msgstr ""
+"S3 глибокий сон може призвести до того, що Вбудований Контролер перестане "
+"генерувати гарячі клавіші. s2idle підтримує живлення EC, уникаючи цієї "
+"проблеми за невеликої витрати енергії батареї."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+msgid "Fn keys"
+msgstr "клавіші Fn"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+msgid "hotkeys"
+msgstr "гарячі клавіші"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:200
+msgid "Avoid losing Wi-Fi after resume"
+msgstr "Не втрачати Wi-Fi після пробудження"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:202
+msgid ""
+"Compatibility fix for some Realtek Wi-Fi adapters: keeps the adapter from "
+"fully powering off during suspend, so the connection works after resume."
+msgstr ""
+"Виправлення сумісності для деяких адаптерів Wi-Fi Realtek: не дає адаптеру "
+"повністю вимикатися під час сну, щоб з’єднання працювало після пробудження."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 116
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:209
+msgid ""
+"Some Realtek RTL8852BE/CE chips fail to reinitialize after d3cold power "
+"gating. This keeps the chip in d3hot (PCIe link alive) during suspend."
+msgstr ""
+"Деякі чіпи Realtek RTL8852BE/CE не можуть повторно ініціалізуватися після "
+"d3cold живлення. Це утримує чіп у стані d3hot (PCIe з'єднання активне) під "
+"час сну."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+msgid "Realtek"
+msgstr "Realtek"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:219
+msgid "Restore brightness after resume"
+msgstr "Відновлювати яскравість після пробудження"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:221
+msgid ""
+"Saves the screen brightness and keyboard lights before suspending and "
+"restores them when the computer wakes up."
+msgstr ""
+"Зберігає яскравість екрана та підсвічування клавіатури перед переходом у "
+"сплячий режим і відновлює їх, коли комп’ютер прокидається."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+#: usr/share/biglinux/biglinux-settings/usability_page.py:37
+msgid "backlight"
+msgstr "підсвічування"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+msgid "brightness"
+msgstr "яскравість"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:233
+msgid "Restart failed extensions after resume"
+msgstr "Перезапускати збійні розширення після пробудження"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:235
+msgid ""
+"Checks GNOME Shell extensions after resume and restarts the ones left in an "
+"error state."
+msgstr ""
+"Перевіряє розширення GNOME Shell після пробудження й перезапускає ті, що "
+"залишилися у стані помилки."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
+msgid "GNOME"
+msgstr "GNOME"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
+msgid "extensions"
+msgstr "розширення"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:11
+msgid "Startup, disks and remote access."
+msgstr "Запуск, диски та віддалений доступ."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:21
+msgid "Remote terminal access (SSH)"
+msgstr "Віддалений доступ до термінала (SSH)"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:23
+msgid ""
+"Lets other computers open a terminal on this one. Stays on until turned off "
+"or the computer restarts."
+msgstr ""
+"Дозволяє іншим комп’ютерам відкривати термінал на цьому. Залишається "
+"ввімкненим, доки його не вимкнуть або не перезапустять комп’ютер."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 27
+#: usr/share/biglinux/biglinux-settings/system_page.py:28
+#, python-brace-format
+msgid "SSH Address: {}"
+msgstr "SSH-адрес: {}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 23
+#: usr/share/biglinux/biglinux-settings/system_page.py:29
+#: usr/share/biglinux/biglinux-settings/system_page.py:38
+msgid "SSH"
+msgstr "SSH"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:29
+#: usr/share/biglinux/biglinux-settings/system_page.py:38
+msgid "remote access"
+msgstr "віддалений доступ"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:29
+msgid "terminal"
+msgstr "термінал"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:33
+msgid "Start automatically"
+msgstr "Запускати автоматично"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:34
+msgid "Turn on remote terminal access every time the computer starts."
+msgstr ""
+"Вмикати віддалений доступ до термінала під час кожного запуску комп’ютера."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:42
+msgid "Startup"
+msgstr "Запуск"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:48
+msgid "Shorter boot menu wait"
+msgstr "Коротше очікування меню завантаження"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:49
+msgid "Shows the boot menu for less time before starting the system."
+msgstr "Показує меню завантаження менший час перед запуском системи."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:53
+msgid "GRUB"
+msgstr "GRUB"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:53
+#: usr/share/biglinux/biglinux-settings/system_page.py:65
+msgid "boot"
+msgstr "завантаження"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:60
+msgid "Show boot messages"
+msgstr "Показувати повідомлення завантаження"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:61
+msgid ""
+"Shows system messages below the boot animation while the computer starts."
+msgstr ""
+"Показує системні повідомлення під анімацією завантаження під час запуску "
+"комп’ютера."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:65
+msgid "splash"
+msgstr "заставка"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:70
+msgid "Disks"
+msgstr "Диски"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:76
+msgid "Mount internal disks at startup"
+msgstr "Монтувати внутрішні диски під час запуску"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:78
+msgid ""
+"Makes the partitions of the internal disks available automatically when the "
+"computer starts."
+msgstr ""
+"Автоматично робить розділи внутрішніх дисків доступними під час запуску "
+"комп’ютера."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:83
+msgid "auto-mount"
+msgstr "автомонтування"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:83
+msgid "partitions"
+msgstr "розділи"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:9
+msgid "Windows, keyboard and recent files."
+msgstr "Вікна, клавіатура та нещодавні файли."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:13
+msgid "Keyboard"
+msgstr "Клавіатура"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:19
+msgid "Numeric keypad on at login"
+msgstr "Вмикати цифрову клавіатуру під час входу"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:21
+msgid ""
+"Turns Num Lock on at the login screen. Has no effect with automatic login."
+msgstr "Вмикає Num Lock на екрані входу. Не діє за автоматичного входу."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:25
+msgid "Num Lock"
+msgstr "Num Lock"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 114
+#: usr/share/biglinux/biglinux-settings/usability_page.py:25
+msgid "NumLock"
+msgstr "Num Lock"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:31
+msgid "Keyboard Light"
+msgstr "Підсвічування клавіатури"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:33
+msgid ""
+"Keep the keyboard backlight on. For keyboards whose light is controlled by "
+"the Scroll Lock LED."
+msgstr ""
+"Тримає підсвічування клавіатури увімкненим. Для клавіатур, підсвічування яких"
+" керується індикатором Scroll Lock."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:37
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:41
+msgid "Windows"
+msgstr "Вікна"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:47
+msgid "Window buttons on the left"
+msgstr "Кнопки вікон ліворуч"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:48
+msgid ""
+"Shows the close, minimize and maximize buttons on the left side of windows."
+msgstr "Показує кнопки закриття, згортання та розгортання з лівого боку вікон."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:51
+msgid "close button"
+msgstr "кнопка закриття"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:51
+msgid "title bar"
+msgstr "заголовок вікна"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:57
+msgid "Window snapping zones (KZones)"
+msgstr "Зони прикріплення вікон (KZones)"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:59
+msgid ""
+"Lets you drag windows into predefined screen zones to arrange them side by "
+"side. Installs KZones if it is missing."
+msgstr ""
+"Дозволяє перетягувати вікна в наперед визначені зони екрана, щоб розташувати "
+"їх поруч. Встановлює KZones, якщо його немає."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 72
+#: usr/share/biglinux/biglinux-settings/usability_page.py:63
+msgid "KZones"
+msgstr "KZones"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:63
+msgid "tiling"
+msgstr "плиткове розташування"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:67
+msgid "Files"
+msgstr "Файли"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:73
+msgid "Show recent files and folders"
+msgstr "Показувати нещодавні файли й теки"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:75
+msgid ""
+"Remembers recently opened files and folders in the file manager and the "
+"application menu. On KDE Plasma, turning it off also clears the current list."
+msgstr ""
+"Запам’ятовує нещодавно відкриті файли й теки у файловому менеджері та меню "
+"застосунків. У KDE Plasma після вимкнення також очищується поточний список."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:79
+msgid "history"
+msgstr "історія"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:79
+msgid "privacy"
+msgstr "приватність"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:79
+msgid "recent"
+msgstr "нещодавні"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 126
+#~ msgid "Librewolf"
+#~ msgstr "Librewolf"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 144
+#~ msgid "Palemoon"
+#~ msgstr "Palemoon"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 156
+#~ msgid "Libreoffice"
+#~ msgstr "Libreoffice"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 30
+#~ msgid "AI Interfaces"
+#~ msgstr "Інтерфейси ШІ"
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 16
+#~ msgid "Graphical interface for artificial intelligence."
+#~ msgstr "Графічний інтерфейс для штучного інтелекту."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 23
+#~ msgid "Choose which Ollama server is best for your hardware."
+#~ msgstr "Виберіть, який сервер Ollama найкраще підходить для вашого обладнання."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
+#~ msgid "Select the variant that matches your GPU hardware."
+#~ msgstr "Select the variant that matches your GPU hardware."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 47
+#~ msgid "A variety of chats like Plasmoid for your KDE Plasma desktop."
+#~ msgstr ""
+#~ "Різноманітність чатів, таких як Plasmoid, для вашого робочого столу KDE "
+#~ "Plasma."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 129
+#~ msgid "Graphical interface for managing Ollama models and chat."
+#~ msgstr "Графічний інтерфейс для керування моделями Ollama та чатом."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 137
+#~ msgid "User-friendly Desktop Client App for AI Models/LLMs."
+#~ msgstr "Зручний настільний клієнтський додаток для моделей ШІ/ВМП."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 145
+#~ msgid ""
+#~ "LM Studio - A desktop app for exploring and running large language models "
+#~ "locally."
+#~ msgstr ""
+#~ "LM Studio - Десктопний додаток для дослідження та запуску великих мовних "
+#~ "моделей локально."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 87
+#~ msgid ""
+#~ "Open-source, privacy-focused alternative to Google's NotebookLM. Requires "
+#~ "Docker enabled."
+#~ msgstr ""
+#~ "Відкрита, орієнтована на конфіденційність альтернатива Google NotebookLM. "
+#~ "Потрібен увімкнений Docker."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 87
+#~ msgid "ComfyUI (GPU ONLY)"
+#~ msgstr "ComfyUI (ТІЛЬКИ GPU)"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 88
+#~ msgid "The most powerful and modular visual AI engine and application."
+#~ msgstr "Найпотужніший та модульний візуальний AI-двигун і застосунок."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 56
+#~ msgid "OllamaCPU"
+#~ msgstr "OllamaCPU"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 57
+#~ msgid "Local AI server. For CPUs only."
+#~ msgstr "Локальний AI сервер. Тільки для ЦП."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 65
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 83
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 101
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 119
+#~ msgid "Share ollama on the local network."
+#~ msgstr "Поділіться ollama в локальній мережі."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 75
+#~ msgid "Local AI server. For CPUs, AMD/Nvidia and integrated GPUs."
+#~ msgstr "Локальний AI сервер. Для ЦП, AMD/Nvidia та інтегрованих ГП."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 111
+#~ msgid "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
+#~ msgstr ""
+#~ "Локальний AI сервер. Для новіших графічних процесорів Nvidia, починаючи з "
+#~ "серії 2000."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 111
+#~ msgid ""
+#~ "Local AI server. For newer AMD GPUs, starting from the 6000 series.\n"
+#~ "Consider using Vulkan, in many tests, Vulkan performed better than ROCm."
+#~ msgstr ""
+#~ "Локальний AI сервер. Для новіших графічних процесорів AMD, починаючи з серії "
+#~ "6000. Розгляньте можливість використання Vulkan, у багатьох тестах Vulkan "
+#~ "показав кращі результати, ніж ROCm."
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 11
+#~ msgid "AI Coding Assistants"
+#~ msgstr "AI-асистенти програмування"
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 12
+#~ msgid "Open-source coding agents powered by language models."
+#~ msgstr "Відкриті агенти програмування на основі мовних моделей."
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 23
+#~ msgid ""
+#~ "Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
+#~ "models. Installs nodejs, npm and ripgrep as dependencies."
+#~ msgstr ""
+#~ "Відкритий CLI-агент для кодування для OpenAI, Gemini, DeepSeek, Ollama та "
+#~ "200+ моделей. Встановлює nodejs, npm та ripgrep як залежності."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 15
+#~ msgid "Manage physical devices."
+#~ msgstr "Керуйте фізичними пристроями."
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 39
+#~ msgid "Enable the Wi-Fi adapter."
+#~ msgstr "Увімкнути адаптер Wi-Fi."
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 43
+#~ msgid "Enable the Bluetooth adapter."
+#~ msgstr "Активувати адаптер Bluetooth."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/dispositivos_page.py, line: 84
+#~ msgid "Advanced audio effects processor that improves sound quality."
+#~ msgstr "Розширений процесор аудіоефектів, що покращує якість звуку."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 71
+#~ msgid "Reverse mouse scrolling"
+#~ msgstr "Зворотне прокручування миші"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 72
+#~ msgid "Reverse mouse scrolling without restarting the session."
+#~ msgstr "Зворотне прокручування миші без перезапуску сеансу."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 16
+#~ msgid "Container service — enable to use containers below."
+#~ msgstr "Контейнерна служба — увімкніть використання контейнерів нижче."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 137
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 18
+#~ msgid "Containers"
+#~ msgstr "Контейнери"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 23
+#~ msgid "Manage container technologies."
+#~ msgstr "Керуйте технологіями контейнерів."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 30
+#~ msgid "Media &amp; Cloud"
+#~ msgstr "Медіа та Хмара"
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 31
+#~ msgid "Media servers and cloud storage containers."
+#~ msgstr "Медіа-сервери та контейнери хмарного зберігання."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 36
+#~ msgid "Network &amp; Security"
+#~ msgstr "Мережа та безпека"
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 37
+#~ msgid "Network tools and security containers."
+#~ msgstr "Мережеві інструменти та контейнери безпеки."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 42
+#~ msgid "Development &amp; Tools"
+#~ msgstr "Розробка та інструменти"
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 43
+#~ msgid "Development stacks and utility containers."
+#~ msgstr "Стеки розробки та утилітарні контейнери."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 52
+#~ msgid "Enable Docker container engine."
+#~ msgstr "Увімкнути движок контейнерів Docker."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 62
+#~ msgid "Install Nextcloud Plus cloud storage container."
+#~ msgstr "Встановіть контейнер хмарного сховища Nextcloud Plus."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 52
+#~ msgid "Run Nextcloud Plus."
+#~ msgstr "Запустіть Nextcloud Plus."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 81
+#~ msgid "Install AdGuard Home DNS ad-blocker container."
+#~ msgstr "Встановити контейнер блокувальника реклами AdGuard Home DNS."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 71
+#~ msgid "Run AdGuard."
+#~ msgstr "Запустіть AdGuard."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 100
+#~ msgid "Install Jellyfin media server container."
+#~ msgstr "Встановити контейнер медіасервера Jellyfin."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 90
+#~ msgid "Run Jellyfin."
+#~ msgstr "Запустіть Jellyfin."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 119
+#~ msgid "Install LAMP stack container (Linux, Apache, MySQL, PHP)."
+#~ msgstr "Встановити контейнер LAMP стеку (Linux, Apache, MySQL, PHP)."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 109
+#~ msgid "Run LAMP."
+#~ msgstr "Запустіть LAMP."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 138
+#~ msgid "Install Portainer Agent container for cluster management."
+#~ msgstr "Встановіть контейнер Portainer Agent для управління кластером."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 128
+#~ msgid "Run Portainer Client."
+#~ msgstr "Запустіть Portainer Client."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 157
+#~ msgid "Install SWS static web server container."
+#~ msgstr "Встановити контейнер статичного веб-сервера SWS."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 147
+#~ msgid "Run SWS."
+#~ msgstr "Запустіть SWS."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 176
+#~ msgid "Install V2RayA network proxy container."
+#~ msgstr "Встановити контейнер мережевого проксі V2RayA."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 166
+#~ msgid "Run V2RayA."
+#~ msgstr "Запустіть V2RayA."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 195
+#~ msgid "Install the open-source alternative to Google's NotebookLM."
+#~ msgstr "Встановіть відкриту альтернативу Google NotebookLM."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 144
+#~ msgid "Search..."
+#~ msgstr "Пошук..."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
@@ -1139,616 +2527,368 @@ msgstr "Система"
 # 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 107
-#: usr/share/biglinux/biglinux-settings/main.py:277
-#: usr/share/biglinux/biglinux-settings/usability_page.py:12
-msgid "Usability"
-msgstr "Зручність використання"
+#~ msgid "Usability"
+#~ msgstr "Зручність використання"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 158
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 167
-#: usr/share/biglinux/biglinux-settings/main.py:283
-msgid "PreLoad"
-msgstr "Передзавантаження"
+#~ msgid "PreLoad"
+#~ msgstr "Передзавантаження"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 161
-#: usr/share/biglinux/biglinux-settings/main.py:295
-msgid "A.I."
-msgstr "Штучний інтелект."
+#~ msgid "A.I."
+#~ msgstr "Штучний інтелект."
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 315
-#: usr/share/biglinux/biglinux-settings/main.py:307
-msgid "Developer"
-msgstr "Розробник"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 181
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 195
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 181
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 195
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/usability/gamemode_dialog.py, line: 204
-#: usr/share/biglinux/biglinux-settings/main.py:313
-#: usr/share/biglinux/biglinux-settings/performance_page.py:15
-msgid "Performance"
-msgstr "Виконання"
+#~ msgid "Developer"
+#~ msgstr "Розробник"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 302
-#: usr/share/biglinux/biglinux-settings/main.py:319
-msgid "Suspend"
-msgstr "Suspend"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 441
-#: usr/share/biglinux/biglinux-settings/main.py:467
-msgid "Open setting"
-msgstr "Відкрити налаштування"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 446
-#: usr/share/biglinux/biglinux-settings/main.py:472
-#, python-brace-format
-msgid "Open {} setting"
-msgstr "Відкрити налаштування {}"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 469
-#: usr/share/biglinux/biglinux-settings/main.py:543
-msgid "Dismiss"
-msgstr "Dismiss"
-
-#: usr/share/biglinux/biglinux-settings/performance/meltdownMitigationsRun.sh:129
-#: usr/share/biglinux/biglinux-settings/performance/noWatchdogRun.sh:129
-msgid "Already enabled. No changes made."
-msgstr "Вже увімкнено. Змін не внесено."
+#~ msgid "Suspend"
+#~ msgstr "Suspend"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 16
-#: usr/share/biglinux/biglinux-settings/performance_page.py:15
-msgid "BigLinux performance tweaks."
-msgstr "Налаштування продуктивності BigLinux."
+#~ msgid "BigLinux performance tweaks."
+#~ msgstr "Налаштування продуктивності BigLinux."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/usability/gamemode_config_dialog.py, line: 91
-#: usr/share/biglinux/biglinux-settings/performance_page.py:22
-msgid "Disable Visual Effects"
-msgstr "Вимкнути візуальні ефекти"
+#~ msgid "Disable Visual Effects"
+#~ msgstr "Вимкнути візуальні ефекти"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 35
-#: usr/share/biglinux/biglinux-settings/performance_page.py:24
-msgid ""
-"Disables KWin visual effects (blur, shadows, animations). Reduces GPU load "
-"and frees memory."
-msgstr ""
-"Вимикає візуальні ефекти KWin (розмиття, тіні, анімації). Зменшує "
-"навантаження на графічний процесор і звільняє пам'ять."
+#~ msgid ""
+#~ "Disables KWin visual effects (blur, shadows, animations). Reduces GPU load "
+#~ "and frees memory."
+#~ msgstr ""
+#~ "Вимикає візуальні ефекти KWin (розмиття, тіні, анімації). Зменшує "
+#~ "навантаження на графічний процесор і звільняє пам'ять."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 63
-#: usr/share/biglinux/biglinux-settings/performance_page.py:32
-msgid "CPU Maximum Performance"
-msgstr "Максимальна продуктивність ЦПУ"
+#~ msgid "CPU Maximum Performance"
+#~ msgstr "Максимальна продуктивність ЦПУ"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 51
-#: usr/share/biglinux/biglinux-settings/performance_page.py:34
-msgid ""
-"Forces maximum processor performance mode. Ensures the processor uses maximum"
-" frequency."
-msgstr ""
-"Примусове максимальне виконання процесора. Забезпечує використання процесором"
-" максимальної частоти."
+#~ msgid ""
+#~ "Forces maximum processor performance mode. Ensures the processor uses maximum"
+#~ " frequency."
+#~ msgstr ""
+#~ "Примусове максимальне виконання процесора. Забезпечує використання процесором"
+#~ " максимальної частоти."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 79
-#: usr/share/biglinux/biglinux-settings/performance_page.py:42
-msgid "Disable Baloo Indexer"
-msgstr "Вимкнути індексатор Baloo"
+#~ msgid "Disable Baloo Indexer"
+#~ msgstr "Вимкнути індексатор Baloo"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 67
-#: usr/share/biglinux/biglinux-settings/performance_page.py:43
-msgid "Disables the Baloo file indexer. Avoids disk I/O overhead."
-msgstr ""
-"Вимикає індексатор файлів Baloo. Уникає накладних витрат на "
-"введення/виведення диска."
+#~ msgid "Disables the Baloo file indexer. Avoids disk I/O overhead."
+#~ msgstr ""
+#~ "Вимикає індексатор файлів Baloo. Уникає накладних витрат на "
+#~ "введення/виведення диска."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/usability/gamemode_config_dialog.py, line: 136
-#: usr/share/biglinux/biglinux-settings/performance_page.py:51
-msgid "Unload S.M.A.R.T Monitor"
-msgstr "Вивантажити монітор S.M.A.R.T"
+#~ msgid "Unload S.M.A.R.T Monitor"
+#~ msgstr "Вивантажити монітор S.M.A.R.T"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 83
-#: usr/share/biglinux/biglinux-settings/performance_page.py:52
-msgid "Disables S.M.A.R.T disk monitoring. Reduces disk I/O and CPU usage."
-msgstr ""
-"Вимикає моніторинг диска S.M.A.R.T. Зменшує використання диска I/O та ЦП."
+#~ msgid "Disables S.M.A.R.T disk monitoring. Reduces disk I/O and CPU usage."
+#~ msgstr ""
+#~ "Вимикає моніторинг диска S.M.A.R.T. Зменшує використання диска I/O та ЦП."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 169
-#: usr/share/biglinux/biglinux-settings/performance_page.py:60
-msgid "Meltdown Mitigations off"
-msgstr "Мітегування Meltdown вимкнено"
+#~ msgid "Meltdown Mitigations off"
+#~ msgstr "Мітегування Meltdown вимкнено"
 
 # File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 62
-#: usr/share/biglinux/biglinux-settings/performance_page.py:62
-msgid "Using mitigations=off will make your machine faster and less secure!"
-msgstr ""
-"Використання mitigations=off зробить ваш комп'ютер швидшим і менш безпечним!"
+#~ msgid "Using mitigations=off will make your machine faster and less secure!"
+#~ msgstr ""
+#~ "Використання mitigations=off зробить ваш комп'ютер швидшим і менш безпечним!"
 
 # File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 67
-#: usr/share/biglinux/biglinux-settings/performance_page.py:67
-msgid ""
-"This will disable CPU security mitigations (Meltdown/Spectre). Your system "
-"will be faster but vulnerable to hardware-level attacks. Are you sure you "
-"want to continue?"
-msgstr ""
-"A це вимкне засоби безпеки ЦП (Meltdown/Spectre). Ваша система буде швидшою, "
-"але вразливою до атак на апаратному рівні. Ви впевнені, що хочете продовжити?"
+#~ msgid ""
+#~ "This will disable CPU security mitigations (Meltdown/Spectre). Your system "
+#~ "will be faster but vulnerable to hardware-level attacks. Are you sure you "
+#~ "want to continue?"
+#~ msgstr ""
+#~ "A це вимкне засоби безпеки ЦП (Meltdown/Spectre). Ваша система буде швидшою, "
+#~ "але вразливою до атак на апаратному рівні. Ви впевнені, що хочете продовжити?"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 176
-#: usr/share/biglinux/biglinux-settings/performance_page.py:74
-msgid "noWatchdog"
-msgstr "noWatchdog"
+#~ msgid "noWatchdog"
+#~ msgstr "noWatchdog"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 177
-#: usr/share/biglinux/biglinux-settings/performance_page.py:76
-msgid ""
-"Disables the hardware watchdog and TSC clocksource systems, maintaining high "
-"performance but removing automatic protections against system crashes."
-msgstr ""
-"Вимикає апаратний контроль за станом та системи годинника TSC, підтримуючи "
-"високу продуктивність, але усуваючи автоматичний захист від збоїв системи."
+#~ msgid ""
+#~ "Disables the hardware watchdog and TSC clocksource systems, maintaining high "
+#~ "performance but removing automatic protections against system crashes."
+#~ msgstr ""
+#~ "Вимикає апаратний контроль за станом та системи годинника TSC, підтримуючи "
+#~ "високу продуктивність, але усуваючи автоматичний захист від збоїв системи."
 
 # File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 81
-#: usr/share/biglinux/biglinux-settings/performance_page.py:81
-msgid ""
-"This will disable the hardware watchdog. Your system will no longer "
-"automatically recover from certain types of crashes. Are you sure you want to"
-" continue?"
-msgstr ""
-"This will disable the hardware watchdog. Your system will no longer "
-"automatically recover from certain types of crashes. Are you sure you want to"
-" continue?"
+#~ msgid ""
+#~ "This will disable the hardware watchdog. Your system will no longer "
+#~ "automatically recover from certain types of crashes. Are you sure you want to"
+#~ " continue?"
+#~ msgstr ""
+#~ "This will disable the hardware watchdog. Your system will no longer "
+#~ "automatically recover from certain types of crashes. Are you sure you want to"
+#~ " continue?"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 103
-#: usr/share/biglinux/biglinux-settings/preload_page.py:10
-msgid "Preload"
-msgstr "Попереднє завантаження"
+#~ msgid "Preload"
+#~ msgstr "Попереднє завантаження"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 105
-#: usr/share/biglinux/biglinux-settings/preload_page.py:11
-msgid "Preload applications into memory to open them faster."
-msgstr "Попередньо завантажуйте програми в пам'ять, щоб відкривати їх швидше."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 120
-#: usr/share/biglinux/biglinux-settings/preload_page.py:18
-msgid "Firefox"
-msgstr "Firefox"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 126
-#: usr/share/biglinux/biglinux-settings/preload_page.py:19
-msgid "Brave"
-msgstr "Brave"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 132
-#: usr/share/biglinux/biglinux-settings/preload_page.py:20
-msgid "Chrome"
-msgstr "Хром"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 138
-#: usr/share/biglinux/biglinux-settings/preload_page.py:21
-msgid "Chromium"
-msgstr "Хроміум"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 126
-#: usr/share/biglinux/biglinux-settings/preload_page.py:22
-msgid "Librewolf"
-msgstr "Librewolf"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 144
-#: usr/share/biglinux/biglinux-settings/preload_page.py:23
-msgid "Palemoon"
-msgstr "Палемун"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 150
-#: usr/share/biglinux/biglinux-settings/preload_page.py:24
-msgid "Opera"
-msgstr "Опера"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 156
-#: usr/share/biglinux/biglinux-settings/preload_page.py:25
-msgid "Libreoffice"
-msgstr "ЛібреОфіс"
+#~ msgid "Preload applications into memory to open them faster."
+#~ msgstr "Попередньо завантажуйте програми в пам'ять, щоб відкривати їх швидше."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 72
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:72
-msgid "Automatic Suspend"
-msgstr "Автоматичне призупинення"
+#~ msgid "Automatic Suspend"
+#~ msgstr "Автоматичне призупинення"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 73
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:73
-msgid "Choose when inactivity and low battery may suspend the system."
-msgstr ""
-"Виберіть, коли система може призупинятися через бездіяльність та низький "
-"заряд батареї."
+#~ msgid "Choose when inactivity and low battery may suspend the system."
+#~ msgstr ""
+#~ "Виберіть, коли система може призупинятися через бездіяльність та низький "
+#~ "заряд батареї."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:80
-msgid "Disable idle suspend while plugged in"
-msgstr ""
-"Вимкнути перехід у режим сну під час бездіяльності за живлення від мережі"
+#~ msgid "Disable idle suspend while plugged in"
+#~ msgstr ""
+#~ "Вимкнути перехід у режим сну під час бездіяльності за живлення від мережі"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 81
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:81
-msgid "Disables automatic suspend caused by inactivity on AC power."
-msgstr ""
-"Вимикає автоматичне призупинення через бездіяльність при живленні від мережі."
+#~ msgid "Disables automatic suspend caused by inactivity on AC power."
+#~ msgstr ""
+#~ "Вимикає автоматичне призупинення через бездіяльність при живленні від мережі."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:88
-msgid "Disable idle suspend on battery"
-msgstr ""
-"Вимкнути перехід у режим сну під час бездіяльності за живлення від "
-"акумулятора"
+#~ msgid "Disable idle suspend on battery"
+#~ msgstr ""
+#~ "Вимкнути перехід у режим сну під час бездіяльності за живлення від "
+#~ "акумулятора"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 89
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:89
-msgid "Keeps the system awake on battery until a critical level is reached."
-msgstr ""
-"Тримає систему активною при живленні від батареї до досягнення критичного "
-"рівня."
+#~ msgid "Keeps the system awake on battery until a critical level is reached."
+#~ msgstr ""
+#~ "Тримає систему активною при живленні від батареї до досягнення критичного "
+#~ "рівня."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 96
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:96
-msgid "Suspend only when battery reaches 20%"
-msgstr "Призупиняти лише коли заряд батареї досягає 20%"
+#~ msgid "Suspend only when battery reaches 20%"
+#~ msgstr "Призупиняти лише коли заряд батареї досягає 20%"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 98
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:98
-msgid ""
-"Disables idle suspend on battery and suspends automatically when the charge "
-"reaches 20%."
-msgstr ""
-"Вимикає призупинення через бездіяльність при живленні від батареї та "
-"автоматично призупиняє систему, коли заряд досягає 20%."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 104
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:104
-msgid ""
-"This uses UPower's critical battery policy. Low and critical warnings occur "
-"before the suspend action at 20%."
-msgstr ""
-"Використовує політику критичного заряду батареї UPower. Попередження про "
-"низький та критичний рівень відбуваються перед призупиненням на позначці 20%."
+#~ msgid ""
+#~ "Disables idle suspend on battery and suspends automatically when the charge "
+#~ "reaches 20%."
+#~ msgstr ""
+#~ "Вимикає призупинення через бездіяльність при живленні від батареї та "
+#~ "автоматично призупиняє систему, коли заряд досягає 20%."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 75
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:112
-msgid "Sleep Mode"
-msgstr "Режим сну"
+#~ msgid "Sleep Mode"
+#~ msgstr "Режим сну"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 76
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:113
-msgid "Configure how the system suspends."
-msgstr "Налаштуйте, як система переходить у сплячий режим."
+#~ msgid "Configure how the system suspends."
+#~ msgstr "Налаштуйте, як система переходить у сплячий режим."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 83
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:120
-msgid "Use s2idle (light sleep)"
-msgstr "Використовуйте s2idle (легкий сон)"
+#~ msgid "Use s2idle (light sleep)"
+#~ msgstr "Використовуйте s2idle (легкий сон)"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 85
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:122
-msgid ""
-"Uses a lighter sleep mode that preserves Fn keys and device state. "
-"Recommended for ASUS notebooks."
-msgstr ""
-"Verwendet einen leichteren Energiesparmodus, der die Fn-Tasten und den "
-"Gerätezustand beibehält. Empfohlen für ASUS-Notebooks."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 91
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:128
-msgid ""
-"S3 deep sleep can cause the Embedded Controller to stop generating hotkey "
-"interrupts. s2idle keeps the EC powered, avoiding this issue at a small cost "
-"in battery consumption."
-msgstr ""
-"S3 глибокий сон може призвести до того, що Вбудований Контролер перестане "
-"генерувати гарячі клавіші. s2idle підтримує живлення EC, уникаючи цієї "
-"проблеми за невеликої витрати енергії батареї."
+#~ msgid ""
+#~ "Uses a lighter sleep mode that preserves Fn keys and device state. "
+#~ "Recommended for ASUS notebooks."
+#~ msgstr ""
+#~ "Verwendet einen leichteren Energiesparmodus, der die Fn-Tasten und den "
+#~ "Gerätezustand beibehält. Empfohlen für ASUS-Notebooks."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 100
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:137
-msgid "WiFi"
-msgstr "Wi-Fi"
+#~ msgid "WiFi"
+#~ msgstr "Wi-Fi"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 101
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:138
-msgid "Prevent WiFi issues after suspend."
-msgstr "Prevent WiFi issues after sleep."
+#~ msgid "Prevent WiFi issues after suspend."
+#~ msgstr "Prevent WiFi issues after sleep."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 108
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:145
-msgid "Protect WiFi on suspend"
-msgstr "Захистити WiFi під час сну"
+#~ msgid "Protect WiFi on suspend"
+#~ msgstr "Захистити WiFi під час сну"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 110
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:147
-msgid ""
-"Prevents the Realtek WiFi chip from fully powering off (d3cold), avoiding "
-"connection loss after resume."
-msgstr ""
-"Запобігає повному вимкненню чіпа WiFi Realtek (d3cold), уникаючи втрати "
-"з'єднання після відновлення."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 116
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:153
-msgid ""
-"Some Realtek RTL8852BE/CE chips fail to reinitialize after d3cold power "
-"gating. This keeps the chip in d3hot (PCIe link alive) during suspend."
-msgstr ""
-"Деякі чіпи Realtek RTL8852BE/CE не можуть повторно ініціалізуватися після "
-"d3cold живлення. Це утримує чіп у стані d3hot (PCIe з'єднання активне) під "
-"час сну."
+#~ msgid ""
+#~ "Prevents the Realtek WiFi chip from fully powering off (d3cold), avoiding "
+#~ "connection loss after resume."
+#~ msgstr ""
+#~ "Запобігає повному вимкненню чіпа WiFi Realtek (d3cold), уникаючи втрати "
+#~ "з'єднання після відновлення."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 124
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:161
-msgid "Display and Keyboard"
-msgstr "Екран і Клавіатура"
+#~ msgid "Display and Keyboard"
+#~ msgstr "Екран і Клавіатура"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 125
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:162
-msgid "Preserve brightness and LED state across suspend."
-msgstr "Зберігати яскравість та стан світлодіода під час сну."
+#~ msgid "Preserve brightness and LED state across suspend."
+#~ msgstr "Зберігати яскравість та стан світлодіода під час сну."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 132
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:169
-msgid "Save/restore brightness on suspend"
-msgstr "Зберегти/відновити яскравість під час призупинення"
+#~ msgid "Save/restore brightness on suspend"
+#~ msgstr "Зберегти/відновити яскравість під час призупинення"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 134
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:171
-msgid ""
-"Saves screen brightness and keyboard LEDs before suspending and restores them"
-" on resume."
-msgstr ""
-"Сохраняє яскравість екрану та світлодіоди клавіатури перед переходом у "
-"сплячий режим і відновлює їх після виходу з нього."
+#~ msgid ""
+#~ "Saves screen brightness and keyboard LEDs before suspending and restores them"
+#~ " on resume."
+#~ msgstr ""
+#~ "Сохраняє яскравість екрану та світлодіоди клавіатури перед переходом у "
+#~ "сплячий режим і відновлює їх після виходу з нього."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 144
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:181
-msgid "GNOME Shell Extensions"
-msgstr "GNOME Shell Extensions"
+#~ msgid "GNOME Shell Extensions"
+#~ msgstr "GNOME Shell Extensions"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 145
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:182
-msgid "Automatic health check after resume."
-msgstr "Автоматична перевірка стану після відновлення."
+#~ msgid "Automatic health check after resume."
+#~ msgstr "Автоматична перевірка стану після відновлення."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 152
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:189
-msgid "Extension health monitor"
-msgstr "Монітор стану розширення"
+#~ msgid "Extension health monitor"
+#~ msgstr "Монітор стану розширення"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 154
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:191
-msgid ""
-"Detects GNOME Shell extensions in error state after resume and automatically "
-"restarts them."
-msgstr ""
-"Виявляє розширення GNOME Shell у стані помилки після відновлення та "
-"автоматично перезапускає їх."
+#~ msgid ""
+#~ "Detects GNOME Shell extensions in error state after resume and automatically "
+#~ "restarts them."
+#~ msgstr ""
+#~ "Виявляє розширення GNOME Shell у стані помилки після відновлення та "
+#~ "автоматично перезапускає їх."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 163
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:200
-msgid "Lid Switch"
-msgstr "Кришка перемикача"
+#~ msgid "Lid Switch"
+#~ msgstr "Кришка перемикача"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 164
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:201
-msgid "Laptop lid close behavior."
-msgstr "Поведение при закритті кришки ноутбука."
+#~ msgid "Laptop lid close behavior."
+#~ msgstr "Поведение при закритті кришки ноутбука."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:208
-msgid "Keep running with the lid closed while plugged in"
-msgstr "Продовжувати роботу із закритою кришкою за живлення від мережі"
+#~ msgid ""
+#~ "Keeps the session and network active when the lid is closed on AC power."
+#~ msgstr ""
+#~ "Зберігає сеанс і мережеве з’єднання активними, коли кришку закрито під час "
+#~ "роботи від мережі."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:210
-msgid ""
-"Keeps the session and network active when the lid is closed on AC power."
-msgstr ""
-"Зберігає сеанс і мережеве з’єднання активними, коли кришку закрито під час "
-"роботи від мережі."
-
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:216
-msgid ""
-"This prevents lid-triggered suspend and locking. Automatic idle locking "
-"remains separate. Keep the notebook ventilated while it runs with the lid "
-"closed."
-msgstr ""
-"Це запобігає переходу в режим сну та блокуванню після закриття кришки. "
-"Автоматичне блокування через бездіяльність налаштовується окремо. Забезпечте "
-"належну вентиляцію ноутбука, поки він працює із закритою кришкою."
-
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:224
-msgid "Keep running with the lid closed on battery"
-msgstr "Продовжувати роботу із закритою кришкою за живлення від акумулятора"
-
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
-msgid ""
-"Keeps the session and network active when the lid is closed on battery power."
-msgstr ""
-"Зберігає сеанс і мережеве з’єднання активними, коли кришку закрито під час "
-"роботи від акумулятора."
-
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:232
-msgid ""
-"This prevents lid-triggered suspend and locking. Automatic idle locking "
-"remains separate, and the 20% critical battery policy still applies."
-msgstr ""
-"Це запобігає переходу в режим сну та блокуванню після закриття кришки. "
-"Автоматичне блокування через бездіяльність налаштовується окремо, а правило "
-"для критичного рівня заряду 20 % продовжує діяти."
+#~ msgid ""
+#~ "Keeps the session and network active when the lid is closed on battery power."
+#~ msgstr ""
+#~ "Зберігає сеанс і мережеве з’єднання активними, коли кришку закрито під час "
+#~ "роботи від акумулятора."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
 # line: 26
-#: usr/share/biglinux/biglinux-settings/system_page.py:13
-msgid "General system settings."
-msgstr "Загальні налаштування системи."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 23
-#: usr/share/biglinux/biglinux-settings/system_page.py:19
-msgid "SSH"
-msgstr "SSH"
+#~ msgid "General system settings."
+#~ msgstr "Загальні налаштування системи."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
 # line: 24
-#: usr/share/biglinux/biglinux-settings/system_page.py:20
-msgid "Enable remote access via ssh."
-msgstr "Увімкніть віддалений доступ через ssh."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 27
-#: usr/share/biglinux/biglinux-settings/system_page.py:23
-#, python-brace-format
-msgid "SSH Address: {}"
-msgstr "SSH-адрес: {}"
+#~ msgid "Enable remote access via ssh."
+#~ msgstr "Увімкніть віддалений доступ через ssh."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 147
-#: usr/share/biglinux/biglinux-settings/system_page.py:27
-msgid "SSH always on"
-msgstr "SSH завжди увімкнено"
+#~ msgid "SSH always on"
+#~ msgstr "SSH завжди увімкнено"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 149
-#: usr/share/biglinux/biglinux-settings/system_page.py:28
-msgid "Turn on ssh remote access at boot."
-msgstr "Увімкніть віддалений доступ через ssh під час завантаження."
+#~ msgid "Turn on ssh remote access at boot."
+#~ msgstr "Увімкніть віддалений доступ через ssh під час завантаження."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 162
-#: usr/share/biglinux/biglinux-settings/system_page.py:37
-msgid "Fast Grub"
-msgstr "Швидкий Grub"
+#~ msgid "Fast Grub"
+#~ msgstr "Швидкий Grub"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 163
-#: usr/share/biglinux/biglinux-settings/system_page.py:38
-msgid "Decreases grub display time."
-msgstr "Зменшує час відображення grub."
+#~ msgid "Decreases grub display time."
+#~ msgstr "Зменшує час відображення grub."
 
 # File: usr/share/biglinux/biglinux-settings/system_page.py, line: 47
-#: usr/share/biglinux/biglinux-settings/system_page.py:47
-msgid "Boot messages"
-msgstr "Завантажувальні повідомлення"
+#~ msgid "Boot messages"
+#~ msgstr "Завантажувальні повідомлення"
 
 # File: usr/share/biglinux/biglinux-settings/system_page.py, line: 48
-#: usr/share/biglinux/biglinux-settings/system_page.py:48
-msgid "Show system messages below the boot animation."
-msgstr "Показувати системні повідомлення під анімацією завантаження."
+#~ msgid "Show system messages below the boot animation."
+#~ msgstr "Показувати системні повідомлення під анімацією завантаження."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 170
-#: usr/share/biglinux/biglinux-settings/system_page.py:57
-msgid "Auto-mount Partitions"
-msgstr "Автоматичне монтування розділів"
+#~ msgid "Auto-mount Partitions"
+#~ msgstr "Автоматичне монтування розділів"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 171
-#: usr/share/biglinux/biglinux-settings/system_page.py:58
-msgid "Auto mount partitions in internal disks on boot."
-msgstr ""
-"Автоматичне монтування розділів на внутрішніх дисках під час завантаження."
+#~ msgid "Auto mount partitions in internal disks on boot."
+#~ msgstr ""
+#~ "Автоматичне монтування розділів на внутрішніх дисках під час завантаження."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 14
-#: usr/share/biglinux/biglinux-settings/usability_page.py:12
-msgid "User and Visual system settings."
-msgstr "Налаштування користувача та візуальної системи."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 114
-#: usr/share/biglinux/biglinux-settings/usability_page.py:19
-msgid "NumLock"
-msgstr "Num Lock"
+#~ msgid "User and Visual system settings."
+#~ msgstr "Налаштування користувача та візуальної системи."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 115
-#: usr/share/biglinux/biglinux-settings/usability_page.py:20
-msgid "Initial NumLock state. Ignored if autologin is enabled."
-msgstr ""
-"Початковий стан NumLock. Ігнорується, якщо увімкнено автоматичний вхід."
-
-#: usr/share/biglinux/biglinux-settings/usability_page.py:28
-msgid "Keyboard Light"
-msgstr "Підсвічування клавіатури"
-
-#: usr/share/biglinux/biglinux-settings/usability_page.py:30
-msgid ""
-"Keep the keyboard backlight on. For keyboards whose light is controlled by "
-"the Scroll Lock LED."
-msgstr ""
-"Тримає підсвічування клавіатури увімкненим. Для клавіатур, підсвічування яких"
-" керується індикатором Scroll Lock."
+#~ msgid "Initial NumLock state. Ignored if autologin is enabled."
+#~ msgstr ""
+#~ "Початковий стан NumLock. Ігнорується, якщо увімкнено автоматичний вхід."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 131
-#: usr/share/biglinux/biglinux-settings/usability_page.py:39
-msgid "Window Button On Left Side"
-msgstr "Кнопка вікна зліва"
+#~ msgid "Window Button On Left Side"
+#~ msgstr "Кнопка вікна зліва"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 132
-#: usr/share/biglinux/biglinux-settings/usability_page.py:40
-msgid "Maximize, minimize, and close buttons on the left side of the window."
-msgstr "Кнопки розширення, зменшення та закриття з лівого боку вікна."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 72
-#: usr/share/biglinux/biglinux-settings/usability_page.py:48
-msgid "KZones"
-msgstr "KZones"
+#~ msgid "Maximize, minimize, and close buttons on the left side of the window."
+#~ msgstr "Кнопки розширення, зменшення та закриття з лівого боку вікна."
 
 # File: usr/share/biglinux/biglinux-settings/usability_page.py, line: 39
-#: usr/share/biglinux/biglinux-settings/usability_page.py:50
-msgid "Enable window tiling zones for the KDE Plasma desktop."
-msgstr ""
-"Увімкнути зони плиткового розміщення вікон для робочого столу KDE Plasma."
+#~ msgid "Enable window tiling zones for the KDE Plasma desktop."
+#~ msgstr ""
+#~ "Увімкнути зони плиткового розміщення вікон для робочого столу KDE Plasma."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 169
-#: usr/share/biglinux/biglinux-settings/usability_page.py:59
-msgid "Recent Files & Locations"
-msgstr "Недавні файли та місця"
+#~ msgid "Recent Files & Locations"
+#~ msgstr "Недавні файли та місця"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 170
-#: usr/share/biglinux/biglinux-settings/usability_page.py:61
-msgid ""
-"Restores the 'Recent Files' and 'Recent Locations' functionality that appears"
-" empty in Dolphin and the Application Menu."
-msgstr ""
-"Відновлює функціональність 'Недавні файли' та 'Недавні місця', яка "
-"з'являється порожньою в Dolphin та меню програми."
+#~ msgid ""
+#~ "Restores the 'Recent Files' and 'Recent Locations' functionality that appears"
+#~ " empty in Dolphin and the Application Menu."
+#~ msgstr ""
+#~ "Відновлює функціональність 'Недавні файли' та 'Недавні місця', яка "
+#~ "з'являється порожньою в Dolphin та меню програми."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 80
 #~ msgid "Never suspend while plugged in"

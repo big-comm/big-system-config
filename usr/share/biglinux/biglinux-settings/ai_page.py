@@ -9,21 +9,119 @@ class AIPage(BaseSettingsPage):
 
         local_ip = self.get_local_ip()
 
-        # Create the container (base method)
-        content = self.create_scrolled_content()
+        content = self.create_scrolled_content(
+            _("Artificial Intelligence"),
+            _("Chat, work with documents and create images with AI on this computer."),
+        )
 
-        # Create the AI Interfaces group
-        aiGui = self.create_group(
-            _("AI Interfaces"),
-            _("Graphical interface for artificial intelligence."),
+        ai_keywords = [_("chat"), _("local AI"), _("LLM")]
+
+        ## GROUP: AI applications ##
+        apps = self.create_group(
+            _("AI applications"),
+            None,
             "ai",
         )
-        content.append(aiGui)
+        content.append(apps)
 
-        # Create the group Ollama (base method)
+        # ChatAI
+        self.create_row(
+            apps,
+            _("ChatAI"),
+            _(
+                "Desktop widget with access to several AI chats for KDE Plasma. Installs the widget; turning it off removes it."
+            ),
+            "chatai",
+            "chatai-symbolic",
+            keywords=ai_keywords + [_("widget"), _("plasmoid")],
+        )
+        # Ollama LAB
+        self.create_row(
+            apps,
+            _("Ollama LAB"),
+            _(
+                "Graphical app to manage Ollama models and chat with them. Installs Ollama LAB; turning it off removes it."
+            ),
+            "ollamaLab",
+            OLLAMA_ICON,
+            keywords=ai_keywords + [_("Ollama")],
+        )
+        # ChatBox
+        self.create_row(
+            apps,
+            _("ChatBox"),
+            _(
+                "Desktop app to chat with AI models, local or online. Installs ChatBox; turning it off removes it."
+            ),
+            "chatbox",
+            "chatbox-symbolic",
+            keywords=ai_keywords,
+        )
+        # LM Studio
+        self.create_row(
+            apps,
+            _("LM Studio"),
+            _(
+                "Desktop app to download and run language models on this computer. Installs LM Studio; turning it off removes it."
+            ),
+            "lmStudio",
+            "lmstudio-symbolic",
+            keywords=ai_keywords,
+        )
+        # Open Notebook (requires Docker)
+        openNotebook = self.create_row(
+            apps,
+            _("Open Notebook"),
+            _(
+                "Open-source, privacy-focused alternative to Google's NotebookLM for working with your documents. Installs it as a container and requires Docker; turning it off removes it."
+            ),
+            "openNotebookInstall",
+            "openNotebook-symbolic",
+            keywords=ai_keywords + [_("documents"), _("NotebookLM")],
+        )
+        self.create_sub_row(
+            apps,
+            _("Open Notebook Server"),
+            _("Start the Open Notebook server."),
+            "openNotebookRun",
+            "openNotebook-symbolic",
+            openNotebook,
+            info_text=_(
+                "Open Notebook is running.\nAddress: http://localhost:8502\nand\nAddress: http://{}:8502"
+            ).format(local_ip),
+        )
+        # ComfyUI
+        link_comfyui = "https://github.com/Comfy-Org/ComfyUI"
+        comfyUI = self.create_row(
+            apps,
+            _("ComfyUI image generation"),
+            _(
+                "Create images with AI using a visual node editor. Requires an AMD or Nvidia graphics card. Installs ComfyUI in your home folder; turning it off removes it."
+            ),
+            "comfyUI",
+            "comfyUI-symbolic",
+            timeout=1200,
+            link_url=link_comfyui,
+            keywords=[_("images"), _("Stable Diffusion"), _("local AI")],
+        )
+        self.create_sub_row(
+            apps,
+            _("ComfyUI Server"),
+            _("Start the ComfyUI server."),
+            "comfyUIRun",
+            "comfyUI-symbolic",
+            comfyUI,
+            info_text=_(
+                "ComfyUI server is running.\nAddress: http://localhost:8188\nand\nAddress: http://{}:8188"
+            ).format(local_ip),
+        )
+
+        ## GROUP: Ollama server ##
         ollamaServer = self.create_group(
             _("Ollama Server"),
-            _("Choose which Ollama server is best for your hardware."),
+            _(
+                "Ollama runs AI models on this computer. The variants below are alternative engines for different hardware: install only the one that matches your processor or graphics card."
+            ),
             "ai",
         )
         content.append(ollamaServer)
@@ -37,117 +135,44 @@ class AIPage(BaseSettingsPage):
             OLLAMA_ICON,
             action_label=_("Update now"),
             timeout=1800,
+            keywords=[_("Ollama"), _("local AI")],
         )
 
-        # ExpanderRow to collapse the 4 Ollama variants
         ollama_expander = self.create_expander_row(
             ollamaServer,
             _("Ollama Variants"),
-            _("Select the variant that matches your GPU hardware."),
+            _("Select the variant that matches your hardware."),
             OLLAMA_ICON,
         )
 
-        # ChatAI
-        self.create_row(
-            aiGui,
-            _("ChatAI"),
-            _("A variety of chats like Plasmoid for your KDE Plasma desktop."),
-            "chatai",
-            "chatai-symbolic",
-        )
-        # Ollama LAB
-        self.create_row(
-            aiGui,
-            _("Ollama LAB"),
-            _("Graphical interface for managing Ollama models and chat."),
-            "ollamaLab",
-            OLLAMA_ICON,
-        )
-        # ChatBox
-        self.create_row(
-            aiGui,
-            _("ChatBox"),
-            _("User-friendly Desktop Client App for AI Models/LLMs."),
-            "chatbox",
-            "chatbox-symbolic",
-        )
-        # LM Studio
-        self.create_row(
-            aiGui,
-            _("LM Studio"),
-            _(
-                "LM Studio - A desktop app for exploring and running large language models locally."
-            ),
-            "lmStudio",
-            "lmstudio-symbolic",
-        )
-        # Open Notebook (requires Docker)
-        openNotebook = self.create_row(
-            aiGui,
-            _("Open Notebook"),
-            _(
-                "Open-source, privacy-focused alternative to Google's NotebookLM. Requires Docker enabled."
-            ),
-            "openNotebookInstall",
-            "openNotebook-symbolic",
-        )
-        self.create_sub_row(
-            aiGui,
-            _("Open Notebook Server"),
-            _("Start the Open Notebook server."),
-            "openNotebookRun",
-            "openNotebook-symbolic",
-            openNotebook,
-            info_text=_(
-                "Open Notebook is running.\nAddress: http://localhost:8502\nand\nAddress: http://{}:8502"
-            ).format(local_ip),
-        )
-        # ComfyUI
-        link_comfyui = "https://github.com/Comfy-Org/ComfyUI"
-        comfyUI = self.create_row(
-            aiGui,
-            _("ComfyUI (GPU ONLY)"),
-            _("The most powerful and modular visual AI engine and application."),
-            "comfyUI",
-            "comfyUI-symbolic",
-            timeout=1200,
-            link_url=link_comfyui,
-        )
-        self.create_sub_row(
-            aiGui,
-            _("ComfyUI Server"),
-            _("Start the ComfyUI server."),
-            "comfyUIRun",
-            "comfyUI-symbolic",
-            comfyUI,
-            info_text=_(
-                "ComfyUI server is running.\nAddress: http://localhost:8188\nand\nAddress: http://{}:8188"
-            ).format(local_ip),
-        )
         # Ollama variants (CPU, Vulkan, Nvidia CUDA, AMD ROCm), each with a
         # "Share Ollama" sub-row exposing the server on the local network.
         ollama_variants = (
             (
-                _("OllamaCPU"),
-                _("Local AI server. For CPUs only."),
+                _("Ollama for CPU"),
+                _(
+                    "Runs AI models on the processor only. Installs Ollama; turning it off removes it."
+                ),
                 "ollamaCpu",
             ),
             (
                 _("Ollama Vulkan"),
-                _("Local AI server. For CPUs, AMD/Nvidia and integrated GPUs."),
+                _(
+                    "For processors, AMD and Nvidia graphics cards and integrated graphics. Installs Ollama; turning it off removes it."
+                ),
                 "ollamaVulkan",
             ),
             (
                 _("Ollama Nvidia CUDA"),
                 _(
-                    "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
+                    "For newer Nvidia graphics cards, from the 2000 series on. Installs Ollama; turning it off removes it."
                 ),
                 "ollamaNvidia",
             ),
             (
                 _("Ollama AMD ROCm"),
                 _(
-                    "Local AI server. For newer AMD GPUs, starting from the 6000 series.\nConsider using Vulkan, in many tests, Vulkan performed better than ROCm."
+                    "For newer AMD graphics cards, from the 6000 series on. In many tests Vulkan performed better than ROCm. Installs Ollama; turning it off removes it."
                 ),
                 "ollamaAmd",
             ),
@@ -166,11 +191,12 @@ class AIPage(BaseSettingsPage):
             script_key,
             OLLAMA_ICON,
             info_text=_("Ollama server is running.\nAddress: http://localhost:11434"),
+            keywords=[_("Ollama"), _("local AI"), _("LLM")],
         )
         self.create_sub_row(
             expander,
             _("Share Ollama"),
-            _("Share ollama on the local network."),
+            _("Lets other computers on the local network use this Ollama server."),
             "ollamaShare",
             OLLAMA_ICON,
             ollama,

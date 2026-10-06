@@ -66,86 +66,142 @@ class SleepPage(BaseSettingsPage):
 
         self._desktop = _detect_desktop()
 
-        content = self.create_scrolled_content()
+        content = self.create_scrolled_content(
+            _("Power & Suspend"),
+            _(
+                "What happens when the computer is idle, on battery or with the lid closed."
+            ),
+        )
 
-        grp_power = self.create_group(
-            _("Automatic Suspend"),
-            _("Choose when inactivity and low battery may suspend the system."),
+        sleep_keywords = [_("don't sleep"), _("stay awake"), _("sleep"), _("suspend")]
+
+        # --- When idle ---
+        grp_idle = self.create_group(
+            _("When idle"),
+            _("Choose whether the computer suspends after a period without use."),
             "sleep",
         )
-        content.append(grp_power)
+        content.append(grp_idle)
 
         self.create_row(
-            grp_power,
-            _("Disable idle suspend while plugged in"),
-            _("Disables automatic suspend caused by inactivity on AC power."),
+            grp_idle,
+            _("Stay awake while plugged in"),
+            _("Does not suspend when idle while connected to power."),
             "never-suspend-ac",
-            "sleep-symbolic",
+            None,
+            keywords=sleep_keywords,
         )
 
         self.create_row(
-            grp_power,
-            _("Disable idle suspend on battery"),
-            _("Keeps the system awake on battery until a critical level is reached."),
-            "never-suspend-battery",
-            "sleep-symbolic",
-        )
-
-        self.create_row(
-            grp_power,
-            _("Suspend only when battery reaches 20%"),
+            grp_idle,
+            _("Stay awake on battery"),
             _(
-                "Disables idle suspend on battery and suspends automatically "
+                "Does not suspend when idle on battery. The critical-battery action "
+                "still applies."
+            ),
+            "never-suspend-battery",
+            None,
+            keywords=sleep_keywords + [_("battery")],
+        )
+
+        self.create_row(
+            grp_idle,
+            _("Stay awake and suspend at 20% battery"),
+            _(
+                "Does not suspend when idle on battery and suspends automatically "
                 "when the charge reaches 20%."
             ),
             "suspend-at-20",
-            "sleep-symbolic",
+            None,
             info_text=_(
                 "This uses UPower's critical battery policy. Low and critical "
                 "warnings occur before the suspend action at 20%."
             ),
+            keywords=sleep_keywords + [_("battery"), _("low battery")],
         )
 
-        # --- Sleep mode (only for ASUS with EC bug) ---
-        if _has_asus_ec_bug():
-            grp_sleep = self.create_group(
-                _("Sleep Mode"),
-                _("Configure how the system suspends."),
-                "sleep",
-            )
-            content.append(grp_sleep)
+        # --- When the lid is closed (always visible) ---
+        grp_lid = self.create_group(
+            _("When the lid is closed"),
+            _("Keep the computer working with the lid closed, for example with an external monitor."),
+            "sleep",
+        )
+        content.append(grp_lid)
 
+        lid_keywords = [_("lid"), _("laptop"), _("don't sleep"), _("stay awake")]
+
+        self.create_row(
+            grp_lid,
+            _("Keep running with the lid closed while plugged in"),
+            _(
+                "Closing the lid will not lock or suspend the computer while it is "
+                "connected to power. The session and network stay active."
+            ),
+            "never-suspend-lid-ac",
+            None,
+            info_text=_(
+                "This prevents lid-triggered suspend and locking. Automatic "
+                "idle locking remains separate. Keep the notebook ventilated "
+                "while it runs with the lid closed."
+            ),
+            keywords=lid_keywords,
+        )
+
+        self.create_row(
+            grp_lid,
+            _("Keep running with the lid closed on battery"),
+            _(
+                "Closing the lid will not lock or suspend the computer on battery. "
+                "The session and network stay active, using more battery."
+            ),
+            "never-suspend-lid-battery",
+            None,
+            info_text=_(
+                "This prevents lid-triggered suspend and locking. Automatic "
+                "idle locking remains separate, and the 20% critical battery "
+                "policy still applies."
+            ),
+            keywords=lid_keywords + [_("battery")],
+        )
+
+        # --- Fix problems after resume ---
+        grp_fix = self.create_group(
+            _("Fix problems after resume"),
+            _("Compatibility fixes for problems some computers have when waking from suspend."),
+            "sleep",
+        )
+        content.append(grp_fix)
+
+        # Light sleep (only for ASUS with EC bug)
+        if _has_asus_ec_bug():
             self.create_row(
-                grp_sleep,
-                _("Use s2idle (light sleep)"),
+                grp_fix,
+                _("Light sleep (s2idle)"),
                 _(
-                    "Uses a lighter sleep mode that preserves Fn keys "
-                    "and device state. Recommended for ASUS notebooks."
+                    "Uses a lighter sleep mode that keeps the Fn keys working after "
+                    "resume on some ASUS notebooks. Uses slightly more battery while "
+                    "suspended."
                 ),
                 "s2idle",
-                "sleep-symbolic",
+                None,
                 info_text=_(
                     "S3 deep sleep can cause the Embedded Controller to stop "
                     "generating hotkey interrupts. s2idle keeps the EC powered, "
                     "avoiding this issue at a small cost in battery consumption."
                 ),
+                keywords=[_("sleep"), _("Fn keys"), _("hotkeys")],
+                applies_after_restart=True,
             )
 
-        # --- WiFi d3cold prevention (only if rtw89 loaded) ---
+        # Wi-Fi d3cold prevention (only if rtw89 loaded)
         if _has_rtw89():
-            grp_wifi = self.create_group(
-                _("WiFi"),
-                _("Prevent WiFi issues after suspend."),
-                "sleep",
-            )
-            content.append(grp_wifi)
-
             self.create_row(
-                grp_wifi,
-                _("Protect WiFi on suspend"),
+                grp_fix,
+                _("Avoid losing Wi-Fi after resume"),
                 _(
-                    "Prevents the Realtek WiFi chip from fully powering off "
-                    "(d3cold), avoiding connection loss after resume."
+                    "Compatibility fix for some Realtek Wi-Fi adapters: keeps the "
+                    "adapter from fully powering off during suspend, so the "
+                    "connection works after resume."
                 ),
                 "wifi-d3cold",
                 "wifi-symbolic",
@@ -154,83 +210,32 @@ class SleepPage(BaseSettingsPage):
                     "after d3cold power gating. This keeps the chip in d3hot "
                     "(PCIe link alive) during suspend."
                 ),
+                keywords=[_("Wi-Fi"), _("wireless"), _("Realtek")],
             )
 
-        # --- Backlight save/restore (always visible) ---
-        grp_backlight = self.create_group(
-            _("Display and Keyboard"),
-            _("Preserve brightness and LED state across suspend."),
-            "sleep",
-        )
-        content.append(grp_backlight)
-
+        # Backlight save/restore (always visible)
         self.create_row(
-            grp_backlight,
-            _("Save/restore brightness on suspend"),
+            grp_fix,
+            _("Restore brightness after resume"),
             _(
-                "Saves screen brightness and keyboard LEDs before "
-                "suspending and restores them on resume."
+                "Saves the screen brightness and keyboard lights before suspending "
+                "and restores them when the computer wakes up."
             ),
             "backlight",
-            "sleep-symbolic",
+            None,
+            keywords=[_("brightness"), _("backlight")],
         )
 
-        # --- GNOME extension monitor (only on GNOME) ---
+        # GNOME extension monitor (only on GNOME)
         if self._desktop == "gnome":
-            grp_gnome = self.create_group(
-                _("GNOME Shell Extensions"),
-                _("Automatic health check after resume."),
-                "sleep",
-            )
-            content.append(grp_gnome)
-
             self.create_row(
-                grp_gnome,
-                _("Extension health monitor"),
+                grp_fix,
+                _("Restart failed extensions after resume"),
                 _(
-                    "Detects GNOME Shell extensions in error state after "
-                    "resume and automatically restarts them."
+                    "Checks GNOME Shell extensions after resume and restarts the "
+                    "ones left in an error state."
                 ),
                 "gnome-monitor",
-                "sleep-symbolic",
+                None,
+                keywords=[_("GNOME"), _("extensions")],
             )
-
-        # --- Lid switch (always visible) ---
-        grp_lid = self.create_group(
-            _("Lid Switch"),
-            _("Laptop lid close behavior."),
-            "sleep",
-        )
-        content.append(grp_lid)
-
-        self.create_row(
-            grp_lid,
-            _("Keep running with the lid closed while plugged in"),
-            _(
-                "Keeps the session and network active when the lid is closed "
-                "on AC power."
-            ),
-            "never-suspend-lid-ac",
-            "sleep-symbolic",
-            info_text=_(
-                "This prevents lid-triggered suspend and locking. Automatic "
-                "idle locking remains separate. Keep the notebook ventilated "
-                "while it runs with the lid closed."
-            ),
-        )
-
-        self.create_row(
-            grp_lid,
-            _("Keep running with the lid closed on battery"),
-            _(
-                "Keeps the session and network active when the lid is closed "
-                "on battery power."
-            ),
-            "never-suspend-lid-battery",
-            "sleep-symbolic",
-            info_text=_(
-                "This prevents lid-triggered suspend and locking. Automatic "
-                "idle locking remains separate, and the 20% critical battery "
-                "policy still applies."
-            ),
-        )

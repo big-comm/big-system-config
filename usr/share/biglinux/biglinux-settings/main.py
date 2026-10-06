@@ -7,15 +7,16 @@ gi.require_version("Gdk", "4.0")
 import html
 import logging
 import os
+import unicodedata
 
 from ai_page import AIPage
-from config import _, APP_ID, APP_VERSION, BASE_DIR, ICONS_DIR
-from developer_page import DeveloperPage
+from apps_page import AppsPage
+from base_page import PATH_SEPARATOR, normalize_search_text
+from config import _, APP_ID, APP_VERSION, BASE_DIR, ICONS_DIR, ngettext
 from devices_page import DevicesPage
-from docker_page import DockerPage
 from gi.repository import Adw, Gdk, Gio, GLib, Gtk
+from home_page import HomePage
 from performance_page import PerformancePage
-from preload_page import PreloadPage
 from sleep_page import SleepPage
 from system_page import SystemPage
 from usability_page import UsabilityPage
@@ -25,8 +26,15 @@ logging.basicConfig(level=logging.INFO, format="%(name)s %(levelname)s: %(messag
 APP_SLUG = "biglinux-settings"
 logger = logging.getLogger(APP_SLUG)
 TOAST_TIMEOUT_MS = 3500
-WINDOW_WIDTH = 1000
-WINDOW_HEIGHT = 700
+# Default size; the window is resizable and adapts down to MIN_WIDTH
+WINDOW_WIDTH = 1100
+WINDOW_HEIGHT = 760
+MIN_WIDTH = 360
+MIN_HEIGHT = 480
+# Below this width the sidebar collapses into an overlay
+SIDEBAR_COLLAPSE_WIDTH = "max-width: 720sp"
+# Pages that open the "More features" part of the sidebar
+MORE_FEATURES_FIRST_PAGE = "ai"
 INSTALLED_MAIN = "/usr/share/biglinux/biglinux-settings/main.py"
 
 
@@ -40,22 +48,38 @@ def _is_source_run(main_file=__file__):
     return os.path.realpath(main_file) != os.path.realpath(INSTALLED_MAIN)
 
 
+def _fold_with_index(text):
+    """Accent/case-folded text plus, for each folded char, its source index."""
+    folded, index = [], []
+    for position, char in enumerate(text):
+        for piece in unicodedata.normalize("NFKD", char):
+            if unicodedata.combining(piece):
+                continue
+            for out in piece.casefold():
+                folded.append(out)
+                index.append(position)
+    return "".join(folded), index
+
+
 def _highlight_text(text, search_text):
-    """Wrap matching substring with bold Pango markup, escaping existing markup.
+    """Wrap the matching part with bold Pango markup, escaping existing markup.
 
     Row titles are stored already escaped (see base_page._plain_markup), so the
-    text is unescaped first: matching runs on what the user sees and each piece
-    is escaped exactly once.
+    text is unescaped first. Matching ignores case and accents ("nao" finds
+    "não"), and the bold covers the original characters.
     """
     plain = html.unescape(text)
-    idx = plain.lower().find(search_text) if search_text else -1
+    query = normalize_search_text(search_text) if search_text else ""
+    folded, index = _fold_with_index(plain)
+    idx = folded.find(query) if query else -1
     if idx == -1:
         return html.escape(plain, quote=False)
-    end = idx + len(search_text)
+    start = index[idx]
+    end = index[idx + len(query) - 1] + 1
     return (
-        html.escape(plain[:idx], quote=False)
+        html.escape(plain[:start], quote=False)
         + "<b>"
-        + html.escape(plain[idx:end], quote=False)
+        + html.escape(plain[start:end], quote=False)
         + "</b>"
         + html.escape(plain[end:], quote=False)
     )
@@ -99,9 +123,8 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
         self.add_css_class(APP_SLUG)
         self.set_title(_app_name())
-        # Fixed geometry: the default size is both minimum and maximum.
         self.set_default_size(WINDOW_WIDTH, WINDOW_HEIGHT)
-        self.set_resizable(False)
+        self.set_size_request(MIN_WIDTH, MIN_HEIGHT)
 
         icon_theme = Gtk.IconTheme.get_for_display(Gdk.Display.get_default())
         icon_theme.add_search_path(ICONS_DIR)
@@ -114,6 +137,8 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         self._syncing_pages = set()
         self._banner_timeout_id = None
         self._pending_undo = None
+        self._last_query = ""
+        self._navigating = False
         self.load_css()
         self.setup_ui()
 
@@ -145,11 +170,18 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
 
         # OverlaySplitView for modern sidebar + content layout
         self.split_view = Adw.OverlaySplitView()
-        self.split_view.set_min_sidebar_width(260)
-        self.split_view.set_max_sidebar_width(320)
-        self.split_view.set_sidebar_width_fraction(0.32)
+        self.split_view.set_min_sidebar_width(220)
+        self.split_view.set_max_sidebar_width(260)
+        self.split_view.set_sidebar_width_fraction(0.24)
         self.split_view.set_vexpand(True)
         root_box.append(self.split_view)
+
+        # Narrow windows: the sidebar becomes an overlay opened from the header
+        breakpoint = Adw.Breakpoint.new(
+            Adw.BreakpointCondition.parse(SIDEBAR_COLLAPSE_WIDTH)
+        )
+        breakpoint.add_setter(self.split_view, "collapsed", True)
+        self.add_breakpoint(breakpoint)
 
         # === SIDEBAR ===
         sidebar_toolbar = Adw.ToolbarView()
@@ -180,6 +212,7 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         self.sidebar_list.set_selection_mode(Gtk.SelectionMode.SINGLE)
         self.sidebar_list.add_css_class("navigation-sidebar")
         self.sidebar_list.connect("row-selected", self.on_sidebar_row_selected)
+        self.sidebar_list.set_header_func(self._sidebar_header)
         sidebar_box.append(self.sidebar_list)
 
         sidebar_scroll.set_child(sidebar_box)
@@ -195,7 +228,7 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
 
         # Search entry centered
         self.search_entry = Gtk.SearchEntry()
-        self.search_entry.set_placeholder_text(_("Search..."))
+        self.search_entry.set_placeholder_text(_("Search settings…"))
         self.search_entry.set_hexpand(False)
         self.search_entry.set_width_chars(30)
         self.search_entry.connect("search-changed", self.on_search_changed)
@@ -215,6 +248,16 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         )
         self.sidebar_toggle.connect("toggled", self._on_sidebar_toggle)
         content_header.pack_start(self.sidebar_toggle)
+
+        # Back to the results after opening one of them
+        self.back_to_results = Gtk.Button(icon_name="go-previous-symbolic")
+        self.back_to_results.set_tooltip_text(_("Back to search results"))
+        self.back_to_results.update_property(
+            [Gtk.AccessibleProperty.LABEL], [_("Back to search results")]
+        )
+        self.back_to_results.set_visible(False)
+        self.back_to_results.connect("clicked", self._on_back_to_results)
+        content_header.pack_start(self.back_to_results)
 
         # Hamburger menu with About
         menu = Gio.Menu()
@@ -241,16 +284,28 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
 
         self.search_results_box = Gtk.Box(
             orientation=Gtk.Orientation.VERTICAL,
-            spacing=0,
-            margin_top=12,
-            margin_bottom=12,
-            margin_start=20,
-            margin_end=20,
+            spacing=12,
+            margin_top=24,
+            margin_bottom=24,
+            margin_start=24,
+            margin_end=24,
         )
-        self.search_results_scroll.set_child(self.search_results_box)
+        results_clamp = Adw.Clamp(maximum_size=820, tightening_threshold=600)
+        results_clamp.set_child(self.search_results_box)
+        self.search_results_scroll.set_child(results_clamp)
 
         self.search_results_group = Adw.PreferencesGroup()
         self.search_results_box.append(self.search_results_group)
+
+        self.search_empty = Adw.StatusPage(
+            icon_name="edit-find-symbolic",
+            title=_("No results"),
+            description=_(
+                "Try other words, like “don't sleep”, “remote access” or “battery”."
+            ),
+        )
+        self.search_empty.set_visible(False)
+        self.search_results_box.append(self.search_empty)
 
         self.search_result_rows = []
 
@@ -274,47 +329,19 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
 
         # === CREATE PAGES ===
         self.pages_config = [
+            {"label": _("Home"), "icon": "go-home-symbolic", "id": "home", "class": HomePage},
+            {"label": _("System"), "icon": "system-symbolic", "id": "system", "class": SystemPage},
             {
-                "label": _("System"),
-                "icon": "system-symbolic",
-                "id": "system",
-                "class": SystemPage,
-            },
-            {
-                "label": _("Usability"),
+                "label": _("Appearance & Usage"),
                 "icon": "usability-symbolic",
                 "id": "usability",
                 "class": UsabilityPage,
             },
             {
-                "label": _("PreLoad"),
-                "icon": "preload-symbolic",
-                "id": "preload",
-                "class": PreloadPage,
-            },
-            {
-                "label": _("Devices"),
-                "icon": "devices-symbolic",
-                "id": "devices",
-                "class": DevicesPage,
-            },
-            {
-                "label": _("A.I."),
-                "icon": "ai-symbolic",
-                "id": "ai",
-                "class": AIPage,
-            },
-            {
-                "label": _("Docker"),
-                "icon": "docker-geral-symbolic",
-                "id": "docker",
-                "class": DockerPage,
-            },
-            {
-                "label": _("Developer"),
-                "icon": "developer-symbolic",
-                "id": "developer",
-                "class": DeveloperPage,
+                "label": _("Power & Suspend"),
+                "icon": "sleep-symbolic",
+                "id": "sleep",
+                "class": SleepPage,
             },
             {
                 "label": _("Performance"),
@@ -322,11 +349,18 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
                 "id": "performance",
                 "class": PerformancePage,
             },
+            {"label": _("Devices"), "icon": "devices-symbolic", "id": "devices", "class": DevicesPage},
             {
-                "label": _("Suspend"),
-                "icon": "sleep-symbolic",
-                "id": "sleep",
-                "class": SleepPage,
+                "label": _("Artificial Intelligence"),
+                "icon": "ai-symbolic",
+                "id": "ai",
+                "class": AIPage,
+            },
+            {
+                "label": _("Apps & Services"),
+                "icon": "docker-geral-symbolic",
+                "id": "apps",
+                "class": AppsPage,
             },
         ]
 
@@ -342,8 +376,11 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
             box.set_margin_end(8)
 
             icon_path = os.path.join(ICONS_DIR, f"{page_cfg['icon']}.svg")
-            gfile = Gio.File.new_for_path(icon_path)
-            img = Gtk.Image.new_from_gicon(Gio.FileIcon.new(gfile))
+            if os.path.exists(icon_path):
+                gfile = Gio.File.new_for_path(icon_path)
+                img = Gtk.Image.new_from_gicon(Gio.FileIcon.new(gfile))
+            else:
+                img = Gtk.Image.new_from_icon_name(page_cfg["icon"])
             img.set_pixel_size(20)
             img.add_css_class("symbolic-icon")
             box.append(img)
@@ -363,15 +400,65 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
             page_cfg["instance"] = page_instance
             self.page_stack.add_named(page_instance, page_cfg["id"])
 
-        # Select first page
-        first_row = self.sidebar_list.get_row_at_index(0)
-        if first_row:
-            self.sidebar_list.select_row(first_row)
+        # Always start on Home
+        self.select_page("home")
+
+    def _sidebar_header(self, row, before):
+        """Small "More features" label above the optional areas."""
+        if getattr(row, "page_id", None) != MORE_FEATURES_FIRST_PAGE:
+            row.set_header(None)
+            return
+        if row.get_header() is None:
+            label = Gtk.Label(label=_("More features"), xalign=0)
+            label.add_css_class("sidebar-section-label")
+            row.set_header(label)
+
+    def page_instance(self, page_id):
+        for page_cfg in self.pages_config:
+            if page_cfg["id"] == page_id:
+                return page_cfg.get("instance")
+        return None
+
+    def page_label(self, page_id):
+        for page_cfg in self.pages_config:
+            if page_cfg["id"] == page_id:
+                return page_cfg["label"]
+        return ""
+
+    def select_page(self, page_id):
+        row = self.sidebar_list.get_first_child()
+        while row:
+            if getattr(row, "page_id", None) == page_id:
+                self.sidebar_list.select_row(row)
+                return True
+            row = row.get_next_sibling()
+        return False
+
+    def open_setting(self, page_id, script_name=None, row=None):
+        """Open a page and bring one setting into view (search, home cards)."""
+        if self.search_entry.get_text():
+            self._navigating = True
+            self.search_entry.set_text("")
+            self._navigating = False
+            self._leave_search_mode()
+        self.select_page(page_id)
+        # select_row does nothing if the page was already selected
+        self._show_single_page(page_id)
+        page = self.page_instance(page_id)
+        if page is None:
+            return
+        if row is None and script_name and hasattr(page, "find_switch"):
+            switch = page.find_switch(script_name)
+            row = page._get_wd(switch, "row") if switch is not None else None
+        if row is not None and hasattr(page, "reveal_row"):
+            page.reveal_row(row)
 
     def on_sidebar_row_selected(self, listbox, row):
         if row is None or self.is_searching:
             return
         self.current_page_id = row.page_id
+        if not self._navigating:
+            self.back_to_results.set_visible(False)
         self._show_single_page(row.page_id)
         # Auto-close sidebar on narrow windows when user selects a page
         if self.split_view.get_collapsed():
@@ -397,7 +484,12 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         self.page_stack.set_visible_child_name(page_id)
 
         self._reset_page_filters(page_id)
-        self._sync_page_once(page_id)
+        if page_id == "home":
+            # Cards show live state: refresh every time Home is shown
+            self.page_instance("home").refresh()
+            self._synced_pages.add(page_id)
+        else:
+            self._sync_page_once(page_id)
 
     def _reset_page_filters(self, page_id):
         """Leave search mode on every page and clear the visible page filter."""
@@ -454,6 +546,14 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
                 for row, _original_parent in matching_rows:
                     self._add_search_result(row, page_cfg, search_text)
 
+        count = len(self.search_result_rows)
+        still_loading = bool(self._syncing_pages)
+        self.search_results_group.set_visible(count > 0)
+        self.search_empty.set_visible(count == 0 and not still_loading)
+        self.search_results_group.set_title(
+            ngettext("{} result", "{} results", count).format(count)
+        )
+
     def _on_search_page_synced(self, page_id):
         self._syncing_pages.discard(page_id)
         search_text = self.search_entry.get_text().lower().strip()
@@ -466,14 +566,15 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         return _highlight_text(text, search_text)
 
     def _add_search_result(self, original_row, page_cfg, search_text):
-        """Add a non-destructive search result that opens its source page."""
+        """Add a non-destructive search result that opens its exact setting."""
         if not isinstance(original_row, Adw.ActionRow):
             return
         title = original_row.get_title() or ""
-        subtitle = original_row.get_subtitle() or ""
+        page = page_cfg.get("instance")
+        section = page.row_section(original_row) if page is not None else ""
+        path = PATH_SEPARATOR.join(p for p in (page_cfg["label"], section) if p)
         result = Adw.ActionRow(title=self._highlight_text(title, search_text))
-        if subtitle:
-            result.set_subtitle(self._highlight_text(subtitle, search_text))
+        result.set_subtitle(html.escape(path, quote=False))
         button = Gtk.Button(
             icon_name="go-next-symbolic",
             valign=Gtk.Align.CENTER,
@@ -482,10 +583,11 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         button.add_css_class("flat")
         button.update_property(
             [Gtk.AccessibleProperty.LABEL],
-            [_("Open {} setting").format(title)],
+            [_("Open {} setting").format(html.unescape(title))],
         )
         button.connect(
-            "clicked", lambda _button: self._open_search_result(page_cfg["id"])
+            "clicked",
+            lambda _button: self._open_search_result(page_cfg["id"], original_row),
         )
         result.add_suffix(button)
         result.set_activatable_widget(button)
@@ -497,24 +599,32 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
             self.search_results_group.remove(row)
         self.search_result_rows.clear()
 
-    def _open_search_result(self, page_id):
-        self.search_entry.set_text("")
-        row = self.sidebar_list.get_first_child()
-        while row:
-            if getattr(row, "page_id", None) == page_id:
-                self.sidebar_list.select_row(row)
-                break
-            row = row.get_next_sibling()
+    def _open_search_result(self, page_id, row=None):
+        self._last_query = self.search_entry.get_text()
+        self.open_setting(page_id, row=row)
+        self.back_to_results.set_visible(True)
+
+    def _on_back_to_results(self, _button):
+        self.back_to_results.set_visible(False)
+        self.search_entry.set_text(self._last_query)
+        self.search_entry.grab_focus()
+        self.search_entry.set_position(-1)
+
+    def _leave_search_mode(self):
+        self.is_searching = False
+        self.sidebar_list.set_sensitive(True)
 
     def on_search_changed(self, entry):
+        if self._navigating:
+            return
         search_text = entry.get_text().lower().strip()
 
         if len(search_text) < 2:
-            self.is_searching = False
-            self.sidebar_list.set_sensitive(True)
+            self._leave_search_mode()
             self._show_single_page(self.current_page_id or self.pages_config[0]["id"])
         else:
             self.is_searching = True
+            self.back_to_results.set_visible(False)
             self.sidebar_list.set_sensitive(False)
             self._show_search_results(search_text)
 
@@ -522,6 +632,21 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         if self._banner_timeout_id is not None:
             GLib.source_remove(self._banner_timeout_id)
             self._banner_timeout_id = None
+
+    def _flush_pending_undo(self):
+        """Apply a change still waiting in its undo window right away."""
+        pending = self._pending_undo
+        if not pending:
+            return
+        timer_id = pending.get("timer_id")
+        if timer_id is not None:
+            GLib.source_remove(timer_id)
+        self._pending_undo = None
+        self.banner.set_revealed(False)
+        self._banner_callback = None
+        page, switch = pending.get("page"), pending.get("switch")
+        if page is not None and switch is not None:
+            page._execute_toggle(switch, pending.get("state"))
 
     def _cancel_pending_undo(self, revert=False):
         pending = self._pending_undo

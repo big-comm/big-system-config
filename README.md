@@ -4,7 +4,7 @@
 
 # BigLinux Settings
 
-**One place to tune BigLinux and BigCommunity: system, desktop, devices, AI, containers, performance and suspend — one switch at a time.**
+**One place to tune BigLinux and BigCommunity: system, desktop, power, performance, devices, AI and services — with the consequences explained before you change anything.**
 
 [![Validate](https://github.com/big-comm/biglinux-settings/actions/workflows/validate.yml/badge.svg)](https://github.com/big-comm/biglinux-settings/actions/workflows/validate.yml)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=big-comm_biglinux-settings&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=big-comm_biglinux-settings)
@@ -18,7 +18,7 @@
 ![Platform](https://img.shields.io/badge/platform-BigLinux%20%7C%20BigCommunity-1793D1?logo=archlinux&logoColor=white)
 ![Translations](https://img.shields.io/badge/translations-29%20languages-success)
 
-<img src="docs/screenshots/system.png" alt="BigLinux Settings — System page" width="800">
+<img src="docs/screenshots/home.png" alt="BigLinux Settings — Home overview" width="800">
 
 </div>
 
@@ -49,45 +49,57 @@ verifies the result before confirming it.
 
 Highlights:
 
+- **Home overview** — cards show the real state of key areas (remote access,
+  performance profile, idle policy, local AI, Docker, system protections) and
+  open the exact setting.
+- **Consequences first** — every option says what it does, what it installs or
+  removes, and when it takes effect, *before* you switch it.
 - **Honest switches** — the state shown is read from the system, never cached;
-  a failed change is reverted and reported.
+  a failed change is reverted and reported. A setting that cannot be checked
+  says so and offers *Try again*, instead of disappearing.
 - **Undo window** — non-destructive changes wait a moment before applying, with
   an *Undo* button.
+- **Search that understands people** — accent-insensitive, with everyday
+  aliases (“don't sleep”, “remote access”); each result shows where it lives
+  (*Page › Section*) and opens, scrolls to and highlights the exact setting.
+- **Adaptive layout** — resizable window; the sidebar collapses on narrow
+  screens and the settings column stays readable on wide ones.
 - **Safe privileges** — only the steps that need root go through `pkexec`, with
   validated arguments.
 - **Desktop aware** — options that do not apply to the current desktop are
   hidden instead of failing.
-- **Global search** — find any option across every page.
 - **Accessible** — keyboard navigation and screen-reader labels throughout.
 
 ## Features
 
 | Page | What you can do |
 |---|---|
-| **System** | Enable SSH (and keep it on at boot), faster GRUB menu, show boot messages under the splash, auto-mount internal partitions. |
-| **Usability** | Initial NumLock state, keep the keyboard light on (Scroll Lock LED keyboards), window buttons on the left, KZones window tiling (KDE), restore *Recent Files & Locations*. |
-| **PreLoad** | Keep browsers and LibreOffice preloaded in memory so they open faster (Firefox, Chromium, Chrome, Brave, Vivaldi, Opera, LibreWolf, Pale Moon, Epiphany, LibreOffice). |
-| **Devices** | Wi-Fi and Bluetooth, JamesDSP audio effects, reverse mouse scrolling, and connect/disconnect each network interface. |
-| **A.I.** | One-click install of Ollama (CPU, Vulkan, NVIDIA CUDA, AMD ROCm) with optional LAN sharing, Ollama LAB, ChatAI, ChatBox, LM Studio, Open Notebook and ComfyUI. |
-| **Docker** | Enable the Docker engine and deploy ready-made containers: Nextcloud Plus, Jellyfin, AdGuard, V2RayA, LAMP, SWS, Portainer Client and Open Notebook. |
-| **Developer** | OpenClaude, an open-source coding agent for OpenAI, Gemini, DeepSeek, Ollama and 200+ models. |
-| **Performance** | Disable visual effects, maximum CPU performance profile, disable the Baloo indexer, unload the S.M.A.R.T. monitor, and — with explicit confirmation — `mitigations=off` and `nowatchdog`. |
-| **Suspend** | Idle suspend policy on AC and battery, suspend at 20 % battery, s2idle light sleep, Realtek Wi-Fi protection across suspend, brightness and keyboard backlight restore, GNOME extension health check, and lid-close behaviour on AC and battery. |
+| **Home** | Overview cards with the live state of remote access, performance profile, idle policy, local AI, Docker and system protections. |
+| **System** | Remote terminal access (SSH) now and at startup, shorter boot menu wait, boot messages under the splash, mount internal disks at startup. |
+| **Appearance & Usage** | Numeric keypad at login, keyboard light (Scroll Lock LED keyboards), window buttons on the left, KZones window snapping (KDE), recent files and folders. |
+| **Power & Suspend** | *When idle*: stay awake on AC or battery, or suspend at 20 % battery. *When the lid is closed*: keep running on AC and/or battery. *Fix problems after resume*: s2idle light sleep, Realtek Wi-Fi fix, brightness restore, GNOME extension recovery. |
+| **Performance** | Performance power profile, visual effects, file indexing, application launch (preload Firefox, Brave, Chrome, Chromium, LibreWolf, Pale Moon, Opera, Vivaldi, GNOME Web, LibreOffice), and — under *Protections and diagnostics*, with explicit confirmation — disk health monitoring, CPU vulnerability mitigations and lockup detectors. |
+| **Devices** | Wi-Fi and Bluetooth, JamesDSP audio effects, natural scrolling, and connect/disconnect each network interface. |
+| **Artificial Intelligence** | Ollama engines (CPU, Vulkan, NVIDIA CUDA, AMD ROCm) with optional LAN sharing, Ollama LAB, ChatAI, ChatBox, LM Studio, Open Notebook and ComfyUI. |
+| **Apps & Services** | Docker engine and ready-made services grouped by purpose — Nextcloud Plus, Jellyfin, AdGuard, V2RayA, LAMP, SWS, Portainer Client, Open Notebook — plus developer tools (OpenClaude). |
 
 ## Screenshots
 
 <table>
   <tr>
-    <td align="center"><img src="docs/screenshots/usability.png" alt="Usability page" width="420"><br><sub><b>Usability</b></sub></td>
-    <td align="center"><img src="docs/screenshots/ai.png" alt="A.I. page" width="420"><br><sub><b>A.I. — Ollama variants</b></sub></td>
+    <td align="center"><img src="docs/screenshots/system.png" alt="System" width="420"><br><sub><b>System</b></sub></td>
+    <td align="center"><img src="docs/screenshots/usability.png" alt="Appearance & Usage" width="420"><br><sub><b>Appearance & Usage</b></sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="docs/screenshots/docker.png" alt="Docker page" width="420"><br><sub><b>Docker</b></sub></td>
-    <td align="center"><img src="docs/screenshots/performance.png" alt="Performance page" width="420"><br><sub><b>Performance</b></sub></td>
+    <td align="center"><img src="docs/screenshots/sleep.png" alt="Power & Suspend" width="420"><br><sub><b>Power & Suspend</b></sub></td>
+    <td align="center"><img src="docs/screenshots/performance.png" alt="Performance" width="420"><br><sub><b>Performance</b></sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="docs/screenshots/sleep.png" alt="Suspend page" width="420"><br><sub><b>Suspend</b></sub></td>
-    <td align="center"><img src="docs/screenshots/search.png" alt="Global search" width="420"><br><sub><b>Global search</b></sub></td>
+    <td align="center"><img src="docs/screenshots/ai.png" alt="Artificial Intelligence" width="420"><br><sub><b>Artificial Intelligence</b></sub></td>
+    <td align="center"><img src="docs/screenshots/apps.png" alt="Apps & Services" width="420"><br><sub><b>Apps & Services</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/search.png" alt="Search — Page › Section paths" width="420"><br><sub><b>Search — Page › Section paths</b></sub></td>
   </tr>
 </table>
 
@@ -141,10 +153,13 @@ Open **BigLinux Settings** from the application menu, or run:
 biglinux-settings
 ```
 
+- The app opens on **Home**, an overview of how the computer is set up; click
+  a card to go straight to that setting.
 - Pick a page in the sidebar and flip a switch. A short banner lets you
   **undo** before the change is applied.
-- Type in the search field to look across every page; click a result to jump
-  to its page.
+- Type in the search field with everyday words (“don't sleep”, “battery”,
+  “remote access”); accents and case do not matter. Opening a result scrolls to
+  and highlights the setting, and the ← button brings you back to the results.
 - Options marked **Recommended** are safe defaults; options with an ⓘ icon
   show extra details (addresses, requirements) when enabled.
 - Changes that affect boot or system security ask for confirmation first.
@@ -180,10 +195,11 @@ healthy across suspend.
 usr/
 ├── bin/biglinux-settings                    # launcher
 ├── share/biglinux/biglinux-settings/
-│   ├── main.py                              # application window, sidebar, search
-│   ├── base_page.py                         # switch rows, check/toggle engine, undo, sync
+│   ├── main.py                              # window, adaptive sidebar, search, navigation
+│   ├── base_page.py                         # rows, check/toggle engine, undo, sync, search metadata
+│   ├── home_page.py                         # Home overview cards
 │   ├── *_page.py                            # one module per sidebar page
-│   ├── system/ usability/ preload/ devices/ # check/toggle scripts per page
+│   ├── system/ usability/ preload/ devices/ # check/toggle scripts (grouped by area)
 │   ├── ai/ docker/ developer/ performance/
 │   ├── sleep/                               # suspend scripts and policy helpers
 │   ├── icons/                               # symbolic icons
@@ -245,7 +261,10 @@ uv pip compile requirements-dev.in --generate-hashes --universal \
    [How it works](#how-it-works)); put root-only steps in `<name>Run.sh` and
    call it with `pkexec`.
 2. Add a row in the page module with `self.create_row(group, _("Title"),
-   _("Description"), "<name>", "<icon>-symbolic")`.
+   _("What it does and its consequence"), "<name>", "<icon>-symbolic",
+   keywords=[_("everyday alias")])`. Use `inverted=True` to present a
+   "disable X" script with a positive label, and `applies_after_restart=True`
+   for boot-time changes.
 3. Add a symbolic icon to `icons/` if needed.
 4. Add tests in `tests/` that run the script against fake tools.
 

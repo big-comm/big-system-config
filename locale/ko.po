@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-05 00:17-0300\n"
-"PO-Revision-Date: 2026-10-05 00:17-0300\n"
+"POT-Creation-Date: 2026-10-06 14:30-0300\n"
+"PO-Revision-Date: 2026-10-06 14:30-0300\n"
 "Last-Translator: BigLinux Community <community@biglinux.com.br>\n"
 "Language-Team: BigLinux Community (ko)\n"
 "Language: ko\n"
@@ -26,141 +26,146 @@ msgstr "AMD/Nvidia GPU를 찾을 수 없습니다!"
 msgid "No Ollama packages are installed. Enable an Ollama variant first."
 msgstr "설치된 Ollama 패키지가 없습니다. 먼저 Ollama 변형을 활성화하세요."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 30
-#: usr/share/biglinux/biglinux-settings/ai_page.py:15
-msgid "AI Interfaces"
-msgstr "AI 인터페이스"
+#: usr/share/biglinux/biglinux-settings/ai_page.py:13
+#: usr/share/biglinux/biglinux-settings/main.py:354
+msgid "Artificial Intelligence"
+msgstr "인공지능"
 
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 16
-#: usr/share/biglinux/biglinux-settings/ai_page.py:16
-msgid "Graphical interface for artificial intelligence."
-msgstr "인공지능을 위한 그래픽 인터페이스."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:14
+msgid "Chat, work with documents and create images with AI on this computer."
+msgstr "이 컴퓨터에서 AI로 대화하고, 문서를 다루고, 이미지를 만들 수 있습니다."
 
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 23
-#: usr/share/biglinux/biglinux-settings/ai_page.py:23
-msgid "Ollama Server"
-msgstr "올라마 서버"
+#: usr/share/biglinux/biglinux-settings/ai_page.py:17
+#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+msgid "LLM"
+msgstr "LLM"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 23
-#: usr/share/biglinux/biglinux-settings/ai_page.py:24
-msgid "Choose which Ollama server is best for your hardware."
-msgstr "하드웨어에 가장 적합한 Ollama 서버를 선택하세요."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:17
+msgid "chat"
+msgstr "채팅"
 
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
-#: usr/share/biglinux/biglinux-settings/ai_page.py:32
-msgid "Update Ollama"
-msgstr "Ollama 업데이트"
+#: usr/share/biglinux/biglinux-settings/ai_page.py:17
+#: usr/share/biglinux/biglinux-settings/ai_page.py:105
+#: usr/share/biglinux/biglinux-settings/ai_page.py:138
+#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+msgid "local AI"
+msgstr "로컬 AI"
 
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
-#: usr/share/biglinux/biglinux-settings/ai_page.py:33
-msgid "Update the installed Ollama packages to the latest version."
-msgstr "설치된 Ollama 패키지를 최신 버전으로 업데이트합니다."
-
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 36
-#: usr/share/biglinux/biglinux-settings/ai_page.py:36
-msgid "Update now"
-msgstr "지금 업데이트"
-
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
-#: usr/share/biglinux/biglinux-settings/ai_page.py:43
-msgid "Ollama Variants"
-msgstr "올라마 변형"
-
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
-#: usr/share/biglinux/biglinux-settings/ai_page.py:44
-msgid "Select the variant that matches your GPU hardware."
-msgstr "GPU 하드웨어와 일치하는 변형을 선택하십시오."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:21
+msgid "AI applications"
+msgstr "AI 애플리케이션"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 46
-#: usr/share/biglinux/biglinux-settings/ai_page.py:51
+#: usr/share/biglinux/biglinux-settings/ai_page.py:30
 msgid "ChatAI"
-msgstr "챗AI"
+msgstr "ChatAI"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 47
-#: usr/share/biglinux/biglinux-settings/ai_page.py:52
-msgid "A variety of chats like Plasmoid for your KDE Plasma desktop."
-msgstr "KDE Plasma 데스크탑을 위한 Plasmoid와 같은 다양한 채팅."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:32
+msgid ""
+"Desktop widget with access to several AI chats for KDE Plasma. Installs the "
+"widget; turning it off removes it."
+msgstr "KDE Plasma용 데스크톱 위젯으로, 여러 AI 채팅에 접속할 수 있습니다. 위젯을 설치하며, 끄면 제거됩니다."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:36
+msgid "plasmoid"
+msgstr "플라즈모이드"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:36
+msgid "widget"
+msgstr "위젯"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 127
-#: usr/share/biglinux/biglinux-settings/ai_page.py:59
+#: usr/share/biglinux/biglinux-settings/ai_page.py:41
 msgid "Ollama LAB"
-msgstr "올라마 실험실"
+msgstr "Ollama LAB"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 128
-#: usr/share/biglinux/biglinux-settings/ai_page.py:60
-msgid "Graphical interface for managing Ollama models and chat."
-msgstr "Ollama 모델 및 채팅 관리를 위한 그래픽 인터페이스."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:43
+msgid ""
+"Graphical app to manage Ollama models and chat with them. Installs Ollama "
+"LAB; turning it off removes it."
+msgstr "Ollama 모델을 관리하고 대화할 수 있는 그래픽 앱입니다. Ollama LAB을 설치하며, 끄면 제거됩니다."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:47
+#: usr/share/biglinux/biglinux-settings/ai_page.py:138
+#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+msgid "Ollama"
+msgstr "Ollama"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 56
-#: usr/share/biglinux/biglinux-settings/ai_page.py:67
+#: usr/share/biglinux/biglinux-settings/ai_page.py:52
 msgid "ChatBox"
-msgstr "채팅 상자"
+msgstr "ChatBox"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 136
-#: usr/share/biglinux/biglinux-settings/ai_page.py:68
-msgid "User-friendly Desktop Client App for AI Models/LLMs."
-msgstr "AI 모델/LLM을 위한 사용자 친화적인 데스크톱 클라이언트 앱."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:54
+msgid ""
+"Desktop app to chat with AI models, local or online. Installs ChatBox; "
+"turning it off removes it."
+msgstr "로컬 또는 온라인 AI 모델과 대화하는 데스크톱 앱입니다. ChatBox를 설치하며, 끄면 제거됩니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 143
-#: usr/share/biglinux/biglinux-settings/ai_page.py:75
+#: usr/share/biglinux/biglinux-settings/ai_page.py:63
 msgid "LM Studio"
-msgstr "LM 스튜디오"
+msgstr "LM Studio"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 144
-#: usr/share/biglinux/biglinux-settings/ai_page.py:77
+#: usr/share/biglinux/biglinux-settings/ai_page.py:65
 msgid ""
-"LM Studio - A desktop app for exploring and running large language models "
-"locally."
-msgstr "LM 스튜디오 - 대규모 언어 모델을 로컬에서 탐색하고 실행하기 위한 데스크톱 앱."
+"Desktop app to download and run language models on this computer. Installs LM"
+" Studio; turning it off removes it."
+msgstr "언어 모델을 이 컴퓨터에 내려받아 실행하는 데스크톱 앱입니다. LM Studio를 설치하며, 끄면 제거됩니다."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
 # 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 194
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 203
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 74
-#: usr/share/biglinux/biglinux-settings/ai_page.py:85
-#: usr/share/biglinux/biglinux-settings/docker_page.py:194
+#: usr/share/biglinux/biglinux-settings/ai_page.py:74
+#: usr/share/biglinux/biglinux-settings/apps_page.py:155
 msgid "Open Notebook"
-msgstr "노트북 열기"
+msgstr "Open Notebook"
 
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 87
-#: usr/share/biglinux/biglinux-settings/ai_page.py:87
+#: usr/share/biglinux/biglinux-settings/ai_page.py:76
 msgid ""
-"Open-source, privacy-focused alternative to Google's NotebookLM. Requires "
-"Docker enabled."
-msgstr "Google NotebookLM의 오픈소스, 개인정보 보호 중심 대안입니다. Docker가 활성화되어 있어야 합니다."
+"Open-source, privacy-focused alternative to Google's NotebookLM for working "
+"with your documents. Installs it as a container and requires Docker; turning "
+"it off removes it."
+msgstr ""
+"문서 작업을 위한 Google NotebookLM의 오픈 소스, 개인정보 보호 중심 대안입니다. 컨테이너로 설치되며 Docker가 "
+"필요합니다. 끄면 제거됩니다."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:80
+#: usr/share/biglinux/biglinux-settings/apps_page.py:165
+msgid "NotebookLM"
+msgstr "NotebookLM"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:80
+msgid "documents"
+msgstr "문서"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
 # 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 201
-#: usr/share/biglinux/biglinux-settings/ai_page.py:94
-#: usr/share/biglinux/biglinux-settings/docker_page.py:201
+#: usr/share/biglinux/biglinux-settings/ai_page.py:84
+#: usr/share/biglinux/biglinux-settings/apps_page.py:159
 msgid "Open Notebook Server"
-msgstr "Open Notebook 서버 열기"
+msgstr "Open Notebook 서버"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
 # 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 95
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 202
-#: usr/share/biglinux/biglinux-settings/ai_page.py:95
-#: usr/share/biglinux/biglinux-settings/docker_page.py:202
+#: usr/share/biglinux/biglinux-settings/ai_page.py:85
+#: usr/share/biglinux/biglinux-settings/apps_page.py:160
 msgid "Start the Open Notebook server."
 msgstr "Open Notebook 서버를 시작합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 190
-#: usr/share/biglinux/biglinux-settings/ai_page.py:100
-#: usr/share/biglinux/biglinux-settings/docker_page.py:207
+#: usr/share/biglinux/biglinux-settings/ai_page.py:90
+#: usr/share/biglinux/biglinux-settings/apps_page.py:163
 #, python-brace-format
 msgid ""
 "Open Notebook is running.\n"
@@ -168,37 +173,46 @@ msgid ""
 "and\n"
 "Address: http://{}:8502"
 msgstr ""
-"오픈 노트북이 실행 중입니다.\n"
+"Open Notebook이 실행 중입니다.\n"
 "주소: http://localhost:8502\n"
 "및\n"
 "주소: http://{}:8502"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 87
-#: usr/share/biglinux/biglinux-settings/ai_page.py:107
-msgid "ComfyUI (GPU ONLY)"
-msgstr "ComfyUI (GPU 전용)"
+#: usr/share/biglinux/biglinux-settings/ai_page.py:97
+msgid "ComfyUI image generation"
+msgstr "ComfyUI 이미지 생성"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 88
-#: usr/share/biglinux/biglinux-settings/ai_page.py:108
-msgid "The most powerful and modular visual AI engine and application."
-msgstr "가장 강력하고 모듈화된 비주얼 AI 엔진 및 애플리케이션."
+#: usr/share/biglinux/biglinux-settings/ai_page.py:99
+msgid ""
+"Create images with AI using a visual node editor. Requires an AMD or Nvidia "
+"graphics card. Installs ComfyUI in your home folder; turning it off removes "
+"it."
+msgstr ""
+"시각적 노드 편집기로 AI 이미지를 만듭니다. AMD 또는 Nvidia 그래픽 카드가 필요합니다. 홈 폴더에 ComfyUI를 설치하며, "
+"끄면 제거됩니다."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:105
+msgid "Stable Diffusion"
+msgstr "Stable Diffusion"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:105
+msgid "images"
+msgstr "이미지"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 94
-#: usr/share/biglinux/biglinux-settings/ai_page.py:116
+#: usr/share/biglinux/biglinux-settings/ai_page.py:109
 msgid "ComfyUI Server"
 msgstr "컴피UI 서버"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
-#: usr/share/biglinux/biglinux-settings/ai_page.py:117
+#: usr/share/biglinux/biglinux-settings/ai_page.py:110
 msgid "Start the ComfyUI server."
 msgstr "ComfyUI 서버를 시작합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 100
-#: usr/share/biglinux/biglinux-settings/ai_page.py:122
+#: usr/share/biglinux/biglinux-settings/ai_page.py:115
 #, python-brace-format
 msgid ""
 "ComfyUI server is running.\n"
@@ -211,17 +225,91 @@ msgstr ""
 "및\n"
 "주소: http://{}:8188"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 55
-#: usr/share/biglinux/biglinux-settings/ai_page.py:128
-msgid "OllamaCPU"
-msgstr "OllamaCPU"
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 23
+#: usr/share/biglinux/biglinux-settings/ai_page.py:121
+msgid "Ollama Server"
+msgstr "올라마 서버"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:123
+msgid ""
+"Ollama runs AI models on this computer. The variants below are alternative "
+"engines for different hardware: install only the one that matches your "
+"processor or graphics card."
+msgstr ""
+"Ollama는 이 컴퓨터에서 AI 모델을 실행합니다. 아래 변형은 하드웨어별 대체 엔진이니, 프로세서나 그래픽 카드에 맞는 것 하나만 "
+"설치하세요."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
+#: usr/share/biglinux/biglinux-settings/ai_page.py:132
+msgid "Update Ollama"
+msgstr "Ollama 업데이트"
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
+#: usr/share/biglinux/biglinux-settings/ai_page.py:133
+msgid "Update the installed Ollama packages to the latest version."
+msgstr "설치된 Ollama 패키지를 최신 버전으로 업데이트합니다."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 36
+#: usr/share/biglinux/biglinux-settings/ai_page.py:136
+msgid "Update now"
+msgstr "지금 업데이트"
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
+#: usr/share/biglinux/biglinux-settings/ai_page.py:143
+msgid "Ollama Variants"
+msgstr "올라마 변형"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:144
+msgid "Select the variant that matches your hardware."
+msgstr "하드웨어에 맞는 변형을 선택하세요."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:152
+msgid "Ollama for CPU"
+msgstr "CPU용 Ollama"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:154
+msgid ""
+"Runs AI models on the processor only. Installs Ollama; turning it off removes"
+" it."
+msgstr "프로세서만으로 AI 모델을 실행합니다. Ollama를 설치하며, 끄면 제거됩니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 56
-#: usr/share/biglinux/biglinux-settings/ai_page.py:129
-msgid "Local AI server. For CPUs only."
-msgstr "로컬 AI 서버. CPU 전용."
+# line: 73
+#: usr/share/biglinux/biglinux-settings/ai_page.py:159
+msgid "Ollama Vulkan"
+msgstr "올라마 벌칸"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:161
+msgid ""
+"For processors, AMD and Nvidia graphics cards and integrated graphics. "
+"Installs Ollama; turning it off removes it."
+msgstr "프로세서, AMD 및 Nvidia 그래픽 카드, 내장 그래픽용입니다. Ollama를 설치하며, 끄면 제거됩니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 109
+#: usr/share/biglinux/biglinux-settings/ai_page.py:166
+msgid "Ollama Nvidia CUDA"
+msgstr "올라마 엔비디아 CUDA"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:168
+msgid ""
+"For newer Nvidia graphics cards, from the 2000 series on. Installs Ollama; "
+"turning it off removes it."
+msgstr "2000 시리즈 이후의 최신 Nvidia 그래픽 카드용입니다. Ollama를 설치하며, 끄면 제거됩니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 91
+#: usr/share/biglinux/biglinux-settings/ai_page.py:173
+msgid "Ollama AMD ROCm"
+msgstr "Ollama AMD ROCm"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:175
+msgid ""
+"For newer AMD graphics cards, from the 6000 series on. In many tests Vulkan "
+"performed better than ROCm. Installs Ollama; turning it off removes it."
+msgstr ""
+"6000 시리즈 이후의 최신 AMD 그래픽 카드용입니다. 많은 테스트에서 Vulkan이 ROCm보다 나은 성능을 보였습니다. Ollama를"
+" 설치하며, 끄면 제거됩니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 59
@@ -231,10 +319,7 @@ msgstr "로컬 AI 서버. CPU 전용."
 # line: 95
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 113
-#: usr/share/biglinux/biglinux-settings/ai_page.py:132
-#: usr/share/biglinux/biglinux-settings/ai_page.py:152
-#: usr/share/biglinux/biglinux-settings/ai_page.py:172
-#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+#: usr/share/biglinux/biglinux-settings/ai_page.py:193
 msgid ""
 "Ollama server is running.\n"
 "Address: http://localhost:11434"
@@ -250,27 +335,13 @@ msgstr ""
 # line: 99
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 117
-#: usr/share/biglinux/biglinux-settings/ai_page.py:136
-#: usr/share/biglinux/biglinux-settings/ai_page.py:156
-#: usr/share/biglinux/biglinux-settings/ai_page.py:176
 #: usr/share/biglinux/biglinux-settings/ai_page.py:198
 msgid "Share Ollama"
 msgstr "올라마 공유"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 64
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 82
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 100
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 118
-#: usr/share/biglinux/biglinux-settings/ai_page.py:137
-#: usr/share/biglinux/biglinux-settings/ai_page.py:157
-#: usr/share/biglinux/biglinux-settings/ai_page.py:177
 #: usr/share/biglinux/biglinux-settings/ai_page.py:199
-msgid "Share ollama on the local network."
-msgstr "로컬 네트워크에서 ollama 공유."
+msgid "Lets other computers on the local network use this Ollama server."
+msgstr "로컬 네트워크의 다른 컴퓨터가 이 Ollama 서버를 사용할 수 있게 합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 68
@@ -280,9 +351,6 @@ msgstr "로컬 네트워크에서 ollama 공유."
 # line: 104
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 122
-#: usr/share/biglinux/biglinux-settings/ai_page.py:141
-#: usr/share/biglinux/biglinux-settings/ai_page.py:161
-#: usr/share/biglinux/biglinux-settings/ai_page.py:181
 #: usr/share/biglinux/biglinux-settings/ai_page.py:203
 #, python-brace-format
 msgid ""
@@ -292,553 +360,65 @@ msgstr ""
 "Ollama 서버가 실행 중입니다.  \n"
 "주소: http://{}:11434"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 73
-#: usr/share/biglinux/biglinux-settings/ai_page.py:148
-msgid "Ollama Vulkan"
-msgstr "올라마 벌칸"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 75
-#: usr/share/biglinux/biglinux-settings/ai_page.py:149
-msgid "Local AI server. For CPUs, AMD/Nvidia and integrated GPUs."
-msgstr "로컬 AI 서버. CPU용, AMD/Nvidia 및 통합 GPU."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 109
-#: usr/share/biglinux/biglinux-settings/ai_page.py:168
-msgid "Ollama Nvidia CUDA"
-msgstr "올라마 엔비디아 CUDA"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 110
-#: usr/share/biglinux/biglinux-settings/ai_page.py:169
-msgid "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
-msgstr "로컬 AI 서버. 2000 시리즈부터 시작하는 최신 Nvidia GPU용."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 91
-#: usr/share/biglinux/biglinux-settings/ai_page.py:188
-msgid "Ollama AMD ROCm"
-msgstr "Ollama AMD ROCm"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 111
-#: usr/share/biglinux/biglinux-settings/ai_page.py:190
-msgid ""
-"Local AI server. For newer AMD GPUs, starting from the 6000 series.\n"
-"Consider using Vulkan, in many tests, Vulkan performed better than ROCm."
-msgstr ""
-"로컬 AI 서버. 6000 시리즈부터 최신 AMD GPU에 대해 지원합니다. 많은 테스트에서 Vulkan이 ROCm보다 더 나은 성능을 "
-"보였습니다."
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 48
-#: usr/share/biglinux/biglinux-settings/base_page.py:66
-msgid "Close"
-msgstr "닫기"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 63
-#: usr/share/biglinux/biglinux-settings/base_page.py:84
-#, python-brace-format
-msgid "Warning: {}"
-msgstr "경고: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 66
-#: usr/share/biglinux/biglinux-settings/base_page.py:87
-msgid "Cancel"
-msgstr "취소"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 67
-#: usr/share/biglinux/biglinux-settings/base_page.py:88
-msgid "Continue"
-msgstr "계속"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 230
-#: usr/share/biglinux/biglinux-settings/base_page.py:235
-msgid "Run"
-msgstr "실행"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 236
-#: usr/share/biglinux/biglinux-settings/base_page.py:241
-#, python-brace-format
-msgid "{}: run action"
-msgstr "{}: 작업 실행"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 173
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 199
-#: usr/share/biglinux/biglinux-settings/base_page.py:269
-#: usr/share/biglinux/biglinux-settings/base_page.py:271
-#: usr/share/biglinux/biglinux-settings/base_page.py:499
-#: usr/share/biglinux/biglinux-settings/base_page.py:552
-#, python-brace-format
-msgid "Script not found: {}"
-msgstr "스크립트를 찾을 수 없습니다: {}"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 626
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 136
-#: usr/share/biglinux/biglinux-settings/base_page.py:280
-#: usr/share/biglinux/biglinux-settings/base_page.py:896
-#: usr/share/biglinux/biglinux-settings/devices_page.py:139
-msgid "Applying…"
-msgstr "적용 중…"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 289
-#: usr/share/biglinux/biglinux-settings/base_page.py:294
-#, python-brace-format
-msgid "Action script {} failed: {}"
-msgstr "작업 스크립트 {} 실패: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 294
-#: usr/share/biglinux/biglinux-settings/base_page.py:299
-#, python-brace-format
-msgid "Action script timeout: {}"
-msgstr "작업 스크립트 시간 초과: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 297
-#: usr/share/biglinux/biglinux-settings/base_page.py:302
-#, python-brace-format
-msgid "Error running action script {}: {}"
-msgstr "작업 스크립트 {} 실행 중 오류 발생: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 307
-#: usr/share/biglinux/biglinux-settings/base_page.py:312
-msgid "Action completed successfully"
-msgstr "작업이 성공적으로 완료되었습니다"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 310
-#: usr/share/biglinux/biglinux-settings/base_page.py:315
-#, python-brace-format
-msgid "Action failed: {}"
-msgstr "작업 실패: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 215
-#: usr/share/biglinux/biglinux-settings/base_page.py:348
-msgid "Recommended"
-msgstr "추천"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 238
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 326
-#: usr/share/biglinux/biglinux-settings/base_page.py:371
-#: usr/share/biglinux/biglinux-settings/base_page.py:459
-#, python-brace-format
-msgid "{}: additional information"
-msgstr "{}: 추가 정보"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 251
-#: usr/share/biglinux/biglinux-settings/base_page.py:384
-msgid "Learn more"
-msgstr "자세히 알아보기"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 257
-#: usr/share/biglinux/biglinux-settings/base_page.py:390
-#, python-brace-format
-msgid "{}: learn more"
-msgstr "{}: 자세히 알아보기"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 206
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 165
-#: usr/share/biglinux/biglinux-settings/base_page.py:498
-msgid "Unavailable: script not found."
-msgstr "사용할 수 없음: 스크립트를 찾을 수 없습니다."
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 218
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 177
-#: usr/share/biglinux/biglinux-settings/base_page.py:514
-msgid "Enabled"
-msgstr "활성화됨"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 220
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 179
-#: usr/share/biglinux/biglinux-settings/base_page.py:516
-msgid "Disabled"
-msgstr "비활성화됨"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 223
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 182
-#: usr/share/biglinux/biglinux-settings/base_page.py:522
-msgid ""
-"Enabled by system configuration (e.g., Real-Time Kernel) and cannot be "
-"changed here."
-msgstr "시스템 구성(예: 실시간 커널)에 의해 활성화되었으며 여기에서 변경할 수 없습니다."
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 516
-#: usr/share/biglinux/biglinux-settings/base_page.py:526
-msgid "Unavailable in this desktop environment."
-msgstr "이 데스크탑 환경에서는 사용할 수 없습니다."
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 225
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 184
-#: usr/share/biglinux/biglinux-settings/base_page.py:528
-msgid "Unavailable: script returned invalid output."
-msgstr "사용할 수 없음: 스크립트가 잘못된 출력을 반환했습니다."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/base_page.py,
-# line: 261
-#: usr/share/biglinux/biglinux-settings/base_page.py:530
-#, python-brace-format
-msgid "output from script {}: {}"
-msgstr "스크립트 {}의 출력: {}"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 229
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 188
-#: usr/share/biglinux/biglinux-settings/base_page.py:536
-msgid "Unavailable: script returned an error."
-msgstr "사용할 수 없음: 스크립트가 오류를 반환했습니다."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 184
-#: usr/share/biglinux/biglinux-settings/base_page.py:537
-#, python-brace-format
-msgid "Error checking state: {}"
-msgstr "오류 확인 상태: {}"
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 233
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 192
-#: usr/share/biglinux/biglinux-settings/base_page.py:540
-msgid "Unavailable: failed to run script."
-msgstr "사용할 수 없음: 스크립트 실행에 실패했습니다."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 193
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 220
-#: usr/share/biglinux/biglinux-settings/base_page.py:541
-#: usr/share/biglinux/biglinux-settings/base_page.py:600
-#, python-brace-format
-msgid "Error running script {}: {}"
-msgstr "스크립트 실행 오류 {}: {}"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 211
-#: usr/share/biglinux/biglinux-settings/base_page.py:569
-#, python-brace-format
-msgid "Script output: {}"
-msgstr "스크립트 출력: {}"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 209
-#: usr/share/biglinux/biglinux-settings/base_page.py:573
-msgid "State changed successfully"
-msgstr "상태가 성공적으로 변경되었습니다."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 215
-#: usr/share/biglinux/biglinux-settings/base_page.py:582
-#, python-brace-format
-msgid "Script failed with exit code: {}"
-msgstr "스크립트가 종료 코드로 실패했습니다: {}"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 190
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 217
-#: usr/share/biglinux/biglinux-settings/base_page.py:596
-#, python-brace-format
-msgid "Script timeout: {}"
-msgstr "스크립트 시간 초과: {}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 620
-#: usr/share/biglinux/biglinux-settings/base_page.py:630
-#, python-brace-format
-msgid "{} sub-option available"
-msgid_plural "{} sub-options available"
-msgstr[0] "사용 가능한 하위 옵션 {}개"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
-#: usr/share/biglinux/biglinux-settings/base_page.py:817
-msgid "off"
-msgstr "꺼짐"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
-#: usr/share/biglinux/biglinux-settings/base_page.py:817
-msgid "on"
-msgstr "켜짐"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 574
-#: usr/share/biglinux/biglinux-settings/base_page.py:822
-#, python-brace-format
-msgid "Changing {} to {}…"
-msgstr "{}를 {}로 변경 중…"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 576
-#: usr/share/biglinux/biglinux-settings/base_page.py:825
-msgid "Undo"
-msgstr "실행 취소"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 600
-#: usr/share/biglinux/biglinux-settings/base_page.py:856
-msgid "Undo: reverted toggle"
-msgstr "실행 취소: 되돌린 토글"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 244
-#: usr/share/biglinux/biglinux-settings/base_page.py:886
-#, python-brace-format
-msgid "Changing {} to {}"
-msgstr "{}를 {}로 변경 중"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 271
-#: usr/share/biglinux/biglinux-settings/base_page.py:920
-#, python-brace-format
-msgid "ERROR: Failed to change {} to {}"
-msgstr "오류: {}를 {}로 변경하지 못했습니다."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 274
-#: usr/share/biglinux/biglinux-settings/base_page.py:925
-#, python-brace-format
-msgid "Failed to change setting: {}"
-msgstr "설정을 변경하지 못했습니다: {}"
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 11
-#: usr/share/biglinux/biglinux-settings/developer_page.py:11
-msgid "AI Coding Assistants"
-msgstr "AI 코딩 어시스턴트"
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 12
-#: usr/share/biglinux/biglinux-settings/developer_page.py:12
-msgid "Open-source coding agents powered by language models."
-msgstr "언어 모델로 구동되는 오픈소스 코딩 에이전트입니다."
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 21
-#: usr/share/biglinux/biglinux-settings/developer_page.py:21
-msgid "OpenClaude"
-msgstr "OpenClaude"
-
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 23
-#: usr/share/biglinux/biglinux-settings/developer_page.py:23
-msgid ""
-"Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
-"models. Installs nodejs, npm and ripgrep as dependencies."
-msgstr ""
-"OpenAI, Gemini, DeepSeek, Ollama 및 200개 이상의 모델을 위한 오픈소스 코딩 에이전트 CLI입니다. 종속성으로"
-" nodejs, npm 및 ripgrep을 설치합니다."
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/dispositivos_page.py, line: 25
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 116
-#: usr/share/biglinux/biglinux-settings/devices_page.py:34
-#: usr/share/biglinux/biglinux-settings/main.py:289
-msgid "Devices"
-msgstr "장치"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 15
-#: usr/share/biglinux/biglinux-settings/devices_page.py:34
-msgid "Manage physical devices."
-msgstr "물리적 장치 관리."
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 39
-#: usr/share/biglinux/biglinux-settings/devices_page.py:39
-msgid "Enable the Wi-Fi adapter."
-msgstr "Wi-Fi 어댑터 활성화."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 190
-#: usr/share/biglinux/biglinux-settings/devices_page.py:39
-msgid "Wifi"
-msgstr "와이파이"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 197
-#: usr/share/biglinux/biglinux-settings/devices_page.py:43
-msgid "Bluetooth"
-msgstr "블루투스"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 43
-#: usr/share/biglinux/biglinux-settings/devices_page.py:43
-msgid "Enable the Bluetooth adapter."
-msgstr "블루투스 어댑터를 활성화합니다."
-
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/dispositivos_page.py, line: 77
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices/jamesdsp_dialog.py, line: 155
-#: usr/share/biglinux/biglinux-settings/devices_page.py:49
-msgid "JamesDSP"
-msgstr "제임스DSP"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/dispositivos_page.py, line: 84
-#: usr/share/biglinux/biglinux-settings/devices_page.py:50
-msgid "Advanced audio effects processor that improves sound quality."
-msgstr "사운드 품질을 향상시키는 고급 오디오 효과 프로세서."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 71
-#: usr/share/biglinux/biglinux-settings/devices_page.py:58
-msgid "Reverse mouse scrolling"
-msgstr "마우스 스크롤 반전"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 72
-#: usr/share/biglinux/biglinux-settings/devices_page.py:59
-msgid "Reverse mouse scrolling without restarting the session."
-msgstr "세션을 재시작하지 않고 마우스 스크롤 방향 반전."
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 66
-#: usr/share/biglinux/biglinux-settings/devices_page.py:66
-msgid "Network Interfaces"
-msgstr "네트워크 인터페이스"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 67
-#: usr/share/biglinux/biglinux-settings/devices_page.py:67
-msgid "Connect or disconnect network devices."
-msgstr "네트워크 장치를 연결하거나 연결 해제합니다."
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 99
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 154
-#: usr/share/biglinux/biglinux-settings/devices_page.py:99
-#: usr/share/biglinux/biglinux-settings/devices_page.py:160
-#, python-brace-format
-msgid "{} — {}"
-msgstr "알림 — 알림 {} {}"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 113
-#: usr/share/biglinux/biglinux-settings/devices_page.py:116
-#, python-brace-format
-msgid "{}: toggle connection"
-msgstr "{}: 연결 전환"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
-#: usr/share/biglinux/biglinux-settings/devices_page.py:158
-msgid "connected"
-msgstr "연결됨"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
-#: usr/share/biglinux/biglinux-settings/devices_page.py:158
-msgid "disconnected"
-msgstr "연결 끊김"
-
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 161
-#: usr/share/biglinux/biglinux-settings/devices_page.py:168
-#, python-brace-format
-msgid "Failed to change network device: {}"
-msgstr "네트워크 장치를 변경하지 못했습니다: {}"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:11
+#: usr/share/biglinux/biglinux-settings/main.py:360
+msgid "Apps & Services"
+msgstr "앱 및 서비스"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:11
+msgid "Install and manage services and developer tools."
+msgstr "서비스와 개발자 도구를 설치하고 관리합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 204
-#: usr/share/biglinux/biglinux-settings/docker_page.py:15
-#: usr/share/biglinux/biglinux-settings/docker_page.py:51
-#: usr/share/biglinux/biglinux-settings/main.py:301
+#: usr/share/biglinux/biglinux-settings/apps_page.py:15
+#: usr/share/biglinux/biglinux-settings/apps_page.py:20
+#: usr/share/biglinux/biglinux-settings/apps_page.py:26
+#: usr/share/biglinux/biglinux-settings/home_page.py:134
 msgid "Docker"
-msgstr "도커"
+msgstr "Docker"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 16
-#: usr/share/biglinux/biglinux-settings/docker_page.py:16
-msgid "Container service — enable to use containers below."
-msgstr "컨테이너 서비스 — 아래의 컨테이너를 사용할 수 있도록 활성화합니다."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:22
+msgid ""
+"Container engine needed by all the services below. Installs Docker if it is "
+"missing; turning it off stops it."
+msgstr "아래 모든 서비스에 필요한 컨테이너 엔진입니다. Docker가 없으면 설치하며, 끄면 중지됩니다."
 
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 137
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 18
-#: usr/share/biglinux/biglinux-settings/docker_page.py:23
-msgid "Containers"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:26
+msgid "containers"
 msgstr "컨테이너"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 23
-#: usr/share/biglinux/biglinux-settings/docker_page.py:23
-msgid "Manage container technologies."
-msgstr "컨테이너 기술 관리."
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 30
-#: usr/share/biglinux/biglinux-settings/docker_page.py:30
-msgid "Media &amp; Cloud"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:31
+msgid "Media & Cloud"
 msgstr "미디어 및 클라우드"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 31
-#: usr/share/biglinux/biglinux-settings/docker_page.py:31
-msgid "Media servers and cloud storage containers."
-msgstr "미디어 서버 및 클라우드 스토리지 컨테이너."
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 36
-#: usr/share/biglinux/biglinux-settings/docker_page.py:36
-msgid "Network &amp; Security"
-msgstr "네트워크 및 보안"
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 37
-#: usr/share/biglinux/biglinux-settings/docker_page.py:37
-msgid "Network tools and security containers."
-msgstr "네트워크 도구 및 보안 컨테이너."
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 42
-#: usr/share/biglinux/biglinux-settings/docker_page.py:42
-msgid "Development &amp; Tools"
-msgstr "개발 및 도구"
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 43
-#: usr/share/biglinux/biglinux-settings/docker_page.py:43
-msgid "Development stacks and utility containers."
-msgstr "개발 스택 및 유틸리티 컨테이너."
-
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 52
-#: usr/share/biglinux/biglinux-settings/docker_page.py:52
-msgid "Enable Docker container engine."
-msgstr "도커 컨테이너 엔진 활성화."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:32
+msgid "Media servers and cloud storage. Require Docker."
+msgstr "미디어 서버와 클라우드 저장소입니다. Docker가 필요합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 35
-#: usr/share/biglinux/biglinux-settings/docker_page.py:61
-#: usr/share/biglinux/biglinux-settings/docker_page.py:68
+#: usr/share/biglinux/biglinux-settings/apps_page.py:39
 msgid "Nextcloud Plus"
-msgstr "넥스트클라우드 플러스"
+msgstr "Nextcloud Plus"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 62
-#: usr/share/biglinux/biglinux-settings/docker_page.py:62
-msgid "Install Nextcloud Plus cloud storage container."
-msgstr "넥스트클라우드 플러스 클라우드 저장소 컨테이너 설치."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:41
+msgid ""
+"Cloud storage for your files, calendar and contacts. Installs it as a "
+"container; turning it off removes it."
+msgstr "파일, 캘린더, 연락처를 위한 클라우드 저장소입니다. 컨테이너로 설치되며, 끄면 제거됩니다."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 52
-#: usr/share/biglinux/biglinux-settings/docker_page.py:69
-msgid "Run Nextcloud Plus."
-msgstr "Nextcloud Plus 실행."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:43
+msgid "Start Nextcloud Plus"
+msgstr "Nextcloud Plus 시작"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:44
+msgid "Runs the Nextcloud Plus container."
+msgstr "Nextcloud Plus 컨테이너를 실행합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 48
-#: usr/share/biglinux/biglinux-settings/docker_page.py:74
+#: usr/share/biglinux/biglinux-settings/apps_page.py:47
 #, python-brace-format
 msgid ""
 "Nextcloud Plus is running.\n"
@@ -851,60 +431,38 @@ msgstr ""
 "및\n"
 "주소: http://{}:8286"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 44
-#: usr/share/biglinux/biglinux-settings/docker_page.py:80
-#: usr/share/biglinux/biglinux-settings/docker_page.py:87
-msgid "AdGuard"
-msgstr "애드가드"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:49
+msgid "Nextcloud"
+msgstr "Nextcloud"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 81
-#: usr/share/biglinux/biglinux-settings/docker_page.py:81
-msgid "Install AdGuard Home DNS ad-blocker container."
-msgstr "AdGuard Home DNS 광고 차단기 컨테이너 설치."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 71
-#: usr/share/biglinux/biglinux-settings/docker_page.py:88
-msgid "Run AdGuard."
-msgstr "AdGuard를 실행하세요."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 57
-#: usr/share/biglinux/biglinux-settings/docker_page.py:93
-#, python-brace-format
-msgid ""
-"AdGuard is running.\n"
-"Address: http://localhost:3030\n"
-"and\n"
-"Address: http://{}:3030"
-msgstr ""
-"AdGuard가 실행 중입니다.\n"
-"주소: http://localhost:3030\n"
-"및\n"
-"주소: http://{}:3030"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:49
+msgid "cloud"
+msgstr "클라우드"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 71
-#: usr/share/biglinux/biglinux-settings/docker_page.py:99
-#: usr/share/biglinux/biglinux-settings/docker_page.py:106
+#: usr/share/biglinux/biglinux-settings/apps_page.py:53
+#: usr/share/biglinux/biglinux-settings/apps_page.py:63
 msgid "Jellyfin"
-msgstr "젤리핀"
+msgstr "Jellyfin"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 100
-#: usr/share/biglinux/biglinux-settings/docker_page.py:100
-msgid "Install Jellyfin media server container."
-msgstr "젤리핀 미디어 서버 컨테이너 설치."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:55
+msgid ""
+"Media server for your movies, series and music. Installs it as a container; "
+"turning it off removes it."
+msgstr "영화, 시리즈, 음악을 위한 미디어 서버입니다. 컨테이너로 설치되며, 끄면 제거됩니다."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 90
-#: usr/share/biglinux/biglinux-settings/docker_page.py:107
-msgid "Run Jellyfin."
-msgstr "젤리핀 실행."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:57
+msgid "Start Jellyfin"
+msgstr "Jellyfin 시작"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:58
+msgid "Runs the Jellyfin container."
+msgstr "Jellyfin 컨테이너를 실행합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 75
-#: usr/share/biglinux/biglinux-settings/docker_page.py:112
+#: usr/share/biglinux/biglinux-settings/apps_page.py:61
 #, python-brace-format
 msgid ""
 "Jellyfin is running.\n"
@@ -917,126 +475,86 @@ msgstr ""
 "및\n"
 "주소: http://{}:8096"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 80
-#: usr/share/biglinux/biglinux-settings/docker_page.py:118
-#: usr/share/biglinux/biglinux-settings/docker_page.py:125
-msgid "LAMP"
-msgstr "램프"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:63
+msgid "media server"
+msgstr "미디어 서버"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 119
-#: usr/share/biglinux/biglinux-settings/docker_page.py:119
-msgid "Install LAMP stack container (Linux, Apache, MySQL, PHP)."
-msgstr "LAMP 스택 컨테이너 설치 (리눅스, 아파치, MySQL, PHP)."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:68
+msgid "Network & Security"
+msgstr "네트워크 및 보안"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 109
-#: usr/share/biglinux/biglinux-settings/docker_page.py:126
-msgid "Run LAMP."
-msgstr "LAMP 실행."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 84
-#: usr/share/biglinux/biglinux-settings/docker_page.py:131
-#, python-brace-format
-msgid ""
-"LAMP is running.\n"
-"Address: http://localhost:8080\n"
-"and\n"
-"Address: http://{}:8080"
-msgstr ""
-"LAMP가 실행 중입니다.\n"
-"주소: http://localhost:8080\n"
-"및\n"
-"주소: http://{}:8080"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:69
+msgid "Network tools and security services. Require Docker."
+msgstr "네트워크 도구와 보안 서비스입니다. Docker가 필요합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 89
-#: usr/share/biglinux/biglinux-settings/docker_page.py:137
-#: usr/share/biglinux/biglinux-settings/docker_page.py:144
-msgid "Portainer Client"
-msgstr "포테이너 클라이언트"
+# settings/containers_page.py, line: 44
+#: usr/share/biglinux/biglinux-settings/apps_page.py:76
+#: usr/share/biglinux/biglinux-settings/apps_page.py:86
+msgid "AdGuard"
+msgstr "AdGuard"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 138
-#: usr/share/biglinux/biglinux-settings/docker_page.py:138
-msgid "Install Portainer Agent container for cluster management."
-msgstr "클러스터 관리를 위한 Portainer Agent 컨테이너 설치."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:78
+msgid ""
+"AdGuard Home: blocks ads and trackers for the whole network through DNS. "
+"Installs it as a container; turning it off removes it."
+msgstr "AdGuard Home: DNS를 통해 네트워크 전체의 광고와 추적기를 차단합니다. 컨테이너로 설치되며, 끄면 제거됩니다."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:80
+msgid "Start AdGuard"
+msgstr "AdGuard 시작"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:81
+msgid "Runs the AdGuard container."
+msgstr "AdGuard 컨테이너를 실행합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 128
-#: usr/share/biglinux/biglinux-settings/docker_page.py:145
-msgid "Run Portainer Client."
-msgstr "포테이너 클라이언트를 실행하세요."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 93
-#: usr/share/biglinux/biglinux-settings/docker_page.py:150
+# line: 57
+#: usr/share/biglinux/biglinux-settings/apps_page.py:84
 #, python-brace-format
 msgid ""
-"Portainer Client is running.\n"
-"Address: http://localhost:9000\n"
+"AdGuard is running.\n"
+"Address: http://localhost:3030\n"
 "and\n"
-"Address: http://{}:9000"
+"Address: http://{}:3030"
 msgstr ""
-"포테이너 클라이언트가 실행 중입니다.\n"
-"주소: http://localhost:9000\n"
+"AdGuard가 실행 중입니다.\n"
+"주소: http://localhost:3030\n"
 "및\n"
-"주소: http://{}:9000"
+"주소: http://{}:3030"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 98
-#: usr/share/biglinux/biglinux-settings/docker_page.py:156
-#: usr/share/biglinux/biglinux-settings/docker_page.py:163
-msgid "SWS"
-msgstr "SWS"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:86
+msgid "DNS"
+msgstr "DNS"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 157
-#: usr/share/biglinux/biglinux-settings/docker_page.py:157
-msgid "Install SWS static web server container."
-msgstr "SWS 정적 웹 서버 컨테이너 설치."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 147
-#: usr/share/biglinux/biglinux-settings/docker_page.py:164
-msgid "Run SWS."
-msgstr "SWS 실행."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 102
-#: usr/share/biglinux/biglinux-settings/docker_page.py:169
-#, python-brace-format
-msgid ""
-"SWS is running.\n"
-"Address: http://localhost:8182\n"
-"and\n"
-"Address: http://{}:8182"
-msgstr ""
-"SWS가 실행 중입니다.\n"
-"주소: http://localhost:8182\n"
-"및\n"
-"주소: http://{}:8182"
+#: usr/share/biglinux/biglinux-settings/apps_page.py:86
+msgid "ad blocker"
+msgstr "광고 차단"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 107
-#: usr/share/biglinux/biglinux-settings/docker_page.py:175
-#: usr/share/biglinux/biglinux-settings/docker_page.py:182
+#: usr/share/biglinux/biglinux-settings/apps_page.py:90
+#: usr/share/biglinux/biglinux-settings/apps_page.py:100
 msgid "V2RayA"
 msgstr "V2RayA"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 176
-#: usr/share/biglinux/biglinux-settings/docker_page.py:176
-msgid "Install V2RayA network proxy container."
-msgstr "V2RayA 네트워크 프록시 컨테이너 설치."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:92
+msgid ""
+"Network proxy client with a web interface. Installs it as a container; "
+"turning it off removes it."
+msgstr "웹 인터페이스를 갖춘 네트워크 프록시 클라이언트입니다. 컨테이너로 설치되며, 끄면 제거됩니다."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 166
-#: usr/share/biglinux/biglinux-settings/docker_page.py:183
-msgid "Run V2RayA."
-msgstr "V2RayA를 실행하세요."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:94
+msgid "Start V2RayA"
+msgstr "V2RayA 시작"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:95
+msgid "Runs the V2RayA container."
+msgstr "V2RayA 컨테이너를 실행합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 111
-#: usr/share/biglinux/biglinux-settings/docker_page.py:188
+#: usr/share/biglinux/biglinux-settings/apps_page.py:98
 #, python-brace-format
 msgid ""
 "V2RayA is running.\n"
@@ -1049,88 +567,654 @@ msgstr ""
 "및\n"
 "주소: http://{}:2017"
 
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 195
-#: usr/share/biglinux/biglinux-settings/docker_page.py:195
-msgid "Install the open-source alternative to Google's NotebookLM."
-msgstr "Google NotebookLM의 오픈소스 대안을 설치합니다."
+#: usr/share/biglinux/biglinux-settings/apps_page.py:100
+msgid "proxy"
+msgstr "프록시"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:105
+msgid "Development & Tools"
+msgstr "개발 및 도구"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:106
+msgid "Development stacks and utility services. Require Docker."
+msgstr "개발 스택과 유틸리티 서비스입니다. Docker가 필요합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 80
+#: usr/share/biglinux/biglinux-settings/apps_page.py:113
+msgid "LAMP"
+msgstr "LAMP"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:115
+msgid ""
+"Web development stack with Linux, Apache, MySQL and PHP. Installs it as a "
+"container; turning it off removes it."
+msgstr "Linux, Apache, MySQL, PHP로 구성된 웹 개발 스택입니다. 컨테이너로 설치되며, 끄면 제거됩니다."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:117
+msgid "Start LAMP"
+msgstr "LAMP 시작"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:118
+msgid "Runs the LAMP container."
+msgstr "LAMP 컨테이너를 실행합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 84
+#: usr/share/biglinux/biglinux-settings/apps_page.py:121
+#, python-brace-format
+msgid ""
+"LAMP is running.\n"
+"Address: http://localhost:8080\n"
+"and\n"
+"Address: http://{}:8080"
+msgstr ""
+"LAMP가 실행 중입니다.\n"
+"주소: http://localhost:8080\n"
+"및\n"
+"주소: http://{}:8080"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:123
+msgid "MySQL"
+msgstr "MySQL"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:123
+msgid "PHP"
+msgstr "PHP"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:123
+#: usr/share/biglinux/biglinux-settings/apps_page.py:151
+msgid "web server"
+msgstr "웹 서버"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 89
+#: usr/share/biglinux/biglinux-settings/apps_page.py:127
+msgid "Portainer Client"
+msgstr "Portainer Client"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:129
+msgid ""
+"Portainer Agent, to manage this computer's containers from a Portainer "
+"server. Installs it as a container; turning it off removes it."
+msgstr ""
+"Portainer 서버에서 이 컴퓨터의 컨테이너를 관리하기 위한 Portainer Agent입니다. 컨테이너로 설치되며, 끄면 제거됩니다."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:131
+msgid "Start Portainer Client"
+msgstr "Portainer Client 시작"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:132
+msgid "Runs the Portainer Client container."
+msgstr "Portainer Client 컨테이너를 실행합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 93
+#: usr/share/biglinux/biglinux-settings/apps_page.py:135
+#, python-brace-format
+msgid ""
+"Portainer Client is running.\n"
+"Address: http://localhost:9000\n"
+"and\n"
+"Address: http://{}:9000"
+msgstr ""
+"포테이너 클라이언트가 실행 중입니다.\n"
+"주소: http://localhost:9000\n"
+"및\n"
+"주소: http://{}:9000"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:137
+msgid "Portainer"
+msgstr "Portainer"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:137
+msgid "cluster"
+msgstr "클러스터"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 98
+#: usr/share/biglinux/biglinux-settings/apps_page.py:141
+msgid "SWS"
+msgstr "SWS"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:143
+msgid ""
+"Static Web Server, to publish static websites. Installs it as a container; "
+"turning it off removes it."
+msgstr "정적 웹사이트를 게시하기 위한 Static Web Server입니다. 컨테이너로 설치되며, 끄면 제거됩니다."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:145
+msgid "Start SWS"
+msgstr "SWS 시작"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:146
+msgid "Runs the SWS container."
+msgstr "SWS 컨테이너를 실행합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 102
+#: usr/share/biglinux/biglinux-settings/apps_page.py:149
+#, python-brace-format
+msgid ""
+"SWS is running.\n"
+"Address: http://localhost:8182\n"
+"and\n"
+"Address: http://{}:8182"
+msgstr ""
+"SWS가 실행 중입니다.\n"
+"주소: http://localhost:8182\n"
+"및\n"
+"주소: http://{}:8182"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:151
+msgid "static"
+msgstr "정적"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:157
+msgid ""
+"Open-source alternative to Google's NotebookLM. Installs it as a container; "
+"turning it off removes it."
+msgstr "Google NotebookLM의 오픈 소스 대안입니다. 컨테이너로 설치되며, 끄면 제거됩니다."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:165
+#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+msgid "AI"
+msgstr "AI"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:171
+msgid "Developer tools"
+msgstr "개발자 도구"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:172
+msgid "Coding agents and command-line tools for developers."
+msgstr "개발자를 위한 코딩 에이전트와 명령줄 도구입니다."
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 21
+#: usr/share/biglinux/biglinux-settings/apps_page.py:181
+msgid "OpenClaude"
+msgstr "OpenClaude"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:183
+msgid ""
+"Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
+"models. Installs it with nodejs, npm and ripgrep as dependencies; turning it "
+"off removes it."
+msgstr ""
+"OpenAI, Gemini, DeepSeek, Ollama 등 200개 이상의 모델을 지원하는 오픈 소스 코딩 에이전트 CLI입니다. "
+"의존성으로 nodejs, npm, ripgrep과 함께 설치되며, 끄면 제거됩니다."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+msgid "coding agent"
+msgstr "코딩 에이전트"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+msgid "programming"
+msgstr "프로그래밍"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 49
+# 173
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 120
-#: usr/share/biglinux/biglinux-settings/main.py:78
-#: usr/share/biglinux/biglinux-settings/main.py:94
-#: usr/share/biglinux/biglinux-settings/main.py:154
-msgid "BigLinux Settings"
-msgstr "빅리눅스 설정"
+# 199
+#: usr/share/biglinux/biglinux-settings/base_page.py:44
+#, python-brace-format
+msgid "Script not found: {}"
+msgstr "스크립트를 찾을 수 없습니다: {}"
 
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 49
-#: usr/share/biglinux/biglinux-settings/main.py:85
-msgid "BigLinux Community"
-msgstr "빅리눅스 커뮤니티"
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 48
+#: usr/share/biglinux/biglinux-settings/base_page.py:84
+msgid "Close"
+msgstr "닫기"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 63
+#: usr/share/biglinux/biglinux-settings/base_page.py:107
+#, python-brace-format
+msgid "Warning: {}"
+msgstr "경고: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 66
+#: usr/share/biglinux/biglinux-settings/base_page.py:110
+msgid "Cancel"
+msgstr "취소"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 67
+#: usr/share/biglinux/biglinux-settings/base_page.py:111
+msgid "Continue"
+msgstr "계속"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 230
+#: usr/share/biglinux/biglinux-settings/base_page.py:308
+msgid "Run"
+msgstr "실행"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 236
+#: usr/share/biglinux/biglinux-settings/base_page.py:314
+#, python-brace-format
+msgid "{}: run action"
+msgstr "{}: 작업 실행"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 626
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 136
+#: usr/share/biglinux/biglinux-settings/base_page.py:353
+#: usr/share/biglinux/biglinux-settings/base_page.py:1019
+#: usr/share/biglinux/biglinux-settings/devices_page.py:158
+msgid "Applying…"
+msgstr "적용 중…"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 289
+#: usr/share/biglinux/biglinux-settings/base_page.py:367
+#, python-brace-format
+msgid "Action script {} failed: {}"
+msgstr "작업 스크립트 {} 실패: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 294
+#: usr/share/biglinux/biglinux-settings/base_page.py:372
+#, python-brace-format
+msgid "Action script timeout: {}"
+msgstr "작업 스크립트 시간 초과: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 297
+#: usr/share/biglinux/biglinux-settings/base_page.py:375
+#, python-brace-format
+msgid "Error running action script {}: {}"
+msgstr "작업 스크립트 {} 실행 중 오류 발생: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 307
+#: usr/share/biglinux/biglinux-settings/base_page.py:385
+msgid "Action completed successfully"
+msgstr "작업이 성공적으로 완료되었습니다"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 310
+#: usr/share/biglinux/biglinux-settings/base_page.py:388
+#, python-brace-format
+msgid "Action failed: {}"
+msgstr "작업 실패: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 215
+#: usr/share/biglinux/biglinux-settings/base_page.py:423
+msgid "Recommended"
+msgstr "추천"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 238
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 326
+#: usr/share/biglinux/biglinux-settings/base_page.py:446
+#: usr/share/biglinux/biglinux-settings/base_page.py:533
+#, python-brace-format
+msgid "{}: additional information"
+msgstr "{}: 추가 정보"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 251
+#: usr/share/biglinux/biglinux-settings/base_page.py:459
+msgid "Learn more"
+msgstr "자세히 알아보기"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 257
+#: usr/share/biglinux/biglinux-settings/base_page.py:465
+#, python-brace-format
+msgid "{}: learn more"
+msgstr "{}: 자세히 알아보기"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 206
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 165
+#: usr/share/biglinux/biglinux-settings/base_page.py:572
+msgid "Unavailable: script not found."
+msgstr "사용할 수 없음: 스크립트를 찾을 수 없습니다."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 218
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 177
+#: usr/share/biglinux/biglinux-settings/base_page.py:588
+msgid "Enabled"
+msgstr "활성화됨"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 220
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 179
+#: usr/share/biglinux/biglinux-settings/base_page.py:590
+msgid "Disabled"
+msgstr "비활성화됨"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 223
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 182
+#: usr/share/biglinux/biglinux-settings/base_page.py:596
+msgid ""
+"Enabled by system configuration (e.g., Real-Time Kernel) and cannot be "
+"changed here."
+msgstr "시스템 구성(예: 실시간 커널)에 의해 활성화되었으며 여기에서 변경할 수 없습니다."
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 516
+#: usr/share/biglinux/biglinux-settings/base_page.py:600
+msgid "Unavailable in this desktop environment."
+msgstr "이 데스크탑 환경에서는 사용할 수 없습니다."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 225
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 184
+#: usr/share/biglinux/biglinux-settings/base_page.py:602
+msgid "Unavailable: script returned invalid output."
+msgstr "사용할 수 없음: 스크립트가 잘못된 출력을 반환했습니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/base_page.py,
+# line: 261
+#: usr/share/biglinux/biglinux-settings/base_page.py:604
+#, python-brace-format
+msgid "output from script {}: {}"
+msgstr "스크립트 {}의 출력: {}"
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 229
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 188
+#: usr/share/biglinux/biglinux-settings/base_page.py:610
+msgid "Unavailable: script returned an error."
+msgstr "사용할 수 없음: 스크립트가 오류를 반환했습니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 144
-#: usr/share/biglinux/biglinux-settings/main.py:191
-msgid "Search..."
-msgstr "검색..."
+# 184
+#: usr/share/biglinux/biglinux-settings/base_page.py:611
+#, python-brace-format
+msgid "Error checking state: {}"
+msgstr "오류 확인 상태: {}"
 
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 185
-#: usr/share/biglinux/biglinux-settings/main.py:197
-msgid "Search settings"
-msgstr "검색 설정"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 192
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 195
-#: usr/share/biglinux/biglinux-settings/main.py:204
-#: usr/share/biglinux/biglinux-settings/main.py:207
-msgid "Toggle navigation sidebar"
-msgstr "탐색 사이드바 전환"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 202
-#: usr/share/biglinux/biglinux-settings/main.py:214
-msgid "About"
-msgstr "정보"
-
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 206
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 209
-#: usr/share/biglinux/biglinux-settings/main.py:218
-#: usr/share/biglinux/biglinux-settings/main.py:221
-msgid "Main Menu"
-msgstr "메인 메뉴"
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 233
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 192
+#: usr/share/biglinux/biglinux-settings/base_page.py:614
+msgid "Unavailable: failed to run script."
+msgstr "사용할 수 없음: 스크립트 실행에 실패했습니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 108
-#: usr/share/biglinux/biglinux-settings/main.py:271
-#: usr/share/biglinux/biglinux-settings/system_page.py:13
-msgid "System"
-msgstr "시스템"
+# 193
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 220
+#: usr/share/biglinux/biglinux-settings/base_page.py:615
+#: usr/share/biglinux/biglinux-settings/base_page.py:642
+#, python-brace-format
+msgid "Error running script {}: {}"
+msgstr "스크립트 실행 오류 {}: {}"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 107
-#: usr/share/biglinux/biglinux-settings/main.py:277
-#: usr/share/biglinux/biglinux-settings/usability_page.py:12
-msgid "Usability"
-msgstr "사용성"
+# 190
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 217
+#: usr/share/biglinux/biglinux-settings/base_page.py:638
+#, python-brace-format
+msgid "Script timeout: {}"
+msgstr "스크립트 시간 초과: {}"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 158
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 167
-#: usr/share/biglinux/biglinux-settings/main.py:283
-msgid "PreLoad"
-msgstr "프리로드"
+# 211
+#: usr/share/biglinux/biglinux-settings/base_page.py:650
+#, python-brace-format
+msgid "Script output: {}"
+msgstr "스크립트 출력: {}"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 161
-#: usr/share/biglinux/biglinux-settings/main.py:295
-msgid "A.I."
-msgstr "인공지능"
+# 209
+#: usr/share/biglinux/biglinux-settings/base_page.py:658
+msgid "State changed successfully"
+msgstr "상태가 성공적으로 변경되었습니다."
 
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 315
-#: usr/share/biglinux/biglinux-settings/main.py:307
-msgid "Developer"
-msgstr "개발자"
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 215
+#: usr/share/biglinux/biglinux-settings/base_page.py:667
+#, python-brace-format
+msgid "Script failed with exit code: {}"
+msgstr "스크립트가 종료 코드로 실패했습니다: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 620
+#: usr/share/biglinux/biglinux-settings/base_page.py:700
+#, python-brace-format
+msgid "{} sub-option available"
+msgid_plural "{} sub-options available"
+msgstr[0] "사용 가능한 하위 옵션 {}개"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:826
+msgid "Try again"
+msgstr "다시 시도"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:831
+#, python-brace-format
+msgid "{}: try again"
+msgstr "{}: 다시 시도"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:836
+msgid "Could not check this setting."
+msgstr "이 설정을 확인할 수 없습니다."
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
+#: usr/share/biglinux/biglinux-settings/base_page.py:938
+msgid "off"
+msgstr "꺼짐"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
+#: usr/share/biglinux/biglinux-settings/base_page.py:938
+msgid "on"
+msgstr "켜짐"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 574
+#: usr/share/biglinux/biglinux-settings/base_page.py:943
+#, python-brace-format
+msgid "Changing {} to {}…"
+msgstr "{}를 {}로 변경 중…"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 576
+#: usr/share/biglinux/biglinux-settings/base_page.py:946
+msgid "Undo"
+msgstr "실행 취소"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 600
+#: usr/share/biglinux/biglinux-settings/base_page.py:977
+msgid "Undo: reverted toggle"
+msgstr "실행 취소: 되돌린 토글"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 244
+#: usr/share/biglinux/biglinux-settings/base_page.py:1009
+#, python-brace-format
+msgid "Changing {} to {}"
+msgstr "{}를 {}로 변경 중"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 271
+#: usr/share/biglinux/biglinux-settings/base_page.py:1045
+#, python-brace-format
+msgid "ERROR: Failed to change {} to {}"
+msgstr "오류: {}를 {}로 변경하지 못했습니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 274
+#: usr/share/biglinux/biglinux-settings/base_page.py:1050
+#, python-brace-format
+msgid "Failed to change setting: {}"
+msgstr "설정을 변경하지 못했습니다: {}"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:1066
+msgid "Saved. It will take effect after the next restart."
+msgstr "저장했습니다. 다음에 다시 시작한 후 적용됩니다."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/dispositivos_page.py, line: 25
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 116
+#: usr/share/biglinux/biglinux-settings/devices_page.py:30
+#: usr/share/biglinux/biglinux-settings/main.py:352
+msgid "Devices"
+msgstr "장치"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:30
+msgid "Wireless, audio and input devices."
+msgstr "무선, 오디오, 입력 장치입니다."
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:34
+msgid "Wireless"
+msgstr "무선"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:39
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:40
+msgid "Turns the Wi-Fi adapter on or off."
+msgstr "Wi-Fi 어댑터를 켜거나 끕니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 190
+#: usr/share/biglinux/biglinux-settings/devices_page.py:43
+msgid "Wifi"
+msgstr "와이파이"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:43
+msgid "network"
+msgstr "네트워크"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:43
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+msgid "wireless"
+msgstr "무선"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 197
+#: usr/share/biglinux/biglinux-settings/devices_page.py:47
+msgid "Bluetooth"
+msgstr "블루투스"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:48
+msgid "Turns the Bluetooth adapter on or off."
+msgstr "Bluetooth 어댑터를 켜거나 끕니다."
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:54
+msgid "Audio"
+msgstr "오디오"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:59
+msgid "JamesDSP audio effects"
+msgstr "JamesDSP 오디오 효과"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:61
+msgid ""
+"Audio effects software that enhances the sound of all applications. Installs "
+"JamesDSP if it is missing and starts it with the session."
+msgstr "모든 애플리케이션의 소리를 향상시키는 오디오 효과 소프트웨어입니다. JamesDSP가 없으면 설치하고 세션과 함께 시작합니다."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/dispositivos_page.py, line: 77
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices/jamesdsp_dialog.py, line: 155
+#: usr/share/biglinux/biglinux-settings/devices_page.py:65
+msgid "JamesDSP"
+msgstr "JamesDSP"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:65
+msgid "equalizer"
+msgstr "이퀄라이저"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:65
+msgid "sound"
+msgstr "소리"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:69
+msgid "Mouse"
+msgstr "마우스"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:74
+msgid "Natural scrolling"
+msgstr "자연스러운 스크롤"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:76
+msgid ""
+"Reverses the scroll direction so the content follows the movement of the "
+"wheel or fingers, as on a touchscreen. Applies right away."
+msgstr "스크롤 방향을 반대로 하여 터치스크린처럼 휠이나 손가락의 움직임을 콘텐츠가 따라가게 합니다. 즉시 적용됩니다."
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:80
+msgid "mouse"
+msgstr "마우스"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:80
+msgid "reverse scrolling"
+msgstr "스크롤 반대로"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:80
+msgid "scroll direction"
+msgstr "스크롤 방향"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 66
+#: usr/share/biglinux/biglinux-settings/devices_page.py:85
+msgid "Network Interfaces"
+msgstr "네트워크 인터페이스"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 67
+#: usr/share/biglinux/biglinux-settings/devices_page.py:86
+msgid "Connect or disconnect network devices."
+msgstr "네트워크 장치를 연결하거나 연결 해제합니다."
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 99
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 154
+#: usr/share/biglinux/biglinux-settings/devices_page.py:118
+#: usr/share/biglinux/biglinux-settings/devices_page.py:197
+#, python-brace-format
+msgid "{} — {}"
+msgstr "알림 — 알림 {} {}"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 113
+#: usr/share/biglinux/biglinux-settings/devices_page.py:135
+#, python-brace-format
+msgid "{}: toggle connection"
+msgstr "{}: 연결 전환"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
+#: usr/share/biglinux/biglinux-settings/devices_page.py:195
+msgid "connected"
+msgstr "연결됨"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
+#: usr/share/biglinux/biglinux-settings/devices_page.py:195
+msgid "disconnected"
+msgstr "연결 끊김"
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 161
+#: usr/share/biglinux/biglinux-settings/devices_page.py:202
+#, python-brace-format
+msgid "Failed to change network device: {}"
+msgstr "네트워크 장치를 변경하지 못했습니다: {}"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:53
+msgid "On"
+msgstr "켜짐"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:54
+#: usr/share/biglinux/biglinux-settings/home_page.py:88
+msgid "Off"
+msgstr "꺼짐"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 181
@@ -1144,29 +1228,194 @@ msgstr "개발자"
 # 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/usability/gamemode_dialog.py, line: 204
-#: usr/share/biglinux/biglinux-settings/main.py:313
-#: usr/share/biglinux/biglinux-settings/performance_page.py:15
+#: usr/share/biglinux/biglinux-settings/home_page.py:62
+#: usr/share/biglinux/biglinux-settings/main.py:347
+#: usr/share/biglinux/biglinux-settings/performance_page.py:9
 msgid "Performance"
 msgstr "성능"
 
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 302
-#: usr/share/biglinux/biglinux-settings/main.py:319
-msgid "Suspend"
-msgstr "일시 중지"
+#: usr/share/biglinux/biglinux-settings/home_page.py:63
+msgid "Standard"
+msgstr "표준"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:78
+msgid "Ollama installed"
+msgstr "Ollama 설치됨"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:79
+msgid "Not set up"
+msgstr "설정 안 됨"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:87
+msgid "Running"
+msgstr "실행 중"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:99
+msgid "Reduced"
+msgstr "줄임"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:100
+msgid "Default"
+msgstr "기본값"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:110
+msgid "Suspends at 20% battery"
+msgstr "배터리 20%에서 절전"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:112
+msgid "Stays awake"
+msgstr "절전 안 함"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:114
+msgid "Stays awake on battery"
+msgstr "배터리 사용 시 절전 안 함"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:116
+msgid "Stays awake when plugged in"
+msgstr "전원 연결 시 절전 안 함"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:117
+msgid "System default"
+msgstr "시스템 기본값"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:123
+#: usr/share/biglinux/biglinux-settings/system_page.py:15
+msgid "Remote access"
+msgstr "원격 접속"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:125
+#: usr/share/biglinux/biglinux-settings/performance_page.py:18
+msgid "Performance profile"
+msgstr "성능 프로필"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:128
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:80
+msgid "When idle"
+msgstr "유휴 상태일 때"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:132
+msgid "Local AI"
+msgstr "로컬 AI"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:136
+msgid "System protections"
+msgstr "시스템 보호"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:148
+msgid "Welcome"
+msgstr "환영합니다"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:149
+msgid "Adjust BigLinux simply and safely. Here is how this computer is set up."
+msgstr "BigLinux를 간단하고 안전하게 조정하세요. 이 컴퓨터의 현재 설정은 다음과 같습니다."
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:174
+msgid "Tip: search with everyday words, like “don't sleep” or “remote access”."
+msgstr "팁: “절전 안 함”이나 “원격 접속”처럼 일상적인 말로 검색해 보세요."
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:214
+#: usr/share/biglinux/biglinux-settings/home_page.py:225
+msgid "Checking…"
+msgstr "확인 중…"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 49
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 120
+#: usr/share/biglinux/biglinux-settings/main.py:43
+msgid "BigLinux Settings"
+msgstr "빅리눅스 설정"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 49
+#: usr/share/biglinux/biglinux-settings/main.py:116
+msgid "BigLinux Community"
+msgstr "빅리눅스 커뮤니티"
+
+#: usr/share/biglinux/biglinux-settings/main.py:231
+msgid "Search settings…"
+msgstr "설정 검색…"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 185
+#: usr/share/biglinux/biglinux-settings/main.py:237
+msgid "Search settings"
+msgstr "검색 설정"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 192
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 195
+#: usr/share/biglinux/biglinux-settings/main.py:244
+#: usr/share/biglinux/biglinux-settings/main.py:247
+msgid "Toggle navigation sidebar"
+msgstr "탐색 사이드바 전환"
+
+#: usr/share/biglinux/biglinux-settings/main.py:254
+#: usr/share/biglinux/biglinux-settings/main.py:256
+msgid "Back to search results"
+msgstr "검색 결과로 돌아가기"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 202
+#: usr/share/biglinux/biglinux-settings/main.py:264
+msgid "About"
+msgstr "정보"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 206
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 209
+#: usr/share/biglinux/biglinux-settings/main.py:268
+#: usr/share/biglinux/biglinux-settings/main.py:271
+msgid "Main Menu"
+msgstr "메인 메뉴"
+
+#: usr/share/biglinux/biglinux-settings/main.py:302
+msgid "No results"
+msgstr "결과 없음"
+
+#: usr/share/biglinux/biglinux-settings/main.py:304
+msgid "Try other words, like “don't sleep”, “remote access” or “battery”."
+msgstr "“절전 안 함”, “원격 접속”, “배터리” 같은 다른 단어를 시도해 보세요."
+
+#: usr/share/biglinux/biglinux-settings/main.py:332
+msgid "Home"
+msgstr "홈"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 108
+#: usr/share/biglinux/biglinux-settings/main.py:333
+#: usr/share/biglinux/biglinux-settings/system_page.py:11
+msgid "System"
+msgstr "시스템"
+
+#: usr/share/biglinux/biglinux-settings/main.py:335
+#: usr/share/biglinux/biglinux-settings/usability_page.py:9
+msgid "Appearance & Usage"
+msgstr "모양 및 사용"
+
+#: usr/share/biglinux/biglinux-settings/main.py:341
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:70
+msgid "Power & Suspend"
+msgstr "전원 및 절전"
+
+#: usr/share/biglinux/biglinux-settings/main.py:412
+msgid "More features"
+msgstr "더 많은 기능"
+
+#: usr/share/biglinux/biglinux-settings/main.py:554
+#, python-brace-format
+msgid "{} result"
+msgid_plural "{} results"
+msgstr[0] "결과 {}개"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 441
-#: usr/share/biglinux/biglinux-settings/main.py:467
+#: usr/share/biglinux/biglinux-settings/main.py:581
 msgid "Open setting"
 msgstr "설정 열기"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 446
-#: usr/share/biglinux/biglinux-settings/main.py:472
+#: usr/share/biglinux/biglinux-settings/main.py:586
 #, python-brace-format
 msgid "Open {} setting"
 msgstr "{} 설정 열기"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 469
-#: usr/share/biglinux/biglinux-settings/main.py:543
+#: usr/share/biglinux/biglinux-settings/main.py:681
 msgid "Dismiss"
 msgstr "해제"
 
@@ -1175,345 +1424,357 @@ msgstr "해제"
 msgid "Already enabled. No changes made."
 msgstr "이미 활성화되어 있습니다. 변경 사항이 없습니다."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 16
-#: usr/share/biglinux/biglinux-settings/performance_page.py:15
-msgid "BigLinux performance tweaks."
-msgstr "BigLinux 성능 조정."
+#: usr/share/biglinux/biglinux-settings/performance_page.py:9
+msgid "Balance speed, power use and stability."
+msgstr "속도, 전력 사용, 안정성의 균형을 맞춥니다."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/usability/gamemode_config_dialog.py, line: 91
-#: usr/share/biglinux/biglinux-settings/performance_page.py:22
-msgid "Disable Visual Effects"
-msgstr "비주얼 효과 비활성화"
+#: usr/share/biglinux/biglinux-settings/performance_page.py:13
+msgid "Power profile"
+msgstr "전원 프로필"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 35
+#: usr/share/biglinux/biglinux-settings/performance_page.py:20
+msgid ""
+"Prioritizes performance. May increase power use, temperature and fan noise. "
+"Turning it off restores the previous profile."
+msgstr "성능을 우선합니다. 전력 사용, 온도, 팬 소음이 늘어날 수 있습니다. 끄면 이전 프로필로 돌아갑니다."
+
 #: usr/share/biglinux/biglinux-settings/performance_page.py:24
-msgid ""
-"Disables KWin visual effects (blur, shadows, animations). Reduces GPU load "
-"and frees memory."
-msgstr "KWin 시각 효과(블러, 그림자, 애니메이션)를 비활성화합니다. GPU 부하를 줄이고 메모리를 해제합니다."
+msgid "CPU"
+msgstr "CPU"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 63
-#: usr/share/biglinux/biglinux-settings/performance_page.py:32
-msgid "CPU Maximum Performance"
-msgstr "CPU 최대 성능"
+#: usr/share/biglinux/biglinux-settings/performance_page.py:24
+msgid "power profile"
+msgstr "전원 프로필"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 51
+#: usr/share/biglinux/biglinux-settings/performance_page.py:24
+#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+msgid "speed"
+msgstr "속도"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:28
+msgid "Desktop"
+msgstr "데스크톱"
+
 #: usr/share/biglinux/biglinux-settings/performance_page.py:34
+msgid "Visual effects"
+msgstr "시각 효과"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:36
 msgid ""
-"Forces maximum processor performance mode. Ensures the processor uses maximum"
-" frequency."
-msgstr "최대 프로세서 성능 모드를 강제합니다. 프로세서가 최대 주파수를 사용하도록 보장합니다."
+"Blur, shadows and animations of the desktop. Turning them off makes the "
+"interface plainer and can help on computers with slow graphics."
+msgstr "데스크톱의 흐림, 그림자, 애니메이션입니다. 끄면 인터페이스가 단순해지며 그래픽 성능이 낮은 컴퓨터에 도움이 될 수 있습니다."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 79
-#: usr/share/biglinux/biglinux-settings/performance_page.py:42
-msgid "Disable Baloo Indexer"
-msgstr "Baloo 인덱서 비활성화"
+#: usr/share/biglinux/biglinux-settings/performance_page.py:40
+msgid "animations"
+msgstr "애니메이션"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 67
-#: usr/share/biglinux/biglinux-settings/performance_page.py:43
-msgid "Disables the Baloo file indexer. Avoids disk I/O overhead."
-msgstr "Baloo 파일 인덱서를 비활성화합니다. 디스크 I/O 오버헤드를 피합니다."
+#: usr/share/biglinux/biglinux-settings/performance_page.py:40
+msgid "blur"
+msgstr "흐림"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/usability/gamemode_config_dialog.py, line: 136
-#: usr/share/biglinux/biglinux-settings/performance_page.py:51
-msgid "Unload S.M.A.R.T Monitor"
-msgstr "S.M.A.R.T 모니터 언로드"
+#: usr/share/biglinux/biglinux-settings/performance_page.py:40
+msgid "effects"
+msgstr "효과"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 83
+#: usr/share/biglinux/biglinux-settings/performance_page.py:46
+msgid "File indexing"
+msgstr "파일 인덱싱"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:48
+msgid ""
+"Lets Dolphin and the application menu find files quickly by name and content."
+" Turning it off saves disk and processor use, but that search no longer finds"
+" files quickly."
+msgstr ""
+"Dolphin과 애플리케이션 메뉴에서 이름과 내용으로 파일을 빠르게 찾을 수 있게 합니다. 끄면 디스크와 프로세서 사용량은 줄지만, 해당 "
+"검색으로는 파일을 빠르게 찾을 수 없습니다."
+
 #: usr/share/biglinux/biglinux-settings/performance_page.py:52
-msgid "Disables S.M.A.R.T disk monitoring. Reduces disk I/O and CPU usage."
-msgstr "S.M.A.R.T 디스크 모니터링을 비활성화합니다. 디스크 I/O 및 CPU 사용량을 줄입니다."
+msgid "Baloo"
+msgstr "Baloo"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 169
+#: usr/share/biglinux/biglinux-settings/performance_page.py:52
+msgid "indexer"
+msgstr "인덱서"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:52
+msgid "search"
+msgstr "검색"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:58
+msgid "Application launch"
+msgstr "애플리케이션 실행"
+
 #: usr/share/biglinux/biglinux-settings/performance_page.py:60
-msgid "Meltdown Mitigations off"
-msgstr "멜트다운 완화 비활성화"
-
-# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 62
-#: usr/share/biglinux/biglinux-settings/performance_page.py:62
-msgid "Using mitigations=off will make your machine faster and less secure!"
-msgstr "완화 사용=끄기를 사용하면 컴퓨터가 더 빨라지지만 보안이 낮아집니다!"
-
-# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 67
-#: usr/share/biglinux/biglinux-settings/performance_page.py:67
 msgid ""
-"This will disable CPU security mitigations (Meltdown/Spectre). Your system "
-"will be faster but vulnerable to hardware-level attacks. Are you sure you "
-"want to continue?"
-msgstr ""
-"이렇게 하면 CPU 보안 완화(Meltdown/Spectre)가 비활성화됩니다. 시스템이 더 빨라지지만 하드웨어 수준의 공격에 "
-"취약해집니다. 계속 진행하시겠습니까?"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 176
-#: usr/share/biglinux/biglinux-settings/performance_page.py:74
-msgid "noWatchdog"
-msgstr "노워치독"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 177
-#: usr/share/biglinux/biglinux-settings/performance_page.py:76
-msgid ""
-"Disables the hardware watchdog and TSC clocksource systems, maintaining high "
-"performance but removing automatic protections against system crashes."
-msgstr ""
-"하드웨어 감시 타이머 및 TSC 클록 소스 시스템을 비활성화하여 높은 성능을 유지하지만 시스템 충돌에 대한 자동 보호 기능을 제거합니다."
-
-# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 81
-#: usr/share/biglinux/biglinux-settings/performance_page.py:81
-msgid ""
-"This will disable the hardware watchdog. Your system will no longer "
-"automatically recover from certain types of crashes. Are you sure you want to"
-" continue?"
-msgstr ""
-"이렇게 하면 하드웨어 감시 타이머가 비활성화됩니다. 시스템이 특정 유형의 충돌에서 더 이상 자동으로 복구되지 않습니다. 계속 "
-"진행하시겠습니까?"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 103
-#: usr/share/biglinux/biglinux-settings/preload_page.py:10
-msgid "Preload"
-msgstr "프리로드"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 105
-#: usr/share/biglinux/biglinux-settings/preload_page.py:11
-msgid "Preload applications into memory to open them faster."
-msgstr "애플리케이션을 메모리에 미리 로드하여 더 빠르게 열 수 있습니다."
+"Keeps selected applications ready in memory so they open faster. Uses more "
+"memory."
+msgstr "선택한 애플리케이션을 메모리에 미리 준비해 두어 더 빨리 열리게 합니다. 메모리를 더 사용합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 120
-#: usr/share/biglinux/biglinux-settings/preload_page.py:18
+#: usr/share/biglinux/biglinux-settings/performance_page.py:68
 msgid "Firefox"
-msgstr "파이어폭스"
+msgstr "Firefox"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 126
-#: usr/share/biglinux/biglinux-settings/preload_page.py:19
+#: usr/share/biglinux/biglinux-settings/performance_page.py:69
 msgid "Brave"
-msgstr "브레이브"
+msgstr "Brave"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 132
-#: usr/share/biglinux/biglinux-settings/preload_page.py:20
+#: usr/share/biglinux/biglinux-settings/performance_page.py:70
 msgid "Chrome"
-msgstr "크롬"
+msgstr "Chrome"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 138
-#: usr/share/biglinux/biglinux-settings/preload_page.py:21
+#: usr/share/biglinux/biglinux-settings/performance_page.py:71
 msgid "Chromium"
-msgstr "크로미움"
+msgstr "Chromium"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 126
-#: usr/share/biglinux/biglinux-settings/preload_page.py:22
-msgid "Librewolf"
-msgstr "리브레울프"
+#: usr/share/biglinux/biglinux-settings/performance_page.py:72
+msgid "LibreWolf"
+msgstr "LibreWolf"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 144
-#: usr/share/biglinux/biglinux-settings/preload_page.py:23
-msgid "Palemoon"
-msgstr "팔레문"
+#: usr/share/biglinux/biglinux-settings/performance_page.py:73
+msgid "Pale Moon"
+msgstr "Pale Moon"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 150
-#: usr/share/biglinux/biglinux-settings/preload_page.py:24
+#: usr/share/biglinux/biglinux-settings/performance_page.py:74
 msgid "Opera"
-msgstr "오페라"
+msgstr "Opera"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 156
-#: usr/share/biglinux/biglinux-settings/preload_page.py:25
-msgid "Libreoffice"
-msgstr "리브레오피스"
+#: usr/share/biglinux/biglinux-settings/performance_page.py:75
+msgid "Vivaldi"
+msgstr "Vivaldi"
 
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 72
+#: usr/share/biglinux/biglinux-settings/performance_page.py:76
+msgid "GNOME Web"
+msgstr "GNOME Web"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:77
+msgid "LibreOffice"
+msgstr "LibreOffice"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:86
+msgid "open programs faster"
+msgstr "프로그램 더 빨리 열기"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:86
+msgid "preload"
+msgstr "미리 불러오기"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:91
+msgid "Protections and diagnostics"
+msgstr "보호 및 진단"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:92
+msgid "Advanced. These options reduce protections or monitoring of the system."
+msgstr "고급 설정입니다. 이 옵션들은 시스템의 보호 또는 모니터링을 줄입니다."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:100
+msgid "Disk health monitoring"
+msgstr "디스크 상태 모니터링"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:101
+msgid "Keeps the S.M.A.R.T. service watching disks for signs of failure."
+msgstr "S.M.A.R.T. 서비스가 디스크의 고장 징후를 계속 감시하게 합니다."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+msgid "SMART"
+msgstr "SMART"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+msgid "disk"
+msgstr "디스크"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:104
+msgid "smartd"
+msgstr "smartd"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:111
+msgid "Turn off CPU vulnerability protections"
+msgstr "CPU 취약점 보호 끄기"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:113
+msgid ""
+"Adds mitigations=off to the kernel command line, disabling the protections "
+"against Spectre, Meltdown and similar processor flaws. Faster in some "
+"workloads, but less secure. Applies after restart."
+msgstr ""
+"커널 명령줄에 mitigations=off를 추가하여 Spectre, Meltdown 등 프로세서 결함에 대한 보호를 끕니다. 일부 작업은"
+" 더 빨라지지만 보안은 낮아집니다. 다시 시작한 후 적용됩니다."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:118
+msgid ""
+"The kernel will stop protecting against processor flaws such as Spectre and "
+"Meltdown. Some workloads get faster, but malicious programs or web pages may "
+"be able to read data from other programs. The change applies after the next "
+"restart."
+msgstr ""
+"커널이 Spectre, Meltdown 같은 프로세서 결함으로부터 더 이상 보호하지 않습니다. 일부 작업은 빨라지지만, 악성 프로그램이나 "
+"웹 페이지가 다른 프로그램의 데이터를 읽을 수 있습니다. 변경 사항은 다음에 다시 시작한 후 적용됩니다."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:120
+msgid "Turn off protections"
+msgstr "보호 끄기"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+msgid "Meltdown"
+msgstr "Meltdown"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+msgid "Spectre"
+msgstr "Spectre"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+msgid "mitigations"
+msgstr "mitigations"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:128
+msgid "Turn off lockup detectors"
+msgstr "먹통 감지 끄기"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:130
+msgid ""
+"Adds nowatchdog and tsc=nowatchdog to the kernel command line, disabling the "
+"kernel soft and hard lockup detectors and the TSC clocksource watchdog. "
+"Applies after restart."
+msgstr ""
+"커널 명령줄에 nowatchdog와 tsc=nowatchdog를 추가하여 커널의 소프트/하드 락업 감지와 TSC 클럭 소스 워치독을 "
+"끕니다. 다시 시작한 후 적용됩니다."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:135
+msgid ""
+"The kernel will no longer detect and report processors that stop responding, "
+"and will no longer check the stability of the TSC clock. Freezes may go "
+"unreported and become harder to diagnose. The change applies after the next "
+"restart."
+msgstr ""
+"커널이 응답하지 않는 프로세서를 더 이상 감지하거나 보고하지 않으며, TSC 클럭의 안정성도 확인하지 않습니다. 멈춤 현상이 보고되지 않아"
+" 진단이 어려워질 수 있습니다. 변경 사항은 다음에 다시 시작한 후 적용됩니다."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:137
+msgid "Turn off detectors"
+msgstr "감지 끄기"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:138
+msgid "nowatchdog"
+msgstr "nowatchdog"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:138
+msgid "watchdog"
+msgstr "워치독"
+
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:72
-msgid "Automatic Suspend"
-msgstr "자동 절전 모드"
+msgid ""
+"What happens when the computer is idle, on battery or with the lid closed."
+msgstr "컴퓨터가 유휴 상태이거나, 배터리를 사용 중이거나, 덮개를 닫았을 때의 동작입니다."
 
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 73
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:73
-msgid "Choose when inactivity and low battery may suspend the system."
-msgstr "비활성 상태 및 배터리 부족 시 시스템이 절전 모드로 전환되는 조건을 선택합니다."
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "don't sleep"
+msgstr "절전 안 함"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:80
-msgid "Disable idle suspend while plugged in"
-msgstr "전원 연결 시 유휴 절전 모드 비활성화"
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+msgid "sleep"
+msgstr "절전"
 
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 81
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "stay awake"
+msgstr "깨어 있기"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+msgid "suspend"
+msgstr "일시 중단"
+
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:81
-msgid "Disables automatic suspend caused by inactivity on AC power."
-msgstr "AC 전원 사용 중 비활성으로 인한 자동 절전 모드를 비활성화합니다."
+msgid "Choose whether the computer suspends after a period without use."
+msgstr "일정 시간 사용하지 않으면 컴퓨터를 일시 중단할지 선택합니다."
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:88
-msgid "Disable idle suspend on battery"
-msgstr "배터리 사용 시 유휴 절전 모드 비활성화"
+msgid "Stay awake while plugged in"
+msgstr "전원 연결 시 깨어 있기"
 
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 89
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:89
-msgid "Keeps the system awake on battery until a critical level is reached."
-msgstr "배터리 잔량이 임계 수준에 도달할 때까지 시스템을 깨어 있는 상태로 유지합니다."
+msgid "Does not suspend when idle while connected to power."
+msgstr "전원에 연결되어 있는 동안 유휴 상태에서 일시 중단하지 않습니다."
 
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 96
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:96
-msgid "Suspend only when battery reaches 20%"
-msgstr "배터리가 20%일 때만 절전 모드로 전환"
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:97
+msgid "Stay awake on battery"
+msgstr "배터리 사용 시 깨어 있기"
 
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 98
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:98
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:99
 msgid ""
-"Disables idle suspend on battery and suspends automatically when the charge "
-"reaches 20%."
-msgstr "배터리 사용 중 유휴 절전 모드를 비활성화하고 배터리 충전량이 20%에 도달하면 자동으로 절전 모드로 전환합니다."
+"Does not suspend when idle on battery. The critical-battery action still "
+"applies."
+msgstr "배터리를 사용하는 동안 유휴 상태에서 일시 중단하지 않습니다. 배터리 위험 수준 동작은 계속 적용됩니다."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:104
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:120
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:164
+msgid "battery"
+msgstr "배터리"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:109
+msgid "Stay awake and suspend at 20% battery"
+msgstr "깨어 있다가 배터리 20%에서 일시 중단"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:111
+msgid ""
+"Does not suspend when idle on battery and suspends automatically when the "
+"charge reaches 20%."
+msgstr "배터리 사용 중 유휴 상태에서는 일시 중단하지 않으며, 충전량이 20%에 이르면 자동으로 일시 중단합니다."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 104
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:104
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:117
 msgid ""
 "This uses UPower's critical battery policy. Low and critical warnings occur "
 "before the suspend action at 20%."
 msgstr ""
 "이 기능은 UPower의 중요 배터리 정책을 사용합니다. 20%에서 절전 모드가 실행되기 전에 낮음 및 중요 경고가 발생합니다."
 
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 75
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:112
-msgid "Sleep Mode"
-msgstr "절전 모드"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 76
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:113
-msgid "Configure how the system suspends."
-msgstr "시스템이 일시 중지되는 방식을 구성합니다."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 83
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:120
-msgid "Use s2idle (light sleep)"
-msgstr "s2idle 사용 (경량 절전 모드)"
+msgid "low battery"
+msgstr "배터리 부족"
 
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 85
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:122
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:125
+msgid "When the lid is closed"
+msgstr "덮개를 닫았을 때"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:126
 msgid ""
-"Uses a lighter sleep mode that preserves Fn keys and device state. "
-"Recommended for ASUS notebooks."
-msgstr "Fn 키와 장치 상태를 유지하는 더 가벼운 절전 모드를 사용합니다. ASUS 노트북에 권장됩니다."
+"Keep the computer working with the lid closed, for example with an external "
+"monitor."
+msgstr "외부 모니터를 사용하는 경우 등, 덮개를 닫아도 컴퓨터가 계속 작동하게 합니다."
 
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 91
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:128
-msgid ""
-"S3 deep sleep can cause the Embedded Controller to stop generating hotkey "
-"interrupts. s2idle keeps the EC powered, avoiding this issue at a small cost "
-"in battery consumption."
-msgstr ""
-"S3 깊은 수면은 임베디드 컨트롤러가 핫키 인터럽트를 생성하는 것을 중지시킬 수 있습니다. s2idle은 EC에 전원을 공급하여 이 문제를"
-" 피하며, 배터리 소비에서 약간의 비용이 발생합니다."
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "laptop"
+msgstr "노트북"
 
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 100
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:137
-msgid "WiFi"
-msgstr "와이파이"
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "lid"
+msgstr "덮개"
 
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 101
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:138
-msgid "Prevent WiFi issues after suspend."
-msgstr "일시 중단 후 WiFi 문제 방지."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 108
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:145
-msgid "Protect WiFi on suspend"
-msgstr "일시 중지 시 WiFi 보호"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 110
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:147
-msgid ""
-"Prevents the Realtek WiFi chip from fully powering off (d3cold), avoiding "
-"connection loss after resume."
-msgstr "Realtek WiFi 칩이 완전히 전원이 꺼지는 것을 방지하여(d3cold), 재개 후 연결 손실을 피합니다."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 116
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:153
-msgid ""
-"Some Realtek RTL8852BE/CE chips fail to reinitialize after d3cold power "
-"gating. This keeps the chip in d3hot (PCIe link alive) during suspend."
-msgstr ""
-"일부 Realtek RTL8852BE/CE 칩은 d3cold 전원 차단 후 재초기화에 실패합니다. 이로 인해 칩이 대기 중에 "
-"d3hot(PCIe 링크 활성 상태)에 유지됩니다."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 124
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:161
-msgid "Display and Keyboard"
-msgstr "디스플레이 및 키보드"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 125
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:162
-msgid "Preserve brightness and LED state across suspend."
-msgstr "일시 중단 시 밝기 및 LED 상태 유지."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 132
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:169
-msgid "Save/restore brightness on suspend"
-msgstr "일시 중지 시 밝기 저장/복원"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 134
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:171
-msgid ""
-"Saves screen brightness and keyboard LEDs before suspending and restores them"
-" on resume."
-msgstr "일시 중단하기 전에 화면 밝기와 키보드 LED를 저장하고, 다시 시작할 때 복원합니다."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 144
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:181
-msgid "GNOME Shell Extensions"
-msgstr "GNOME 셸 확장"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 145
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:182
-msgid "Automatic health check after resume."
-msgstr "재개 후 자동 건강 검사."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 152
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:189
-msgid "Extension health monitor"
-msgstr "확장 프로그램 상태 모니터"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 154
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:191
-msgid ""
-"Detects GNOME Shell extensions in error state after resume and automatically "
-"restarts them."
-msgstr "재개 후 오류 상태에 있는 GNOME Shell 확장을 감지하고 자동으로 다시 시작합니다."
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 163
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:200
-msgid "Lid Switch"
-msgstr "뚜껑 스위치"
-
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 164
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:201
-msgid "Laptop lid close behavior."
-msgstr "노트북 뚜껑 닫기 동작."
-
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:208
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:135
 msgid "Keep running with the lid closed while plugged in"
 msgstr "전원 연결 시 덮개를 닫아도 계속 실행"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:210
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:137
 msgid ""
-"Keeps the session and network active when the lid is closed on AC power."
-msgstr "AC 전원 사용 중 덮개를 닫아도 세션과 네트워크 연결을 유지합니다."
+"Closing the lid will not lock or suspend the computer while it is connected "
+"to power. The session and network stay active."
+msgstr "전원에 연결되어 있는 동안 덮개를 닫아도 컴퓨터를 잠그거나 일시 중단하지 않습니다. 세션과 네트워크는 활성 상태로 유지됩니다."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:216
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:143
 msgid ""
 "This prevents lid-triggered suspend and locking. Automatic idle locking "
 "remains separate. Keep the notebook ventilated while it runs with the lid "
@@ -1522,16 +1783,19 @@ msgstr ""
 "이 옵션은 덮개를 닫을 때 절전 모드로 전환되거나 잠기는 것을 방지합니다. 유휴 상태 자동 잠금은 별도로 적용됩니다. 덮개를 닫은 채로 "
 "노트북을 사용할 때는 통풍이 잘되도록 하십시오."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:224
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:152
 msgid "Keep running with the lid closed on battery"
 msgstr "배터리 사용 시 덮개를 닫아도 계속 실행"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:154
 msgid ""
-"Keeps the session and network active when the lid is closed on battery power."
-msgstr "배터리 사용 중 덮개를 닫아도 세션과 네트워크 연결을 유지합니다."
+"Closing the lid will not lock or suspend the computer on battery. The session"
+" and network stay active, using more battery."
+msgstr ""
+"배터리 사용 중에도 덮개를 닫아도 컴퓨터를 잠그거나 일시 중단하지 않습니다. 세션과 네트워크는 활성 상태로 유지되며 배터리를 더 많이 "
+"사용합니다."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:232
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:160
 msgid ""
 "This prevents lid-triggered suspend and locking. Automatic idle locking "
 "remains separate, and the 20% critical battery policy still applies."
@@ -1539,138 +1803,915 @@ msgstr ""
 "이 옵션은 덮개를 닫을 때 절전 모드로 전환되거나 잠기는 것을 방지합니다. 유휴 상태 자동 잠금은 별도로 적용되며, 배터리 잔량 20%의 "
 "위험 수준 정책도 계속 적용됩니다."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 26
-#: usr/share/biglinux/biglinux-settings/system_page.py:13
-msgid "General system settings."
-msgstr "일반 시스템 설정."
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:169
+msgid "Fix problems after resume"
+msgstr "절전 해제 후 문제 해결"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 21
-#: usr/share/biglinux/biglinux-settings/system_page.py:19
-msgid "SSH"
-msgstr "SSH"
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:170
+msgid ""
+"Compatibility fixes for problems some computers have when waking from "
+"suspend."
+msgstr "일부 컴퓨터에서 일시 중단 상태에서 깨어날 때 생기는 문제에 대한 호환성 수정입니다."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 22
-#: usr/share/biglinux/biglinux-settings/system_page.py:20
-msgid "Enable remote access via ssh."
-msgstr "SSH를 통한 원격 액세스를 활성화합니다."
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:179
+msgid "Light sleep (s2idle)"
+msgstr "가벼운 절전 (s2idle)"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:181
+msgid ""
+"Uses a lighter sleep mode that keeps the Fn keys working after resume on some"
+" ASUS notebooks. Uses slightly more battery while suspended."
+msgstr ""
+"더 가벼운 절전 모드를 사용하여 일부 ASUS 노트북에서 깨어난 후에도 Fn 키가 작동하게 합니다. 일시 중단 중 배터리를 약간 더 "
+"사용합니다."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 91
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:188
+msgid ""
+"S3 deep sleep can cause the Embedded Controller to stop generating hotkey "
+"interrupts. s2idle keeps the EC powered, avoiding this issue at a small cost "
+"in battery consumption."
+msgstr ""
+"S3 깊은 수면은 임베디드 컨트롤러가 핫키 인터럽트를 생성하는 것을 중지시킬 수 있습니다. s2idle은 EC에 전원을 공급하여 이 문제를"
+" 피하며, 배터리 소비에서 약간의 비용이 발생합니다."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+msgid "Fn keys"
+msgstr "Fn 키"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+msgid "hotkeys"
+msgstr "단축키"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:200
+msgid "Avoid losing Wi-Fi after resume"
+msgstr "절전 해제 후 Wi-Fi 끊김 방지"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:202
+msgid ""
+"Compatibility fix for some Realtek Wi-Fi adapters: keeps the adapter from "
+"fully powering off during suspend, so the connection works after resume."
+msgstr ""
+"일부 Realtek Wi-Fi 어댑터를 위한 호환성 수정입니다. 일시 중단 중 어댑터 전원이 완전히 꺼지지 않게 하여 깨어난 후에도 연결이"
+" 작동하게 합니다."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 116
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:209
+msgid ""
+"Some Realtek RTL8852BE/CE chips fail to reinitialize after d3cold power "
+"gating. This keeps the chip in d3hot (PCIe link alive) during suspend."
+msgstr ""
+"일부 Realtek RTL8852BE/CE 칩은 d3cold 전원 차단 후 재초기화에 실패합니다. 이로 인해 칩이 대기 중에 "
+"d3hot(PCIe 링크 활성 상태)에 유지됩니다."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+msgid "Realtek"
+msgstr "Realtek"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:219
+msgid "Restore brightness after resume"
+msgstr "절전 해제 후 밝기 복원"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:221
+msgid ""
+"Saves the screen brightness and keyboard lights before suspending and "
+"restores them when the computer wakes up."
+msgstr "일시 중단하기 전에 화면 밝기와 키보드 조명을 저장하고 컴퓨터가 깨어날 때 복원합니다."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+#: usr/share/biglinux/biglinux-settings/usability_page.py:37
+msgid "backlight"
+msgstr "백라이트"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+msgid "brightness"
+msgstr "밝기"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:233
+msgid "Restart failed extensions after resume"
+msgstr "절전 해제 후 실패한 확장 프로그램 다시 시작"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:235
+msgid ""
+"Checks GNOME Shell extensions after resume and restarts the ones left in an "
+"error state."
+msgstr "깨어난 후 GNOME Shell 확장 프로그램을 확인하고 오류 상태인 것을 다시 시작합니다."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
+msgid "GNOME"
+msgstr "GNOME"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
+msgid "extensions"
+msgstr "확장 프로그램"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:11
+msgid "Startup, disks and remote access."
+msgstr "시작, 디스크, 원격 접속입니다."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:21
+msgid "Remote terminal access (SSH)"
+msgstr "원격 터미널 접속 (SSH)"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:23
+msgid ""
+"Lets other computers open a terminal on this one. Stays on until turned off "
+"or the computer restarts."
+msgstr "다른 컴퓨터에서 이 컴퓨터의 터미널을 열 수 있게 합니다. 끄거나 컴퓨터를 다시 시작할 때까지 켜진 상태로 유지됩니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
 # line: 27
-#: usr/share/biglinux/biglinux-settings/system_page.py:23
+#: usr/share/biglinux/biglinux-settings/system_page.py:28
 #, python-brace-format
 msgid "SSH Address: {}"
 msgstr "SSH 주소: {}"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 147
-#: usr/share/biglinux/biglinux-settings/system_page.py:27
-msgid "SSH always on"
-msgstr "SSH 항상 켜짐"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 149
-#: usr/share/biglinux/biglinux-settings/system_page.py:28
-msgid "Turn on ssh remote access at boot."
-msgstr "부팅 시 SSH 원격 액세스 활성화."
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 162
-#: usr/share/biglinux/biglinux-settings/system_page.py:37
-msgid "Fast Grub"
-msgstr "빠른 그럽"
-
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 163
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 21
+#: usr/share/biglinux/biglinux-settings/system_page.py:29
 #: usr/share/biglinux/biglinux-settings/system_page.py:38
-msgid "Decreases grub display time."
-msgstr "grub 표시 시간을 줄입니다."
+msgid "SSH"
+msgstr "SSH"
 
-# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 47
-#: usr/share/biglinux/biglinux-settings/system_page.py:47
-msgid "Boot messages"
-msgstr "부트 메시지"
+#: usr/share/biglinux/biglinux-settings/system_page.py:29
+#: usr/share/biglinux/biglinux-settings/system_page.py:38
+msgid "remote access"
+msgstr "원격 접속"
 
-# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 48
+#: usr/share/biglinux/biglinux-settings/system_page.py:29
+msgid "terminal"
+msgstr "터미널"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:33
+msgid "Start automatically"
+msgstr "자동으로 시작"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:34
+msgid "Turn on remote terminal access every time the computer starts."
+msgstr "컴퓨터가 시작될 때마다 원격 터미널 접속을 켭니다."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:42
+msgid "Startup"
+msgstr "시작"
+
 #: usr/share/biglinux/biglinux-settings/system_page.py:48
-msgid "Show system messages below the boot animation."
-msgstr "부트 애니메이션 아래에 시스템 메시지를 표시합니다."
+msgid "Shorter boot menu wait"
+msgstr "부팅 메뉴 대기 시간 단축"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 170
-#: usr/share/biglinux/biglinux-settings/system_page.py:57
-msgid "Auto-mount Partitions"
-msgstr "자동 마운트 파티션"
+#: usr/share/biglinux/biglinux-settings/system_page.py:49
+msgid "Shows the boot menu for less time before starting the system."
+msgstr "시스템을 시작하기 전에 부팅 메뉴를 더 짧게 표시합니다."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 171
-#: usr/share/biglinux/biglinux-settings/system_page.py:58
-msgid "Auto mount partitions in internal disks on boot."
-msgstr "부팅 시 내부 디스크의 파티션 자동 마운트."
+#: usr/share/biglinux/biglinux-settings/system_page.py:53
+msgid "GRUB"
+msgstr "GRUB"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 14
-#: usr/share/biglinux/biglinux-settings/usability_page.py:12
-msgid "User and Visual system settings."
-msgstr "사용자 및 시각 시스템 설정."
+#: usr/share/biglinux/biglinux-settings/system_page.py:53
+#: usr/share/biglinux/biglinux-settings/system_page.py:65
+msgid "boot"
+msgstr "부팅"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:60
+msgid "Show boot messages"
+msgstr "부팅 메시지 표시"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:61
+msgid ""
+"Shows system messages below the boot animation while the computer starts."
+msgstr "컴퓨터가 시작되는 동안 부팅 애니메이션 아래에 시스템 메시지를 표시합니다."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:65
+msgid "splash"
+msgstr "스플래시"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:70
+msgid "Disks"
+msgstr "디스크"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:76
+msgid "Mount internal disks at startup"
+msgstr "시작 시 내장 디스크 마운트"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:78
+msgid ""
+"Makes the partitions of the internal disks available automatically when the "
+"computer starts."
+msgstr "컴퓨터가 시작될 때 내장 디스크의 파티션을 자동으로 사용할 수 있게 합니다."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:83
+msgid "auto-mount"
+msgstr "자동 마운트"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:83
+msgid "partitions"
+msgstr "파티션"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:9
+msgid "Windows, keyboard and recent files."
+msgstr "창, 키보드, 최근 파일입니다."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:13
+msgid "Keyboard"
+msgstr "키보드"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:19
+msgid "Numeric keypad on at login"
+msgstr "로그인 시 숫자 키패드 켜기"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:21
+msgid ""
+"Turns Num Lock on at the login screen. Has no effect with automatic login."
+msgstr "로그인 화면에서 Num Lock을 켭니다. 자동 로그인에서는 효과가 없습니다."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:25
+msgid "Num Lock"
+msgstr "Num Lock"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 114
-#: usr/share/biglinux/biglinux-settings/usability_page.py:19
+#: usr/share/biglinux/biglinux-settings/usability_page.py:25
 msgid "NumLock"
 msgstr "넘록"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 115
-#: usr/share/biglinux/biglinux-settings/usability_page.py:20
-msgid "Initial NumLock state. Ignored if autologin is enabled."
-msgstr "초기 NumLock 상태. 자동 로그인 활성화 시 무시됩니다."
-
-#: usr/share/biglinux/biglinux-settings/usability_page.py:28
+#: usr/share/biglinux/biglinux-settings/usability_page.py:31
 msgid "Keyboard Light"
 msgstr "키보드 조명"
 
-#: usr/share/biglinux/biglinux-settings/usability_page.py:30
+#: usr/share/biglinux/biglinux-settings/usability_page.py:33
 msgid ""
 "Keep the keyboard backlight on. For keyboards whose light is controlled by "
 "the Scroll Lock LED."
 msgstr "키보드 백라이트를 켜진 상태로 유지합니다. Scroll Lock LED로 조명이 제어되는 키보드용입니다."
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 131
-#: usr/share/biglinux/biglinux-settings/usability_page.py:39
-msgid "Window Button On Left Side"
-msgstr "왼쪽에 있는 창 버튼"
+#: usr/share/biglinux/biglinux-settings/usability_page.py:37
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
 
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 132
-#: usr/share/biglinux/biglinux-settings/usability_page.py:40
-msgid "Maximize, minimize, and close buttons on the left side of the window."
-msgstr "창의 왼쪽에 있는 최대화, 최소화 및 닫기 버튼."
+#: usr/share/biglinux/biglinux-settings/usability_page.py:41
+msgid "Windows"
+msgstr "창"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:47
+msgid "Window buttons on the left"
+msgstr "창 버튼을 왼쪽에 배치"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:48
+msgid ""
+"Shows the close, minimize and maximize buttons on the left side of windows."
+msgstr "닫기, 최소화, 최대화 버튼을 창의 왼쪽에 표시합니다."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:51
+msgid "close button"
+msgstr "닫기 버튼"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:51
+msgid "title bar"
+msgstr "제목 표시줄"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:57
+msgid "Window snapping zones (KZones)"
+msgstr "창 스냅 영역 (KZones)"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:59
+msgid ""
+"Lets you drag windows into predefined screen zones to arrange them side by "
+"side. Installs KZones if it is missing."
+msgstr "창을 미리 정의된 화면 영역으로 끌어 나란히 배치할 수 있게 합니다. KZones가 없으면 설치합니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 72
-#: usr/share/biglinux/biglinux-settings/usability_page.py:48
+#: usr/share/biglinux/biglinux-settings/usability_page.py:63
 msgid "KZones"
-msgstr "K존"
+msgstr "KZones"
 
-# File: usr/share/biglinux/biglinux-settings/usability_page.py, line: 39
-#: usr/share/biglinux/biglinux-settings/usability_page.py:50
-msgid "Enable window tiling zones for the KDE Plasma desktop."
-msgstr "KDE Plasma 데스크탑의 창 타일링 영역 활성화."
+#: usr/share/biglinux/biglinux-settings/usability_page.py:63
+msgid "tiling"
+msgstr "타일링"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:67
+msgid "Files"
+msgstr "파일"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:73
+msgid "Show recent files and folders"
+msgstr "최근 파일 및 폴더 표시"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:75
+msgid ""
+"Remembers recently opened files and folders in the file manager and the "
+"application menu. On KDE Plasma, turning it off also clears the current list."
+msgstr ""
+"파일 관리자와 애플리케이션 메뉴에서 최근에 연 파일과 폴더를 기억합니다. KDE Plasma에서는 끄면 현재 목록도 지워집니다."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:79
+msgid "history"
+msgstr "기록"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:79
+msgid "privacy"
+msgstr "개인정보 보호"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:79
+msgid "recent"
+msgstr "최근"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 126
+#~ msgid "Librewolf"
+#~ msgstr "Librewolf"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 144
+#~ msgid "Palemoon"
+#~ msgstr "Palemoon"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 156
+#~ msgid "Libreoffice"
+#~ msgstr "Libreoffice"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 30
+#~ msgid "AI Interfaces"
+#~ msgstr "AI 인터페이스"
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 16
+#~ msgid "Graphical interface for artificial intelligence."
+#~ msgstr "인공지능을 위한 그래픽 인터페이스."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 23
+#~ msgid "Choose which Ollama server is best for your hardware."
+#~ msgstr "하드웨어에 가장 적합한 Ollama 서버를 선택하세요."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
+#~ msgid "Select the variant that matches your GPU hardware."
+#~ msgstr "GPU 하드웨어와 일치하는 변형을 선택하십시오."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 47
+#~ msgid "A variety of chats like Plasmoid for your KDE Plasma desktop."
+#~ msgstr "KDE Plasma 데스크탑을 위한 Plasmoid와 같은 다양한 채팅."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 128
+#~ msgid "Graphical interface for managing Ollama models and chat."
+#~ msgstr "Ollama 모델 및 채팅 관리를 위한 그래픽 인터페이스."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 136
+#~ msgid "User-friendly Desktop Client App for AI Models/LLMs."
+#~ msgstr "AI 모델/LLM을 위한 사용자 친화적인 데스크톱 클라이언트 앱."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 144
+#~ msgid ""
+#~ "LM Studio - A desktop app for exploring and running large language models "
+#~ "locally."
+#~ msgstr "LM 스튜디오 - 대규모 언어 모델을 로컬에서 탐색하고 실행하기 위한 데스크톱 앱."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 87
+#~ msgid ""
+#~ "Open-source, privacy-focused alternative to Google's NotebookLM. Requires "
+#~ "Docker enabled."
+#~ msgstr "Google NotebookLM의 오픈소스, 개인정보 보호 중심 대안입니다. Docker가 활성화되어 있어야 합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 87
+#~ msgid "ComfyUI (GPU ONLY)"
+#~ msgstr "ComfyUI (GPU 전용)"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 88
+#~ msgid "The most powerful and modular visual AI engine and application."
+#~ msgstr "가장 강력하고 모듈화된 비주얼 AI 엔진 및 애플리케이션."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 55
+#~ msgid "OllamaCPU"
+#~ msgstr "OllamaCPU"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 56
+#~ msgid "Local AI server. For CPUs only."
+#~ msgstr "로컬 AI 서버. CPU 전용."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 64
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 82
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 100
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 118
+#~ msgid "Share ollama on the local network."
+#~ msgstr "로컬 네트워크에서 ollama 공유."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 75
+#~ msgid "Local AI server. For CPUs, AMD/Nvidia and integrated GPUs."
+#~ msgstr "로컬 AI 서버. CPU용, AMD/Nvidia 및 통합 GPU."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 110
+#~ msgid "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
+#~ msgstr "로컬 AI 서버. 2000 시리즈부터 시작하는 최신 Nvidia GPU용."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 111
+#~ msgid ""
+#~ "Local AI server. For newer AMD GPUs, starting from the 6000 series.\n"
+#~ "Consider using Vulkan, in many tests, Vulkan performed better than ROCm."
+#~ msgstr ""
+#~ "로컬 AI 서버. 6000 시리즈부터 최신 AMD GPU에 대해 지원합니다. 많은 테스트에서 Vulkan이 ROCm보다 더 나은 성능을 "
+#~ "보였습니다."
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 11
+#~ msgid "AI Coding Assistants"
+#~ msgstr "AI 코딩 어시스턴트"
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 12
+#~ msgid "Open-source coding agents powered by language models."
+#~ msgstr "언어 모델로 구동되는 오픈소스 코딩 에이전트입니다."
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 23
+#~ msgid ""
+#~ "Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
+#~ "models. Installs nodejs, npm and ripgrep as dependencies."
+#~ msgstr ""
+#~ "OpenAI, Gemini, DeepSeek, Ollama 및 200개 이상의 모델을 위한 오픈소스 코딩 에이전트 CLI입니다. 종속성으로"
+#~ " nodejs, npm 및 ripgrep을 설치합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 15
+#~ msgid "Manage physical devices."
+#~ msgstr "물리적 장치 관리."
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 39
+#~ msgid "Enable the Wi-Fi adapter."
+#~ msgstr "Wi-Fi 어댑터 활성화."
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 43
+#~ msgid "Enable the Bluetooth adapter."
+#~ msgstr "블루투스 어댑터를 활성화합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/dispositivos_page.py, line: 84
+#~ msgid "Advanced audio effects processor that improves sound quality."
+#~ msgstr "사운드 품질을 향상시키는 고급 오디오 효과 프로세서."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 71
+#~ msgid "Reverse mouse scrolling"
+#~ msgstr "마우스 스크롤 반전"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 72
+#~ msgid "Reverse mouse scrolling without restarting the session."
+#~ msgstr "세션을 재시작하지 않고 마우스 스크롤 방향 반전."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 16
+#~ msgid "Container service — enable to use containers below."
+#~ msgstr "컨테이너 서비스 — 아래의 컨테이너를 사용할 수 있도록 활성화합니다."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 137
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 18
+#~ msgid "Containers"
+#~ msgstr "컨테이너"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 23
+#~ msgid "Manage container technologies."
+#~ msgstr "컨테이너 기술 관리."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 30
+#~ msgid "Media &amp; Cloud"
+#~ msgstr "미디어 및 클라우드"
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 31
+#~ msgid "Media servers and cloud storage containers."
+#~ msgstr "미디어 서버 및 클라우드 스토리지 컨테이너."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 36
+#~ msgid "Network &amp; Security"
+#~ msgstr "네트워크 및 보안"
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 37
+#~ msgid "Network tools and security containers."
+#~ msgstr "네트워크 도구 및 보안 컨테이너."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 42
+#~ msgid "Development &amp; Tools"
+#~ msgstr "개발 및 도구"
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 43
+#~ msgid "Development stacks and utility containers."
+#~ msgstr "개발 스택 및 유틸리티 컨테이너."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 52
+#~ msgid "Enable Docker container engine."
+#~ msgstr "도커 컨테이너 엔진 활성화."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 62
+#~ msgid "Install Nextcloud Plus cloud storage container."
+#~ msgstr "넥스트클라우드 플러스 클라우드 저장소 컨테이너 설치."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 52
+#~ msgid "Run Nextcloud Plus."
+#~ msgstr "Nextcloud Plus 실행."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 81
+#~ msgid "Install AdGuard Home DNS ad-blocker container."
+#~ msgstr "AdGuard Home DNS 광고 차단기 컨테이너 설치."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 71
+#~ msgid "Run AdGuard."
+#~ msgstr "AdGuard를 실행하세요."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 100
+#~ msgid "Install Jellyfin media server container."
+#~ msgstr "젤리핀 미디어 서버 컨테이너 설치."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 90
+#~ msgid "Run Jellyfin."
+#~ msgstr "젤리핀 실행."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 119
+#~ msgid "Install LAMP stack container (Linux, Apache, MySQL, PHP)."
+#~ msgstr "LAMP 스택 컨테이너 설치 (리눅스, 아파치, MySQL, PHP)."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 109
+#~ msgid "Run LAMP."
+#~ msgstr "LAMP 실행."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 138
+#~ msgid "Install Portainer Agent container for cluster management."
+#~ msgstr "클러스터 관리를 위한 Portainer Agent 컨테이너 설치."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 128
+#~ msgid "Run Portainer Client."
+#~ msgstr "포테이너 클라이언트를 실행하세요."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 157
+#~ msgid "Install SWS static web server container."
+#~ msgstr "SWS 정적 웹 서버 컨테이너 설치."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 147
+#~ msgid "Run SWS."
+#~ msgstr "SWS 실행."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 176
+#~ msgid "Install V2RayA network proxy container."
+#~ msgstr "V2RayA 네트워크 프록시 컨테이너 설치."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 166
+#~ msgid "Run V2RayA."
+#~ msgstr "V2RayA를 실행하세요."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 195
+#~ msgid "Install the open-source alternative to Google's NotebookLM."
+#~ msgstr "Google NotebookLM의 오픈소스 대안을 설치합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 144
+#~ msgid "Search..."
+#~ msgstr "검색..."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 107
+#~ msgid "Usability"
+#~ msgstr "사용성"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 158
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 167
+#~ msgid "PreLoad"
+#~ msgstr "프리로드"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 161
+#~ msgid "A.I."
+#~ msgstr "인공지능"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 315
+#~ msgid "Developer"
+#~ msgstr "개발자"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 302
+#~ msgid "Suspend"
+#~ msgstr "일시 중지"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 16
+#~ msgid "BigLinux performance tweaks."
+#~ msgstr "BigLinux 성능 조정."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/usability/gamemode_config_dialog.py, line: 91
+#~ msgid "Disable Visual Effects"
+#~ msgstr "비주얼 효과 비활성화"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 35
+#~ msgid ""
+#~ "Disables KWin visual effects (blur, shadows, animations). Reduces GPU load "
+#~ "and frees memory."
+#~ msgstr "KWin 시각 효과(블러, 그림자, 애니메이션)를 비활성화합니다. GPU 부하를 줄이고 메모리를 해제합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 63
+#~ msgid "CPU Maximum Performance"
+#~ msgstr "CPU 최대 성능"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 51
+#~ msgid ""
+#~ "Forces maximum processor performance mode. Ensures the processor uses maximum"
+#~ " frequency."
+#~ msgstr "최대 프로세서 성능 모드를 강제합니다. 프로세서가 최대 주파수를 사용하도록 보장합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 79
+#~ msgid "Disable Baloo Indexer"
+#~ msgstr "Baloo 인덱서 비활성화"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 67
+#~ msgid "Disables the Baloo file indexer. Avoids disk I/O overhead."
+#~ msgstr "Baloo 파일 인덱서를 비활성화합니다. 디스크 I/O 오버헤드를 피합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/usability/gamemode_config_dialog.py, line: 136
+#~ msgid "Unload S.M.A.R.T Monitor"
+#~ msgstr "S.M.A.R.T 모니터 언로드"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 83
+#~ msgid "Disables S.M.A.R.T disk monitoring. Reduces disk I/O and CPU usage."
+#~ msgstr "S.M.A.R.T 디스크 모니터링을 비활성화합니다. 디스크 I/O 및 CPU 사용량을 줄입니다."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 169
-#: usr/share/biglinux/biglinux-settings/usability_page.py:59
-msgid "Recent Files & Locations"
-msgstr "최근 파일 및 위치"
+#~ msgid "Meltdown Mitigations off"
+#~ msgstr "멜트다운 완화 비활성화"
+
+# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 62
+#~ msgid "Using mitigations=off will make your machine faster and less secure!"
+#~ msgstr "완화 사용=끄기를 사용하면 컴퓨터가 더 빨라지지만 보안이 낮아집니다!"
+
+# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 67
+#~ msgid ""
+#~ "This will disable CPU security mitigations (Meltdown/Spectre). Your system "
+#~ "will be faster but vulnerable to hardware-level attacks. Are you sure you "
+#~ "want to continue?"
+#~ msgstr ""
+#~ "이렇게 하면 CPU 보안 완화(Meltdown/Spectre)가 비활성화됩니다. 시스템이 더 빨라지지만 하드웨어 수준의 공격에 "
+#~ "취약해집니다. 계속 진행하시겠습니까?"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 176
+#~ msgid "noWatchdog"
+#~ msgstr "노워치독"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 177
+#~ msgid ""
+#~ "Disables the hardware watchdog and TSC clocksource systems, maintaining high "
+#~ "performance but removing automatic protections against system crashes."
+#~ msgstr ""
+#~ "하드웨어 감시 타이머 및 TSC 클록 소스 시스템을 비활성화하여 높은 성능을 유지하지만 시스템 충돌에 대한 자동 보호 기능을 제거합니다."
+
+# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 81
+#~ msgid ""
+#~ "This will disable the hardware watchdog. Your system will no longer "
+#~ "automatically recover from certain types of crashes. Are you sure you want to"
+#~ " continue?"
+#~ msgstr ""
+#~ "이렇게 하면 하드웨어 감시 타이머가 비활성화됩니다. 시스템이 특정 유형의 충돌에서 더 이상 자동으로 복구되지 않습니다. 계속 "
+#~ "진행하시겠습니까?"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 103
+#~ msgid "Preload"
+#~ msgstr "프리로드"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 105
+#~ msgid "Preload applications into memory to open them faster."
+#~ msgstr "애플리케이션을 메모리에 미리 로드하여 더 빠르게 열 수 있습니다."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 72
+#~ msgid "Automatic Suspend"
+#~ msgstr "자동 절전 모드"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 73
+#~ msgid "Choose when inactivity and low battery may suspend the system."
+#~ msgstr "비활성 상태 및 배터리 부족 시 시스템이 절전 모드로 전환되는 조건을 선택합니다."
+
+#~ msgid "Disable idle suspend while plugged in"
+#~ msgstr "전원 연결 시 유휴 절전 모드 비활성화"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 81
+#~ msgid "Disables automatic suspend caused by inactivity on AC power."
+#~ msgstr "AC 전원 사용 중 비활성으로 인한 자동 절전 모드를 비활성화합니다."
+
+#~ msgid "Disable idle suspend on battery"
+#~ msgstr "배터리 사용 시 유휴 절전 모드 비활성화"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 89
+#~ msgid "Keeps the system awake on battery until a critical level is reached."
+#~ msgstr "배터리 잔량이 임계 수준에 도달할 때까지 시스템을 깨어 있는 상태로 유지합니다."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 96
+#~ msgid "Suspend only when battery reaches 20%"
+#~ msgstr "배터리가 20%일 때만 절전 모드로 전환"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 98
+#~ msgid ""
+#~ "Disables idle suspend on battery and suspends automatically when the charge "
+#~ "reaches 20%."
+#~ msgstr "배터리 사용 중 유휴 절전 모드를 비활성화하고 배터리 충전량이 20%에 도달하면 자동으로 절전 모드로 전환합니다."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 75
+#~ msgid "Sleep Mode"
+#~ msgstr "절전 모드"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 76
+#~ msgid "Configure how the system suspends."
+#~ msgstr "시스템이 일시 중지되는 방식을 구성합니다."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 83
+#~ msgid "Use s2idle (light sleep)"
+#~ msgstr "s2idle 사용 (경량 절전 모드)"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 85
+#~ msgid ""
+#~ "Uses a lighter sleep mode that preserves Fn keys and device state. "
+#~ "Recommended for ASUS notebooks."
+#~ msgstr "Fn 키와 장치 상태를 유지하는 더 가벼운 절전 모드를 사용합니다. ASUS 노트북에 권장됩니다."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 100
+#~ msgid "WiFi"
+#~ msgstr "와이파이"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 101
+#~ msgid "Prevent WiFi issues after suspend."
+#~ msgstr "일시 중단 후 WiFi 문제 방지."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 108
+#~ msgid "Protect WiFi on suspend"
+#~ msgstr "일시 중지 시 WiFi 보호"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 110
+#~ msgid ""
+#~ "Prevents the Realtek WiFi chip from fully powering off (d3cold), avoiding "
+#~ "connection loss after resume."
+#~ msgstr "Realtek WiFi 칩이 완전히 전원이 꺼지는 것을 방지하여(d3cold), 재개 후 연결 손실을 피합니다."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 124
+#~ msgid "Display and Keyboard"
+#~ msgstr "디스플레이 및 키보드"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 125
+#~ msgid "Preserve brightness and LED state across suspend."
+#~ msgstr "일시 중단 시 밝기 및 LED 상태 유지."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 132
+#~ msgid "Save/restore brightness on suspend"
+#~ msgstr "일시 중지 시 밝기 저장/복원"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 134
+#~ msgid ""
+#~ "Saves screen brightness and keyboard LEDs before suspending and restores them"
+#~ " on resume."
+#~ msgstr "일시 중단하기 전에 화면 밝기와 키보드 LED를 저장하고, 다시 시작할 때 복원합니다."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 144
+#~ msgid "GNOME Shell Extensions"
+#~ msgstr "GNOME 셸 확장"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 145
+#~ msgid "Automatic health check after resume."
+#~ msgstr "재개 후 자동 건강 검사."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 152
+#~ msgid "Extension health monitor"
+#~ msgstr "확장 프로그램 상태 모니터"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 154
+#~ msgid ""
+#~ "Detects GNOME Shell extensions in error state after resume and automatically "
+#~ "restarts them."
+#~ msgstr "재개 후 오류 상태에 있는 GNOME Shell 확장을 감지하고 자동으로 다시 시작합니다."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 163
+#~ msgid "Lid Switch"
+#~ msgstr "뚜껑 스위치"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 164
+#~ msgid "Laptop lid close behavior."
+#~ msgstr "노트북 뚜껑 닫기 동작."
+
+#~ msgid ""
+#~ "Keeps the session and network active when the lid is closed on AC power."
+#~ msgstr "AC 전원 사용 중 덮개를 닫아도 세션과 네트워크 연결을 유지합니다."
+
+#~ msgid ""
+#~ "Keeps the session and network active when the lid is closed on battery power."
+#~ msgstr "배터리 사용 중 덮개를 닫아도 세션과 네트워크 연결을 유지합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 26
+#~ msgid "General system settings."
+#~ msgstr "일반 시스템 설정."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 22
+#~ msgid "Enable remote access via ssh."
+#~ msgstr "SSH를 통한 원격 액세스를 활성화합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 147
+#~ msgid "SSH always on"
+#~ msgstr "SSH 항상 켜짐"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 149
+#~ msgid "Turn on ssh remote access at boot."
+#~ msgstr "부팅 시 SSH 원격 액세스 활성화."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 162
+#~ msgid "Fast Grub"
+#~ msgstr "빠른 그럽"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 163
+#~ msgid "Decreases grub display time."
+#~ msgstr "grub 표시 시간을 줄입니다."
+
+# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 47
+#~ msgid "Boot messages"
+#~ msgstr "부트 메시지"
+
+# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 48
+#~ msgid "Show system messages below the boot animation."
+#~ msgstr "부트 애니메이션 아래에 시스템 메시지를 표시합니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 170
+#~ msgid "Auto-mount Partitions"
+#~ msgstr "자동 마운트 파티션"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 171
+#~ msgid "Auto mount partitions in internal disks on boot."
+#~ msgstr "부팅 시 내부 디스크의 파티션 자동 마운트."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 14
+#~ msgid "User and Visual system settings."
+#~ msgstr "사용자 및 시각 시스템 설정."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 115
+#~ msgid "Initial NumLock state. Ignored if autologin is enabled."
+#~ msgstr "초기 NumLock 상태. 자동 로그인 활성화 시 무시됩니다."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 131
+#~ msgid "Window Button On Left Side"
+#~ msgstr "왼쪽에 있는 창 버튼"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 132
+#~ msgid "Maximize, minimize, and close buttons on the left side of the window."
+#~ msgstr "창의 왼쪽에 있는 최대화, 최소화 및 닫기 버튼."
+
+# File: usr/share/biglinux/biglinux-settings/usability_page.py, line: 39
+#~ msgid "Enable window tiling zones for the KDE Plasma desktop."
+#~ msgstr "KDE Plasma 데스크탑의 창 타일링 영역 활성화."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 169
+#~ msgid "Recent Files & Locations"
+#~ msgstr "최근 파일 및 위치"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 170
-#: usr/share/biglinux/biglinux-settings/usability_page.py:61
-msgid ""
-"Restores the 'Recent Files' and 'Recent Locations' functionality that appears"
-" empty in Dolphin and the Application Menu."
-msgstr "Dolphin 및 애플리케이션 메뉴에서 비어 있는 '최근 파일' 및 '최근 위치' 기능을 복원합니다."
+#~ msgid ""
+#~ "Restores the 'Recent Files' and 'Recent Locations' functionality that appears"
+#~ " empty in Dolphin and the Application Menu."
+#~ msgstr "Dolphin 및 애플리케이션 메뉴에서 비어 있는 '최근 파일' 및 '최근 위치' 기능을 복원합니다."

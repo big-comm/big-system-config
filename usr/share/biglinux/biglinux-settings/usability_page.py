@@ -5,61 +5,76 @@ class UsabilityPage(BaseSettingsPage):
     def __init__(self, main_window, **kwargs):
         super().__init__(main_window, **kwargs)
 
-        content = self.create_scrolled_content()
-
-        ## GROUP: Usability ##
-        group = self.create_group(
-            _("Usability"), _("User and Visual system settings."), "usability"
+        content = self.create_scrolled_content(
+            _("Appearance & Usage"), _("Windows, keyboard and recent files.")
         )
-        content.append(group)
+
+        ## GROUP: Keyboard ##
+        keyboard = self.create_group(_("Keyboard"), None, "usability")
+        content.append(keyboard)
 
         # numLock
         self.create_row(
-            group,
-            _("NumLock"),
-            _("Initial NumLock state. Ignored if autologin is enabled."),
+            keyboard,
+            _("Numeric keypad on at login"),
+            _(
+                "Turns Num Lock on at the login screen. Has no effect with automatic login."
+            ),
             "numLock",
             "numlock-symbolic",
+            keywords=[_("Num Lock"), _("NumLock")],
         )
 
         # keyboardLed
         self.create_row(
-            group,
+            keyboard,
             _("Keyboard Light"),
             _(
                 "Keep the keyboard backlight on. For keyboards whose light is controlled by the Scroll Lock LED."
             ),
             "keyboardLed",
             "keyboard-led-symbolic",
+            keywords=[_("backlight"), _("Scroll Lock")],
         )
+
+        ## GROUP: Windows ##
+        windows = self.create_group(_("Windows"), None, "usability")
+        content.append(windows)
 
         # windowButtonOnLeftSide
         self.create_row(
-            group,
-            _("Window Button On Left Side"),
-            _("Maximize, minimize, and close buttons on the left side of the window."),
+            windows,
+            _("Window buttons on the left"),
+            _("Shows the close, minimize and maximize buttons on the left side of windows."),
             "windowButtonOnLeftSide",
             "window-controls-symbolic",
+            keywords=[_("close button"), _("title bar")],
         )
 
         # KZones
         self.create_row(
-            group,
-            _("KZones"),
+            windows,
+            _("Window snapping zones (KZones)"),
             _(
-                "Enable window tiling zones for the KDE Plasma desktop."
+                "Lets you drag windows into predefined screen zones to arrange them side by side. Installs KZones if it is missing."
             ),
             "kzones",
             "kzones-symbolic",
+            keywords=[_("tiling"), _("KZones")],
         )
+
+        ## GROUP: Files ##
+        files = self.create_group(_("Files"), None, "usability")
+        content.append(files)
 
         # Recent Files & Locations
         self.create_row(
-            group,
-            _("Recent Files & Locations"),
+            files,
+            _("Show recent files and folders"),
             _(
-                "Restores the 'Recent Files' and 'Recent Locations' functionality that appears empty in Dolphin and the Application Menu."
+                "Remembers recently opened files and folders in the file manager and the application menu. On KDE Plasma, turning it off also clears the current list."
             ),
             "recentFiles",
             "recent_files-symbolic",
+            keywords=[_("recent"), _("history"), _("privacy")],
         )

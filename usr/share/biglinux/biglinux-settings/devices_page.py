@@ -26,39 +26,58 @@ class DevicesPage(BaseSettingsPage):
     def __init__(self, main_window, **kwargs):
         super().__init__(main_window, **kwargs)
 
-        # Create the container (base method)
-        content = self.create_scrolled_content()
-
-        # Create the group (base method)
-        group = self.create_group(
-            _("Devices"), _("Manage physical devices."), "devices"
-        )
-        content.append(group)
-
-        # Wifi
-        self.create_row(group, _("Wifi"), _("Enable the Wi-Fi adapter."), "wifi", "wifi-symbolic")
-
-        # Bluetooth
-        self.create_row(
-            group, _("Bluetooth"), _("Enable the Bluetooth adapter."), "bluetooth", "bluetooth-symbolic"
+        content = self.create_scrolled_content(
+            _("Devices"), _("Wireless, audio and input devices.")
         )
 
-        # JamesDSP
+        ## GROUP: Wireless ##
+        wireless = self.create_group(_("Wireless"), None, "devices")
+        content.append(wireless)
+
         self.create_row(
-            group,
-            _("JamesDSP"),
-            _("Advanced audio effects processor that improves sound quality."),
+            wireless,
+            _("Wi-Fi"),
+            _("Turns the Wi-Fi adapter on or off."),
+            "wifi",
+            "wifi-symbolic",
+            keywords=[_("Wifi"), _("wireless"), _("network")],
+        )
+        self.create_row(
+            wireless,
+            _("Bluetooth"),
+            _("Turns the Bluetooth adapter on or off."),
+            "bluetooth",
+            "bluetooth-symbolic",
+        )
+
+        ## GROUP: Audio ##
+        audio = self.create_group(_("Audio"), None, "devices")
+        content.append(audio)
+
+        self.create_row(
+            audio,
+            _("JamesDSP audio effects"),
+            _(
+                "Audio effects software that enhances the sound of all applications. Installs JamesDSP if it is missing and starts it with the session."
+            ),
             "jamesdsp",
             "jamesdsp-symbolic",
+            keywords=[_("equalizer"), _("sound"), _("JamesDSP")],
         )
 
-        # Reverse mouse scrolling
+        ## GROUP: Mouse ##
+        mouse = self.create_group(_("Mouse"), None, "devices")
+        content.append(mouse)
+
         self.create_row(
-            group,
-            _("Reverse mouse scrolling"),
-            _("Reverse mouse scrolling without restarting the session."),
+            mouse,
+            _("Natural scrolling"),
+            _(
+                "Reverses the scroll direction so the content follows the movement of the wheel or fingers, as on a touchscreen. Applies right away."
+            ),
             "reverse-mouse_scroll",
             "reverse-mouse_scroll-symbolic",
+            keywords=[_("reverse scrolling"), _("scroll direction"), _("mouse")],
         )
 
         # Network Interfaces (dynamic, discovered via nmcli)

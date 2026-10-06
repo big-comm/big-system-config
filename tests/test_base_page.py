@@ -65,6 +65,15 @@ class Widget:
     def update_property(self, *_args):
         pass
 
+    def add_css_class(self, name):
+        self.__dict__.setdefault("css", set()).add(name)
+
+    def remove_css_class(self, name):
+        self.__dict__.setdefault("css", set()).discard(name)
+
+    def has_css_class(self, name):
+        return name in self.__dict__.get("css", set())
+
 
 class Label(Widget):
     def __init__(self, text):
@@ -178,6 +187,23 @@ class Spinner(Widget):
     pass
 
 
+class Button(Widget):
+    def __init__(self, **kwargs):
+        super().__init__()
+        self.kwargs = kwargs
+        self.callbacks = []
+
+    def connect(self, _signal, callback):
+        self.callbacks.append(callback)
+
+    def set_tooltip_text(self, _text):
+        pass
+
+    def click(self):
+        for callback in self.callbacks:
+            callback(self)
+
+
 @pytest.fixture
 def base_page(monkeypatch):
     gtk = types.SimpleNamespace(
@@ -188,6 +214,7 @@ def base_page(monkeypatch):
         Revealer=Revealer,
         Switch=Switch,
         Spinner=Spinner,
+        Button=Button,
         Align=types.SimpleNamespace(CENTER=0),
         AccessibleProperty=types.SimpleNamespace(DESCRIPTION=0, LABEL=1),
     )
@@ -238,8 +265,9 @@ def test_check_parses_states(page, tmp_path):
         ("TRUE\n", True),
         ("true_disabled", "true_disabled"),
         ("unsupported", None),
-        ("", None),
-        ("garbage", None),
+        # Could not be read: reported as an error, not as "unsupported"
+        ("", "error"),
+        ("garbage", "error"),
     ]:
         script = write_script(tmp_path / "s.sh", f'printf "%s" "{output}"\n')
         status, _message = page.check_script_state(script)
@@ -249,7 +277,7 @@ def test_check_parses_states(page, tmp_path):
 def test_check_survives_non_utf8_output(page, tmp_path):
     script = write_script(tmp_path / "s.sh", "printf 'true\\xff\\xfe'\n")
     status, _message = page.check_script_state(script)
-    assert status is None
+    assert status == "error"
 
 
 def test_check_does_not_wait_on_inherited_stdin(page, tmp_path):
@@ -259,9 +287,9 @@ def test_check_does_not_wait_on_inherited_stdin(page, tmp_path):
     assert status is True
 
 
-def test_check_nonzero_exit_is_unavailable(page, tmp_path):
+def test_check_nonzero_exit_is_an_error(page, tmp_path):
     script = write_script(tmp_path / "s.sh", "echo true; exit 3\n")
-    assert page.check_script_state(script)[0] is None
+    assert page.check_script_state(script)[0] == "error"
 
 
 def test_check_missing_script(page, tmp_path):
@@ -547,3 +575,107 @@ def test_offline_local_ip_is_not_cached(base_page, monkeypatch):
     base_page.BaseSettingsPage._cached_local_ip = None
     assert base_page.BaseSettingsPage.get_local_ip() == "127.0.0.1"
     assert base_page.BaseSettingsPage._cached_local_ip is None
+
+
+# --- redesign: inverted rows, errors, undo flush, search metadata -------------
+
+
+def test_inverted_row_shows_the_opposite_of_the_script(page):
+    switch, _row = make_switch_row(page)
+    page._set_wd(switch, "inverted", True)
+    # "disableVisualEffects" check prints true = effects are off
+    page._apply_sync_results(page._sync_generation, [(switch, (True, ""))], [])
+    assert switch.active is False
+    page._apply_sync_results(page._sync_generation, [(switch, (False, ""))], [])
+    assert switch.active is True
+
+
+def test_inverted_row_sends_the_script_its_own_state(page, base_page, monkeypatch):
+    monkeypatch.setattr(base_page, "threading", types.SimpleNamespace(Thread=SyncThread))
+    switch, _row = make_switch_row(page)
+    page._set_wd(switch, "inverted", True)
+    page.sync_all_switches_async = MagicMock()
+    sent = []
+    page.toggle_script_state = lambda _path, state, **_kw: sent.append(state) or True
+
+    page._execute_toggle(switch, True)  # user turns "Visual effects" on
+
+    assert sent == [False]  # disableVisualEffects toggle false
+    assert switch.active is True
+
+
+def test_check_error_keeps_row_visible_with_retry(page):
+    switch, row = make_switch_row(page)
+    page.sync_all_switches_async = MagicMock()
+    page._apply_sync_results(page._sync_generation, [(switch, ("error", ""))], [])
+
+    assert row.visible is True
+    assert page._get_wd(row, "hidden_no_support") is False
+    assert switch.sensitive is False
+    assert row.has_css_class("row-error")
+    retry = page._get_wd(row, "error_retry")
+    assert retry is not None and retry in row.children
+    retry.click()
+    page.sync_all_switches_async.assert_called_once()
+
+    # A later successful check restores the row
+    page._apply_sync_results(page._sync_generation, [(switch, (True, ""))], [])
+    assert switch.sensitive is True
+    assert retry not in row.children
+    assert row.get_subtitle() == "Subtitle"
+    assert not row.has_css_class("row-error")
+
+
+def test_unsupported_is_still_hidden(page):
+    switch, row = make_switch_row(page)
+    page._apply_sync_results(page._sync_generation, [(switch, (None, ""))], [])
+    assert row.visible is False
+
+
+def test_new_change_applies_the_pending_one_instead_of_reverting(page):
+    first, _row = make_switch_row(page)
+    second, _row2 = make_switch_row(page)
+    page.main_window._pending_undo = {"switch": first, "state": True, "page": page}
+
+    page.on_switch_changed(second, True)
+
+    page.main_window._flush_pending_undo.assert_called_once_with()
+    page.main_window._cancel_pending_undo.assert_not_called()
+
+
+def test_restart_note_after_successful_change(page, base_page, monkeypatch):
+    monkeypatch.setattr(base_page, "threading", types.SimpleNamespace(Thread=SyncThread))
+    switch, _row = make_switch_row(page)
+    page._set_wd(switch, "after_restart", True)
+    page.sync_all_switches_async = MagicMock()
+    page.toggle_script_state = lambda *_a, **_kw: True
+    page._execute_toggle(switch, True)
+    message = page.main_window.show_toast.call_args[0][0]
+    # Compare with the translated text: the suite may run in any locale
+    assert message == base_page._("Saved. It will take effect after the next restart.")
+
+
+def test_search_ignores_accents_and_uses_keywords_and_section(page, base_page):
+    group = PreferencesGroup()
+    page._set_wd(group, "path_title", "Quando ficar sem usar")
+    row = ActionRow("Manter ligado na bateria", "Não suspende por inatividade")
+    page._register_search_metadata(row, group, ["não dormir"])
+    group.add(row)
+    content = Widget()
+    content.append(group)
+    page.content_box = content
+
+    for query in ("nao dormir", "NÃO DORMIR", "inatividade", "sem usar", "bateria"):
+        assert [r for r, _g in page.get_matching_rows(query)] == [row], query
+    assert page.get_matching_rows("wifi") == []
+    assert page.row_section(row) == "Quando ficar sem usar"
+
+
+def test_normalize_search_text(base_page):
+    assert base_page.normalize_search_text("Não Dormir &amp; Açúcar") == "nao dormir & acucar"
+
+
+def test_find_switch_by_script_name(page):
+    switch, _row = make_switch_row(page, script="system/sshStart.sh")
+    assert page.find_switch("sshStart") is switch
+    assert page.find_switch("missing") is None
