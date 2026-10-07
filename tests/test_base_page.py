@@ -204,9 +204,21 @@ class Button(Widget):
             callback(self)
 
 
+class StubNamespace(types.SimpleNamespace):
+    """gi.repository stand-in: names the tests do not model become mocks.
+
+    Python < 3.14 evaluates annotations such as ``-> Gtk.Box`` when a
+    function is defined, so every name used there must resolve.
+    """
+
+    def __getattr__(self, name):
+        return MagicMock(name=name)
+
+
 @pytest.fixture
 def base_page(monkeypatch):
-    gtk = types.SimpleNamespace(
+    gtk = StubNamespace(
+        Box=Widget,
         Widget=Widget,
         Label=Label,
         ListBox=ListBox,
@@ -218,7 +230,7 @@ def base_page(monkeypatch):
         Align=types.SimpleNamespace(CENTER=0),
         AccessibleProperty=types.SimpleNamespace(DESCRIPTION=0, LABEL=1),
     )
-    adw = types.SimpleNamespace(
+    adw = StubNamespace(
         Bin=Widget,
         ActionRow=ActionRow,
         ExpanderRow=ExpanderRow,
