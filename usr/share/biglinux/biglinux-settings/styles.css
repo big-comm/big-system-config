@@ -99,18 +99,19 @@
 
 /* ---- Rows ---------------------------------------------------------------- */
 
-/* Row that a search result or a home card pointed to */
-row.search-target {
+/* Row that a search result or a home card pointed to.
+   Class repeated to outrank the theme's row styles without a GTK node name. */
+.search-target.search-target {
     background-color: alpha(@accent_bg_color, 0.25);
     transition: background-color 400ms ease-out;
 }
 
 /* A setting whose state could not be checked (not the same as unsupported) */
-row.row-error .subtitle {
+.row-error.row-error .subtitle {
     color: @warning_color;
 }
 
 /* Sub-option without icon keeps the visual indentation under its parent */
-row.sub-row-indented {
+.sub-row-indented.sub-row-indented {
     padding-left: 26px;
 }

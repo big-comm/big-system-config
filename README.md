@@ -228,7 +228,7 @@ so install the package once to exercise options that need root.
 ### Tests and checks
 
 ```bash
-python -m pip install --require-hashes -r requirements-dev.txt
+python -m pip install --require-hashes --only-binary :all: -r requirements-dev.txt
 
 pytest -q
 ruff check usr tests locale/normalize-po-header.py
