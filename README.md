@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="usr/share/icons/hicolor/scalable/apps/biglinux-settings.svg" alt="Big System Config" width="128" height="128">
+<img src="usr/share/icons/hicolor/256x256/apps/biglinux-settings.png" alt="Big System Config" width="128" height="128">
 
 # Big System Config
 
