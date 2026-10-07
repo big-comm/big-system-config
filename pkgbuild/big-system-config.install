@@ -1,0 +1,50 @@
+# Pacman install scriptlet for big-system-config.
+
+# Renaming the package from biglinux-settings removes the old package first:
+# pacman then saves the user's modified /etc/biglinux/sleep.conf as
+# sleep.conf.pacsave and installs the default file (every handler off), so
+# fixes such as the Wi-Fi protection silently stop after the upgrade.
+# Bring the user's choices back from the .pacsave.
+_migrate_sleep_conf() {
+    local conf="/etc/biglinux/sleep.conf"
+    if [ "$(id -u)" -ne 0 ]; then
+        # Test-only override, never honoured as root
+        conf="${BIG_SYSTEM_CONFIG_SLEEP_CONF:-$conf}"
+    fi
+    local saved="$conf.pacsave"
+    [ -f "$saved" ] && [ -f "$conf" ] || return 0
+
+    local key value migrated=0
+    for key in backlight network; do
+        # Last value of the key inside [handlers], case-insensitive
+        value="$(awk -v key="$key" '
+            /^[[:space:]]*\[/ { in_handlers = (tolower($0) ~ /^[[:space:]]*\[handlers\][[:space:]]*$/); next }
+            in_handlers {
+                line = $0; sub(/[#;].*/, "", line)
+                n = index(line, "="); if (!n) next
+                k = tolower(substr(line, 1, n - 1)); gsub(/[[:space:]]/, "", k)
+                v = tolower(substr(line, n + 1)); gsub(/[[:space:]]/, "", v)
+                if (k == key) last = v
+            }
+            END { print last }' "$saved")"
+        case "$value" in
+            true|false) ;;
+            *) continue ;;
+        esac
+        if grep -qiE "^[[:space:]]*${key}[[:space:]]*=" "$conf"; then
+            sed -i -E "s/^[[:space:]]*${key}[[:space:]]*=.*/$key=$value/I" "$conf"
+        else
+            printf '%s=%s\n' "$key" "$value" >> "$conf"
+        fi
+        migrated=1
+    done
+
+    if [ "$migrated" = 1 ]; then
+        mv -f "$saved" "$saved.migrated"
+        echo ":: big-system-config: restored suspend options from the previous biglinux-settings configuration"
+    fi
+}
+
+post_install() {
+    _migrate_sleep_conf
+}

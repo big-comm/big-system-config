@@ -30,6 +30,7 @@ sha256sums=('SKIP')
 provides=('biglinux-settings')
 conflicts=('biglinux-settings')
 backup=('etc/biglinux/sleep.conf')
+install=big-system-config.install
 
 check() {
     cd "${srcdir}/${pkgname}"
