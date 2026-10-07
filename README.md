@@ -6,9 +6,9 @@
 
 **One place to tune BigLinux and BigCommunity: system, desktop, power, performance, devices, AI and services — with the consequences explained before you change anything.**
 
-[![Validate](https://github.com/big-comm/biglinux-settings/actions/workflows/validate.yml/badge.svg)](https://github.com/big-comm/biglinux-settings/actions/workflows/validate.yml)
+[![Validate](https://github.com/big-comm/big-system-config/actions/workflows/validate.yml/badge.svg)](https://github.com/big-comm/big-system-config/actions/workflows/validate.yml)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=big-comm_biglinux-settings&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=big-comm_biglinux-settings)
-[![Release](https://img.shields.io/github/v/release/big-comm/biglinux-settings?display_name=tag&sort=date)](https://github.com/big-comm/biglinux-settings/releases)
+[![Release](https://img.shields.io/github/v/release/big-comm/big-system-config?display_name=tag&sort=date)](https://github.com/big-comm/big-system-config/releases)
 [![License: GPL v3+](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
 
 ![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white)
@@ -122,17 +122,20 @@ work regardless of the desktop.
 
 ### BigLinux / BigCommunity
 
-BigLinux Settings ships with the distribution. To install or update it:
+BigLinux Settings ships with the distribution in the `big-system-config`
+package (formerly `biglinux-settings`). To install or update it:
 
 ```bash
-sudo pacman -Syu biglinux-settings
+sudo pacman -Syu big-system-config
 ```
+
+The launcher command stays `biglinux-settings`.
 
 ### Build the package
 
 ```bash
-git clone https://github.com/big-comm/biglinux-settings.git
-cd biglinux-settings/pkgbuild
+git clone https://github.com/big-comm/big-system-config.git
+cd big-system-config/pkgbuild
 makepkg -si
 ```
 
@@ -293,7 +296,7 @@ Bug reports, ideas and pull requests are welcome.
 4. Describe what changed and on which desktop/session you tested it.
 
 Report issues at
-[github.com/big-comm/biglinux-settings/issues](https://github.com/big-comm/biglinux-settings/issues).
+[github.com/big-comm/big-system-config/issues](https://github.com/big-comm/big-system-config/issues).
 
 ## License
 

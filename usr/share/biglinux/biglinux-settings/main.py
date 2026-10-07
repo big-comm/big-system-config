@@ -111,7 +111,7 @@ class BiglinuxSettingsApp(Adw.Application):
             version=APP_VERSION,
             developer_name="BigLinux Community",
             website="https://www.biglinux.com.br",
-            issue_url="https://github.com/biglinux/biglinux-settings/issues",
+            issue_url="https://github.com/big-comm/big-system-config/issues",
             license_type=Gtk.License.GPL_3_0,
             developers=[_("BigLinux Community")],
         )
