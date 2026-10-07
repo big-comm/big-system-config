@@ -61,7 +61,8 @@ class SystemPage(BaseSettingsPage):
             _("Shows system messages below the boot animation while the computer starts."),
             "plymouthBootMessages",
             "system-symbolic",
-            timeout=240,
+            # Rebuilds the initramfs of every installed kernel
+            timeout=900,
             keywords=[_("boot"), _("splash")],
             applies_after_restart=True,
         )
