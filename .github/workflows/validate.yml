@@ -43,4 +43,3 @@ jobs:
           msgfmt --check-format --output-file=/dev/null locale/biglinux-settings.pot
           for po in locale/*.po; do msgfmt --check --output-file=/dev/null "$po"; done
           desktop-file-validate usr/share/applications/br.com.biglinux-settings.desktop
-          xmllint --noout usr/share/icons/hicolor/scalable/apps/biglinux-settings.svg

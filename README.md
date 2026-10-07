@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="usr/share/icons/hicolor/scalable/apps/biglinux-settings.svg" alt="BigLinux Settings" width="128" height="128">
+<img src="usr/share/icons/hicolor/256x256/apps/biglinux-settings.png" alt="Big System Config" width="128" height="128">
 
-# BigLinux Settings
+# Big System Config
 
 **One place to tune BigLinux and BigCommunity: system, desktop, power, performance, devices, AI and services — with the consequences explained before you change anything.**
 
-[![Validate](https://github.com/big-comm/biglinux-settings/actions/workflows/validate.yml/badge.svg)](https://github.com/big-comm/biglinux-settings/actions/workflows/validate.yml)
+[![Validate](https://github.com/big-comm/big-system-config/actions/workflows/validate.yml/badge.svg)](https://github.com/big-comm/big-system-config/actions/workflows/validate.yml)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=big-comm_biglinux-settings&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=big-comm_biglinux-settings)
-[![Release](https://img.shields.io/github/v/release/big-comm/biglinux-settings?display_name=tag&sort=date)](https://github.com/big-comm/biglinux-settings/releases)
+[![Release](https://img.shields.io/github/v/release/big-comm/big-system-config?display_name=tag&sort=date)](https://github.com/big-comm/big-system-config/releases)
 [![License: GPL v3+](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
 
 ![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white)
@@ -18,7 +18,7 @@
 ![Platform](https://img.shields.io/badge/platform-BigLinux%20%7C%20BigCommunity-1793D1?logo=archlinux&logoColor=white)
 ![Translations](https://img.shields.io/badge/translations-29%20languages-success)
 
-<img src="docs/screenshots/home.png" alt="BigLinux Settings — Home overview" width="800">
+<img src="docs/screenshots/home.png" alt="Big System Config — Home overview" width="800">
 
 </div>
 
@@ -41,7 +41,7 @@
 
 ## Overview
 
-BigLinux Settings is a GTK 4 / libadwaita application that gathers the tweaks
+Big System Config is a GTK 4 / libadwaita application that gathers the tweaks
 BigLinux and BigCommunity users most often need, and turns each of them into a
 single switch. Every switch reads the **real state of the system** when the
 page opens, applies the change in the background with progress feedback, and
@@ -122,17 +122,20 @@ work regardless of the desktop.
 
 ### BigLinux / BigCommunity
 
-BigLinux Settings ships with the distribution. To install or update it:
+Big System Config ships with the distribution in the `big-system-config`
+package (formerly `biglinux-settings`). To install or update it:
 
 ```bash
-sudo pacman -Syu biglinux-settings
+sudo pacman -Syu big-system-config
 ```
+
+The launcher command stays `biglinux-settings`.
 
 ### Build the package
 
 ```bash
-git clone https://github.com/big-comm/biglinux-settings.git
-cd biglinux-settings/pkgbuild
+git clone https://github.com/big-comm/big-system-config.git
+cd big-system-config/pkgbuild
 makepkg -si
 ```
 
@@ -147,7 +150,7 @@ Optional integrations (KDE `kconfig`, `qt6-tools`, `power-profiles-daemon`,
 
 ## Usage
 
-Open **BigLinux Settings** from the application menu, or run:
+Open it from the application menu (listed as **BigLinux Settings**), or run:
 
 ```bash
 biglinux-settings
@@ -293,11 +296,11 @@ Bug reports, ideas and pull requests are welcome.
 4. Describe what changed and on which desktop/session you tested it.
 
 Report issues at
-[github.com/big-comm/biglinux-settings/issues](https://github.com/big-comm/biglinux-settings/issues).
+[github.com/big-comm/big-system-config/issues](https://github.com/big-comm/big-system-config/issues).
 
 ## License
 
-BigLinux Settings is free software, released under the
+Big System Config is free software, released under the
 [GNU General Public License v3.0 or later](LICENSE).
 
 <div align="center">
