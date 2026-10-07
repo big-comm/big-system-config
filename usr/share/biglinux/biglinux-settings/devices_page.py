@@ -7,7 +7,7 @@ gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 from gi.repository import Adw, GLib, Gtk  # noqa: E402
 
-from base_page import BaseSettingsPage, _  # noqa: E402
+from base_page import BaseSettingsPage, _, _plain_markup  # noqa: E402
 from network_manager import NetworkError, NetworkManager  # noqa: E402
 
 logger = logging.getLogger("biglinux-settings")
@@ -26,39 +26,58 @@ class DevicesPage(BaseSettingsPage):
     def __init__(self, main_window, **kwargs):
         super().__init__(main_window, **kwargs)
 
-        # Create the container (base method)
-        content = self.create_scrolled_content()
-
-        # Create the group (base method)
-        group = self.create_group(
-            _("Devices"), _("Manage physical devices."), "devices"
-        )
-        content.append(group)
-
-        # Wifi
-        self.create_row(group, _("Wifi"), _("Enable the Wi-Fi adapter."), "wifi", "wifi-symbolic")
-
-        # Bluetooth
-        self.create_row(
-            group, _("Bluetooth"), _("Enable the Bluetooth adapter."), "bluetooth", "bluetooth-symbolic"
+        content = self.create_scrolled_content(
+            _("Devices"), _("Wireless, audio and input devices.")
         )
 
-        # JamesDSP
+        ## GROUP: Wireless ##
+        wireless = self.create_group(_("Wireless"), None, "devices")
+        content.append(wireless)
+
         self.create_row(
-            group,
-            _("JamesDSP"),
-            _("Advanced audio effects processor that improves sound quality."),
+            wireless,
+            _("Wi-Fi"),
+            _("Turns the Wi-Fi adapter on or off."),
+            "wifi",
+            "wifi-symbolic",
+            keywords=[_("Wifi"), _("wireless"), _("network")],
+        )
+        self.create_row(
+            wireless,
+            _("Bluetooth"),
+            _("Turns the Bluetooth adapter on or off."),
+            "bluetooth",
+            "bluetooth-symbolic",
+        )
+
+        ## GROUP: Audio ##
+        audio = self.create_group(_("Audio"), None, "devices")
+        content.append(audio)
+
+        self.create_row(
+            audio,
+            _("JamesDSP audio effects"),
+            _(
+                "Audio effects software that enhances the sound of all applications. Installs JamesDSP if it is missing and starts it with the session."
+            ),
             "jamesdsp",
             "jamesdsp-symbolic",
+            keywords=[_("equalizer"), _("sound"), _("JamesDSP")],
         )
 
-        # Reverse mouse scrolling
+        ## GROUP: Mouse ##
+        mouse = self.create_group(_("Mouse"), None, "devices")
+        content.append(mouse)
+
         self.create_row(
-            group,
-            _("Reverse mouse scrolling"),
-            _("Reverse mouse scrolling without restarting the session."),
+            mouse,
+            _("Natural scrolling"),
+            _(
+                "Reverses the scroll direction so the content follows the movement of the wheel or fingers, as on a touchscreen. Applies right away."
+            ),
             "reverse-mouse_scroll",
             "reverse-mouse_scroll-symbolic",
+            keywords=[_("reverse scrolling"), _("scroll direction"), _("mouse")],
         )
 
         # Network Interfaces (dynamic, discovered via nmcli)
@@ -98,7 +117,10 @@ class DevicesPage(BaseSettingsPage):
             icon_name = _IFACE_ICONS.get(type_, "network-wired-symbolic")
             subtitle = _("{} — {}").format(type_, iface["state"])
 
-            row = Adw.ActionRow(title=connection, subtitle=subtitle)
+            # Connection names (e.g. SSIDs) are user data: escape for Pango
+            row = Adw.ActionRow(
+                title=_plain_markup(connection), subtitle=_plain_markup(subtitle)
+            )
 
             # Icon prefix
             img = Gtk.Image.new_from_icon_name(icon_name)
@@ -141,30 +163,42 @@ class DevicesPage(BaseSettingsPage):
                     NetworkManager.connect_device(device)
                 else:
                     NetworkManager.disconnect_device(device)
-                GLib.idle_add(_on_done, True)
+                success = True
             except NetworkError:
-                GLib.idle_add(_on_done, False)
-
-        def _on_done(success):
-            row.set_sensitive(True)
-            if success:
-                switch.handler_block_by_func(self._on_net_switch_changed)
-                switch.set_active(state)
-                switch.set_state(state)
-                switch.handler_unblock_by_func(self._on_net_switch_changed)
-                iface_state = _("connected") if state else _("disconnected")
-                type_ = self._get_wd(switch, "type") or ""
-                row.set_subtitle(_("{} — {}").format(type_, iface_state) if type_ else iface_state)
-            else:
-                row.set_subtitle(original_subtitle or "")
-                switch.handler_block_by_func(self._on_net_switch_changed)
-                switch.set_active(not state)
-                switch.set_state(not state)
-                switch.handler_unblock_by_func(self._on_net_switch_changed)
-                self.main_window.show_toast(
-                    _("Failed to change network device: {}").format(device)
-                )
-            return False
+                success = False
+            GLib.idle_add(
+                self._on_net_toggle_done,
+                switch,
+                row,
+                device,
+                state,
+                success,
+                original_subtitle,
+            )
 
         threading.Thread(target=_toggle, daemon=True).start()
         return True
+
+    def _set_net_switch_without_handler(self, switch, state):
+        switch.handler_block_by_func(self._on_net_switch_changed)
+        switch.set_active(state)
+        switch.set_state(state)
+        switch.handler_unblock_by_func(self._on_net_switch_changed)
+
+    def _on_net_toggle_done(
+        self, switch, row, device, state, success, original_subtitle
+    ):
+        """Main-thread completion of a network device connect/disconnect."""
+        row.set_sensitive(True)
+        if success:
+            self._set_net_switch_without_handler(switch, state)
+            iface_state = _("connected") if state else _("disconnected")
+            type_ = self._get_wd(switch, "type") or ""
+            row.set_subtitle(_("{} — {}").format(type_, iface_state) if type_ else iface_state)
+        else:
+            row.set_subtitle(original_subtitle or "")
+            self._set_net_switch_without_handler(switch, not state)
+            self.main_window.show_toast(
+                _("Failed to change network device: {}").format(device)
+            )
+        return False

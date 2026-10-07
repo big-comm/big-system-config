@@ -1,8 +1,11 @@
 """
 Backlight and LED handler.
 
-Saves ALL /sys/class/backlight/* and /sys/class/leds/* brightness values
-before suspend and restores them after resume.
+Saves screen backlights (/sys/class/backlight/*) and keyboard backlight LEDs
+(/sys/class/leds/*kbd_backlight*) before suspend and restores them after
+resume. Other LEDs (caps/num lock, mic mute, ...) are driven by the kernel
+or by their trigger and are never touched, nor is any LED with an active
+trigger.
 
 systemd-backlight only runs at boot/shutdown, not at suspend/resume.
 This handler fills that gap.
@@ -24,7 +27,9 @@ log = logging.getLogger(__name__)
 
 STATE_FILE = Path("/run/biglinux/backlight-state.json")
 
-_ASUS_KBD_LED = Path("/sys/class/leds/asus::kbd_backlight")
+BACKLIGHT_DIR = Path("/sys/class/backlight")
+LEDS_DIR = Path("/sys/class/leds")
+_ASUS_KBD_LED_NAME = "asus::kbd_backlight"
 
 
 def _read_brightness(device_path: Path) -> int | None:
@@ -51,13 +56,37 @@ def _max_brightness(device_path: Path) -> int:
         return 0
 
 
+def _led_trigger(device_path: Path) -> str | None:
+    """Return the active trigger of an LED ("[none] foo" -> "none")."""
+    try:
+        text = (device_path / "trigger").read_text()
+    except OSError:
+        return None
+    for token in text.split():
+        if token.startswith("[") and token.endswith("]"):
+            return token[1:-1]
+    return None
+
+
+def _is_managed(device_path: Path) -> bool:
+    """Only screen backlights and trigger-less keyboard backlight LEDs."""
+    parent = device_path.parent
+    if parent == BACKLIGHT_DIR:
+        return True
+    if parent != LEDS_DIR or "kbd_backlight" not in device_path.name:
+        return False
+    trigger = _led_trigger(device_path)
+    return trigger is None or trigger == "none"
+
+
 def _collect_state() -> dict:
     state = {}
-    for base in ("/sys/class/backlight", "/sys/class/leds"):
-        base_path = Path(base)
+    for base_path in (BACKLIGHT_DIR, LEDS_DIR):
         if not base_path.exists():
             continue
         for device in sorted(base_path.iterdir()):
+            if not _is_managed(device):
+                continue
             brightness = _read_brightness(device)
             if brightness is not None:
                 state[str(device)] = brightness
@@ -76,8 +105,9 @@ class BacklightHandler(SleepHandler):
         # ASUS-specific: turn off keyboard LED before entering S3.
         # Some ASUS EC firmware enters a bogus blinking mode on resume
         # if the LED was on when entering sleep. Setting to 0 avoids it.
-        if _ASUS_KBD_LED.exists():
-            if _write_brightness(_ASUS_KBD_LED, 0):
+        asus_led = LEDS_DIR / _ASUS_KBD_LED_NAME
+        if str(asus_led) in state:
+            if _write_brightness(asus_led, 0):
                 log.info("Set ASUS keyboard LED to 0 before suspend")
 
     def post_resume(self, sleep_type: str) -> None:
@@ -97,7 +127,10 @@ class BacklightHandler(SleepHandler):
         restored = 0
         for path_str, value in state.items():
             device = Path(path_str)
-            if not device.exists():
+            # Re-check: a state file from an older version may list other LEDs
+            if not device.exists() or not _is_managed(device):
+                continue
+            if not isinstance(value, int):
                 continue
             max_b = _max_brightness(device)
             # Clamp to max_brightness to avoid EINVAL

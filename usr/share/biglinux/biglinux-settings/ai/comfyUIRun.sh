@@ -11,7 +11,7 @@ running_pid() {
   pid="$(<"$pidFile")"
   [[ "$pid" =~ ^[0-9]+$ ]] || return 1
   kill -0 "$pid" 2>/dev/null || return 1
-  tr '\0' '\n' < "/proc/$pid/cmdline" 2>/dev/null | grep -Fxq "$installDir/main.py"
+  tr '\0' '\n' < "/proc/$pid/cmdline" 2>/dev/null | grep -Fxq "$installDir/main.py" || return 1
   printf '%s\n' "$pid"
 }
 

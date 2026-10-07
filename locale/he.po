@@ -7,428 +7,173 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-01 19:09+0000\n"
-"PO-Revision-Date: 2026-07-22 00:37-0300\n"
+"POT-Creation-Date: 2026-10-06 19:34-0300\n"
+"PO-Revision-Date: 2026-10-06 19:34-0300\n"
 "Last-Translator: BigLinux Community <community@biglinux.com.br>\n"
 "Language-Team: BigLinux Community (he)\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: attranslate\n"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 49
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 120
-msgid "BigLinux Settings"
-msgstr "הגדרות ביגלינוקס"
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 49
-msgid "BigLinux Community"
-msgstr "קהילת BigLinux"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 144
-msgid "Search..."
-msgstr "חפש..."
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 185
-msgid "Search settings"
-msgstr "הגדרות חיפוש"
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 192
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 195
-msgid "Toggle navigation sidebar"
-msgstr "החלף סרגל ניווט"
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 202
-msgid "About"
-msgstr "אודות"
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 206
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 209
-msgid "Main Menu"
-msgstr "תפריט ראשי"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 108
-msgid "System"
-msgstr "מערכת"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices/jamesdsp_dialog.py, line: 208
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices/jamesdsp_dialog.py, line: 208
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices/jamesdsp_dialog.py, line: 208
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices/jamesdsp_dialog.py, line: 208
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices/jamesdsp_dialog.py, line: 208
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices/jamesdsp_dialog.py, line: 208
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 107
-msgid "Usability"
-msgstr "שימושיות"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 158
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 167
-msgid "PreLoad"
-msgstr "טען מראש"
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/dispositivos_page.py, line: 25
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 116
-msgid "Devices"
-msgstr "מכשירים"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 161
-msgid "A.I."
+
+#: usr/share/biglinux/biglinux-settings/ai/comfyUI.sh:23
+msgid "AMD/Nvidia GPU not found!"
+msgstr "כרטיס גרפי AMD/Nvidia לא נמצא!"
+
+#: usr/share/biglinux/biglinux-settings/ai/ollamaUpdateRun.sh:18
+msgid "No Ollama packages are installed. Enable an Ollama variant first."
+msgstr "לא מותקנות חבילות Ollama. הפעל תחילה גרסה של Ollama."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:13
+#: usr/share/biglinux/biglinux-settings/main.py:354
+msgid "Artificial Intelligence"
 msgstr "בינה מלאכותית"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 204
-msgid "Docker"
-msgstr "דוקר"
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 315
-msgid "Developer"
-msgstr "מפתח"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 181
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 195
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 181
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 195
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 244
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 256
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 244
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 256
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/usability/gamemode_dialog.py, line: 204
-msgid "Performance"
-msgstr "ביצועים"
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 302
-msgid "Suspend"
-msgstr "להשעות"
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 441
-msgid "Open setting"
-msgstr "פתח הגדרה"
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 446
-#, python-brace-format
-msgid "Open {} setting"
-msgstr "פתח הגדרת {}"
-# File: usr/share/biglinux/biglinux-settings/main.py, line: 469
-msgid "Dismiss"
-msgstr "מחק"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 72
-msgid "Automatic Suspend"
-msgstr "השעיה אוטומטית"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 73
-msgid "Choose when inactivity and low battery may suspend the system."
-msgstr "בחר מתי חוסר פעילות וסוללה חלשה עלולים להשעות את המערכת."
-msgid "Disable idle suspend while plugged in"
-msgstr "השבתת השהיה בעת חוסר פעילות כשהמחשב מחובר לחשמל"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 81
-msgid "Disables automatic suspend caused by inactivity on AC power."
-msgstr "מבטל השעיה אוטומטית הנגרמת מחוסר פעילות בזמן חיבור לחשמל."
-msgid "Disable idle suspend on battery"
-msgstr "השבתת השהיה בעת חוסר פעילות בשימוש בסוללה"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 89
-msgid "Keeps the system awake on battery until a critical level is reached."
-msgstr "שומר על המערכת פעילה על סוללה עד הגעה לרמה קריטית."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 96
-msgid "Suspend only when battery reaches 20%"
-msgstr "השהה רק כשהסוללה מגיעה ל-20%"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 98
-msgid ""
-"Disables idle suspend on battery and suspends automatically when the charge "
-"reaches 20%."
-msgstr ""
-"מבטל השעיה עקב חוסר פעילות על סוללה ומשהה אוטומטית כשהטעינה מגיעה ל-20%."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 104
-msgid ""
-"This uses UPower's critical battery policy. Low and critical warnings occur "
-"before the suspend action at 20%."
-msgstr ""
-"זה משתמש במדיניות הסוללה הקריטית של UPower. התראות על סוללה נמוכה וקריטית "
-"מתרחשות לפני פעולת ההשעיה ב-20%."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 75
-msgid "Sleep Mode"
-msgstr "מצב שינה"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 76
-msgid "Configure how the system suspends."
-msgstr "הגדר כיצד המערכת מתלכדת."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 83
-msgid "Use s2idle (light sleep)"
-msgstr "השתמש ב-s2idle (שינה קלה)"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 85
-msgid ""
-"Uses a lighter sleep mode that preserves Fn keys and device state. "
-"Recommended for ASUS notebooks."
-msgstr ""
-"משתמש במצב שינה קל יותר ששומר על מקשי Fn ומצב המכשיר. מומלץ עבור מחשבי ASUS "
-"ניידים."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 91
-msgid ""
-"S3 deep sleep can cause the Embedded Controller to stop generating hotkey "
-"interrupts. s2idle keeps the EC powered, avoiding this issue at a small cost "
-"in battery consumption."
-msgstr ""
-"שינה עמוקה S3 יכולה לגרום לשליטה המוטמעת להפסיק לייצר הפסקות מקשים חמים. "
-"s2idle שומר על אספקת חשמל ל-EC, ומונע בעיה זו בעלות קטנה בצריכת הסוללה."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 100
-msgid "WiFi"
-msgstr "ווי-פיי"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 101
-msgid "Prevent WiFi issues after suspend."
-msgstr "מנע בעיות WiFi לאחר השהיה."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 108
-msgid "Protect WiFi on suspend"
-msgstr "הגן על WiFi במצב השהיה"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 110
-msgid ""
-"Prevents the Realtek WiFi chip from fully powering off (d3cold), avoiding "
-"connection loss after resume."
-msgstr ""
-"מונע מהשבב WiFi של ריאלטק לכבות לחלוטין (d3cold), ומונע אובדן חיבור לאחר "
-"חידוש."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 116
-msgid ""
-"Some Realtek RTL8852BE/CE chips fail to reinitialize after d3cold power "
-"gating. This keeps the chip in d3hot (PCIe link alive) during suspend."
-msgstr ""
-"חלק משבבי Realtek RTL8852BE/CE נכשלו בהתחלה מחדש לאחר כיבוי חשמל d3cold. זה "
-"שומר על השבב במצב d3hot (קישור PCIe פעיל) במהלך השהייה."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 124
-msgid "Display and Keyboard"
-msgstr "תצוגה ומקלדת"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 125
-msgid "Preserve brightness and LED state across suspend."
-msgstr "שמור על בהירות ומצב LED במהלך השהייה."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 132
-msgid "Save/restore brightness on suspend"
-msgstr "שמור/שחזר בהירות בהשעיה"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 134
-msgid ""
-"Saves screen brightness and keyboard LEDs before suspending and restores "
-"them on resume."
-msgstr ""
-"שומר את בהירות המסך ואת נורות ה-LED של המקלדת לפני השהייה ומחזיר אותם עם "
-"חידוש הפעולה."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 144
-msgid "GNOME Shell Extensions"
-msgstr "תוספות ל-GNOME Shell"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 145
-msgid "Automatic health check after resume."
-msgstr "בדיקת בריאות אוטומטית לאחר חזרה."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 152
-msgid "Extension health monitor"
-msgstr "מנטר בריאות הרחבה"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 154
-msgid ""
-"Detects GNOME Shell extensions in error state after resume and automatically "
-"restarts them."
-msgstr ""
-"מגלה תוספות של GNOME Shell במצב שגיאה לאחר חידוש ומפעיל אותן מחדש באופן "
-"אוטומטי."
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 163
-msgid "Lid Switch"
-msgstr "מתג מכסה"
-# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 164
-msgid "Laptop lid close behavior."
-msgstr "התנהגות סגירת מכסה המחשב הנייד."
-msgid "Keep running with the lid closed while plugged in"
-msgstr "להמשיך לפעול כשהמכסה סגור והמחשב מחובר לחשמל"
-msgid ""
-"Keeps the session and network active when the lid is closed on AC power."
-msgstr ""
-"שומר על ההפעלה ועל חיבור הרשת פעילים כאשר המכסה סגור והמחשב מחובר לחשמל."
-msgid ""
-"This prevents lid-triggered suspend and locking. Automatic idle locking "
-"remains separate. Keep the notebook ventilated while it runs with the lid "
-"closed."
-msgstr ""
-"פעולה זו מונעת השהיה ונעילה בעקבות סגירת המכסה. נעילה אוטומטית בעת חוסר "
-"פעילות נשארת הגדרה נפרדת. יש לוודא שהמחשב הנייד מאוורר היטב בזמן שהוא פועל "
-"כשהמכסה סגור."
-msgid "Keep running with the lid closed on battery"
-msgstr "להמשיך לפעול כשהמכסה סגור ובשימוש בסוללה"
-msgid ""
-"Keeps the session and network active when the lid is closed on battery power."
-msgstr ""
-"שומר על ההפעלה ועל חיבור הרשת פעילים כאשר המכסה סגור והמחשב פועל באמצעות "
-"הסוללה."
-msgid ""
-"This prevents lid-triggered suspend and locking. Automatic idle locking "
-"remains separate, and the 20% critical battery policy still applies."
-msgstr ""
-"פעולה זו מונעת השהיה ונעילה בעקבות סגירת המכסה. נעילה אוטומטית בעת חוסר "
-"פעילות נשארת הגדרה נפרדת, ומדיניות רמת הסוללה הקריטית של 20% עדיין חלה."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 26
-msgid "General system settings."
-msgstr "הגדרות מערכת כלליות."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 21
-msgid "SSH"
-msgstr "SSH"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 22
-msgid "Enable remote access via ssh."
-msgstr "אפשר גישה מרחוק באמצעות ssh."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
-# line: 27
-#, python-brace-format
-msgid "SSH Address: {}"
-msgstr "כתובת SSH: {}"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 147
-msgid "SSH always on"
-msgstr "SSH תמיד פעיל"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 149
-msgid "Turn on ssh remote access at boot."
-msgstr "הפעל גישה מרחוק באמצעות SSH בעת אתחול."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 162
-msgid "Fast Grub"
-msgstr "גרוב מהיר"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 163
-msgid "Decreases grub display time."
-msgstr "מקטין את זמן התצוגה של גרוב."
-# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 47
-msgid "Boot messages"
-msgstr "הודעות אתחול"
-# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 48
-msgid "Show system messages below the boot animation."
-msgstr "הצג הודעות מערכת מתחת לאנימציית האתחול."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 170
-msgid "Auto-mount Partitions"
-msgstr "התקנת מחיצות אוטומטית"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 171
-msgid "Auto mount partitions in internal disks on boot."
-msgstr "התקן אוטומטית מחיצות בדיסקים פנימיים בעת אתחול."
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 11
-msgid "AI Coding Assistants"
-msgstr "עוזרי קידוד בינה מלאכותית"
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 12
-msgid "Open-source coding agents powered by language models."
-msgstr "סוכני קידוד בקוד פתוח המופעלים על ידי מודלי שפה."
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 21
-msgid "OpenClaude"
-msgstr "OpenClaude"
-# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 23
-msgid ""
-"Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
-"models. Installs nodejs, npm and ripgrep as dependencies."
-msgstr ""
-"CLI של סוכן קידוד בקוד פתוח עבור OpenAI, Gemini, DeepSeek, Ollama ו-200+ "
-"מודלים. מתקין nodejs, npm ו-ripgrep כתלויות."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 30
-msgid "AI Interfaces"
-msgstr "ממשקי בינה מלאכותית"
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 16
-msgid "Graphical interface for artificial intelligence."
-msgstr "ממשק גרפי עבור אינטליגנציה מלאכותית."
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 23
-msgid "Ollama Server"
-msgstr "אולמה סרבר"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 23
-msgid "Choose which Ollama server is best for your hardware."
-msgstr "בחר איזה שרת של אולמה הכי מתאים לחומרה שלך."
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
-msgid "Update Ollama"
-msgstr "עדכן את Ollama"
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
-msgid "Update the installed Ollama packages to the latest version."
-msgstr "עדכן את חבילות Ollama המותקנות לגרסה העדכנית ביותר."
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 36
-msgid "Update now"
-msgstr "עדכן כעת"
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
-msgid "Ollama Variants"
-msgstr "וריאנטים של אולמה"
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
-msgid "Select the variant that matches your GPU hardware."
-msgstr "בחר את הגרסה התואמת לחומרת ה-GPU שלך."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:14
+msgid "Chat, work with documents and create images with AI on this computer."
+msgstr "שוחחו, עבדו עם מסמכים וצרו תמונות באמצעות בינה מלאכותית במחשב הזה."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:17
+#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+msgid "LLM"
+msgstr "LLM"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:17
+msgid "chat"
+msgstr "שיחה"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:17
+#: usr/share/biglinux/biglinux-settings/ai_page.py:105
+#: usr/share/biglinux/biglinux-settings/ai_page.py:138
+#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+msgid "local AI"
+msgstr "בינה מלאכותית מקומית"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:21
+msgid "AI applications"
+msgstr "יישומי בינה מלאכותית"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 46
+#: usr/share/biglinux/biglinux-settings/ai_page.py:30
 msgid "ChatAI"
-msgstr "צ'אטאיי"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 47
-msgid "A variety of chats like Plasmoid for your KDE Plasma desktop."
-msgstr "מגוון צ'אטים כמו פלסמויד עבור שולחן העבודה KDE פלזמה שלך."
+msgstr "ChatAI"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:32
+msgid ""
+"Desktop widget with access to several AI chats for KDE Plasma. Installs the "
+"widget; turning it off removes it."
+msgstr ""
+"ווידג'ט לשולחן העבודה עם גישה לכמה צ'אטים של בינה מלאכותית עבור KDE Plasma. "
+"מתקין את הווידג'ט; כיבוי יסיר אותו."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:36
+msgid "plasmoid"
+msgstr "plasmoid"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:36
+msgid "widget"
+msgstr "ווידג'ט"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 127
+#: usr/share/biglinux/biglinux-settings/ai_page.py:41
 msgid "Ollama LAB"
-msgstr "אולמה מעבדה"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 128
-msgid "Graphical interface for managing Ollama models and chat."
-msgstr "ממשק גרפי לניהול מודלים וצ'אט של אולמה."
+msgstr "Ollama LAB"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:43
+msgid ""
+"Graphical app to manage Ollama models and chat with them. Installs Ollama "
+"LAB; turning it off removes it."
+msgstr ""
+"יישום גרפי לניהול מודלים של Ollama ולשיחה איתם. מתקין את Ollama LAB; כיבוי "
+"יסיר אותו."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:47
+#: usr/share/biglinux/biglinux-settings/ai_page.py:138
+#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+msgid "Ollama"
+msgstr "Ollama"
+
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 56
+#: usr/share/biglinux/biglinux-settings/ai_page.py:52
 msgid "ChatBox"
-msgstr "צ'אטבוקס"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 136
-msgid "User-friendly Desktop Client App for AI Models/LLMs."
-msgstr "אפליקציית לקוח שולחני ידידותית למשתמש עבור מודלים/LLMs של AI."
+msgstr "ChatBox"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:54
+msgid ""
+"Desktop app to chat with AI models, local or online. Installs ChatBox; "
+"turning it off removes it."
+msgstr ""
+"יישום שולחני לשיחה עם מודלי בינה מלאכותית, מקומיים או מקוונים. מתקין את "
+"ChatBox; כיבוי יסיר אותו."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 143
+#: usr/share/biglinux/biglinux-settings/ai_page.py:63
 msgid "LM Studio"
-msgstr "סטודיו LM"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 144
+msgstr "LM Studio"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:65
 msgid ""
-"LM Studio - A desktop app for exploring and running large language models "
-"locally."
+"Desktop app to download and run language models on this computer. Installs LM"
+" Studio; turning it off removes it."
 msgstr ""
-"LM Studio - אפליקציה שולחנית לחקר והרצת מודלים של שפה גדולה באופן מקומי."
+"יישום שולחני להורדה והפעלה של מודלי שפה במחשב הזה. מתקין את LM Studio; כיבוי "
+"יסיר אותו."
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 194
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 203
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 74
+#: usr/share/biglinux/biglinux-settings/ai_page.py:74
+#: usr/share/biglinux/biglinux-settings/apps_page.py:155
 msgid "Open Notebook"
-msgstr "פתח מחברת"
-# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 87
+msgstr "Open Notebook"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:76
 msgid ""
-"Open-source, privacy-focused alternative to Google's NotebookLM. Requires "
-"Docker enabled."
+"Open-source, privacy-focused alternative to Google's NotebookLM for working "
+"with your documents. Installs it as a container and requires Docker; turning "
+"it off removes it."
 msgstr ""
-"חלופה בקוד פתוח המתמקדת בפרטיות ל-NotebookLM של גוגל. דורש הפעלת Docker."
+"חלופה בקוד פתוח ובדגש על פרטיות ל-NotebookLM של Google לעבודה עם המסמכים "
+"שלכם. מותקן כקונטיינר ודורש Docker; כיבוי יסיר אותו."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:80
+#: usr/share/biglinux/biglinux-settings/apps_page.py:165
+msgid "NotebookLM"
+msgstr "NotebookLM"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:80
+msgid "documents"
+msgstr "מסמכים"
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 201
+#: usr/share/biglinux/biglinux-settings/ai_page.py:84
+#: usr/share/biglinux/biglinux-settings/apps_page.py:159
 msgid "Open Notebook Server"
-msgstr "פתח את שרת Open Notebook"
+msgstr "שרת Open Notebook"
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 95
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 202
+#: usr/share/biglinux/biglinux-settings/ai_page.py:85
+#: usr/share/biglinux/biglinux-settings/apps_page.py:160
 msgid "Start the Open Notebook server."
 msgstr "הפעל את שרת Open Notebook."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 190
+#: usr/share/biglinux/biglinux-settings/ai_page.py:90
+#: usr/share/biglinux/biglinux-settings/apps_page.py:163
 #, python-brace-format
 msgid ""
 "Open Notebook is running.\n"
@@ -436,27 +181,46 @@ msgid ""
 "and\n"
 "Address: http://{}:8502"
 msgstr ""
-"המחברת פתוחה ופועלת.\n"
+"Open Notebook פועל.\n"
 "כתובת: http://localhost:8502\n"
 "וגם\n"
 "כתובת: http://{}:8502"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 87
-msgid "ComfyUI (GPU ONLY)"
-msgstr "ComfyUI (רק GPU)"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 88
-msgid "The most powerful and modular visual AI engine and application."
-msgstr "המנוע החזקה והמודולרי ביותר של בינה מלאכותית חזותית ואפליקציה."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:97
+msgid "ComfyUI image generation"
+msgstr "יצירת תמונות עם ComfyUI"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:99
+msgid ""
+"Create images with AI using a visual node editor. Requires an AMD or Nvidia "
+"graphics card. Installs ComfyUI in your home folder; turning it off removes "
+"it."
+msgstr ""
+"צרו תמונות באמצעות בינה מלאכותית בעורך צמתים חזותי. דורש כרטיס מסך של AMD או "
+"Nvidia. מתקין את ComfyUI בתיקיית הבית שלכם; כיבוי יסיר אותו."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:105
+msgid "Stable Diffusion"
+msgstr "Stable Diffusion"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:105
+msgid "images"
+msgstr "תמונות"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 94
+#: usr/share/biglinux/biglinux-settings/ai_page.py:109
 msgid "ComfyUI Server"
 msgstr "שרת ComfyUI"
+
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
+#: usr/share/biglinux/biglinux-settings/ai_page.py:110
 msgid "Start the ComfyUI server."
 msgstr "הפעל את שרת ComfyUI."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 100
+#: usr/share/biglinux/biglinux-settings/ai_page.py:115
 #, python-brace-format
 msgid ""
 "ComfyUI server is running.\n"
@@ -468,14 +232,98 @@ msgstr ""
 "כתובת: http://localhost:8188  \n"
 "ו  \n"
 "כתובת: http://{}:8188"
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 23
+#: usr/share/biglinux/biglinux-settings/ai_page.py:121
+msgid "Ollama Server"
+msgstr "אולמה סרבר"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:123
+msgid ""
+"Ollama runs AI models on this computer. The variants below are alternative "
+"engines for different hardware: install only the one that matches your "
+"processor or graphics card."
+msgstr ""
+"Ollama מפעיל מודלי בינה מלאכותית במחשב הזה. הגרסאות שלהלן הן מנועים חלופיים "
+"לחומרות שונות: התקינו רק את זו שמתאימה למעבד או לכרטיס המסך שלכם."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
+#: usr/share/biglinux/biglinux-settings/ai_page.py:132
+msgid "Update Ollama"
+msgstr "עדכן את Ollama"
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
+#: usr/share/biglinux/biglinux-settings/ai_page.py:133
+msgid "Update the installed Ollama packages to the latest version."
+msgstr "עדכן את חבילות Ollama המותקנות לגרסה העדכנית ביותר."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 36
+#: usr/share/biglinux/biglinux-settings/ai_page.py:136
+msgid "Update now"
+msgstr "עדכן כעת"
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
+#: usr/share/biglinux/biglinux-settings/ai_page.py:143
+msgid "Ollama Variants"
+msgstr "וריאנטים של אולמה"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:144
+msgid "Select the variant that matches your hardware."
+msgstr "בחרו את הגרסה שמתאימה לחומרה שלכם."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:152
+msgid "Ollama for CPU"
+msgstr "Ollama למעבד (CPU)"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:154
+msgid ""
+"Runs AI models on the processor only. Installs Ollama; turning it off removes"
+" it."
+msgstr ""
+"מפעיל מודלי בינה מלאכותית על המעבד בלבד. מתקין את Ollama; כיבוי יסיר אותו."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 55
-msgid "OllamaCPU"
-msgstr "אולמהCPU"
+# line: 73
+#: usr/share/biglinux/biglinux-settings/ai_page.py:159
+msgid "Ollama Vulkan"
+msgstr "אולמה וולקן"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:161
+msgid ""
+"For processors, AMD and Nvidia graphics cards and integrated graphics. "
+"Installs Ollama; turning it off removes it."
+msgstr ""
+"למעבדים, כרטיסי מסך של AMD ו-Nvidia וכרטיסי מסך משולבים. מתקין את Ollama; "
+"כיבוי יסיר אותו."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 56
-msgid "Local AI server. For CPUs only."
-msgstr "שרת AI מקומי. רק עבור מעבדים."
+# line: 109
+#: usr/share/biglinux/biglinux-settings/ai_page.py:166
+msgid "Ollama Nvidia CUDA"
+msgstr "אולמה נווידיה קודה"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:168
+msgid ""
+"For newer Nvidia graphics cards, from the 2000 series on. Installs Ollama; "
+"turning it off removes it."
+msgstr ""
+"לכרטיסי מסך חדשים יותר של Nvidia, מסדרה 2000 ואילך. מתקין את Ollama; כיבוי "
+"יסיר אותו."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 91
+#: usr/share/biglinux/biglinux-settings/ai_page.py:173
+msgid "Ollama AMD ROCm"
+msgstr "אולמה AMD ROCm"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:175
+msgid ""
+"For newer AMD graphics cards, from the 6000 series on. In many tests Vulkan "
+"performed better than ROCm. Installs Ollama; turning it off removes it."
+msgstr ""
+"לכרטיסי מסך חדשים יותר של AMD, מסדרה 6000 ואילך. בבדיקות רבות Vulkan הציג "
+"ביצועים טובים יותר מ-ROCm. מתקין את Ollama; כיבוי יסיר אותו."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 59
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
@@ -484,12 +332,14 @@ msgstr "שרת AI מקומי. רק עבור מעבדים."
 # line: 95
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 113
+#: usr/share/biglinux/biglinux-settings/ai_page.py:193
 msgid ""
 "Ollama server is running.\n"
 "Address: http://localhost:11434"
 msgstr ""
 "שרת אולמה פועל.  \n"
 "כתובת: http://localhost:11434"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 63
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
@@ -498,18 +348,14 @@ msgstr ""
 # line: 99
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 117
+#: usr/share/biglinux/biglinux-settings/ai_page.py:198
 msgid "Share Ollama"
 msgstr "שתף אולמה"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 64
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 82
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 100
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 118
-msgid "Share ollama on the local network."
-msgstr "שתף אולמה ברשת המקומית."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:199
+msgid "Lets other computers on the local network use this Ollama server."
+msgstr "מאפשר למחשבים אחרים ברשת המקומית להשתמש בשרת Ollama הזה."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 68
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
@@ -518,6 +364,7 @@ msgstr "שתף אולמה ברשת המקומית."
 # line: 104
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 122
+#: usr/share/biglinux/biglinux-settings/ai_page.py:203
 #, python-brace-format
 msgid ""
 "Ollama server is running.\n"
@@ -525,122 +372,69 @@ msgid ""
 msgstr ""
 "שרת אולמה פועל.  \n"
 "כתובת: http://{}:11434"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 73
-msgid "Ollama Vulkan"
-msgstr "אולמה וולקן"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 75
-msgid "Local AI server. For CPUs, AMD/Nvidia and integrated GPUs."
-msgstr "שרת AI מקומי. עבור מעבדים, AMD/Nvidia וכרטיסי גרפיקה משולבים."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 109
-msgid "Ollama Nvidia CUDA"
-msgstr "אולמה נווידיה קודה"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 110
-msgid "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
-msgstr "שרת AI מקומי. עבור כרטיסי גרפיקה של Nvidia מהסדרה 2000 ומעלה."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 91
-msgid "Ollama AMD ROCm"
-msgstr "אולמה AMD ROCm"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
-# line: 111
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:11
+#: usr/share/biglinux/biglinux-settings/main.py:360
+msgid "Apps & Services"
+msgstr "יישומים ושירותים"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:11
+msgid "Install and manage services and developer tools."
+msgstr "התקינו ונהלו שירותים וכלי פיתוח."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 204
+#: usr/share/biglinux/biglinux-settings/apps_page.py:15
+#: usr/share/biglinux/biglinux-settings/apps_page.py:20
+#: usr/share/biglinux/biglinux-settings/apps_page.py:26
+#: usr/share/biglinux/biglinux-settings/home_page.py:134
+msgid "Docker"
+msgstr "Docker"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:22
 msgid ""
-"Local AI server. For newer AMD GPUs, starting from the 6000 series.\n"
-"Consider using Vulkan, in many tests, Vulkan performed better than ROCm."
+"Container engine needed by all the services below. Installs Docker if it is "
+"missing; turning it off stops it."
 msgstr ""
-"שרת AI מקומי. עבור כרטיסי גרפיקה AMD חדשים יותר, החל מסדרת 6000.  \n"
-"שקול להשתמש ב-Vulkan, במבחנים רבים, Vulkan ביצע טוב יותר מ-ROCm."
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 14
-msgid "User and Visual system settings."
-msgstr "הגדרות משתמש ומערכת חזותית."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 114
-msgid "NumLock"
-msgstr "נומרוק"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 115
-msgid "Initial NumLock state. Ignored if autologin is enabled."
-msgstr "מצב NumLock התחלתי. מתעלמים אם כניסה אוטומטית מופעלת."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 131
-msgid "Window Button On Left Side"
-msgstr "כפתור חלון בצד שמאל"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 132
-msgid "Maximize, minimize, and close buttons on the left side of the window."
-msgstr "כפתורי מקסימום, מינימום וסגירה בצד השמאלי של החלון."
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 72
-msgid "KZones"
-msgstr "KZones"
-# File: usr/share/biglinux/biglinux-settings/usability_page.py, line: 39
-msgid "Enable window tiling zones for the KDE Plasma desktop."
-msgstr "אפשר להפעיל אזורי ריצוף חלונות עבור שולחן העבודה של KDE Plasma."
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 169
-msgid "Recent Files & Locations"
-msgstr "קבצים ומיקומים אחרונים"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 170
-msgid ""
-"Restores the 'Recent Files' and 'Recent Locations' functionality that "
-"appears empty in Dolphin and the Application Menu."
-msgstr ""
-"ש restores את הפונקציונליות של 'קבצים אחרונים' ו'מיקומים אחרונים' שמופיעה "
-"ריקה ב-Dolphin ובתפריט היישומים."
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 16
-msgid "Container service — enable to use containers below."
-msgstr "שירות קונטיינרים — אפשר להשתמש בקונטיינרים למטה."
-# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 137
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 18
-msgid "Containers"
-msgstr "מיכלים"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 23
-msgid "Manage container technologies."
-msgstr "נהל טכנולוגיות קונטיינרים."
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 30
-msgid "Media &amp; Cloud"
+"מנוע קונטיינרים הנדרש לכל השירותים שלהלן. מתקין את Docker אם הוא חסר; כיבוי "
+"יעצור אותו."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:26
+msgid "containers"
+msgstr "קונטיינרים"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:31
+msgid "Media & Cloud"
 msgstr "מדיה וענן"
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 31
-msgid "Media servers and cloud storage containers."
-msgstr "שרתים מדיה ומיכלי אחסון בענן."
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 36
-msgid "Network &amp; Security"
-msgstr "רשת ואבטחה"
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 37
-msgid "Network tools and security containers."
-msgstr "כלי רשת ומיכלי אבטחה."
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 42
-msgid "Development &amp; Tools"
-msgstr "פיתוח וכלים"
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 43
-msgid "Development stacks and utility containers."
-msgstr "ערימות פיתוח ומיכלי שירות."
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 52
-msgid "Enable Docker container engine."
-msgstr "אפשר מנוע קונטיינרים של דוקר."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:32
+msgid "Media servers and cloud storage. Require Docker."
+msgstr "שרתי מדיה ואחסון בענן. דורשים Docker."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 35
+#: usr/share/biglinux/biglinux-settings/apps_page.py:39
 msgid "Nextcloud Plus"
-msgstr "Nextcloud פלוס"
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 62
-msgid "Install Nextcloud Plus cloud storage container."
-msgstr "התקן את מיכל אחסון הענן Nextcloud Plus."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 52
-msgid "Run Nextcloud Plus."
-msgstr "הרץ את Nextcloud Plus."
+msgstr "Nextcloud Plus"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:41
+msgid ""
+"Cloud storage for your files, calendar and contacts. Installs it as a "
+"container; turning it off removes it."
+msgstr ""
+"אחסון בענן לקבצים, ליומן ולאנשי הקשר שלכם. מותקן כקונטיינר; כיבוי יסיר אותו."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:43
+msgid "Start Nextcloud Plus"
+msgstr "הפעלת Nextcloud Plus"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:44
+msgid "Runs the Nextcloud Plus container."
+msgstr "מפעיל את הקונטיינר של Nextcloud Plus."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 48
+#: usr/share/biglinux/biglinux-settings/apps_page.py:47
 #, python-brace-format
 msgid ""
 "Nextcloud Plus is running.\n"
@@ -652,43 +446,40 @@ msgstr ""
 "כתובת: http://localhost:8286  \n"
 "ו  \n"
 "כתובת: http://{}:8286"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 44
-msgid "AdGuard"
-msgstr "אדגארד"
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 81
-msgid "Install AdGuard Home DNS ad-blocker container."
-msgstr "התקן את קונטיינר חוסם הפרסומות DNS של AdGuard Home."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 71
-msgid "Run AdGuard."
-msgstr "הרץ את AdGuard."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 57
-#, python-brace-format
-msgid ""
-"AdGuard is running.\n"
-"Address: http://localhost:3030\n"
-"and\n"
-"Address: http://{}:3030"
-msgstr ""
-"אדגארד פועל.\n"
-"כתובת: http://localhost:3030\n"
-"ו\n"
-"כתובת: http://{}:3030"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:49
+msgid "Nextcloud"
+msgstr "Nextcloud"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:49
+msgid "cloud"
+msgstr "ענן"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 71
+#: usr/share/biglinux/biglinux-settings/apps_page.py:53
+#: usr/share/biglinux/biglinux-settings/apps_page.py:63
 msgid "Jellyfin"
-msgstr "ג'לי פינ"
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 100
-msgid "Install Jellyfin media server container."
-msgstr "התקן את מיכל השרת מדיה Jellyfin."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 90
-msgid "Run Jellyfin."
-msgstr "הרץ את ג'לי פינ."
+msgstr "Jellyfin"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:55
+msgid ""
+"Media server for your movies, series and music. Installs it as a container; "
+"turning it off removes it."
+msgstr ""
+"שרת מדיה לסרטים, לסדרות ולמוזיקה שלכם. מותקן כקונטיינר; כיבוי יסיר אותו."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:57
+msgid "Start Jellyfin"
+msgstr "הפעלת Jellyfin"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:58
+msgid "Runs the Jellyfin container."
+msgstr "מפעיל את הקונטיינר של Jellyfin."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 75
+#: usr/share/biglinux/biglinux-settings/apps_page.py:61
 #, python-brace-format
 msgid ""
 "Jellyfin is running.\n"
@@ -700,91 +491,89 @@ msgstr ""
 "כתובת: http://localhost:8096\n"
 "ו\n"
 "כתובת: http://{}:8096"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:63
+msgid "media server"
+msgstr "שרת מדיה"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:68
+msgid "Network & Security"
+msgstr "רשת ואבטחה"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:69
+msgid "Network tools and security services. Require Docker."
+msgstr "כלי רשת ושירותי אבטחה. דורשים Docker."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 80
-msgid "LAMP"
-msgstr "למפ"
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 119
-msgid "Install LAMP stack container (Linux, Apache, MySQL, PHP)."
-msgstr "התקן מיכל ערכת LAMP (לינוקס, אפאצ'י, MySQL, PHP)."
+# settings/containers_page.py, line: 44
+#: usr/share/biglinux/biglinux-settings/apps_page.py:76
+#: usr/share/biglinux/biglinux-settings/apps_page.py:86
+msgid "AdGuard"
+msgstr "AdGuard"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:78
+msgid ""
+"AdGuard Home: blocks ads and trackers for the whole network through DNS. "
+"Installs it as a container; turning it off removes it."
+msgstr ""
+"AdGuard Home: חוסם פרסומות ומעקבים בכל הרשת באמצעות DNS. מותקן כקונטיינר; "
+"כיבוי יסיר אותו."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:80
+msgid "Start AdGuard"
+msgstr "הפעלת AdGuard"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:81
+msgid "Runs the AdGuard container."
+msgstr "מפעיל את הקונטיינר של AdGuard."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 109
-msgid "Run LAMP."
-msgstr "הרץ LAMP."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 84
+# line: 57
+#: usr/share/biglinux/biglinux-settings/apps_page.py:84
 #, python-brace-format
 msgid ""
-"LAMP is running.\n"
-"Address: http://localhost:8080\n"
+"AdGuard is running.\n"
+"Address: http://localhost:3030\n"
 "and\n"
-"Address: http://{}:8080"
+"Address: http://{}:3030"
 msgstr ""
-"LAMP פועל.\n"
-"כתובת: http://localhost:8080\n"
+"אדגארד פועל.\n"
+"כתובת: http://localhost:3030\n"
 "ו\n"
-"כתובת: http://{}:8080"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 89
-msgid "Portainer Client"
-msgstr "לקוח פורטיינר"
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 138
-msgid "Install Portainer Agent container for cluster management."
-msgstr "התקן את קונטיינר סוכן פורטיינר לניהול אשכולות."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 128
-msgid "Run Portainer Client."
-msgstr "הרץ את לקוח פורטיינר."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 93
-#, python-brace-format
-msgid ""
-"Portainer Client is running.\n"
-"Address: http://localhost:9000\n"
-"and\n"
-"Address: http://{}:9000"
-msgstr ""
-"לקוח פורטיינר פועל.\n"
-"כתובת: http://localhost:9000\n"
-"ו\n"
-"כתובת: http://{}:9000"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/containers_page.py, line: 98
-msgid "SWS"
-msgstr "SWS"
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 157
-msgid "Install SWS static web server container."
-msgstr "התקן קונטיינר שרת אינטרנט סטטי SWS."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 147
-msgid "Run SWS."
-msgstr "הרץ SWS."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 102
-#, python-brace-format
-msgid ""
-"SWS is running.\n"
-"Address: http://localhost:8182\n"
-"and\n"
-"Address: http://{}:8182"
-msgstr ""
-"SWS פועל.\n"
-"כתובת: http://localhost:8182\n"
-"ו\n"
-"כתובת: http://{}:8182"
+"כתובת: http://{}:3030"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:86
+msgid "DNS"
+msgstr "DNS"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:86
+msgid "ad blocker"
+msgstr "חוסם פרסומות"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/containers_page.py, line: 107
+#: usr/share/biglinux/biglinux-settings/apps_page.py:90
+#: usr/share/biglinux/biglinux-settings/apps_page.py:100
 msgid "V2RayA"
 msgstr "V2RayA"
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 176
-msgid "Install V2RayA network proxy container."
-msgstr "התקן את מיכל הפרוקסי של V2RayA."
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
-# line: 166
-msgid "Run V2RayA."
-msgstr "הרץ V2RayA."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:92
+msgid ""
+"Network proxy client with a web interface. Installs it as a container; "
+"turning it off removes it."
+msgstr "לקוח פרוקסי לרשת עם ממשק web. מותקן כקונטיינר; כיבוי יסיר אותו."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:94
+msgid "Start V2RayA"
+msgstr "הפעלת V2RayA"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:95
+msgid "Runs the V2RayA container."
+msgstr "מפעיל את הקונטיינר של V2RayA."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 111
+#: usr/share/biglinux/biglinux-settings/apps_page.py:98
 #, python-brace-format
 msgid ""
 "V2RayA is running.\n"
@@ -796,413 +585,2266 @@ msgstr ""
 "כתובת: http://localhost:2017\n"
 "ו\n"
 "כתובת: http://{}:2017"
-# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 195
-msgid "Install the open-source alternative to Google's NotebookLM."
-msgstr "התקן את החלופה בקוד פתוח ל-NotebookLM של גוגל."
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 48
-msgid "Close"
-msgstr "סגור"
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 63
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:100
+msgid "proxy"
+msgstr "פרוקסי"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:105
+msgid "Development & Tools"
+msgstr "פיתוח וכלים"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:106
+msgid "Development stacks and utility services. Require Docker."
+msgstr "סביבות פיתוח ושירותי עזר. דורשים Docker."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 80
+#: usr/share/biglinux/biglinux-settings/apps_page.py:113
+msgid "LAMP"
+msgstr "LAMP"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:115
+msgid ""
+"Web development stack with Linux, Apache, MySQL and PHP. Installs it as a "
+"container; turning it off removes it."
+msgstr ""
+"סביבת פיתוח web עם Linux, Apache, MySQL ו-PHP. מותקנת כקונטיינר; כיבוי יסיר "
+"אותה."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:117
+msgid "Start LAMP"
+msgstr "הפעלת LAMP"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:118
+msgid "Runs the LAMP container."
+msgstr "מפעיל את הקונטיינר של LAMP."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 84
+#: usr/share/biglinux/biglinux-settings/apps_page.py:121
 #, python-brace-format
-msgid "Warning: {}"
-msgstr "אזהרה: {}"
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 66
-msgid "Cancel"
-msgstr "ביטול"
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 67
-msgid "Continue"
-msgstr "המשך"
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 230
-msgid "Run"
-msgstr "הפעל"
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 236
+msgid ""
+"LAMP is running.\n"
+"Address: http://localhost:8080\n"
+"and\n"
+"Address: http://{}:8080"
+msgstr ""
+"LAMP פועל.\n"
+"כתובת: http://localhost:8080\n"
+"ו\n"
+"כתובת: http://{}:8080"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:123
+msgid "MySQL"
+msgstr "MySQL"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:123
+msgid "PHP"
+msgstr "PHP"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:123
+#: usr/share/biglinux/biglinux-settings/apps_page.py:151
+msgid "web server"
+msgstr "שרת web"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 89
+#: usr/share/biglinux/biglinux-settings/apps_page.py:127
+msgid "Portainer Client"
+msgstr "Portainer Client"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:129
+msgid ""
+"Portainer Agent, to manage this computer's containers from a Portainer "
+"server. Installs it as a container; turning it off removes it."
+msgstr ""
+"Portainer Agent, לניהול הקונטיינרים של המחשב הזה משרת Portainer. מותקן "
+"כקונטיינר; כיבוי יסיר אותו."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:131
+msgid "Start Portainer Client"
+msgstr "הפעלת Portainer Client"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:132
+msgid "Runs the Portainer Client container."
+msgstr "מפעיל את הקונטיינר של Portainer Client."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 93
+#: usr/share/biglinux/biglinux-settings/apps_page.py:135
 #, python-brace-format
-msgid "{}: run action"
-msgstr "{}: הפעל פעולה"
+msgid ""
+"Portainer Client is running.\n"
+"Address: http://localhost:9000\n"
+"and\n"
+"Address: http://{}:9000"
+msgstr ""
+"לקוח פורטיינר פועל.\n"
+"כתובת: http://localhost:9000\n"
+"ו\n"
+"כתובת: http://{}:9000"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:137
+msgid "Portainer"
+msgstr "Portainer"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:137
+msgid "cluster"
+msgstr "cluster"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 98
+#: usr/share/biglinux/biglinux-settings/apps_page.py:141
+msgid "SWS"
+msgstr "SWS"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:143
+msgid ""
+"Static Web Server, to publish static websites. Installs it as a container; "
+"turning it off removes it."
+msgstr ""
+"Static Web Server, לפרסום אתרים סטטיים. מותקן כקונטיינר; כיבוי יסיר אותו."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:145
+msgid "Start SWS"
+msgstr "הפעלת SWS"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:146
+msgid "Runs the SWS container."
+msgstr "מפעיל את הקונטיינר של SWS."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 102
+#: usr/share/biglinux/biglinux-settings/apps_page.py:149
+#, python-brace-format
+msgid ""
+"SWS is running.\n"
+"Address: http://localhost:8182\n"
+"and\n"
+"Address: http://{}:8182"
+msgstr ""
+"SWS פועל.\n"
+"כתובת: http://localhost:8182\n"
+"ו\n"
+"כתובת: http://{}:8182"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:151
+msgid "static"
+msgstr "סטטי"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:157
+msgid ""
+"Open-source alternative to Google's NotebookLM. Installs it as a container; "
+"turning it off removes it."
+msgstr ""
+"חלופה בקוד פתוח ל-NotebookLM של Google. מותקנת כקונטיינר; כיבוי יסיר אותה."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:165
+#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+msgid "AI"
+msgstr "בינה מלאכותית"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:171
+msgid "Developer tools"
+msgstr "כלי פיתוח"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:172
+msgid "Coding agents and command-line tools for developers."
+msgstr "סוכני תכנות וכלי שורת פקודה למפתחים."
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 21
+#: usr/share/biglinux/biglinux-settings/apps_page.py:181
+msgid "OpenClaude"
+msgstr "OpenClaude"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:183
+msgid ""
+"Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
+"models. Installs it with nodejs, npm and ripgrep as dependencies; turning it "
+"off removes it."
+msgstr ""
+"סוכן תכנות בשורת פקודה בקוד פתוח עבור OpenAI, Gemini, DeepSeek, Ollama ויותר "
+"מ-200 מודלים. מותקן יחד עם nodejs, npm ו-ripgrep כתלויות; כיבוי יסיר אותו."
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+msgid "coding agent"
+msgstr "סוכן תכנות"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+msgid "programming"
+msgstr "תכנות"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 173
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 199
+#: usr/share/biglinux/biglinux-settings/base_page.py:44
 #, python-brace-format
 msgid "Script not found: {}"
 msgstr "סקריפט לא נמצא: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 48
+#: usr/share/biglinux/biglinux-settings/base_page.py:84
+msgid "Close"
+msgstr "סגור"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 63
+#: usr/share/biglinux/biglinux-settings/base_page.py:107
+#, python-brace-format
+msgid "Warning: {}"
+msgstr "אזהרה: {}"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 66
+#: usr/share/biglinux/biglinux-settings/base_page.py:110
+msgid "Cancel"
+msgstr "ביטול"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 67
+#: usr/share/biglinux/biglinux-settings/base_page.py:111
+msgid "Continue"
+msgstr "המשך"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 230
+#: usr/share/biglinux/biglinux-settings/base_page.py:308
+msgid "Run"
+msgstr "הפעל"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 236
+#: usr/share/biglinux/biglinux-settings/base_page.py:314
+#, python-brace-format
+msgid "{}: run action"
+msgstr "{}: הפעל פעולה"
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 626
 # File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 136
+#: usr/share/biglinux/biglinux-settings/base_page.py:353
+#: usr/share/biglinux/biglinux-settings/base_page.py:1019
+#: usr/share/biglinux/biglinux-settings/devices_page.py:158
 msgid "Applying…"
 msgstr "מיישם…"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 289
+#: usr/share/biglinux/biglinux-settings/base_page.py:367
 #, python-brace-format
 msgid "Action script {} failed: {}"
 msgstr "סקריפט הפעולה {} נכשל: {}"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 294
+#: usr/share/biglinux/biglinux-settings/base_page.py:372
 #, python-brace-format
 msgid "Action script timeout: {}"
 msgstr "פסק זמן לסקריפט הפעולה: {}"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 297
+#: usr/share/biglinux/biglinux-settings/base_page.py:375
 #, python-brace-format
 msgid "Error running action script {}: {}"
 msgstr "שגיאה בהפעלת סקריפט הפעולה {}: {}"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 307
+#: usr/share/biglinux/biglinux-settings/base_page.py:385
 msgid "Action completed successfully"
 msgstr "הפעולה הושלמה בהצלחה"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 310
+#: usr/share/biglinux/biglinux-settings/base_page.py:388
 #, python-brace-format
 msgid "Action failed: {}"
 msgstr "הפעולה נכשלה: {}"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 215
+#: usr/share/biglinux/biglinux-settings/base_page.py:423
 msgid "Recommended"
 msgstr "מומלץ"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 238
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 326
+#: usr/share/biglinux/biglinux-settings/base_page.py:446
+#: usr/share/biglinux/biglinux-settings/base_page.py:533
 #, python-brace-format
 msgid "{}: additional information"
 msgstr "{}: מידע נוסף"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 251
+#: usr/share/biglinux/biglinux-settings/base_page.py:459
 msgid "Learn more"
 msgstr "למד עוד"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 257
+#: usr/share/biglinux/biglinux-settings/base_page.py:465
 #, python-brace-format
 msgid "{}: learn more"
 msgstr "{}: למידע נוסף"
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 206
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 165
+#: usr/share/biglinux/biglinux-settings/base_page.py:572
 msgid "Unavailable: script not found."
 msgstr "לא זמין: הסקריפט לא נמצא."
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 218
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 177
+#: usr/share/biglinux/biglinux-settings/base_page.py:588
 msgid "Enabled"
 msgstr "מופעל"
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 220
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 179
+#: usr/share/biglinux/biglinux-settings/base_page.py:590
 msgid "Disabled"
 msgstr "מושבת"
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 223
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 182
+#: usr/share/biglinux/biglinux-settings/base_page.py:596
 msgid ""
 "Enabled by system configuration (e.g., Real-Time Kernel) and cannot be "
 "changed here."
 msgstr "מופעל על ידי תצורת המערכת (למשל, ליבת זמן אמת) ואינו יכול להשתנות כאן."
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 516
+#: usr/share/biglinux/biglinux-settings/base_page.py:600
 msgid "Unavailable in this desktop environment."
 msgstr "לא זמין בסביבת שולחן העבודה הזו."
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 225
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 184
+#: usr/share/biglinux/biglinux-settings/base_page.py:602
 msgid "Unavailable: script returned invalid output."
 msgstr "לא זמין: הסקריפט החזיר פלט לא תקין."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/base_page.py,
 # line: 261
+#: usr/share/biglinux/biglinux-settings/base_page.py:604
 #, python-brace-format
 msgid "output from script {}: {}"
 msgstr "פלט מהסקריפט {}: {}"
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 229
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 188
+#: usr/share/biglinux/biglinux-settings/base_page.py:610
 msgid "Unavailable: script returned an error."
 msgstr "לא זמין: הסקריפט החזיר שגיאה."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 184
+#: usr/share/biglinux/biglinux-settings/base_page.py:611
 #, python-brace-format
 msgid "Error checking state: {}"
 msgstr "שגיאת בדיקת מצב: {}"
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 233
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 192
+#: usr/share/biglinux/biglinux-settings/base_page.py:614
 msgid "Unavailable: failed to run script."
 msgstr "לא זמין: נכשל בהרצת הסקריפט."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 193
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 220
+#: usr/share/biglinux/biglinux-settings/base_page.py:615
+#: usr/share/biglinux/biglinux-settings/base_page.py:642
 #, python-brace-format
 msgid "Error running script {}: {}"
 msgstr "שגיאה בהרצת סקריפט {}: {}"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 211
-#, python-brace-format
-msgid "Script output: {}"
-msgstr "{}"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 209
-msgid "State changed successfully"
-msgstr "המצב שונה בהצלחה"
-# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
-# 215
-#, python-brace-format
-msgid "Script failed with exit code: {}"
-msgstr "הסקריפט נכשל עם קוד יציאה: {}"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 190
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 217
+#: usr/share/biglinux/biglinux-settings/base_page.py:638
 #, python-brace-format
 msgid "Script timeout: {}"
 msgstr "זמן ההמתנה של הסקריפט: {}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 211
+#: usr/share/biglinux/biglinux-settings/base_page.py:650
+#, python-brace-format
+msgid "Script output: {}"
+msgstr "{}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 209
+#: usr/share/biglinux/biglinux-settings/base_page.py:658
+msgid "State changed successfully"
+msgstr "המצב שונה בהצלחה"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 215
+#: usr/share/biglinux/biglinux-settings/base_page.py:667
+#, python-brace-format
+msgid "Script failed with exit code: {}"
+msgstr "הסקריפט נכשל עם קוד יציאה: {}"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 620
+#: usr/share/biglinux/biglinux-settings/base_page.py:700
 #, python-brace-format
 msgid "{} sub-option available"
 msgid_plural "{} sub-options available"
 msgstr[0] "{} אפשרות משנה זמינה"
 msgstr[1] "{} אפשרויות משנה זמינות"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:826
+msgid "Try again"
+msgstr "נסו שוב"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:831
+#, python-brace-format
+msgid "{}: try again"
+msgstr "{}: נסו שוב"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:836
+msgid "Could not check this setting."
+msgstr "לא ניתן לבדוק את ההגדרה הזו."
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
-msgid "on"
-msgstr "על"
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
+#: usr/share/biglinux/biglinux-settings/base_page.py:938
 msgid "off"
 msgstr "כבוי"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 570
+#: usr/share/biglinux/biglinux-settings/base_page.py:938
+msgid "on"
+msgstr "על"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 574
+#: usr/share/biglinux/biglinux-settings/base_page.py:943
 #, python-brace-format
 msgid "Changing {} to {}…"
 msgstr "שינוי {} ל-{}…"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 576
+#: usr/share/biglinux/biglinux-settings/base_page.py:946
 msgid "Undo"
 msgstr "ביטול"
+
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 600
+#: usr/share/biglinux/biglinux-settings/base_page.py:977
 msgid "Undo: reverted toggle"
 msgstr "ביטול: מתג הוחזר"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 244
+#: usr/share/biglinux/biglinux-settings/base_page.py:1009
 #, python-brace-format
 msgid "Changing {} to {}"
 msgstr "שינוי {} ל{}"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 271
+#: usr/share/biglinux/biglinux-settings/base_page.py:1045
 #, python-brace-format
 msgid "ERROR: Failed to change {} to {}"
 msgstr "שגיאה: לא הצליח לשנות {} ל{}"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 274
+#: usr/share/biglinux/biglinux-settings/base_page.py:1050
 #, python-brace-format
 msgid "Failed to change setting: {}"
 msgstr "שינוי ההגדרה נכשל: {}"
+
+#: usr/share/biglinux/biglinux-settings/base_page.py:1066
+msgid "Saved. It will take effect after the next restart."
+msgstr "נשמר. השינוי ייכנס לתוקף לאחר ההפעלה מחדש הבאה."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 16
-msgid "BigLinux performance tweaks."
-msgstr "שיפורי ביצועים של BigLinux."
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/usability/gamemode_config_dialog.py, line: 91
-msgid "Disable Visual Effects"
-msgstr "כבה אפקטים חזותיים"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 35
-msgid ""
-"Disables KWin visual effects (blur, shadows, animations). Reduces GPU load "
-"and frees memory."
-msgstr ""
-"מכבה את אפקטי הוויזואליים של KWin (טשטוש, צללים, אנימציות). מפחית את העומס "
-"על ה-GPU ומשחרר זיכרון."
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 63
-msgid "CPU Maximum Performance"
-msgstr "ביצועי מעבד מקסימליים"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 51
-msgid ""
-"Forces maximum processor performance mode. Ensures the processor uses "
-"maximum frequency."
-msgstr "כוח מצב ביצוע מקסימלי של המעבד. מבטיח שהמעבד משתמש בתדירות המקסימלית."
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 79
-msgid "Disable Baloo Indexer"
-msgstr "השבת את אינדקסר בלו"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 67
-msgid "Disables the Baloo file indexer. Avoids disk I/O overhead."
-msgstr "מכבה את אינדקס הקבצים של בלו. נמנע מעומס I/O בדיסק."
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/usability/gamemode_config_dialog.py, line: 136
-msgid "Unload S.M.A.R.T Monitor"
-msgstr "פרוק מוניטור S.M.A.R.T"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/performance_games_page.py, line: 83
-msgid "Disables S.M.A.R.T disk monitoring. Reduces disk I/O and CPU usage."
-msgstr "מנכה את ניטור הדיסק S.M.A.R.T. מפחית את השימוש בדיסק I/O ובמעבד."
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 169
-msgid "Meltdown Mitigations off"
-msgstr "הפחתות של מלטדאון כבויות"
-# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 62
-msgid "Using mitigations=off will make your machine faster and less secure!"
-msgstr "שימוש במיתונים=כבוי יהפוך את המחשב שלך למהיר יותר ופחות מאובטח!"
-# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 67
-msgid ""
-"This will disable CPU security mitigations (Meltdown/Spectre). Your system "
-"will be faster but vulnerable to hardware-level attacks. Are you sure you "
-"want to continue?"
-msgstr ""
-"זה יכבול את אמצעי האבטחה של המעבד (Meltdown/Spectre). המערכת שלך תהיה מהירה "
-"יותר אך פגיעה להתקפות ברמת החומרה. האם אתה בטוח שברצונך להמשיך?"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 176
-msgid "noWatchdog"
-msgstr "לא מעקב"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/system_usability_page.py, line: 177
-msgid ""
-"Disables the hardware watchdog and TSC clocksource systems, maintaining high "
-"performance but removing automatic protections against system crashes."
-msgstr ""
-"מכבה את מערכת השעון החומרתי ואת מערכות מקור השעון TSC, שומר על ביצועים "
-"גבוהים אך מסיר הגנות אוטומטיות מפני קריסות מערכת."
-# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 81
-msgid ""
-"This will disable the hardware watchdog. Your system will no longer "
-"automatically recover from certain types of crashes. Are you sure you want "
-"to continue?"
-msgstr ""
-"זה יכבה את השעון המעורר החומרתי. המערכת שלך לא תוכל יותר לשחזר אוטומטית "
-"מסוגים מסוימים של קריסות. האם אתה בטוח שברצונך להמשיך?"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 103
-msgid "Preload"
-msgstr "טען מראש"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 105
-msgid "Preload applications into memory to open them faster."
-msgstr "טען יישומים לזיכרון כדי לפתוח אותם מהר יותר."
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 120
-msgid "Firefox"
-msgstr "פיירפוקס"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 126
-msgid "Brave"
-msgstr "ברייב"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 132
-msgid "Chrome"
-msgstr "כרום"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 138
-msgid "Chromium"
-msgstr "כרומיום"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 126
-msgid "Librewolf"
-msgstr "ליברווולף"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 144
-msgid "Palemoon"
-msgstr "פאלימון"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 150
-msgid "Opera"
-msgstr "אופרה"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/preload_page.py, line: 156
-msgid "Libreoffice"
-msgstr "ליבראOffice"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 15
-msgid "Manage physical devices."
-msgstr "נהל מכשירים פיזיים."
+# settings/dispositivos_page.py, line: 25
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 116
+#: usr/share/biglinux/biglinux-settings/devices_page.py:30
+#: usr/share/biglinux/biglinux-settings/main.py:352
+msgid "Devices"
+msgstr "מכשירים"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:30
+msgid "Wireless, audio and input devices."
+msgstr "התקנים אלחוטיים, שמע והתקני קלט."
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:34
+msgid "Wireless"
+msgstr "אלחוטי"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:39
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:40
+msgid "Turns the Wi-Fi adapter on or off."
+msgstr "מפעיל או מכבה את מתאם ה-Wi-Fi."
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 190
+#: usr/share/biglinux/biglinux-settings/devices_page.py:43
 msgid "Wifi"
 msgstr "ווי-פיי"
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 39
-msgid "Enable the Wi-Fi adapter."
-msgstr "אפשר את מתאם ה-Wi-Fi."
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:43
+msgid "network"
+msgstr "רשת"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:43
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+msgid "wireless"
+msgstr "אלחוטי"
+
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 197
+#: usr/share/biglinux/biglinux-settings/devices_page.py:47
 msgid "Bluetooth"
-msgstr "בלוטות'"
-# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 43
-msgid "Enable the Bluetooth adapter."
-msgstr "אפשר את מתאם ה-Bluetooth."
+msgstr "Bluetooth"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:48
+msgid "Turns the Bluetooth adapter on or off."
+msgstr "מפעיל או מכבה את מתאם ה-Bluetooth."
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:54
+msgid "Audio"
+msgstr "שמע"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:59
+msgid "JamesDSP audio effects"
+msgstr "אפקטי שמע של JamesDSP"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:61
+msgid ""
+"Audio effects software that enhances the sound of all applications. Installs "
+"JamesDSP if it is missing and starts it with the session."
+msgstr ""
+"תוכנת אפקטי שמע שמשפרת את הצליל של כל היישומים. מתקינה את JamesDSP אם הוא חסר"
+" ומפעילה אותו עם ההפעלה."
+
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-#
+# 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/dispositivos_page.py, line: 77
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 155
+#: usr/share/biglinux/biglinux-settings/devices_page.py:65
 msgid "JamesDSP"
-msgstr "ג'יימסDSP"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/dispositivos_page.py, line: 84
-msgid "Advanced audio effects processor that improves sound quality."
-msgstr "מעבד אפקטים קוליים מתקדם שמשפר את איכות הסאונד."
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 71
-msgid "Reverse mouse scrolling"
-msgstr "גלילה הפוכה בעכבר"
-# File: biglinux-settings/usr/share/biglinux/biglinux-
-# settings/devices_page.py, line: 72
-msgid "Reverse mouse scrolling without restarting the session."
-msgstr "הפוך את גלילת העכבר מבלי לאתחל את המושב."
+msgstr "JamesDSP"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:65
+msgid "equalizer"
+msgstr "אקולייזר"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:65
+msgid "sound"
+msgstr "צליל"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:69
+msgid "Mouse"
+msgstr "עכבר"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:74
+msgid "Natural scrolling"
+msgstr "גלילה טבעית"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:76
+msgid ""
+"Reverses the scroll direction so the content follows the movement of the "
+"wheel or fingers, as on a touchscreen. Applies right away."
+msgstr ""
+"הופך את כיוון הגלילה כך שהתוכן עוקב אחר תנועת הגלגלת או האצבעות, כמו במסך "
+"מגע. חל מיד."
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:80
+msgid "mouse"
+msgstr "עכבר"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:80
+msgid "reverse scrolling"
+msgstr "גלילה הפוכה"
+
+#: usr/share/biglinux/biglinux-settings/devices_page.py:80
+msgid "scroll direction"
+msgstr "כיוון גלילה"
+
 # File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 66
+#: usr/share/biglinux/biglinux-settings/devices_page.py:85
 msgid "Network Interfaces"
 msgstr "ממשקי רשת"
+
 # File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 67
+#: usr/share/biglinux/biglinux-settings/devices_page.py:86
 msgid "Connect or disconnect network devices."
 msgstr "חבר או נתק מכשירי רשת."
+
 # File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 99
 # File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 154
+#: usr/share/biglinux/biglinux-settings/devices_page.py:118
+#: usr/share/biglinux/biglinux-settings/devices_page.py:197
 #, python-brace-format
 msgid "{} — {}"
 msgstr ""
 "אני כאן כדי לעזור, אך אני זקוק למידע נוסף כדי לבצע את התרגום. אנא ספק את "
 "המחרוזת שברצונך לתרגם. {} {}"
+
 # File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 113
+#: usr/share/biglinux/biglinux-settings/devices_page.py:135
 #, python-brace-format
 msgid "{}: toggle connection"
 msgstr "{}: הפעל/י חיבור"
+
 # File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
+#: usr/share/biglinux/biglinux-settings/devices_page.py:195
 msgid "connected"
 msgstr "מחובר"
+
 # File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 152
+#: usr/share/biglinux/biglinux-settings/devices_page.py:195
 msgid "disconnected"
 msgstr "מנותק"
+
 # File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 161
+#: usr/share/biglinux/biglinux-settings/devices_page.py:202
 #, python-brace-format
 msgid "Failed to change network device: {}"
 msgstr "נכשל בשינוי מכשיר הרשת: {}"
-#~ msgid "AMD/Nvidia GPU not found!"
-#~ msgstr "כרטיס גרפי AMD/Nvidia לא נמצא!"
-#~ msgid "No Ollama packages are installed. Enable an Ollama variant first."
-#~ msgstr "לא מותקנות חבילות Ollama. הפעל תחילה גרסה של Ollama."
-#~ msgid "Already enabled. No changes made."
-#~ msgstr "כבר מופעל. לא בוצעו שינויים."
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:53
+msgid "On"
+msgstr "פועל"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:54
+#: usr/share/biglinux/biglinux-settings/home_page.py:88
+msgid "Off"
+msgstr "כבוי"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 181
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 195
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 181
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 195
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 244
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 256
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 244
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 256
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/usability/gamemode_dialog.py, line: 204
+#: usr/share/biglinux/biglinux-settings/home_page.py:62
+#: usr/share/biglinux/biglinux-settings/main.py:347
+#: usr/share/biglinux/biglinux-settings/performance_page.py:9
+msgid "Performance"
+msgstr "ביצועים"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:63
+msgid "Standard"
+msgstr "רגיל"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:78
+msgid "Ollama installed"
+msgstr "Ollama מותקן"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:79
+msgid "Not set up"
+msgstr "לא הוגדר"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:87
+msgid "Running"
+msgstr "פועל"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:99
+msgid "Reduced"
+msgstr "מופחתות"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:100
+msgid "Default"
+msgstr "ברירת מחדל"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:110
+msgid "Suspends at 20% battery"
+msgstr "עובר להשהיה ב-20% סוללה"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:112
+msgid "Stays awake"
+msgstr "נשאר ער"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:114
+msgid "Stays awake on battery"
+msgstr "נשאר ער בסוללה"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:116
+msgid "Stays awake when plugged in"
+msgstr "נשאר ער כשמחובר לחשמל"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:117
+msgid "System default"
+msgstr "ברירת המחדל של המערכת"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:123
+#: usr/share/biglinux/biglinux-settings/system_page.py:15
+msgid "Remote access"
+msgstr "גישה מרחוק"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:125
+#: usr/share/biglinux/biglinux-settings/performance_page.py:18
+msgid "Performance profile"
+msgstr "פרופיל ביצועים"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:128
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:80
+msgid "When idle"
+msgstr "כשלא בשימוש"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:132
+msgid "Local AI"
+msgstr "בינה מלאכותית מקומית"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:136
+msgid "System protections"
+msgstr "הגנות המערכת"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:148
+msgid "Welcome"
+msgstr "ברוכים הבאים"
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:149
+msgid "Adjust BigLinux simply and safely. Here is how this computer is set up."
+msgstr "התאימו את BigLinux בקלות ובבטחה. כך המחשב הזה מוגדר."
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:174
+msgid "Tip: search with everyday words, like “don't sleep” or “remote access”."
+msgstr "טיפ: חפשו במילים יומיומיות, כמו „לא להירדם” או „גישה מרחוק”."
+
+#: usr/share/biglinux/biglinux-settings/home_page.py:214
+#: usr/share/biglinux/biglinux-settings/home_page.py:225
+msgid "Checking…"
+msgstr "בודק…"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 49
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 120
+#: usr/share/biglinux/biglinux-settings/main.py:43
+msgid "BigLinux Settings"
+msgstr "הגדרות ביגלינוקס"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 49
+#: usr/share/biglinux/biglinux-settings/main.py:116
+msgid "BigLinux Community"
+msgstr "קהילת BigLinux"
+
+#: usr/share/biglinux/biglinux-settings/main.py:231
+msgid "Search settings…"
+msgstr "חיפוש הגדרות…"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 185
+#: usr/share/biglinux/biglinux-settings/main.py:237
+msgid "Search settings"
+msgstr "הגדרות חיפוש"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 192
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 195
+#: usr/share/biglinux/biglinux-settings/main.py:244
+#: usr/share/biglinux/biglinux-settings/main.py:247
+msgid "Toggle navigation sidebar"
+msgstr "החלף סרגל ניווט"
+
+#: usr/share/biglinux/biglinux-settings/main.py:254
+#: usr/share/biglinux/biglinux-settings/main.py:256
+msgid "Back to search results"
+msgstr "חזרה לתוצאות החיפוש"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 202
+#: usr/share/biglinux/biglinux-settings/main.py:264
+msgid "About"
+msgstr "אודות"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 206
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 209
+#: usr/share/biglinux/biglinux-settings/main.py:268
+#: usr/share/biglinux/biglinux-settings/main.py:271
+msgid "Main Menu"
+msgstr "תפריט ראשי"
+
+#: usr/share/biglinux/biglinux-settings/main.py:302
+msgid "No results"
+msgstr "אין תוצאות"
+
+#: usr/share/biglinux/biglinux-settings/main.py:304
+msgid "Try other words, like “don't sleep”, “remote access” or “battery”."
+msgstr "נסו מילים אחרות, כמו „לא להירדם”, „גישה מרחוק” או „סוללה”."
+
+#: usr/share/biglinux/biglinux-settings/main.py:332
+msgid "Home"
+msgstr "בית"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 108
+#: usr/share/biglinux/biglinux-settings/main.py:333
+#: usr/share/biglinux/biglinux-settings/system_page.py:11
+msgid "System"
+msgstr "מערכת"
+
+#: usr/share/biglinux/biglinux-settings/main.py:335
+#: usr/share/biglinux/biglinux-settings/usability_page.py:9
+msgid "Appearance & Usage"
+msgstr "מראה ושימוש"
+
+#: usr/share/biglinux/biglinux-settings/main.py:341
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:70
+msgid "Power & Suspend"
+msgstr "חשמל והשהיה"
+
+#: usr/share/biglinux/biglinux-settings/main.py:412
+msgid "More features"
+msgstr "עוד תכונות"
+
+#: usr/share/biglinux/biglinux-settings/main.py:554
+#, python-brace-format
+msgid "{} result"
+msgid_plural "{} results"
+msgstr[0] "{} תוצאה"
+msgstr[1] "{} תוצאות"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 441
+#: usr/share/biglinux/biglinux-settings/main.py:581
+msgid "Open setting"
+msgstr "פתח הגדרה"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 446
+#: usr/share/biglinux/biglinux-settings/main.py:586
+#, python-brace-format
+msgid "Open {} setting"
+msgstr "פתח הגדרת {}"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 469
+#: usr/share/biglinux/biglinux-settings/main.py:681
+msgid "Dismiss"
+msgstr "מחק"
+
+#: usr/share/biglinux/biglinux-settings/performance/meltdownMitigationsRun.sh:129
+#: usr/share/biglinux/biglinux-settings/performance/noWatchdogRun.sh:129
+msgid "Already enabled. No changes made."
+msgstr "כבר מופעל. לא בוצעו שינויים."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:9
+msgid "Balance speed, power use and stability."
+msgstr "אזנו בין מהירות, צריכת חשמל ויציבות."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:13
+msgid "Power profile"
+msgstr "פרופיל צריכת חשמל"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:20
+msgid ""
+"Prioritizes performance. May increase power use, temperature and fan noise. "
+"Turning it off restores the previous profile."
+msgstr ""
+"נותן עדיפות לביצועים. עלול להגדיל את צריכת החשמל, הטמפרטורה ורעש המאווררים. "
+"כיבוי משחזר את הפרופיל הקודם."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:24
+msgid "CPU"
+msgstr "CPU"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:24
+msgid "power profile"
+msgstr "פרופיל צריכת חשמל"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:24
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
+msgid "speed"
+msgstr "מהירות"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:28
+msgid "Desktop"
+msgstr "שולחן עבודה"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:34
+msgid "Visual effects"
+msgstr "אפקטים חזותיים"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:36
+msgid ""
+"Blur, shadows and animations of the desktop. Turning them off makes the "
+"interface plainer and can help on computers with slow graphics."
+msgstr ""
+"טשטוש, צללים ואנימציות של שולחן העבודה. כיבוי הופך את הממשק לפשוט יותר ועשוי "
+"לעזור במחשבים עם כרטיס גרפי איטי."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:40
+msgid "animations"
+msgstr "אנימציות"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:40
+msgid "blur"
+msgstr "טשטוש"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:40
+msgid "effects"
+msgstr "אפקטים"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:46
+msgid "File indexing"
+msgstr "אינדוקס קבצים"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:48
+msgid ""
+"Lets Dolphin and the application menu find files quickly by name and content."
+" Turning it off saves disk and processor use, but that search no longer finds"
+" files quickly."
+msgstr ""
+"מאפשר ל-Dolphin ולתפריט היישומים למצוא קבצים במהירות לפי שם ותוכן. כיבוי חוסך"
+" שימוש בדיסק ובמעבד, אבל החיפוש הזה כבר לא ימצא קבצים במהירות."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:52
+msgid "Baloo"
+msgstr "Baloo"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:52
+msgid "indexer"
+msgstr "אינדקסר"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:52
+msgid "search"
+msgstr "חיפוש"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:58
+msgid "Application launch"
+msgstr "הפעלת יישומים"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:60
+msgid ""
+"Keeps selected applications ready in memory so they open faster. Uses more "
+"memory."
+msgstr ""
+"שומר יישומים נבחרים מוכנים בזיכרון כדי שייפתחו מהר יותר. משתמש ביותר זיכרון."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 120
+#: usr/share/biglinux/biglinux-settings/performance_page.py:68
+msgid "Firefox"
+msgstr "Firefox"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 126
+#: usr/share/biglinux/biglinux-settings/performance_page.py:69
+msgid "Brave"
+msgstr "Brave"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 132
+#: usr/share/biglinux/biglinux-settings/performance_page.py:70
+msgid "Chrome"
+msgstr "Chrome"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 138
+#: usr/share/biglinux/biglinux-settings/performance_page.py:71
+msgid "Chromium"
+msgstr "Chromium"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:72
+msgid "LibreWolf"
+msgstr "LibreWolf"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:73
+msgid "Pale Moon"
+msgstr "Pale Moon"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 150
+#: usr/share/biglinux/biglinux-settings/performance_page.py:74
+msgid "Opera"
+msgstr "Opera"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:75
+msgid "Vivaldi"
+msgstr "Vivaldi"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:76
+msgid "GNOME Web"
+msgstr "GNOME Web"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:77
+msgid "LibreOffice"
+msgstr "LibreOffice"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:86
+msgid "open programs faster"
+msgstr "פתיחת תוכנות מהר יותר"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:86
+msgid "preload"
+msgstr "טעינה מראש"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:91
+msgid "Protections and diagnostics"
+msgstr "הגנות ואבחון"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:92
+msgid "Advanced. These options reduce protections or monitoring of the system."
+msgstr "מתקדם. אפשרויות אלה מפחיתות את ההגנות או את הניטור של המערכת."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:100
+msgid "Disk health monitoring"
+msgstr "ניטור תקינות הדיסקים"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:102
+msgid ""
+"Keeps the S.M.A.R.T. service watching disks for signs of failure. Installs "
+"smartmontools if it is missing."
+msgstr ""
+"שומר על שירות S.M.A.R.T. פעיל כדי לנטר את הדיסקים לסימני תקלה. מתקין את "
+"smartmontools אם הוא חסר."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:106
+msgid "SMART"
+msgstr "SMART"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:106
+msgid "disk"
+msgstr "דיסק"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:106
+msgid "smartd"
+msgstr "smartd"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:113
+msgid "Turn off CPU vulnerability protections"
+msgstr "כיבוי ההגנות מפני פגיעויות של ה-CPU"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:115
+msgid ""
+"Adds mitigations=off to the kernel command line, disabling the protections "
+"against Spectre, Meltdown and similar processor flaws. Faster in some "
+"workloads, but less secure. Applies after restart."
+msgstr ""
+"מוסיף mitigations=off לשורת הפקודה של הליבה ומשבית את ההגנות מפני Spectre, "
+"Meltdown ופגמי מעבד דומים. מהיר יותר בעומסי עבודה מסוימים, אבל פחות מאובטח. "
+"חל לאחר הפעלה מחדש."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:120
+msgid ""
+"The kernel will stop protecting against processor flaws such as Spectre and "
+"Meltdown. Some workloads get faster, but malicious programs or web pages may "
+"be able to read data from other programs. The change applies after the next "
+"restart."
+msgstr ""
+"הליבה תפסיק להגן מפני פגמי מעבד כמו Spectre ו-Meltdown. עומסי עבודה מסוימים "
+"יהיו מהירים יותר, אבל תוכנות או דפי אינטרנט זדוניים עשויים להצליח לקרוא "
+"נתונים מתוכנות אחרות. השינוי חל לאחר ההפעלה מחדש הבאה."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:122
+msgid "Turn off protections"
+msgstr "כיבוי ההגנות"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
+msgid "Meltdown"
+msgstr "Meltdown"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
+msgid "Spectre"
+msgstr "Spectre"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:124
+msgid "mitigations"
+msgstr "mitigations"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:130
+msgid "Turn off lockup detectors"
+msgstr "כיבוי גלאי הקפאה"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:132
+msgid ""
+"Adds nowatchdog and tsc=nowatchdog to the kernel command line, disabling the "
+"kernel soft and hard lockup detectors and the TSC clocksource watchdog. "
+"Applies after restart."
+msgstr ""
+"מוסיף את nowatchdog ו-tsc=nowatchdog לשורת הפקודה של הליבה ומשבית את גלאי "
+"ההקפאה הרכים והקשיחים של הליבה ואת ה-watchdog של מקור השעון TSC. חל לאחר "
+"הפעלה מחדש."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:137
+msgid ""
+"The kernel will no longer detect and report processors that stop responding, "
+"and will no longer check the stability of the TSC clock. Freezes may go "
+"unreported and become harder to diagnose. The change applies after the next "
+"restart."
+msgstr ""
+"הליבה תפסיק לזהות ולדווח על מעבדים שחדלו להגיב, ותפסיק לבדוק את יציבות שעון "
+"ה-TSC. ייתכן שהקפאות לא ידווחו ויהיה קשה יותר לאבחן אותן. השינוי חל לאחר "
+"ההפעלה מחדש הבאה."
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:139
+msgid "Turn off detectors"
+msgstr "כיבוי הגלאים"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:140
+msgid "nowatchdog"
+msgstr "nowatchdog"
+
+#: usr/share/biglinux/biglinux-settings/performance_page.py:140
+msgid "watchdog"
+msgstr "watchdog"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:72
+msgid ""
+"What happens when the computer is idle, on battery or with the lid closed."
+msgstr "מה קורה כשהמחשב לא בשימוש, פועל על סוללה או כשהמכסה סגור."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "don't sleep"
+msgstr "לא להירדם"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+msgid "sleep"
+msgstr "שינה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "stay awake"
+msgstr "להישאר ער"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+msgid "suspend"
+msgstr "השהיה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:81
+msgid "Choose whether the computer suspends after a period without use."
+msgstr "בחרו אם המחשב יעבור להשהיה לאחר פרק זמן ללא שימוש."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:88
+msgid "Stay awake while plugged in"
+msgstr "להישאר ער כשמחובר לחשמל"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:89
+msgid "Does not suspend when idle while connected to power."
+msgstr "לא עובר להשהיה בחוסר פעילות כשהמחשב מחובר לחשמל."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:97
+msgid "Stay awake on battery"
+msgstr "להישאר ער בסוללה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:99
+msgid ""
+"Does not suspend when idle on battery. The critical-battery action still "
+"applies."
+msgstr ""
+"לא עובר להשהיה בחוסר פעילות כשהמחשב פועל על סוללה. הפעולה לסוללה קריטית עדיין"
+" חלה."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:104
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:120
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:164
+msgid "battery"
+msgstr "סוללה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:109
+msgid "Stay awake and suspend at 20% battery"
+msgstr "להישאר ער ולעבור להשהיה ב-20% סוללה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:111
+msgid ""
+"Does not suspend when idle on battery and suspends automatically when the "
+"charge reaches 20%."
+msgstr ""
+"לא עובר להשהיה בחוסר פעילות כשהמחשב פועל על סוללה, ועובר להשהיה אוטומטית "
+"כשהטעינה מגיעה ל-20%."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 104
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:117
+msgid ""
+"This uses UPower's critical battery policy. Low and critical warnings occur "
+"before the suspend action at 20%."
+msgstr ""
+"זה משתמש במדיניות הסוללה הקריטית של UPower. התראות על סוללה נמוכה וקריטית "
+"מתרחשות לפני פעולת ההשעיה ב-20%."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:120
+msgid "low battery"
+msgstr "סוללה חלשה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:125
+msgid "When the lid is closed"
+msgstr "כשהמכסה נסגר"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:126
+msgid ""
+"Keep the computer working with the lid closed, for example with an external "
+"monitor."
+msgstr "מאפשר למחשב להמשיך לעבוד כשהמכסה סגור, למשל עם מסך חיצוני."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "laptop"
+msgstr "מחשב נייד"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+msgid "lid"
+msgstr "מכסה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:135
+msgid "Keep running with the lid closed while plugged in"
+msgstr "להמשיך לפעול כשהמכסה סגור והמחשב מחובר לחשמל"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:137
+msgid ""
+"Closing the lid will not lock or suspend the computer while it is connected "
+"to power. The session and network stay active."
+msgstr ""
+"סגירת המכסה לא תנעל ולא תעביר את המחשב להשהיה כשהוא מחובר לחשמל. ההפעלה והרשת"
+" נשארות פעילות."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:143
+msgid ""
+"This prevents lid-triggered suspend and locking. Automatic idle locking "
+"remains separate. Keep the notebook ventilated while it runs with the lid "
+"closed."
+msgstr ""
+"פעולה זו מונעת השהיה ונעילה בעקבות סגירת המכסה. נעילה אוטומטית בעת חוסר "
+"פעילות נשארת הגדרה נפרדת. יש לוודא שהמחשב הנייד מאוורר היטב בזמן שהוא פועל "
+"כשהמכסה סגור."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:152
+msgid "Keep running with the lid closed on battery"
+msgstr "להמשיך לפעול כשהמכסה סגור ובשימוש בסוללה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:154
+msgid ""
+"Closing the lid will not lock or suspend the computer on battery. The session"
+" and network stay active, using more battery."
+msgstr ""
+"סגירת המכסה לא תנעל ולא תעביר את המחשב להשהיה כשהוא פועל על סוללה. ההפעלה "
+"והרשת נשארות פעילות, ויש צריכת סוללה גבוהה יותר."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:160
+msgid ""
+"This prevents lid-triggered suspend and locking. Automatic idle locking "
+"remains separate, and the 20% critical battery policy still applies."
+msgstr ""
+"פעולה זו מונעת השהיה ונעילה בעקבות סגירת המכסה. נעילה אוטומטית בעת חוסר "
+"פעילות נשארת הגדרה נפרדת, ומדיניות רמת הסוללה הקריטית של 20% עדיין חלה."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:169
+msgid "Fix problems after resume"
+msgstr "תיקון בעיות לאחר חזרה מהשהיה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:170
+msgid ""
+"Compatibility fixes for problems some computers have when waking from "
+"suspend."
+msgstr "תיקוני תאימות לבעיות שיש בחלק מהמחשבים בעת יציאה מהשהיה."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:179
+msgid "Light sleep (s2idle)"
+msgstr "שינה קלה (s2idle)"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:181
+msgid ""
+"Uses a lighter sleep mode that keeps the Fn keys working after resume on some"
+" ASUS notebooks. Uses slightly more battery while suspended."
+msgstr ""
+"משתמש במצב שינה קל יותר ששומר על פעולת מקשי Fn לאחר החזרה בחלק מהמחשבים "
+"הניידים של ASUS. צורך מעט יותר סוללה בזמן ההשהיה."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 91
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:188
+msgid ""
+"S3 deep sleep can cause the Embedded Controller to stop generating hotkey "
+"interrupts. s2idle keeps the EC powered, avoiding this issue at a small cost "
+"in battery consumption."
+msgstr ""
+"שינה עמוקה S3 יכולה לגרום לשליטה המוטמעת להפסיק לייצר הפסקות מקשים חמים. "
+"s2idle שומר על אספקת חשמל ל-EC, ומונע בעיה זו בעלות קטנה בצריכת הסוללה."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+msgid "Fn keys"
+msgstr "מקשי Fn"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+msgid "hotkeys"
+msgstr "מקשי קיצור"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:200
+msgid "Avoid losing Wi-Fi after resume"
+msgstr "מניעת אובדן Wi-Fi לאחר חזרה מהשהיה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:202
+msgid ""
+"Compatibility fix for some Realtek Wi-Fi adapters: keeps the adapter from "
+"fully powering off during suspend, so the connection works after resume."
+msgstr ""
+"תיקון תאימות לחלק ממתאמי Wi-Fi של Realtek: מונע מהמתאם להיכבות לגמרי בזמן "
+"ההשהיה, כך שהחיבור פועל לאחר החזרה."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 116
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:209
+msgid ""
+"Some Realtek RTL8852BE/CE chips fail to reinitialize after d3cold power "
+"gating. This keeps the chip in d3hot (PCIe link alive) during suspend."
+msgstr ""
+"חלק משבבי Realtek RTL8852BE/CE נכשלו בהתחלה מחדש לאחר כיבוי חשמל d3cold. זה "
+"שומר על השבב במצב d3hot (קישור PCIe פעיל) במהלך השהייה."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+msgid "Realtek"
+msgstr "Realtek"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:219
+msgid "Restore brightness after resume"
+msgstr "שחזור הבהירות לאחר חזרה מהשהיה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:221
+msgid ""
+"Saves the screen brightness and keyboard lights before suspending and "
+"restores them when the computer wakes up."
+msgstr ""
+"שומר את בהירות המסך ואת תאורת המקלדת לפני ההשהיה ומשחזר אותם כשהמחשב מתעורר."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+#: usr/share/biglinux/biglinux-settings/usability_page.py:37
+msgid "backlight"
+msgstr "תאורת מקלדת"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+msgid "brightness"
+msgstr "בהירות"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:233
+msgid "Restart failed extensions after resume"
+msgstr "הפעלה מחדש של תוספים שנכשלו לאחר חזרה מהשהיה"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:235
+msgid ""
+"Checks GNOME Shell extensions after resume and restarts the ones left in an "
+"error state."
+msgstr ""
+"בודק את התוספים של GNOME Shell לאחר החזרה מהשהיה ומפעיל מחדש את אלה שנשארו "
+"במצב שגיאה."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
+msgid "GNOME"
+msgstr "GNOME"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
+msgid "extensions"
+msgstr "תוספים"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:11
+msgid "Startup, disks and remote access."
+msgstr "אתחול, דיסקים וגישה מרחוק."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:21
+msgid "Remote terminal access (SSH)"
+msgstr "גישה מרחוק דרך מסוף (SSH)"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:23
+msgid ""
+"Lets other computers open a terminal on this one. Stays on until turned off "
+"or the computer restarts."
+msgstr ""
+"מאפשר למחשבים אחרים לפתוח מסוף במחשב הזה. נשאר פעיל עד לכיבוי או עד שהמחשב "
+"יופעל מחדש."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 27
+#: usr/share/biglinux/biglinux-settings/system_page.py:28
+#, python-brace-format
+msgid "SSH Address: {}"
+msgstr "כתובת SSH: {}"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 21
+#: usr/share/biglinux/biglinux-settings/system_page.py:29
+#: usr/share/biglinux/biglinux-settings/system_page.py:38
+msgid "SSH"
+msgstr "SSH"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:29
+#: usr/share/biglinux/biglinux-settings/system_page.py:38
+msgid "remote access"
+msgstr "גישה מרחוק"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:29
+msgid "terminal"
+msgstr "מסוף"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:33
+msgid "Start automatically"
+msgstr "הפעלה אוטומטית"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:34
+msgid "Turn on remote terminal access every time the computer starts."
+msgstr "מפעיל את הגישה מרחוק דרך מסוף בכל הפעלה של המחשב."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:42
+msgid "Startup"
+msgstr "אתחול"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:48
+msgid "Shorter boot menu wait"
+msgstr "המתנה קצרה יותר בתפריט האתחול"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:49
+msgid "Shows the boot menu for less time before starting the system."
+msgstr "מציג את תפריט האתחול לזמן קצר יותר לפני הפעלת המערכת."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:53
+msgid "GRUB"
+msgstr "GRUB"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:53
+#: usr/share/biglinux/biglinux-settings/system_page.py:65
+msgid "boot"
+msgstr "אתחול"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:60
+msgid "Show boot messages"
+msgstr "הצגת הודעות אתחול"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:61
+msgid ""
+"Shows system messages below the boot animation while the computer starts."
+msgstr "מציג הודעות מערכת מתחת לאנימציית האתחול בזמן שהמחשב עולה."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:65
+msgid "splash"
+msgstr "splash"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:70
+msgid "Disks"
+msgstr "דיסקים"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:76
+msgid "Mount internal disks at startup"
+msgstr "עיגון דיסקים פנימיים באתחול"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:78
+msgid ""
+"Makes the partitions of the internal disks available automatically when the "
+"computer starts."
+msgstr "הופך את המחיצות של הדיסקים הפנימיים לזמינות אוטומטית כשהמחשב עולה."
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:83
+msgid "auto-mount"
+msgstr "עיגון אוטומטי"
+
+#: usr/share/biglinux/biglinux-settings/system_page.py:83
+msgid "partitions"
+msgstr "מחיצות"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:9
+msgid "Windows, keyboard and recent files."
+msgstr "חלונות, מקלדת וקבצים אחרונים."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:13
+msgid "Keyboard"
+msgstr "מקלדת"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:19
+msgid "Numeric keypad on at login"
+msgstr "לוח המספרים פעיל בכניסה"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:21
+msgid ""
+"Turns Num Lock on at the login screen. Has no effect with automatic login."
+msgstr "מפעיל את Num Lock במסך הכניסה. אין השפעה עם כניסה אוטומטית."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:25
+msgid "Num Lock"
+msgstr "Num Lock"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 114
+#: usr/share/biglinux/biglinux-settings/usability_page.py:25
+msgid "NumLock"
+msgstr "נומרוק"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:31
+msgid "Keyboard Light"
+msgstr "תאורת מקלדת"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:33
+msgid ""
+"Keep the keyboard backlight on. For keyboards whose light is controlled by "
+"the Scroll Lock LED."
+msgstr ""
+"משאיר את התאורה האחורית של המקלדת דולקת. למקלדות שהתאורה שלהן נשלטת על ידי "
+"נורית Scroll Lock."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:37
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:41
+msgid "Windows"
+msgstr "חלונות"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:47
+msgid "Window buttons on the left"
+msgstr "כפתורי החלון בצד שמאל"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:48
+msgid ""
+"Shows the close, minimize and maximize buttons on the left side of windows."
+msgstr "מציג את כפתורי הסגירה, המזעור וההגדלה בצד שמאל של החלונות."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:51
+msgid "close button"
+msgstr "כפתור סגירה"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:51
+msgid "title bar"
+msgstr "שורת כותרת"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:57
+msgid "Window snapping zones (KZones)"
+msgstr "אזורי הצמדת חלונות (KZones)"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:59
+msgid ""
+"Lets you drag windows into predefined screen zones to arrange them side by "
+"side. Installs KZones if it is missing."
+msgstr ""
+"מאפשר לגרור חלונות לאזורים מוגדרים מראש במסך כדי לסדר אותם זה לצד זה. מתקין "
+"את KZones אם הוא חסר."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 72
+#: usr/share/biglinux/biglinux-settings/usability_page.py:63
+msgid "KZones"
+msgstr "KZones"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:63
+msgid "tiling"
+msgstr "ריצוף"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:67
+msgid "Files"
+msgstr "קבצים"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:73
+msgid "Show recent files and folders"
+msgstr "הצגת קבצים ותיקיות אחרונים"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:75
+msgid ""
+"Remembers recently opened files and folders in the file manager and the "
+"application menu. On KDE Plasma, turning it off also clears the current list."
+msgstr ""
+"זוכר קבצים ותיקיות שנפתחו לאחרונה במנהל הקבצים ובתפריט היישומים. ב-KDE "
+"Plasma, כיבוי מנקה גם את הרשימה הנוכחית."
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:79
+msgid "history"
+msgstr "היסטוריה"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:79
+msgid "privacy"
+msgstr "פרטיות"
+
+#: usr/share/biglinux/biglinux-settings/usability_page.py:79
+msgid "recent"
+msgstr "אחרונים"
+
+#~ msgid "Keeps the S.M.A.R.T. service watching disks for signs of failure."
+#~ msgstr "משאיר את שירות S.M.A.R.T. מנטר את הדיסקים לאיתור סימני תקלה."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 126
+#~ msgid "Librewolf"
+#~ msgstr "Librewolf"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 144
+#~ msgid "Palemoon"
+#~ msgstr "Palemoon"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 156
+#~ msgid "Libreoffice"
+#~ msgstr "Libreoffice"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 30
+#~ msgid "AI Interfaces"
+#~ msgstr "ממשקי בינה מלאכותית"
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 16
+#~ msgid "Graphical interface for artificial intelligence."
+#~ msgstr "ממשק גרפי עבור אינטליגנציה מלאכותית."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 23
+#~ msgid "Choose which Ollama server is best for your hardware."
+#~ msgstr "בחר איזה שרת של אולמה הכי מתאים לחומרה שלך."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
+#~ msgid "Select the variant that matches your GPU hardware."
+#~ msgstr "בחר את הגרסה התואמת לחומרת ה-GPU שלך."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 47
+#~ msgid "A variety of chats like Plasmoid for your KDE Plasma desktop."
+#~ msgstr "מגוון צ'אטים כמו פלסמויד עבור שולחן העבודה KDE פלזמה שלך."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 128
+#~ msgid "Graphical interface for managing Ollama models and chat."
+#~ msgstr "ממשק גרפי לניהול מודלים וצ'אט של אולמה."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 136
+#~ msgid "User-friendly Desktop Client App for AI Models/LLMs."
+#~ msgstr "אפליקציית לקוח שולחני ידידותית למשתמש עבור מודלים/LLMs של AI."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 144
+#~ msgid ""
+#~ "LM Studio - A desktop app for exploring and running large language models "
+#~ "locally."
+#~ msgstr ""
+#~ "LM Studio - אפליקציה שולחנית לחקר והרצת מודלים של שפה גדולה באופן מקומי."
+
+# File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 87
+#~ msgid ""
+#~ "Open-source, privacy-focused alternative to Google's NotebookLM. Requires "
+#~ "Docker enabled."
+#~ msgstr ""
+#~ "חלופה בקוד פתוח המתמקדת בפרטיות ל-NotebookLM של גוגל. דורש הפעלת Docker."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 87
+#~ msgid "ComfyUI (GPU ONLY)"
+#~ msgstr "ComfyUI (רק GPU)"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 88
+#~ msgid "The most powerful and modular visual AI engine and application."
+#~ msgstr "המנוע החזקה והמודולרי ביותר של בינה מלאכותית חזותית ואפליקציה."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 55
+#~ msgid "OllamaCPU"
+#~ msgstr "אולמהCPU"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 56
+#~ msgid "Local AI server. For CPUs only."
+#~ msgstr "שרת AI מקומי. רק עבור מעבדים."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 64
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 82
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 100
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 118
+#~ msgid "Share ollama on the local network."
+#~ msgstr "שתף אולמה ברשת המקומית."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 75
+#~ msgid "Local AI server. For CPUs, AMD/Nvidia and integrated GPUs."
+#~ msgstr "שרת AI מקומי. עבור מעבדים, AMD/Nvidia וכרטיסי גרפיקה משולבים."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 110
+#~ msgid "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
+#~ msgstr "שרת AI מקומי. עבור כרטיסי גרפיקה של Nvidia מהסדרה 2000 ומעלה."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
+# line: 111
+#~ msgid ""
+#~ "Local AI server. For newer AMD GPUs, starting from the 6000 series.\n"
+#~ "Consider using Vulkan, in many tests, Vulkan performed better than ROCm."
+#~ msgstr ""
+#~ "שרת AI מקומי. עבור כרטיסי גרפיקה AMD חדשים יותר, החל מסדרת 6000.  \n"
+#~ "שקול להשתמש ב-Vulkan, במבחנים רבים, Vulkan ביצע טוב יותר מ-ROCm."
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 11
+#~ msgid "AI Coding Assistants"
+#~ msgstr "עוזרי קידוד בינה מלאכותית"
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 12
+#~ msgid "Open-source coding agents powered by language models."
+#~ msgstr "סוכני קידוד בקוד פתוח המופעלים על ידי מודלי שפה."
+
+# File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 23
+#~ msgid ""
+#~ "Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
+#~ "models. Installs nodejs, npm and ripgrep as dependencies."
+#~ msgstr ""
+#~ "CLI של סוכן קידוד בקוד פתוח עבור OpenAI, Gemini, DeepSeek, Ollama ו-200+ "
+#~ "מודלים. מתקין nodejs, npm ו-ripgrep כתלויות."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 15
+#~ msgid "Manage physical devices."
+#~ msgstr "נהל מכשירים פיזיים."
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 39
+#~ msgid "Enable the Wi-Fi adapter."
+#~ msgstr "אפשר את מתאם ה-Wi-Fi."
+
+# File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 43
+#~ msgid "Enable the Bluetooth adapter."
+#~ msgstr "אפשר את מתאם ה-Bluetooth."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/dispositivos_page.py, line: 84
+#~ msgid "Advanced audio effects processor that improves sound quality."
+#~ msgstr "מעבד אפקטים קוליים מתקדם שמשפר את איכות הסאונד."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 71
+#~ msgid "Reverse mouse scrolling"
+#~ msgstr "גלילה הפוכה בעכבר"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices_page.py, line: 72
+#~ msgid "Reverse mouse scrolling without restarting the session."
+#~ msgstr "הפוך את גלילת העכבר מבלי לאתחל את המושב."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 16
+#~ msgid "Container service — enable to use containers below."
+#~ msgstr "שירות קונטיינרים — אפשר להשתמש בקונטיינרים למטה."
+
+# #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 137
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/containers_page.py, line: 18
+#~ msgid "Containers"
+#~ msgstr "מיכלים"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 23
+#~ msgid "Manage container technologies."
+#~ msgstr "נהל טכנולוגיות קונטיינרים."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 30
+#~ msgid "Media &amp; Cloud"
+#~ msgstr "מדיה וענן"
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 31
+#~ msgid "Media servers and cloud storage containers."
+#~ msgstr "שרתים מדיה ומיכלי אחסון בענן."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 36
+#~ msgid "Network &amp; Security"
+#~ msgstr "רשת ואבטחה"
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 37
+#~ msgid "Network tools and security containers."
+#~ msgstr "כלי רשת ומיכלי אבטחה."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 42
+#~ msgid "Development &amp; Tools"
+#~ msgstr "פיתוח וכלים"
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 43
+#~ msgid "Development stacks and utility containers."
+#~ msgstr "ערימות פיתוח ומיכלי שירות."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 52
+#~ msgid "Enable Docker container engine."
+#~ msgstr "אפשר מנוע קונטיינרים של דוקר."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 62
+#~ msgid "Install Nextcloud Plus cloud storage container."
+#~ msgstr "התקן את מיכל אחסון הענן Nextcloud Plus."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 52
+#~ msgid "Run Nextcloud Plus."
+#~ msgstr "הרץ את Nextcloud Plus."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 81
+#~ msgid "Install AdGuard Home DNS ad-blocker container."
+#~ msgstr "התקן את קונטיינר חוסם הפרסומות DNS של AdGuard Home."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 71
+#~ msgid "Run AdGuard."
+#~ msgstr "הרץ את AdGuard."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 100
+#~ msgid "Install Jellyfin media server container."
+#~ msgstr "התקן את מיכל השרת מדיה Jellyfin."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 90
+#~ msgid "Run Jellyfin."
+#~ msgstr "הרץ את ג'לי פינ."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 119
+#~ msgid "Install LAMP stack container (Linux, Apache, MySQL, PHP)."
+#~ msgstr "התקן מיכל ערכת LAMP (לינוקס, אפאצ'י, MySQL, PHP)."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 109
+#~ msgid "Run LAMP."
+#~ msgstr "הרץ LAMP."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 138
+#~ msgid "Install Portainer Agent container for cluster management."
+#~ msgstr "התקן את קונטיינר סוכן פורטיינר לניהול אשכולות."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 128
+#~ msgid "Run Portainer Client."
+#~ msgstr "הרץ את לקוח פורטיינר."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 157
+#~ msgid "Install SWS static web server container."
+#~ msgstr "התקן קונטיינר שרת אינטרנט סטטי SWS."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 147
+#~ msgid "Run SWS."
+#~ msgstr "הרץ SWS."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 176
+#~ msgid "Install V2RayA network proxy container."
+#~ msgstr "התקן את מיכל הפרוקסי של V2RayA."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
+# line: 166
+#~ msgid "Run V2RayA."
+#~ msgstr "הרץ V2RayA."
+
+# File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 195
+#~ msgid "Install the open-source alternative to Google's NotebookLM."
+#~ msgstr "התקן את החלופה בקוד פתוח ל-NotebookLM של גוגל."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 144
+#~ msgid "Search..."
+#~ msgstr "חפש..."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices/jamesdsp_dialog.py, line: 208
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices/jamesdsp_dialog.py, line: 208
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices/jamesdsp_dialog.py, line: 208
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices/jamesdsp_dialog.py, line: 208
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices/jamesdsp_dialog.py, line: 208
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/devices/jamesdsp_dialog.py, line: 208
+# 
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 107
+#~ msgid "Usability"
+#~ msgstr "שימושיות"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 158
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 167
+#~ msgid "PreLoad"
+#~ msgstr "טען מראש"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 161
+#~ msgid "A.I."
+#~ msgstr "בינה מלאכותית"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 315
+#~ msgid "Developer"
+#~ msgstr "מפתח"
+
+# File: usr/share/biglinux/biglinux-settings/main.py, line: 302
+#~ msgid "Suspend"
+#~ msgstr "להשעות"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 16
+#~ msgid "BigLinux performance tweaks."
+#~ msgstr "שיפורי ביצועים של BigLinux."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/usability/gamemode_config_dialog.py, line: 91
+#~ msgid "Disable Visual Effects"
+#~ msgstr "כבה אפקטים חזותיים"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 35
+#~ msgid ""
+#~ "Disables KWin visual effects (blur, shadows, animations). Reduces GPU load "
+#~ "and frees memory."
+#~ msgstr ""
+#~ "מכבה את אפקטי הוויזואליים של KWin (טשטוש, צללים, אנימציות). מפחית את העומס על"
+#~ " ה-GPU ומשחרר זיכרון."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 63
+#~ msgid "CPU Maximum Performance"
+#~ msgstr "ביצועי מעבד מקסימליים"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 51
+#~ msgid ""
+#~ "Forces maximum processor performance mode. Ensures the processor uses maximum"
+#~ " frequency."
+#~ msgstr "כוח מצב ביצוע מקסימלי של המעבד. מבטיח שהמעבד משתמש בתדירות המקסימלית."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 79
+#~ msgid "Disable Baloo Indexer"
+#~ msgstr "השבת את אינדקסר בלו"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 67
+#~ msgid "Disables the Baloo file indexer. Avoids disk I/O overhead."
+#~ msgstr "מכבה את אינדקס הקבצים של בלו. נמנע מעומס I/O בדיסק."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/usability/gamemode_config_dialog.py, line: 136
+#~ msgid "Unload S.M.A.R.T Monitor"
+#~ msgstr "פרוק מוניטור S.M.A.R.T"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/performance_games_page.py, line: 83
+#~ msgid "Disables S.M.A.R.T disk monitoring. Reduces disk I/O and CPU usage."
+#~ msgstr "מנכה את ניטור הדיסק S.M.A.R.T. מפחית את השימוש בדיסק I/O ובמעבד."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 169
+#~ msgid "Meltdown Mitigations off"
+#~ msgstr "הפחתות של מלטדאון כבויות"
+
+# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 62
+#~ msgid "Using mitigations=off will make your machine faster and less secure!"
+#~ msgstr "שימוש במיתונים=כבוי יהפוך את המחשב שלך למהיר יותר ופחות מאובטח!"
+
+# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 67
+#~ msgid ""
+#~ "This will disable CPU security mitigations (Meltdown/Spectre). Your system "
+#~ "will be faster but vulnerable to hardware-level attacks. Are you sure you "
+#~ "want to continue?"
+#~ msgstr ""
+#~ "זה יכבול את אמצעי האבטחה של המעבד (Meltdown/Spectre). המערכת שלך תהיה מהירה "
+#~ "יותר אך פגיעה להתקפות ברמת החומרה. האם אתה בטוח שברצונך להמשיך?"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 176
+#~ msgid "noWatchdog"
+#~ msgstr "לא מעקב"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 177
+#~ msgid ""
+#~ "Disables the hardware watchdog and TSC clocksource systems, maintaining high "
+#~ "performance but removing automatic protections against system crashes."
+#~ msgstr ""
+#~ "מכבה את מערכת השעון החומרתי ואת מערכות מקור השעון TSC, שומר על ביצועים גבוהים"
+#~ " אך מסיר הגנות אוטומטיות מפני קריסות מערכת."
+
+# File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 81
+#~ msgid ""
+#~ "This will disable the hardware watchdog. Your system will no longer "
+#~ "automatically recover from certain types of crashes. Are you sure you want to"
+#~ " continue?"
+#~ msgstr ""
+#~ "זה יכבה את השעון המעורר החומרתי. המערכת שלך לא תוכל יותר לשחזר אוטומטית "
+#~ "מסוגים מסוימים של קריסות. האם אתה בטוח שברצונך להמשיך?"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 103
+#~ msgid "Preload"
+#~ msgstr "טען מראש"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/preload_page.py, line: 105
+#~ msgid "Preload applications into memory to open them faster."
+#~ msgstr "טען יישומים לזיכרון כדי לפתוח אותם מהר יותר."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 72
+#~ msgid "Automatic Suspend"
+#~ msgstr "השעיה אוטומטית"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 73
+#~ msgid "Choose when inactivity and low battery may suspend the system."
+#~ msgstr "בחר מתי חוסר פעילות וסוללה חלשה עלולים להשעות את המערכת."
+
+#~ msgid "Disable idle suspend while plugged in"
+#~ msgstr "השבתת השהיה בעת חוסר פעילות כשהמחשב מחובר לחשמל"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 81
+#~ msgid "Disables automatic suspend caused by inactivity on AC power."
+#~ msgstr "מבטל השעיה אוטומטית הנגרמת מחוסר פעילות בזמן חיבור לחשמל."
+
+#~ msgid "Disable idle suspend on battery"
+#~ msgstr "השבתת השהיה בעת חוסר פעילות בשימוש בסוללה"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 89
+#~ msgid "Keeps the system awake on battery until a critical level is reached."
+#~ msgstr "שומר על המערכת פעילה על סוללה עד הגעה לרמה קריטית."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 96
+#~ msgid "Suspend only when battery reaches 20%"
+#~ msgstr "השהה רק כשהסוללה מגיעה ל-20%"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 98
+#~ msgid ""
+#~ "Disables idle suspend on battery and suspends automatically when the charge "
+#~ "reaches 20%."
+#~ msgstr ""
+#~ "מבטל השעיה עקב חוסר פעילות על סוללה ומשהה אוטומטית כשהטעינה מגיעה ל-20%."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 75
+#~ msgid "Sleep Mode"
+#~ msgstr "מצב שינה"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 76
+#~ msgid "Configure how the system suspends."
+#~ msgstr "הגדר כיצד המערכת מתלכדת."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 83
+#~ msgid "Use s2idle (light sleep)"
+#~ msgstr "השתמש ב-s2idle (שינה קלה)"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 85
+#~ msgid ""
+#~ "Uses a lighter sleep mode that preserves Fn keys and device state. "
+#~ "Recommended for ASUS notebooks."
+#~ msgstr ""
+#~ "משתמש במצב שינה קל יותר ששומר על מקשי Fn ומצב המכשיר. מומלץ עבור מחשבי ASUS "
+#~ "ניידים."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 100
+#~ msgid "WiFi"
+#~ msgstr "ווי-פיי"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 101
+#~ msgid "Prevent WiFi issues after suspend."
+#~ msgstr "מנע בעיות WiFi לאחר השהיה."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 108
+#~ msgid "Protect WiFi on suspend"
+#~ msgstr "הגן על WiFi במצב השהיה"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 110
+#~ msgid ""
+#~ "Prevents the Realtek WiFi chip from fully powering off (d3cold), avoiding "
+#~ "connection loss after resume."
+#~ msgstr ""
+#~ "מונע מהשבב WiFi של ריאלטק לכבות לחלוטין (d3cold), ומונע אובדן חיבור לאחר "
+#~ "חידוש."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 124
+#~ msgid "Display and Keyboard"
+#~ msgstr "תצוגה ומקלדת"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 125
+#~ msgid "Preserve brightness and LED state across suspend."
+#~ msgstr "שמור על בהירות ומצב LED במהלך השהייה."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 132
+#~ msgid "Save/restore brightness on suspend"
+#~ msgstr "שמור/שחזר בהירות בהשעיה"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 134
+#~ msgid ""
+#~ "Saves screen brightness and keyboard LEDs before suspending and restores them"
+#~ " on resume."
+#~ msgstr ""
+#~ "שומר את בהירות המסך ואת נורות ה-LED של המקלדת לפני השהייה ומחזיר אותם עם "
+#~ "חידוש הפעולה."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 144
+#~ msgid "GNOME Shell Extensions"
+#~ msgstr "תוספות ל-GNOME Shell"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 145
+#~ msgid "Automatic health check after resume."
+#~ msgstr "בדיקת בריאות אוטומטית לאחר חזרה."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 152
+#~ msgid "Extension health monitor"
+#~ msgstr "מנטר בריאות הרחבה"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 154
+#~ msgid ""
+#~ "Detects GNOME Shell extensions in error state after resume and automatically "
+#~ "restarts them."
+#~ msgstr ""
+#~ "מגלה תוספות של GNOME Shell במצב שגיאה לאחר חידוש ומפעיל אותן מחדש באופן "
+#~ "אוטומטי."
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 163
+#~ msgid "Lid Switch"
+#~ msgstr "מתג מכסה"
+
+# File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 164
+#~ msgid "Laptop lid close behavior."
+#~ msgstr "התנהגות סגירת מכסה המחשב הנייד."
+
+#~ msgid ""
+#~ "Keeps the session and network active when the lid is closed on AC power."
+#~ msgstr ""
+#~ "שומר על ההפעלה ועל חיבור הרשת פעילים כאשר המכסה סגור והמחשב מחובר לחשמל."
+
+#~ msgid ""
+#~ "Keeps the session and network active when the lid is closed on battery power."
+#~ msgstr ""
+#~ "שומר על ההפעלה ועל חיבור הרשת פעילים כאשר המכסה סגור והמחשב פועל באמצעות "
+#~ "הסוללה."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 26
+#~ msgid "General system settings."
+#~ msgstr "הגדרות מערכת כלליות."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
+# line: 22
+#~ msgid "Enable remote access via ssh."
+#~ msgstr "אפשר גישה מרחוק באמצעות ssh."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 147
+#~ msgid "SSH always on"
+#~ msgstr "SSH תמיד פעיל"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 149
+#~ msgid "Turn on ssh remote access at boot."
+#~ msgstr "הפעל גישה מרחוק באמצעות SSH בעת אתחול."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 162
+#~ msgid "Fast Grub"
+#~ msgstr "גרוב מהיר"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 163
+#~ msgid "Decreases grub display time."
+#~ msgstr "מקטין את זמן התצוגה של גרוב."
+
+# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 47
+#~ msgid "Boot messages"
+#~ msgstr "הודעות אתחול"
+
+# File: usr/share/biglinux/biglinux-settings/system_page.py, line: 48
+#~ msgid "Show system messages below the boot animation."
+#~ msgstr "הצג הודעות מערכת מתחת לאנימציית האתחול."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 170
+#~ msgid "Auto-mount Partitions"
+#~ msgstr "התקנת מחיצות אוטומטית"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 171
+#~ msgid "Auto mount partitions in internal disks on boot."
+#~ msgstr "התקן אוטומטית מחיצות בדיסקים פנימיים בעת אתחול."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 14
+#~ msgid "User and Visual system settings."
+#~ msgstr "הגדרות משתמש ומערכת חזותית."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 115
+#~ msgid "Initial NumLock state. Ignored if autologin is enabled."
+#~ msgstr "מצב NumLock התחלתי. מתעלמים אם כניסה אוטומטית מופעלת."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 131
+#~ msgid "Window Button On Left Side"
+#~ msgstr "כפתור חלון בצד שמאל"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
+# 132
+#~ msgid "Maximize, minimize, and close buttons on the left side of the window."
+#~ msgstr "כפתורי מקסימום, מינימום וסגירה בצד השמאלי של החלון."
+
+# File: usr/share/biglinux/biglinux-settings/usability_page.py, line: 39
+#~ msgid "Enable window tiling zones for the KDE Plasma desktop."
+#~ msgstr "אפשר להפעיל אזורי ריצוף חלונות עבור שולחן העבודה של KDE Plasma."
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 169
+#~ msgid "Recent Files & Locations"
+#~ msgstr "קבצים ומיקומים אחרונים"
+
+# File: biglinux-settings/usr/share/biglinux/biglinux-
+# settings/system_usability_page.py, line: 170
+#~ msgid ""
+#~ "Restores the 'Recent Files' and 'Recent Locations' functionality that appears"
+#~ " empty in Dolphin and the Application Menu."
+#~ msgstr ""
+#~ "ש restores את הפונקציונליות של 'קבצים אחרונים' ו'מיקומים אחרונים' שמופיעה "
+#~ "ריקה ב-Dolphin ובתפריט היישומים."
+
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 80
 #~ msgid "Never suspend while plugged in"
 #~ msgstr "לעולם אל תשהה בזמן חיבור לחשמל"
+
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 88
 #~ msgid "Never suspend on battery due to inactivity"
 #~ msgstr "לעולם אל תשהה על סוללה עקב חוסר פעילות"
+
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 171
 #~ msgid "Suspend on lid close (AC power)"
 #~ msgstr "השהה בסגירת מכסה (חשמל AC)"
+
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 173
 #~ msgid ""
-#~ "Some systems do not suspend when on AC power. This forces suspend when "
-#~ "the lid is closed."
+#~ "Some systems do not suspend when on AC power. This forces suspend when the "
+#~ "lid is closed."
 #~ msgstr ""
-#~ "חלק מהמערכות אינן נכנסות למצב שינה כאשר הן מחוברות לחשמל. זה מאלץ את "
-#~ "המערכת להיכנס למצב שינה כאשר המכסה סגור."
+#~ "חלק מהמערכות אינן נכנסות למצב שינה כאשר הן מחוברות לחשמל. זה מאלץ את המערכת "
+#~ "להיכנס למצב שינה כאשר המכסה סגור."

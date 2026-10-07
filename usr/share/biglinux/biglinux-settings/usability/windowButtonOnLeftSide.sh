@@ -3,7 +3,7 @@
 # check current status
 if [ "$1" == "check" ]; then
   if [[ "$XDG_CURRENT_DESKTOP" == *"KDE"* ]] || [[ "$XDG_CURRENT_DESKTOP" == *"Plasma"* ]];then
-    if LANG=C grep -q 'FSM' $HOME/.config/kwinrc;then
+    if [[ "$(LANG=C kreadconfig6 --file "$HOME/.config/kwinrc" --group "org.kde.kdecoration2" --key "ButtonsOnRight" 2>/dev/null)" == "FSM" ]];then
       echo "true"
     else
       echo "false"
@@ -16,7 +16,7 @@ if [ "$1" == "check" ]; then
       echo "false"
     fi
   elif [[ "$XDG_CURRENT_DESKTOP" == *"XFCE"* ]];then
-    if [ -n "$(grep SHMC  $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml)" ];then
+    if [[ "$(xfconf-query -c xfwm4 -p /general/button_layout 2>/dev/null)" == "CMH|SO" ]];then
       echo "true"
     else
       echo "false"
@@ -38,20 +38,20 @@ elif [ "$1" == "toggle" ]; then
   exitCode=0
   if [[ "$XDG_CURRENT_DESKTOP" == *"KDE"* ]] || [[ "$XDG_CURRENT_DESKTOP" == *"Plasma"* ]];then
     if [ "$state" == "true" ]; then
-      kwriteconfig6 --file $HOME/.config/gtk-3.0/settings.ini --group Settings --key "gtk-decoration-layout" "close,minimize,maximize:menu"
-      kwriteconfig6 --file $HOME/.config/gtk-4.0/settings.ini --group Settings --key "gtk-decoration-layout" "close,minimize,maximize:menu"
+      kwriteconfig6 --file "$HOME/.config/gtk-3.0/settings.ini" --group Settings --key "gtk-decoration-layout" "close,minimize,maximize:menu"
+      kwriteconfig6 --file "$HOME/.config/gtk-4.0/settings.ini" --group Settings --key "gtk-decoration-layout" "close,minimize,maximize:menu"
       gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:menu"
       kwriteconfig6 --group "org.kde.kdecoration2" --key "ButtonsOnLeft" --file "$HOME/.config/kwinrc" "XIA"
       kwriteconfig6 --group "org.kde.kdecoration2" --key "ButtonsOnRight" --file "$HOME/.config/kwinrc" "FSM"
-      qdbus org.kde.KWin /KWin org.kde.KWin.reconfigure
+      qdbus6 org.kde.KWin /KWin org.kde.KWin.reconfigure
       exitCode=$?
     else
-      kwriteconfig6 --file $HOME/.config/gtk-3.0/settings.ini --group Settings --key "gtk-decoration-layout" "menu:minimize,maximize,close"
-      kwriteconfig6 --file $HOME/.config/gtk-4.0/settings.ini --group Settings --key "gtk-decoration-layout" "menu:minimize,maximize,close"
+      kwriteconfig6 --file "$HOME/.config/gtk-3.0/settings.ini" --group Settings --key "gtk-decoration-layout" "menu:minimize,maximize,close"
+      kwriteconfig6 --file "$HOME/.config/gtk-4.0/settings.ini" --group Settings --key "gtk-decoration-layout" "menu:minimize,maximize,close"
       gsettings set org.gnome.desktop.wm.preferences button-layout "menu:minimize,maximize,close"
       kwriteconfig6 --group "org.kde.kdecoration2" --key "ButtonsOnLeft" --file "$HOME/.config/kwinrc" "MSF"
       kwriteconfig6 --group "org.kde.kdecoration2" --key "ButtonsOnRight" --file "$HOME/.config/kwinrc" "IAX"
-      qdbus org.kde.KWin /KWin org.kde.KWin.reconfigure
+      qdbus6 org.kde.KWin /KWin org.kde.KWin.reconfigure
       exitCode=$?
     fi
   elif [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]];then
@@ -78,6 +78,8 @@ elif [ "$1" == "toggle" ]; then
         gsettings set org.cinnamon.desktop.wm.preferences button-layout ':minimize,maximize,close'
         exitCode=$?
     fi
+  else
+    exitCode=1
   fi
   exit $exitCode
 fi

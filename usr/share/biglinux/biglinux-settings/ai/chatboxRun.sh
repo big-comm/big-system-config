@@ -10,7 +10,7 @@ function="$1"
 # Executes the root tasks.
 updateTask() {
   if [[ "$function" == "install" ]]; then
-    pacman -Syu --noconfirm chatbox-bin
+    pacman -Syu --needed --noconfirm chatbox-bin
   else
     pacman -Rcs --noconfirm chatbox-bin
   fi

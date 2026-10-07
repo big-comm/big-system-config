@@ -38,7 +38,17 @@ from .base import SleepHandler
 
 log = logging.getLogger(__name__)
 
-STATE_FILE = Path(os.environ.get("XDG_RUNTIME_DIR", "/run/biglinux")) / "biglinux-gnome-ext-state.json"
+# Persistent (not tmpfs): pre_suspend writes the disable to gsettings, so if the
+# machine loses power while suspended the pending re-enable must survive the
+# reboot. The monitor replays it at startup.
+STATE_FILE = (
+    Path(os.environ.get("XDG_STATE_HOME") or Path.home() / ".local/state")
+    / "biglinux-settings"
+    / "gnome-ext-state.json"
+)
+
+# D-Bus interface of the GNOME Shell extension manager.
+SHELL_EXTENSIONS_IFACE = "org.gnome.Shell.Extensions"
 
 # Extensions that must be disabled before suspend and re-enabled after resume.
 # user-theme calls Main.loadTheme() immediately in enable(), before other
@@ -95,7 +105,7 @@ def _dbus_call(uid: str, interface: str, method: str, *args) -> str | None:
 
 
 def _ext_state(uid: str, uuid: str) -> dict | None:
-    result = _dbus_call(uid, "org.gnome.Shell.Extensions",
+    result = _dbus_call(uid, SHELL_EXTENSIONS_IFACE,
                         "GetExtensionInfo", "s", uuid)
     if result:
         return {
@@ -107,18 +117,22 @@ def _ext_state(uid: str, uuid: str) -> dict | None:
 
 
 def _disable_extension(uid: str, uuid: str) -> bool:
-    result = _dbus_call(uid, "org.gnome.Shell.Extensions",
+    result = _dbus_call(uid, SHELL_EXTENSIONS_IFACE,
                         "DisableExtension", "s", uuid)
     return result == "b true"
 
 
 def _enable_extension(uid: str, uuid: str) -> bool:
-    result = _dbus_call(uid, "org.gnome.Shell.Extensions",
+    result = _dbus_call(uid, SHELL_EXTENSIONS_IFACE,
                         "EnableExtension", "s", uuid)
     return result == "b true"
 
 
 def _find_gnome_uid() -> str | None:
+    # The user-level monitor must act on its own session only; with several
+    # logged-in users the first graphical session may belong to someone else.
+    if os.getuid() != 0:
+        return str(os.getuid())
     try:
         out = subprocess.check_output(
             ["loginctl", "list-sessions", "--no-legend"],
@@ -248,22 +262,25 @@ class GnomeHandler(SleepHandler):
         """
         for uuid in DEFERRED_EXTENSIONS:
             info = _ext_state(uid, uuid)
-            if info and (info.get("error") or info.get("state") == 3):
-                log.info("Extension %s is in ERROR state, applying disable+enable fix", uuid)
-                if _disable_extension(uid, uuid):
-                    log.info("Disabled %s, waiting for theme to stabilize...", uuid)
-                    time.sleep(3.0)
-                    if _enable_extension(uid, uuid):
-                        log.info("Re-enabled %s — fix applied", uuid)
-                    else:
-                        log.warning("Could not re-enable %s", uuid)
+            # Only a real ERROR (state 3) of an extension the user enabled;
+            # never resurrect one the user turned off.
+            if not info or not info.get("enabled") or info.get("state") != 3:
+                continue
+            log.info("Extension %s is in ERROR state, applying disable+enable fix", uuid)
+            if _disable_extension(uid, uuid):
+                log.info("Disabled %s, waiting for theme to stabilize...", uuid)
+                time.sleep(3.0)
+                if _enable_extension(uid, uuid):
+                    log.info("Re-enabled %s — fix applied", uuid)
                 else:
-                    log.warning("Could not disable %s for error fix", uuid)
+                    log.warning("Could not re-enable %s", uuid)
+            else:
+                log.warning("Could not disable %s for error fix", uuid)
 
     def _wait_shell_ready(self, uid: str, timeout: float = 20.0) -> bool:
         deadline = time.monotonic() + timeout
         while time.monotonic() < deadline:
-            if _dbus_call(uid, "org.gnome.Shell.Extensions",
+            if _dbus_call(uid, SHELL_EXTENSIONS_IFACE,
                           "GetExtensionInfo", "s", DEFERRED_EXTENSIONS[0]):
                 return True
             time.sleep(0.3)

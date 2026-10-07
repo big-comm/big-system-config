@@ -28,7 +28,7 @@ elif [ "${1:-}" == "toggle" ]; then
         metadataFile="$(mktemp)"
         archiveFile="$(mktemp --suffix=.tar.gz)"
         trap 'rm -f "$metadataFile" "$archiveFile"' EXIT
-        curl --fail --silent --show-error --location \
+        curl --proto '=https' --proto-redir '=https' --fail --silent --show-error --location \
           https://api.github.com/repos/DenysMb/ChatAI-Plasmoid/releases/latest \
           --output "$metadataFile"
         mapfile -t assetData < <(python3 - "$metadataFile" <<'PY'
@@ -51,7 +51,7 @@ PY
           echo "Invalid ChatAI release asset or SHA-256 digest" >&2
           exit 1
         fi
-        curl --fail --show-error --location "$archiveUrl" --output "$archiveFile"
+        curl --proto '=https' --proto-redir '=https' --fail --show-error --location "$archiveUrl" --output "$archiveFile"
         printf '%s  %s\n' "${archiveDigest#sha256:}" "$archiveFile" | sha256sum --check --status
         kpackagetool6 -t Plasma/Applet -i "$archiveFile"
       fi

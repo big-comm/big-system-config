@@ -32,10 +32,14 @@ elif [ "${1:-}" == "toggle" ]; then
 
     if [ "$state" == "true" ]; then
         systemctl --global enable "${SERVICE_NAME}.service"
-        systemctl --user --machine="${invokingUser}@.host" start "${SERVICE_NAME}.service"
+        # Best effort: the global enable above is what persists.
+        systemctl --user --machine="${invokingUser}@.host" start "${SERVICE_NAME}.service" ||
+            echo "Warning: could not start ${SERVICE_NAME} for ${invokingUser} now; it applies at next login" >&2
     else
         systemctl --global disable "${SERVICE_NAME}.service"
-        systemctl --user --machine="${invokingUser}@.host" stop "${SERVICE_NAME}.service"
+        # Best effort: the global disable above is what persists.
+        systemctl --user --machine="${invokingUser}@.host" stop "${SERVICE_NAME}.service" ||
+            echo "Warning: could not stop ${SERVICE_NAME} for ${invokingUser} now; it applies at next login" >&2
     fi
 else
     exit 2

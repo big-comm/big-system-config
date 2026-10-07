@@ -39,6 +39,9 @@ esac
 if ! systemctl try-restart upower.service; then
   if [[ "$action" == "enable" ]]; then
     rm -f "$dropInFile"
+    exit 1
   fi
-  exit 1
+  # The drop-in is already gone, so the policy is off for UPower's next start;
+  # reporting failure here would leave the caller's idle policy half-restored.
+  echo "Warning: could not restart upower.service; the change applies on its next start" >&2
 fi

@@ -27,7 +27,7 @@ elif [ "${1:-}" == "toggle" ]; then
 
     # install depends as root
     if ! pacman -Q python-pip &>/dev/null || ! pacman -Q git &>/dev/null; then
-      pkexec /usr/share/biglinux/biglinux-settings/ai/comfyUIDepends.sh "install" "$USER" "$DISPLAY" "$XAUTHORITY" "$DBUS_SESSION_BUS_ADDRESS" "$LANG" "$LANGUAGE"
+      pkexec /usr/share/biglinux/biglinux-settings/ai/comfyUIDepends.sh "install" "$USER" "${DISPLAY:-}" "${XAUTHORITY:-}" "${DBUS_SESSION_BUS_ADDRESS:-}" "${LANG:-}" "${LANGUAGE:-}"
     fi
     # install comfyUI as user
     /usr/share/biglinux/biglinux-settings/ai/comfyUIInstall.sh "install"

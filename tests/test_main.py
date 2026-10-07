@@ -33,13 +33,18 @@ class TestHighlightText:
         result = _highlight_text("WiFi Settings", "wifi")
         assert "<b>WiFi</b>" in result
 
+    def test_accents_are_ignored_and_original_text_is_bold(self):
+        assert _highlight_text("Não dormir", "nao") == "<b>Não</b> dormir"
+        assert _highlight_text("Ação rápida", "RAPIDA") == "Ação <b>rápida</b>"
+
     def test_empty_text(self):
         result = _highlight_text("", "test")
         assert result == ""
 
 
-def test_window_uses_fixed_default_geometry():
-    assert (WINDOW_WIDTH, WINDOW_HEIGHT) == (1000, 700)
+def test_window_default_geometry_fits_small_screens():
+    # Resizable window: the default must still fit a 1366x768 screen
+    assert WINDOW_WIDTH <= 1366 and WINDOW_HEIGHT <= 768
 
 
 def test_repository_run_uses_an_independent_application_instance():

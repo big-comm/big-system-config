@@ -45,3 +45,73 @@
 :dir(rtl) .status-unavailable {
     border-right: 3px solid @insensitive_fg_color;
 }
+
+/* ---- Page structure ---------------------------------------------------- */
+
+.page-header {
+    margin-bottom: 4px;
+}
+
+.sidebar-section-label {
+    font-size: 0.8em;
+    font-weight: bold;
+    opacity: 0.6;
+    margin: 18px 12px 6px 12px;
+}
+
+/* ---- Home: overview cards ---------------------------------------------- */
+
+.home-card {
+    padding: 0;
+    min-height: 118px;
+}
+
+.home-card-icon {
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 10px;
+    color: white;
+}
+
+.home-card-icon image {
+    margin: 8px;
+    -gtk-icon-style: symbolic;
+}
+
+/* Adwaita palette; white symbolic icon on top keeps contrast in both themes */
+.tile-blue   { background-color: @blue_3; }
+.tile-green  { background-color: @green_4; }
+.tile-orange { background-color: @orange_3; }
+.tile-purple { background-color: @purple_3; }
+.tile-red    { background-color: @red_3; }
+.tile-teal   { background-color: #2190a4; }
+
+.state-warning {
+    color: @warning_color;
+    font-weight: bold;
+}
+
+.home-tip {
+    padding: 12px 14px;
+    border-radius: 12px;
+    background-color: alpha(@accent_bg_color, 0.12);
+}
+
+/* ---- Rows ---------------------------------------------------------------- */
+
+/* Row that a search result or a home card pointed to.
+   Class repeated to outrank the theme's row styles without a GTK node name. */
+.search-target.search-target {
+    background-color: alpha(@accent_bg_color, 0.25);
+    transition: background-color 400ms ease-out;
+}
+
+/* A setting whose state could not be checked (not the same as unsupported) */
+.row-error.row-error .subtitle {
+    color: @warning_color;
+}
+
+/* Sub-option without icon keeps the visual indentation under its parent */
+.sub-row-indented.sub-row-indented {
+    padding-left: 26px;
+}

@@ -16,8 +16,11 @@ installTask() {
       exitCode=$depStatus
       return
     fi
-    # Install OpenClaude globally via npm
-    npm install -g @gitlawb/openclaude
+    # Install OpenClaude globally via npm. This runs as root, so lifecycle
+    # scripts are disabled: neither @gitlawb/openclaude nor its dependency tree
+    # needs one (checked on 0.31.0; @vscode/ripgrep >= 1.18 ships its binary in
+    # per-platform optional packages instead of downloading it in postinstall).
+    npm install -g --ignore-scripts @gitlawb/openclaude
     exitCode=$?
   else
     npm uninstall -g @gitlawb/openclaude

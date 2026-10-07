@@ -33,6 +33,39 @@ effective_state() {
   [[ "$value" == 's "ignore"' ]]
 }
 
+# Print a logind lid action property ("" when unset or unreadable).
+read_property() {
+  local value
+  value="$(
+    busctl get-property \
+      org.freedesktop.login1 \
+      /org/freedesktop/login1 \
+      org.freedesktop.login1.Manager \
+      "$1" 2>/dev/null
+  )" || value=""
+  value="${value#s \"}"
+  value="${value%\"}"
+  if [[ "$value" =~ ^[a-z-]+$ ]]; then
+    printf '%s\n' "$value"
+  fi
+  return 0
+}
+
+# Lid action on AC to write explicitly when only battery is managed.
+# logind ignores an unset HandleLidSwitchExternalPower= and falls back to
+# HandleLidSwitch=, so "HandleLidSwitch=ignore" alone would also stop the lid
+# from suspending on AC. Keep what logind did on AC before; "ignore" may be our
+# own previous setting, so it is not trusted and becomes logind's default.
+ac_lid_action() {
+  local value
+  value="$(read_property HandleLidSwitchExternalPower)"
+  [[ -n "$value" ]] || value="$(read_property HandleLidSwitch)"
+  if [[ -z "$value" || "$value" == ignore ]]; then
+    value=suspend
+  fi
+  printf '%s\n' "$value"
+}
+
 reload_logind() {
   systemctl kill --kill-whom=main --signal=HUP systemd-logind.service
 }
@@ -49,7 +82,7 @@ wait_until_effective() {
 }
 
 write_policy() {
-  local acEnabled="$1" batteryEnabled="$2" temporary
+  local acEnabled="$1" batteryEnabled="$2" acAction="$3" temporary
 
   if [[ "$acEnabled" != true && "$batteryEnabled" != true ]]; then
     rm -f -- "$dropInFile"
@@ -62,7 +95,11 @@ write_policy() {
   {
     printf '%s\n' '[Login]'
     [[ "$batteryEnabled" == true ]] && printf '%s\n' 'HandleLidSwitch=ignore'
-    [[ "$acEnabled" == true ]] && printf '%s\n' 'HandleLidSwitchExternalPower=ignore'
+    if [[ "$acEnabled" == true ]]; then
+      printf '%s\n' 'HandleLidSwitchExternalPower=ignore'
+    else
+      printf 'HandleLidSwitchExternalPower=%s\n' "$acAction"
+    fi
     printf '%s\n' 'HandleLidSwitchDocked=ignore'
   } > "$temporary"
   chmod 0644 "$temporary"
@@ -109,8 +146,12 @@ case "${1:-}" in
     [[ -s "$previousDropIn" ]] && hadDropIn=true
     [[ -s "$previousLegacy" ]] && hadLegacy=true
 
+    acAction=suspend
+    [[ "$acEnabled" == true ]] || acAction="$(ac_lid_action)"
+    # The legacy file goes only once the new policy is in place: if writing
+    # fails, set -e exits here with the previous configuration untouched.
+    write_policy "$acEnabled" "$batteryEnabled" "$acAction"
     rm -f -- "$legacyFile"
-    write_policy "$acEnabled" "$batteryEnabled"
     if ! reload_logind || { [[ "$state" == true ]] && ! wait_until_effective "$sourceName"; }; then
       if [[ "$hadDropIn" == true ]]; then
         cp -a -- "$previousDropIn" "$dropInFile"

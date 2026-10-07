@@ -5,79 +5,138 @@ class PerformancePage(BaseSettingsPage):
     def __init__(self, main_window, **kwargs):
         super().__init__(main_window, **kwargs)
 
-        # Create the container (base method)
-        content = self.create_scrolled_content()
-
-        ## GROUP ##
-
-        # Performance
-        group = self.create_group(
-            _("Performance"), _("BigLinux performance tweaks."), "performance"
+        content = self.create_scrolled_content(
+            _("Performance"), _("Balance speed, power use and stability.")
         )
-        content.append(group)
 
-        # Disable Visual Effects
+        ## GROUP: Power profile ##
+        power = self.create_group(_("Power profile"), None, "performance")
+        content.append(power)
+
         self.create_row(
-            group,
-            _("Disable Visual Effects"),
+            power,
+            _("Performance profile"),
             _(
-                "Disables KWin visual effects (blur, shadows, animations). Reduces GPU load and frees memory."
-            ),
-            "disableVisualEffects",
-            "disable-visual-effects-symbolic",
-        )
-        # CPU Maximum Performance
-        self.create_row(
-            group,
-            _("CPU Maximum Performance"),
-            _(
-                "Forces maximum processor performance mode. Ensures the processor uses maximum frequency."
+                "Prioritizes performance. May increase power use, temperature and fan noise. Turning it off restores the previous profile."
             ),
             "cpuMaximumPerformance",
             "cpu-maximum-performance-symbolic",
+            keywords=[_("speed"), _("CPU"), _("power profile")],
         )
-        # Disable Baloo Indexer
+
+        ## GROUP: Desktop ##
+        desktop = self.create_group(_("Desktop"), None, "performance")
+        content.append(desktop)
+
+        # disableVisualEffects: script "true" = effects disabled
         self.create_row(
-            group,
-            _("Disable Baloo Indexer"),
-            _("Disables the Baloo file indexer. Avoids disk I/O overhead."),
+            desktop,
+            _("Visual effects"),
+            _(
+                "Blur, shadows and animations of the desktop. Turning them off makes the interface plainer and can help on computers with slow graphics."
+            ),
+            "disableVisualEffects",
+            "disable-visual-effects-symbolic",
+            keywords=[_("animations"), _("blur"), _("effects")],
+            inverted=True,
+        )
+        # disableBalooIndexer: script "true" = indexer disabled
+        self.create_row(
+            desktop,
+            _("File indexing"),
+            _(
+                "Lets Dolphin and the application menu find files quickly by name and content. Turning it off saves disk and processor use, but that search no longer finds files quickly."
+            ),
             "disableBalooIndexer",
             "disable-baloo-indexer-symbolic",
-            recommended=True,
+            keywords=[_("Baloo"), _("search"), _("indexer")],
+            inverted=True,
         )
-        # Unload S.M.A.R.T Monitor
+
+        ## GROUP: Application launch (script group "preload") ##
+        preload = self.create_group(
+            _("Application launch"),
+            _(
+                "Keeps selected applications ready in memory so they open faster. Uses more memory."
+            ),
+            "preload",
+        )
+        content.append(preload)
+
+        # The preload script reports "unsupported" when the app is not installed
+        preload_apps = (
+            (_("Firefox"), "firefox", "firefox-symbolic"),
+            (_("Brave"), "brave", "brave-symbolic"),
+            (_("Chrome"), "chrome", "chrome-symbolic"),
+            (_("Chromium"), "chromium", "chromium-symbolic"),
+            (_("LibreWolf"), "librewolf", "librewolf-symbolic"),
+            (_("Pale Moon"), "palemoon", "palemoon-symbolic"),
+            (_("Opera"), "opera", "opera-symbolic"),
+            (_("Vivaldi"), "vivaldi", "preload-symbolic"),
+            (_("GNOME Web"), "epiphany", "preload-symbolic"),
+            (_("LibreOffice"), "libreoffice", "libreoffice-symbolic"),
+        )
+        for label, script, icon in preload_apps:
+            self.create_row(
+                preload,
+                label,
+                None,
+                script,
+                icon,
+                keywords=[_("open programs faster"), _("preload")],
+            )
+
+        ## GROUP: Protections and diagnostics ##
+        protections = self.create_group(
+            _("Protections and diagnostics"),
+            _("Advanced. These options reduce protections or monitoring of the system."),
+            "performance",
+        )
+        content.append(protections)
+
+        # unloadSmartMonitor: script "true" = smartd stopped
         self.create_row(
-            group,
-            _("Unload S.M.A.R.T Monitor"),
-            _("Disables S.M.A.R.T disk monitoring. Reduces disk I/O and CPU usage."),
+            protections,
+            _("Disk health monitoring"),
+            _(
+                "Keeps the S.M.A.R.T. service watching disks for signs of failure. Installs smartmontools if it is missing."
+            ),
             "unloadSmartMonitor",
             "unload-smart-monitor-symbolic",
+            keywords=[_("SMART"), _("smartd"), _("disk")],
+            inverted=True,
         )
         # Meltdown mitigations
         link_meltdown = "https://meltdownattack.com"
         self.create_dangerous_row(
-            group,
-            _("Meltdown Mitigations off"),
+            protections,
+            _("Turn off CPU vulnerability protections"),
             _(
-                "Using mitigations=off will make your machine faster and less secure!"
+                "Adds mitigations=off to the kernel command line, disabling the protections against Spectre, Meltdown and similar processor flaws. Faster in some workloads, but less secure. Applies after restart."
             ),
             "meltdownMitigations",
             "meltdown-mitigations-symbolic",
             warning_message=_(
-                "This will disable CPU security mitigations (Meltdown/Spectre). Your system will be faster but vulnerable to hardware-level attacks. Are you sure you want to continue?"
+                "The kernel will stop protecting against processor flaws such as Spectre and Meltdown. Some workloads get faster, but malicious programs or web pages may be able to read data from other programs. The change applies after the next restart."
             ),
+            confirm_label=_("Turn off protections"),
             link_url=link_meltdown,
+            keywords=[_("mitigations"), _("Spectre"), _("Meltdown"), _("speed")],
+            applies_after_restart=True,
         )
         # noWatchdog
         self.create_dangerous_row(
-            group,
-            _("noWatchdog"),
+            protections,
+            _("Turn off lockup detectors"),
             _(
-                "Disables the hardware watchdog and TSC clocksource systems, maintaining high performance but removing automatic protections against system crashes."
+                "Adds nowatchdog and tsc=nowatchdog to the kernel command line, disabling the kernel soft and hard lockup detectors and the TSC clocksource watchdog. Applies after restart."
             ),
             "noWatchdog",
             "watchdog-symbolic",
             warning_message=_(
-                "This will disable the hardware watchdog. Your system will no longer automatically recover from certain types of crashes. Are you sure you want to continue?"
+                "The kernel will no longer detect and report processors that stop responding, and will no longer check the stability of the TSC clock. Freezes may go unreported and become harder to diagnose. The change applies after the next restart."
             ),
+            confirm_label=_("Turn off detectors"),
+            keywords=[_("watchdog"), _("nowatchdog")],
+            applies_after_restart=True,
         )

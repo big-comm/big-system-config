@@ -40,6 +40,11 @@ UID = str(os.getuid())
 _just_resumed = False
 _screen_active = False
 
+# logind "delay" inhibitor: logind waits (up to InhibitDelayMaxSec) for this fd
+# to be closed before suspending, so pre_suspend gets to run first.
+_system_bus = None
+_inhibit_fd: int | None = None
+
 # How long to wait after unlock before checking extension health (ms).
 _CHECK_DELAY_MS = 2000
 
@@ -63,8 +68,54 @@ def _disable_wait_enable(uuid: str, wait: float = 3.0) -> bool:
     return False
 
 
+def _take_inhibitor() -> bool:
+    """Acquire a logind delay inhibitor for sleep. Never raises."""
+    global _inhibit_fd
+    if _inhibit_fd is not None:
+        return True
+    if _system_bus is None:
+        return False
+    try:
+        result, fd_list = _system_bus.call_with_unix_fd_list_sync(
+            "org.freedesktop.login1",
+            "/org/freedesktop/login1",
+            "org.freedesktop.login1.Manager",
+            "Inhibit",
+            GLib.Variant("(ssss)", (
+                "sleep",
+                "biglinux-sleep-monitor",
+                "Prepare GNOME Shell extensions for suspend",
+                "delay",
+            )),
+            GLib.VariantType.new("(h)"),
+            Gio.DBusCallFlags.NONE,
+            -1,
+            None,
+            None,
+        )
+        _inhibit_fd = fd_list.get(result.unpack()[0])
+    except Exception as e:  # GLib.Error, or a broken/absent logind
+        log.warning("Cannot take logind sleep delay inhibitor: %s", e)
+        _inhibit_fd = None
+        return False
+    log.info("Holding logind sleep delay inhibitor")
+    return True
+
+
+def _release_inhibitor() -> None:
+    """Close the inhibitor fd so logind may proceed with suspend."""
+    global _inhibit_fd
+    fd, _inhibit_fd = _inhibit_fd, None
+    if fd is None:
+        return
+    try:
+        os.close(fd)
+    except OSError as e:
+        log.warning("Cannot release sleep inhibitor: %s", e)
+
+
 def _check_extensions_health() -> bool:
-    """Check if any deferred extension is in ERROR state and fix it."""
+    """Check if any user-enabled deferred extension is in ERROR state and fix it."""
     fixed_any = False
     for uuid in DEFERRED_EXTENSIONS:
         info = _ext_state(UID, uuid)
@@ -72,7 +123,9 @@ def _check_extensions_health() -> bool:
             continue
         error = info.get("error", "")
         state = info.get("state")
-        if error or state == 3:  # state 3 = ERROR
+        # Only a real ERROR (state 3) of an extension the user has enabled:
+        # a stale error string alone, or a disabled extension, is left alone.
+        if info.get("enabled") and state == 3:
             log.warning("Extension %s in bad state (state=%s, error=%s)",
                         uuid, state, error)
             if _disable_wait_enable(uuid):
@@ -102,8 +155,11 @@ def _on_prepare_for_sleep(connection, sender, path, iface, signal, params, _):
             GnomeHandler().pre_suspend("suspend")
         except Exception as e:
             log.error("pre_suspend failed: %s", e, exc_info=True)
+        finally:
+            _release_inhibitor()
     else:
         log.info("PrepareForSleep(False): system waking up")
+        _take_inhibitor()
         _just_resumed = True
         if not _screen_active:
             _just_resumed = False
@@ -128,6 +184,7 @@ def _is_gnome_session() -> bool:
 
 
 def main():
+    global _system_bus
     if not _is_gnome_session():
         log.info("Not a GNOME session (XDG_CURRENT_DESKTOP=%s), exiting",
                  os.environ.get("XDG_CURRENT_DESKTOP", "(unset)"))
@@ -148,6 +205,8 @@ def main():
             None,
         )
         log.info("Subscribed to PrepareForSleep on system bus")
+        _system_bus = system_bus
+        _take_inhibitor()
     except GLib.Error as e:
         log.error("Cannot connect to system bus: %s", e)
         return 1

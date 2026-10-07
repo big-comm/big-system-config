@@ -252,42 +252,52 @@ def main() -> int:
         return 0
     if len(sys.argv) != 4 or sys.argv[3] not in {"true", "false"}:
         return 2
-    state = sys.argv[3] == "true"
-    if state:
-        try:
-            if selected:
-                write_backup(source, selected, read_values(selected, source))
-                set_never(selected, source)
-            result = run(root_command("toggle", source, True), check=False)
-        except (OSError, ValueError, subprocess.SubprocessError):
-            try:
-                restore_all(source)
-            except (OSError, ValueError, subprocess.SubprocessError):
-                pass
-            return 1
-        if result.returncode != 0:
-            try:
-                restore_all(source)
-            except (OSError, ValueError, subprocess.SubprocessError):
-                pass
-            return 1
-    else:
-        try:
-            result = run(root_command("toggle", source, False), check=False)
-        except OSError:
-            return 1
-        if result.returncode != 0:
-            return 1
-        try:
-            restore_all(source)
-        except (OSError, ValueError, subprocess.SubprocessError):
-            try:
-                run(root_command("toggle", source, True), check=False)
-            except OSError:
-                pass
-            return 1
+    if sys.argv[3] == "true":
+        return enable_never(selected, source)
+    return disable_never(source)
+
+
+def _restore_quietly(source: str) -> None:
+    """Best-effort rollback of the native settings backups."""
+    try:
+        restore_all(source)
+    except (OSError, ValueError, subprocess.SubprocessError):
+        pass
+
+
+def enable_never(selected: str | None, source: str) -> int:
+    """Back up and force the "never" lid policy; roll back on failure."""
+    try:
+        if selected:
+            write_backup(source, selected, read_values(selected, source))
+            set_never(selected, source)
+        result = run(root_command("toggle", source, True), check=False)
+    except (OSError, ValueError, subprocess.SubprocessError):
+        _restore_quietly(source)
+        return 1
+    if result.returncode != 0:
+        _restore_quietly(source)
+        return 1
     return 0
 
+
+def disable_never(source: str) -> int:
+    """Drop the root policy, then restore the native settings backups."""
+    try:
+        result = run(root_command("toggle", source, False), check=False)
+    except OSError:
+        return 1
+    if result.returncode != 0:
+        return 1
+    try:
+        restore_all(source)
+    except (OSError, ValueError, subprocess.SubprocessError):
+        try:
+            run(root_command("toggle", source, True), check=False)
+        except OSError:
+            pass
+        return 1
+    return 0
 
 if __name__ == "__main__":
     raise SystemExit(main())

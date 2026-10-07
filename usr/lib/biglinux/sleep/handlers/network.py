@@ -10,7 +10,9 @@ Strategy:
 - pre_suspend: Disable d3cold_allowed for the WiFi device AND its parent
   PCIe root port.  This keeps the device in D3hot at most, preserving the
   PCIe link.  The loaded driver handles freeze/thaw during s2idle.
-- post_resume: Re-enable d3cold_allowed so normal runtime PM policy applies.
+  The original d3cold_allowed of each device is saved in the state file.
+- post_resume: Restore exactly the saved d3cold_allowed values, so a device
+  the user or another tool had already pinned to 0 stays at 0.
   If the device ended up in a bad state anyway, fall back to module
   unload + PCI rescan + module reload.
 """
@@ -56,9 +58,36 @@ def _find_wifi_pci() -> tuple[str, str] | None:
     return None
 
 
-def _save_state(module: str, pci_slot: str) -> None:
+def _save_state(module: str, pci_slot: str, d3cold: dict[str, str] | None = None) -> None:
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    STATE_FILE.write_text(json.dumps({"module": module, "pci_slot": pci_slot}))
+    STATE_FILE.write_text(json.dumps(
+        {"module": module, "pci_slot": pci_slot, "d3cold": d3cold or {}}))
+
+
+def _load_saved_d3cold() -> dict[str, str]:
+    """Original d3cold_allowed values recorded by pre_suspend ({slot: "0"|"1"})."""
+    try:
+        saved = json.loads(STATE_FILE.read_text()).get("d3cold", {})
+    except (OSError, AttributeError, json.JSONDecodeError):
+        return {}
+    if not isinstance(saved, dict):
+        return {}
+    return {
+        slot: value for slot, value in saved.items()
+        if isinstance(slot, str) and value in ("0", "1")
+    }
+
+
+def _d3cold_targets(pci_slot: str) -> list[str]:
+    return [t for t in (pci_slot, _parent_bridge(pci_slot)) if t is not None]
+
+
+def _read_d3cold(target: str) -> str | None:
+    try:
+        value = (_PCI_DEVICES / target / "d3cold_allowed").read_text().strip()
+    except OSError:
+        return None
+    return value if value in ("0", "1") else None
 
 
 def _load_state() -> tuple[str, str] | None:
@@ -78,15 +107,29 @@ def _set_d3cold(pci_slot: str, allowed: bool) -> None:
     val = "1" if allowed else "0"
     label = "Enabled" if allowed else "Disabled"
 
-    for target in (pci_slot, _parent_bridge(pci_slot)):
-        if target is None:
-            continue
+    for target in _d3cold_targets(pci_slot):
         path = _PCI_DEVICES / target / "d3cold_allowed"
         try:
             path.write_text(val)
             log.info("%s d3cold for %s", label, target)
         except OSError as e:
             log.warning("Failed to set d3cold=%s for %s: %s", val, target, e)
+
+
+def _restore_d3cold(pci_slot: str, saved: dict[str, str]) -> None:
+    """Write back the values saved at pre_suspend.
+
+    A device without a saved value (state from an older version, or a device
+    re-created by the fallback PCI rescan under a new parent) gets "1", the
+    kernel default.
+    """
+    for target in _d3cold_targets(pci_slot):
+        val = saved.get(target, "1")
+        try:
+            (_PCI_DEVICES / target / "d3cold_allowed").write_text(val)
+            log.info("Restored d3cold_allowed=%s for %s", val, target)
+        except OSError as e:
+            log.warning("Failed to restore d3cold=%s for %s: %s", val, target, e)
 
 
 def _parent_bridge(pci_slot: str) -> str | None:
@@ -189,7 +232,15 @@ class NetworkHandler(SleepHandler):
     def pre_suspend(self, sleep_type: str) -> None:
         if not self._pci_slot or not self._module:
             return
-        _save_state(self._module, self._pci_slot)
+        # Keep the originals from an earlier pre_suspend that never got its
+        # post_resume: by now the sysfs values are our own "0".
+        saved = _load_saved_d3cold() if _load_state() == (self._module, self._pci_slot) else {}
+        for target in _d3cold_targets(self._pci_slot):
+            if target not in saved:
+                value = _read_d3cold(target)
+                if value is not None:
+                    saved[target] = value
+        _save_state(self._module, self._pci_slot, saved)
         _set_d3cold(self._pci_slot, False)
 
     def post_resume(self, sleep_type: str) -> None:
@@ -199,12 +250,12 @@ class NetworkHandler(SleepHandler):
         # Give the hardware a moment to stabilize after resume
         time.sleep(1)
 
+        saved = _load_saved_d3cold()
         if _device_healthy(self._pci_slot):
             log.info("WiFi PCI device %s is healthy after resume", self._pci_slot)
-            _set_d3cold(self._pci_slot, True)
         else:
             log.warning("WiFi PCI device %s unhealthy after resume", self._pci_slot)
             _fallback_recovery(self._module, self._pci_slot)
-            # Re-enable d3cold for normal operation
-            _set_d3cold(self._pci_slot, True)
+        # Back to the pre-suspend runtime PM policy
+        _restore_d3cold(self._pci_slot, saved)
         STATE_FILE.unlink(missing_ok=True)
