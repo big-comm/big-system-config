@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="usr/share/icons/hicolor/scalable/apps/biglinux-settings.svg" alt="BigLinux Settings" width="128" height="128">
+<img src="usr/share/icons/hicolor/scalable/apps/biglinux-settings.svg" alt="Big System Config" width="128" height="128">
 
-# BigLinux Settings
+# Big System Config
 
 **One place to tune BigLinux and BigCommunity: system, desktop, power, performance, devices, AI and services — with the consequences explained before you change anything.**
 
@@ -18,7 +18,7 @@
 ![Platform](https://img.shields.io/badge/platform-BigLinux%20%7C%20BigCommunity-1793D1?logo=archlinux&logoColor=white)
 ![Translations](https://img.shields.io/badge/translations-29%20languages-success)
 
-<img src="docs/screenshots/home.png" alt="BigLinux Settings — Home overview" width="800">
+<img src="docs/screenshots/home.png" alt="Big System Config — Home overview" width="800">
 
 </div>
 
@@ -41,7 +41,7 @@
 
 ## Overview
 
-BigLinux Settings is a GTK 4 / libadwaita application that gathers the tweaks
+Big System Config is a GTK 4 / libadwaita application that gathers the tweaks
 BigLinux and BigCommunity users most often need, and turns each of them into a
 single switch. Every switch reads the **real state of the system** when the
 page opens, applies the change in the background with progress feedback, and
@@ -122,7 +122,7 @@ work regardless of the desktop.
 
 ### BigLinux / BigCommunity
 
-BigLinux Settings ships with the distribution in the `big-system-config`
+Big System Config ships with the distribution in the `big-system-config`
 package (formerly `biglinux-settings`). To install or update it:
 
 ```bash
@@ -150,7 +150,7 @@ Optional integrations (KDE `kconfig`, `qt6-tools`, `power-profiles-daemon`,
 
 ## Usage
 
-Open **BigLinux Settings** from the application menu, or run:
+Open it from the application menu (listed as **BigLinux Settings**), or run:
 
 ```bash
 biglinux-settings
@@ -300,7 +300,7 @@ Report issues at
 
 ## License
 
-BigLinux Settings is free software, released under the
+Big System Config is free software, released under the
 [GNU General Public License v3.0 or later](LICENSE).
 
 <div align="center">
