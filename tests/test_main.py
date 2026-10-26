@@ -278,3 +278,15 @@ cat "{kde_state}" 2>/dev/null || true
             timeout=10,
         )
         assert check.stdout.strip() == "true"
+
+
+def test_main_window_joins_big_gnome_center_window_blur():
+    source = (ROOT / "usr/share/biglinux/biglinux-settings/main.py").read_text()
+    init = source.split("class BiglinuxSettingsWindow", 1)[1].split("def load_css", 1)[0]
+
+    # Big Gnome Center registers this class; the client is optional.
+    assert 'APP_SLUG = "biglinux-settings"' in source
+    assert "from big_gnome_center_material import attach_window_material" in source
+    assert "except ImportError:" in source
+    assert "self.add_css_class(APP_SLUG)" in init
+    assert "attach_window_material(self, APP_SLUG)" in init
