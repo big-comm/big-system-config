@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-06 19:34-0300\n"
-"PO-Revision-Date: 2026-10-06 19:34-0300\n"
+"POT-Creation-Date: 2026-10-29 16:48-0300\n"
+"PO-Revision-Date: 2026-10-29 16:48-0300\n"
 "Last-Translator: BigLinux Community <community@biglinux.com.br>\n"
 "Language-Team: BigLinux Community (de)\n"
 "Language: de\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Variante."
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:13
-#: usr/share/biglinux/biglinux-settings/main.py:354
+#: usr/share/biglinux/biglinux-settings/main.py:362
 msgid "Artificial Intelligence"
 msgstr "Künstliche Intelligenz"
 
@@ -111,8 +111,8 @@ msgid ""
 "Desktop app to chat with AI models, local or online. Installs ChatBox; "
 "turning it off removes it."
 msgstr ""
-"Desktop-Anwendung zum Chatten mit KI-Modellen, lokal oder online. Installiert"
-" ChatBox; beim Ausschalten wird es entfernt."
+"Desktop-Anwendung zum Chatten mit KI-Modellen, lokal oder online. "
+"Installiert ChatBox; beim Ausschalten wird es entfernt."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 143
@@ -122,19 +122,18 @@ msgstr "LM Studio"
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:65
 msgid ""
-"Desktop app to download and run language models on this computer. Installs LM"
-" Studio; turning it off removes it."
+"Desktop app to download and run language models on this computer. Installs "
+"LM Studio; turning it off removes it."
 msgstr ""
 "Desktop-Anwendung zum Herunterladen und Ausführen von Sprachmodellen auf "
 "diesem Computer. Installiert LM Studio; beim Ausschalten wird es entfernt."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 194
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 203
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 74
 #: usr/share/biglinux/biglinux-settings/ai_page.py:74
-#: usr/share/biglinux/biglinux-settings/apps_page.py:155
 msgid "Open Notebook"
 msgstr "Open Notebook"
 
@@ -144,12 +143,11 @@ msgid ""
 "with your documents. Installs it as a container and requires Docker; turning "
 "it off removes it."
 msgstr ""
-"Quelloffene, datenschutzfreundliche Alternative zu Googles NotebookLM für die"
-" Arbeit mit Ihren Dokumenten. Wird als Container installiert und benötigt "
+"Quelloffene, datenschutzfreundliche Alternative zu Googles NotebookLM für "
+"die Arbeit mit Ihren Dokumenten. Wird als Container installiert und benötigt "
 "Docker; beim Ausschalten wird es entfernt."
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:80
-#: usr/share/biglinux/biglinux-settings/apps_page.py:165
 msgid "NotebookLM"
 msgstr "NotebookLM"
 
@@ -158,27 +156,24 @@ msgid "documents"
 msgstr "dokumente"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 201
 #: usr/share/biglinux/biglinux-settings/ai_page.py:84
-#: usr/share/biglinux/biglinux-settings/apps_page.py:159
 msgid "Open Notebook Server"
 msgstr "Open Notebook-Server"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 95
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 202
 #: usr/share/biglinux/biglinux-settings/ai_page.py:85
-#: usr/share/biglinux/biglinux-settings/apps_page.py:160
 msgid "Start the Open Notebook server."
 msgstr "Starten Sie den Open Notebook Server."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 190
 #: usr/share/biglinux/biglinux-settings/ai_page.py:90
-#: usr/share/biglinux/biglinux-settings/apps_page.py:163
 #, python-brace-format
 msgid ""
 "Open Notebook is running.\n"
@@ -250,9 +245,9 @@ msgid ""
 "engines for different hardware: install only the one that matches your "
 "processor or graphics card."
 msgstr ""
-"Ollama führt KI-Modelle auf diesem Computer aus. Die folgenden Varianten sind"
-" alternative Engines für unterschiedliche Hardware: Installieren Sie nur die,"
-" die zu Ihrem Prozessor oder Ihrer Grafikkarte passt."
+"Ollama führt KI-Modelle auf diesem Computer aus. Die folgenden Varianten "
+"sind alternative Engines für unterschiedliche Hardware: Installieren Sie nur "
+"die, die zu Ihrem Prozessor oder Ihrer Grafikkarte passt."
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
 #: usr/share/biglinux/biglinux-settings/ai_page.py:132
@@ -285,8 +280,8 @@ msgstr "Ollama für CPU"
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:154
 msgid ""
-"Runs AI models on the processor only. Installs Ollama; turning it off removes"
-" it."
+"Runs AI models on the processor only. Installs Ollama; turning it off "
+"removes it."
 msgstr ""
 "Führt KI-Modelle nur auf dem Prozessor aus. Installiert Ollama; beim "
 "Ausschalten wird es entfernt."
@@ -385,7 +380,7 @@ msgstr ""
 "Adresse: http://{}:11434"
 
 #: usr/share/biglinux/biglinux-settings/apps_page.py:11
-#: usr/share/biglinux/biglinux-settings/main.py:360
+#: usr/share/biglinux/biglinux-settings/main.py:368
 msgid "Apps & Services"
 msgstr "Apps & Dienste"
 
@@ -575,8 +570,8 @@ msgid ""
 "Network proxy client with a web interface. Installs it as a container; "
 "turning it off removes it."
 msgstr ""
-"Netzwerk-Proxy-Client mit Weboberfläche. Wird als Container installiert; beim"
-" Ausschalten wird er entfernt."
+"Netzwerk-Proxy-Client mit Weboberfläche. Wird als Container installiert; "
+"beim Ausschalten wird er entfernt."
 
 #: usr/share/biglinux/biglinux-settings/apps_page.py:94
 msgid "Start V2RayA"
@@ -674,9 +669,9 @@ msgid ""
 "Portainer Agent, to manage this computer's containers from a Portainer "
 "server. Installs it as a container; turning it off removes it."
 msgstr ""
-"Portainer Agent, um die Container dieses Computers von einem Portainer-Server"
-" aus zu verwalten. Wird als Container installiert; beim Ausschalten wird er "
-"entfernt."
+"Portainer Agent, um die Container dieses Computers von einem Portainer-"
+"Server aus zu verwalten. Wird als Container installiert; beim Ausschalten "
+"wird er entfernt."
 
 #: usr/share/biglinux/biglinux-settings/apps_page.py:131
 msgid "Start Portainer Client"
@@ -720,8 +715,8 @@ msgid ""
 "Static Web Server, to publish static websites. Installs it as a container; "
 "turning it off removes it."
 msgstr ""
-"Static Web Server zum Veröffentlichen statischer Websites. Wird als Container"
-" installiert; beim Ausschalten wird er entfernt."
+"Static Web Server zum Veröffentlichen statischer Websites. Wird als "
+"Container installiert; beim Ausschalten wird er entfernt."
 
 #: usr/share/biglinux/biglinux-settings/apps_page.py:145
 msgid "Start SWS"
@@ -750,47 +745,38 @@ msgstr ""
 msgid "static"
 msgstr "statisch"
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:157
-msgid ""
-"Open-source alternative to Google's NotebookLM. Installs it as a container; "
-"turning it off removes it."
-msgstr ""
-"Quelloffene Alternative zu Googles NotebookLM. Wird als Container "
-"installiert; beim Ausschalten wird sie entfernt."
-
-#: usr/share/biglinux/biglinux-settings/apps_page.py:165
-#: usr/share/biglinux/biglinux-settings/apps_page.py:189
-msgid "AI"
-msgstr "KI"
-
-#: usr/share/biglinux/biglinux-settings/apps_page.py:171
+#: usr/share/biglinux/biglinux-settings/apps_page.py:156
 msgid "Developer tools"
 msgstr "Entwicklerwerkzeuge"
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:172
+#: usr/share/biglinux/biglinux-settings/apps_page.py:157
 msgid "Coding agents and command-line tools for developers."
 msgstr "Coding-Agenten und Kommandozeilenwerkzeuge für Entwickler."
 
 # File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 21
-#: usr/share/biglinux/biglinux-settings/apps_page.py:181
+#: usr/share/biglinux/biglinux-settings/apps_page.py:166
 msgid "OpenClaude"
 msgstr "OpenClaude"
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:183
+#: usr/share/biglinux/biglinux-settings/apps_page.py:168
 msgid ""
 "Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
 "models. Installs it with nodejs, npm and ripgrep as dependencies; turning it "
 "off removes it."
 msgstr ""
-"Quelloffener Coding-Agent für die Kommandozeile für OpenAI, Gemini, DeepSeek,"
-" Ollama und über 200 Modelle. Wird mit nodejs, npm und ripgrep als "
+"Quelloffener Coding-Agent für die Kommandozeile für OpenAI, Gemini, "
+"DeepSeek, Ollama und über 200 Modelle. Wird mit nodejs, npm und ripgrep als "
 "Abhängigkeiten installiert; beim Ausschalten wird er entfernt."
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+#: usr/share/biglinux/biglinux-settings/apps_page.py:174
+msgid "AI"
+msgstr "KI"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:174
 msgid "coding agent"
 msgstr "coding-agent"
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+#: usr/share/biglinux/biglinux-settings/apps_page.py:174
 msgid "programming"
 msgstr "programmieren"
 
@@ -836,7 +822,7 @@ msgid "{}: run action"
 msgstr "{}: Aktion ausführen"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 626
 # File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 136
 #: usr/share/biglinux/biglinux-settings/base_page.py:353
@@ -899,7 +885,7 @@ msgid "{}: learn more"
 msgstr "{}: mehr erfahren"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 206
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -909,7 +895,7 @@ msgid "Unavailable: script not found."
 msgstr "Nicht verfügbar: Skript nicht gefunden."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 218
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -919,7 +905,7 @@ msgid "Enabled"
 msgstr "Aktiviert"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 220
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -929,7 +915,7 @@ msgid "Disabled"
 msgstr "Deaktiviert"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 223
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -948,7 +934,7 @@ msgid "Unavailable in this desktop environment."
 msgstr "In dieser Desktop-Umgebung nicht verfügbar."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 225
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -965,7 +951,7 @@ msgid "output from script {}: {}"
 msgstr "Ausgabe aus Skript {}: {}"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 229
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -982,7 +968,7 @@ msgid "Error checking state: {}"
 msgstr "Fehlerüberprüfung Zustand: {}"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 233
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -1103,13 +1089,13 @@ msgid "Saved. It will take effect after the next restart."
 msgstr "Gespeichert. Wird nach dem nächsten Neustart wirksam."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/dispositivos_page.py, line: 25
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 116
 #: usr/share/biglinux/biglinux-settings/devices_page.py:30
-#: usr/share/biglinux/biglinux-settings/main.py:352
+#: usr/share/biglinux/biglinux-settings/main.py:360
 msgid "Devices"
 msgstr "Geräte"
 
@@ -1122,7 +1108,7 @@ msgid "Wireless"
 msgstr "Drahtlos"
 
 #: usr/share/biglinux/biglinux-settings/devices_page.py:39
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:234
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
@@ -1141,7 +1127,7 @@ msgid "network"
 msgstr "netzwerk"
 
 #: usr/share/biglinux/biglinux-settings/devices_page.py:43
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:234
 msgid "wireless"
 msgstr "drahtlos"
 
@@ -1168,11 +1154,11 @@ msgid ""
 "Audio effects software that enhances the sound of all applications. Installs "
 "JamesDSP if it is missing and starts it with the session."
 msgstr ""
-"Audioeffekt-Software, die den Klang aller Anwendungen verbessert. Installiert"
-" JamesDSP, falls es fehlt, und startet es mit der Sitzung."
+"Audioeffekt-Software, die den Klang aller Anwendungen verbessert. "
+"Installiert JamesDSP, falls es fehlt, und startet es mit der Sitzung."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/dispositivos_page.py, line: 77
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -1202,8 +1188,8 @@ msgid ""
 "Reverses the scroll direction so the content follows the movement of the "
 "wheel or fingers, as on a touchscreen. Applies right away."
 msgstr ""
-"Kehrt die Scrollrichtung um, sodass der Inhalt der Bewegung des Rads oder der"
-" Finger folgt, wie auf einem Touchscreen. Wird sofort angewendet."
+"Kehrt die Scrollrichtung um, sodass der Inhalt der Bewegung des Rads oder "
+"der Finger folgt, wie auf einem Touchscreen. Wird sofort angewendet."
 
 #: usr/share/biglinux/biglinux-settings/devices_page.py:80
 msgid "mouse"
@@ -1270,26 +1256,26 @@ msgstr "Aus"
 # settings/performance_games_page.py, line: 181
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 195
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 181
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 195
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 244
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 256
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 244
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 256
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/usability/gamemode_dialog.py, line: 204
 #: usr/share/biglinux/biglinux-settings/home_page.py:62
-#: usr/share/biglinux/biglinux-settings/main.py:347
+#: usr/share/biglinux/biglinux-settings/main.py:355
 #: usr/share/biglinux/biglinux-settings/performance_page.py:9
 msgid "Performance"
 msgstr "Leistung"
@@ -1386,84 +1372,84 @@ msgstr "Wird geprüft …"
 # 49
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 120
-#: usr/share/biglinux/biglinux-settings/main.py:43
+#: usr/share/biglinux/biglinux-settings/main.py:49
 msgid "BigLinux Settings"
 msgstr "BigLinux Einstellungen"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 49
-#: usr/share/biglinux/biglinux-settings/main.py:116
+#: usr/share/biglinux/biglinux-settings/main.py:122
 msgid "BigLinux Community"
 msgstr "BigLinux Gemeinschaft"
 
-#: usr/share/biglinux/biglinux-settings/main.py:231
+#: usr/share/biglinux/biglinux-settings/main.py:239
 msgid "Search settings…"
 msgstr "Einstellungen durchsuchen …"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 185
-#: usr/share/biglinux/biglinux-settings/main.py:237
+#: usr/share/biglinux/biglinux-settings/main.py:245
 msgid "Search settings"
 msgstr "Sucheneinstellungen"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 192
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 195
-#: usr/share/biglinux/biglinux-settings/main.py:244
-#: usr/share/biglinux/biglinux-settings/main.py:247
+#: usr/share/biglinux/biglinux-settings/main.py:252
+#: usr/share/biglinux/biglinux-settings/main.py:255
 msgid "Toggle navigation sidebar"
 msgstr "Navigationssidebar umschalten"
 
-#: usr/share/biglinux/biglinux-settings/main.py:254
-#: usr/share/biglinux/biglinux-settings/main.py:256
+#: usr/share/biglinux/biglinux-settings/main.py:262
+#: usr/share/biglinux/biglinux-settings/main.py:264
 msgid "Back to search results"
 msgstr "Zurück zu den Suchergebnissen"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 202
-#: usr/share/biglinux/biglinux-settings/main.py:264
+#: usr/share/biglinux/biglinux-settings/main.py:272
 msgid "About"
 msgstr "Über"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 206
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 209
-#: usr/share/biglinux/biglinux-settings/main.py:268
-#: usr/share/biglinux/biglinux-settings/main.py:271
+#: usr/share/biglinux/biglinux-settings/main.py:276
+#: usr/share/biglinux/biglinux-settings/main.py:279
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
-#: usr/share/biglinux/biglinux-settings/main.py:302
+#: usr/share/biglinux/biglinux-settings/main.py:310
 msgid "No results"
 msgstr "Keine Ergebnisse"
 
-#: usr/share/biglinux/biglinux-settings/main.py:304
+#: usr/share/biglinux/biglinux-settings/main.py:312
 msgid "Try other words, like “don't sleep”, “remote access” or “battery”."
 msgstr ""
 "Versuchen Sie andere Begriffe, etwa „nicht schlafen“, „Fernzugriff“ oder "
 "„Akku“."
 
-#: usr/share/biglinux/biglinux-settings/main.py:332
+#: usr/share/biglinux/biglinux-settings/main.py:340
 msgid "Home"
 msgstr "Startseite"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 108
-#: usr/share/biglinux/biglinux-settings/main.py:333
+#: usr/share/biglinux/biglinux-settings/main.py:341
 #: usr/share/biglinux/biglinux-settings/system_page.py:11
 msgid "System"
 msgstr "System"
 
-#: usr/share/biglinux/biglinux-settings/main.py:335
+#: usr/share/biglinux/biglinux-settings/main.py:343
 #: usr/share/biglinux/biglinux-settings/usability_page.py:9
 msgid "Appearance & Usage"
 msgstr "Darstellung & Bedienung"
 
-#: usr/share/biglinux/biglinux-settings/main.py:341
+#: usr/share/biglinux/biglinux-settings/main.py:349
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:70
 msgid "Power & Suspend"
 msgstr "Energie & Bereitschaft"
 
-#: usr/share/biglinux/biglinux-settings/main.py:412
+#: usr/share/biglinux/biglinux-settings/main.py:420
 msgid "More features"
 msgstr "Weitere Funktionen"
 
-#: usr/share/biglinux/biglinux-settings/main.py:554
+#: usr/share/biglinux/biglinux-settings/main.py:562
 #, python-brace-format
 msgid "{} result"
 msgid_plural "{} results"
@@ -1471,18 +1457,18 @@ msgstr[0] "{} Ergebnis"
 msgstr[1] "{} Ergebnisse"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 441
-#: usr/share/biglinux/biglinux-settings/main.py:581
+#: usr/share/biglinux/biglinux-settings/main.py:589
 msgid "Open setting"
 msgstr "Einstellung öffnen"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 446
-#: usr/share/biglinux/biglinux-settings/main.py:586
+#: usr/share/biglinux/biglinux-settings/main.py:594
 #, python-brace-format
 msgid "Open {} setting"
 msgstr "{}-Einstellung öffnen"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 469
-#: usr/share/biglinux/biglinux-settings/main.py:681
+#: usr/share/biglinux/biglinux-settings/main.py:689
 msgid "Dismiss"
 msgstr "Ablehnen"
 
@@ -1555,13 +1541,13 @@ msgstr "Dateiindizierung"
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:48
 msgid ""
-"Lets Dolphin and the application menu find files quickly by name and content."
-" Turning it off saves disk and processor use, but that search no longer finds"
-" files quickly."
+"Lets Dolphin and the application menu find files quickly by name and "
+"content. Turning it off saves disk and processor use, but that search no "
+"longer finds files quickly."
 msgstr ""
 "Ermöglicht Dolphin und dem Anwendungsmenü, Dateien schnell nach Name und "
-"Inhalt zu finden. Ausgeschaltet spart es Festplatten- und Prozessorlast, aber"
-" diese Suche findet Dateien nicht mehr schnell."
+"Inhalt zu finden. Ausgeschaltet spart es Festplatten- und Prozessorlast, "
+"aber diese Suche findet Dateien nicht mehr schnell."
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:52
 msgid "Baloo"
@@ -1584,8 +1570,8 @@ msgid ""
 "Keeps selected applications ready in memory so they open faster. Uses more "
 "memory."
 msgstr ""
-"Hält ausgewählte Anwendungen im Speicher bereit, damit sie schneller starten."
-" Benötigt mehr Arbeitsspeicher."
+"Hält ausgewählte Anwendungen im Speicher bereit, damit sie schneller "
+"starten. Benötigt mehr Arbeitsspeicher."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 120
@@ -1773,7 +1759,7 @@ msgid "don't sleep"
 msgstr "nicht schlafen"
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:76
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
 msgid "sleep"
 msgstr "schlafen"
 
@@ -1816,7 +1802,7 @@ msgstr ""
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:104
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:120
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:164
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:185
 msgid "battery"
 msgstr "akku"
 
@@ -1855,8 +1841,8 @@ msgid ""
 "Keep the computer working with the lid closed, for example with an external "
 "monitor."
 msgstr ""
-"Der Computer arbeitet bei geschlossenem Deckel weiter, zum Beispiel mit einem"
-" externen Monitor."
+"Der Computer arbeitet bei geschlossenem Deckel weiter, zum Beispiel mit "
+"einem externen Monitor."
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:131
 msgid "laptop"
@@ -1872,52 +1858,90 @@ msgstr "Im Netzbetrieb bei geschlossenem Deckel weiterlaufen lassen"
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:137
 msgid ""
-"Closing the lid will not lock or suspend the computer while it is connected "
-"to power. The session and network stay active."
+"Closing the lid will not suspend the computer while it is connected to "
+"power. The session and network stay active."
 msgstr ""
-"Das Schließen des Deckels sperrt den Computer nicht und versetzt ihn nicht in"
-" Bereitschaft, solange er am Strom angeschlossen ist. Sitzung und Netzwerk "
-"bleiben aktiv."
+"Das Schließen des Deckels versetzt den Computer nicht in Bereitschaft, "
+"solange er am Stromnetz hängt. Sitzung und Netzwerk bleiben aktiv."
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:143
 msgid ""
-"This prevents lid-triggered suspend and locking. Automatic idle locking "
-"remains separate. Keep the notebook ventilated while it runs with the lid "
-"closed."
+"This prevents lid-triggered suspend. Without an external monitor the screen "
+"may still lock when the lid closes; turn on \"Don't lock the screen\" below "
+"to avoid it. Keep the notebook ventilated while it runs with the lid closed."
 msgstr ""
-"Dies verhindert, dass das Schließen des Deckels den Bereitschaftsmodus "
-"aktiviert oder die Sitzung sperrt. Die automatische Sperre bei Inaktivität "
-"wird davon nicht beeinflusst. Sorgen Sie für eine ausreichende Belüftung des "
-"Notebooks, solange es mit geschlossenem Deckel läuft."
+"Dies verhindert die Bereitschaft beim Schließen des Deckels. Ohne externen "
+"Monitor kann der Bildschirm beim Schließen des Deckels trotzdem gesperrt "
+"werden; schalten Sie unten „Bildschirm nicht sperren“ ein, um das zu "
+"vermeiden. Sorgen Sie für Belüftung, solange das Notebook mit geschlossenem "
+"Deckel läuft."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:152
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:153
+msgid "Don't lock the screen"
+msgstr "Bildschirm nicht sperren"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:155
+msgid ""
+"Keeps the session unlocked when the lid closes, so a remote desktop "
+"connection is not dropped by the lock screen."
+msgstr ""
+"Hält die Sitzung beim Schließen des Deckels entsperrt, damit eine Remote-"
+"Desktop-Verbindung nicht durch den Sperrbildschirm getrennt wird."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:162
+msgid ""
+"Turns off the screen lock entirely: when the lid closes, after idle time and "
+"when suspending. Anyone with physical access to the computer can use the "
+"session. While it is on, the Lock option in the system menu and the Super+L "
+"shortcut also stop working. Turning off the lid option above restores the "
+"lock."
+msgstr ""
+"Schaltet die Bildschirmsperre vollständig aus: beim Schließen des Deckels, "
+"nach Inaktivität und beim Bereitschaftsmodus. Jede Person mit physischem "
+"Zugang zum Computer kann die Sitzung benutzen. Solange sie eingeschaltet "
+"ist, funktionieren auch die Option „Sperren“ im Systemmenü und das "
+"Tastenkürzel Super+L nicht. Das Ausschalten der Deckel-Option oben stellt "
+"die Sperre wieder her."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:168
+msgid "RDP"
+msgstr "RDP"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:168
+msgid "lock screen"
+msgstr "Sperrbildschirm"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:168
+msgid "remote desktop"
+msgstr "Remote-Desktop"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:173
 msgid "Keep running with the lid closed on battery"
 msgstr "Im Akkubetrieb bei geschlossenem Deckel weiterlaufen lassen"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:154
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:175
 msgid ""
-"Closing the lid will not lock or suspend the computer on battery. The session"
-" and network stay active, using more battery."
+"Closing the lid will not suspend the computer on battery. The session and "
+"network stay active, using more battery."
 msgstr ""
-"Das Schließen des Deckels sperrt den Computer im Akkubetrieb nicht und "
-"versetzt ihn nicht in Bereitschaft. Sitzung und Netzwerk bleiben aktiv, was "
-"mehr Akku verbraucht."
+"Das Schließen des Deckels versetzt den Computer im Akkubetrieb nicht in "
+"Bereitschaft. Sitzung und Netzwerk bleiben aktiv und verbrauchen mehr Akku."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:160
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:181
 msgid ""
-"This prevents lid-triggered suspend and locking. Automatic idle locking "
-"remains separate, and the 20% critical battery policy still applies."
+"This prevents lid-triggered suspend. Without an external monitor the screen "
+"may still lock when the lid closes. The 20% critical battery policy still "
+"applies."
 msgstr ""
-"Dies verhindert, dass das Schließen des Deckels den Bereitschaftsmodus "
-"aktiviert oder die Sitzung sperrt. Die automatische Sperre bei Inaktivität "
-"wird davon nicht beeinflusst, und die Richtlinie für einen kritischen "
-"Akkustand von 20 % gilt weiterhin."
+"Dies verhindert die Bereitschaft beim Schließen des Deckels. Ohne externen "
+"Monitor kann der Bildschirm beim Schließen des Deckels trotzdem gesperrt "
+"werden. Die Richtlinie für kritischen Akkustand bei 20 % gilt weiterhin."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:169
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:190
 msgid "Fix problems after resume"
 msgstr "Probleme nach dem Aufwachen beheben"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:170
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:191
 msgid ""
 "Compatibility fixes for problems some computers have when waking from "
 "suspend."
@@ -1925,21 +1949,21 @@ msgstr ""
 "Kompatibilitätskorrekturen für Probleme, die manche Computer beim Aufwachen "
 "aus der Bereitschaft haben."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:179
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:200
 msgid "Light sleep (s2idle)"
 msgstr "Leichter Schlafmodus (s2idle)"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:181
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:202
 msgid ""
-"Uses a lighter sleep mode that keeps the Fn keys working after resume on some"
-" ASUS notebooks. Uses slightly more battery while suspended."
+"Uses a lighter sleep mode that keeps the Fn keys working after resume on "
+"some ASUS notebooks. Uses slightly more battery while suspended."
 msgstr ""
 "Verwendet einen leichteren Schlafmodus, damit die Fn-Tasten nach dem "
 "Aufwachen auf manchen ASUS-Notebooks weiter funktionieren. Verbraucht in der "
 "Bereitschaft etwas mehr Akku."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 91
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:188
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:209
 msgid ""
 "S3 deep sleep can cause the Embedded Controller to stop generating hotkey "
 "interrupts. s2idle keeps the EC powered, avoiding this issue at a small cost "
@@ -1949,29 +1973,29 @@ msgstr ""
 "Hotkey-Interrupts zu generieren. s2idle hält den EC mit Strom versorgt und "
 "vermeidet dieses Problem bei geringem zusätzlichen Stromverbrauch."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
 msgid "Fn keys"
 msgstr "fn-tasten"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
 msgid "hotkeys"
 msgstr "tastenkombinationen"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:200
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:221
 msgid "Avoid losing Wi-Fi after resume"
 msgstr "Wi-Fi-Verlust nach dem Aufwachen vermeiden"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:202
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:223
 msgid ""
 "Compatibility fix for some Realtek Wi-Fi adapters: keeps the adapter from "
 "fully powering off during suspend, so the connection works after resume."
 msgstr ""
 "Kompatibilitätskorrektur für einige Realtek-Wi-Fi-Adapter: Verhindert, dass "
-"der Adapter während der Bereitschaft vollständig abgeschaltet wird, damit die"
-" Verbindung nach dem Aufwachen funktioniert."
+"der Adapter während der Bereitschaft vollständig abgeschaltet wird, damit "
+"die Verbindung nach dem Aufwachen funktioniert."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 116
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:209
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:230
 msgid ""
 "Some Realtek RTL8852BE/CE chips fail to reinitialize after d3cold power "
 "gating. This keeps the chip in d3hot (PCIe link alive) during suspend."
@@ -1980,15 +2004,15 @@ msgstr ""
 "nicht neu initialisiert werden. Dies hält den Chip während des Suspendierens "
 "im d3hot-Zustand (PCIe-Verbindung aktiv)."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:234
 msgid "Realtek"
 msgstr "Realtek"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:219
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
 msgid "Restore brightness after resume"
 msgstr "Helligkeit nach dem Aufwachen wiederherstellen"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:221
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:242
 msgid ""
 "Saves the screen brightness and keyboard lights before suspending and "
 "restores them when the computer wakes up."
@@ -1996,20 +2020,20 @@ msgstr ""
 "Speichert die Bildschirmhelligkeit und die Tastaturbeleuchtung vor der "
 "Bereitschaft und stellt sie beim Aufwachen des Computers wieder her."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:247
 #: usr/share/biglinux/biglinux-settings/usability_page.py:37
 msgid "backlight"
 msgstr "hintergrundbeleuchtung"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:247
 msgid "brightness"
 msgstr "helligkeit"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:233
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:254
 msgid "Restart failed extensions after resume"
 msgstr "Fehlgeschlagene Erweiterungen nach dem Aufwachen neu starten"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:235
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:256
 msgid ""
 "Checks GNOME Shell extensions after resume and restarts the ones left in an "
 "error state."
@@ -2017,11 +2041,11 @@ msgstr ""
 "Prüft GNOME-Shell-Erweiterungen nach dem Aufwachen und startet diejenigen "
 "neu, die in einem Fehlerzustand geblieben sind."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:261
 msgid "GNOME"
 msgstr "GNOME"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:261
 msgid "extensions"
 msgstr "erweiterungen"
 
@@ -2089,7 +2113,7 @@ msgid "GRUB"
 msgstr "GRUB"
 
 #: usr/share/biglinux/biglinux-settings/system_page.py:53
-#: usr/share/biglinux/biglinux-settings/system_page.py:65
+#: usr/share/biglinux/biglinux-settings/system_page.py:66
 msgid "boot"
 msgstr "systemstart"
 
@@ -2103,19 +2127,19 @@ msgid ""
 msgstr ""
 "Zeigt beim Start des Computers Systemmeldungen unter der Startanimation an."
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:65
+#: usr/share/biglinux/biglinux-settings/system_page.py:66
 msgid "splash"
 msgstr "startbildschirm"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:70
+#: usr/share/biglinux/biglinux-settings/system_page.py:71
 msgid "Disks"
 msgstr "Laufwerke"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:76
+#: usr/share/biglinux/biglinux-settings/system_page.py:77
 msgid "Mount internal disks at startup"
 msgstr "Interne Laufwerke beim Start einhängen"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:78
+#: usr/share/biglinux/biglinux-settings/system_page.py:79
 msgid ""
 "Makes the partitions of the internal disks available automatically when the "
 "computer starts."
@@ -2123,11 +2147,11 @@ msgstr ""
 "Stellt die Partitionen der internen Laufwerke beim Start des Computers "
 "automatisch bereit."
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:83
+#: usr/share/biglinux/biglinux-settings/system_page.py:84
 msgid "auto-mount"
 msgstr "automatisch einhängen"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:83
+#: usr/share/biglinux/biglinux-settings/system_page.py:84
 msgid "partitions"
 msgstr "partitionen"
 
@@ -2250,6 +2274,76 @@ msgstr "datenschutz"
 msgid "recent"
 msgstr "zuletzt verwendet"
 
+#~ msgid ""
+#~ "Turns off the screen lock entirely: when the lid closes, after idle time "
+#~ "and when suspending. Anyone with physical access to the computer can use "
+#~ "the session. Turning off the lid option above restores the lock."
+#~ msgstr ""
+#~ "Schaltet die Bildschirmsperre vollständig aus: beim Schließen des "
+#~ "Deckels, nach Inaktivität und beim Bereitschaftsmodus. Jede Person mit "
+#~ "physischem Zugang zum Computer kann die Sitzung benutzen. Das Ausschalten "
+#~ "der Deckel-Option oben stellt die Sperre wieder her."
+
+#~ msgid ""
+#~ "Closing the lid will not lock or suspend the computer while it is "
+#~ "connected to power. The session and network stay active."
+#~ msgstr ""
+#~ "Das Schließen des Deckels sperrt den Computer nicht und versetzt ihn "
+#~ "nicht in Bereitschaft, solange er am Strom angeschlossen ist. Sitzung und "
+#~ "Netzwerk bleiben aktiv."
+
+#~ msgid ""
+#~ "This prevents lid-triggered suspend and locking. Automatic idle locking "
+#~ "remains separate. Keep the notebook ventilated while it runs with the lid "
+#~ "closed."
+#~ msgstr ""
+#~ "Dies verhindert, dass das Schließen des Deckels den Bereitschaftsmodus "
+#~ "aktiviert oder die Sitzung sperrt. Die automatische Sperre bei "
+#~ "Inaktivität wird davon nicht beeinflusst. Sorgen Sie für eine "
+#~ "ausreichende Belüftung des Notebooks, solange es mit geschlossenem Deckel "
+#~ "läuft."
+
+#~ msgid ""
+#~ "Keeps the session unlocked so a remote desktop connection is not dropped "
+#~ "by the lock screen."
+#~ msgstr ""
+#~ "Hält die Sitzung entsperrt, damit eine Remote-Desktop-Verbindung nicht "
+#~ "durch den Sperrbildschirm getrennt wird."
+
+#~ msgid ""
+#~ "Turns off the screen lock, both after idle time and when suspending. "
+#~ "Anyone with physical access to the computer can use the session. Turning "
+#~ "off the lid option above restores the lock."
+#~ msgstr ""
+#~ "Schaltet die Bildschirmsperre aus, sowohl nach Inaktivität als auch beim "
+#~ "Bereitschaftsmodus. Jede Person mit physischem Zugang zum Computer kann "
+#~ "die Sitzung benutzen. Das Ausschalten der Deckel-Option oben stellt die "
+#~ "Sperre wieder her."
+
+#~ msgid ""
+#~ "Closing the lid will not lock or suspend the computer on battery. The "
+#~ "session and network stay active, using more battery."
+#~ msgstr ""
+#~ "Das Schließen des Deckels sperrt den Computer im Akkubetrieb nicht und "
+#~ "versetzt ihn nicht in Bereitschaft. Sitzung und Netzwerk bleiben aktiv, "
+#~ "was mehr Akku verbraucht."
+
+#~ msgid ""
+#~ "This prevents lid-triggered suspend and locking. Automatic idle locking "
+#~ "remains separate, and the 20% critical battery policy still applies."
+#~ msgstr ""
+#~ "Dies verhindert, dass das Schließen des Deckels den Bereitschaftsmodus "
+#~ "aktiviert oder die Sitzung sperrt. Die automatische Sperre bei "
+#~ "Inaktivität wird davon nicht beeinflusst, und die Richtlinie für einen "
+#~ "kritischen Akkustand von 20 % gilt weiterhin."
+
+#~ msgid ""
+#~ "Open-source alternative to Google's NotebookLM. Installs it as a "
+#~ "container; turning it off removes it."
+#~ msgstr ""
+#~ "Quelloffene Alternative zu Googles NotebookLM. Wird als Container "
+#~ "installiert; beim Ausschalten wird sie entfernt."
+
 #~ msgid "Keeps the S.M.A.R.T. service watching disks for signs of failure."
 #~ msgstr ""
 #~ "Lässt den S.M.A.R.T.-Dienst die Festplatten auf Anzeichen von Ausfällen "
@@ -2311,8 +2405,8 @@ msgstr "zuletzt verwendet"
 #~ "LM Studio - A desktop app for exploring and running large language models "
 #~ "locally."
 #~ msgstr ""
-#~ "LM Studio - Eine Desktop-App zum Erkunden und Ausführen großer Sprachmodelle "
-#~ "lokal."
+#~ "LM Studio - Eine Desktop-App zum Erkunden und Ausführen großer "
+#~ "Sprachmodelle lokal."
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 87
 #~ msgid ""
@@ -2330,7 +2424,8 @@ msgstr "zuletzt verwendet"
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 88
 #~ msgid "The most powerful and modular visual AI engine and application."
-#~ msgstr "Die leistungsstärkste und modulare visuelle KI-Engine und Anwendung."
+#~ msgstr ""
+#~ "Die leistungsstärkste und modulare visuelle KI-Engine und Anwendung."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 55
@@ -2360,7 +2455,8 @@ msgstr "zuletzt verwendet"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 110
-#~ msgid "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
+#~ msgid ""
+#~ "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
 #~ msgstr ""
 #~ "Lokaler KI-Server. Für neuere Nvidia-GPUs, beginnend mit der 2000er-Serie."
 
@@ -2371,7 +2467,8 @@ msgstr "zuletzt verwendet"
 #~ "Consider using Vulkan, in many tests, Vulkan performed better than ROCm."
 #~ msgstr ""
 #~ "Lokaler KI-Server. Für neuere AMD-GPUs, beginnend mit der 6000-Serie. \n"
-#~ "Erwägen Sie die Verwendung von Vulkan, in vielen Tests schnitt Vulkan besser ab als ROCm."
+#~ "Erwägen Sie die Verwendung von Vulkan, in vielen Tests schnitt Vulkan "
+#~ "besser ab als ROCm."
 
 # File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 11
 #~ msgid "AI Coding Assistants"
@@ -2384,11 +2481,11 @@ msgstr "zuletzt verwendet"
 
 # File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 23
 #~ msgid ""
-#~ "Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
-#~ "models. Installs nodejs, npm and ripgrep as dependencies."
+#~ "Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and "
+#~ "200+ models. Installs nodejs, npm and ripgrep as dependencies."
 #~ msgstr ""
-#~ "Open-Source-Coding-Agent-CLI für OpenAI, Gemini, DeepSeek, Ollama und 200+ "
-#~ "Modelle. Installiert nodejs, npm und ripgrep als Abhängigkeiten."
+#~ "Open-Source-Coding-Agent-CLI für OpenAI, Gemini, DeepSeek, Ollama und "
+#~ "200+ Modelle. Installiert nodejs, npm und ripgrep als Abhängigkeiten."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices_page.py, line: 15
@@ -2421,10 +2518,11 @@ msgstr "zuletzt verwendet"
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 16
 #~ msgid "Container service — enable to use containers below."
 #~ msgstr ""
-#~ "Containerdienst — aktivieren, um die untenstehenden Container zu verwenden."
+#~ "Containerdienst — aktivieren, um die untenstehenden Container zu "
+#~ "verwenden."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 137
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -2494,7 +2592,8 @@ msgstr "zuletzt verwendet"
 
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 119
 #~ msgid "Install LAMP stack container (Linux, Apache, MySQL, PHP)."
-#~ msgstr "Installieren Sie den LAMP-Stack-Container (Linux, Apache, MySQL, PHP)."
+#~ msgstr ""
+#~ "Installieren Sie den LAMP-Stack-Container (Linux, Apache, MySQL, PHP)."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 109
@@ -2540,22 +2639,22 @@ msgstr "zuletzt verwendet"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 107
 #~ msgid "Usability"
@@ -2594,11 +2693,11 @@ msgstr "zuletzt verwendet"
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 35
 #~ msgid ""
-#~ "Disables KWin visual effects (blur, shadows, animations). Reduces GPU load "
-#~ "and frees memory."
+#~ "Disables KWin visual effects (blur, shadows, animations). Reduces GPU "
+#~ "load and frees memory."
 #~ msgstr ""
-#~ "Deaktiviert KWin-Visuelleffekte (Unschärfe, Schatten, Animationen). Reduziert"
-#~ " die GPU-Auslastung und gibt Speicher frei."
+#~ "Deaktiviert KWin-Visuelleffekte (Unschärfe, Schatten, Animationen). "
+#~ "Reduziert die GPU-Auslastung und gibt Speicher frei."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 63
@@ -2608,8 +2707,8 @@ msgstr "zuletzt verwendet"
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 51
 #~ msgid ""
-#~ "Forces maximum processor performance mode. Ensures the processor uses maximum"
-#~ " frequency."
+#~ "Forces maximum processor performance mode. Ensures the processor uses "
+#~ "maximum frequency."
 #~ msgstr ""
 #~ "Erzwingt den maximalen Prozessorleistungsmodus. Stellt sicher, dass der "
 #~ "Prozessor die maximale Frequenz verwendet."
@@ -2634,8 +2733,8 @@ msgstr "zuletzt verwendet"
 # settings/performance_games_page.py, line: 83
 #~ msgid "Disables S.M.A.R.T disk monitoring. Reduces disk I/O and CPU usage."
 #~ msgstr ""
-#~ "Deaktiviert die S.M.A.R.T-Disküberwachung. Reduziert die Festplatten-I/O- und"
-#~ " CPU-Auslastung."
+#~ "Deaktiviert die S.M.A.R.T-Disküberwachung. Reduziert die Festplatten-I/O- "
+#~ "und CPU-Auslastung."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 169
@@ -2645,18 +2744,18 @@ msgstr "zuletzt verwendet"
 # File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 62
 #~ msgid "Using mitigations=off will make your machine faster and less secure!"
 #~ msgstr ""
-#~ "Die Verwendung von mitigations=off macht Ihre Maschine schneller und weniger "
-#~ "sicher!"
+#~ "Die Verwendung von mitigations=off macht Ihre Maschine schneller und "
+#~ "weniger sicher!"
 
 # File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 67
 #~ msgid ""
-#~ "This will disable CPU security mitigations (Meltdown/Spectre). Your system "
-#~ "will be faster but vulnerable to hardware-level attacks. Are you sure you "
-#~ "want to continue?"
+#~ "This will disable CPU security mitigations (Meltdown/Spectre). Your "
+#~ "system will be faster but vulnerable to hardware-level attacks. Are you "
+#~ "sure you want to continue?"
 #~ msgstr ""
 #~ "Dies deaktiviert die Sicherheitsmaßnahmen der CPU (Meltdown/Spectre). Ihr "
-#~ "System wird schneller, ist jedoch anfällig für Angriffe auf Hardwareebene. "
-#~ "Sind Sie sicher, dass Sie fortfahren möchten?"
+#~ "System wird schneller, ist jedoch anfällig für Angriffe auf "
+#~ "Hardwareebene. Sind Sie sicher, dass Sie fortfahren möchten?"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 176
@@ -2666,22 +2765,23 @@ msgstr "zuletzt verwendet"
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 177
 #~ msgid ""
-#~ "Disables the hardware watchdog and TSC clocksource systems, maintaining high "
-#~ "performance but removing automatic protections against system crashes."
+#~ "Disables the hardware watchdog and TSC clocksource systems, maintaining "
+#~ "high performance but removing automatic protections against system "
+#~ "crashes."
 #~ msgstr ""
 #~ "Deaktiviert die Hardware-Watchdog- und TSC-Zeitquellen-Systeme, um hohe "
-#~ "Leistung aufrechtzuerhalten, jedoch ohne automatische Schutzmaßnahmen gegen "
-#~ "Systemabstürze."
+#~ "Leistung aufrechtzuerhalten, jedoch ohne automatische Schutzmaßnahmen "
+#~ "gegen Systemabstürze."
 
 # File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 81
 #~ msgid ""
 #~ "This will disable the hardware watchdog. Your system will no longer "
-#~ "automatically recover from certain types of crashes. Are you sure you want to"
-#~ " continue?"
+#~ "automatically recover from certain types of crashes. Are you sure you "
+#~ "want to continue?"
 #~ msgstr ""
 #~ "Dies deaktiviert den Hardware-Watchdog. Ihr System wird nicht mehr "
-#~ "automatisch von bestimmten Arten von Abstürzen wiederhergestellt. Sind Sie "
-#~ "sicher, dass Sie fortfahren möchten?"
+#~ "automatisch von bestimmten Arten von Abstürzen wiederhergestellt. Sind "
+#~ "Sie sicher, dass Sie fortfahren möchten?"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 103
@@ -2700,12 +2800,13 @@ msgstr "zuletzt verwendet"
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 73
 #~ msgid "Choose when inactivity and low battery may suspend the system."
 #~ msgstr ""
-#~ "Legen Sie fest, wann das System bei Inaktivität oder niedrigem Akkuladestand "
-#~ "in den Bereitschaftsmodus wechseln darf."
+#~ "Legen Sie fest, wann das System bei Inaktivität oder niedrigem "
+#~ "Akkuladestand in den Bereitschaftsmodus wechseln darf."
 
 #~ msgid "Disable idle suspend while plugged in"
 #~ msgstr ""
-#~ "Automatischen Bereitschaftsmodus bei Inaktivität im Netzbetrieb deaktivieren"
+#~ "Automatischen Bereitschaftsmodus bei Inaktivität im Netzbetrieb "
+#~ "deaktivieren"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 81
 #~ msgid "Disables automatic suspend caused by inactivity on AC power."
@@ -2715,13 +2816,14 @@ msgstr "zuletzt verwendet"
 
 #~ msgid "Disable idle suspend on battery"
 #~ msgstr ""
-#~ "Automatischen Bereitschaftsmodus bei Inaktivität im Akkubetrieb deaktivieren"
+#~ "Automatischen Bereitschaftsmodus bei Inaktivität im Akkubetrieb "
+#~ "deaktivieren"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 89
 #~ msgid "Keeps the system awake on battery until a critical level is reached."
 #~ msgstr ""
-#~ "Hält das System im Akkubetrieb aktiv, bis ein kritischer Ladestand erreicht "
-#~ "ist."
+#~ "Hält das System im Akkubetrieb aktiv, bis ein kritischer Ladestand "
+#~ "erreicht ist."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 96
 #~ msgid "Suspend only when battery reaches 20%"
@@ -2729,11 +2831,12 @@ msgstr "zuletzt verwendet"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 98
 #~ msgid ""
-#~ "Disables idle suspend on battery and suspends automatically when the charge "
-#~ "reaches 20%."
+#~ "Disables idle suspend on battery and suspends automatically when the "
+#~ "charge reaches 20%."
 #~ msgstr ""
-#~ "Deaktiviert im Akkubetrieb den Wechsel in Bereitschaft bei Inaktivität und "
-#~ "wechselt automatisch in Bereitschaft, sobald der Ladestand 20 % erreicht."
+#~ "Deaktiviert im Akkubetrieb den Wechsel in Bereitschaft bei Inaktivität "
+#~ "und wechselt automatisch in Bereitschaft, sobald der Ladestand 20 % "
+#~ "erreicht."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 75
 #~ msgid "Sleep Mode"
@@ -2789,11 +2892,11 @@ msgstr "zuletzt verwendet"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 134
 #~ msgid ""
-#~ "Saves screen brightness and keyboard LEDs before suspending and restores them"
-#~ " on resume."
+#~ "Saves screen brightness and keyboard LEDs before suspending and restores "
+#~ "them on resume."
 #~ msgstr ""
-#~ "Speichert die Bildschirmhelligkeit und die Tastatur-LEDs vor dem Suspendieren"
-#~ " und stellt sie beim Wiederherstellen wieder her."
+#~ "Speichert die Bildschirmhelligkeit und die Tastatur-LEDs vor dem "
+#~ "Suspendieren und stellt sie beim Wiederherstellen wieder her."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 144
 #~ msgid "GNOME Shell Extensions"
@@ -2809,8 +2912,8 @@ msgstr "zuletzt verwendet"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 154
 #~ msgid ""
-#~ "Detects GNOME Shell extensions in error state after resume and automatically "
-#~ "restarts them."
+#~ "Detects GNOME Shell extensions in error state after resume and "
+#~ "automatically restarts them."
 #~ msgstr ""
 #~ "Erkennt GNOME Shell-Erweiterungen im Fehlerzustand nach dem Aufwachen und "
 #~ "startet sie automatisch neu."
@@ -2830,7 +2933,8 @@ msgstr "zuletzt verwendet"
 #~ "Netzbetrieb geschlossen wird."
 
 #~ msgid ""
-#~ "Keeps the session and network active when the lid is closed on battery power."
+#~ "Keeps the session and network active when the lid is closed on battery "
+#~ "power."
 #~ msgstr ""
 #~ "Die Sitzung und die Netzwerkverbindung bleiben aktiv, wenn der Deckel im "
 #~ "Akkubetrieb geschlossen wird."
@@ -2882,7 +2986,8 @@ msgstr "zuletzt verwendet"
 # 171
 #~ msgid "Auto mount partitions in internal disks on boot."
 #~ msgstr ""
-#~ "Automatisches Einbinden von Partitionen auf internen Festplatten beim Booten."
+#~ "Automatisches Einbinden von Partitionen auf internen Festplatten beim "
+#~ "Booten."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 14
@@ -2903,10 +3008,11 @@ msgstr "zuletzt verwendet"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 132
-#~ msgid "Maximize, minimize, and close buttons on the left side of the window."
+#~ msgid ""
+#~ "Maximize, minimize, and close buttons on the left side of the window."
 #~ msgstr ""
-#~ "Maximieren, Minimieren und Schließen Schaltflächen auf der linken Seite des "
-#~ "Fensters."
+#~ "Maximieren, Minimieren und Schließen Schaltflächen auf der linken Seite "
+#~ "des Fensters."
 
 # File: usr/share/biglinux/biglinux-settings/usability_page.py, line: 39
 #~ msgid "Enable window tiling zones for the KDE Plasma desktop."
@@ -2920,8 +3026,8 @@ msgstr "zuletzt verwendet"
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 170
 #~ msgid ""
-#~ "Restores the 'Recent Files' and 'Recent Locations' functionality that appears"
-#~ " empty in Dolphin and the Application Menu."
+#~ "Restores the 'Recent Files' and 'Recent Locations' functionality that "
+#~ "appears empty in Dolphin and the Application Menu."
 #~ msgstr ""
 #~ "Stellt die Funktionalität 'Kürzliche Dateien' und 'Kürzliche Orte' wieder "
 #~ "her, die in Dolphin und im Anwendungsmenü leer erscheint."
@@ -2932,7 +3038,8 @@ msgstr "zuletzt verwendet"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 88
 #~ msgid "Never suspend on battery due to inactivity"
-#~ msgstr "Bei Akkubetrieb aufgrund von Inaktivität nie in Bereitschaft wechseln"
+#~ msgstr ""
+#~ "Bei Akkubetrieb aufgrund von Inaktivität nie in Bereitschaft wechseln"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 171
 #~ msgid "Suspend on lid close (AC power)"
@@ -2940,9 +3047,9 @@ msgstr "zuletzt verwendet"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 173
 #~ msgid ""
-#~ "Some systems do not suspend when on AC power. This forces suspend when the "
-#~ "lid is closed."
+#~ "Some systems do not suspend when on AC power. This forces suspend when "
+#~ "the lid is closed."
 #~ msgstr ""
 #~ "Einige Systeme gehen nicht in den Ruhezustand, wenn sie mit Wechselstrom "
-#~ "betrieben werden. Dies erzwingt den Ruhezustand, wenn der Deckel geschlossen "
-#~ "ist."
+#~ "betrieben werden. Dies erzwingt den Ruhezustand, wenn der Deckel "
+#~ "geschlossen ist."
