@@ -387,7 +387,6 @@ COMPOSE_APPS = {
     "docker/jellyfinRun.sh": "Docker/Jellyfin/docker-compose.yml",
     "docker/lampRun.sh": "Docker/LAMP/docker-compose.yml",
     "docker/nextcloud-plusRun.sh": "Docker/Nextcloud-Plus/nextcloud.yml",
-    "docker/openNotebookRun.sh": "Docker/open-notebook/docker-compose.yml",
     "docker/portainer-clientRun.sh": "Docker/Portainer/docker-compose.yml",
     "docker/swsRun.sh": "Docker/SWS/docker-compose.yml",
     "docker/v2rayaRun.sh": "Docker/V2rayA/docker-compose.yml",
