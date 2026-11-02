@@ -150,21 +150,6 @@ class AppsPage(BaseSettingsPage):
             ),
             [_("web server"), _("static")],
         )
-        self._add_container(
-            dev,
-            _("Open Notebook"),
-            _(
-                "Open-source alternative to Google's NotebookLM. Installs it as a container; turning it off removes it."
-            ),
-            _("Open Notebook Server"),
-            _("Start the Open Notebook server."),
-            "openNotebook",
-            _(
-                "Open Notebook is running.\nAddress: http://localhost:8502\nand\nAddress: http://{}:8502"
-            ),
-            [_("NotebookLM"), _("AI")],
-            icon="openNotebook-symbolic",
-        )
 
         ## GROUP: Developer tools (script group "developer") ##
         developer = self.create_group(

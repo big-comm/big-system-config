@@ -81,7 +81,7 @@ Highlights:
 | **Performance** | Performance power profile, visual effects, file indexing, application launch (preload Firefox, Brave, Chrome, Chromium, LibreWolf, Pale Moon, Opera, Vivaldi, GNOME Web, LibreOffice), and — under *Protections and diagnostics*, with explicit confirmation — disk health monitoring, CPU vulnerability mitigations and lockup detectors. |
 | **Devices** | Wi-Fi and Bluetooth, JamesDSP audio effects, natural scrolling, and connect/disconnect each network interface. |
 | **Artificial Intelligence** | Ollama engines (CPU, Vulkan, NVIDIA CUDA, AMD ROCm) with optional LAN sharing, Ollama LAB, ChatAI, ChatBox, LM Studio, Open Notebook and ComfyUI. |
-| **Apps & Services** | Docker engine and ready-made services grouped by purpose — Nextcloud Plus, Jellyfin, AdGuard, V2RayA, LAMP, SWS, Portainer Client, Open Notebook — plus developer tools (OpenClaude). |
+| **Apps & Services** | Docker engine and ready-made services grouped by purpose — Nextcloud Plus, Jellyfin, AdGuard, V2RayA, LAMP, SWS, Portainer Client — plus developer tools (OpenClaude). |
 
 ## Screenshots
 

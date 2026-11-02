@@ -21,6 +21,12 @@ from sleep_page import SleepPage
 from system_page import SystemPage
 from usability_page import UsabilityPage
 
+try:
+    # Optional Big Gnome Center client: live window blur on GNOME 51.
+    from big_gnome_center_material import attach_window_material
+except ImportError:
+    attach_window_material = None
+
 logging.basicConfig(level=logging.INFO, format="%(name)s %(levelname)s: %(message)s")
 # Icon name, CSS class and logger name shared across the app.
 APP_SLUG = "biglinux-settings"
@@ -122,6 +128,8 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.add_css_class(APP_SLUG)
+        if attach_window_material is not None:
+            self._window_material = attach_window_material(self, APP_SLUG)
         self.set_title(_app_name())
         self.set_default_size(WINDOW_WIDTH, WINDOW_HEIGHT)
         self.set_size_request(MIN_WIDTH, MIN_HEIGHT)

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-06 19:34-0300\n"
-"PO-Revision-Date: 2026-10-06 19:34-0300\n"
+"POT-Creation-Date: 2026-10-29 16:48-0300\n"
+"PO-Revision-Date: 2026-10-29 16:48-0300\n"
 "Last-Translator: BigLinux Community <community@biglinux.com.br>\n"
 "Language-Team: BigLinux Community (el)\n"
 "Language: el\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Ollama."
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:13
-#: usr/share/biglinux/biglinux-settings/main.py:354
+#: usr/share/biglinux/biglinux-settings/main.py:362
 msgid "Artificial Intelligence"
 msgstr "Τεχνητή νοημοσύνη"
 
@@ -124,20 +124,19 @@ msgstr "LM Studio"
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:65
 msgid ""
-"Desktop app to download and run language models on this computer. Installs LM"
-" Studio; turning it off removes it."
+"Desktop app to download and run language models on this computer. Installs "
+"LM Studio; turning it off removes it."
 msgstr ""
 "Εφαρμογή επιφάνειας εργασίας για λήψη και εκτέλεση γλωσσικών μοντέλων σε "
 "αυτόν τον υπολογιστή. Εγκαθιστά το LM Studio· αν το απενεργοποιήσετε, "
 "αφαιρείται."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 194
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 203
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 74
 #: usr/share/biglinux/biglinux-settings/ai_page.py:74
-#: usr/share/biglinux/biglinux-settings/apps_page.py:155
 msgid "Open Notebook"
 msgstr "Open Notebook"
 
@@ -152,7 +151,6 @@ msgstr ""
 "το Docker· αν το απενεργοποιήσετε, αφαιρείται."
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:80
-#: usr/share/biglinux/biglinux-settings/apps_page.py:165
 msgid "NotebookLM"
 msgstr "NotebookLM"
 
@@ -161,27 +159,24 @@ msgid "documents"
 msgstr "έγγραφα"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 201
 #: usr/share/biglinux/biglinux-settings/ai_page.py:84
-#: usr/share/biglinux/biglinux-settings/apps_page.py:159
 msgid "Open Notebook Server"
 msgstr "Διακομιστής Open Notebook"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 95
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 202
 #: usr/share/biglinux/biglinux-settings/ai_page.py:85
-#: usr/share/biglinux/biglinux-settings/apps_page.py:160
 msgid "Start the Open Notebook server."
 msgstr "Εκκινήστε τον διακομιστή Open Notebook."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 190
 #: usr/share/biglinux/biglinux-settings/ai_page.py:90
-#: usr/share/biglinux/biglinux-settings/apps_page.py:163
 #, python-brace-format
 msgid ""
 "Open Notebook is running.\n"
@@ -205,8 +200,8 @@ msgid ""
 "it."
 msgstr ""
 "Δημιουργήστε εικόνες με τεχνητή νοημοσύνη χρησιμοποιώντας έναν οπτικό "
-"επεξεργαστή κόμβων. Απαιτεί κάρτα γραφικών AMD ή Nvidia. Εγκαθιστά το ComfyUI"
-" στον προσωπικό σας φάκελο· αν το απενεργοποιήσετε, αφαιρείται."
+"επεξεργαστή κόμβων. Απαιτεί κάρτα γραφικών AMD ή Nvidia. Εγκαθιστά το "
+"ComfyUI στον προσωπικό σας φάκελο· αν το απενεργοποιήσετε, αφαιρείται."
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:105
 msgid "Stable Diffusion"
@@ -288,8 +283,8 @@ msgstr "Ollama για CPU"
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:154
 msgid ""
-"Runs AI models on the processor only. Installs Ollama; turning it off removes"
-" it."
+"Runs AI models on the processor only. Installs Ollama; turning it off "
+"removes it."
 msgstr ""
 "Εκτελεί μοντέλα τεχνητής νοημοσύνης μόνο στον επεξεργαστή. Εγκαθιστά το "
 "Ollama· αν το απενεργοποιήσετε, αφαιρείται."
@@ -319,8 +314,8 @@ msgid ""
 "For newer Nvidia graphics cards, from the 2000 series on. Installs Ollama; "
 "turning it off removes it."
 msgstr ""
-"Για νεότερες κάρτες γραφικών Nvidia, από τη σειρά 2000 και μετά. Εγκαθιστά το"
-" Ollama· αν το απενεργοποιήσετε, αφαιρείται."
+"Για νεότερες κάρτες γραφικών Nvidia, από τη σειρά 2000 και μετά. Εγκαθιστά "
+"το Ollama· αν το απενεργοποιήσετε, αφαιρείται."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 91
@@ -389,7 +384,7 @@ msgstr ""
 "Διεύθυνση: http://{}:11434"
 
 #: usr/share/biglinux/biglinux-settings/apps_page.py:11
-#: usr/share/biglinux/biglinux-settings/main.py:360
+#: usr/share/biglinux/biglinux-settings/main.py:368
 msgid "Apps & Services"
 msgstr "Εφαρμογές και υπηρεσίες"
 
@@ -411,8 +406,8 @@ msgid ""
 "Container engine needed by all the services below. Installs Docker if it is "
 "missing; turning it off stops it."
 msgstr ""
-"Μηχανή κοντέινερ που χρειάζεται για όλες τις παρακάτω υπηρεσίες. Εγκαθιστά το"
-" Docker αν λείπει· αν το απενεργοποιήσετε, σταματά."
+"Μηχανή κοντέινερ που χρειάζεται για όλες τις παρακάτω υπηρεσίες. Εγκαθιστά "
+"το Docker αν λείπει· αν το απενεργοποιήσετε, σταματά."
 
 #: usr/share/biglinux/biglinux-settings/apps_page.py:26
 msgid "containers"
@@ -579,8 +574,8 @@ msgid ""
 "Network proxy client with a web interface. Installs it as a container; "
 "turning it off removes it."
 msgstr ""
-"Πελάτης διαμεσολαβητή δικτύου με διεπαφή ιστού. Εγκαθίσταται ως κοντέινερ· αν"
-" το απενεργοποιήσετε, αφαιρείται."
+"Πελάτης διαμεσολαβητή δικτύου με διεπαφή ιστού. Εγκαθίσταται ως κοντέινερ· "
+"αν το απενεργοποιήσετε, αφαιρείται."
 
 #: usr/share/biglinux/biglinux-settings/apps_page.py:94
 msgid "Start V2RayA"
@@ -754,48 +749,39 @@ msgstr ""
 msgid "static"
 msgstr "στατικός"
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:157
-msgid ""
-"Open-source alternative to Google's NotebookLM. Installs it as a container; "
-"turning it off removes it."
-msgstr ""
-"Εναλλακτική ανοιχτού κώδικα στο NotebookLM της Google. Εγκαθίσταται ως "
-"κοντέινερ· αν το απενεργοποιήσετε, αφαιρείται."
-
-#: usr/share/biglinux/biglinux-settings/apps_page.py:165
-#: usr/share/biglinux/biglinux-settings/apps_page.py:189
-msgid "AI"
-msgstr "τεχνητή νοημοσύνη"
-
-#: usr/share/biglinux/biglinux-settings/apps_page.py:171
+#: usr/share/biglinux/biglinux-settings/apps_page.py:156
 msgid "Developer tools"
 msgstr "Εργαλεία προγραμματιστών"
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:172
+#: usr/share/biglinux/biglinux-settings/apps_page.py:157
 msgid "Coding agents and command-line tools for developers."
 msgstr ""
 "Πράκτορες προγραμματισμού και εργαλεία γραμμής εντολών για προγραμματιστές."
 
 # File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 21
-#: usr/share/biglinux/biglinux-settings/apps_page.py:181
+#: usr/share/biglinux/biglinux-settings/apps_page.py:166
 msgid "OpenClaude"
 msgstr "OpenClaude"
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:183
+#: usr/share/biglinux/biglinux-settings/apps_page.py:168
 msgid ""
 "Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
 "models. Installs it with nodejs, npm and ripgrep as dependencies; turning it "
 "off removes it."
 msgstr ""
-"Πράκτορας προγραμματισμού γραμμής εντολών ανοιχτού κώδικα για OpenAI, Gemini,"
-" DeepSeek, Ollama και πάνω από 200 μοντέλα. Εγκαθίσταται με τα nodejs, npm "
-"και ripgrep ως εξαρτήσεις· αν το απενεργοποιήσετε, αφαιρείται."
+"Πράκτορας προγραμματισμού γραμμής εντολών ανοιχτού κώδικα για OpenAI, "
+"Gemini, DeepSeek, Ollama και πάνω από 200 μοντέλα. Εγκαθίσταται με τα "
+"nodejs, npm και ripgrep ως εξαρτήσεις· αν το απενεργοποιήσετε, αφαιρείται."
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+#: usr/share/biglinux/biglinux-settings/apps_page.py:174
+msgid "AI"
+msgstr "τεχνητή νοημοσύνη"
+
+#: usr/share/biglinux/biglinux-settings/apps_page.py:174
 msgid "coding agent"
 msgstr "πράκτορας προγραμματισμού"
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:189
+#: usr/share/biglinux/biglinux-settings/apps_page.py:174
 msgid "programming"
 msgstr "προγραμματισμός"
 
@@ -841,7 +827,7 @@ msgid "{}: run action"
 msgstr "{}: εκτέλεση ενέργειας"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 626
 # File: usr/share/biglinux/biglinux-settings/devices_page.py, line: 136
 #: usr/share/biglinux/biglinux-settings/base_page.py:353
@@ -904,7 +890,7 @@ msgid "{}: learn more"
 msgstr "{}: μάθε περισσότερα"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 206
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -914,7 +900,7 @@ msgid "Unavailable: script not found."
 msgstr "Μη διαθέσιμο: το σενάριο δεν βρέθηκε."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 218
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -924,7 +910,7 @@ msgid "Enabled"
 msgstr "Ενεργοποιημένο"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 220
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -934,7 +920,7 @@ msgid "Disabled"
 msgstr "Απενεργοποιημένο"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 223
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -953,7 +939,7 @@ msgid "Unavailable in this desktop environment."
 msgstr "Μη διαθέσιμο σε αυτό το περιβάλλον επιφάνειας εργασίας."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 225
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -970,7 +956,7 @@ msgid "output from script {}: {}"
 msgstr "έξοδος από το σενάριο {}: {}"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 229
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -987,7 +973,7 @@ msgid "Error checking state: {}"
 msgstr "Σφάλμα ελέγχου κατάστασης: {}"
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 233
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -1108,13 +1094,13 @@ msgid "Saved. It will take effect after the next restart."
 msgstr "Αποθηκεύτηκε. Θα τεθεί σε ισχύ μετά την επόμενη επανεκκίνηση."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/dispositivos_page.py, line: 25
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 116
 #: usr/share/biglinux/biglinux-settings/devices_page.py:30
-#: usr/share/biglinux/biglinux-settings/main.py:352
+#: usr/share/biglinux/biglinux-settings/main.py:360
 msgid "Devices"
 msgstr "Συσκευές"
 
@@ -1127,7 +1113,7 @@ msgid "Wireless"
 msgstr "Ασύρματα"
 
 #: usr/share/biglinux/biglinux-settings/devices_page.py:39
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:234
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
@@ -1146,7 +1132,7 @@ msgid "network"
 msgstr "δίκτυο"
 
 #: usr/share/biglinux/biglinux-settings/devices_page.py:43
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:234
 msgid "wireless"
 msgstr "ασύρματο"
 
@@ -1177,7 +1163,7 @@ msgstr ""
 "JamesDSP αν λείπει και το ξεκινά με την περίοδο λειτουργίας."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/dispositivos_page.py, line: 77
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -1275,26 +1261,26 @@ msgstr "Ανενεργό"
 # settings/performance_games_page.py, line: 181
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 195
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 181
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 195
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 244
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 256
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 244
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 256
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/usability/gamemode_dialog.py, line: 204
 #: usr/share/biglinux/biglinux-settings/home_page.py:62
-#: usr/share/biglinux/biglinux-settings/main.py:347
+#: usr/share/biglinux/biglinux-settings/main.py:355
 #: usr/share/biglinux/biglinux-settings/performance_page.py:9
 msgid "Performance"
 msgstr "Απόδοση"
@@ -1391,84 +1377,84 @@ msgstr "Έλεγχος…"
 # 49
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 120
-#: usr/share/biglinux/biglinux-settings/main.py:43
+#: usr/share/biglinux/biglinux-settings/main.py:49
 msgid "BigLinux Settings"
 msgstr "Ρυθμίσεις BigLinux"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 49
-#: usr/share/biglinux/biglinux-settings/main.py:116
+#: usr/share/biglinux/biglinux-settings/main.py:122
 msgid "BigLinux Community"
 msgstr "Κοινότητα BigLinux"
 
-#: usr/share/biglinux/biglinux-settings/main.py:231
+#: usr/share/biglinux/biglinux-settings/main.py:239
 msgid "Search settings…"
 msgstr "Αναζήτηση ρυθμίσεων…"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 185
-#: usr/share/biglinux/biglinux-settings/main.py:237
+#: usr/share/biglinux/biglinux-settings/main.py:245
 msgid "Search settings"
 msgstr "Ρυθμίσεις αναζήτησης"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 192
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 195
-#: usr/share/biglinux/biglinux-settings/main.py:244
-#: usr/share/biglinux/biglinux-settings/main.py:247
+#: usr/share/biglinux/biglinux-settings/main.py:252
+#: usr/share/biglinux/biglinux-settings/main.py:255
 msgid "Toggle navigation sidebar"
 msgstr "Εναλλαγή πλοήγησης πλαϊνής μπάρας"
 
-#: usr/share/biglinux/biglinux-settings/main.py:254
-#: usr/share/biglinux/biglinux-settings/main.py:256
+#: usr/share/biglinux/biglinux-settings/main.py:262
+#: usr/share/biglinux/biglinux-settings/main.py:264
 msgid "Back to search results"
 msgstr "Επιστροφή στα αποτελέσματα αναζήτησης"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 202
-#: usr/share/biglinux/biglinux-settings/main.py:264
+#: usr/share/biglinux/biglinux-settings/main.py:272
 msgid "About"
 msgstr "Σχετικά"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 206
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 209
-#: usr/share/biglinux/biglinux-settings/main.py:268
-#: usr/share/biglinux/biglinux-settings/main.py:271
+#: usr/share/biglinux/biglinux-settings/main.py:276
+#: usr/share/biglinux/biglinux-settings/main.py:279
 msgid "Main Menu"
 msgstr "Κύριο Μενού"
 
-#: usr/share/biglinux/biglinux-settings/main.py:302
+#: usr/share/biglinux/biglinux-settings/main.py:310
 msgid "No results"
 msgstr "Κανένα αποτέλεσμα"
 
-#: usr/share/biglinux/biglinux-settings/main.py:304
+#: usr/share/biglinux/biglinux-settings/main.py:312
 msgid "Try other words, like “don't sleep”, “remote access” or “battery”."
 msgstr ""
 "Δοκιμάστε άλλες λέξεις, όπως «να μην κοιμάται», «απομακρυσμένη πρόσβαση» ή "
 "«μπαταρία»."
 
-#: usr/share/biglinux/biglinux-settings/main.py:332
+#: usr/share/biglinux/biglinux-settings/main.py:340
 msgid "Home"
 msgstr "Αρχική"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 108
-#: usr/share/biglinux/biglinux-settings/main.py:333
+#: usr/share/biglinux/biglinux-settings/main.py:341
 #: usr/share/biglinux/biglinux-settings/system_page.py:11
 msgid "System"
 msgstr "Σύστημα"
 
-#: usr/share/biglinux/biglinux-settings/main.py:335
+#: usr/share/biglinux/biglinux-settings/main.py:343
 #: usr/share/biglinux/biglinux-settings/usability_page.py:9
 msgid "Appearance & Usage"
 msgstr "Εμφάνιση και χρήση"
 
-#: usr/share/biglinux/biglinux-settings/main.py:341
+#: usr/share/biglinux/biglinux-settings/main.py:349
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:70
 msgid "Power & Suspend"
 msgstr "Ενέργεια και αναστολή"
 
-#: usr/share/biglinux/biglinux-settings/main.py:412
+#: usr/share/biglinux/biglinux-settings/main.py:420
 msgid "More features"
 msgstr "Περισσότερες λειτουργίες"
 
-#: usr/share/biglinux/biglinux-settings/main.py:554
+#: usr/share/biglinux/biglinux-settings/main.py:562
 #, python-brace-format
 msgid "{} result"
 msgid_plural "{} results"
@@ -1476,18 +1462,18 @@ msgstr[0] "{} αποτέλεσμα"
 msgstr[1] "{} αποτελέσματα"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 441
-#: usr/share/biglinux/biglinux-settings/main.py:581
+#: usr/share/biglinux/biglinux-settings/main.py:589
 msgid "Open setting"
 msgstr "Άνοιγμα ρύθμισης"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 446
-#: usr/share/biglinux/biglinux-settings/main.py:586
+#: usr/share/biglinux/biglinux-settings/main.py:594
 #, python-brace-format
 msgid "Open {} setting"
 msgstr "Άνοιγμα ρύθμισης {}"
 
 # File: usr/share/biglinux/biglinux-settings/main.py, line: 469
-#: usr/share/biglinux/biglinux-settings/main.py:681
+#: usr/share/biglinux/biglinux-settings/main.py:689
 msgid "Dismiss"
 msgstr "Απόρριψη"
 
@@ -1561,14 +1547,14 @@ msgstr "Ευρετηρίαση αρχείων"
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:48
 msgid ""
-"Lets Dolphin and the application menu find files quickly by name and content."
-" Turning it off saves disk and processor use, but that search no longer finds"
-" files quickly."
+"Lets Dolphin and the application menu find files quickly by name and "
+"content. Turning it off saves disk and processor use, but that search no "
+"longer finds files quickly."
 msgstr ""
 "Επιτρέπει στο Dolphin και στο μενού εφαρμογών να βρίσκουν γρήγορα αρχεία με "
-"βάση το όνομα και το περιεχόμενο. Αν την απενεργοποιήσετε, εξοικονομείτε χώρο"
-" στον δίσκο και επεξεργαστική ισχύ, αλλά αυτή η αναζήτηση δεν βρίσκει πλέον "
-"γρήγορα τα αρχεία."
+"βάση το όνομα και το περιεχόμενο. Αν την απενεργοποιήσετε, εξοικονομείτε "
+"χώρο στον δίσκο και επεξεργαστική ισχύ, αλλά αυτή η αναζήτηση δεν βρίσκει "
+"πλέον γρήγορα τα αρχεία."
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:52
 msgid "Baloo"
@@ -1697,9 +1683,9 @@ msgid ""
 "workloads, but less secure. Applies after restart."
 msgstr ""
 "Προσθέτει το mitigations=off στη γραμμή εντολών του πυρήνα, απενεργοποιώντας "
-"τις προστασίες από τα Spectre, Meltdown και παρόμοιες ευπάθειες επεξεργαστών."
-" Πιο γρήγορο σε ορισμένα φορτία, αλλά λιγότερο ασφαλές. Εφαρμόζεται μετά την "
-"επανεκκίνηση."
+"τις προστασίες από τα Spectre, Meltdown και παρόμοιες ευπάθειες "
+"επεξεργαστών. Πιο γρήγορο σε ορισμένα φορτία, αλλά λιγότερο ασφαλές. "
+"Εφαρμόζεται μετά την επανεκκίνηση."
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:120
 msgid ""
@@ -1740,8 +1726,8 @@ msgid ""
 "Applies after restart."
 msgstr ""
 "Προσθέτει τα nowatchdog και tsc=nowatchdog στη γραμμή εντολών του πυρήνα, "
-"απενεργοποιώντας τους ανιχνευτές ήπιας και σοβαρής κατάρρευσης του πυρήνα και"
-" το watchdog της πηγής ρολογιού TSC. Εφαρμόζεται μετά την επανεκκίνηση."
+"απενεργοποιώντας τους ανιχνευτές ήπιας και σοβαρής κατάρρευσης του πυρήνα "
+"και το watchdog της πηγής ρολογιού TSC. Εφαρμόζεται μετά την επανεκκίνηση."
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:137
 msgid ""
@@ -1780,7 +1766,7 @@ msgid "don't sleep"
 msgstr "να μην κοιμάται"
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:76
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
 msgid "sleep"
 msgstr "ύπνος"
 
@@ -1820,7 +1806,7 @@ msgstr ""
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:104
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:120
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:164
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:185
 msgid "battery"
 msgstr "μπαταρία"
 
@@ -1842,9 +1828,9 @@ msgid ""
 "This uses UPower's critical battery policy. Low and critical warnings occur "
 "before the suspend action at 20%."
 msgstr ""
-"Αυτό χρησιμοποιεί την πολιτική κρίσιμης μπαταρίας του UPower. Προειδοποιήσεις"
-" χαμηλής και κρίσιμης στάθμης συμβαίνουν πριν από την ενέργεια αναστολής στο "
-"20%."
+"Αυτό χρησιμοποιεί την πολιτική κρίσιμης μπαταρίας του UPower. "
+"Προειδοποιήσεις χαμηλής και κρίσιμης στάθμης συμβαίνουν πριν από την "
+"ενέργεια αναστολής στο 20%."
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:120
 msgid "low battery"
@@ -1876,52 +1862,92 @@ msgstr "Συνέχιση λειτουργίας με κλειστό καπάκι
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:137
 msgid ""
-"Closing the lid will not lock or suspend the computer while it is connected "
-"to power. The session and network stay active."
+"Closing the lid will not suspend the computer while it is connected to "
+"power. The session and network stay active."
 msgstr ""
-"Το κλείσιμο του καπακιού δεν θα κλειδώνει ούτε θα αναστέλλει τον υπολογιστή "
-"όταν είναι συνδεδεμένος στο ρεύμα. Η συνεδρία και το δίκτυο παραμένουν "
-"ενεργά."
+"Το κλείσιμο του καπακιού δεν θα θέτει τον υπολογιστή σε αναστολή όσο είναι "
+"συνδεδεμένος στο ρεύμα. Η συνεδρία και το δίκτυο παραμένουν ενεργά."
 
 #: usr/share/biglinux/biglinux-settings/sleep_page.py:143
 msgid ""
-"This prevents lid-triggered suspend and locking. Automatic idle locking "
-"remains separate. Keep the notebook ventilated while it runs with the lid "
-"closed."
+"This prevents lid-triggered suspend. Without an external monitor the screen "
+"may still lock when the lid closes; turn on \"Don't lock the screen\" below "
+"to avoid it. Keep the notebook ventilated while it runs with the lid closed."
 msgstr ""
-"Αυτό αποτρέπει την αναστολή λειτουργίας και το κλείδωμα που προκαλούνται από "
-"το κλείσιμο του καπακιού. Το αυτόματο κλείδωμα λόγω αδράνειας παραμένει "
-"ανεξάρτητο. Διατηρείτε τον φορητό υπολογιστή επαρκώς αεριζόμενο όσο "
-"λειτουργεί με κλειστό καπάκι."
+"Αυτό αποτρέπει την αναστολή κατά το κλείσιμο του καπακιού. Χωρίς εξωτερική "
+"οθόνη, η οθόνη μπορεί να κλειδώσει ούτως ή άλλως κατά το κλείσιμο του "
+"καπακιού· ενεργοποιήστε το «Να μην κλειδώνει η οθόνη» παρακάτω για να το "
+"αποφύγετε. Φροντίστε για τον αερισμό του φορητού όσο λειτουργεί με κλειστό "
+"καπάκι."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:152
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:153
+msgid "Don't lock the screen"
+msgstr "Να μην κλειδώνει η οθόνη"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:155
+msgid ""
+"Keeps the session unlocked when the lid closes, so a remote desktop "
+"connection is not dropped by the lock screen."
+msgstr ""
+"Διατηρεί τη συνεδρία ξεκλείδωτη κατά το κλείσιμο του καπακιού, ώστε η "
+"σύνδεση απομακρυσμένης επιφάνειας εργασίας να μη διακόπτεται από την οθόνη "
+"κλειδώματος."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:162
+msgid ""
+"Turns off the screen lock entirely: when the lid closes, after idle time and "
+"when suspending. Anyone with physical access to the computer can use the "
+"session. While it is on, the Lock option in the system menu and the Super+L "
+"shortcut also stop working. Turning off the lid option above restores the "
+"lock."
+msgstr ""
+"Απενεργοποιεί πλήρως το κλείδωμα οθόνης: κατά το κλείσιμο του καπακιού, μετά "
+"από αδράνεια και κατά την αναστολή. Οποιοσδήποτε έχει φυσική πρόσβαση στον "
+"υπολογιστή μπορεί να χρησιμοποιήσει τη συνεδρία. Όσο είναι ενεργή, η επιλογή "
+"«Κλείδωμα» στο μενού συστήματος και η συντόμευση Super+L επίσης δεν "
+"λειτουργούν. Η απενεργοποίηση της παραπάνω επιλογής καπακιού επαναφέρει το "
+"κλείδωμα."
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:168
+msgid "RDP"
+msgstr "RDP"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:168
+msgid "lock screen"
+msgstr "οθόνη κλειδώματος"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:168
+msgid "remote desktop"
+msgstr "απομακρυσμένη επιφάνεια εργασίας"
+
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:173
 msgid "Keep running with the lid closed on battery"
 msgstr "Συνέχιση λειτουργίας με κλειστό καπάκι και τροφοδοσία από την μπαταρία"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:154
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:175
 msgid ""
-"Closing the lid will not lock or suspend the computer on battery. The session"
-" and network stay active, using more battery."
+"Closing the lid will not suspend the computer on battery. The session and "
+"network stay active, using more battery."
 msgstr ""
-"Το κλείσιμο του καπακιού δεν θα κλειδώνει ούτε θα αναστέλλει τον υπολογιστή "
-"όταν λειτουργεί με μπαταρία. Η συνεδρία και το δίκτυο παραμένουν ενεργά, "
+"Το κλείσιμο του καπακιού δεν θα θέτει τον υπολογιστή σε αναστολή όταν "
+"λειτουργεί με μπαταρία. Η συνεδρία και το δίκτυο παραμένουν ενεργά, "
 "καταναλώνοντας περισσότερη μπαταρία."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:160
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:181
 msgid ""
-"This prevents lid-triggered suspend and locking. Automatic idle locking "
-"remains separate, and the 20% critical battery policy still applies."
+"This prevents lid-triggered suspend. Without an external monitor the screen "
+"may still lock when the lid closes. The 20% critical battery policy still "
+"applies."
 msgstr ""
-"Αυτό αποτρέπει την αναστολή λειτουργίας και το κλείδωμα που προκαλούνται από "
-"το κλείσιμο του καπακιού. Το αυτόματο κλείδωμα λόγω αδράνειας παραμένει "
-"ανεξάρτητο, ενώ εξακολουθεί να ισχύει η πολιτική κρίσιμης στάθμης μπαταρίας "
-"στο 20 %."
+"Αυτό αποτρέπει την αναστολή κατά το κλείσιμο του καπακιού. Χωρίς εξωτερική "
+"οθόνη, η οθόνη μπορεί να κλειδώσει ούτως ή άλλως κατά το κλείσιμο του "
+"καπακιού. Η πολιτική κρίσιμης μπαταρίας στο 20% εξακολουθεί να ισχύει."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:169
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:190
 msgid "Fix problems after resume"
 msgstr "Διόρθωση προβλημάτων μετά την επαναφορά"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:170
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:191
 msgid ""
 "Compatibility fixes for problems some computers have when waking from "
 "suspend."
@@ -1929,21 +1955,21 @@ msgstr ""
 "Διορθώσεις συμβατότητας για προβλήματα που αντιμετωπίζουν ορισμένοι "
 "υπολογιστές κατά την αφύπνιση από την αναστολή."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:179
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:200
 msgid "Light sleep (s2idle)"
 msgstr "Ελαφρύς ύπνος (s2idle)"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:181
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:202
 msgid ""
-"Uses a lighter sleep mode that keeps the Fn keys working after resume on some"
-" ASUS notebooks. Uses slightly more battery while suspended."
+"Uses a lighter sleep mode that keeps the Fn keys working after resume on "
+"some ASUS notebooks. Uses slightly more battery while suspended."
 msgstr ""
 "Χρησιμοποιεί μια ελαφρύτερη λειτουργία ύπνου που διατηρεί τα πλήκτρα Fn σε "
 "λειτουργία μετά την επαναφορά σε ορισμένα φορητά ASUS. Καταναλώνει λίγο "
 "περισσότερη μπαταρία κατά την αναστολή."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 91
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:188
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:209
 msgid ""
 "S3 deep sleep can cause the Embedded Controller to stop generating hotkey "
 "interrupts. s2idle keeps the EC powered, avoiding this issue at a small cost "
@@ -1953,19 +1979,19 @@ msgstr ""
 "hotkey από τον Ενσωματωμένο Ελεγκτή. Το s2idle κρατά τον EC ενεργό, "
 "αποφεύγοντας αυτό το πρόβλημα με μικρό κόστος στην κατανάλωση μπαταρίας."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
 msgid "Fn keys"
 msgstr "πλήκτρα Fn"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:192
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
 msgid "hotkeys"
 msgstr "πλήκτρα συντόμευσης"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:200
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:221
 msgid "Avoid losing Wi-Fi after resume"
 msgstr "Αποφυγή απώλειας του Wi-Fi μετά την επαναφορά"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:202
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:223
 msgid ""
 "Compatibility fix for some Realtek Wi-Fi adapters: keeps the adapter from "
 "fully powering off during suspend, so the connection works after resume."
@@ -1975,7 +2001,7 @@ msgstr ""
 "λειτουργεί μετά την επαναφορά."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 116
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:209
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:230
 msgid ""
 "Some Realtek RTL8852BE/CE chips fail to reinitialize after d3cold power "
 "gating. This keeps the chip in d3hot (PCIe link alive) during suspend."
@@ -1984,15 +2010,15 @@ msgstr ""
 "από τροφοδοσία d3cold. Αυτό κρατά το τσιπ σε κατάσταση d3hot (η σύνδεση PCIe "
 "παραμένει ενεργή) κατά τη διάρκεια της αναστολής."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:234
 msgid "Realtek"
 msgstr "Realtek"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:219
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
 msgid "Restore brightness after resume"
 msgstr "Επαναφορά φωτεινότητας μετά την επαναφορά"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:221
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:242
 msgid ""
 "Saves the screen brightness and keyboard lights before suspending and "
 "restores them when the computer wakes up."
@@ -2000,20 +2026,20 @@ msgstr ""
 "Αποθηκεύει τη φωτεινότητα της οθόνης και τα φώτα του πληκτρολογίου πριν από "
 "την αναστολή και τα επαναφέρει όταν ο υπολογιστής ξυπνήσει."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:247
 #: usr/share/biglinux/biglinux-settings/usability_page.py:37
 msgid "backlight"
 msgstr "φωτισμός πληκτρολογίου"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:226
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:247
 msgid "brightness"
 msgstr "φωτεινότητα"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:233
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:254
 msgid "Restart failed extensions after resume"
 msgstr "Επανεκκίνηση επεκτάσεων που απέτυχαν μετά την επαναφορά"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:235
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:256
 msgid ""
 "Checks GNOME Shell extensions after resume and restarts the ones left in an "
 "error state."
@@ -2021,11 +2047,11 @@ msgstr ""
 "Ελέγχει τις επεκτάσεις του GNOME Shell μετά την επαναφορά και επανεκκινεί "
 "όσες έχουν μείνει σε κατάσταση σφάλματος."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:261
 msgid "GNOME"
 msgstr "GNOME"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:261
 msgid "extensions"
 msgstr "επεκτάσεις"
 
@@ -2075,8 +2101,8 @@ msgstr "Αυτόματη εκκίνηση"
 #: usr/share/biglinux/biglinux-settings/system_page.py:34
 msgid "Turn on remote terminal access every time the computer starts."
 msgstr ""
-"Ενεργοποιεί την απομακρυσμένη πρόσβαση μέσω τερματικού κάθε φορά που ξεκινά ο"
-" υπολογιστής."
+"Ενεργοποιεί την απομακρυσμένη πρόσβαση μέσω τερματικού κάθε φορά που ξεκινά "
+"ο υπολογιστής."
 
 #: usr/share/biglinux/biglinux-settings/system_page.py:42
 msgid "Startup"
@@ -2096,7 +2122,7 @@ msgid "GRUB"
 msgstr "GRUB"
 
 #: usr/share/biglinux/biglinux-settings/system_page.py:53
-#: usr/share/biglinux/biglinux-settings/system_page.py:65
+#: usr/share/biglinux/biglinux-settings/system_page.py:66
 msgid "boot"
 msgstr "εκκίνηση"
 
@@ -2111,19 +2137,19 @@ msgstr ""
 "Εμφανίζει μηνύματα του συστήματος κάτω από το κινούμενο σχέδιο εκκίνησης όσο "
 "ξεκινά ο υπολογιστής."
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:65
+#: usr/share/biglinux/biglinux-settings/system_page.py:66
 msgid "splash"
 msgstr "splash"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:70
+#: usr/share/biglinux/biglinux-settings/system_page.py:71
 msgid "Disks"
 msgstr "Δίσκοι"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:76
+#: usr/share/biglinux/biglinux-settings/system_page.py:77
 msgid "Mount internal disks at startup"
 msgstr "Προσάρτηση εσωτερικών δίσκων κατά την εκκίνηση"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:78
+#: usr/share/biglinux/biglinux-settings/system_page.py:79
 msgid ""
 "Makes the partitions of the internal disks available automatically when the "
 "computer starts."
@@ -2131,11 +2157,11 @@ msgstr ""
 "Κάνει αυτόματα διαθέσιμα τα διαμερίσματα των εσωτερικών δίσκων όταν ξεκινά ο "
 "υπολογιστής."
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:83
+#: usr/share/biglinux/biglinux-settings/system_page.py:84
 msgid "auto-mount"
 msgstr "αυτόματη προσάρτηση"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:83
+#: usr/share/biglinux/biglinux-settings/system_page.py:84
 msgid "partitions"
 msgstr "διαμερίσματα"
 
@@ -2177,8 +2203,8 @@ msgid ""
 "Keep the keyboard backlight on. For keyboards whose light is controlled by "
 "the Scroll Lock LED."
 msgstr ""
-"Διατηρεί αναμμένο τον οπίσθιο φωτισμό του πληκτρολογίου. Για πληκτρολόγια των"
-" οποίων ο φωτισμός ελέγχεται από τη λυχνία Scroll Lock."
+"Διατηρεί αναμμένο τον οπίσθιο φωτισμό του πληκτρολογίου. Για πληκτρολόγια "
+"των οποίων ο φωτισμός ελέγχεται από τη λυχνία Scroll Lock."
 
 #: usr/share/biglinux/biglinux-settings/usability_page.py:37
 msgid "Scroll Lock"
@@ -2258,9 +2284,79 @@ msgstr "απόρρητο"
 msgid "recent"
 msgstr "πρόσφατα"
 
+#~ msgid ""
+#~ "Turns off the screen lock entirely: when the lid closes, after idle time "
+#~ "and when suspending. Anyone with physical access to the computer can use "
+#~ "the session. Turning off the lid option above restores the lock."
+#~ msgstr ""
+#~ "Απενεργοποιεί πλήρως το κλείδωμα οθόνης: κατά το κλείσιμο του καπακιού, "
+#~ "μετά από αδράνεια και κατά την αναστολή. Οποιοσδήποτε έχει φυσική "
+#~ "πρόσβαση στον υπολογιστή μπορεί να χρησιμοποιήσει τη συνεδρία. Η "
+#~ "απενεργοποίηση της παραπάνω επιλογής καπακιού επαναφέρει το κλείδωμα."
+
+#~ msgid ""
+#~ "Closing the lid will not lock or suspend the computer while it is "
+#~ "connected to power. The session and network stay active."
+#~ msgstr ""
+#~ "Το κλείσιμο του καπακιού δεν θα κλειδώνει ούτε θα αναστέλλει τον "
+#~ "υπολογιστή όταν είναι συνδεδεμένος στο ρεύμα. Η συνεδρία και το δίκτυο "
+#~ "παραμένουν ενεργά."
+
+#~ msgid ""
+#~ "This prevents lid-triggered suspend and locking. Automatic idle locking "
+#~ "remains separate. Keep the notebook ventilated while it runs with the lid "
+#~ "closed."
+#~ msgstr ""
+#~ "Αυτό αποτρέπει την αναστολή λειτουργίας και το κλείδωμα που προκαλούνται "
+#~ "από το κλείσιμο του καπακιού. Το αυτόματο κλείδωμα λόγω αδράνειας "
+#~ "παραμένει ανεξάρτητο. Διατηρείτε τον φορητό υπολογιστή επαρκώς αεριζόμενο "
+#~ "όσο λειτουργεί με κλειστό καπάκι."
+
+#~ msgid ""
+#~ "Keeps the session unlocked so a remote desktop connection is not dropped "
+#~ "by the lock screen."
+#~ msgstr ""
+#~ "Διατηρεί τη συνεδρία ξεκλείδωτη, ώστε η σύνδεση απομακρυσμένης επιφάνειας "
+#~ "εργασίας να μη διακόπτεται από την οθόνη κλειδώματος."
+
+#~ msgid ""
+#~ "Turns off the screen lock, both after idle time and when suspending. "
+#~ "Anyone with physical access to the computer can use the session. Turning "
+#~ "off the lid option above restores the lock."
+#~ msgstr ""
+#~ "Απενεργοποιεί το κλείδωμα οθόνης, τόσο μετά από αδράνεια όσο και κατά την "
+#~ "αναστολή. Οποιοσδήποτε έχει φυσική πρόσβαση στον υπολογιστή μπορεί να "
+#~ "χρησιμοποιήσει τη συνεδρία. Η απενεργοποίηση της παραπάνω επιλογής "
+#~ "καπακιού επαναφέρει το κλείδωμα."
+
+#~ msgid ""
+#~ "Closing the lid will not lock or suspend the computer on battery. The "
+#~ "session and network stay active, using more battery."
+#~ msgstr ""
+#~ "Το κλείσιμο του καπακιού δεν θα κλειδώνει ούτε θα αναστέλλει τον "
+#~ "υπολογιστή όταν λειτουργεί με μπαταρία. Η συνεδρία και το δίκτυο "
+#~ "παραμένουν ενεργά, καταναλώνοντας περισσότερη μπαταρία."
+
+#~ msgid ""
+#~ "This prevents lid-triggered suspend and locking. Automatic idle locking "
+#~ "remains separate, and the 20% critical battery policy still applies."
+#~ msgstr ""
+#~ "Αυτό αποτρέπει την αναστολή λειτουργίας και το κλείδωμα που προκαλούνται "
+#~ "από το κλείσιμο του καπακιού. Το αυτόματο κλείδωμα λόγω αδράνειας "
+#~ "παραμένει ανεξάρτητο, ενώ εξακολουθεί να ισχύει η πολιτική κρίσιμης "
+#~ "στάθμης μπαταρίας στο 20 %."
+
+#~ msgid ""
+#~ "Open-source alternative to Google's NotebookLM. Installs it as a "
+#~ "container; turning it off removes it."
+#~ msgstr ""
+#~ "Εναλλακτική ανοιχτού κώδικα στο NotebookLM της Google. Εγκαθίσταται ως "
+#~ "κοντέινερ· αν το απενεργοποιήσετε, αφαιρείται."
+
 #~ msgid "Keeps the S.M.A.R.T. service watching disks for signs of failure."
 #~ msgstr ""
-#~ "Διατηρεί την υπηρεσία S.M.A.R.T. σε εγρήγορση για σημάδια βλάβης των δίσκων."
+#~ "Διατηρεί την υπηρεσία S.M.A.R.T. σε εγρήγορση για σημάδια βλάβης των "
+#~ "δίσκων."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/preload_page.py, line: 126
@@ -2319,16 +2415,16 @@ msgstr "πρόσφατα"
 #~ "LM Studio - A desktop app for exploring and running large language models "
 #~ "locally."
 #~ msgstr ""
-#~ "LM Studio - Μια επιτραπέζια εφαρμογή για την εξερεύνηση και εκτέλεση μεγάλων "
-#~ "γλωσσικών μοντέλων τοπικά."
+#~ "LM Studio - Μια επιτραπέζια εφαρμογή για την εξερεύνηση και εκτέλεση "
+#~ "μεγάλων γλωσσικών μοντέλων τοπικά."
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 87
 #~ msgid ""
 #~ "Open-source, privacy-focused alternative to Google's NotebookLM. Requires "
 #~ "Docker enabled."
 #~ msgstr ""
-#~ "Εναλλακτική λύση ανοιχτού κώδικα, με επίκεντρο το απόρρητο, για το NotebookLM"
-#~ " της Google. Απαιτεί ενεργοποιημένο το Docker."
+#~ "Εναλλακτική λύση ανοιχτού κώδικα, με επίκεντρο το απόρρητο, για το "
+#~ "NotebookLM της Google. Απαιτεί ενεργοποιημένο το Docker."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 87
@@ -2368,7 +2464,8 @@ msgstr "πρόσφατα"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 110
-#~ msgid "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
+#~ msgid ""
+#~ "Local AI server. For newer Nvidia GPUs, starting from the 2000 series."
 #~ msgstr ""
 #~ "Τοπικός διακομιστής AI. Για νεότερες GPU Nvidia, ξεκινώντας από τη σειρά "
 #~ "2000."
@@ -2379,8 +2476,10 @@ msgstr "πρόσφατα"
 #~ "Local AI server. For newer AMD GPUs, starting from the 6000 series.\n"
 #~ "Consider using Vulkan, in many tests, Vulkan performed better than ROCm."
 #~ msgstr ""
-#~ "Τοπικός διακομιστής AI. Για νεότερες GPU AMD, ξεκινώντας από τη σειρά 6000. \n"
-#~ "Σκεφτείτε να χρησιμοποιήσετε το Vulkan, σε πολλές δοκιμές, το Vulkan απέδωσε καλύτερα από το ROCm."
+#~ "Τοπικός διακομιστής AI. Για νεότερες GPU AMD, ξεκινώντας από τη σειρά "
+#~ "6000. \n"
+#~ "Σκεφτείτε να χρησιμοποιήσετε το Vulkan, σε πολλές δοκιμές, το Vulkan "
+#~ "απέδωσε καλύτερα από το ROCm."
 
 # File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 11
 #~ msgid "AI Coding Assistants"
@@ -2394,11 +2493,11 @@ msgstr "πρόσφατα"
 
 # File: usr/share/biglinux/biglinux-settings/developer_page.py, line: 23
 #~ msgid ""
-#~ "Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and 200+ "
-#~ "models. Installs nodejs, npm and ripgrep as dependencies."
+#~ "Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama and "
+#~ "200+ models. Installs nodejs, npm and ripgrep as dependencies."
 #~ msgstr ""
-#~ "CLI ανοιχτού κώδικα για coding-agent για OpenAI, Gemini, DeepSeek, Ollama και"
-#~ " 200+ μοντέλα. Εγκαθιστά τα nodejs, npm και ripgrep ως εξαρτήσεις."
+#~ "CLI ανοιχτού κώδικα για coding-agent για OpenAI, Gemini, DeepSeek, Ollama "
+#~ "και 200+ μοντέλα. Εγκαθιστά τα nodejs, npm και ripgrep ως εξαρτήσεις."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices_page.py, line: 15
@@ -2416,7 +2515,8 @@ msgstr "πρόσφατα"
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/dispositivos_page.py, line: 84
 #~ msgid "Advanced audio effects processor that improves sound quality."
-#~ msgstr "Προηγμένος επεξεργαστής ηχητικών εφέ που βελτιώνει την ποιότητα ήχου."
+#~ msgstr ""
+#~ "Προηγμένος επεξεργαστής ηχητικών εφέ που βελτιώνει την ποιότητα ήχου."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices_page.py, line: 71
@@ -2433,7 +2533,7 @@ msgstr "πρόσφατα"
 #~ msgstr "Υπηρεσία κοντέινερ — ενεργοποιήστε τη χρήση κοντέινερ παρακάτω."
 
 # #-#-#-#-#  biglinux-settings.pot (biglinux-settings)  #-#-#-#-#
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 137
 # File: biglinux-settings/usr/share/biglinux/biglinux-
@@ -2551,22 +2651,22 @@ msgstr "πρόσφατα"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/devices/jamesdsp_dialog.py, line: 208
-# 
+#
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 107
 #~ msgid "Usability"
@@ -2605,8 +2705,8 @@ msgstr "πρόσφατα"
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 35
 #~ msgid ""
-#~ "Disables KWin visual effects (blur, shadows, animations). Reduces GPU load "
-#~ "and frees memory."
+#~ "Disables KWin visual effects (blur, shadows, animations). Reduces GPU "
+#~ "load and frees memory."
 #~ msgstr ""
 #~ "Απενεργοποιεί τα οπτικά εφέ του KWin (θόλωμα, σκιές, κινούμενα σχέδια). "
 #~ "Μειώνει το φορτίο της GPU και απελευθερώνει μνήμη."
@@ -2619,8 +2719,8 @@ msgstr "πρόσφατα"
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/performance_games_page.py, line: 51
 #~ msgid ""
-#~ "Forces maximum processor performance mode. Ensures the processor uses maximum"
-#~ " frequency."
+#~ "Forces maximum processor performance mode. Ensures the processor uses "
+#~ "maximum frequency."
 #~ msgstr ""
 #~ "Επιβάλλει τη μέγιστη απόδοση επεξεργαστή. Διασφαλίζει ότι ο επεξεργαστής "
 #~ "χρησιμοποιεί τη μέγιστη συχνότητα."
@@ -2634,7 +2734,8 @@ msgstr "πρόσφατα"
 # settings/performance_games_page.py, line: 67
 #~ msgid "Disables the Baloo file indexer. Avoids disk I/O overhead."
 #~ msgstr ""
-#~ "Απενεργοποιεί τον δείκτη αρχείων Baloo. Αποφεύγει την επιβάρυνση I/O δίσκου."
+#~ "Απενεργοποιεί τον δείκτη αρχείων Baloo. Αποφεύγει την επιβάρυνση I/O "
+#~ "δίσκου."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/usability/gamemode_config_dialog.py, line: 136
@@ -2645,8 +2746,8 @@ msgstr "πρόσφατα"
 # settings/performance_games_page.py, line: 83
 #~ msgid "Disables S.M.A.R.T disk monitoring. Reduces disk I/O and CPU usage."
 #~ msgstr ""
-#~ "Απενεργοποιεί την παρακολούθηση δίσκου S.M.A.R.T. Μειώνει τη χρήση I/O δίσκου"
-#~ " και CPU."
+#~ "Απενεργοποιεί την παρακολούθηση δίσκου S.M.A.R.T. Μειώνει τη χρήση I/O "
+#~ "δίσκου και CPU."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 169
@@ -2661,13 +2762,13 @@ msgstr "πρόσφατα"
 
 # File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 67
 #~ msgid ""
-#~ "This will disable CPU security mitigations (Meltdown/Spectre). Your system "
-#~ "will be faster but vulnerable to hardware-level attacks. Are you sure you "
-#~ "want to continue?"
+#~ "This will disable CPU security mitigations (Meltdown/Spectre). Your "
+#~ "system will be faster but vulnerable to hardware-level attacks. Are you "
+#~ "sure you want to continue?"
 #~ msgstr ""
-#~ "Αυτό θα απενεργοποιήσει τις μετρήσεις ασφαλείας της CPU (Meltdown/Spectre). "
-#~ "Το σύστημά σας θα είναι ταχύτερο αλλά ευάλωτο σε επιθέσεις σε επίπεδο υλικού."
-#~ " Είστε σίγουροι ότι θέλετε να συνεχίσετε;"
+#~ "Αυτό θα απενεργοποιήσει τις μετρήσεις ασφαλείας της CPU (Meltdown/"
+#~ "Spectre). Το σύστημά σας θα είναι ταχύτερο αλλά ευάλωτο σε επιθέσεις σε "
+#~ "επίπεδο υλικού. Είστε σίγουροι ότι θέλετε να συνεχίσετε;"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 176
@@ -2677,18 +2778,19 @@ msgstr "πρόσφατα"
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 177
 #~ msgid ""
-#~ "Disables the hardware watchdog and TSC clocksource systems, maintaining high "
-#~ "performance but removing automatic protections against system crashes."
+#~ "Disables the hardware watchdog and TSC clocksource systems, maintaining "
+#~ "high performance but removing automatic protections against system "
+#~ "crashes."
 #~ msgstr ""
 #~ "Απενεργοποιεί το υλικό παρακολούθησης και τα συστήματα χρονισμού TSC, "
-#~ "διατηρώντας υψηλή απόδοση αλλά αφαιρώντας τις αυτόματες προστασίες κατά των "
-#~ "κρασαρισμάτων του συστήματος."
+#~ "διατηρώντας υψηλή απόδοση αλλά αφαιρώντας τις αυτόματες προστασίες κατά "
+#~ "των κρασαρισμάτων του συστήματος."
 
 # File: usr/share/biglinux/biglinux-settings/performance_page.py, line: 81
 #~ msgid ""
 #~ "This will disable the hardware watchdog. Your system will no longer "
-#~ "automatically recover from certain types of crashes. Are you sure you want to"
-#~ " continue?"
+#~ "automatically recover from certain types of crashes. Are you sure you "
+#~ "want to continue?"
 #~ msgstr ""
 #~ "Αυτό θα απενεργοποιήσει τον παρακολουθητή υλικού. Το σύστημά σας δεν θα "
 #~ "ανακτά αυτόματα πλέον από ορισμένους τύπους κραστών. Είστε σίγουροι ότι "
@@ -2711,8 +2813,8 @@ msgstr "πρόσφατα"
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 73
 #~ msgid "Choose when inactivity and low battery may suspend the system."
 #~ msgstr ""
-#~ "Επιλέξτε πότε η αδράνεια και η χαμηλή μπαταρία μπορεί να θέσουν το σύστημα σε"
-#~ " αναστολή."
+#~ "Επιλέξτε πότε η αδράνεια και η χαμηλή μπαταρία μπορεί να θέσουν το "
+#~ "σύστημα σε αναστολή."
 
 #~ msgid "Disable idle suspend while plugged in"
 #~ msgstr "Απενεργοποίηση αναστολής λόγω αδράνειας κατά τη σύνδεση στο ρεύμα"
@@ -2724,7 +2826,8 @@ msgstr "πρόσφατα"
 #~ "σύστημα τροφοδοτείται από το ρεύμα."
 
 #~ msgid "Disable idle suspend on battery"
-#~ msgstr "Απενεργοποίηση αναστολής λόγω αδράνειας με τροφοδοσία από την μπαταρία"
+#~ msgstr ""
+#~ "Απενεργοποίηση αναστολής λόγω αδράνειας με τροφοδοσία από την μπαταρία"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 89
 #~ msgid "Keeps the system awake on battery until a critical level is reached."
@@ -2737,11 +2840,11 @@ msgstr "πρόσφατα"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 98
 #~ msgid ""
-#~ "Disables idle suspend on battery and suspends automatically when the charge "
-#~ "reaches 20%."
+#~ "Disables idle suspend on battery and suspends automatically when the "
+#~ "charge reaches 20%."
 #~ msgstr ""
-#~ "Απενεργοποιεί την αναστολή λόγω αδράνειας με μπαταρία και θέτει αυτόματα το "
-#~ "σύστημα σε αναστολή όταν η φόρτιση φτάσει στο 20%."
+#~ "Απενεργοποιεί την αναστολή λόγω αδράνειας με μπαταρία και θέτει αυτόματα "
+#~ "το σύστημα σε αναστολή όταν η φόρτιση φτάσει στο 20%."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 75
 #~ msgid "Sleep Mode"
@@ -2760,8 +2863,8 @@ msgstr "πρόσφατα"
 #~ "Uses a lighter sleep mode that preserves Fn keys and device state. "
 #~ "Recommended for ASUS notebooks."
 #~ msgstr ""
-#~ "Χρησιμοποιεί μια ελαφρύτερη λειτουργία ύπνου που διατηρεί τα πλήκτρα Fn και "
-#~ "την κατάσταση της συσκευής. Συνιστάται για φορητούς υπολογιστές ASUS."
+#~ "Χρησιμοποιεί μια ελαφρύτερη λειτουργία ύπνου που διατηρεί τα πλήκτρα Fn "
+#~ "και την κατάσταση της συσκευής. Συνιστάται για φορητούς υπολογιστές ASUS."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 100
 #~ msgid "WiFi"
@@ -2780,8 +2883,8 @@ msgstr "πρόσφατα"
 #~ "Prevents the Realtek WiFi chip from fully powering off (d3cold), avoiding "
 #~ "connection loss after resume."
 #~ msgstr ""
-#~ "Αποτρέπει το τσιπ WiFi της Realtek από το να απενεργοποιηθεί πλήρως (d3cold),"
-#~ " αποφεύγοντας την απώλεια σύνδεσης μετά την επαναφορά."
+#~ "Αποτρέπει το τσιπ WiFi της Realtek από το να απενεργοποιηθεί πλήρως "
+#~ "(d3cold), αποφεύγοντας την απώλεια σύνδεσης μετά την επαναφορά."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 124
 #~ msgid "Display and Keyboard"
@@ -2789,7 +2892,8 @@ msgstr "πρόσφατα"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 125
 #~ msgid "Preserve brightness and LED state across suspend."
-#~ msgstr "Διατήρηση φωτεινότητας και κατάστασης LED κατά τη διάρκεια αναστολής."
+#~ msgstr ""
+#~ "Διατήρηση φωτεινότητας και κατάστασης LED κατά τη διάρκεια αναστολής."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 132
 #~ msgid "Save/restore brightness on suspend"
@@ -2797,11 +2901,11 @@ msgstr "πρόσφατα"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 134
 #~ msgid ""
-#~ "Saves screen brightness and keyboard LEDs before suspending and restores them"
-#~ " on resume."
+#~ "Saves screen brightness and keyboard LEDs before suspending and restores "
+#~ "them on resume."
 #~ msgstr ""
-#~ "Αποθηκεύει τη φωτεινότητα της οθόνης και τα LED του πληκτρολογίου πριν από "
-#~ "την αναστολή και τα επαναφέρει κατά την επαναφορά."
+#~ "Αποθηκεύει τη φωτεινότητα της οθόνης και τα LED του πληκτρολογίου πριν "
+#~ "από την αναστολή και τα επαναφέρει κατά την επαναφορά."
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 144
 #~ msgid "GNOME Shell Extensions"
@@ -2817,8 +2921,8 @@ msgstr "πρόσφατα"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 154
 #~ msgid ""
-#~ "Detects GNOME Shell extensions in error state after resume and automatically "
-#~ "restarts them."
+#~ "Detects GNOME Shell extensions in error state after resume and "
+#~ "automatically restarts them."
 #~ msgstr ""
 #~ "Ανιχνεύει τις επεκτάσεις GNOME Shell σε κατάσταση σφάλματος μετά την "
 #~ "επαναφορά και τις επανεκκινεί αυτόματα."
@@ -2834,14 +2938,15 @@ msgstr "πρόσφατα"
 #~ msgid ""
 #~ "Keeps the session and network active when the lid is closed on AC power."
 #~ msgstr ""
-#~ "Διατηρεί ενεργά τη συνεδρία και το δίκτυο όταν το καπάκι είναι κλειστό και ο "
-#~ "υπολογιστής τροφοδοτείται από το ρεύμα."
+#~ "Διατηρεί ενεργά τη συνεδρία και το δίκτυο όταν το καπάκι είναι κλειστό "
+#~ "και ο υπολογιστής τροφοδοτείται από το ρεύμα."
 
 #~ msgid ""
-#~ "Keeps the session and network active when the lid is closed on battery power."
+#~ "Keeps the session and network active when the lid is closed on battery "
+#~ "power."
 #~ msgstr ""
-#~ "Διατηρεί ενεργά τη συνεδρία και το δίκτυο όταν το καπάκι είναι κλειστό και ο "
-#~ "υπολογιστής τροφοδοτείται από την μπαταρία."
+#~ "Διατηρεί ενεργά τη συνεδρία και το δίκτυο όταν το καπάκι είναι κλειστό "
+#~ "και ο υπολογιστής τροφοδοτείται από την μπαταρία."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/system_page.py,
 # line: 26
@@ -2879,7 +2984,8 @@ msgstr "πρόσφατα"
 
 # File: usr/share/biglinux/biglinux-settings/system_page.py, line: 48
 #~ msgid "Show system messages below the boot animation."
-#~ msgstr "Εμφάνιση μηνυμάτων συστήματος κάτω από το κινούμενο σχέδιο εκκίνησης."
+#~ msgstr ""
+#~ "Εμφάνιση μηνυμάτων συστήματος κάτω από το κινούμενο σχέδιο εκκίνησης."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 170
@@ -2911,15 +3017,17 @@ msgstr "πρόσφατα"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/main.py, line:
 # 132
-#~ msgid "Maximize, minimize, and close buttons on the left side of the window."
+#~ msgid ""
+#~ "Maximize, minimize, and close buttons on the left side of the window."
 #~ msgstr ""
-#~ "Κουμπιά μεγιστοποίησης, ελαχιστοποίησης και κλεισίματος στην αριστερή πλευρά "
-#~ "του παραθύρου."
+#~ "Κουμπιά μεγιστοποίησης, ελαχιστοποίησης και κλεισίματος στην αριστερή "
+#~ "πλευρά του παραθύρου."
 
 # File: usr/share/biglinux/biglinux-settings/usability_page.py, line: 39
 #~ msgid "Enable window tiling zones for the KDE Plasma desktop."
 #~ msgstr ""
-#~ "Ενεργοποίηση ζωνών πλακιδίων παραθύρων για την επιφάνεια εργασίας KDE Plasma."
+#~ "Ενεργοποίηση ζωνών πλακιδίων παραθύρων για την επιφάνεια εργασίας KDE "
+#~ "Plasma."
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 169
@@ -2929,8 +3037,8 @@ msgstr "πρόσφατα"
 # File: biglinux-settings/usr/share/biglinux/biglinux-
 # settings/system_usability_page.py, line: 170
 #~ msgid ""
-#~ "Restores the 'Recent Files' and 'Recent Locations' functionality that appears"
-#~ " empty in Dolphin and the Application Menu."
+#~ "Restores the 'Recent Files' and 'Recent Locations' functionality that "
+#~ "appears empty in Dolphin and the Application Menu."
 #~ msgstr ""
 #~ "Επαναφέρει τη λειτουργία 'Πρόσφατα Αρχεία' και 'Πρόσφατες Τοποθεσίες' που "
 #~ "εμφανίζεται κενή στο Dolphin και το Μενού Εφαρμογών."
@@ -2949,8 +3057,8 @@ msgstr "πρόσφατα"
 
 # File: usr/share/biglinux/biglinux-settings/sleep_page.py, line: 173
 #~ msgid ""
-#~ "Some systems do not suspend when on AC power. This forces suspend when the "
-#~ "lid is closed."
+#~ "Some systems do not suspend when on AC power. This forces suspend when "
+#~ "the lid is closed."
 #~ msgstr ""
 #~ "Ορισμένα συστήματα δεν αναστέλλονται όταν είναι σε τροφοδοσία AC. Αυτό "
 #~ "αναγκάζει την αναστολή όταν η θύρα είναι κλειστή."

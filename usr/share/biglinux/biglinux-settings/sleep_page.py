@@ -130,36 +130,57 @@ class SleepPage(BaseSettingsPage):
 
         lid_keywords = [_("lid"), _("laptop"), _("don't sleep"), _("stay awake")]
 
-        self.create_row(
+        lid_ac = self.create_row(
             grp_lid,
             _("Keep running with the lid closed while plugged in"),
             _(
-                "Closing the lid will not lock or suspend the computer while it is "
+                "Closing the lid will not suspend the computer while it is "
                 "connected to power. The session and network stay active."
             ),
             "never-suspend-lid-ac",
             None,
             info_text=_(
-                "This prevents lid-triggered suspend and locking. Automatic "
-                "idle locking remains separate. Keep the notebook ventilated "
-                "while it runs with the lid closed."
+                "This prevents lid-triggered suspend. Without an external monitor "
+                "the screen may still lock when the lid closes; turn on \"Don't "
+                "lock the screen\" below to avoid it. Keep the notebook "
+                "ventilated while it runs with the lid closed."
             ),
             keywords=lid_keywords,
+        )
+
+        self.create_sub_row(
+            grp_lid,
+            _("Don't lock the screen"),
+            _(
+                "Keeps the session unlocked when the lid closes, so a remote "
+                "desktop connection is not dropped by the lock screen."
+            ),
+            "lid-ac-no-lock",
+            None,
+            lid_ac,
+            info_text=_(
+                "Turns off the screen lock entirely: when the lid closes, after "
+                "idle time and when suspending. Anyone with physical access to the "
+                "computer can use the session. While it is on, the Lock option in "
+                "the system menu and the Super+L shortcut also stop working. "
+                "Turning off the lid option above restores the lock."
+            ),
+            keywords=lid_keywords + [_("lock screen"), _("remote desktop"), _("RDP")],
         )
 
         self.create_row(
             grp_lid,
             _("Keep running with the lid closed on battery"),
             _(
-                "Closing the lid will not lock or suspend the computer on battery. "
+                "Closing the lid will not suspend the computer on battery. "
                 "The session and network stay active, using more battery."
             ),
             "never-suspend-lid-battery",
             None,
             info_text=_(
-                "This prevents lid-triggered suspend and locking. Automatic "
-                "idle locking remains separate, and the 20% critical battery "
-                "policy still applies."
+                "This prevents lid-triggered suspend. Without an external monitor "
+                "the screen may still lock when the lid closes. The 20% critical "
+                "battery policy still applies."
             ),
             keywords=lid_keywords + [_("battery")],
         )
