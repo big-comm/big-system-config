@@ -1969,3 +1969,29 @@ msgstr "privacy"
 #: usr/share/biglinux/biglinux-settings/usability_page.py:79
 msgid "recent"
 msgstr "recent"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:248
+#: usr/share/biglinux/biglinux-settings/ai_page.py:254
+msgid "Package available in the AUR"
+msgstr "Package available in the AUR"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:249
+#, python-brace-format
+msgid "Install {} with a package manager that supports the AUR."
+msgstr "Install {} with a package manager that supports the AUR."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:256
+#, python-brace-format
+msgid ""
+"{} is available from the community-maintained Arch User Repository. Open a "
+"terminal to review and confirm the installation."
+msgstr "{} is available from the community-maintained Arch User Repository. Open a terminal to review and confirm the installation."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:261
+msgid "Open terminal"
+msgstr "Open terminal"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:287
+#, python-brace-format
+msgid "Could not complete the AUR installation for {}."
+msgstr "Could not complete the AUR installation for {}."

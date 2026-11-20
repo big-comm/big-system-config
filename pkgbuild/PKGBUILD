@@ -19,6 +19,8 @@ optdepends=(
     'qt6-tools: qdbus6 support for KDE checks'
     'upower: suspend at a configured critical battery level'
     'xfconf: XFCE automatic suspend configuration'
+    'xdg-terminal-exec: open a terminal for optional AUR installations'
+    'yay: install optional AI applications from the AUR'
 )
 pkgver=$(date +%y.%m.%d)
 pkgrel=$(date +%H%M)

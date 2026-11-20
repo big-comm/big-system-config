@@ -2921,3 +2921,29 @@ msgstr "recentes"
 
 #~ msgid "An error occurred with OpenClaude."
 #~ msgstr "Ocorreu um erro com o OpenClaude."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:248
+#: usr/share/biglinux/biglinux-settings/ai_page.py:254
+msgid "Package available in the AUR"
+msgstr "Pacote disponível no AUR"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:249
+#, python-brace-format
+msgid "Install {} with a package manager that supports the AUR."
+msgstr "Instale {} com um gerenciador de pacotes que ofereça suporte ao AUR."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:256
+#, python-brace-format
+msgid ""
+"{} is available from the community-maintained Arch User Repository. Open a "
+"terminal to review and confirm the installation."
+msgstr "{} está disponível no repositório comunitário do Arch (AUR). Abra um terminal para revisar e confirmar a instalação."
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:261
+msgid "Open terminal"
+msgstr "Abrir terminal"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:287
+#, python-brace-format
+msgid "Could not complete the AUR installation for {}."
+msgstr "Não foi possível concluir a instalação de {} pelo AUR."
