@@ -261,6 +261,117 @@ def page(base_page):
     return base_page.BaseSettingsPage(main_window)
 
 
+@pytest.fixture
+def ai_page(base_page, monkeypatch):
+    monkeypatch.setitem(sys.modules, "base_page", base_page)
+    spec = importlib.util.spec_from_file_location(
+        "ai_page_under_test", MODULE_PATH.with_name("ai_page.py")
+    )
+    module = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    spec.loader.exec_module(module)
+    page = module.AIPage.__new__(module.AIPage)
+    base_page.BaseSettingsPage.__init__(page, MagicMock())
+    return module, page
+
+
+@pytest.mark.parametrize(
+    ("script", "state", "exit_code", "stderr", "aur_package"),
+    [
+        ("lmStudio.sh", True, 1, "error: package 'lmstudio-bin' was not found", "lmstudio-bin"),
+        ("ollamaLab.sh", True, 1, "error: package 'ollama-lab-bin' was not found", "ollama-lab-bin"),
+        ("chatbox.sh", True, 1, "error: package 'chatbox-bin' was not found", "chatbox-bin"),
+        ("lmStudio.sh", True, 0, "", None),
+        ("lmStudio.sh", True, 1, "error: failed to initialize alpm library", None),
+        ("lmStudio.sh", False, None, None, None),
+        ("ollamaCpu.sh", True, None, None, None),
+    ],
+)
+def test_ai_offers_aur_only_for_missing_repository_packages(
+    ai_page, monkeypatch, script, state, exit_code, stderr, aur_package
+):
+    module, page = ai_page
+    native_toggle = MagicMock()
+    monkeypatch.setattr(module.BaseSettingsPage, "_execute_toggle", native_toggle)
+    page._offer_aur_install = MagicMock()
+    switch = Switch(active=state)
+    row = ActionRow()
+    page.switch_scripts[switch] = f"ai/{script}"
+    page._set_wd(switch, "row", row)
+    launcher = module.Gio.SubprocessLauncher.new.return_value
+    query = launcher.spawnv.return_value
+
+    page._execute_toggle(switch, state)
+    if exit_code is None:
+        launcher.spawnv.assert_not_called()
+    else:
+        launcher.spawnv.assert_called_once_with(
+            ["pacman", "-Si", "--", module.AUR_PACKAGES[script]]
+        )
+        assert not row.sensitive
+        assert switch in page._busy_switches
+        query.communicate_utf8_finish.return_value = (True, None, stderr)
+        query.get_if_exited.return_value = True
+        query.get_exit_status.return_value = exit_code
+        callback = query.communicate_utf8_async.call_args.args[2]
+        callback(query, None)
+        assert row.sensitive
+        assert switch not in page._busy_switches
+
+    if aur_package:
+        page._offer_aur_install.assert_called_once_with(aur_package)
+        native_toggle.assert_not_called()
+        assert not switch.get_active()
+        assert not switch.get_state()
+    else:
+        page._offer_aur_install.assert_not_called()
+        native_toggle.assert_called_once_with(switch, state)
+
+
+def test_ai_aur_install_requires_confirmation(ai_page, monkeypatch):
+    module, page = ai_page
+    module.Adw.AlertDialog = MagicMock()
+    monkeypatch.setattr(module.os, "geteuid", lambda: 1000)
+    monkeypatch.setattr(
+        module.GLib, "find_program_in_path", lambda name: f"/usr/bin/{name}", raising=False
+    )
+    page._offer_aur_install("lmstudio-bin")
+    dialog = module.Adw.AlertDialog.return_value
+    respond = dialog.connect.call_args.args[1]
+
+    respond(dialog, "cancel")
+    module.Gio.Subprocess.new.assert_not_called()
+
+    respond(dialog, "install")
+    module.Gio.Subprocess.new.assert_called_once_with(
+        [
+            "/usr/bin/xdg-terminal-exec", "--hold", "--", "/usr/bin/yay", "-S",
+            "--aur", "--needed", "--", "lmstudio-bin",
+        ],
+        module.Gio.SubprocessFlags.NONE,
+    )
+    process = module.Gio.Subprocess.new.return_value
+    page.sync_all_switches_async = MagicMock()
+    on_exit = process.wait_check_async.call_args.args[1]
+    on_exit(process, None)
+    page.sync_all_switches_async.assert_called_once_with()
+
+
+def test_ai_aur_install_explains_missing_helper(ai_page, monkeypatch):
+    module, page = ai_page
+    monkeypatch.setattr(
+        module.GLib, "find_program_in_path", lambda _name: None, raising=False
+    )
+    page._show_info_dialog = MagicMock()
+
+    page._offer_aur_install("chatbox-bin")
+
+    title, message = page._show_info_dialog.call_args.args
+    assert "AUR" in title
+    assert "chatbox-bin" in message
+    module.Gio.Subprocess.new.assert_not_called()
+
+
 def write_script(path: Path, body: str) -> str:
     path.write_bytes(b"#!/bin/bash\n" + body.encode())
     path.chmod(0o755)
