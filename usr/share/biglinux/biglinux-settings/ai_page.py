@@ -193,11 +193,20 @@ class AIPage(BaseSettingsPage):
             self._add_ollama_variant(
                 ollama_expander, title, subtitle, script_key, local_ip
             )
+        self._pending_aur_packages: set[str] = set()
         self.main_window.connect("notify::is-active", self._refresh_after_external_install)
 
     def _refresh_after_external_install(self, window, _property):
-        if window.is_active() and self.get_mapped():
+        if window.is_active() and self._pending_aur_packages:
             self.sync_all_switches_async()
+
+    def _apply_switch_result(self, switch, status):
+        super()._apply_switch_result(switch, status)
+        if status is True and self._pending_aur_packages:
+            script_name = os.path.basename(self.switch_scripts[switch])
+            package = AUR_PACKAGES.get(script_name)
+            if package:
+                self._pending_aur_packages.discard(package)
 
     def _execute_toggle(self, switch, state):
         execute_native = super()._execute_toggle
@@ -227,11 +236,12 @@ class AIPage(BaseSettingsPage):
                 execute_native(switch, state)
                 return
 
-            # Database errors must go through the normal toggle error path.
+            # Other errors go through the normal toggle path.
+            missing_package = f"error: package '{package}' was not found"
             if (
                 process.get_if_exited()
                 and process.get_exit_status() == 1
-                and (stderr or "").strip() == f"error: package '{package}' was not found"
+                and missing_package in (stderr or "").splitlines()
             ):
                 self._set_switch_active_without_handler(switch, False)
                 self._offer_aur_install(package)
@@ -242,7 +252,7 @@ class AIPage(BaseSettingsPage):
 
     def _offer_aur_install(self, package):
         terminal = GLib.find_program_in_path("xdg-terminal-exec")
-        helper = GLib.find_program_in_path("yay")
+        helper = GLib.find_program_in_path("yay") or GLib.find_program_in_path("paru")
         if os.geteuid() == 0 or not terminal or not helper:
             self._show_info_dialog(
                 _("Package available in the AUR"),
@@ -266,26 +276,19 @@ class AIPage(BaseSettingsPage):
             if response != "install":
                 return
             try:
-                terminal_process = Gio.Subprocess.new(
+                Gio.Subprocess.new(
                     [terminal, "--hold", "--", helper, "-S", "--aur", "--needed", "--", package],
                     Gio.SubprocessFlags.NONE,
                 )
-                terminal_process.wait_check_async(None, on_terminal_exit)
             except GLib.Error as error:
-                report_terminal_error(error)
-
-        def on_terminal_exit(process, result):
-            try:
-                process.wait_check_finish(result)
-            except GLib.Error as error:
-                report_terminal_error(error)
-            self.sync_all_switches_async()
-
-        def report_terminal_error(error):
-            logger.error("AUR terminal exited unsuccessfully for %s: %s", package, error)
-            self.main_window.show_toast(
-                _("Could not complete the AUR installation for {}.").format(package)
-            )
+                logger.error("Could not launch the AUR terminal for %s: %s", package, error)
+                self.main_window.show_toast(
+                    _("Could not open a terminal to install {}.").format(package)
+                )
+            else:
+                # The launcher may hand off to an already running terminal.
+                # Only a package check can confirm that the install completed.
+                self._pending_aur_packages.add(package)
 
         dialog.connect("response", on_response)
         dialog.present(self.main_window)

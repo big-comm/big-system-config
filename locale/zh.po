@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-29 16:48-0300\n"
-"PO-Revision-Date: 2026-10-29 16:48-0300\n"
+"POT-Creation-Date: 2026-11-21 17:00-0300\n"
+"PO-Revision-Date: 2026-11-21 17:00-0300\n"
 "Last-Translator: BigLinux Community <community@biglinux.com.br>\n"
 "Language-Team: BigLinux Community (zh)\n"
 "Language: zh\n"
@@ -26,42 +26,42 @@ msgstr "未找到 AMD/Nvidia GPU!"
 msgid "No Ollama packages are installed. Enable an Ollama variant first."
 msgstr "未安装任何 Ollama 软件包。请先启用一个 Ollama 变体。"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:13
+#: usr/share/biglinux/biglinux-settings/ai_page.py:25
 #: usr/share/biglinux/biglinux-settings/main.py:362
 msgid "Artificial Intelligence"
 msgstr "人工智能"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:14
+#: usr/share/biglinux/biglinux-settings/ai_page.py:26
 msgid "Chat, work with documents and create images with AI on this computer."
 msgstr "在这台计算机上使用 AI 聊天、处理文档和创建图像。"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:17
-#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+#: usr/share/biglinux/biglinux-settings/ai_page.py:29
+#: usr/share/biglinux/biglinux-settings/ai_page.py:305
 msgid "LLM"
 msgstr "LLM"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:17
+#: usr/share/biglinux/biglinux-settings/ai_page.py:29
 msgid "chat"
 msgstr "聊天"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:17
-#: usr/share/biglinux/biglinux-settings/ai_page.py:105
-#: usr/share/biglinux/biglinux-settings/ai_page.py:138
-#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+#: usr/share/biglinux/biglinux-settings/ai_page.py:29
+#: usr/share/biglinux/biglinux-settings/ai_page.py:117
+#: usr/share/biglinux/biglinux-settings/ai_page.py:150
+#: usr/share/biglinux/biglinux-settings/ai_page.py:305
 msgid "local AI"
 msgstr "本地 AI"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:21
+#: usr/share/biglinux/biglinux-settings/ai_page.py:33
 msgid "AI applications"
 msgstr "AI 应用"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 46
-#: usr/share/biglinux/biglinux-settings/ai_page.py:30
+#: usr/share/biglinux/biglinux-settings/ai_page.py:42
 msgid "ChatAI"
 msgstr "ChatAI"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:32
+#: usr/share/biglinux/biglinux-settings/ai_page.py:44
 msgid ""
 "Desktop widget with access to several AI chats for KDE Plasma. Installs the "
 "widget; turning it off removes it."
@@ -69,39 +69,39 @@ msgstr ""
 "适用于 KDE Plasma 的桌面小部件，可访问多个 AI 聊天。安装该小部件；关闭后将其"
 "移除。"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:36
+#: usr/share/biglinux/biglinux-settings/ai_page.py:48
 msgid "plasmoid"
 msgstr "plasmoid"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:36
+#: usr/share/biglinux/biglinux-settings/ai_page.py:48
 msgid "widget"
 msgstr "小部件"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 128
-#: usr/share/biglinux/biglinux-settings/ai_page.py:41
+#: usr/share/biglinux/biglinux-settings/ai_page.py:53
 msgid "Ollama LAB"
 msgstr "Ollama LAB"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:43
+#: usr/share/biglinux/biglinux-settings/ai_page.py:55
 msgid ""
 "Graphical app to manage Ollama models and chat with them. Installs Ollama "
 "LAB; turning it off removes it."
 msgstr ""
 "用于管理 Ollama 模型并与之聊天的图形应用。安装 Ollama LAB；关闭后将其移除。"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:47
-#: usr/share/biglinux/biglinux-settings/ai_page.py:138
-#: usr/share/biglinux/biglinux-settings/ai_page.py:194
+#: usr/share/biglinux/biglinux-settings/ai_page.py:59
+#: usr/share/biglinux/biglinux-settings/ai_page.py:150
+#: usr/share/biglinux/biglinux-settings/ai_page.py:305
 msgid "Ollama"
 msgstr "Ollama"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 56
-#: usr/share/biglinux/biglinux-settings/ai_page.py:52
+#: usr/share/biglinux/biglinux-settings/ai_page.py:64
 msgid "ChatBox"
 msgstr "ChatBox"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:54
+#: usr/share/biglinux/biglinux-settings/ai_page.py:66
 msgid ""
 "Desktop app to chat with AI models, local or online. Installs ChatBox; "
 "turning it off removes it."
@@ -109,11 +109,11 @@ msgstr "可与本地或在线 AI 模型聊天的桌面应用。安装 ChatBox；
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 144
-#: usr/share/biglinux/biglinux-settings/ai_page.py:63
+#: usr/share/biglinux/biglinux-settings/ai_page.py:75
 msgid "LM Studio"
 msgstr "LM Studio"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:65
+#: usr/share/biglinux/biglinux-settings/ai_page.py:77
 msgid ""
 "Desktop app to download and run language models on this computer. Installs "
 "LM Studio; turning it off removes it."
@@ -125,11 +125,11 @@ msgstr ""
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 194
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 203
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 74
-#: usr/share/biglinux/biglinux-settings/ai_page.py:74
+#: usr/share/biglinux/biglinux-settings/ai_page.py:86
 msgid "Open Notebook"
 msgstr "Open Notebook"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:76
+#: usr/share/biglinux/biglinux-settings/ai_page.py:88
 msgid ""
 "Open-source, privacy-focused alternative to Google's NotebookLM for working "
 "with your documents. Installs it as a container and requires Docker; turning "
@@ -138,11 +138,11 @@ msgstr ""
 "Google NotebookLM 的开源、注重隐私的替代品，用于处理您的文档。以容器方式安"
 "装，需要 Docker；关闭后将其移除。"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:80
+#: usr/share/biglinux/biglinux-settings/ai_page.py:92
 msgid "NotebookLM"
 msgstr "NotebookLM"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:80
+#: usr/share/biglinux/biglinux-settings/ai_page.py:92
 msgid "documents"
 msgstr "文档"
 
@@ -150,7 +150,7 @@ msgstr "文档"
 #
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 201
-#: usr/share/biglinux/biglinux-settings/ai_page.py:84
+#: usr/share/biglinux/biglinux-settings/ai_page.py:96
 msgid "Open Notebook Server"
 msgstr "Open Notebook 服务器"
 
@@ -158,13 +158,13 @@ msgstr "Open Notebook 服务器"
 #
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 95
 # File: usr/share/biglinux/biglinux-settings/docker_page.py, line: 202
-#: usr/share/biglinux/biglinux-settings/ai_page.py:85
+#: usr/share/biglinux/biglinux-settings/ai_page.py:97
 msgid "Start the Open Notebook server."
 msgstr "启动 Open Notebook 服务器。"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/docker_page.py,
 # line: 190
-#: usr/share/biglinux/biglinux-settings/ai_page.py:90
+#: usr/share/biglinux/biglinux-settings/ai_page.py:102
 #, python-brace-format
 msgid ""
 "Open Notebook is running.\n"
@@ -177,11 +177,11 @@ msgstr ""
 "和\n"
 "地址：http://{}:8502"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:97
+#: usr/share/biglinux/biglinux-settings/ai_page.py:109
 msgid "ComfyUI image generation"
 msgstr "ComfyUI 图像生成"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:99
+#: usr/share/biglinux/biglinux-settings/ai_page.py:111
 msgid ""
 "Create images with AI using a visual node editor. Requires an AMD or Nvidia "
 "graphics card. Installs ComfyUI in your home folder; turning it off removes "
@@ -190,28 +190,28 @@ msgstr ""
 "使用可视化节点编辑器创建 AI 图像。需要 AMD 或 Nvidia 显卡。将 ComfyUI 安装到"
 "您的主文件夹；关闭后将其移除。"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:105
+#: usr/share/biglinux/biglinux-settings/ai_page.py:117
 msgid "Stable Diffusion"
 msgstr "Stable Diffusion"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:105
+#: usr/share/biglinux/biglinux-settings/ai_page.py:117
 msgid "images"
 msgstr "图像"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 94
-#: usr/share/biglinux/biglinux-settings/ai_page.py:109
+#: usr/share/biglinux/biglinux-settings/ai_page.py:121
 msgid "ComfyUI Server"
 msgstr "ComfyUI 服务器"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 94
-#: usr/share/biglinux/biglinux-settings/ai_page.py:110
+#: usr/share/biglinux/biglinux-settings/ai_page.py:122
 msgid "Start the ComfyUI server."
 msgstr "启动 ComfyUI 服务器。"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 100
-#: usr/share/biglinux/biglinux-settings/ai_page.py:115
+#: usr/share/biglinux/biglinux-settings/ai_page.py:127
 #, python-brace-format
 msgid ""
 "ComfyUI server is running.\n"
@@ -225,11 +225,11 @@ msgstr ""
 "地址：http://{}:8188"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 23
-#: usr/share/biglinux/biglinux-settings/ai_page.py:121
+#: usr/share/biglinux/biglinux-settings/ai_page.py:133
 msgid "Ollama Server"
 msgstr "Ollama 服务器"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:123
+#: usr/share/biglinux/biglinux-settings/ai_page.py:135
 msgid ""
 "Ollama runs AI models on this computer. The variants below are alternative "
 "engines for different hardware: install only the one that matches your "
@@ -239,34 +239,34 @@ msgstr ""
 "装与您的处理器或显卡相匹配的那一个。"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
-#: usr/share/biglinux/biglinux-settings/ai_page.py:132
+#: usr/share/biglinux/biglinux-settings/ai_page.py:144
 msgid "Update Ollama"
 msgstr "更新 Ollama"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 33
-#: usr/share/biglinux/biglinux-settings/ai_page.py:133
+#: usr/share/biglinux/biglinux-settings/ai_page.py:145
 msgid "Update the installed Ollama packages to the latest version."
 msgstr "将已安装的 Ollama 软件包更新至最新版本。"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 36
-#: usr/share/biglinux/biglinux-settings/ai_page.py:136
+#: usr/share/biglinux/biglinux-settings/ai_page.py:148
 msgid "Update now"
 msgstr "立即更新"
 
 # File: usr/share/biglinux/biglinux-settings/ai_page.py, line: 32
-#: usr/share/biglinux/biglinux-settings/ai_page.py:143
+#: usr/share/biglinux/biglinux-settings/ai_page.py:155
 msgid "Ollama Variants"
 msgstr "Ollama 变体"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:144
+#: usr/share/biglinux/biglinux-settings/ai_page.py:156
 msgid "Select the variant that matches your hardware."
 msgstr "选择与您的硬件相匹配的变体。"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:152
+#: usr/share/biglinux/biglinux-settings/ai_page.py:164
 msgid "Ollama for CPU"
 msgstr "CPU 版 Ollama"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:154
+#: usr/share/biglinux/biglinux-settings/ai_page.py:166
 msgid ""
 "Runs AI models on the processor only. Installs Ollama; turning it off "
 "removes it."
@@ -274,11 +274,11 @@ msgstr "仅使用处理器运行 AI 模型。安装 Ollama；关闭后将其移�
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 74
-#: usr/share/biglinux/biglinux-settings/ai_page.py:159
+#: usr/share/biglinux/biglinux-settings/ai_page.py:171
 msgid "Ollama Vulkan"
 msgstr "Ollama Vulkan"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:161
+#: usr/share/biglinux/biglinux-settings/ai_page.py:173
 msgid ""
 "For processors, AMD and Nvidia graphics cards and integrated graphics. "
 "Installs Ollama; turning it off removes it."
@@ -287,11 +287,11 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 110
-#: usr/share/biglinux/biglinux-settings/ai_page.py:166
+#: usr/share/biglinux/biglinux-settings/ai_page.py:178
 msgid "Ollama Nvidia CUDA"
 msgstr "Ollama Nvidia CUDA"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:168
+#: usr/share/biglinux/biglinux-settings/ai_page.py:180
 msgid ""
 "For newer Nvidia graphics cards, from the 2000 series on. Installs Ollama; "
 "turning it off removes it."
@@ -300,17 +300,50 @@ msgstr ""
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 92
-#: usr/share/biglinux/biglinux-settings/ai_page.py:173
+#: usr/share/biglinux/biglinux-settings/ai_page.py:185
 msgid "Ollama AMD ROCm"
 msgstr "Ollama AMD ROCm"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:175
+#: usr/share/biglinux/biglinux-settings/ai_page.py:187
 msgid ""
 "For newer AMD graphics cards, from the 6000 series on. In many tests Vulkan "
 "performed better than ROCm. Installs Ollama; turning it off removes it."
 msgstr ""
 "适用于 6000 系列及以后的较新 AMD 显卡。在许多测试中，Vulkan 的表现优于 ROCm。"
 "安装 Ollama；关闭后将其移除。"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:258
+#: usr/share/biglinux/biglinux-settings/ai_page.py:264
+msgid "Package available in the AUR"
+msgstr "软件包可从 AUR 获取"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:259
+#, python-brace-format
+msgid "Install {} with a package manager that supports the AUR."
+msgstr "请使用支持 AUR 的软件包管理器安装 {}。"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:266
+#, python-brace-format
+msgid ""
+"{} is available from the community-maintained Arch User Repository. Open a "
+"terminal to review and confirm the installation."
+msgstr ""
+"{} 可从由社区维护的 Arch 用户软件仓库 (AUR) 获取。打开终端以查看并确认安装。"
+
+# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 66
+#: usr/share/biglinux/biglinux-settings/ai_page.py:270
+#: usr/share/biglinux/biglinux-settings/base_page.py:110
+msgid "Cancel"
+msgstr "取消"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:271
+msgid "Open terminal"
+msgstr "打开终端"
+
+#: usr/share/biglinux/biglinux-settings/ai_page.py:286
+#, python-brace-format
+msgid "Could not open a terminal to install {}."
+msgstr "无法打开终端以安装 {}。"
 
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 60
@@ -320,7 +353,7 @@ msgstr ""
 # line: 96
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 114
-#: usr/share/biglinux/biglinux-settings/ai_page.py:193
+#: usr/share/biglinux/biglinux-settings/ai_page.py:304
 msgid ""
 "Ollama server is running.\n"
 "Address: http://localhost:11434"
@@ -336,11 +369,11 @@ msgstr ""
 # line: 100
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 118
-#: usr/share/biglinux/biglinux-settings/ai_page.py:198
+#: usr/share/biglinux/biglinux-settings/ai_page.py:309
 msgid "Share Ollama"
 msgstr "分享Ollama"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:199
+#: usr/share/biglinux/biglinux-settings/ai_page.py:310
 msgid "Lets other computers on the local network use this Ollama server."
 msgstr "允许本地网络中的其他计算机使用这台 Ollama 服务器。"
 
@@ -352,7 +385,7 @@ msgstr "允许本地网络中的其他计算机使用这台 Ollama 服务器。"
 # line: 105
 # File: biglinux-settings/usr/share/biglinux/biglinux-settings/ai_page.py,
 # line: 123
-#: usr/share/biglinux/biglinux-settings/ai_page.py:203
+#: usr/share/biglinux/biglinux-settings/ai_page.py:314
 #, python-brace-format
 msgid ""
 "Ollama server is running.\n"
@@ -769,11 +802,6 @@ msgstr "关闭"
 #, python-brace-format
 msgid "Warning: {}"
 msgstr "警告：{}"
-
-# File: usr/share/biglinux/biglinux-settings/base_page.py, line: 66
-#: usr/share/biglinux/biglinux-settings/base_page.py:110
-msgid "Cancel"
-msgstr "取消"
 
 # File: usr/share/biglinux/biglinux-settings/base_page.py, line: 67
 #: usr/share/biglinux/biglinux-settings/base_page.py:111

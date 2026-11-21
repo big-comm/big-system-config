@@ -14,6 +14,7 @@ optdepends=(
     'mkinitcpio: initramfs rebuild after boot animation changes'
     'numlockx: NumLock startup toggle'
     'p7zip: install the Krita AI plugin archive'
+    'paru: alternative AUR helper for optional AI applications'
     'plymouth: boot animation message toggle'
     'power-profiles-daemon: CPU performance profile toggle'
     'qt6-tools: qdbus6 support for KDE checks'
