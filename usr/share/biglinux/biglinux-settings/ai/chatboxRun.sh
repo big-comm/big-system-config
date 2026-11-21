@@ -12,7 +12,7 @@ updateTask() {
   if [[ "$function" == "install" ]]; then
     pacman -Syu --needed --noconfirm chatbox-bin
   else
-    pacman -Rcs --noconfirm chatbox-bin
+    pacman -Rs --noconfirm chatbox-bin
   fi
   exitCode=$?
 }

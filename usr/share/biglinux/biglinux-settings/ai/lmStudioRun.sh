@@ -12,7 +12,7 @@ updateTask() {
   if [[ "$function" == "install" ]]; then
     pacman -Syu --needed --noconfirm lmstudio-bin
   else
-    pacman -Rcs --noconfirm lmstudio-bin
+    pacman -Rs --noconfirm lmstudio-bin
   fi
   exitCode=$?
 }

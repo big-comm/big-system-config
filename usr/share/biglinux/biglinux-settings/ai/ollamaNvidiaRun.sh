@@ -23,7 +23,7 @@ updateTask() {
     # Nothing to do if the package is already gone.
     pacman -Q "$package" &>/dev/null || return 0
     systemctl disable --now ollama.service || return 1
-    if ! pacman -Rcs --noconfirm "$package"; then
+    if ! pacman -Rs --noconfirm "$package"; then
       # Removal failed: put the service back as it was.
       systemctl enable --now ollama.service
       return 1
