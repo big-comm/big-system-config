@@ -99,6 +99,7 @@ class BiglinuxSettingsApp(Adw.Application):
             kwargs["flags"] = Gio.ApplicationFlags.NON_UNIQUE
         super().__init__(**kwargs)
         GLib.set_prgname(APP_ID)
+        self.window = None
         self.connect("activate", self.on_activate)
 
         # About action for hamburger menu
@@ -107,7 +108,9 @@ class BiglinuxSettingsApp(Adw.Application):
         self.add_action(about_action)
 
     def on_activate(self, app):
-        self.window = BiglinuxSettingsWindow(application=app)
+        # A window hidden while its changes finish is shown again, not duplicated.
+        if self.window is None:
+            self.window = BiglinuxSettingsWindow(application=app)
         self.window.present()
 
     def _on_about(self, _action, _param):
@@ -145,10 +148,29 @@ class BiglinuxSettingsWindow(Adw.ApplicationWindow):
         self._syncing_pages = set()
         self._banner_timeout_id = None
         self._pending_undo = None
+        self._running_changes = 0
         self._last_query = ""
         self._navigating = False
         self.load_css()
         self.setup_ui()
+        self.connect("close-request", self._on_close_request)
+
+    def change_started(self):
+        self._running_changes += 1
+
+    def change_finished(self):
+        self._running_changes -= 1
+        if self._running_changes == 0 and not self.get_visible():
+            self.close()
+
+    def _on_close_request(self, _window):
+        self._flush_pending_undo()
+        if self._running_changes:
+            # Quitting would end the threads that wait for the scripts, losing
+            # their result: stay alive, hidden, until the last one finishes.
+            self.set_visible(False)
+            return True
+        return False
 
     def load_css(self):
         self.css_provider = Gtk.CssProvider()

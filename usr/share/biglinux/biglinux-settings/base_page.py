@@ -347,6 +347,7 @@ class BaseSettingsPage(Adw.Bin):
         button.set_sensitive(False)
         row.add_suffix(spinner)
         row.set_subtitle(_("Applying…"))
+        self.main_window.change_started()
 
         def _run_in_thread():
             success = False
@@ -373,6 +374,7 @@ class BaseSettingsPage(Adw.Bin):
             GLib.idle_add(_on_done, success)
 
         def _on_done(success: bool) -> bool:
+            self.main_window.change_finished()
             row.remove(spinner)
             button.set_sensitive(True)
             button.set_label(original_label)
@@ -1004,6 +1006,7 @@ class BaseSettingsPage(Adw.Bin):
         row.set_subtitle(_("Applying…"))
 
         self._busy_switches.add(switch)
+        self.main_window.change_started()
 
         def _toggle_in_thread():
             try:
@@ -1015,6 +1018,7 @@ class BaseSettingsPage(Adw.Bin):
 
         def _on_toggle_done(success):
             self._busy_switches.discard(switch)
+            self.main_window.change_finished()
             # Remove spinner and restore switch visibility
             row.remove(spinner)
             switch.set_visible(True)
