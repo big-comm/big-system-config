@@ -7,6 +7,7 @@ are fakes that record their calls and succeed or fail on demand
 repository copy of the requested script.
 """
 
+import fcntl
 import subprocess
 import textwrap
 from pathlib import Path
@@ -279,6 +280,24 @@ def test_fast_grub_round_trip(sandbox):
     assert len(sandbox.grub_calls()) == 2
 
 
+@pytest.mark.parametrize("value", ["true", "false"])
+def test_grub_edit_keeps_link_and_mode(sandbox, tmp_path, value):
+    # Edits and rollbacks rename a new file over the target, never truncate it.
+    target = tmp_path / "default" / "grub"
+    target.parent.mkdir()
+    target.write_text("GRUB_TIMEOUT=5\n")
+    target.chmod(0o640)
+    sandbox.grub.symlink_to(target)
+    inode = target.stat().st_ino
+    result = sandbox.toggle("system/fastGrub.sh", "true", FAKE_GRUB_RC=0 if value == "true" else 1)
+    expected = "GRUB_TIMEOUT=1\n" if value == "true" else "GRUB_TIMEOUT=5\n"
+    assert sandbox.grub.is_symlink()
+    assert target.read_text() == expected, result.stderr
+    assert target.stat().st_mode & 0o777 == 0o640
+    assert target.stat().st_ino != inode
+    assert [p.name for p in target.parent.iterdir()] == ["grub"]
+
+
 @pytest.mark.parametrize("timeout", ["", "abc", "1;reboot", "1/", "-1", "1 2"])
 def test_fast_grub_run_rejects_invalid_timeout(sandbox, timeout):
     original = "GRUB_TIMEOUT=5\n"
@@ -287,6 +306,40 @@ def test_fast_grub_run_rejects_invalid_timeout(sandbox, timeout):
     assert result.returncode == 2
     assert sandbox.read() == original
     assert sandbox.grub_calls() == []
+
+
+@pytest.mark.parametrize(
+    "script", ["system/fastGrub.sh", *[script for script, _ in CMDLINE_TOGGLES]]
+)
+def test_failed_edit_keeps_file(sandbox, tmp_path, script):
+    # An editor dying halfway (full disk) must not install its partial output.
+    original = 'GRUB_TIMEOUT=5\nGRUB_CMDLINE_LINUX_DEFAULT="quiet"\nGRUB_THEME=/x\n'
+    sandbox.write(original)
+    broken = tmp_path / "broken"
+    broken.mkdir()
+    awk = broken / "awk"
+    awk.write_text("#!/bin/bash\necho GRUB_TIMEOUT=1\nexit 1\n")
+    awk.chmod(0o755)
+    result = sandbox.toggle(script, "true", PATH=f"{broken}:{sandbox.env['PATH']}")
+    assert result.returncode != 0
+    assert sandbox.read() == original
+    assert sandbox.grub_calls() == []
+
+
+def test_grub_edits_wait_for_lock(sandbox):
+    sandbox.write("GRUB_TIMEOUT=5\n")
+    with open(sandbox.grub.with_name("grub.lock"), "a") as held:
+        fcntl.flock(held, fcntl.LOCK_EX)
+        proc = subprocess.Popen(
+            ["bash", str(SCRIPTS / "system/fastGrubRun.sh"), "1"],
+            env=sandbox.env,
+            stdin=subprocess.DEVNULL,
+        )
+        with pytest.raises(subprocess.TimeoutExpired):
+            proc.wait(timeout=1)
+        assert sandbox.read() == "GRUB_TIMEOUT=5\n"
+    assert proc.wait(timeout=10) == 0
+    assert sandbox.read() == "GRUB_TIMEOUT=1\n"
 
 
 def test_fast_grub_failed_regeneration_restores_file(sandbox):
@@ -303,6 +356,6 @@ def test_fast_grub_invalid_state_exits_2(sandbox):
     assert sandbox.grub_calls() == []
 
 
-def test_fast_grub_run_has_mkconfig_fallback():
-    content = (SCRIPTS / "system/fastGrubRun.sh").read_text(encoding="utf-8")
+def test_grub_update_falls_back_to_mkconfig():
+    content = (SCRIPTS / "grub-default.sh").read_text(encoding="utf-8")
     assert "grub-mkconfig -o /boot/grub/grub.cfg" in content

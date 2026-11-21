@@ -24,9 +24,9 @@ def test_krita_uninstall_only_removes_plugin_owned_paths():
 
 
 def test_grub_generation_has_explicit_output():
+    assert "grub-mkconfig -o /boot/grub/grub.cfg" in script("grub-default.sh")
     for name in ["noWatchdogRun.sh", "meltdownMitigationsRun.sh"]:
-        content = script(f"performance/{name}")
-        assert "grub-mkconfig -o /boot/grub/grub.cfg" in content
+        assert "/../grub-default.sh" in script(f"performance/{name}")
 
 
 def test_comfyui_requires_management_marker_before_removal():

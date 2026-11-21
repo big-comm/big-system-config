@@ -1,0 +1,3 @@
+# Scripts source shared files next to them (grub-default.sh).
+external-sources=true
+source-path=SCRIPTDIR

@@ -1,28 +1,11 @@
 #!/bin/bash
 
-# BIGLINUX_GRUB_FILE exists only for the test suite (read-only here).
-grub_file="${BIGLINUX_GRUB_FILE:-/etc/default/grub}"
-
-# Print the value of the last active KEY= line, ignoring commented lines and
-# accepting double, single or no quotes.
-grub_value() {
-  local line value
-  line="$(grep -E "^[[:space:]]*$1=" "$grub_file" 2>/dev/null | tail -n 1)"
-  [[ -n "$line" ]] || return 1
-  value="${line#*=}"
-  case "$value" in
-    \"*) value="${value#\"}"; value="${value%%\"*}" ;;
-    \'*) value="${value#\'}"; value="${value%%\'*}" ;;
-    *) value="${value%%[[:space:]]*}" ;;
-  esac
-  printf '%s\n' "$value"
-}
+# shellcheck source=../grub-default.sh
+source "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")/../grub-default.sh"
 
 # check current status
 if [ "$1" == "check" ]; then
-  cmdline=" $(grub_value GRUB_CMDLINE_LINUX) $(grub_value GRUB_CMDLINE_LINUX_DEFAULT) "
-  cmdline="${cmdline//[[:space:]]/ }"
-  if [[ "$cmdline" == *" mitigations=off "* ]];then
+  if [[ "$(grub_count_tokens mitigations=off)" == 1 ]]; then
     echo "true"
   else
     echo "false"
