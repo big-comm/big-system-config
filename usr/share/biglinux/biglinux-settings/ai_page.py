@@ -1,6 +1,18 @@
+import logging
+import os
+
 from base_page import BaseSettingsPage, _
+from gi.repository import Adw, Gio, GLib
+
+logger = logging.getLogger("biglinux-settings")
 
 OLLAMA_ICON = "ollama-symbolic"
+
+AUR_PACKAGES = {
+    "chatbox.sh": "chatbox-bin",
+    "lmStudio.sh": "lmstudio-bin",
+    "ollamaLab.sh": "ollama-lab-bin",
+}
 
 
 class AIPage(BaseSettingsPage):
@@ -181,6 +193,105 @@ class AIPage(BaseSettingsPage):
             self._add_ollama_variant(
                 ollama_expander, title, subtitle, script_key, local_ip
             )
+        self._pending_aur_packages: set[str] = set()
+        self.main_window.connect("notify::is-active", self._refresh_after_external_install)
+
+    def _refresh_after_external_install(self, window, _property):
+        if window.is_active() and self._pending_aur_packages:
+            self.sync_all_switches_async()
+
+    def _apply_switch_result(self, switch, status):
+        super()._apply_switch_result(switch, status)
+        if status is True and self._pending_aur_packages:
+            script_name = os.path.basename(self.switch_scripts[switch])
+            package = AUR_PACKAGES.get(script_name)
+            if package:
+                self._pending_aur_packages.discard(package)
+
+    def _execute_toggle(self, switch, state):
+        execute_native = super()._execute_toggle
+        script_name = os.path.basename(self.switch_scripts.get(switch, ""))
+        package = AUR_PACKAGES.get(script_name)
+        if not state or package is None:
+            return execute_native(switch, state)
+
+        flags = Gio.SubprocessFlags.STDOUT_SILENCE | Gio.SubprocessFlags.STDERR_PIPE
+        launcher = Gio.SubprocessLauncher.new(flags)
+        launcher.setenv("LC_ALL", "C", True)
+        try:
+            query = launcher.spawnv(["pacman", "-Si", "--", package])
+        except GLib.Error:
+            return execute_native(switch, state)
+
+        row = self._get_wd(switch, "row")
+        row.set_sensitive(False)
+        self._busy_switches.add(switch)
+
+        def on_package_checked(process, result):
+            self._busy_switches.discard(switch)
+            row.set_sensitive(True)
+            try:
+                _, _, stderr = process.communicate_utf8_finish(result)
+            except GLib.Error:
+                execute_native(switch, state)
+                return
+
+            # Other errors go through the normal toggle path.
+            missing_package = f"error: package '{package}' was not found"
+            if (
+                process.get_if_exited()
+                and process.get_exit_status() == 1
+                and missing_package in (stderr or "").splitlines()
+            ):
+                self._set_switch_active_without_handler(switch, False)
+                self._offer_aur_install(package)
+            else:
+                execute_native(switch, state)
+
+        query.communicate_utf8_async(None, None, on_package_checked)
+
+    def _offer_aur_install(self, package):
+        terminal = GLib.find_program_in_path("xdg-terminal-exec")
+        helper = GLib.find_program_in_path("yay") or GLib.find_program_in_path("paru")
+        if os.geteuid() == 0 or not terminal or not helper:
+            self._show_info_dialog(
+                _("Package available in the AUR"),
+                _("Install {} with a package manager that supports the AUR.").format(package),
+            )
+            return
+
+        dialog = Adw.AlertDialog(
+            heading=_("Package available in the AUR"),
+            body=_(
+                "{} is available from the community-maintained Arch User Repository. "
+                "Open a terminal to review and confirm the installation."
+            ).format(package),
+        )
+        dialog.add_response("cancel", _("Cancel"))
+        dialog.add_response("install", _("Open terminal"))
+        dialog.set_default_response("cancel")
+        dialog.set_close_response("cancel")
+
+        def on_response(_dialog, response):
+            if response != "install":
+                return
+            try:
+                Gio.Subprocess.new(
+                    [terminal, "--hold", "--", helper, "-S", "--aur", "--needed", "--", package],
+                    Gio.SubprocessFlags.NONE,
+                )
+            except GLib.Error as error:
+                logger.error("Could not launch the AUR terminal for %s: %s", package, error)
+                self.main_window.show_toast(
+                    _("Could not open a terminal to install {}.").format(package)
+                )
+            else:
+                # The launcher may hand off to an already running terminal.
+                # Only a package check can confirm that the install completed.
+                self._pending_aur_packages.add(package)
+
+        dialog.connect("response", on_response)
+        dialog.present(self.main_window)
 
     def _add_ollama_variant(self, expander, title, subtitle, script_key, local_ip):
         """Add an Ollama server row plus its "Share Ollama" sub-row."""
