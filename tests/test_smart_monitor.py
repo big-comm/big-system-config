@@ -96,7 +96,7 @@ def test_enabling_monitoring_installs_smartmontools_when_missing(env):
     result = env.run("toggle", "false")
     assert result.returncode == 0, result.stderr
     calls = env.calls()
-    assert any(c.startswith("pacman -S --needed --noconfirm smartmontools") for c in calls)
+    assert any(c.startswith("pacman -Syu --needed --noconfirm smartmontools") for c in calls)
     assert "systemctl enable --now smartd.service" in calls
     assert env.check() == "false"
     # one password prompt for install + enable

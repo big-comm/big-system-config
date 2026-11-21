@@ -10,7 +10,7 @@ function="$1"
 # Executes the root tasks.
 updateTask() {
   if [[ "$function" == "install" ]]; then
-    pacman -Syu --noconfirm jamesdsp
+    pacman -Syu --needed --noconfirm jamesdsp
   fi
   exitCode=$?
 }

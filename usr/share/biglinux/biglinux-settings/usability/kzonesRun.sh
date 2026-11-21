@@ -10,7 +10,7 @@ function="$1"
 # Executes the root tasks.
 updateKzonesTask() {
   if [[ "$function" == "install" ]]; then
-    pacman -Syu --noconfirm kwin-scripts-kzones
+    pacman -Syu --needed --noconfirm kwin-scripts-kzones
   fi
   exitCode=$?
 }

@@ -14,7 +14,3 @@
 .audit/
 .ruff_cache/
 .pytest_cache/
-
-# Project-local docs
-PLANNING.md
-RUST_MIGRATION_PLAN.md

@@ -1,6 +1,5 @@
 import logging
 import os
-import subprocess
 
 import gi
 
@@ -27,14 +26,8 @@ def _detect_desktop() -> str:
 
 
 def _has_rtw89() -> bool:
-    """Check if any rtw89 WiFi module is loaded."""
-    try:
-        out = subprocess.run(
-            ["lsmod"], capture_output=True, text=True, timeout=5
-        ).stdout
-        return "rtw89" in out
-    except Exception:
-        return False
+    """Check if a Realtek rtw89 Wi-Fi driver is loaded."""
+    return os.path.isdir("/sys/module/rtw89_core")
 
 
 def _has_asus_ec_bug() -> bool:
