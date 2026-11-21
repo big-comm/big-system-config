@@ -169,7 +169,6 @@ class AppsPage(BaseSettingsPage):
             ),
             "openclaude",
             "openclaude-symbolic",
-            timeout=600,
             link_url=link_openclaude,
             keywords=[_("coding agent"), _("AI"), _("programming")],
         )

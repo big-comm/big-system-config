@@ -329,6 +329,22 @@ def test_toggle_fails_when_state_does_not_change(page, tmp_path, monkeypatch):
     assert page.toggle_script_state(script, True) is False
 
 
+def test_toggle_waits_for_slow_scripts(base_page, page, tmp_path, monkeypatch):
+    # A time limit cannot stop the root helper behind pkexec, so the toggle
+    # waits for the script instead of reporting a failure while it still runs.
+    real_run = base_page.subprocess.run
+    limits = []
+
+    def run(*args, **kwargs):
+        limits.append(kwargs.get("timeout"))
+        return real_run(*args, **kwargs)
+
+    monkeypatch.setattr(base_page.subprocess, "run", run)
+    script = write_script(tmp_path / "s.sh", '[ "$1" = check ] && echo true; exit 0\n')
+    assert page.toggle_script_state(script, True) is True
+    assert limits[0] is None
+
+
 def test_toggle_failure_with_binary_stderr(page, tmp_path):
     script = write_script(tmp_path / "s.sh", "printf '\\xff' >&2; exit 1\n")
     assert page.toggle_script_state(script, True) is False

@@ -112,7 +112,6 @@ class AIPage(BaseSettingsPage):
             ),
             "comfyUI",
             "comfyUI-symbolic",
-            timeout=1200,
             link_url=link_comfyui,
             keywords=[_("images"), _("Stable Diffusion"), _("local AI")],
         )
@@ -146,7 +145,6 @@ class AIPage(BaseSettingsPage):
             "ollamaUpdate",
             OLLAMA_ICON,
             action_label=_("Update now"),
-            timeout=1800,
             keywords=[_("Ollama"), _("local AI")],
         )
 

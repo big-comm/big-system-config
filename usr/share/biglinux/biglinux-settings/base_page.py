@@ -54,8 +54,6 @@ class BaseSettingsPage(Adw.Bin):
         self.status_indicators = {}
         # Mapping: parent_switch -> list of child row widgets
         self.sub_switches = {}
-        # Mapping from script path to timeout value (seconds). If None, default 90.
-        self.switch_timeouts: dict[str, Optional[int]] = {}
         # Centralized widget metadata — avoids monkey-patching GObject instances
         self._widget_data: dict = {}
         self._sync_generation = 0
@@ -293,7 +291,6 @@ class BaseSettingsPage(Adw.Bin):
         script_name: str,
         icon_name: str,
         action_label: Optional[str] = None,
-        timeout: Optional[int] = None,
         keywords: Optional[list[str]] = None,
     ) -> Adw.ActionRow:
         """Builds an ActionRow with a single action button suffix.
@@ -321,7 +318,7 @@ class BaseSettingsPage(Adw.Bin):
 
         button.connect(
             "clicked",
-            lambda btn: self._execute_action(btn, row, script_path, timeout),
+            lambda btn: self._execute_action(btn, row, script_path),
         )
 
         if isinstance(parent_group, Adw.ExpanderRow):
@@ -335,7 +332,6 @@ class BaseSettingsPage(Adw.Bin):
         button: Gtk.Button,
         row: Adw.ActionRow,
         script_path: str,
-        timeout: Optional[int],
     ) -> None:
         """Execute a one-shot action script in a background thread."""
         if not os.path.exists(script_path):
@@ -359,7 +355,9 @@ class BaseSettingsPage(Adw.Bin):
                     [script_path, "run"],
                     capture_output=True,
                     text=True,
-                    timeout=timeout or 600,
+                    errors="replace",
+                    stdin=subprocess.DEVNULL,
+                    check=False,
                 )
                 success = result.returncode == 0
                 if not success:
@@ -368,8 +366,6 @@ class BaseSettingsPage(Adw.Bin):
                             script_path, result.stderr.strip()
                         )
                     )
-            except subprocess.TimeoutExpired:
-                logger.error(_("Action script timeout: {}").format(script_path))
             except OSError as e:
                 logger.error(
                     _("Error running action script {}: {}").format(script_path, e)
@@ -399,7 +395,6 @@ class BaseSettingsPage(Adw.Bin):
         script_name: str,
         icon_name: str,
         info_text: Optional[str] = None,
-        timeout: Optional[int] = None,
         link_url: Optional[str] = None,
         recommended: bool = False,
         keywords: Optional[list[str]] = None,
@@ -478,7 +473,6 @@ class BaseSettingsPage(Adw.Bin):
         script_group = self._get_wd(parent_group, "script_group", "default")
         script_path = os.path.join(script_group, f"{script_name}.sh")
         self.switch_scripts[switch] = script_path
-        self.switch_timeouts[script_path] = timeout
         switch.connect("state-set", self.on_switch_changed)
 
         if isinstance(parent_group, Adw.ExpanderRow):
@@ -496,7 +490,6 @@ class BaseSettingsPage(Adw.Bin):
         icon_name: str,
         parent_switch: Gtk.Switch,
         info_text: Optional[str] = None,
-        timeout: Optional[int] = None,
         keywords: Optional[list[str]] = None,
     ) -> Gtk.Switch:
         """Builds an indented ActionRow as a child option of a parent switch."""
@@ -549,7 +542,6 @@ class BaseSettingsPage(Adw.Bin):
         script_group = self._get_wd(parent_group, "script_group", "default")
         script_path = os.path.join(script_group, f"{script_name}.sh")
         self.switch_scripts[switch] = script_path
-        self.switch_timeouts[script_path] = timeout
         switch.connect("state-set", self.on_switch_changed)
 
         if isinstance(parent_group, Adw.ExpanderRow):
@@ -615,9 +607,7 @@ class BaseSettingsPage(Adw.Bin):
             logger.error(_("Error running script {}: {}").format(script_path, e))
             return (STATUS_ERROR, msg)
 
-    def toggle_script_state(
-        self, script_path: str, new_state: bool, timeout: Optional[int] = None
-    ) -> bool:
+    def toggle_script_state(self, script_path: str, new_state: bool) -> bool:
         """Executes a script with the 'toggle' argument to change the system state.
         Returns True on success, False on failure."""
         if not os.path.exists(script_path):
@@ -632,12 +622,8 @@ class BaseSettingsPage(Adw.Bin):
                 text=True,
                 errors="replace",
                 stdin=subprocess.DEVNULL,
-                timeout=timeout if timeout is not None else 90,
+                check=False,
             )
-        except subprocess.TimeoutExpired:
-            error_msg = _("Script timeout: {}").format(script_path)
-            logger.error(error_msg)
-            return False
         except OSError as e:
             error_msg = _("Error running script {}: {}").format(script_path, e)
             logger.error(error_msg)
@@ -1000,7 +986,6 @@ class BaseSettingsPage(Adw.Bin):
             logger.error("No script registered for switch")
             return
 
-        timeout = self.switch_timeouts.get(script_path)
         # The script receives its own notion of on/off (flipped for inverted rows)
         script_state = state != bool(self._get_wd(switch, "inverted", False))
         self._sync_generation += 1
@@ -1022,9 +1007,7 @@ class BaseSettingsPage(Adw.Bin):
 
         def _toggle_in_thread():
             try:
-                success = self.toggle_script_state(
-                    script_path, script_state, timeout=timeout
-                )
+                success = self.toggle_script_state(script_path, script_state)
             except Exception:
                 logger.exception("Unexpected error toggling %s", script_path)
                 success = False
