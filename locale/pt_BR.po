@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21 17:00-0300\n"
-"PO-Revision-Date: 2026-11-21 17:00-0300\n"
+"POT-Creation-Date: 2026-11-21 18:22-0300\n"
+"PO-Revision-Date: 2026-11-21 18:22-0300\n"
 "Last-Translator: Translation Automator <auto@translator.ai>\n"
 "Language-Team: Portuguese (Brazil) <pt-BR@li.org>\n"
 "Language: pt_BR\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Nenhum pacote Ollama está instalado. Ative primeiro uma variante do Ollama."
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:25
-#: usr/share/biglinux/biglinux-settings/main.py:362
+#: usr/share/biglinux/biglinux-settings/main.py:384
 msgid "Artificial Intelligence"
 msgstr "Inteligência artificial"
 
@@ -33,7 +33,7 @@ msgstr ""
 "Converse, trabalhe com documentos e crie imagens com IA neste computador."
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:29
-#: usr/share/biglinux/biglinux-settings/ai_page.py:305
+#: usr/share/biglinux/biglinux-settings/ai_page.py:303
 msgid "LLM"
 msgstr "LLM"
 
@@ -42,9 +42,9 @@ msgid "chat"
 msgstr "conversar"
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:29
-#: usr/share/biglinux/biglinux-settings/ai_page.py:117
-#: usr/share/biglinux/biglinux-settings/ai_page.py:150
-#: usr/share/biglinux/biglinux-settings/ai_page.py:305
+#: usr/share/biglinux/biglinux-settings/ai_page.py:116
+#: usr/share/biglinux/biglinux-settings/ai_page.py:148
+#: usr/share/biglinux/biglinux-settings/ai_page.py:303
 msgid "local AI"
 msgstr "IA local"
 
@@ -85,8 +85,8 @@ msgstr ""
 "Instala o Ollama LAB; ao desligar, ele é removido."
 
 #: usr/share/biglinux/biglinux-settings/ai_page.py:59
-#: usr/share/biglinux/biglinux-settings/ai_page.py:150
-#: usr/share/biglinux/biglinux-settings/ai_page.py:305
+#: usr/share/biglinux/biglinux-settings/ai_page.py:148
+#: usr/share/biglinux/biglinux-settings/ai_page.py:303
 msgid "Ollama"
 msgstr "Ollama"
 
@@ -171,23 +171,23 @@ msgstr ""
 "AMD ou Nvidia. Instala o ComfyUI na sua pasta pessoal; ao desligar, ele é "
 "removido."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:117
+#: usr/share/biglinux/biglinux-settings/ai_page.py:116
 msgid "Stable Diffusion"
 msgstr "Stable Diffusion"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:117
+#: usr/share/biglinux/biglinux-settings/ai_page.py:116
 msgid "images"
 msgstr "imagens"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:121
+#: usr/share/biglinux/biglinux-settings/ai_page.py:120
 msgid "ComfyUI Server"
 msgstr "Servidor ComfyUI"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:122
+#: usr/share/biglinux/biglinux-settings/ai_page.py:121
 msgid "Start the ComfyUI server."
 msgstr "Iniciar o servidor do ComfyUI."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:127
+#: usr/share/biglinux/biglinux-settings/ai_page.py:126
 #, python-brace-format
 msgid ""
 "ComfyUI server is running.\n"
@@ -200,11 +200,11 @@ msgstr ""
 "e\n"
 "Endereço: http://{}:8188"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:133
+#: usr/share/biglinux/biglinux-settings/ai_page.py:132
 msgid "Ollama Server"
 msgstr "Servidor Ollama"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:135
+#: usr/share/biglinux/biglinux-settings/ai_page.py:134
 msgid ""
 "Ollama runs AI models on this computer. The variants below are alternative "
 "engines for different hardware: install only the one that matches your "
@@ -214,31 +214,31 @@ msgstr ""
 "motores alternativos para hardwares diferentes: instale apenas a que combina "
 "com seu processador ou placa de vídeo."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:144
+#: usr/share/biglinux/biglinux-settings/ai_page.py:143
 msgid "Update Ollama"
 msgstr "Atualizar Ollama"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:145
+#: usr/share/biglinux/biglinux-settings/ai_page.py:144
 msgid "Update the installed Ollama packages to the latest version."
 msgstr "Atualizar os pacotes do Ollama instalados para a versão mais recente."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:148
+#: usr/share/biglinux/biglinux-settings/ai_page.py:147
 msgid "Update now"
 msgstr "Atualizar agora"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:155
+#: usr/share/biglinux/biglinux-settings/ai_page.py:153
 msgid "Ollama Variants"
 msgstr "Variantes do Ollama"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:156
+#: usr/share/biglinux/biglinux-settings/ai_page.py:154
 msgid "Select the variant that matches your hardware."
 msgstr "Selecione a variante adequada ao seu hardware."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:164
+#: usr/share/biglinux/biglinux-settings/ai_page.py:162
 msgid "Ollama for CPU"
 msgstr "Ollama para CPU"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:166
+#: usr/share/biglinux/biglinux-settings/ai_page.py:164
 msgid ""
 "Runs AI models on the processor only. Installs Ollama; turning it off "
 "removes it."
@@ -246,11 +246,11 @@ msgstr ""
 "Executa modelos de IA apenas no processador. Instala o Ollama; ao desligar, "
 "ele é removido."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:171
+#: usr/share/biglinux/biglinux-settings/ai_page.py:169
 msgid "Ollama Vulkan"
 msgstr "Ollama Vulkan"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:173
+#: usr/share/biglinux/biglinux-settings/ai_page.py:171
 msgid ""
 "For processors, AMD and Nvidia graphics cards and integrated graphics. "
 "Installs Ollama; turning it off removes it."
@@ -258,11 +258,11 @@ msgstr ""
 "Para processadores, placas de vídeo AMD e Nvidia e gráficos integrados. "
 "Instala o Ollama; ao desligar, ele é removido."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:178
+#: usr/share/biglinux/biglinux-settings/ai_page.py:176
 msgid "Ollama Nvidia CUDA"
 msgstr "Ollama Nvidia CUDA"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:180
+#: usr/share/biglinux/biglinux-settings/ai_page.py:178
 msgid ""
 "For newer Nvidia graphics cards, from the 2000 series on. Installs Ollama; "
 "turning it off removes it."
@@ -270,11 +270,11 @@ msgstr ""
 "Para placas Nvidia mais novas, a partir da série 2000. Instala o Ollama; ao "
 "desligar, ele é removido."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:185
+#: usr/share/biglinux/biglinux-settings/ai_page.py:183
 msgid "Ollama AMD ROCm"
 msgstr "Ollama AMD ROCm"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:187
+#: usr/share/biglinux/biglinux-settings/ai_page.py:185
 msgid ""
 "For newer AMD graphics cards, from the 6000 series on. In many tests Vulkan "
 "performed better than ROCm. Installs Ollama; turning it off removes it."
@@ -283,17 +283,17 @@ msgstr ""
 "Vulkan teve desempenho melhor que o ROCm. Instala o Ollama; ao desligar, ele "
 "é removido."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:258
-#: usr/share/biglinux/biglinux-settings/ai_page.py:264
+#: usr/share/biglinux/biglinux-settings/ai_page.py:256
+#: usr/share/biglinux/biglinux-settings/ai_page.py:262
 msgid "Package available in the AUR"
 msgstr "Pacote disponível no AUR"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:259
+#: usr/share/biglinux/biglinux-settings/ai_page.py:257
 #, python-brace-format
 msgid "Install {} with a package manager that supports the AUR."
 msgstr "Instale {} com um gerenciador de pacotes que ofereça suporte ao AUR."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:266
+#: usr/share/biglinux/biglinux-settings/ai_page.py:264
 #, python-brace-format
 msgid ""
 "{} is available from the community-maintained Arch User Repository. Open a "
@@ -302,21 +302,21 @@ msgstr ""
 "{} está disponível no repositório comunitário do Arch (AUR). Abra um "
 "terminal para revisar e confirmar a instalação."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:270
-#: usr/share/biglinux/biglinux-settings/base_page.py:110
+#: usr/share/biglinux/biglinux-settings/ai_page.py:268
+#: usr/share/biglinux/biglinux-settings/base_page.py:108
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:271
+#: usr/share/biglinux/biglinux-settings/ai_page.py:269
 msgid "Open terminal"
 msgstr "Abrir terminal"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:286
+#: usr/share/biglinux/biglinux-settings/ai_page.py:284
 #, python-brace-format
 msgid "Could not open a terminal to install {}."
 msgstr "Não foi possível abrir um terminal para instalar {}."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:304
+#: usr/share/biglinux/biglinux-settings/ai_page.py:302
 msgid ""
 "Ollama server is running.\n"
 "Address: http://localhost:11434"
@@ -324,16 +324,16 @@ msgstr ""
 "O servidor Ollama está em execução.\n"
 "Endereço: http://localhost:11434"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:309
+#: usr/share/biglinux/biglinux-settings/ai_page.py:307
 msgid "Share Ollama"
 msgstr "Compartilhar Ollama"
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:310
+#: usr/share/biglinux/biglinux-settings/ai_page.py:308
 msgid "Lets other computers on the local network use this Ollama server."
 msgstr ""
 "Permite que outros computadores da rede local usem este servidor Ollama."
 
-#: usr/share/biglinux/biglinux-settings/ai_page.py:314
+#: usr/share/biglinux/biglinux-settings/ai_page.py:312
 #, python-brace-format
 msgid ""
 "Ollama server is running.\n"
@@ -343,7 +343,7 @@ msgstr ""
 "Endereço: http://{}:11434"
 
 #: usr/share/biglinux/biglinux-settings/apps_page.py:11
-#: usr/share/biglinux/biglinux-settings/main.py:368
+#: usr/share/biglinux/biglinux-settings/main.py:390
 msgid "Apps & Services"
 msgstr "Aplicativos e serviços"
 
@@ -702,15 +702,15 @@ msgstr ""
 "Gemini, DeepSeek, Ollama e mais de 200 modelos. Instala junto com nodejs, "
 "npm e ripgrep como dependências; ao desligar, ele é removido."
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:174
+#: usr/share/biglinux/biglinux-settings/apps_page.py:173
 msgid "AI"
 msgstr "IA"
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:174
+#: usr/share/biglinux/biglinux-settings/apps_page.py:173
 msgid "coding agent"
 msgstr "agente de programação"
 
-#: usr/share/biglinux/biglinux-settings/apps_page.py:174
+#: usr/share/biglinux/biglinux-settings/apps_page.py:173
 msgid "programming"
 msgstr "programação"
 
@@ -719,90 +719,85 @@ msgstr "programação"
 msgid "Script not found: {}"
 msgstr "Script não encontrado: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:84
+#: usr/share/biglinux/biglinux-settings/base_page.py:82
 msgid "Close"
 msgstr "Fechar"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:107
+#: usr/share/biglinux/biglinux-settings/base_page.py:105
 #, python-brace-format
 msgid "Warning: {}"
 msgstr "Aviso: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:111
+#: usr/share/biglinux/biglinux-settings/base_page.py:109
 msgid "Continue"
 msgstr "Continuar"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:308
+#: usr/share/biglinux/biglinux-settings/base_page.py:305
 msgid "Run"
 msgstr "Executar"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:314
+#: usr/share/biglinux/biglinux-settings/base_page.py:311
 #, python-brace-format
 msgid "{}: run action"
 msgstr "{}: executar ação"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:353
-#: usr/share/biglinux/biglinux-settings/base_page.py:1019
+#: usr/share/biglinux/biglinux-settings/base_page.py:349
+#: usr/share/biglinux/biglinux-settings/base_page.py:1006
 #: usr/share/biglinux/biglinux-settings/devices_page.py:158
 msgid "Applying…"
 msgstr "Aplicando…"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:367
+#: usr/share/biglinux/biglinux-settings/base_page.py:366
 #, python-brace-format
 msgid "Action script {} failed: {}"
 msgstr "Script de ação {} falhou: {}"
 
 #: usr/share/biglinux/biglinux-settings/base_page.py:372
 #, python-brace-format
-msgid "Action script timeout: {}"
-msgstr "Tempo limite do script de ação: {}"
-
-#: usr/share/biglinux/biglinux-settings/base_page.py:375
-#, python-brace-format
 msgid "Error running action script {}: {}"
 msgstr "Erro ao executar o script de ação {}: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:385
+#: usr/share/biglinux/biglinux-settings/base_page.py:383
 msgid "Action completed successfully"
 msgstr "Ação concluída com sucesso"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:388
+#: usr/share/biglinux/biglinux-settings/base_page.py:386
 #, python-brace-format
 msgid "Action failed: {}"
 msgstr "Ação falhou: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:423
+#: usr/share/biglinux/biglinux-settings/base_page.py:420
 msgid "Recommended"
 msgstr "Recomendado"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:446
-#: usr/share/biglinux/biglinux-settings/base_page.py:533
+#: usr/share/biglinux/biglinux-settings/base_page.py:443
+#: usr/share/biglinux/biglinux-settings/base_page.py:528
 #, python-brace-format
 msgid "{}: additional information"
 msgstr "{}: informações adicionais"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:459
+#: usr/share/biglinux/biglinux-settings/base_page.py:456
 msgid "Learn more"
 msgstr "Saiba mais"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:465
+#: usr/share/biglinux/biglinux-settings/base_page.py:462
 #, python-brace-format
 msgid "{}: learn more"
 msgstr "{}: saiba mais"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:572
+#: usr/share/biglinux/biglinux-settings/base_page.py:566
 msgid "Unavailable: script not found."
 msgstr "Indisponível: script não encontrado."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:588
+#: usr/share/biglinux/biglinux-settings/base_page.py:582
 msgid "Enabled"
 msgstr "Ativado"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:590
+#: usr/share/biglinux/biglinux-settings/base_page.py:584
 msgid "Disabled"
 msgstr "Desativado"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:596
+#: usr/share/biglinux/biglinux-settings/base_page.py:590
 msgid ""
 "Enabled by system configuration (e.g., Real-Time Kernel) and cannot be "
 "changed here."
@@ -810,119 +805,114 @@ msgstr ""
 "Ativado pela configuração do sistema (ex.: Kernel em Tempo Real) e não pode "
 "ser alterado aqui."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:600
+#: usr/share/biglinux/biglinux-settings/base_page.py:594
 msgid "Unavailable in this desktop environment."
 msgstr "Indisponível neste ambiente de trabalho."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:602
+#: usr/share/biglinux/biglinux-settings/base_page.py:596
 msgid "Unavailable: script returned invalid output."
 msgstr "Indisponível: o script retornou uma saída inválida."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:604
+#: usr/share/biglinux/biglinux-settings/base_page.py:598
 #, python-brace-format
 msgid "output from script {}: {}"
 msgstr "saída do script {}: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:610
+#: usr/share/biglinux/biglinux-settings/base_page.py:604
 msgid "Unavailable: script returned an error."
 msgstr "Indisponível: o script retornou um erro."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:611
+#: usr/share/biglinux/biglinux-settings/base_page.py:605
 #, python-brace-format
 msgid "Error checking state: {}"
 msgstr "Erro ao verificar estado: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:614
+#: usr/share/biglinux/biglinux-settings/base_page.py:608
 msgid "Unavailable: failed to run script."
 msgstr "Indisponível: falha ao executar o script."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:615
-#: usr/share/biglinux/biglinux-settings/base_page.py:642
+#: usr/share/biglinux/biglinux-settings/base_page.py:609
+#: usr/share/biglinux/biglinux-settings/base_page.py:630
 #, python-brace-format
 msgid "Error running script {}: {}"
 msgstr "Erro ao executar o script {}: {}"
 
 #: usr/share/biglinux/biglinux-settings/base_page.py:638
 #, python-brace-format
-msgid "Script timeout: {}"
-msgstr "Tempo limite do script: {}"
-
-#: usr/share/biglinux/biglinux-settings/base_page.py:650
-#, python-brace-format
 msgid "Script output: {}"
 msgstr "Saída do script: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:658
+#: usr/share/biglinux/biglinux-settings/base_page.py:646
 msgid "State changed successfully"
 msgstr "Estado alterado com sucesso"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:667
+#: usr/share/biglinux/biglinux-settings/base_page.py:655
 #, python-brace-format
 msgid "Script failed with exit code: {}"
 msgstr "Script falhou com código de saída: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:700
+#: usr/share/biglinux/biglinux-settings/base_page.py:688
 #, python-brace-format
 msgid "{} sub-option available"
 msgid_plural "{} sub-options available"
 msgstr[0] "{} subopção disponível"
 msgstr[1] "{} subopções disponíveis"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:826
+#: usr/share/biglinux/biglinux-settings/base_page.py:814
 msgid "Try again"
 msgstr "Tentar novamente"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:831
+#: usr/share/biglinux/biglinux-settings/base_page.py:819
 #, python-brace-format
 msgid "{}: try again"
 msgstr "{}: tentar novamente"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:836
+#: usr/share/biglinux/biglinux-settings/base_page.py:824
 msgid "Could not check this setting."
 msgstr "Não foi possível verificar esta configuração."
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:938
+#: usr/share/biglinux/biglinux-settings/base_page.py:926
 msgid "off"
 msgstr "desligado"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:938
+#: usr/share/biglinux/biglinux-settings/base_page.py:926
 msgid "on"
 msgstr "ligado"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:943
+#: usr/share/biglinux/biglinux-settings/base_page.py:931
 #, python-brace-format
 msgid "Changing {} to {}…"
 msgstr "Alterando {} para {}…"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:946
+#: usr/share/biglinux/biglinux-settings/base_page.py:934
 msgid "Undo"
 msgstr "Desfazer"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:977
+#: usr/share/biglinux/biglinux-settings/base_page.py:965
 msgid "Undo: reverted toggle"
 msgstr "Desfazer: alternância revertida"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:1009
+#: usr/share/biglinux/biglinux-settings/base_page.py:996
 #, python-brace-format
 msgid "Changing {} to {}"
 msgstr "Alterando {} para {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:1045
+#: usr/share/biglinux/biglinux-settings/base_page.py:1032
 #, python-brace-format
 msgid "ERROR: Failed to change {} to {}"
 msgstr "ERRO: Falha ao alterar {} para {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:1050
+#: usr/share/biglinux/biglinux-settings/base_page.py:1037
 #, python-brace-format
 msgid "Failed to change setting: {}"
 msgstr "Falha ao alterar configuração: {}"
 
-#: usr/share/biglinux/biglinux-settings/base_page.py:1066
+#: usr/share/biglinux/biglinux-settings/base_page.py:1053
 msgid "Saved. It will take effect after the next restart."
 msgstr "Salvo. Será aplicado após a próxima reinicialização."
 
 #: usr/share/biglinux/biglinux-settings/devices_page.py:30
-#: usr/share/biglinux/biglinux-settings/main.py:360
+#: usr/share/biglinux/biglinux-settings/main.py:382
 msgid "Devices"
 msgstr "Dispositivos"
 
@@ -935,7 +925,7 @@ msgid "Wireless"
 msgstr "Sem fio"
 
 #: usr/share/biglinux/biglinux-settings/devices_page.py:39
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:234
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:227
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
@@ -952,7 +942,7 @@ msgid "network"
 msgstr "rede"
 
 #: usr/share/biglinux/biglinux-settings/devices_page.py:43
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:234
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:227
 msgid "wireless"
 msgstr "sem fio"
 
@@ -1062,7 +1052,7 @@ msgid "Off"
 msgstr "Desligado"
 
 #: usr/share/biglinux/biglinux-settings/home_page.py:62
-#: usr/share/biglinux/biglinux-settings/main.py:355
+#: usr/share/biglinux/biglinux-settings/main.py:377
 #: usr/share/biglinux/biglinux-settings/performance_page.py:9
 msgid "Performance"
 msgstr "Desempenho"
@@ -1122,7 +1112,7 @@ msgid "Performance profile"
 msgstr "Perfil de desempenho"
 
 #: usr/share/biglinux/biglinux-settings/home_page.py:128
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:80
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:73
 msgid "When idle"
 msgstr "Ao ficar sem usar"
 
@@ -1159,93 +1149,88 @@ msgstr "Verificando…"
 msgid "BigLinux Settings"
 msgstr "BigLinux Settings"
 
-#: usr/share/biglinux/biglinux-settings/main.py:122
+#: usr/share/biglinux/biglinux-settings/main.py:125
 msgid "BigLinux Community"
 msgstr "Biglinux Community"
 
-#: usr/share/biglinux/biglinux-settings/main.py:239
+#: usr/share/biglinux/biglinux-settings/main.py:261
 msgid "Search settings…"
 msgstr "Pesquisar configurações…"
 
-#: usr/share/biglinux/biglinux-settings/main.py:245
+#: usr/share/biglinux/biglinux-settings/main.py:267
 msgid "Search settings"
 msgstr "Pesquisar configurações"
 
-#: usr/share/biglinux/biglinux-settings/main.py:252
-#: usr/share/biglinux/biglinux-settings/main.py:255
+#: usr/share/biglinux/biglinux-settings/main.py:274
+#: usr/share/biglinux/biglinux-settings/main.py:277
 msgid "Toggle navigation sidebar"
 msgstr "Alternar barra de navegação lateral"
 
-#: usr/share/biglinux/biglinux-settings/main.py:262
-#: usr/share/biglinux/biglinux-settings/main.py:264
+#: usr/share/biglinux/biglinux-settings/main.py:284
+#: usr/share/biglinux/biglinux-settings/main.py:286
 msgid "Back to search results"
 msgstr "Voltar aos resultados da pesquisa"
 
-#: usr/share/biglinux/biglinux-settings/main.py:272
+#: usr/share/biglinux/biglinux-settings/main.py:294
 msgid "About"
 msgstr "Sobre"
 
-#: usr/share/biglinux/biglinux-settings/main.py:276
-#: usr/share/biglinux/biglinux-settings/main.py:279
+#: usr/share/biglinux/biglinux-settings/main.py:298
+#: usr/share/biglinux/biglinux-settings/main.py:301
 msgid "Main Menu"
 msgstr "Menu Principal"
 
-#: usr/share/biglinux/biglinux-settings/main.py:310
+#: usr/share/biglinux/biglinux-settings/main.py:332
 msgid "No results"
 msgstr "Nenhum resultado"
 
-#: usr/share/biglinux/biglinux-settings/main.py:312
+#: usr/share/biglinux/biglinux-settings/main.py:334
 msgid "Try other words, like “don't sleep”, “remote access” or “battery”."
 msgstr ""
 "Tente outras palavras, como “não dormir”, “acesso remoto” ou “bateria”."
 
-#: usr/share/biglinux/biglinux-settings/main.py:340
+#: usr/share/biglinux/biglinux-settings/main.py:362
 msgid "Home"
 msgstr "Início"
 
-#: usr/share/biglinux/biglinux-settings/main.py:341
+#: usr/share/biglinux/biglinux-settings/main.py:363
 #: usr/share/biglinux/biglinux-settings/system_page.py:11
 msgid "System"
 msgstr "Sistema"
 
-#: usr/share/biglinux/biglinux-settings/main.py:343
+#: usr/share/biglinux/biglinux-settings/main.py:365
 #: usr/share/biglinux/biglinux-settings/usability_page.py:9
 msgid "Appearance & Usage"
 msgstr "Aparência e uso"
 
-#: usr/share/biglinux/biglinux-settings/main.py:349
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:70
+#: usr/share/biglinux/biglinux-settings/main.py:371
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:63
 msgid "Power & Suspend"
 msgstr "Energia e suspensão"
 
-#: usr/share/biglinux/biglinux-settings/main.py:420
+#: usr/share/biglinux/biglinux-settings/main.py:442
 msgid "More features"
 msgstr "Recursos adicionais"
 
-#: usr/share/biglinux/biglinux-settings/main.py:562
+#: usr/share/biglinux/biglinux-settings/main.py:584
 #, python-brace-format
 msgid "{} result"
 msgid_plural "{} results"
 msgstr[0] "{} resultado"
 msgstr[1] "{} resultados"
 
-#: usr/share/biglinux/biglinux-settings/main.py:589
+#: usr/share/biglinux/biglinux-settings/main.py:611
 msgid "Open setting"
 msgstr "Abrir configuração"
 
-#: usr/share/biglinux/biglinux-settings/main.py:594
+#: usr/share/biglinux/biglinux-settings/main.py:616
 #, python-brace-format
 msgid "Open {} setting"
 msgstr "Abrir configuração de {}"
 
-#: usr/share/biglinux/biglinux-settings/main.py:689
+#: usr/share/biglinux/biglinux-settings/main.py:711
 msgid "Dismiss"
 msgstr "Dispensar"
-
-#: usr/share/biglinux/biglinux-settings/performance/meltdownMitigationsRun.sh:129
-#: usr/share/biglinux/biglinux-settings/performance/noWatchdogRun.sh:129
-msgid "Already enabled. No changes made."
-msgstr "Já ativado. Nenhuma alteração feita."
 
 #: usr/share/biglinux/biglinux-settings/performance_page.py:9
 msgid "Balance speed, power use and stability."
@@ -1503,49 +1488,49 @@ msgstr "nowatchdog"
 msgid "watchdog"
 msgstr "watchdog"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:72
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:65
 msgid ""
 "What happens when the computer is idle, on battery or with the lid closed."
 msgstr ""
 "O que acontece quando o computador fica sem uso, na bateria ou com a tampa "
 "fechada."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:69
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:124
 msgid "don't sleep"
 msgstr "não dormir"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:69
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:206
 msgid "sleep"
 msgstr "dormir"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:69
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:124
 msgid "stay awake"
 msgstr "ficar acordado"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:76
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:69
 msgid "suspend"
 msgstr "suspender"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:81
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:74
 msgid "Choose whether the computer suspends after a period without use."
 msgstr "Escolha se o computador suspende depois de um tempo sem uso."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:88
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:81
 msgid "Stay awake while plugged in"
 msgstr "Ficar ligado na tomada"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:89
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:82
 msgid "Does not suspend when idle while connected to power."
 msgstr "Não suspende por inatividade enquanto estiver ligado na energia."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:97
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:90
 msgid "Stay awake on battery"
 msgstr "Ficar ligado na bateria"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:99
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:92
 msgid ""
 "Does not suspend when idle on battery. The critical-battery action still "
 "applies."
@@ -1553,17 +1538,17 @@ msgstr ""
 "Não suspende por inatividade na bateria. A ação de bateria crítica continua "
 "valendo."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:104
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:120
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:185
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:97
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:113
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:178
 msgid "battery"
 msgstr "bateria"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:109
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:102
 msgid "Stay awake and suspend at 20% battery"
 msgstr "Ficar ligado e suspender com 20% de bateria"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:111
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:104
 msgid ""
 "Does not suspend when idle on battery and suspends automatically when the "
 "charge reaches 20%."
@@ -1571,7 +1556,7 @@ msgstr ""
 "Não suspende por inatividade na bateria e suspende automaticamente quando a "
 "carga chegar a 20%."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:117
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:110
 msgid ""
 "This uses UPower's critical battery policy. Low and critical warnings occur "
 "before the suspend action at 20%."
@@ -1579,15 +1564,15 @@ msgstr ""
 "Isso usa a política de bateria crítica do UPower. Os avisos de bateria baixa "
 "e crítica aparecem antes da suspensão em 20%."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:120
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:113
 msgid "low battery"
 msgstr "bateria fraca"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:125
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:118
 msgid "When the lid is closed"
 msgstr "Ao fechar a tampa"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:126
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:119
 msgid ""
 "Keep the computer working with the lid closed, for example with an external "
 "monitor."
@@ -1595,20 +1580,20 @@ msgstr ""
 "Mantém o computador funcionando com a tampa fechada, por exemplo, com um "
 "monitor externo."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:124
 msgid "laptop"
 msgstr "notebook"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:131
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:124
 msgid "lid"
 msgstr "tampa"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:135
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:128
 msgid "Keep running with the lid closed while plugged in"
 msgstr ""
 "Continuar funcionando com a tampa fechada enquanto estiver conectado à tomada"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:137
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:130
 msgid ""
 "Closing the lid will not suspend the computer while it is connected to "
 "power. The session and network stay active."
@@ -1616,7 +1601,7 @@ msgstr ""
 "Fechar a tampa não suspenderá o computador enquanto estiver ligado na "
 "energia. A sessão e a rede continuam ativas."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:143
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:136
 msgid ""
 "This prevents lid-triggered suspend. Without an external monitor the screen "
 "may still lock when the lid closes; turn on \"Don't lock the screen\" below "
@@ -1627,11 +1612,11 @@ msgstr ""
 "abaixo para evitar isso. Mantenha o notebook ventilado enquanto ele funciona "
 "com a tampa fechada."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:153
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:146
 msgid "Don't lock the screen"
 msgstr "Não bloquear a tela"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:155
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:148
 msgid ""
 "Keeps the session unlocked when the lid closes, so a remote desktop "
 "connection is not dropped by the lock screen."
@@ -1639,7 +1624,7 @@ msgstr ""
 "Mantém a sessão desbloqueada ao fechar a tampa, para que uma conexão de área "
 "de trabalho remota não seja derrubada pela tela de bloqueio."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:162
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:155
 msgid ""
 "Turns off the screen lock entirely: when the lid closes, after idle time and "
 "when suspending. Anyone with physical access to the computer can use the "
@@ -1653,23 +1638,23 @@ msgstr ""
 "atalho Super+L também deixam de funcionar. Desligar a opção da tampa acima "
 "restaura o bloqueio."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:168
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:161
 msgid "RDP"
 msgstr "RDP"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:168
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:161
 msgid "lock screen"
 msgstr "tela de bloqueio"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:168
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:161
 msgid "remote desktop"
 msgstr "área de trabalho remota"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:173
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:166
 msgid "Keep running with the lid closed on battery"
 msgstr "Continuar funcionando com a tampa fechada ao usar a bateria"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:175
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:168
 msgid ""
 "Closing the lid will not suspend the computer on battery. The session and "
 "network stay active, using more battery."
@@ -1677,7 +1662,7 @@ msgstr ""
 "Fechar a tampa não suspenderá o computador na bateria. A sessão e a rede "
 "continuam ativas, consumindo mais bateria."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:181
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:174
 msgid ""
 "This prevents lid-triggered suspend. Without an external monitor the screen "
 "may still lock when the lid closes. The 20% critical battery policy still "
@@ -1687,11 +1672,11 @@ msgstr ""
 "ainda pode ser bloqueada ao fechar a tampa. A política de bateria crítica em "
 "20% continua valendo."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:190
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:183
 msgid "Fix problems after resume"
 msgstr "Resolver problemas ao retornar"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:191
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:184
 msgid ""
 "Compatibility fixes for problems some computers have when waking from "
 "suspend."
@@ -1699,11 +1684,11 @@ msgstr ""
 "Correções de compatibilidade para problemas que alguns computadores têm ao "
 "voltar da suspensão."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:200
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:193
 msgid "Light sleep (s2idle)"
 msgstr "Suspensão leve (s2idle)"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:202
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:195
 msgid ""
 "Uses a lighter sleep mode that keeps the Fn keys working after resume on "
 "some ASUS notebooks. Uses slightly more battery while suspended."
@@ -1712,7 +1697,7 @@ msgstr ""
 "retornar em alguns notebooks ASUS. Gasta um pouco mais de bateria enquanto "
 "suspenso."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:209
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:202
 msgid ""
 "S3 deep sleep can cause the Embedded Controller to stop generating hotkey "
 "interrupts. s2idle keeps the EC powered, avoiding this issue at a small cost "
@@ -1722,19 +1707,19 @@ msgstr ""
 "gerar interrupções de teclas de atalho. O s2idle mantém o EC alimentado, "
 "evitando esse problema com um pequeno custo no consumo de bateria."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:206
 msgid "Fn keys"
 msgstr "teclas Fn"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:213
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:206
 msgid "hotkeys"
 msgstr "teclas de atalho"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:221
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:214
 msgid "Avoid losing Wi-Fi after resume"
 msgstr "Evitar perda do Wi-Fi ao retornar"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:223
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:216
 msgid ""
 "Compatibility fix for some Realtek Wi-Fi adapters: keeps the adapter from "
 "fully powering off during suspend, so the connection works after resume."
@@ -1743,7 +1728,7 @@ msgstr ""
 "que o adaptador desligue totalmente durante a suspensão, para que a conexão "
 "funcione ao retornar."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:230
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:223
 msgid ""
 "Some Realtek RTL8852BE/CE chips fail to reinitialize after d3cold power "
 "gating. This keeps the chip in d3hot (PCIe link alive) during suspend."
@@ -1752,15 +1737,15 @@ msgstr ""
 "energia d3cold. Isso mantém o chip em d3hot (link PCIe ativo) durante a "
 "suspensão."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:234
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:227
 msgid "Realtek"
 msgstr "Realtek"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:233
 msgid "Restore brightness after resume"
 msgstr "Restaurar o brilho ao retornar"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:242
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:235
 msgid ""
 "Saves the screen brightness and keyboard lights before suspending and "
 "restores them when the computer wakes up."
@@ -1768,20 +1753,20 @@ msgstr ""
 "Salva o brilho da tela e as luzes do teclado antes de suspender e os "
 "restaura quando o computador volta."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:247
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
 #: usr/share/biglinux/biglinux-settings/usability_page.py:37
 msgid "backlight"
 msgstr "luz do teclado"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:247
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:240
 msgid "brightness"
 msgstr "brilho"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:254
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:247
 msgid "Restart failed extensions after resume"
 msgstr "Reiniciar extensões com falha ao retornar"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:256
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:249
 msgid ""
 "Checks GNOME Shell extensions after resume and restarts the ones left in an "
 "error state."
@@ -1789,11 +1774,11 @@ msgstr ""
 "Verifica as extensões do GNOME Shell ao retornar da suspensão e reinicia as "
 "que ficaram com erro."
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:261
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:254
 msgid "GNOME"
 msgstr "GNOME"
 
-#: usr/share/biglinux/biglinux-settings/sleep_page.py:261
+#: usr/share/biglinux/biglinux-settings/sleep_page.py:254
 msgid "extensions"
 msgstr "extensões"
 
@@ -1858,7 +1843,7 @@ msgid "GRUB"
 msgstr "GRUB"
 
 #: usr/share/biglinux/biglinux-settings/system_page.py:53
-#: usr/share/biglinux/biglinux-settings/system_page.py:66
+#: usr/share/biglinux/biglinux-settings/system_page.py:65
 msgid "boot"
 msgstr "inicialização"
 
@@ -1873,19 +1858,19 @@ msgstr ""
 "Mostra as mensagens do sistema abaixo da animação de inicialização enquanto "
 "o computador inicia."
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:66
+#: usr/share/biglinux/biglinux-settings/system_page.py:65
 msgid "splash"
 msgstr "splash"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:71
+#: usr/share/biglinux/biglinux-settings/system_page.py:70
 msgid "Disks"
 msgstr "Discos"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:77
+#: usr/share/biglinux/biglinux-settings/system_page.py:76
 msgid "Mount internal disks at startup"
 msgstr "Montar discos internos ao iniciar"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:79
+#: usr/share/biglinux/biglinux-settings/system_page.py:78
 msgid ""
 "Makes the partitions of the internal disks available automatically when the "
 "computer starts."
@@ -1893,11 +1878,11 @@ msgstr ""
 "Deixa as partições dos discos internos disponíveis automaticamente quando o "
 "computador inicia."
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:84
+#: usr/share/biglinux/biglinux-settings/system_page.py:83
 msgid "auto-mount"
 msgstr "montagem automática"
 
-#: usr/share/biglinux/biglinux-settings/system_page.py:84
+#: usr/share/biglinux/biglinux-settings/system_page.py:83
 msgid "partitions"
 msgstr "partições"
 
@@ -2012,6 +1997,17 @@ msgstr "privacidade"
 #: usr/share/biglinux/biglinux-settings/usability_page.py:79
 msgid "recent"
 msgstr "recentes"
+
+#, python-brace-format
+#~ msgid "Action script timeout: {}"
+#~ msgstr "Tempo limite do script de ação: {}"
+
+#, python-brace-format
+#~ msgid "Script timeout: {}"
+#~ msgstr "Tempo limite do script: {}"
+
+#~ msgid "Already enabled. No changes made."
+#~ msgstr "Já ativado. Nenhuma alteração feita."
 
 #~ msgid ""
 #~ "Turns off the screen lock entirely: when the lid closes, after idle time "

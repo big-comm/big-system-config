@@ -112,7 +112,6 @@ class AIPage(BaseSettingsPage):
             ),
             "comfyUI",
             "comfyUI-symbolic",
-            timeout=1200,
             link_url=link_comfyui,
             keywords=[_("images"), _("Stable Diffusion"), _("local AI")],
         )
@@ -146,7 +145,6 @@ class AIPage(BaseSettingsPage):
             "ollamaUpdate",
             OLLAMA_ICON,
             action_label=_("Update now"),
-            timeout=1800,
             keywords=[_("Ollama"), _("local AI")],
         )
 
@@ -226,27 +224,33 @@ class AIPage(BaseSettingsPage):
         row = self._get_wd(switch, "row")
         row.set_sensitive(False)
         self._busy_switches.add(switch)
+        self.main_window.change_started()
 
         def on_package_checked(process, result):
             self._busy_switches.discard(switch)
             row.set_sensitive(True)
+            # Finish only after the native toggle has counted itself, so a
+            # window closed meanwhile never sees zero running changes.
             try:
-                _, _, stderr = process.communicate_utf8_finish(result)
-            except GLib.Error:
-                execute_native(switch, state)
-                return
+                try:
+                    _, _, stderr = process.communicate_utf8_finish(result)
+                except GLib.Error:
+                    execute_native(switch, state)
+                    return
 
-            # Other errors go through the normal toggle path.
-            missing_package = f"error: package '{package}' was not found"
-            if (
-                process.get_if_exited()
-                and process.get_exit_status() == 1
-                and missing_package in (stderr or "").splitlines()
-            ):
-                self._set_switch_active_without_handler(switch, False)
-                self._offer_aur_install(package)
-            else:
-                execute_native(switch, state)
+                # Other errors go through the normal toggle path.
+                missing_package = f"error: package '{package}' was not found"
+                if (
+                    process.get_if_exited()
+                    and process.get_exit_status() == 1
+                    and missing_package in (stderr or "").splitlines()
+                ):
+                    self._set_switch_active_without_handler(switch, False)
+                    self._offer_aur_install(package)
+                else:
+                    execute_native(switch, state)
+            finally:
+                self.main_window.change_finished()
 
         query.communicate_utf8_async(None, None, on_package_checked)
 

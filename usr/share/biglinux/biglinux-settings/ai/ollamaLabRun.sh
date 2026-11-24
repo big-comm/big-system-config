@@ -12,7 +12,7 @@ updateTask() {
   if [[ "$function" == "install" ]]; then
     pacman -Syu --needed --noconfirm ollama-lab-bin
   else
-    pacman -Rcs --noconfirm ollama-lab-bin
+    pacman -Rs --noconfirm ollama-lab-bin
   fi
   exitCode=$?
 }

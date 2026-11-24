@@ -47,7 +47,7 @@ def ai_page(base_page, monkeypatch):
         ("ollamaCpu.sh", True, None, None, None),
     ],
 )
-def test_ai_offers_aur_only_for_missing_repository_packages(
+def test_aur_offered_for_missing_packages(
     ai_page, monkeypatch, script, state, exit_code, stderr, aur_package
 ):
     module, page = ai_page
@@ -70,6 +70,10 @@ def test_ai_offers_aur_only_for_missing_repository_packages(
         )
         assert not row.sensitive
         assert switch in page._busy_switches
+        # A window closed during the lookup waits for it instead of quitting.
+        window = page.main_window
+        window.change_started.assert_called_once_with()
+        native_toggle.side_effect = lambda *_: window.change_finished.assert_not_called()
         query.communicate_utf8_finish.return_value = (True, None, stderr)
         query.get_if_exited.return_value = True
         query.get_exit_status.return_value = exit_code
@@ -77,6 +81,7 @@ def test_ai_offers_aur_only_for_missing_repository_packages(
         callback(query, None)
         assert row.sensitive
         assert switch not in page._busy_switches
+        window.change_finished.assert_called_once_with()
 
     if aur_package:
         page._offer_aur_install.assert_called_once_with(aur_package)
@@ -144,7 +149,7 @@ def test_ai_reports_terminal_start_failure(ai_page, aur_dialog, monkeypatch):
     assert not page._pending_aur_packages
 
 
-def test_ai_refreshes_on_focus_until_pending_packages_are_installed(ai_page, monkeypatch):
+def test_focus_refresh_until_installed(ai_page, monkeypatch):
     module, page = ai_page
     window = page.main_window
     window.is_active.return_value = True

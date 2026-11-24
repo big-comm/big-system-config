@@ -30,7 +30,7 @@ case "$function" in
     fi
     ;;
   remove)
-    pacman -Rcs --noconfirm "$package"
+    pacman -Rs --noconfirm "$package"
     ;;
   *)
     echo "Invalid action: $function" >&2

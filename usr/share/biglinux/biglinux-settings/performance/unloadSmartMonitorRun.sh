@@ -13,7 +13,7 @@ smartd_unit_exists() {
 case "$action" in
   monitor)
     if ! smartd_unit_exists; then
-      pacman -S --needed --noconfirm smartmontools || exit $?
+      pacman -Syu --needed --noconfirm smartmontools || exit $?
       systemctl daemon-reload
       smartd_unit_exists || exit 1
     fi

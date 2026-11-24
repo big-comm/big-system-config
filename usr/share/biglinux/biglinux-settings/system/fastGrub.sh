@@ -1,15 +1,11 @@
 #!/bin/bash
 
-# BIGLINUX_GRUB_FILE exists only for the test suite (read-only here).
-grub_file="${BIGLINUX_GRUB_FILE:-/etc/default/grub}"
+# shellcheck source=../grub-default.sh
+source "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")/../grub-default.sh"
 
 # check current status
 if [ "$1" == "check" ]; then
-  # Last active GRUB_TIMEOUT= line, accepting 1, "1" and '1'
-  timeout="$(grep -E '^[[:space:]]*GRUB_TIMEOUT=' "$grub_file" 2>/dev/null | tail -n 1)"
-  timeout="${timeout#*=}"
-  timeout="${timeout//[\"\'[:space:]]/}"
-  if [[ "$timeout" == "1" ]];then
+  if [[ "$(grub_value GRUB_TIMEOUT)" == "1" ]]; then
     echo "true"
   else
     echo "false"

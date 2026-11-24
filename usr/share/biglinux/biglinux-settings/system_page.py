@@ -62,7 +62,6 @@ class SystemPage(BaseSettingsPage):
             "plymouthBootMessages",
             "system-symbolic",
             # Rebuilds the initramfs of every installed kernel
-            timeout=900,
             keywords=[_("boot"), _("splash")],
             applies_after_restart=True,
         )
